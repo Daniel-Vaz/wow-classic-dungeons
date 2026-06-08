@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanilla WoW — Dungeon Quest Compendium</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #c8a84b;
+    --gold-light: #f0d080;
+    --gold-dim: #7a6228;
+    --red: #8b1a1a;
+    --red-bright: #cc2222;
+    --bg-dark: #0a0805;
+    --bg-mid: #12100c;
+    --bg-panel: #1a1610;
+    --bg-card: #201c14;
+    --border: #3a3020;
+    --border-gold: #5a4a20;
+    --text-main: #d4c090;
+    --text-dim: #8a7a50;
+    --text-bright: #f0e0a0;
+    --blue-rare: #4a90d9;
+    --green-uncommon: #1eff00;
+    --white-common: #ffffff;
+    --purple-epic: #a335ee;
+    --orange-legendary: #ff8000;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 16px;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Parchment texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse at 20% 20%, rgba(200, 150, 50, 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(139, 26, 26, 0.04) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    position: relative;
+    text-align: center;
+    padding: 48px 20px 32px;
+    border-bottom: 2px solid var(--border-gold);
+    background: linear-gradient(180deg, #0f0c08 0%, var(--bg-dark) 100%);
+    overflow: hidden;
+  }
+  .site-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c8a84b' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 1;
+  }
+  .header-emblem {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    opacity: 0.6;
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.6; text-shadow: none; }
+    50% { opacity: 0.9; text-shadow: 0 0 20px var(--gold); }
+  }
+  .site-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(1.4rem, 4vw, 2.8rem);
+    font-weight: 900;
+    color: var(--gold-light);
+    text-shadow: 0 0 30px rgba(200,168,75,0.5), 2px 2px 4px rgba(0,0,0,0.8);
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+  }
+  .site-subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    color: var(--gold-dim);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+  .header-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .header-divider::before,
+  .header-divider::after {
+    content: '';
+    height: 1px;
+    width: 120px;
+    background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+  }
+  .header-divider-icon { color: var(--gold); font-size: 1.1rem; }
+
+  /* ── CONTROLS ── */
+  .controls {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10,8,5,0.97);
+    border-bottom: 1px solid var(--border-gold);
+    backdrop-filter: blur(8px);
+    padding: 12px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .search-wrap {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+    max-width: 360px;
+  }
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gold-dim);
+    pointer-events: none;
+  }
+  .search-input {
+    width: 100%;
+    padding: 8px 12px 8px 36px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-gold);
+    border-radius: 3px;
+    color: var(--text-bright);
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .search-input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 8px rgba(200,168,75,0.2);
+  }
+  .search-input::placeholder { color: var(--text-dim); }
+
+  .filter-group {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    padding: 6px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text-dim);
+    font-family: 'Cinzel', serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .filter-btn:hover, .filter-btn.active {
+    background: linear-gradient(135deg, #2a2010, #1a1508);
+    border-color: var(--gold);
+    color: var(--gold-light);
+    box-shadow: 0 0 8px rgba(200,168,75,0.15);
+  }
+  .controls-right {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .view-btn {
+    padding: 6px 10px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text-dim);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+  }
+  .view-btn.active, .view-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .quest-count {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+  .quest-count span { color: var(--gold); font-weight: 600; }
+
+  /* ── DUNGEON TABS ── */
+  .dungeon-tabs {
+    display: flex;
+    overflow-x: auto;
+    background: var(--bg-mid);
+    border-bottom: 1px solid var(--border-gold);
+    padding: 0 20px;
+    gap: 2px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold-dim) transparent;
+  }
+  .dungeon-tab {
+    padding: 10px 16px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--text-dim);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: all 0.2s;
+    position: relative;
+  }
+  .dungeon-tab:hover { color: var(--text-main); }
+  .dungeon-tab.active {
+    color: var(--gold-light);
+    border-bottom-color: var(--gold);
+  }
+  .tab-level {
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    display: block;
+    margin-top: 2px;
+    letter-spacing: 0.05em;
+  }
+  .dungeon-tab.active .tab-level { color: var(--gold-dim); }
+
+  /* ── MAIN LAYOUT ── */
+  .main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 20px;
+  }
+
+  /* ── DUNGEON HEADER ── */
+  .dungeon-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 24px;
+    padding: 20px 24px;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-gold);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .dungeon-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .dungeon-icon { font-size: 2.5rem; opacity: 0.8; }
+  .dungeon-info { flex: 1; }
+  .dungeon-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    color: var(--gold-light);
+    text-shadow: 0 0 20px rgba(200,168,75,0.3);
+    margin-bottom: 4px;
+  }
+  .dungeon-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .dungeon-meta-item {
+    font-family: 'Cinzel', serif;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .dungeon-meta-item strong { color: var(--gold); margin-left: 4px; }
+  .dungeon-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    min-width: 140px;
+  }
+  .progress-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.68rem;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+  }
+  .progress-bar-wrap {
+    width: 140px;
+    height: 8px;
+    background: var(--bg-dark);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold-dim), var(--gold));
+    border-radius: 2px;
+    transition: width 0.5s ease;
+  }
+  .progress-fraction {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    color: var(--gold);
+  }
+
+  /* ── QUEST GRID / LIST ── */
+  #quest-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+  }
+  #quest-container.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* ── QUEST CARD ── */
+  .quest-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.25s;
+    cursor: pointer;
+    position: relative;
+  }
+  .quest-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(200,168,75,0.03) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .quest-card:hover {
+    border-color: var(--gold-dim);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.5), 0 0 12px rgba(200,168,75,0.08);
+  }
+  .quest-card.completed {
+    opacity: 0.55;
+  }
+  .quest-card.completed .quest-name {
+    text-decoration: line-through;
+    text-decoration-color: var(--gold-dim);
+  }
+
+  .quest-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .quest-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--border-gold);
+    border-radius: 2px;
+    background: var(--bg-dark);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    color: var(--gold);
+    transition: all 0.2s;
+  }
+  .quest-card.completed .quest-checkbox {
+    background: var(--gold-dim);
+    border-color: var(--gold);
+  }
+  .quest-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.88rem;
+    color: var(--gold-light);
+    letter-spacing: 0.02em;
+    flex: 1;
+    line-height: 1.3;
+  }
+  .quest-level-badge {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    background: var(--bg-dark);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 2px 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .quest-card-body {
+    padding: 10px 14px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .quest-row {
+    display: flex;
+    gap: 8px;
+    font-size: 0.83rem;
+    line-height: 1.4;
+  }
+  .quest-label {
+    color: var(--text-dim);
+    font-size: 0.72rem;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.06em;
+    min-width: 52px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    padding-top: 1px;
+  }
+  .quest-value { color: var(--text-main); flex: 1; }
+  .quest-value.location { color: #8ab4d4; font-style: italic; }
+  .quest-value.xp { color: #84d4a0; font-weight: 600; }
+  .quest-value.reward { color: var(--green-uncommon); font-weight: 600; }
+  .quest-value.items { color: #c8a0d4; }
+  .quest-value.prequest { color: #d4a080; font-style: italic; }
+  .quest-value.note { color: var(--text-dim); font-style: italic; font-size: 0.8rem; }
+
+  .quest-card-footer {
+    padding: 6px 14px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .xp-pill {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    color: #84d4a0;
+    background: rgba(132,212,160,0.08);
+    border: 1px solid rgba(132,212,160,0.2);
+    border-radius: 2px;
+    padding: 2px 8px;
+    letter-spacing: 0.05em;
+  }
+  .reward-pill {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    color: var(--green-uncommon);
+    background: rgba(30,255,0,0.06);
+    border: 1px solid rgba(30,255,0,0.2);
+    border-radius: 2px;
+    padding: 2px 8px;
+  }
+  .complete-btn {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    padding: 4px 10px;
+    background: transparent;
+    border: 1px solid var(--border-gold);
+    border-radius: 2px;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-left: auto;
+  }
+  .complete-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold-light);
+    background: rgba(200,168,75,0.08);
+  }
+  .quest-card.completed .complete-btn {
+    border-color: var(--gold-dim);
+    color: var(--gold-dim);
+  }
+
+  /* LIST VIEW OVERRIDES */
+  .list-view .quest-card {
+    border-radius: 3px;
+  }
+  .list-view .quest-card:hover { transform: none; }
+  .list-view .quest-card-header {
+    padding: 10px 14px;
+    border-bottom: none;
+    flex-wrap: wrap;
+  }
+  .list-view .quest-card-body { display: none; }
+  .list-view .quest-card.expanded .quest-card-body { display: flex; }
+  .list-view .quest-card-footer { display: none; }
+  .list-view .quest-card.expanded .quest-card-footer { display: flex; }
+
+  /* ── EMPTY STATE ── */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-dim);
+    grid-column: 1/-1;
+  }
+  .empty-state-icon { font-size: 3rem; margin-bottom: 12px; opacity: 0.4; }
+  .empty-state-text {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* ── STATS BAR ── */
+  .stats-bar {
+    display: flex;
+    gap: 24px;
+    padding: 12px 24px;
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .stat-item { display: flex; flex-direction: column; gap: 2px; }
+  .stat-num {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.2rem;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+  .stat-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.62rem;
+    color: var(--text-dim);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .stat-divider {
+    width: 1px;
+    background: var(--border);
+    align-self: stretch;
+  }
+
+  /* ── TOOLTIP ── */
+  .tooltip-wrap { position: relative; display: inline-block; }
+  .tooltip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1a0f;
+    border: 1px solid var(--gold-dim);
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-size: 0.78rem;
+    color: var(--text-main);
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 200;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+  }
+  .tooltip-wrap:hover .tooltip { opacity: 1; }
+
+  /* ── NO QUESTS ── */
+  .no-dungeon-quests {
+    text-align: center;
+    padding: 48px 20px;
+    color: var(--text-dim);
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg-panel);
+  }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg-dark); }
+  ::-webkit-scrollbar-thumb { background: var(--border-gold); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--gold-dim); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .quest-card {
+    animation: fadeInUp 0.3s ease both;
+  }
+  .quest-card:nth-child(1) { animation-delay: 0.02s; }
+  .quest-card:nth-child(2) { animation-delay: 0.04s; }
+  .quest-card:nth-child(3) { animation-delay: 0.06s; }
+  .quest-card:nth-child(4) { animation-delay: 0.08s; }
+  .quest-card:nth-child(5) { animation-delay: 0.1s; }
+  .quest-card:nth-child(6) { animation-delay: 0.12s; }
+
+  /* ── SIDE PANEL ── */
+  .layout { display: flex; gap: 24px; }
+  .sidebar {
+    width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .sidebar-section {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .sidebar-title {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(200,168,75,0.04);
+  }
+  .sidebar-item {
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.15s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.82rem;
+  }
+  .sidebar-item:last-child { border-bottom: none; }
+  .sidebar-item:hover { background: rgba(200,168,75,0.05); }
+  .sidebar-item.active { background: rgba(200,168,75,0.08); color: var(--gold-light); }
+  .sidebar-item-count {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    background: var(--bg-dark);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 1px 5px;
+  }
+  .content { flex: 1; min-width: 0; }
+
+  @media (max-width: 900px) {
+    .sidebar { display: none; }
+    .layout { display: block; }
+  }
+  @media (max-width: 600px) {
+    #quest-container.grid-view {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-emblem">⚔️</div>
+  <h1 class="site-title">Vanilla Dungeon Quest<br>Compendium</h1>
+  <p class="site-subtitle">Classic World of Warcraft · All Instances · All Quests</p>
+  <div class="header-divider">
+    <div class="header-divider-icon">✦</div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input class="search-input" type="text" id="searchInput" placeholder="Search quests, NPCs, locations…">
+  </div>
+  <div class="filter-group" id="filterGroup">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="has-items">Has Gear</button>
+    <button class="filter-btn" data-filter="has-rewards">Has Rewards</button>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+    <button class="filter-btn" data-filter="incomplete">Incomplete</button>
+  </div>
+  <div class="controls-right">
+    <div class="quest-count" id="questCount"><span id="visibleCount">0</span> quests</div>
+    <button class="view-btn active" id="gridViewBtn" title="Grid view">⊞</button>
+    <button class="view-btn" id="listViewBtn" title="List view">☰</button>
+  </div>
+</div>
+
+<nav class="dungeon-tabs" id="dungeonTabs"></nav>
+
+<div class="main">
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-title">⚔ By Location</div>
+        <div id="locationList"></div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-title">📜 Prequest Chains</div>
+        <div id="prequestList"></div>
+      </div>
+    </aside>
+    <div class="content">
+      <div class="dungeon-header" id="dungeonHeader">
+        <div class="dungeon-icon" id="dungeonHeaderIcon">🏰</div>
+        <div class="dungeon-info">
+          <div class="dungeon-name" id="dungeonHeaderName">Select a Dungeon</div>
+          <div class="dungeon-meta" id="dungeonHeaderMeta"></div>
+        </div>
+        <div class="dungeon-progress">
+          <div class="progress-label">QUEST PROGRESS</div>
+          <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressBar" style="width:0%"></div></div>
+          <div class="progress-fraction" id="progressFraction">0 / 0</div>
+        </div>
+      </div>
+      <div class="stats-bar" id="statsBar"></div>
+      <div id="quest-container" class="grid-view"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+//  DATA
+// ═══════════════════════════════════════
+const DUNGEONS = [
+  {
+    id: 'rfc', name: 'Ragefire Chasm', abbr: 'RFC', levels: '12–15', faction: 'Horde',
+    icon: '🔥', location: 'Orgrimmar, Barrens',
+    quests: [
+      {
+        name: 'Testing an Enemy\'s Strength',
+        prequest: '',
+        startNpc: 'Rahuaro', startLoc: 'Thunderbluff, Elder Rise',
+        endNpc: 'Rahuaro', endLoc: 'Thunderbluff, Elder Rise',
+        levels: '9–15', xp: 1050,
+        items: [],
+        rewards: '100 Thunderbluff Rep',
+        notes: ''
+      },
+      {
+        name: 'Searching for the Lost Satchel',
+        prequest: '',
+        startNpc: 'Rahuaro', startLoc: 'Thunderbluff, Elder Rise',
+        endNpc: 'Maur Grimtotem', endLoc: 'Inside RFC',
+        levels: '', xp: 880,
+        items: [],
+        rewards: '',
+        notes: ''
+      },
+      {
+        name: 'Returning the Lost Satchel',
+        prequest: 'Searching for the Lost Satchel',
+        startNpc: 'Maur Grimtotem', startLoc: 'Inside RFC',
+        endNpc: 'Rahuaro', endLoc: 'Thunderbluff, Elder Rise',
+        levels: '9–16', xp: 1450,
+        items: ['Cloth Wrists — +3 Int', 'Leather Wrists — +3 Stam'],
+        rewards: '',
+        notes: ''
+      },
+      {
+        name: 'Hidden Enemies',
+        prequest: 'Hidden Enemies (Part 1)',
+        startNpc: 'Thrall', startLoc: 'Orgrimmar',
+        endNpc: 'Thrall', endLoc: 'Orgrimmar',
+        levels: '9–15', xp: 1150,
+        items: [],
+        rewards: '',
+        notes: 'Complete the full quest chain for best value'
+      },
+      {
+        name: 'Hidden Enemies (Part 1)',
+        prequest: '',
+        startNpc: 'Thrall', startLoc: 'Orgrimmar',
+        endNpc: 'Thrall', endLoc: 'Orgrimmar',
+        levels: '9–15', xp: 460,
+        items: [],
+        rewards: '2s 50c',
+        notes: ''
+      },
+      {
+        name: 'Slaying the Beast',
+        prequest: '',
+        startNpc: 'Neeru Fireblade', startLoc: 'Cleft of Shadow, Orgrimmar',
+        endNpc: 'Neeru Fireblade', endLoc: 'Cleft of Shadow, Orgrimmar',
+        levels: '9–16', xp: 1150,
+        items: [],
+        rewards: '',
+        notes: ''
+      },
+      {
+        name: 'The Power to Destroy',
+        prequest: '',
+        startNpc: 'Varimathras', startLoc: 'Undercity, Royal Quarter',
+        endNpc: 'Varimathras', endLoc: 'Undercity, Royal Quarter',
+        levels: '9–16', xp: 1450,
+        items: ['Cloth Legs — +2 Stam, +4 Int', 'Leather Legs — +2 Agi, Stam, Spirit', 'Mail Legs — +2 Str, Agi, Stam'],
+        rewards: '',
+        notes: ''
+      }
+    ]
+  },
+  {
+    id: 'deadmines', name: 'The Deadmines', abbr: 'DM', levels: '17–25', faction: 'Alliance',
+    icon: '⚓', location: 'Westfall',
+    quests: [
+      {
+        name: 'The Defias Brotherhood',
+        prequest: 'Messenger to Stormwind',
+        startNpc: 'Gryan Stoutmantle', startLoc: 'Westfall, Sentinel Hill',
+        endNpc: 'Gryan Stoutmantle', endLoc: 'Westfall, Sentinel Hill',
+        levels: '17–25', xp: 2550,
+        items: ['Smite\'s Reaver — 2H Axe', 'Corsair\'s Overshirt — Chest Leather', 'Blackened Defias Armor — Leather Chest'],
+        rewards: '',
+        notes: 'One of the best early leveling quests'
+      },
+      {
+        name: 'Messenger to Stormwind',
+        prequest: 'The Forgotten Heirloom',
+        startNpc: 'Gryan Stoutmantle', startLoc: 'Westfall, Sentinel Hill',
+        endNpc: 'Royal Historian Archesonus', endLoc: 'Stormwind',
+        levels: '14–18', xp: 775,
+        items: [],
+        rewards: '',
+        notes: 'Part of the long Defias chain — start early'
+      },
+      {
+        name: 'Oh Brother...',
+        prequest: '',
+        startNpc: 'Wilder Thistlenettle', startLoc: 'Stormwind Stockade',
+        endNpc: 'Wilder Thistlenettle', endLoc: 'Stormwind Stockade',
+        levels: '17–22', xp: 1650,
+        items: [],
+        rewards: '',
+        notes: 'Accept before entering the Deadmines'
+      },
+      {
+        name: 'Underground Assault',
+        prequest: '',
+        startNpc: 'Shoni the Shilent', startLoc: 'Stormwind, Dwarven District',
+        endNpc: 'Shoni the Shilent', endLoc: 'Stormwind, Dwarven District',
+        levels: '17–22', xp: 1650,
+        items: ['Lavishly Jeweled Ring', 'Shoni\'s Disintegrator — Gun'],
+        rewards: '',
+        notes: 'Gnome Engineering related'
+      }
+    ]
+  },
+  {
+    id: 'wc', name: 'Wailing Caverns', abbr: 'WC', levels: '17–24', faction: 'Horde',
+    icon: '🐍', location: 'The Barrens',
+    quests: [
+      {
+        name: 'Serpentbloom',
+        prequest: '',
+        startNpc: 'Apothecary Zamah', startLoc: 'Thunder Bluff, Pool of Vision',
+        endNpc: 'Apothecary Zamah', endLoc: 'Thunder Bluff, Pool of Vision',
+        levels: '15–21', xp: 1350,
+        items: [],
+        rewards: '15s',
+        notes: 'Collect 10 Serpentbloom flowers inside WC'
+      },
+      {
+        name: 'Trouble at the Docks',
+        prequest: '',
+        startNpc: 'Crane Operator Bigglefuzz', startLoc: 'Ratchet, The Barrens',
+        endNpc: 'Crane Operator Bigglefuzz', endLoc: 'Ratchet, The Barrens',
+        levels: '17–22', xp: 1550,
+        items: ['Toughened Leather Gloves', 'Well-Stitched Robe'],
+        rewards: '',
+        notes: ''
+      },
+      {
+        name: 'The Orb of Soran\'ruk',
+        prequest: '',
+        startNpc: 'Deathmaw', startLoc: 'Stonetalon Mountains, Spawned',
+        endNpc: 'Deathmaw', endLoc: 'Stonetalon Mountains',
+        levels: '17–24', xp: 1800,
+        items: [],
+        rewards: '20s',
+        notes: 'Drop from Greater Devouring Plague inside WC'
+      },
+      {
+        name: 'Leaders of the Fang',
+        prequest: '',
+        startNpc: 'Nara Wildmane', startLoc: 'Thunder Bluff, Elder Rise',
+        endNpc: 'Nara Wildmane', endLoc: 'Thunder Bluff, Elder Rise',
+        levels: '18–25', xp: 2550,
+        items: ['Belt of the Fang', 'Robes of the Fang', 'Footpads of the Fang', 'Gloves of the Fang'],
+        rewards: '',
+        notes: 'Kill all 4 Fang leaders inside WC'
+      }
+    ]
+  },
+  {
+    id: 'sfk', name: 'Shadowfang Keep', abbr: 'SFK', levels: '22–30', faction: 'Horde',
+    icon: '🐺', location: 'Silverpine Forest',
+    quests: [
+      {
+        name: 'Arugal Must Die',
+        prequest: '',
+        startNpc: 'High Executor Hadrec', startLoc: 'Silverpine Forest, The Sepulcher',
+        endNpc: 'High Executor Hadrec', endLoc: 'Silverpine Forest, The Sepulcher',
+        levels: '22–30', xp: 2300,
+        items: ['Silverlaine\'s Family Seal — Finger', 'Commander\'s Crest — Offhand Shield'],
+        rewards: '25s',
+        notes: 'Kill Archmage Arugal at the top of SFK'
+      },
+      {
+        name: 'The Book of Ur',
+        prequest: 'Ur\'s Treatise on Shadow Magic',
+        startNpc: 'Keeper Bel\'dugur', startLoc: 'Undercity, Apothecarium',
+        endNpc: 'Keeper Bel\'dugur', endLoc: 'Undercity, Apothecarium',
+        levels: '22–28', xp: 1750,
+        items: [],
+        rewards: '20s',
+        notes: 'Lore quest; very quick XP'
+      },
+      {
+        name: 'Deathstalkers in Shadowfang',
+        prequest: '',
+        startNpc: 'Vincent Hyal', startLoc: 'Silverpine Forest, The Sepulcher',
+        endNpc: 'Vincent Hyal', endLoc: 'Silverpine Forest',
+        levels: '20–26', xp: 1550,
+        items: [],
+        rewards: '',
+        notes: 'Rescue Deathstalkers inside SFK'
+      }
+    ]
+  },
+  {
+    id: 'stockades', name: 'Stormwind Stockade', abbr: 'Stocks', levels: '24–32', faction: 'Alliance',
+    icon: '⛓', location: 'Stormwind City',
+    quests: [
+      {
+        name: 'The Color of Blood',
+        prequest: '',
+        startNpc: 'Warden Thelwater', startLoc: 'Stormwind, The Stockade',
+        endNpc: 'Warden Thelwater', endLoc: 'Stormwind, The Stockade',
+        levels: '24–30', xp: 2200,
+        items: ['Basalt Ring of Might', 'Seal of Wrynn'],
+        rewards: '25s',
+        notes: 'Kill Bazil Thredd inside the Stockades'
+      },
+      {
+        name: 'Quell the Uprising',
+        prequest: '',
+        startNpc: 'Warden Thelwater', startLoc: 'Stormwind, The Stockade',
+        endNpc: 'Warden Thelwater', endLoc: 'Stormwind, The Stockade',
+        levels: '22–28', xp: 2050,
+        items: [],
+        rewards: '22s',
+        notes: 'Kill Hogger and other bosses'
+      },
+      {
+        name: 'Crime and Punishment',
+        prequest: '',
+        startNpc: 'Councilman Millstipe', startLoc: 'Darkshire',
+        endNpc: 'Councilman Millstipe', endLoc: 'Darkshire',
+        levels: '24–30', xp: 1900,
+        items: ['Councilman\'s Cloak', 'Darkshire Mail Leggings'],
+        rewards: '',
+        notes: 'Pick up in Darkshire before running'
+      }
+    ]
+  },
+  {
+    id: 'bfd', name: 'Blackfathom Deeps', abbr: 'BFD', levels: '24–32', faction: 'Both',
+    icon: '🌊', location: 'Ashenvale',
+    quests: [
+      {
+        name: 'Trouble in the Deep',
+        prequest: '',
+        startNpc: 'Tsunami', startLoc: 'Ashenvale, Zoram\'gar Outpost (Horde)',
+        endNpc: 'Tsunami', endLoc: 'Ashenvale, Zoram\'gar Outpost',
+        levels: '24–32', xp: 2300,
+        items: ['Belt of Arugal', 'Algae Fists', 'Moss Cinch'],
+        rewards: '',
+        notes: 'Horde only; great belt reward'
+      },
+      {
+        name: 'The Absent Minded Prospector',
+        prequest: 'Part of a long Archaeology-style chain',
+        startNpc: 'Prospector Remtravel', startLoc: 'Darkshore (Alliance)',
+        endNpc: 'Prospector Remtravel', endLoc: 'Darkshore',
+        levels: '24–28', xp: 1900,
+        items: [],
+        rewards: '20s',
+        notes: 'Alliance variant chain'
+      },
+      {
+        name: 'Knowledge in the Deeps',
+        prequest: '',
+        startNpc: 'Gerrig Bonegrip', startLoc: 'Ironforge, Mystic Ward',
+        endNpc: 'Gerrig Bonegrip', endLoc: 'Ironforge',
+        levels: '24–32', xp: 2200,
+        items: ['Gaze Dreamer Pants', 'Nimbus Boots'],
+        rewards: '',
+        notes: 'Alliance only'
+      },
+      {
+        name: 'Researching the Corruption',
+        prequest: '',
+        startNpc: 'Gershala Nightwhisper', startLoc: 'Ashenvale, Silverwing Grove (Alliance)',
+        endNpc: 'Gershala Nightwhisper', endLoc: 'Ashenvale',
+        levels: '22–28', xp: 1750,
+        items: [],
+        rewards: '18s',
+        notes: ''
+      }
+    ]
+  },
+  {
+    id: 'rfk', name: 'Razorfen Kraul', abbr: 'RFK', levels: '29–38', faction: 'Both',
+    icon: '🐗', location: 'The Barrens',
+    quests: [
+      {
+        name: 'Mortality Wanes',
+        prequest: '',
+        startNpc: 'Seer Graytongue', startLoc: 'Thousand Needles, Freewind Post',
+        endNpc: 'Seer Graytongue', endLoc: 'Thousand Needles',
+        levels: '29–36', xp: 2550,
+        items: [],
+        rewards: '30s',
+        notes: 'Easy XP — talk to an NPC inside'
+      },
+      {
+        name: 'Headhunting',
+        prequest: '',
+        startNpc: 'Sarkoth', startLoc: 'Outside RFK entrance',
+        endNpc: 'Sarkoth', endLoc: 'Outside RFK',
+        levels: '30–38', xp: 2800,
+        items: ['Tusken Helm', 'Swinetusk Shank — Dagger'],
+        rewards: '',
+        notes: 'Kill Charlga Razorflank'
+      },
+      {
+        name: 'A Vengeful Fate',
+        prequest: '',
+        startNpc: 'Falfindel Waywarder', startLoc: 'Thousand Needles, Freewind Post',
+        endNpc: 'Falfindel Waywarder', endLoc: 'Thousand Needles',
+        levels: '28–35', xp: 2200,
+        items: [],
+        rewards: '25s',
+        notes: 'Horde quest — collect items from RFK mobs'
+      }
+    ]
+  },
+  {
+    id: 'gnomer', name: 'Gnomeregan', abbr: 'Gnomer', levels: '29–38', faction: 'Alliance',
+    icon: '⚙️', location: 'Dun Morogh / Tanaris',
+    quests: [
+      {
+        name: 'Gnomer-Gone!',
+        prequest: 'A Fine Mess',
+        startNpc: 'Mekgineer Thermaplugg', startLoc: 'Inside Gnomeregan',
+        endNpc: 'High Tinker Mekkatorque', endLoc: 'Ironforge, High Seat',
+        levels: '29–38', xp: 3000,
+        items: ['Green Tinted Goggles', 'Mechanic\'s Pipehammer', 'Spidertank Oilrag — Ranged'],
+        rewards: '',
+        notes: 'Kill Thermaplugg for the quest reward'
+      },
+      {
+        name: 'A Fine Mess',
+        prequest: '',
+        startNpc: 'Kernobee', startLoc: 'Inside Gnomeregan',
+        endNpc: 'Scooty', endLoc: 'Booty Bay',
+        levels: '27–32', xp: 1700,
+        items: [],
+        rewards: '18s',
+        notes: 'Rescue Kernobee inside the dungeon'
+      },
+      {
+        name: 'Grime-Encrusted Ring',
+        prequest: '',
+        startNpc: 'Drop from Viscous Fallout', startLoc: 'Inside Gnomeregan',
+        endNpc: 'Talvash del Kissel', endLoc: 'Ironforge, Mystic Ward',
+        levels: '26–32', xp: 1450,
+        items: ['Talvash\'s Enhancing Necklace', 'Talvash\'s Gold Ring'],
+        rewards: '',
+        notes: 'Random drop quest'
+      }
+    ]
+  },
+  {
+    id: 'sm', name: 'Scarlet Monastery', abbr: 'SM', levels: '34–45', faction: 'Both',
+    icon: '⛪', location: 'Tirisfal Glades',
+    quests: [
+      {
+        name: 'Compendium of the Fallen',
+        prequest: '',
+        startNpc: 'Master Mathias Shaw', startLoc: 'Stormwind, SI:7 (Alliance)',
+        endNpc: 'Master Mathias Shaw', endLoc: 'Stormwind',
+        levels: '34–42', xp: 3000,
+        items: [],
+        rewards: '35s',
+        notes: 'Alliance only; collect book from SM Library'
+      },
+      {
+        name: 'Hearts of Zeal',
+        prequest: '',
+        startNpc: 'Master Apothecary Faranell', startLoc: 'Undercity, Apothecarium (Horde)',
+        endNpc: 'Master Apothecary Faranell', endLoc: 'Undercity',
+        levels: '32–40', xp: 3300,
+        items: [],
+        rewards: '35s',
+        notes: 'Horde only; collect 20 Hearts from Scarlet mobs'
+      },
+      {
+        name: 'In the Name of the Light',
+        prequest: '',
+        startNpc: 'Raleigh the Devout', startLoc: 'Southshore (Alliance)',
+        endNpc: 'Raleigh the Devout', endLoc: 'Southshore',
+        levels: '35–45', xp: 3600,
+        items: ['Raleigh\'s Helm of Faith', 'The Pacifier — Mace', 'Mograine\'s Might — 2H Sword'],
+        rewards: '',
+        notes: 'Kill Herod + Mograine + Whitemane'
+      },
+      {
+        name: 'Vorrel\'s Revenge',
+        prequest: '',
+        startNpc: 'Vorrel Sengutz', startLoc: 'Inside SM Prison',
+        endNpc: 'Vorrel Sengutz', endLoc: 'Inside SM Prison',
+        levels: '34–40', xp: 2750,
+        items: ['Headmaster\'s Charge — Staff', 'Whitemane\'s Chapeau'],
+        rewards: '',
+        notes: 'Pick up inside the dungeon'
+      },
+      {
+        name: 'Mythology of the Titans',
+        prequest: '',
+        startNpc: 'Librarian Mae Paledust', startLoc: 'Ironforge, Hall of Explorers (Alliance)',
+        endNpc: 'Librarian Mae Paledust', endLoc: 'Ironforge',
+        levels: '30–36', xp: 1550,
+        items: [],
+        rewards: '15s',
+        notes: 'Collect book from SM Library'
+      }
+    ]
+  },
+  {
+    id: 'rfd', name: 'Razorfen Downs', abbr: 'RFD', levels: '37–46', faction: 'Both',
+    icon: '💀', location: 'The Barrens',
+    quests: [
+      {
+        name: 'Bring the Light',
+        prequest: '',
+        startNpc: 'Mehlar Dawnblade', startLoc: 'Arathi Highlands (Horde)',
+        endNpc: 'Mehlar Dawnblade', endLoc: 'Arathi Highlands',
+        levels: '37–42', xp: 3300,
+        items: ['Sword of Omen', 'Paladin\'s Hammer', 'Azora\'s Will — Offhand'],
+        rewards: '',
+        notes: 'Kill Amnennar the Coldbringer'
+      },
+      {
+        name: 'A Host of Evil',
+        prequest: '',
+        startNpc: 'Tinkee Steamboil', startLoc: 'Felwood, Bloodvenom Post (Horde)',
+        endNpc: 'Tinkee Steamboil', endLoc: 'Felwood',
+        levels: '36–44', xp: 3100,
+        items: [],
+        rewards: '35s',
+        notes: ''
+      },
+      {
+        name: 'Extinguishing the Idol',
+        prequest: '',
+        startNpc: 'Tribal Elder Shigg', startLoc: 'Thousand Needles, Freewind Post',
+        endNpc: 'Tribal Elder Shigg', endLoc: 'Thousand Needles',
+        levels: '37–44', xp: 2800,
+        items: [],
+        rewards: '30s',
+        notes: 'Collect Idol of the Plaguebringer'
+      }
+    ]
+  },
+  {
+    id: 'uldaman', name: 'Uldaman', abbr: 'Ulda', levels: '41–51', faction: 'Both',
+    icon: '🪨', location: 'Badlands',
+    quests: [
+      {
+        name: 'The Platinum Discs',
+        prequest: 'The Discs of Norgannon',
+        startNpc: 'Dorin Songblade', startLoc: 'Uldaman',
+        endNpc: 'Remulos', endLoc: 'Moonglade',
+        levels: '41–51', xp: 5800,
+        items: [],
+        rewards: '55s',
+        notes: 'Long chain; very high XP payoff'
+      },
+      {
+        name: 'Solution to Doom',
+        prequest: '',
+        startNpc: 'Wilhelmina Brightwater', startLoc: 'Badlands',
+        endNpc: 'Wilhelmina Brightwater', endLoc: 'Badlands',
+        levels: '38–44', xp: 3400,
+        items: [],
+        rewards: '35s',
+        notes: 'Collect Dark Iron Artifact'
+      },
+      {
+        name: 'Reclaimed Treasures',
+        prequest: '',
+        startNpc: 'Krom Stoutarm', startLoc: 'Ironforge, Hall of Explorers (Alliance)',
+        endNpc: 'Krom Stoutarm', endLoc: 'Ironforge',
+        levels: '39–46', xp: 3200,
+        items: ['Lorekeeper\'s Ring', 'Prospector\'s Pads'],
+        rewards: '',
+        notes: 'Alliance only'
+      },
+      {
+        name: 'Agmond\'s Fate',
+        prequest: '',
+        startNpc: 'Theldurin the Lost', startLoc: 'Badlands',
+        endNpc: 'Theldurin the Lost', endLoc: 'Badlands',
+        levels: '37–43', xp: 2750,
+        items: [],
+        rewards: '',
+        notes: ''
+      }
+    ]
+  },
+  {
+    id: 'zf', name: 'Zul\'Farrak', abbr: 'ZF', levels: '44–54', faction: 'Both',
+    icon: '🏺', location: 'Tanaris',
+    quests: [
+      {
+        name: 'The Prophecy of Mosh\'aru',
+        prequest: '',
+        startNpc: 'Yeh\'kinya', startLoc: 'Tanaris, Steamwheedle Port',
+        endNpc: 'Yeh\'kinya', endLoc: 'Tanaris',
+        levels: '44–50', xp: 5000,
+        items: ['Jinxed Hoodoo Skin', 'Jinxed Hoodoo Kilt'],
+        rewards: '',
+        notes: 'Collect 2 tablets from ZF bosses'
+      },
+      {
+        name: 'Gahz\'rilla',
+        prequest: 'At First, Glyphs (obtain Mallet of Zul\'Farrak)',
+        startNpc: 'Wizzle Brassbolts', startLoc: 'Shimmering Flats, Thousand Needles',
+        endNpc: 'Wizzle Brassbolts', endLoc: 'Shimmering Flats',
+        levels: '44–54', xp: 5800,
+        items: ['Gahz\'rilla Scale Armor', 'Gahz\'rilla Fang — 1H Sword'],
+        rewards: '',
+        notes: 'Requires Mallet of Zul\'Farrak to summon Gahz\'rilla'
+      },
+      {
+        name: 'The Spider God',
+        prequest: '',
+        startNpc: 'Witch Doctor Zum\'rah', startLoc: 'Inside ZF',
+        endNpc: 'Witch Doctor Zum\'rah', endLoc: 'Inside ZF',
+        levels: '44–51', xp: 4600,
+        items: [],
+        rewards: '45s',
+        notes: 'In-dungeon quest'
+      },
+      {
+        name: 'Troll Temper',
+        prequest: '',
+        startNpc: 'Trenton Lighthammer', startLoc: 'Tanaris, Gadgetzan',
+        endNpc: 'Trenton Lighthammer', endLoc: 'Gadgetzan',
+        levels: '45–52', xp: 5200,
+        items: ['Sang\'thraze the Deflector — 1H Sword', 'Jang\'thraze the Protector — 1H Sword', 'Combine into Sul\'thraze the Lasher — 2H Sword'],
+        rewards: '',
+        notes: 'Combine swords for a legendary weapon!'
+      }
+    ]
+  },
+  {
+    id: 'mara', name: 'Maraudon', abbr: 'Mara', levels: '46–55', faction: 'Both',
+    icon: '🌿', location: 'Desolace',
+    quests: [
+      {
+        name: 'Legends of Maraudon',
+        prequest: '',
+        startNpc: 'Cavindra', startLoc: 'Desolace, Nijel\'s Point (Alliance)',
+        endNpc: 'Cavindra', endLoc: 'Desolace',
+        levels: '44–50', xp: 4600,
+        items: [],
+        rewards: '45s',
+        notes: 'Talk to NPCs inside Maraudon'
+      },
+      {
+        name: 'The Scepter of Celebras',
+        prequest: 'Legends of Maraudon',
+        startNpc: 'Celebras the Cursed', startLoc: 'Inside Maraudon',
+        endNpc: 'Celebras the Redeemed', endLoc: 'Inside Maraudon',
+        levels: '46–55', xp: 5400,
+        items: ['Scepter of Celebras — Staff shortcut teleport'],
+        rewards: '',
+        notes: 'Creates the scepter to teleport in Mara!'
+      },
+      {
+        name: 'Corruption of Earth and Seed',
+        prequest: '',
+        startNpc: 'Keeper Marandis', startLoc: 'Desolace, Nijel\'s Point',
+        endNpc: 'Keeper Marandis', endLoc: 'Desolace',
+        levels: '46–53', xp: 5000,
+        items: ['Ferocious Sting — Dagger', 'Princess Theradras\' Scepter'],
+        rewards: '',
+        notes: 'Kill Princess Theradras (final boss)'
+      }
+    ]
+  },
+  {
+    id: 'st', name: 'Sunken Temple', abbr: 'ST', levels: '50–60', faction: 'Both',
+    icon: '🐉', location: 'Swamp of Sorrows',
+    quests: [
+      {
+        name: 'The God Hakkar',
+        prequest: '',
+        startNpc: 'Brann Bronzebeard (scroll found)', startLoc: 'Swamp of Sorrows, Temple area',
+        endNpc: 'Marvon Rivetseeker', endLoc: 'Tanaris, Steamwheedle Port',
+        levels: '48–55', xp: 6600,
+        items: [],
+        rewards: '60s',
+        notes: 'Long chain involving the emerald tablets'
+      },
+      {
+        name: 'Jammal\'an the Prophet',
+        prequest: '',
+        startNpc: 'Fel\'zerul', startLoc: 'Swamp of Sorrows (Horde)',
+        endNpc: 'Fel\'zerul', endLoc: 'Swamp of Sorrows',
+        levels: '50–57', xp: 7200,
+        items: ['Blade of the New Moon', 'Sash of Mercy', 'Windshear Cape'],
+        rewards: '',
+        notes: 'Horde version; kill Jammal\'an inside ST'
+      },
+      {
+        name: 'The Essence of Eranikus',
+        prequest: '',
+        startNpc: 'Hadronox (drops)', startLoc: 'Inside Sunken Temple',
+        endNpc: 'Remulos', endLoc: 'Moonglade',
+        levels: '50–60', xp: 8100,
+        items: ['Ring of Infinite Wisdom', 'Ring of Eternal Justice', 'Band of Vigor'],
+        rewards: '',
+        notes: 'Class-specific ring reward — fantastic item'
+      },
+      {
+        name: 'Into the Temple of Atal\'Hakkar',
+        prequest: '',
+        startNpc: 'Krazek', startLoc: 'Booty Bay',
+        endNpc: 'Krazek', endLoc: 'Booty Bay',
+        levels: '48–54', xp: 5800,
+        items: [],
+        rewards: '55s',
+        notes: 'Kill all 6 Atal\'ai Guardians'
+      }
+    ]
+  },
+  {
+    id: 'brd', name: 'Blackrock Depths', abbr: 'BRD', levels: '52–60', faction: 'Both',
+    icon: '🌋', location: 'Blackrock Mountain',
+    quests: [
+      {
+        name: 'The Princess Saved?',
+        prequest: '',
+        startNpc: 'Marshal Windsor', startLoc: 'Burning Steppes (after chain)',
+        endNpc: 'King Magni Bronzebeard', endLoc: 'Ironforge',
+        levels: '55–60', xp: 8800,
+        items: [],
+        rewards: '1g 10s + Famous Signet',
+        notes: 'One of the most epic questlines in the game'
+      },
+      {
+        name: 'Attunement to the Core',
+        prequest: '',
+        startNpc: 'Lothos Riftwaker', startLoc: 'Blackrock Mountain',
+        endNpc: 'Lothos Riftwaker', endLoc: 'Blackrock Mountain',
+        levels: '55–60', xp: 6600,
+        items: [],
+        rewards: 'Molten Core Attunement',
+        notes: 'REQUIRED for Molten Core! Do this ASAP'
+      },
+      {
+        name: 'The Spy Who Loved Me',
+        prequest: '',
+        startNpc: 'Major Mattingly', startLoc: 'Burning Steppes, Morgan\'s Vigil',
+        endNpc: 'Major Mattingly', endLoc: 'Burning Steppes',
+        levels: '52–58', xp: 6200,
+        items: [],
+        rewards: '65s',
+        notes: 'Rescue Marshal Windsor inside BRD'
+      },
+      {
+        name: 'Dark Iron Legacy',
+        prequest: '',
+        startNpc: 'Franclorn Forgewright\'s Tomb', startLoc: 'Inside BRD',
+        endNpc: 'Franclorn Forgewright\'s Tomb', endLoc: 'Inside BRD',
+        levels: '52–60', xp: 7200,
+        items: ['Ironfoe — 1H Mace (chance to proc extra attacks)'],
+        rewards: '',
+        notes: 'Ironfoe is a famous warrior BiS weapon'
+      }
+    ]
+  },
+  {
+    id: 'lbrs', name: 'Lower Blackrock Spire', abbr: 'LBRS', levels: '55–60', faction: 'Both',
+    icon: '🔥', location: 'Blackrock Mountain',
+    quests: [
+      {
+        name: 'Operative Bijou',
+        prequest: '',
+        startNpc: 'Ragged John', startLoc: 'Burning Steppes, Flame Crest (Horde)',
+        endNpc: 'Ragged John', endLoc: 'Flame Crest',
+        levels: '55–60', xp: 7800,
+        items: [],
+        rewards: 'Argent Dawn / Horde Expedition Rep',
+        notes: 'Repeatable for Hydraxian Waterlords Rep'
+      },
+      {
+        name: 'Oculus Illusions',
+        prequest: '',
+        startNpc: 'Bodley', startLoc: 'Inside LBRS (ghost)',
+        endNpc: 'Bodley', endLoc: 'Inside LBRS',
+        levels: '55–60', xp: 7200,
+        items: [],
+        rewards: '75s',
+        notes: 'Multi-part chain starting with a ghost'
+      },
+      {
+        name: 'For The Horde!',
+        prequest: '',
+        startNpc: 'Thrall', startLoc: 'Orgrimmar (Horde)',
+        endNpc: 'Thrall', endLoc: 'Orgrimmar',
+        levels: '58–60', xp: 9800,
+        items: ['Warchief\'s Blessing — Head Enchant'],
+        rewards: '1g 20s',
+        notes: 'Horde only; kill Overlord Wyrmthalak'
+      }
+    ]
+  },
+  {
+    id: 'ubrs', name: 'Upper Blackrock Spire', abbr: 'UBRS', levels: '57–60', faction: 'Both',
+    icon: '👑', location: 'Blackrock Mountain',
+    quests: [
+      {
+        name: 'General Drakkisath\'s Demise',
+        prequest: 'Warlord\'s Command (Horde) / Maxwell\'s Mission (Alliance)',
+        startNpc: 'Warchief Thrall / King Magni', startLoc: 'Orgrimmar / Ironforge',
+        endNpc: 'Warchief Thrall / King Magni', endLoc: 'Orgrimmar / Ironforge',
+        levels: '58–60', xp: 11200,
+        items: [],
+        rewards: '1g 50s + Onyxia Attunement',
+        notes: 'Required for Onyxia attunemant!'
+      },
+      {
+        name: 'Kibler\'s Exotic Pets',
+        prequest: '',
+        startNpc: 'Kibler', startLoc: 'Burning Steppes, Flame Crest',
+        endNpc: 'Kibler', endLoc: 'Flame Crest',
+        levels: '57–60', xp: 7200,
+        items: ['Smolderweb Egg — Pet', 'Worg Pup — Pet'],
+        rewards: '',
+        notes: 'Get cute pets!'
+      }
+    ]
+  },
+  {
+    id: 'scholo', name: 'Scholomance', abbr: 'Scholo', levels: '58–60', faction: 'Both',
+    icon: '💀', location: 'Western Plaguelands',
+    quests: [
+      {
+        name: 'Krastinov\'s Bag of Horrors',
+        prequest: '',
+        startNpc: 'Apothecary Dithers', startLoc: 'Undercity (Horde)',
+        endNpc: 'Apothecary Dithers', endLoc: 'Undercity',
+        levels: '56–60', xp: 8200,
+        items: [],
+        rewards: '80s + Argent Dawn Rep',
+        notes: 'Horde only; repeatable with reset'
+      },
+      {
+        name: 'Doctor Theolen Krastinov, the Butcher',
+        prequest: '',
+        startNpc: 'Magistrate Marduke', startLoc: 'Western Plaguelands, Caer Darrow',
+        endNpc: 'Magistrate Marduke', endLoc: 'Caer Darrow',
+        levels: '57–60', xp: 8800,
+        items: ['Dark Blessing — Ring', 'Devout Amulet'],
+        rewards: '',
+        notes: 'Kill Krastinov inside Scholomance'
+      },
+      {
+        name: 'Plagued Hatchlings',
+        prequest: '',
+        startNpc: 'Betina Bigglezink', startLoc: 'Western Plaguelands, Light\'s Hope Chapel',
+        endNpc: 'Betina Bigglezink', endLoc: 'Light\'s Hope Chapel',
+        levels: '56–60', xp: 7800,
+        items: [],
+        rewards: 'Argent Dawn Rep',
+        notes: 'Kill plagued whelps for hatching eggs'
+      }
+    ]
+  },
+  {
+    id: 'strath', name: 'Stratholme', abbr: 'Strath', levels: '58–60', faction: 'Both',
+    icon: '🔥', location: 'Eastern Plaguelands',
+    quests: [
+      {
+        name: 'In Dreams',
+        prequest: 'Long Paladin class chain',
+        startNpc: 'Crusader Bridenbrad', startLoc: 'Eastern Plaguelands',
+        endNpc: 'Crusader Bridenbrad', endLoc: 'Eastern Plaguelands',
+        levels: '58–60', xp: 11400,
+        items: ['Blessings of the Silver Hand — Trinket'],
+        rewards: '',
+        notes: 'PALADIN ONLY — one of the most memorable chains'
+      },
+      {
+        name: 'The Active Agent',
+        prequest: '',
+        startNpc: 'Kel\'Thuzad (via chain)', startLoc: 'Light\'s Hope Chapel',
+        endNpc: 'Archmage Angela Dosantos', endLoc: 'Light\'s Hope Chapel',
+        levels: '58–60', xp: 9200,
+        items: [],
+        rewards: '90s + Argent Dawn Rep',
+        notes: 'Part of the epic Light\'s Hope chain'
+      },
+      {
+        name: 'The Archivist',
+        prequest: '',
+        startNpc: 'Archivist Galford', startLoc: 'Inside Stratholme (drops)',
+        endNpc: 'Archmage Angela Dosantos', endLoc: 'Light\'s Hope Chapel',
+        levels: '57–60', xp: 8400,
+        items: ['Tome of Knowledge — Trinket', 'Haunting Phantasm'],
+        rewards: '',
+        notes: 'In-dungeon quest start'
+      }
+    ]
+  },
+  {
+    id: 'dm', name: 'Dire Maul', abbr: 'DM', levels: '58–60', faction: 'Both',
+    icon: '🌳', location: 'Feralas',
+    quests: [
+      {
+        name: 'The Treasure of the Shen\'dralar',
+        prequest: '',
+        startNpc: 'Lorekeeper Lydros', startLoc: 'Inside Dire Maul (Library)',
+        endNpc: 'Lorekeeper Lydros', endLoc: 'Dire Maul Library',
+        levels: '58–60', xp: 9800,
+        items: [],
+        rewards: 'Shen\'dralar Rep',
+        notes: 'Restore the library for major rep'
+      },
+      {
+        name: 'A Reliquary of Purity',
+        prequest: '',
+        startNpc: 'Lorekeeper Mykos', startLoc: 'Dire Maul Library',
+        endNpc: 'Lorekeeper Mykos', endLoc: 'Dire Maul Library',
+        levels: '58–60', xp: 9200,
+        items: ['Foror\'s Compendium of Dragon Slaying — rare drop'],
+        rewards: '',
+        notes: 'Rare book drop that starts Onyxia quest line component'
+      },
+      {
+        name: 'Elven Legends',
+        prequest: '',
+        startNpc: 'Shen\'dralar Ancient', startLoc: 'Dire Maul West',
+        endNpc: 'Shen\'dralar Ancient', endLoc: 'Dire Maul West',
+        levels: '57–60', xp: 8800,
+        items: [],
+        rewards: 'Shen\'dralar Rep + 85s',
+        notes: 'Kill Tendris Warpwood or Hydrospawn'
+      }
+    ]
+  }
+];
+
+// ═══════════════════════════════════════
+//  STATE
+// ═══════════════════════════════════════
+let currentDungeonId = 'rfc';
+let currentFilter = 'all';
+let currentView = 'grid';
+let searchQuery = '';
+let completed = JSON.parse(localStorage.getItem('wow_completed') || '{}');
+let locationFilter = null;
+
+// ═══════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════
+function init() {
+  buildDungeonTabs();
+  buildFilterBtns();
+  bindControls();
+  selectDungeon('rfc');
+}
+
+// ═══════════════════════════════════════
+//  BUILD TABS
+// ═══════════════════════════════════════
+function buildDungeonTabs() {
+  const nav = document.getElementById('dungeonTabs');
+  DUNGEONS.forEach(d => {
+    const tab = document.createElement('div');
+    tab.className = 'dungeon-tab' + (d.id === currentDungeonId ? ' active' : '');
+    tab.dataset.id = d.id;
+    tab.innerHTML = `${d.icon} ${d.abbr}<span class="tab-level">${d.levels}</span>`;
+    tab.addEventListener('click', () => selectDungeon(d.id));
+    nav.appendChild(tab);
+  });
+}
+
+// ═══════════════════════════════════════
+//  SELECT DUNGEON
+// ═══════════════════════════════════════
+function selectDungeon(id) {
+  currentDungeonId = id;
+  locationFilter = null;
+  document.querySelectorAll('.dungeon-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.id === id);
+  });
+  const dungeon = DUNGEONS.find(d => d.id === id);
+  if (!dungeon) return;
+  renderDungeonHeader(dungeon);
+  renderSidebar(dungeon);
+  renderQuests();
+}
+
+// ═══════════════════════════════════════
+//  DUNGEON HEADER
+// ═══════════════════════════════════════
+function renderDungeonHeader(dungeon) {
+  document.getElementById('dungeonHeaderIcon').textContent = dungeon.icon;
+  document.getElementById('dungeonHeaderName').textContent = dungeon.name;
+  const completedCount = dungeon.quests.filter(q => completed[dungeon.id + '::' + q.name]).length;
+  document.getElementById('dungeonHeaderMeta').innerHTML = `
+    <span class="dungeon-meta-item">LEVELS<strong>${dungeon.levels}</strong></span>
+    <span class="dungeon-meta-item">FACTION<strong>${dungeon.faction}</strong></span>
+    <span class="dungeon-meta-item">LOCATION<strong>${dungeon.location}</strong></span>
+    <span class="dungeon-meta-item">QUESTS<strong>${dungeon.quests.length}</strong></span>
+  `;
+  const pct = dungeon.quests.length ? (completedCount / dungeon.quests.length * 100) : 0;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressFraction').textContent = `${completedCount} / ${dungeon.quests.length}`;
+  renderStatsBar(dungeon);
+}
+
+// ═══════════════════════════════════════
+//  STATS BAR
+// ═══════════════════════════════════════
+function renderStatsBar(dungeon) {
+  const totalXP = dungeon.quests.reduce((s, q) => s + (q.xp || 0), 0);
+  const questsWithItems = dungeon.quests.filter(q => q.items.length > 0).length;
+  const questsWithRewards = dungeon.quests.filter(q => q.rewards).length;
+  const completedCount = dungeon.quests.filter(q => completed[dungeon.id + '::' + q.name]).length;
+  document.getElementById('statsBar').innerHTML = `
+    <div class="stat-item">
+      <div class="stat-num">${dungeon.quests.length}</div>
+      <div class="stat-label">Total Quests</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num" style="color:#84d4a0">${totalXP.toLocaleString()}</div>
+      <div class="stat-label">Total XP</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num" style="color:#c8a0d4">${questsWithItems}</div>
+      <div class="stat-label">Gear Rewards</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num" style="color:var(--green-uncommon)">${questsWithRewards}</div>
+      <div class="stat-label">Other Rewards</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num" style="color:var(--gold)">${completedCount}</div>
+      <div class="stat-label">Completed</div>
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════
+//  SIDEBAR
+// ═══════════════════════════════════════
+function renderSidebar(dungeon) {
+  // Locations
+  const locs = [...new Set(dungeon.quests.map(q => q.startLoc.split(',')[0].trim()))];
+  const locList = document.getElementById('locationList');
+  locList.innerHTML = '';
+  locs.forEach(loc => {
+    const count = dungeon.quests.filter(q => q.startLoc.startsWith(loc)).length;
+    const item = document.createElement('div');
+    item.className = 'sidebar-item' + (locationFilter === loc ? ' active' : '');
+    item.innerHTML = `<span>${loc}</span><span class="sidebar-item-count">${count}</span>`;
+    item.addEventListener('click', () => {
+      locationFilter = locationFilter === loc ? null : loc;
+      renderSidebar(dungeon);
+      renderQuests();
+    });
+    locList.appendChild(item);
+  });
+
+  // Prequests
+  const pqs = dungeon.quests.filter(q => q.prequest);
+  const pqList = document.getElementById('prequestList');
+  pqList.innerHTML = '';
+  if (pqs.length === 0) {
+    pqList.innerHTML = '<div class="sidebar-item" style="font-style:italic;color:var(--text-dim);font-size:0.78rem">None for this dungeon</div>';
+  } else {
+    pqs.forEach(q => {
+      const item = document.createElement('div');
+      item.className = 'sidebar-item';
+      item.innerHTML = `<span style="font-size:0.78rem;color:var(--text-main)">${q.name}</span>`;
+      item.title = `Requires: ${q.prequest}`;
+      pqList.appendChild(item);
+    });
+  }
+}
+
+// ═══════════════════════════════════════
+//  RENDER QUESTS
+// ═══════════════════════════════════════
+function renderQuests() {
+  const dungeon = DUNGEONS.find(d => d.id === currentDungeonId);
+  if (!dungeon) return;
+  const container = document.getElementById('quest-container');
+  container.className = currentView === 'grid' ? 'grid-view' : 'list-view';
+
+  let quests = dungeon.quests.filter(q => {
+    const key = dungeon.id + '::' + q.name;
+    const isComplete = !!completed[key];
+    if (currentFilter === 'has-items') return q.items.length > 0;
+    if (currentFilter === 'has-rewards') return !!q.rewards;
+    if (currentFilter === 'completed') return isComplete;
+    if (currentFilter === 'incomplete') return !isComplete;
+    return true;
+  });
+
+  if (locationFilter) {
+    quests = quests.filter(q => q.startLoc.startsWith(locationFilter));
+  }
+
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    quests = quests.filter(quest =>
+      quest.name.toLowerCase().includes(q) ||
+      quest.startNpc.toLowerCase().includes(q) ||
+      quest.endNpc.toLowerCase().includes(q) ||
+      quest.startLoc.toLowerCase().includes(q) ||
+      quest.endLoc.toLowerCase().includes(q) ||
+      quest.items.some(i => i.toLowerCase().includes(q)) ||
+      quest.notes.toLowerCase().includes(q)
+    );
+  }
+
+  document.getElementById('visibleCount').textContent = quests.length;
+  container.innerHTML = '';
+
+  if (quests.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-state-icon">📜</div>
+        <div class="empty-state-text">NO QUESTS FOUND</div>
+        <div style="margin-top:8px;font-size:0.78rem;color:var(--text-dim)">Adjust your search or filters</div>
+      </div>`;
+    return;
+  }
+
+  quests.forEach(quest => {
+    const key = dungeon.id + '::' + quest.name;
+    const isComplete = !!completed[key];
+    const card = document.createElement('div');
+    card.className = 'quest-card' + (isComplete ? ' completed' : '');
+
+    const itemsHtml = quest.items.length
+      ? `<div class="quest-row"><span class="quest-label">Items</span><span class="quest-value items">${quest.items.join('<br>')}</span></div>`
+      : '';
+    const rewardHtml = quest.rewards
+      ? `<div class="quest-row"><span class="quest-label">Reward</span><span class="quest-value reward">${quest.rewards}</span></div>`
+      : '';
+    const prequestHtml = quest.prequest
+      ? `<div class="quest-row"><span class="quest-label">Req.</span><span class="quest-value prequest">${quest.prequest}</span></div>`
+      : '';
+    const notesHtml = quest.notes
+      ? `<div class="quest-row"><span class="quest-label">Note</span><span class="quest-value note">${quest.notes}</span></div>`
+      : '';
+
+    card.innerHTML = `
+      <div class="quest-card-header">
+        <div class="quest-checkbox">${isComplete ? '✓' : ''}</div>
+        <div class="quest-name">${quest.name}</div>
+        ${quest.levels ? `<div class="quest-level-badge">Lv ${quest.levels}</div>` : ''}
+      </div>
+      <div class="quest-card-body">
+        <div class="quest-row">
+          <span class="quest-label">Start</span>
+          <span class="quest-value">${quest.startNpc} <span class="location">— ${quest.startLoc}</span></span>
+        </div>
+        ${quest.endNpc !== quest.startNpc ? `
+        <div class="quest-row">
+          <span class="quest-label">Turn in</span>
+          <span class="quest-value">${quest.endNpc} <span class="location">— ${quest.endLoc}</span></span>
+        </div>` : ''}
+        ${prequestHtml}
+        ${itemsHtml}
+        ${rewardHtml}
+        ${notesHtml}
+      </div>
+      <div class="quest-card-footer">
+        ${quest.xp ? `<div class="xp-pill">⭐ ${quest.xp.toLocaleString()} XP</div>` : ''}
+        ${quest.rewards ? `<div class="reward-pill">🎁 ${quest.rewards}</div>` : ''}
+        <button class="complete-btn" data-key="${key}">${isComplete ? '↩ Undo' : '✓ Complete'}</button>
+      </div>
+    `;
+
+    // Toggle expand in list view
+    card.addEventListener('click', (e) => {
+      if (e.target.classList.contains('complete-btn')) return;
+      if (currentView === 'list') card.classList.toggle('expanded');
+    });
+
+    // Complete button
+    const btn = card.querySelector('.complete-btn');
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      completed[key] = !completed[key];
+      if (!completed[key]) delete completed[key];
+      localStorage.setItem('wow_completed', JSON.stringify(completed));
+      renderDungeonHeader(dungeon);
+      renderQuests();
+    });
+
+    container.appendChild(card);
+  });
+}
+
+// ═══════════════════════════════════════
+//  CONTROLS
+// ═══════════════════════════════════════
+function buildFilterBtns() {}
+
+function bindControls() {
+  document.getElementById('searchInput').addEventListener('input', (e) => {
+    searchQuery = e.target.value.trim();
+    renderQuests();
+  });
+
+  document.getElementById('filterGroup').addEventListener('click', (e) => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    currentFilter = btn.dataset.filter;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderQuests();
+  });
+
+  document.getElementById('gridViewBtn').addEventListener('click', () => {
+    currentView = 'grid';
+    document.getElementById('gridViewBtn').classList.add('active');
+    document.getElementById('listViewBtn').classList.remove('active');
+    renderQuests();
+  });
+
+  document.getElementById('listViewBtn').addEventListener('click', () => {
+    currentView = 'list';
+    document.getElementById('listViewBtn').classList.add('active');
+    document.getElementById('gridViewBtn').classList.remove('active');
+    renderQuests();
+  });
+}
+
+init();
+</script>
+</body>
+</html>
