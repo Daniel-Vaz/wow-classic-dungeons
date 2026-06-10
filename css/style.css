@@ -155,6 +155,7 @@ body::before {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .filter-btn {
   padding: 6px 14px;
@@ -251,6 +252,7 @@ body::before {
 .dungeon-header {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 24px;
   padding: 20px 24px;
@@ -310,6 +312,19 @@ body::before {
   border: 1px solid var(--border);
   border-radius: 2px;
   overflow: hidden;
+}
+
+@media (max-width: 560px) {
+  .dungeon-progress {
+    width: 100%;
+    align-items: flex-start;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+  }
+  .progress-bar-wrap {
+    width: 100%;
+  }
 }
 .progress-bar-fill {
   height: 100%;
@@ -546,6 +561,7 @@ body::before {
 .faction-group {
   display: flex;
   gap: 6px;
+  justify-content: center;
 }
 .faction-btn {
   padding: 6px 14px;
@@ -570,17 +586,43 @@ body::before {
   color: var(--gold-light);
   box-shadow: 0 0 8px rgba(200,168,75,0.15);
 }
-.faction-btn-alliance.active {
+
+/* Alliance */
+.faction-btn-alliance {
+  color: #5a8aaa;
+  border-color: rgba(68, 136, 204, 0.3);
+  background: rgba(68, 136, 204, 0.05);
+}
+.faction-btn-alliance:hover {
   color: #7ab4e0;
   border-color: #4488cc;
-  background: rgba(68,136,204,0.12);
-  box-shadow: 0 0 8px rgba(68,136,204,0.2);
+  background: rgba(68, 136, 204, 0.12);
+  box-shadow: 0 0 8px rgba(68, 136, 204, 0.2);
 }
-.faction-btn-horde.active {
+.faction-btn-alliance.active {
+  color: #a8d0f0;
+  border-color: #4488cc;
+  background: linear-gradient(135deg, rgba(68,136,204,0.22), rgba(40,80,140,0.14));
+  box-shadow: 0 0 12px rgba(68,136,204,0.3), inset 0 0 12px rgba(68,136,204,0.06);
+}
+
+/* Horde */
+.faction-btn-horde {
+  color: #aa5a5a;
+  border-color: rgba(204, 68, 68, 0.3);
+  background: rgba(204, 68, 68, 0.05);
+}
+.faction-btn-horde:hover {
   color: #e07a7a;
   border-color: #cc4444;
-  background: rgba(204,68,68,0.12);
-  box-shadow: 0 0 8px rgba(204,68,68,0.2);
+  background: rgba(204, 68, 68, 0.12);
+  box-shadow: 0 0 8px rgba(204, 68, 68, 0.2);
+}
+.faction-btn-horde.active {
+  color: #f0a8a8;
+  border-color: #cc4444;
+  background: linear-gradient(135deg, rgba(204,68,68,0.22), rgba(140,40,40,0.14));
+  box-shadow: 0 0 12px rgba(204,68,68,0.3), inset 0 0 12px rgba(204,68,68,0.06);
 }
 .dungeon-tab.faction-dimmed {
   opacity: 0.25;
@@ -980,5 +1022,9 @@ body::before {
 @media (max-width: 600px) {
   #quest-container.grid-view {
     grid-template-columns: 1fr;
+  }
+  .filter-group,
+  .faction-group {
+    width: 100%;
   }
 }
