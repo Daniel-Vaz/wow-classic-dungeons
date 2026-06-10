@@ -542,6 +542,51 @@ body::before {
   flex-shrink: 0;
 }
 
+/* ── FACTION FILTER BUTTONS ── */
+.faction-group {
+  display: flex;
+  gap: 6px;
+}
+.faction-btn {
+  padding: 6px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  color: var(--text-dim);
+}
+.faction-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+.faction-btn.active {
+  background: linear-gradient(135deg, #2a2010, #1a1508);
+  border-color: var(--gold);
+  color: var(--gold-light);
+  box-shadow: 0 0 8px rgba(200,168,75,0.15);
+}
+.faction-btn-alliance.active {
+  color: #7ab4e0;
+  border-color: #4488cc;
+  background: rgba(68,136,204,0.12);
+  box-shadow: 0 0 8px rgba(68,136,204,0.2);
+}
+.faction-btn-horde.active {
+  color: #e07a7a;
+  border-color: #cc4444;
+  background: rgba(204,68,68,0.12);
+  box-shadow: 0 0 8px rgba(204,68,68,0.2);
+}
+.dungeon-tab.faction-dimmed {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
 /* ── FACTION BADGE ── */
 .faction-badge {
   font-family: 'Cinzel', serif;

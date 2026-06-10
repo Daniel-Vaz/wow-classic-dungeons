@@ -7,6 +7,7 @@ let currentView = 'grid';
 let searchQuery = '';
 let completed = JSON.parse(localStorage.getItem('wow_completed') || '{}');
 let locationFilter = null;
+let factionFilter = null;
 
 // ═══════════════════════════════════════
 //  DATA NORMALISATION
@@ -221,6 +222,10 @@ function renderQuests() {
 
   if (locationFilter) {
     quests = quests.filter(q => (q.startLoc || '').startsWith(locationFilter));
+  }
+
+  if (factionFilter) {
+    quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
   }
 
   if (searchQuery) {
@@ -561,6 +566,23 @@ function initSidebarCollapse() {
 
 function buildFilterBtns() {}
 
+function updateDungeonTabsVisibility() {
+  document.querySelectorAll('.dungeon-tab').forEach(tab => {
+    const dungeon = DUNGEONS.find(d => d.id === tab.dataset.id);
+    if (!dungeon) return;
+    const compatible = !factionFilter || dungeon.faction === factionFilter || dungeon.faction === 'Both';
+    tab.classList.toggle('faction-dimmed', !compatible);
+  });
+
+  if (factionFilter) {
+    const cur = DUNGEONS.find(d => d.id === currentDungeonId);
+    if (cur && cur.faction !== factionFilter && cur.faction !== 'Both') {
+      const first = DUNGEONS.find(d => d.faction === factionFilter || d.faction === 'Both');
+      if (first) selectDungeon(first.id);
+    }
+  }
+}
+
 function bindControls() {
   document.getElementById('searchInput').addEventListener('input', e => {
     searchQuery = e.target.value.trim();
@@ -573,6 +595,17 @@ function bindControls() {
     currentFilter = btn.dataset.filter;
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    renderQuests();
+  });
+
+  document.getElementById('factionGroup').addEventListener('click', e => {
+    const btn = e.target.closest('.faction-btn');
+    if (!btn) return;
+    const f = btn.dataset.faction;
+    factionFilter = f === 'all' ? null : f;
+    document.querySelectorAll('.faction-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    updateDungeonTabsVisibility();
     renderQuests();
   });
 
