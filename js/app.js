@@ -1,4 +1,233 @@
 // ═══════════════════════════════════════
+//  BOSS ENCOUNTERS
+//  Each entry: { name, npcId } | { name, npcId, rare: true } | { section } | { name, npcId: null } for events
+// ═══════════════════════════════════════
+const BOSS_ENCOUNTERS = {
+  rfc: [
+    { name: 'Oggleflint', npcId: 11517 },
+    { name: 'Taragaman the Hungerer', npcId: 11520 },
+    { name: 'Jergosh the Invoker', npcId: 11518 },
+    { name: 'Bazzalan', npcId: 11519 },
+  ],
+  wc: [
+    { name: 'Lady Anacondra', npcId: 3671 },
+    { name: 'Lord Cobrahn', npcId: 3669 },
+    { name: 'Lord Pythas', npcId: 3670 },
+    { name: 'Lord Serpentis', npcId: 3673 },
+    { name: 'Verdan the Everliving', npcId: 5775 },
+    { name: 'Mutanus the Devourer', npcId: 3654 },
+  ],
+  deadmines: [
+    { name: "Rhahk'Zor", npcId: 644 },
+    { name: 'Miner Johnson', npcId: 3586, rare: true },
+    { name: "Sneed's Shredder", npcId: 643 },
+    { name: 'Gilnid', npcId: 1118 },
+    { name: 'Mr. Smite', npcId: 646 },
+    { name: 'Cookie', npcId: 645 },
+    { name: 'Edwin VanCleef', npcId: 639 },
+  ],
+  sfk: [
+    { name: 'Rethilgore', npcId: 3886 },
+    { name: 'Razorclaw the Butcher', npcId: 3887 },
+    { name: 'Baron Silverlaine', npcId: 3888 },
+    { name: 'Commander Springvale', npcId: 4278 },
+    { name: 'Odo the Blindwatcher', npcId: 3889 },
+    { name: 'Fenrus the Devourer', npcId: 4274 },
+    { name: 'Wolf Master Nandos', npcId: 3927 },
+    { name: 'Archmage Arugal', npcId: 4275 },
+  ],
+  stockades: [
+    { name: 'Targorr the Dread', npcId: 1696 },
+    { name: 'Kam Deepfury', npcId: 1700 },
+    { name: 'Hamhock', npcId: 1702 },
+    { name: 'Bazil Thredd', npcId: 1701 },
+    { name: 'Dextren Ward', npcId: 1703 },
+  ],
+  bfd: [
+    { name: 'Ghamoo-Ra', npcId: 4887 },
+    { name: 'Lady Sarevess', npcId: 4831 },
+    { name: 'Gelihast', npcId: 6243 },
+    { name: 'Baron Aquanis', npcId: 12876, rare: true },
+    { name: 'Lorgus Jett', npcId: 12902 },
+    { name: 'Twilight Lord Kelris', npcId: 4832 },
+    { name: "Old Serra'kis", npcId: 4830 },
+    { name: "Aku'mai", npcId: 4829 },
+  ],
+  gnomer: [
+    { name: 'Grubbis', npcId: 7361 },
+    { name: 'Viscous Fallout', npcId: 7079 },
+    { name: 'Electrocutioner 6000', npcId: 6235 },
+    { name: 'Crowd Pummeler 9-60', npcId: 6229 },
+    { name: 'Dark Iron Ambassador', npcId: 6897 },
+    { name: 'Mekgineer Thermaplugg', npcId: 7800 },
+  ],
+  rfk: [
+    { name: 'Roogug', npcId: 6168 },
+    { name: 'Aggem Thorncurse', npcId: 4424 },
+    { name: 'Death Speaker Jargba', npcId: 4428 },
+    { name: 'Overlord Ramtusk', npcId: 4420 },
+    { name: 'Agathelos the Raging', npcId: 4422 },
+    { name: 'Charlga Razorflank', npcId: 4421 },
+  ],
+  sm: [
+    { section: 'Graveyard' },
+    { name: 'Interrogator Vishas', npcId: 3983 },
+    { name: 'Bloodmage Thalnos', npcId: 4543 },
+    { section: 'Library' },
+    { name: 'Houndmaster Loksey', npcId: 3974 },
+    { name: 'Arcanist Doan', npcId: 6487 },
+    { section: 'Armory' },
+    { name: 'Herod', npcId: 3975 },
+    { section: 'Cathedral' },
+    { name: 'Scarlet Commander Mograine', npcId: 3976 },
+    { name: 'High Inquisitor Whitemane', npcId: 3977 },
+  ],
+  rfd: [
+    { name: "Tuten'kash", npcId: 8567 },
+    { name: 'Ragglesnout', npcId: 7354, rare: true },
+    { name: 'Mordresh Fire Eye', npcId: 8714 },
+    { name: 'Glutton', npcId: 8565 },
+    { name: 'Amnennar the Coldbringer', npcId: 8566 },
+  ],
+  uldaman: [
+    { name: 'Revelosh', npcId: 6910 },
+    { name: 'Ironaya', npcId: 7228 },
+    { name: 'Obsidian Sentinel', npcId: 7023 },
+    { name: 'Ancient Stone Keeper', npcId: 4857 },
+    { name: 'Galgann Firehammer', npcId: 7291 },
+    { name: 'Grimlok', npcId: 4854 },
+    { name: 'Archaedas', npcId: 2748 },
+  ],
+  zf: [
+    { name: "Antu'sul", npcId: 8127 },
+    { name: 'Theka the Martyr', npcId: 7272 },
+    { name: "Witch Doctor Zum'rah", npcId: 7271 },
+    { name: 'Nekrum Gutchewer', npcId: 7796 },
+    { name: "Shadowpriest Sezz'ziz", npcId: 8153 },
+    { name: "Gahz'rilla", npcId: 7273 },
+    { name: 'Chief Ukorz Sandscalp', npcId: 7267 },
+    { name: 'Ruuzlu', npcId: 7268 },
+  ],
+  mara: [
+    { name: 'Noxxion', npcId: 13282 },
+    { name: 'Razorlash', npcId: 12258 },
+    { name: 'Lord Vyletongue', npcId: 13370 },
+    { name: 'Celebras the Cursed', npcId: 12225 },
+    { name: 'Tinkerer Gizlock', npcId: 13601 },
+    { name: 'Landslide', npcId: 12203 },
+    { name: 'Princess Theradras', npcId: 12201 },
+  ],
+  st: [
+    { name: "Atal'alarion", npcId: 8580 },
+    { name: 'Dreamscythe', npcId: 5721 },
+    { name: 'Weaver', npcId: 5720 },
+    { name: 'Hazzas', npcId: 5722 },
+    { name: 'Morphaz', npcId: 5719 },
+    { name: "Jammal'an the Prophet", npcId: 5710 },
+    { name: 'Ogom the Wretched', npcId: 8607 },
+    { name: 'Avatar of Hakkar', npcId: 8497 },
+    { name: 'Shade of Eranikus', npcId: 8448 },
+  ],
+  brd: [
+    { name: 'High Interrogator Gerstahn', npcId: 9018 },
+    { name: 'Houndmaster Grebmar', npcId: 9319 },
+    { name: 'Lord Roccor', npcId: 9025 },
+    { name: 'Ring of Law', npcId: null },
+    { name: 'The Vault (Dark Keepers)', npcId: null },
+    { name: 'Lord Incendius', npcId: 9017 },
+    { name: 'Warder Stilgiss', npcId: 9041 },
+    { name: 'Verek', npcId: 9042 },
+    { name: 'Watchman Doomgrip', npcId: 9476 },
+    { name: 'Fineous Darkvire', npcId: 9056 },
+    { name: "Bael'Gar", npcId: 9016 },
+    { name: 'General Angerforge', npcId: 9033 },
+    { name: 'Golem Lord Argelmach', npcId: 8983 },
+    { name: 'Hurley Blackbreath', npcId: 9537 },
+    { name: 'Phalanx', npcId: 9502 },
+    { name: 'Plugger Spazzring', npcId: 9499 },
+    { name: 'Ribbly Screwspigot', npcId: 9543 },
+    { name: 'Ambassador Flamelash', npcId: 9156 },
+    { name: 'Panzor the Invincible', npcId: 8923, rare: true },
+    { name: 'The Seven', npcId: null },
+    { name: 'Magmus', npcId: 9216 },
+    { name: 'Princess Moira Bronzebeard', npcId: 8929 },
+    { name: 'Emperor Dagran Thaurissan', npcId: 9019 },
+  ],
+  lbrs: [
+    { name: 'Highlord Omokk', npcId: 9196 },
+    { name: "Shadow Hunter Vosh'gajin", npcId: 9236 },
+    { name: 'War Master Voone', npcId: 9237 },
+    { name: 'Mother Smolderweb', npcId: 10596 },
+    { name: 'Urok Doomhowl', npcId: 10584 },
+    { name: 'Quartermaster Zigris', npcId: 9736 },
+    { name: 'Halycon', npcId: 10220 },
+    { name: 'Gizrul the Slavener', npcId: 10268 },
+    { name: 'Mor Grayhoof', npcId: 16080 },
+    { name: 'Bannok Grimaxe', npcId: 9596, rare: true },
+    { name: 'Overlord Wyrmthalak', npcId: 9568 },
+  ],
+  ubrs: [
+    { name: 'Pyroguard Emberseer', npcId: 9816 },
+    { name: 'Warchief Rend Blackhand', npcId: 10429 },
+    { name: 'Gyth', npcId: 10339 },
+    { name: 'The Beast', npcId: 10430 },
+    { name: 'General Drakkisath', npcId: 10363 },
+  ],
+  dm: [
+    { section: 'East' },
+    { name: 'Zevrim Thornhoof', npcId: 11490 },
+    { name: 'Hydrospawn', npcId: 13280 },
+    { name: 'Lethtendris', npcId: 14327 },
+    { name: 'Alzzin the Wildshaper', npcId: 11492 },
+    { section: 'West' },
+    { name: 'Tendris Warpwood', npcId: 11489 },
+    { name: 'Magister Kalendris', npcId: 11487 },
+    { name: "Immol'thar", npcId: 11496 },
+    { name: 'Prince Tortheldrin', npcId: 11488 },
+    { section: 'North' },
+    { name: "Guard Mol'dar", npcId: 14326 },
+    { name: 'Stomper Kreeg', npcId: 14322 },
+    { name: 'Guard Fengus', npcId: 14321 },
+    { name: "Guard Slip'kik", npcId: 14323 },
+    { name: 'Captain Kromcrush', npcId: 14325 },
+    { name: "Cho'Rush the Observer", npcId: 14324 },
+    { name: 'King Gordok', npcId: 11501 },
+  ],
+  scholo: [
+    { name: 'Kirtonos the Herald', npcId: 10506 },
+    { name: 'Jandice Barov', npcId: 10503 },
+    { name: 'Rattlegore', npcId: 11622 },
+    { name: 'Death Knight Darkreaver', npcId: 14516 },
+    { name: 'Marduk Blackpool', npcId: 10433 },
+    { name: 'Vectus', npcId: 10432 },
+    { name: 'Ras Frostwhisper', npcId: 10508 },
+    { name: 'Instructor Malicia', npcId: 10505 },
+    { name: 'Doctor Theolen Krastinov', npcId: 11261 },
+    { name: 'Lorekeeper Polkelt', npcId: 10901 },
+    { name: 'The Ravenian', npcId: 10507 },
+    { name: 'Lord Alexei Barov', npcId: 10504 },
+    { name: 'Lady Illucia Barov', npcId: 10502 },
+    { name: 'Darkmaster Gandling', npcId: 1853 },
+  ],
+  strath: [
+    { section: 'Live Side' },
+    { name: 'Timmy the Cruel', npcId: 10808 },
+    { name: 'Maleki the Pallid', npcId: 10438 },
+    { name: 'Cannon Master Willey', npcId: 10997 },
+    { name: 'Archivist Galford', npcId: 10811 },
+    { name: 'Balnazzar', npcId: 10813 },
+    { section: 'Undead Side' },
+    { name: 'Stonespine', npcId: 10809, rare: true },
+    { name: 'Black Guard Swordsmith', npcId: 11121 },
+    { name: 'Baroness Anastari', npcId: 10436 },
+    { name: "Nerub'enkan", npcId: 10437 },
+    { name: 'Magistrate Barthilas', npcId: 10435 },
+    { name: 'Ramstein the Gorger', npcId: 10439 },
+    { name: 'Baron Rivendare', npcId: 10440 },
+  ],
+};
+
+// ═══════════════════════════════════════
 //  WOWHEAD STRATEGY GUIDE URLS
 // ═══════════════════════════════════════
 const STRATEGY_URLS = {
@@ -300,6 +529,47 @@ function renderSidebar(dungeon) {
     locList.appendChild(item);
   });
 
+  renderEncounterList(dungeon);
+}
+
+// ═══════════════════════════════════════
+//  ENCOUNTER LIST
+// ═══════════════════════════════════════
+function renderEncounterList(dungeon) {
+  const list = document.getElementById('encounterList');
+  if (!list) return;
+  list.innerHTML = '';
+
+  const encounters = BOSS_ENCOUNTERS[dungeon.id];
+  if (!encounters || encounters.length === 0) {
+    list.innerHTML = '<div class="encounter-empty">No data available</div>';
+    return;
+  }
+
+  encounters.forEach(entry => {
+    if (entry.section) {
+      const header = document.createElement('div');
+      header.className = 'encounter-section';
+      header.textContent = entry.section;
+      list.appendChild(header);
+      return;
+    }
+    const rareBadge = entry.rare ? '<span class="encounter-rare-badge">Rare</span>' : '';
+    const icon = entry.npcId ? '☠' : '⚔';
+    const nameHtml = `<span class="encounter-skull">${icon}</span><span class="encounter-name">${entry.name}</span>${rareBadge}`;
+    let item;
+    if (entry.npcId) {
+      item = document.createElement('a');
+      item.href = `https://www.wowhead.com/classic/npc=${entry.npcId}`;
+      item.target = '_blank';
+      item.rel = 'noopener noreferrer';
+    } else {
+      item = document.createElement('div');
+    }
+    item.className = 'encounter-item' + (entry.rare ? ' encounter-rare' : '');
+    item.innerHTML = nameHtml;
+    list.appendChild(item);
+  });
 }
 
 // ═══════════════════════════════════════

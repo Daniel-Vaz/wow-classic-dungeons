@@ -1311,3 +1311,75 @@ body::before {
   animation: mapFadeIn 0.18s ease both;
 }
 .map-zoom-btn--fit { font-size: 0.85rem; }
+
+/* ── ENCOUNTER LIST ── */
+.encounter-section {
+  padding: 5px 14px 3px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  border-bottom: 1px solid var(--border);
+  background: rgba(200,168,75,0.03);
+}
+.encounter-section:not(:first-child) {
+  border-top: 1px solid var(--border);
+}
+.encounter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.encounter-item:last-child { border-bottom: none; }
+.encounter-item:hover {
+  background: rgba(200,168,75,0.05);
+  color: var(--gold-light);
+}
+.encounter-skull {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+.encounter-item:hover .encounter-skull {
+  opacity: 1;
+  color: var(--gold-dim);
+}
+.encounter-name { flex: 1; }
+.encounter-rare .encounter-name { color: var(--text-dim); }
+.encounter-rare-badge {
+  font-family: 'Cinzel', serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
+  color: var(--gold-dim);
+  border: 1px solid rgba(200,168,75,0.3);
+  border-radius: 2px;
+  padding: 1px 5px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+.encounter-item:not(a) {
+  cursor: default;
+  color: var(--text-dim);
+}
+.encounter-item:not(a):hover {
+  background: transparent;
+  color: var(--text-dim);
+}
+.encounter-item:not(a) .encounter-skull {
+  color: var(--border-gold);
+}
+.encounter-empty {
+  padding: 10px 14px;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
