@@ -33,19 +33,22 @@ function normalizeQuest(q) {
     rewards,
     rewardChoices,
     legacyItems,
-    prequest:       q.prequest       || '',
-    prequestLink:   q.prequestLink   || '',
     chainId:        q.chainId        ?? null,
     chainDepth:     q.chainDepth     ?? 0,
     levels:         q.levels         || '',
     minLevel:       q.minLevel       ?? null,
     faction:        q.faction        || '',
-    startItem:      q.startItem      || '',
-    startItemLink:  q.startItemLink  || '',
+    startItem:       q.startItem       || '',
+    startItemLink:   q.startItemLink   || '',
+    startObject:     q.startObject     || '',
+    startObjectLink: q.startObjectLink || '',
+    endObject:       q.endObject       || '',
+    endObjectLink:   q.endObjectLink   || '',
     preChain:       Array.isArray(q.preChain)  ? q.preChain  : [],
     postChain:      Array.isArray(q.postChain) ? q.postChain : [],
     absorbedBy:     q.absorbedBy     ?? null,
     money:          q.money          || 0,
+    requiredClasses: Array.isArray(q.requiredClasses) ? q.requiredClasses : [],
   };
 }
 
@@ -197,29 +200,6 @@ function renderSidebar(dungeon) {
     locList.appendChild(item);
   });
 
-  // Prequest Chains
-  const pqs = quests.filter(q => q.prequest);
-  const pqList = document.getElementById('prequestList');
-  pqList.innerHTML = '';
-  if (pqs.length === 0) {
-    pqList.innerHTML = '<div class="sidebar-item" style="font-style:italic;color:var(--text-dim);font-size:0.78rem">None for this dungeon</div>';
-  } else {
-    pqs.forEach(q => {
-      const item = document.createElement('div');
-      item.className = 'sidebar-item';
-      const link = q.prequestLink
-        ? `<a href="${q.prequestLink}" target="_blank" rel="noopener noreferrer" class="prequest-chain-link">${q.prequest}</a>`
-        : q.prequest;
-      item.innerHTML = `
-        <span style="font-size:0.78rem;color:var(--text-main)">${q.name}</span>
-        <span style="font-size:0.72rem;color:var(--text-dim);margin-top:2px">req: ${link}</span>
-      `;
-      item.style.flexDirection = 'column';
-      item.style.alignItems = 'flex-start';
-      item.style.gap = '2px';
-      pqList.appendChild(item);
-    });
-  }
 }
 
 // ═══════════════════════════════════════
@@ -257,14 +237,15 @@ function renderQuests() {
     quests = quests.filter(quest =>
       (quest.name || '').toLowerCase().includes(sq) ||
       (quest.startNpc || '').toLowerCase().includes(sq) ||
+      (quest.startObject || '').toLowerCase().includes(sq) ||
       (quest.endNpc || '').toLowerCase().includes(sq) ||
+      (quest.endObject || '').toLowerCase().includes(sq) ||
       (quest.startLoc || '').toLowerCase().includes(sq) ||
       (quest.endLoc || '').toLowerCase().includes(sq) ||
       quest.rewards.some(r => r.name.toLowerCase().includes(sq)) ||
       quest.rewardChoices.some(r => r.name.toLowerCase().includes(sq)) ||
       quest.legacyItems.some(r => r.name.toLowerCase().includes(sq)) ||
-      (quest.notes || '').toLowerCase().includes(sq) ||
-      (quest.prequest || '').toLowerCase().includes(sq)
+      (quest.notes || '').toLowerCase().includes(sq)
     );
   }
 
@@ -275,15 +256,23 @@ function renderQuests() {
     return aIsolated - bIsolated;
   });
 
-  document.getElementById('visibleCount').textContent = quests.length;
+  const visibleCountEl = document.getElementById('visibleCount');
+  if (visibleCountEl) visibleCountEl.textContent = quests.length;
   container.innerHTML = '';
 
   if (quests.length === 0) {
+    const isFactionEmpty = factionFilter && !dungeon.quests
+      .map(normalizeQuest)
+      .filter(q => q.absorbedBy === null)
+      .some(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
+    const emptyMsg = isFactionEmpty
+      ? `No ${factionFilter} quests in this dungeon`
+      : 'Adjust your search or filters';
     container.innerHTML = `
       <div class="empty-state">
         <div class="empty-state-icon">📜</div>
         <div class="empty-state-text">NO QUESTS FOUND</div>
-        <div style="margin-top:8px;font-size:0.78rem;color:var(--text-dim)">Adjust your search or filters</div>
+        <div style="margin-top:8px;font-size:0.78rem;color:var(--text-dim)">${emptyMsg}</div>
       </div>`;
     return;
   }
@@ -439,9 +428,6 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal) {
     chainBadgeHtml = `<div class="chain-badge">PART ${chainPos + 1}/${chainTotal}</div>`;
   }
 
-  // ---- Prequest row ----
-  const prequestHtml = '';
-
   // ---- Rewards (always-give) ----
   const rewardItems = quest.rewards.length > 0 ? quest.rewards : quest.legacyItems;
   let itemsHtml = '';
@@ -473,12 +459,24 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal) {
     ? `<div class="faction-badge faction-${quest.faction.toLowerCase()}">${quest.faction}</div>`
     : '';
 
-  // ---- NPC / item link helpers ----
+  // ---- Class restriction badge ----
+  const classBadgeHtml = quest.requiredClasses && quest.requiredClasses.length > 0
+    ? quest.requiredClasses.map(cls => {
+        const slug = cls.toLowerCase();
+        return `<div class="class-badge class-${slug}"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_${slug}.jpg" alt="${cls}">${cls}</div>`;
+      }).join('')
+    : '';
+
+  // ---- NPC / object / item link helpers ----
   let startNpcHtml;
   if (quest.startNpcLink) {
     startNpcHtml = `<a href="${quest.startNpcLink}" target="_blank" rel="noopener noreferrer" class="npc-link">${quest.startNpc}</a>`;
   } else if (quest.startNpc) {
     startNpcHtml = quest.startNpc;
+  } else if (quest.startObjectLink) {
+    startNpcHtml = `<a href="${quest.startObjectLink}" target="_blank" rel="noopener noreferrer" class="object-link">${quest.startObject}</a>`;
+  } else if (quest.startObject) {
+    startNpcHtml = quest.startObject;
   } else if (quest.startItemLink) {
     startNpcHtml = `<a href="${quest.startItemLink}" target="_blank" rel="noopener noreferrer" class="item-link q1">${quest.startItem}</a>`;
   } else if (quest.startItem) {
@@ -486,12 +484,19 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal) {
   } else {
     startNpcHtml = '—';
   }
+
+  const endEntity = quest.endNpc || quest.endObject || '';
+  const startEntity = quest.startNpc || quest.startObject || quest.startItem || '';
   const endNpcHtml = quest.endNpcLink
     ? `<a href="${quest.endNpcLink}" target="_blank" rel="noopener noreferrer" class="npc-link">${quest.endNpc}</a>`
-    : (quest.endNpc || '—');
+    : quest.endNpc
+      ? quest.endNpc
+      : quest.endObjectLink
+        ? `<a href="${quest.endObjectLink}" target="_blank" rel="noopener noreferrer" class="object-link">${quest.endObject}</a>`
+        : (quest.endObject || '—');
 
   // ---- Turn-in row ----
-  const turninHtml = quest.endNpc && quest.endNpc !== quest.startNpc
+  const turninHtml = endEntity && endEntity !== startEntity
     ? `<div class="quest-row">
         <span class="quest-label">Turn in</span>
         <span class="quest-value">${endNpcHtml}${quest.endLoc ? ` <span class="location">— ${quest.endLoc}</span>` : ''}</span>
@@ -506,17 +511,16 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal) {
           ? `<a href="${quest.questLink}" target="_blank" rel="noopener noreferrer" class="quest-name-link">${quest.name}</a>`
           : quest.name}
       </div>
-      ${chainBadgeHtml}
-      ${factionBadgeHtml}
-      ${levelText ? `<div class="quest-level-badge">${levelText}</div>` : ''}
+      <div class="quest-badges">
+        ${chainBadgeHtml}${classBadgeHtml}${factionBadgeHtml}${levelText ? `<div class="quest-level-badge">${levelText}</div>` : ''}
+      </div>
     </div>
     <div class="quest-card-body">
       <div class="quest-row">
-        <span class="quest-label">${quest.endNpc && quest.endNpc === quest.startNpc ? 'Start / Turn in' : 'Start'}</span>
+        <span class="quest-label">${endEntity && endEntity === startEntity ? 'Start / Turn in' : 'Start'}</span>
         <span class="quest-value">${startNpcHtml}${quest.startLoc ? ` <span class="location">— ${quest.startLoc}</span>` : ''}</span>
       </div>
       ${turninHtml}
-      ${prequestHtml}
       ${itemsHtml}
       ${choiceHtml}
       ${notesHtml}
@@ -597,17 +601,12 @@ function updateDungeonTabsVisibility() {
   document.querySelectorAll('.dungeon-tab').forEach(tab => {
     const dungeon = DUNGEONS.find(d => d.id === tab.dataset.id);
     if (!dungeon) return;
-    const compatible = !factionFilter || dungeon.faction === factionFilter || dungeon.faction === 'Both';
-    tab.classList.toggle('faction-dimmed', !compatible);
+    const hasQuestsForFaction = !factionFilter || dungeon.quests.some(q => {
+      const nq = normalizeQuest(q);
+      return !nq.faction || nq.faction === 'Both' || nq.faction === factionFilter;
+    });
+    tab.classList.toggle('faction-dimmed', !hasQuestsForFaction);
   });
-
-  if (factionFilter) {
-    const cur = DUNGEONS.find(d => d.id === currentDungeonId);
-    if (cur && cur.faction !== factionFilter && cur.faction !== 'Both') {
-      const first = DUNGEONS.find(d => d.faction === factionFilter || d.faction === 'Both');
-      if (first) selectDungeon(first.id);
-    }
-  }
 }
 
 function bindControls() {
