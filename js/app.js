@@ -426,7 +426,12 @@ function selectDungeon(id) {
 //  DUNGEON HEADER
 // ═══════════════════════════════════════
 function renderDungeonHeader(dungeon) {
-  document.getElementById('dungeonHeaderIcon').textContent = dungeon.icon;
+  const iconEl = document.getElementById('dungeonHeaderIcon');
+  if (dungeon.loadingScreen) {
+    iconEl.innerHTML = `<img src="${dungeon.loadingScreen}" alt="${dungeon.name} loading screen" class="dungeon-loading-screen">`;
+  } else {
+    iconEl.textContent = dungeon.icon;
+  }
   document.getElementById('dungeonHeaderName').textContent = dungeon.name;
 
   // Exclude absorbed quests from all header counts — they're shown as chain context

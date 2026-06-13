@@ -49,60 +49,157 @@ body::before {
 .site-header {
   position: relative;
   text-align: center;
-  padding: 48px 20px 32px;
-  border-bottom: 2px solid var(--border-gold);
-  background: linear-gradient(180deg, #0f0c08 0%, var(--bg-dark) 100%);
+  padding: 56px 20px 36px;
+  border-bottom: 1px solid var(--border-gold);
+  background: linear-gradient(180deg, #050402 0%, #0c0906 50%, var(--bg-dark) 100%);
   overflow: hidden;
 }
+
+/* Subtle rune tile texture */
 .site-header::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c8a84b' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  opacity: 1;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c8a84b' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
 }
-.header-emblem {
-  font-size: 2rem;
-  margin-bottom: 8px;
-  opacity: 0.6;
-  animation: pulse-glow 3s ease-in-out infinite;
+
+/* Atmospheric lighting — gold overhead, blue-left (Alliance), red-right (Horde) */
+.header-atmosphere {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(200,140,40,0.18) 0%, transparent 65%),
+    radial-gradient(ellipse 35% 70% at 5% 50%, rgba(68,136,204,0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 35% 70% at 95% 50%, rgba(180,50,50,0.07) 0%, transparent 70%);
 }
+
+/* Floating rune/spark particles */
+.header-runes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.rune {
+  position: absolute;
+  color: var(--gold);
+  opacity: 0;
+  animation: floatRune var(--dur, 7s) var(--del, 0s) ease-in-out infinite;
+  font-size: var(--sz, 0.85rem);
+}
+.r1 { left: 7%;  top: 20%; --dur: 8s;  --del: 0s;   --sz: 0.9rem; }
+.r2 { left: 16%; top: 65%; --dur: 6s;  --del: 1.3s; --sz: 0.6rem; }
+.r3 { left: 28%; top: 35%; --dur: 9s;  --del: 2.5s; --sz: 0.75rem; }
+.r4 { left: 44%; top: 72%; --dur: 7s;  --del: 0.8s; --sz: 0.5rem; }
+.r5 { left: 60%; top: 22%; --dur: 8s;  --del: 3.2s; --sz: 0.8rem; }
+.r6 { left: 74%; top: 58%; --dur: 6s;  --del: 1.9s; --sz: 0.65rem; }
+.r7 { left: 85%; top: 32%; --dur: 7s;  --del: 4.1s; --sz: 0.55rem; }
+.r8 { left: 92%; top: 68%; --dur: 9s;  --del: 2.2s; --sz: 0.85rem; }
+
+@keyframes floatRune {
+  0%   { opacity: 0; transform: translateY(8px) scale(0.7); }
+  20%  { opacity: 0; }
+  35%  { opacity: 0.45; }
+  50%  { opacity: 0.65; transform: translateY(-16px) scale(1); }
+  65%  { opacity: 0.35; }
+  80%  { opacity: 0; }
+  100% { opacity: 0; transform: translateY(-28px) scale(0.7); }
+}
+
 @keyframes pulse-glow {
   0%, 100% { opacity: 0.6; text-shadow: none; }
   50% { opacity: 0.9; text-shadow: 0 0 20px var(--gold); }
 }
-.site-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: clamp(1.4rem, 4vw, 2.8rem);
-  font-weight: 900;
-  color: var(--gold-light);
-  text-shadow: 0 0 30px rgba(200,168,75,0.5), 2px 2px 4px rgba(0,0,0,0.8);
-  letter-spacing: 0.05em;
-  line-height: 1.2;
+
+/* Header content stack */
+.header-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* Logo with breathing halo */
+.header-logo-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+.header-logo-halo {
+  position: absolute;
+  inset: -35%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(200,140,40,0.2) 0%, rgba(200,140,40,0.06) 45%, transparent 70%);
+  animation: haloBreath 4s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes haloBreath {
+  0%, 100% { opacity: 0.7; transform: scale(0.94); }
+  50%       { opacity: 1;   transform: scale(1.06); }
+}
+.header-logo {
+  display: block;
+  width: min(280px, 55vw);
+  height: auto;
+  position: relative;
+  filter:
+    drop-shadow(0 0 50px rgba(200,140,40,0.3))
+    drop-shadow(0 12px 32px rgba(0,0,0,0.9));
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+.header-logo:hover {
+  transform: scale(1.04) translateY(-3px);
+  filter:
+    drop-shadow(0 0 72px rgba(200,140,40,0.55))
+    drop-shadow(0 0 28px rgba(200,140,40,0.2))
+    drop-shadow(0 18px 40px rgba(0,0,0,0.9));
+}
+
 .site-subtitle {
   font-family: 'Cinzel', serif;
-  font-size: 0.85rem;
+  font-size: clamp(0.62rem, 1.8vw, 0.82rem);
   color: var(--gold-dim);
-  letter-spacing: 0.25em;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
-  margin-top: 8px;
+  position: relative;
 }
+
+/* Alliance ← ◆ → Horde divider */
 .header-divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin-top: 20px;
+  margin-top: 28px;
+  padding: 0 32px;
+  position: relative;
+  z-index: 1;
 }
-.header-divider::before,
-.header-divider::after {
-  content: '';
+.header-divider-line {
+  flex: 1;
   height: 1px;
-  width: 120px;
-  background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+  max-width: 280px;
 }
-.header-divider-icon { color: var(--gold); font-size: 1.1rem; }
+.header-divider-alliance {
+  background: linear-gradient(90deg, transparent 0%, rgba(68,136,204,0.3) 30%, rgba(68,136,204,0.75) 100%);
+}
+.header-divider-horde {
+  background: linear-gradient(90deg, rgba(180,50,50,0.75) 0%, rgba(180,50,50,0.3) 70%, transparent 100%);
+}
+.header-divider-center {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.divider-diamond {
+  color: var(--gold);
+  font-size: 0.8rem;
+  animation: pulse-glow 3s ease-in-out infinite;
+  display: block;
+  line-height: 1;
+}
 
 /* ── CONTROLS ── */
 .controls {
@@ -269,7 +366,22 @@ body::before {
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
-.dungeon-icon { font-size: 2.5rem; opacity: 0.8; }
+.dungeon-icon {
+  font-size: 2.5rem;
+  opacity: 0.8;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.dungeon-loading-screen {
+  height: 130px;
+  width: auto;
+  border-radius: 3px;
+  border: 1px solid var(--border-gold);
+  object-fit: cover;
+  display: block;
+  opacity: 0.9;
+}
 .dungeon-info { flex: 1; }
 .dungeon-name {
   font-family: 'Cinzel Decorative', serif;
