@@ -10,6 +10,9 @@ const BOSS_ENCOUNTERS = {
     { name: 'Bazzalan', npcId: 11519 },
   ],
   wc: [
+    { name: 'Kresh', npcId: 3653 },
+    { name: 'Skum', npcId: 3674 },
+    { name: 'Deviate Faerie Dragon', npcId: 5912, rare: true },
     { name: 'Lady Anacondra', npcId: 3671 },
     { name: 'Lord Cobrahn', npcId: 3669 },
     { name: 'Lord Pythas', npcId: 3670 },
@@ -23,6 +26,7 @@ const BOSS_ENCOUNTERS = {
     { name: "Sneed's Shredder", npcId: 643 },
     { name: 'Gilnid', npcId: 1118 },
     { name: 'Mr. Smite', npcId: 646 },
+    { name: 'Captain Greenskin', npcId: 647 },
     { name: 'Cookie', npcId: 645 },
     { name: 'Edwin VanCleef', npcId: 639 },
   ],
@@ -31,7 +35,8 @@ const BOSS_ENCOUNTERS = {
     { name: 'Razorclaw the Butcher', npcId: 3887 },
     { name: 'Baron Silverlaine', npcId: 3888 },
     { name: 'Commander Springvale', npcId: 4278 },
-    { name: 'Odo the Blindwatcher', npcId: 3889 },
+    { name: 'Odo the Blindwatcher', npcId: 4279 },
+    { name: 'Deathsworn Captain', npcId: 3872, rare: true },
     { name: 'Fenrus the Devourer', npcId: 4274 },
     { name: 'Wolf Master Nandos', npcId: 3927 },
     { name: 'Archmage Arugal', npcId: 4275 },
@@ -42,23 +47,25 @@ const BOSS_ENCOUNTERS = {
     { name: 'Hamhock', npcId: 1702 },
     { name: 'Bazil Thredd', npcId: 1701 },
     { name: 'Dextren Ward', npcId: 1703 },
+    { name: 'Bruegal Ironknuckle', npcId: 1720, rare: true },
   ],
   bfd: [
     { name: 'Ghamoo-Ra', npcId: 4887 },
     { name: 'Lady Sarevess', npcId: 4831 },
     { name: 'Gelihast', npcId: 6243 },
-    { name: 'Baron Aquanis', npcId: 12876, rare: true },
     { name: 'Lorgus Jett', npcId: 12902 },
     { name: 'Twilight Lord Kelris', npcId: 4832 },
     { name: "Old Serra'kis", npcId: 4830 },
     { name: "Aku'mai", npcId: 4829 },
+    { section: 'Horde Only' },
+    { name: 'Baron Aquanis', npcId: 12876 },
   ],
   gnomer: [
     { name: 'Grubbis', npcId: 7361 },
     { name: 'Viscous Fallout', npcId: 7079 },
     { name: 'Electrocutioner 6000', npcId: 6235 },
     { name: 'Crowd Pummeler 9-60', npcId: 6229 },
-    { name: 'Dark Iron Ambassador', npcId: 6897 },
+    { name: 'Dark Iron Ambassador', npcId: 6228, rare: true },
     { name: 'Mekgineer Thermaplugg', npcId: 7800 },
   ],
   rfk: [
@@ -67,12 +74,17 @@ const BOSS_ENCOUNTERS = {
     { name: 'Death Speaker Jargba', npcId: 4428 },
     { name: 'Overlord Ramtusk', npcId: 4420 },
     { name: 'Agathelos the Raging', npcId: 4422 },
+    { name: 'Earthcaller Halmgar', npcId: 4842, rare: true },
+    { name: 'Blind Hunter', npcId: 4425, rare: true },
     { name: 'Charlga Razorflank', npcId: 4421 },
   ],
   sm: [
     { section: 'Graveyard' },
     { name: 'Interrogator Vishas', npcId: 3983 },
     { name: 'Bloodmage Thalnos', npcId: 4543 },
+    { name: 'Azshir the Sleepless', npcId: 6490, rare: true },
+    { name: 'Fallen Champion', npcId: 6488, rare: true },
+    { name: 'Ironspine', npcId: 6489, rare: true },
     { section: 'Library' },
     { name: 'Houndmaster Loksey', npcId: 3974 },
     { name: 'Arcanist Doan', npcId: 6487 },
@@ -81,12 +93,14 @@ const BOSS_ENCOUNTERS = {
     { section: 'Cathedral' },
     { name: 'Scarlet Commander Mograine', npcId: 3976 },
     { name: 'High Inquisitor Whitemane', npcId: 3977 },
+    { name: 'High Inquisitor Fairbanks', npcId: 4542 },
   ],
   rfd: [
     { name: "Tuten'kash", npcId: 8567 },
     { name: 'Ragglesnout', npcId: 7354, rare: true },
-    { name: 'Mordresh Fire Eye', npcId: 8714 },
+    { name: 'Mordresh Fire Eye', npcId: 7357 },
     { name: 'Glutton', npcId: 8565 },
+    { name: 'Plaguemaw the Rotting', npcId: 7356 },
     { name: 'Amnennar the Coldbringer', npcId: 8566 },
   ],
   uldaman: [
@@ -97,13 +111,23 @@ const BOSS_ENCOUNTERS = {
     { name: 'Galgann Firehammer', npcId: 7291 },
     { name: 'Grimlok', npcId: 4854 },
     { name: 'Archaedas', npcId: 2748 },
+    { section: 'Horde Only' },
+    { name: 'Baelog', npcId: 6906 },
+    { name: 'Eric the Swift', npcId: 6907 },
+    { name: 'Olaf', npcId: 6908 },
   ],
   zf: [
     { name: "Antu'sul", npcId: 8127 },
     { name: 'Theka the Martyr', npcId: 7272 },
+    { name: 'Sandarr Dunereaver', npcId: 10080, rare: true },
+    { name: 'Sandfury Executioner', npcId: 7274 },
+    { name: 'Zerillis', npcId: 10082, rare: true },
+    { name: 'Dustwraith', npcId: 10081, rare: true },
     { name: "Witch Doctor Zum'rah", npcId: 7271 },
     { name: 'Nekrum Gutchewer', npcId: 7796 },
     { name: "Shadowpriest Sezz'ziz", npcId: 8153 },
+    { name: 'Sergeant Bly', npcId: 7604 },
+    { name: 'Hydromancer Velratha', npcId: 7795 },
     { name: "Gahz'rilla", npcId: 7273 },
     { name: 'Chief Ukorz Sandscalp', npcId: 7267 },
     { name: 'Ruuzlu', npcId: 7268 },
@@ -111,14 +135,21 @@ const BOSS_ENCOUNTERS = {
   mara: [
     { name: 'Noxxion', npcId: 13282 },
     { name: 'Razorlash', npcId: 12258 },
-    { name: 'Lord Vyletongue', npcId: 13370 },
+    { name: 'Lord Vyletongue', npcId: 12236 },
     { name: 'Celebras the Cursed', npcId: 12225 },
+    { name: 'Meshlok the Harvester', npcId: 12237, rare: true },
     { name: 'Tinkerer Gizlock', npcId: 13601 },
     { name: 'Landslide', npcId: 12203 },
+    { name: 'Rotgrip', npcId: 13596 },
     { name: 'Princess Theradras', npcId: 12201 },
   ],
   st: [
     { name: "Atal'alarion", npcId: 8580 },
+    { name: 'Zolo', npcId: 5712 },
+    { name: 'Loro', npcId: 5714 },
+    { name: 'Hukku', npcId: 5715 },
+    { name: 'Zullor', npcId: 5716 },
+    { name: 'Mijan', npcId: 5717 },
     { name: 'Dreamscythe', npcId: 5721 },
     { name: 'Weaver', npcId: 5720 },
     { name: 'Hazzas', npcId: 5722 },
@@ -126,7 +157,7 @@ const BOSS_ENCOUNTERS = {
     { name: "Jammal'an the Prophet", npcId: 5710 },
     { name: 'Ogom the Wretched', npcId: 8607 },
     { name: 'Avatar of Hakkar', npcId: 8497 },
-    { name: 'Shade of Eranikus', npcId: 8448 },
+    { name: 'Shade of Eranikus', npcId: 5709 },
   ],
   brd: [
     { name: 'High Interrogator Gerstahn', npcId: 9018 },
@@ -154,22 +185,30 @@ const BOSS_ENCOUNTERS = {
     { name: 'Emperor Dagran Thaurissan', npcId: 9019 },
   ],
   lbrs: [
+    { name: 'Burning Felguard', npcId: 10263, rare: true },
     { name: 'Highlord Omokk', npcId: 9196 },
+    { name: 'Spirestone Battle Lord', npcId: 9218, rare: true },
+    { name: 'Spirestone Lord Magus', npcId: 9217, rare: true },
     { name: "Shadow Hunter Vosh'gajin", npcId: 9236 },
     { name: 'War Master Voone', npcId: 9237 },
+    { name: 'Bannok Grimaxe', npcId: 9596, rare: true },
     { name: 'Mother Smolderweb', npcId: 10596 },
+    { name: 'Crystal Fang', npcId: 10376, rare: true },
     { name: 'Urok Doomhowl', npcId: 10584 },
     { name: 'Quartermaster Zigris', npcId: 9736 },
     { name: 'Halycon', npcId: 10220 },
     { name: 'Gizrul the Slavener', npcId: 10268 },
-    { name: 'Mor Grayhoof', npcId: 16080 },
-    { name: 'Bannok Grimaxe', npcId: 9596, rare: true },
+    { name: 'Ghok Bashguud', npcId: 9718, rare: true },
+    { name: 'Spirestone Butcher', npcId: 9219, rare: true },
     { name: 'Overlord Wyrmthalak', npcId: 9568 },
   ],
   ubrs: [
     { name: 'Pyroguard Emberseer', npcId: 9816 },
-    { name: 'Warchief Rend Blackhand', npcId: 10429 },
+    { name: 'Solakar Flamewreath', npcId: 10264 },
+    { name: 'Goraluk Anvilcrack', npcId: 10899 },
+    { name: 'Jed Runewatcher', npcId: 10509, rare: true },
     { name: 'Gyth', npcId: 10339 },
+    { name: 'Warchief Rend Blackhand', npcId: 10429 },
     { name: 'The Beast', npcId: 10430 },
     { name: 'General Drakkisath', npcId: 10363 },
   ],
@@ -181,9 +220,12 @@ const BOSS_ENCOUNTERS = {
     { name: 'Alzzin the Wildshaper', npcId: 11492 },
     { section: 'West' },
     { name: 'Tendris Warpwood', npcId: 11489 },
+    { name: 'Tsuzee', npcId: 11467 },
+    { name: 'Illyanna Ravenoak', npcId: 11488 },
     { name: 'Magister Kalendris', npcId: 11487 },
     { name: "Immol'thar", npcId: 11496 },
-    { name: 'Prince Tortheldrin', npcId: 11488 },
+    { name: 'Lord Helnurath', npcId: 14506 },
+    { name: 'Prince Tortheldrin', npcId: 11486 },
     { section: 'North' },
     { name: "Guard Mol'dar", npcId: 14326 },
     { name: 'Stomper Kreeg', npcId: 14322 },
@@ -194,6 +236,7 @@ const BOSS_ENCOUNTERS = {
     { name: 'King Gordok', npcId: 11501 },
   ],
   scholo: [
+    { name: 'Blood Steward of Kirtonos', npcId: 14861 },
     { name: 'Kirtonos the Herald', npcId: 10506 },
     { name: 'Jandice Barov', npcId: 10503 },
     { name: 'Rattlegore', npcId: 11622 },
@@ -201,26 +244,30 @@ const BOSS_ENCOUNTERS = {
     { name: 'Marduk Blackpool', npcId: 10433 },
     { name: 'Vectus', npcId: 10432 },
     { name: 'Ras Frostwhisper', npcId: 10508 },
-    { name: 'Instructor Malicia', npcId: 10505 },
     { name: 'Doctor Theolen Krastinov', npcId: 11261 },
     { name: 'Lorekeeper Polkelt', npcId: 10901 },
-    { name: 'The Ravenian', npcId: 10507 },
-    { name: 'Lord Alexei Barov', npcId: 10504 },
+    { name: 'Instructor Malicia', npcId: 10505 },
     { name: 'Lady Illucia Barov', npcId: 10502 },
+    { name: 'The Ravenian', npcId: 10507 },
     { name: 'Darkmaster Gandling', npcId: 1853 },
   ],
   strath: [
     { section: 'Live Side' },
+    { name: 'Stratholme Courier', npcId: 11082 },
+    { name: 'Hearthsinger Forresten', npcId: 10558 },
+    { name: 'Skul', npcId: 10393 },
+    { name: 'Postmaster Malown', npcId: 11143 },
+    { name: 'The Unforgiven', npcId: 10516 },
     { name: 'Timmy the Cruel', npcId: 10808 },
-    { name: 'Maleki the Pallid', npcId: 10438 },
-    { name: 'Cannon Master Willey', npcId: 10997 },
     { name: 'Archivist Galford', npcId: 10811 },
-    { name: 'Balnazzar', npcId: 10813 },
+    { name: 'Malor the Zealous', npcId: 11032 },
+    { name: 'Cannon Master Willey', npcId: 10997 },
+    { name: 'Grand Crusader Dathrohan', npcId: 10812 },
     { section: 'Undead Side' },
     { name: 'Stonespine', npcId: 10809, rare: true },
-    { name: 'Black Guard Swordsmith', npcId: 11121 },
-    { name: 'Baroness Anastari', npcId: 10436 },
     { name: "Nerub'enkan", npcId: 10437 },
+    { name: 'Maleki the Pallid', npcId: 10438 },
+    { name: 'Baroness Anastari', npcId: 10436 },
     { name: 'Magistrate Barthilas', npcId: 10435 },
     { name: 'Ramstein the Gorger', npcId: 10439 },
     { name: 'Baron Rivendare', npcId: 10440 },
@@ -309,6 +356,23 @@ function buildLocationLink(name) {
 }
 
 // ═══════════════════════════════════════
+//  MULTI-LEVEL MAPS
+// ═══════════════════════════════════════
+const MULTI_LEVEL_MAPS = {
+  1583: [
+    { label: 'Level 1',          src: 'assets/maps/1583_1.jpg' },
+    { label: 'Level 2',          src: 'assets/maps/1583_2.jpg' },
+    { label: 'Level 3',          src: 'assets/maps/1583_3.jpg' },
+    { label: 'Level 4',          src: 'assets/maps/1583_4.jpg' },
+    { label: 'Level 5 (Part 1)', src: 'assets/maps/1583_5a.jpg' },
+    { label: 'Level 5 (Part 2)', src: 'assets/maps/1583_5b.jpg' },
+    { label: 'Level 6 (Part 1)', src: 'assets/maps/1583_6a.jpg' },
+    { label: 'Level 6 (Part 2)', src: 'assets/maps/1583_6b.jpg' },
+    { label: 'Level 7',          src: 'assets/maps/1583_7.jpg' },
+  ],
+};
+
+// ═══════════════════════════════════════
 //  STATE
 // ═══════════════════════════════════════
 let currentDungeonId = 'rfc';
@@ -388,6 +452,7 @@ function init() {
   bindControls();
   initSidebarCollapse();
   initMapModal();
+  initLoadingScreenLightbox();
   selectDungeon('rfc');
 }
 
@@ -459,11 +524,11 @@ function renderDungeonHeader(dungeon) {
       ? `<a href="${dungeon.guideUrl}" target="_blank" rel="noopener noreferrer" class="guides-box-link">📖 Quest Guide</a>`
       : '';
     const strategyLinksHtml = strategyEntries
-      .map(e => `<a href="${e.url}" target="_blank" rel="noopener noreferrer" class="guides-box-link">⚔ ${e.label}</a>`)
+      .map(e => `<a href="${e.url}" target="_blank" rel="noopener noreferrer" class="guides-box-link">🎯 ${e.label}</a>`)
       .join('');
     guidesEl.innerHTML = `
       <div class="guides-box">
-        <div class="guides-box-label">Wowhead Guides</div>
+        <div class="guides-box-label"><img src="assets/icons/wowhead.png" class="guides-box-wowhead-logo" alt="Wowhead"> Wowhead Guides</div>
         <div class="guides-box-links">${questLinkHtml}${strategyLinksHtml}</div>
       </div>`;
   } else {
@@ -485,6 +550,7 @@ function renderStatsBar(dungeon) {
     quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
   }
   const totalXP = quests.reduce((s, q) => s + (q.xp || 0), 0);
+  const totalMoney = quests.reduce((s, q) => s + (q.money || 0), 0);
   const withGear = quests.filter(q => q.rewards.length > 0 || q.rewardChoices.length > 0 || q.legacyItems.length > 0).length;
   const completedCount = quests.filter(q => completed[dungeon.id + '::' + q.name]).length;
 
@@ -497,6 +563,11 @@ function renderStatsBar(dungeon) {
     <div class="stat-item">
       <div class="stat-num" style="color:#84d4a0">${totalXP.toLocaleString()}</div>
       <div class="stat-label">Total XP</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num stat-num--money">${formatMoney(totalMoney)}</div>
+      <div class="stat-label">Total Money</div>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
@@ -560,7 +631,7 @@ function renderEncounterList(dungeon) {
       return;
     }
     const rareBadge = entry.rare ? '<span class="encounter-rare-badge">Rare</span>' : '';
-    const icon = entry.npcId ? '☠' : '⚔';
+    const icon = entry.rare ? '✧' : (entry.npcId ? '☠' : '⚔');
     const nameHtml = `<span class="encounter-skull">${icon}</span><span class="encounter-name">${entry.name}</span>${rareBadge}`;
     let item;
     if (entry.npcId) {
@@ -827,8 +898,8 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal) {
   const levelNum = quest.minLevel || (quest.levels ? parseInt(quest.levels) : 0);
   const levelText = levelNum ? `ReqLvl ${levelNum}` : '';
 
-  // ---- Faction badge (quest-level, if different from dungeon) ----
-  const showFaction = quest.faction && quest.faction !== 'Both' && quest.faction !== dungeon.faction;
+  // ---- Faction badge (always shown when quest has a specific faction) ----
+  const showFaction = quest.faction && quest.faction !== 'Both';
   const factionBadgeHtml = showFaction
     ? `<div class="faction-badge faction-${quest.faction.toLowerCase()}">${quest.faction}</div>`
     : '';
@@ -1052,29 +1123,14 @@ function resetMapView() {
   applyMapTransform();
 }
 
-function openMapModal(locationName) {
-  const zoneId = ZONE_IDS[locationName];
-  if (!zoneId) return;
-
-  const imgUrl      = `https://wow.zamimg.com/images/wow/classic/maps/enus/zoom/${zoneId}.jpg`;
-  const wowheadUrl  = `https://www.wowhead.com/classic/zone=${zoneId}`;
-  const img         = document.getElementById('mapModalImg');
-  const noImg       = document.getElementById('mapNoImage');
-
-  document.getElementById('mapModalTitle').textContent = locationName;
-  document.getElementById('mapModalWowheadLink').href  = wowheadUrl;
-
+function loadMapImage(src) {
+  const img   = document.getElementById('mapModalImg');
+  const noImg = document.getElementById('mapNoImage');
   img.classList.add('loading');
   noImg.classList.remove('visible');
   img.style.display = 'block';
   img.src = '';
-
   mapNaturalW = 0; mapNaturalH = 0;
-
-  // Open the modal first so the viewport has real dimensions when onload fires
-  document.getElementById('mapModal').setAttribute('aria-hidden', 'false');
-  document.getElementById('mapModal').classList.add('open');
-
   img.onload = () => {
     mapNaturalW = img.naturalWidth;
     mapNaturalH = img.naturalHeight;
@@ -1085,7 +1141,42 @@ function openMapModal(locationName) {
     img.style.display = 'none';
     noImg.classList.add('visible');
   };
-  img.src = imgUrl;
+  img.src = src;
+}
+
+function openMapModal(locationName) {
+  const zoneId = ZONE_IDS[locationName];
+  if (!zoneId) return;
+
+  const wowheadUrl = `https://www.wowhead.com/classic/zone=${zoneId}`;
+  document.getElementById('mapModalTitle').textContent = locationName;
+  document.getElementById('mapModalWowheadLink').href  = wowheadUrl;
+
+  // Build level nav (empty for single-map zones)
+  const levelNav   = document.getElementById('mapLevelNav');
+  const levels     = MULTI_LEVEL_MAPS[zoneId];
+  levelNav.innerHTML = '';
+
+  if (levels) {
+    levels.forEach((level, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'map-level-btn' + (i === 0 ? ' active' : '');
+      btn.textContent = level.label;
+      btn.addEventListener('click', () => {
+        levelNav.querySelectorAll('.map-level-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        loadMapImage(level.src);
+      });
+      levelNav.appendChild(btn);
+    });
+  }
+
+  // Open the modal first so the viewport has real dimensions when onload fires
+  document.getElementById('mapModal').setAttribute('aria-hidden', 'false');
+  document.getElementById('mapModal').classList.add('open');
+
+  const firstSrc = levels ? levels[0].src : `assets/maps/${zoneId}.jpg`;
+  loadMapImage(firstSrc);
 }
 
 function closeMapModal() {
@@ -1171,6 +1262,35 @@ function initMapModal() {
     const link = e.target.closest('.location-link');
     if (link) openMapModal(link.dataset.location);
   });
+}
+
+// ═══════════════════════════════════════
+//  LOADING SCREEN LIGHTBOX
+// ═══════════════════════════════════════
+function initLoadingScreenLightbox() {
+  const lightbox = document.getElementById('loadingScreenLightbox');
+
+  document.querySelector('.ls-lightbox-backdrop').addEventListener('click', closeLSLightbox);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLSLightbox();
+  });
+
+  document.addEventListener('click', e => {
+    const screen = e.target.closest('.dungeon-loading-screen');
+    if (!screen) return;
+    const img = document.getElementById('loadingScreenLightboxImg');
+    img.src = screen.src;
+    img.alt = screen.alt;
+    lightbox.setAttribute('aria-hidden', 'false');
+    lightbox.classList.add('open');
+  });
+}
+
+function closeLSLightbox() {
+  const lightbox = document.getElementById('loadingScreenLightbox');
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden', 'true');
 }
 
 init();

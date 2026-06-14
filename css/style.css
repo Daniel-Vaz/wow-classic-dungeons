@@ -381,6 +381,12 @@ body::before {
   object-fit: cover;
   display: block;
   opacity: 0.9;
+  cursor: pointer;
+  transition: opacity 0.2s, filter 0.2s;
+}
+.dungeon-loading-screen:hover {
+  opacity: 1;
+  filter: brightness(1.12) drop-shadow(0 0 10px rgba(200,168,75,0.35));
 }
 .dungeon-info { flex: 1; }
 .dungeon-name {
@@ -756,6 +762,14 @@ body::before {
   box-shadow: 0 0 8px rgba(200,168,75,0.15);
 }
 
+.faction-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
 /* Alliance */
 .faction-btn-alliance {
   color: #5a8aaa;
@@ -900,6 +914,15 @@ body::before {
   color: var(--gold);
   opacity: 0.7;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.guides-box-wowhead-logo {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  vertical-align: middle;
 }
 .guides-box-links {
   display: flex;
@@ -977,6 +1000,7 @@ body::before {
 /* ── STATS BAR ── */
 .stats-bar {
   display: flex;
+  align-items: center;
   gap: 24px;
   padding: 12px 24px;
   background: var(--bg-panel);
@@ -985,12 +1009,19 @@ body::before {
   margin-bottom: 16px;
   flex-wrap: wrap;
 }
-.stat-item { display: flex; flex-direction: column; gap: 2px; }
+.stat-item { display: flex; flex-direction: column; align-items: center; gap: 2px; }
 .stat-num {
   font-family: 'Cinzel Decorative', serif;
   font-size: 1.2rem;
   color: var(--gold-light);
   line-height: 1;
+}
+.stat-num--money {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  display: flex;
+  gap: 4px;
+  align-items: baseline;
 }
 .stat-label {
   font-family: 'Cinzel', serif;
@@ -1329,6 +1360,14 @@ body::before {
   transition: all 0.2s;
   white-space: nowrap;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.map-wowhead-logo {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
 }
 .map-wowhead-link:hover {
   color: #7fbfff;
@@ -1353,6 +1392,39 @@ body::before {
 .map-modal-close:hover {
   border-color: var(--gold-dim);
   color: var(--gold);
+}
+.map-level-nav {
+  display: flex;
+  gap: 4px;
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+  overflow-x: auto;
+  flex-wrap: wrap;
+}
+.map-level-nav:empty { display: none; }
+.map-level-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 3px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.map-level-btn:hover {
+  border-color: var(--gold-dim);
+  color: var(--gold);
+}
+.map-level-btn.active {
+  background: rgba(200, 168, 75, 0.15);
+  border-color: var(--gold-dim);
+  color: var(--gold-light);
 }
 .map-modal-viewport {
   flex: 1;
@@ -1455,7 +1527,7 @@ body::before {
   color: var(--gold-light);
 }
 .encounter-skull {
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: var(--text-dim);
   flex-shrink: 0;
   opacity: 0.6;
@@ -1467,6 +1539,7 @@ body::before {
 }
 .encounter-name { flex: 1; }
 .encounter-rare .encounter-name { color: var(--text-dim); }
+.encounter-rare .encounter-skull { color: var(--gold-dim); }
 .encounter-rare-badge {
   font-family: 'Cinzel', serif;
   font-size: 0.55rem;
@@ -1494,4 +1567,43 @@ body::before {
   font-size: 0.78rem;
   color: var(--text-dim);
   font-style: italic;
+}
+
+/* ── LOADING SCREEN LIGHTBOX ── */
+.ls-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.ls-lightbox.open {
+  display: flex;
+}
+.ls-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+}
+.ls-lightbox-img {
+  position: relative;
+  z-index: 1;
+  max-width: min(960px, 92vw);
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(200, 168, 75, 0.12) inset;
+  pointer-events: none;
+}
+@keyframes lsFadeIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.ls-lightbox.open .ls-lightbox-img {
+  animation: lsFadeIn 0.2s ease both;
 }

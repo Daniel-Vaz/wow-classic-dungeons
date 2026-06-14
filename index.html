@@ -52,8 +52,8 @@
   </div>
   <div class="faction-group" id="factionGroup">
     <button class="faction-btn active" data-faction="all">All Factions</button>
-    <button class="faction-btn faction-btn-alliance" data-faction="Alliance">⚜ Alliance</button>
-    <button class="faction-btn faction-btn-horde" data-faction="Horde">☠ Horde</button>
+    <button class="faction-btn faction-btn-alliance" data-faction="Alliance"><img src="assets/icons/alliance.png" alt="Alliance" class="faction-icon"> Alliance</button>
+    <button class="faction-btn faction-btn-horde" data-faction="Horde"><img src="assets/icons/horde.png" alt="Horde" class="faction-icon"> Horde</button>
   </div>
   <div class="controls-right">
     <button class="view-btn active" id="gridViewBtn" title="Grid view">⊞</button>
@@ -67,13 +67,13 @@
   <div class="layout">
     <aside class="sidebar">
       <div class="sidebar-section">
-        <div class="sidebar-title">⚔ Quest Locations</div>
+        <div class="sidebar-title">🧭 Quest Locations</div>
         <div class="sidebar-body">
           <div id="locationList"></div>
         </div>
       </div>
       <div class="sidebar-section">
-        <div class="sidebar-title">☠ Encounters</div>
+        <div class="sidebar-title">💀 Encounters</div>
         <div class="sidebar-body">
           <div id="encounterList"></div>
         </div>
@@ -99,15 +99,22 @@
   </div>
 </div>
 
+<!-- Loading Screen Lightbox -->
+<div id="loadingScreenLightbox" class="ls-lightbox" aria-hidden="true">
+  <div class="ls-lightbox-backdrop"></div>
+  <img id="loadingScreenLightboxImg" class="ls-lightbox-img" src="" alt="">
+</div>
+
 <!-- Map Modal -->
 <div id="mapModal" class="map-modal" aria-hidden="true">
   <div class="map-modal-backdrop"></div>
   <div class="map-modal-panel" role="dialog" aria-labelledby="mapModalTitle">
     <div class="map-modal-header">
       <span class="map-modal-title" id="mapModalTitle"></span>
-      <a id="mapModalWowheadLink" href="#" target="_blank" rel="noopener noreferrer" class="map-wowhead-link">View on Wowhead ↗</a>
+      <a id="mapModalWowheadLink" href="#" target="_blank" rel="noopener noreferrer" class="map-wowhead-link"><img src="assets/icons/wowhead.png" class="map-wowhead-logo" alt="Wowhead"> View on Wowhead ↗</a>
       <button class="map-modal-close" id="mapModalClose" aria-label="Close map">✕</button>
     </div>
+    <div class="map-level-nav" id="mapLevelNav"></div>
     <div class="map-modal-viewport" id="mapModalViewport">
       <img id="mapModalImg" src="" alt="Zone map" draggable="false">
       <div class="map-no-image" id="mapNoImage">Map not available</div>
