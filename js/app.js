@@ -24,16 +24,16 @@ const BOSS_ENCOUNTERS = {
     { name: "Rhahk'Zor", npcId: 644 },
     { name: 'Miner Johnson', npcId: 3586, rare: true },
     { name: "Sneed's Shredder", npcId: 643 },
-    { name: 'Gilnid', npcId: 1118 },
+    { name: 'Gilnid', npcId: 1763 },
     { name: 'Mr. Smite', npcId: 646 },
     { name: 'Captain Greenskin', npcId: 647 },
     { name: 'Cookie', npcId: 645 },
     { name: 'Edwin VanCleef', npcId: 639 },
   ],
   sfk: [
-    { name: 'Rethilgore', npcId: 3886 },
-    { name: 'Razorclaw the Butcher', npcId: 3887 },
-    { name: 'Baron Silverlaine', npcId: 3888 },
+    { name: 'Rethilgore', npcId: 3914 },
+    { name: 'Razorclaw the Butcher', npcId: 3886 },
+    { name: 'Baron Silverlaine', npcId: 3887 },
     { name: 'Commander Springvale', npcId: 4278 },
     { name: 'Odo the Blindwatcher', npcId: 4279 },
     { name: 'Deathsworn Captain', npcId: 3872, rare: true },
@@ -43,10 +43,10 @@ const BOSS_ENCOUNTERS = {
   ],
   stockades: [
     { name: 'Targorr the Dread', npcId: 1696 },
-    { name: 'Kam Deepfury', npcId: 1700 },
-    { name: 'Hamhock', npcId: 1702 },
-    { name: 'Bazil Thredd', npcId: 1701 },
-    { name: 'Dextren Ward', npcId: 1703 },
+    { name: 'Kam Deepfury', npcId: 1666 },
+    { name: 'Hamhock', npcId: 1717 },
+    { name: 'Bazil Thredd', npcId: 1716 },
+    { name: 'Dextren Ward', npcId: 1663 },
     { name: 'Bruegal Ironknuckle', npcId: 1720, rare: true },
   ],
   bfd: [
@@ -96,18 +96,18 @@ const BOSS_ENCOUNTERS = {
     { name: 'High Inquisitor Fairbanks', npcId: 4542 },
   ],
   rfd: [
-    { name: "Tuten'kash", npcId: 8567 },
+    { name: "Tuten'kash", npcId: 7355 },
     { name: 'Ragglesnout', npcId: 7354, rare: true },
     { name: 'Mordresh Fire Eye', npcId: 7357 },
-    { name: 'Glutton', npcId: 8565 },
+    { name: 'Glutton', npcId: 8567 },
     { name: 'Plaguemaw the Rotting', npcId: 7356 },
-    { name: 'Amnennar the Coldbringer', npcId: 8566 },
+    { name: 'Amnennar the Coldbringer', npcId: 7358 },
   ],
   uldaman: [
     { name: 'Revelosh', npcId: 6910 },
     { name: 'Ironaya', npcId: 7228 },
     { name: 'Obsidian Sentinel', npcId: 7023 },
-    { name: 'Ancient Stone Keeper', npcId: 4857 },
+    { name: 'Ancient Stone Keeper', npcId: 7206 },
     { name: 'Galgann Firehammer', npcId: 7291 },
     { name: 'Grimlok', npcId: 4854 },
     { name: 'Archaedas', npcId: 2748 },
@@ -125,12 +125,12 @@ const BOSS_ENCOUNTERS = {
     { name: 'Dustwraith', npcId: 10081, rare: true },
     { name: "Witch Doctor Zum'rah", npcId: 7271 },
     { name: 'Nekrum Gutchewer', npcId: 7796 },
-    { name: "Shadowpriest Sezz'ziz", npcId: 8153 },
+    { name: "Shadowpriest Sezz'ziz", npcId: 7275 },
     { name: 'Sergeant Bly', npcId: 7604 },
     { name: 'Hydromancer Velratha', npcId: 7795 },
     { name: "Gahz'rilla", npcId: 7273 },
     { name: 'Chief Ukorz Sandscalp', npcId: 7267 },
-    { name: 'Ruuzlu', npcId: 7268 },
+    { name: 'Ruuzlu', npcId: 7797 },
   ],
   mara: [
     { name: 'Noxxion', npcId: 13282 },
@@ -155,8 +155,8 @@ const BOSS_ENCOUNTERS = {
     { name: 'Hazzas', npcId: 5722 },
     { name: 'Morphaz', npcId: 5719 },
     { name: "Jammal'an the Prophet", npcId: 5710 },
-    { name: 'Ogom the Wretched', npcId: 8607 },
-    { name: 'Avatar of Hakkar', npcId: 8497 },
+    { name: 'Ogom the Wretched', npcId: 5711 },
+    { name: 'Avatar of Hakkar', npcId: 8443 },
     { name: 'Shade of Eranikus', npcId: 5709 },
   ],
   brd: [
@@ -180,7 +180,7 @@ const BOSS_ENCOUNTERS = {
     { name: 'Ambassador Flamelash', npcId: 9156 },
     { name: 'Panzor the Invincible', npcId: 8923, rare: true },
     { name: 'The Seven', npcId: null },
-    { name: 'Magmus', npcId: 9216 },
+    { name: 'Magmus', npcId: 9938 },
     { name: 'Princess Moira Bronzebeard', npcId: 8929 },
     { name: 'Emperor Dagran Thaurissan', npcId: 9019 },
   ],
@@ -453,6 +453,7 @@ function init() {
   initSidebarCollapse();
   initMapModal();
   initLoadingScreenLightbox();
+  initEncounterModal();
   selectDungeon('rfc');
 }
 
@@ -633,17 +634,12 @@ function renderEncounterList(dungeon) {
     const rareBadge = entry.rare ? '<span class="encounter-rare-badge">Rare</span>' : '';
     const icon = entry.rare ? '✧' : (entry.npcId ? '☠' : '⚔');
     const nameHtml = `<span class="encounter-skull">${icon}</span><span class="encounter-name">${entry.name}</span>${rareBadge}`;
-    let item;
-    if (entry.npcId) {
-      item = document.createElement('a');
-      item.href = `https://www.wowhead.com/classic/npc=${entry.npcId}`;
-      item.target = '_blank';
-      item.rel = 'noopener noreferrer';
-    } else {
-      item = document.createElement('div');
-    }
-    item.className = 'encounter-item' + (entry.rare ? ' encounter-rare' : '');
+    const item = document.createElement('div');
+    item.className = 'encounter-item' + (entry.rare ? ' encounter-rare' : '') + (entry.npcId ? ' has-model' : '');
     item.innerHTML = nameHtml;
+    if (entry.npcId) {
+      item.addEventListener('click', () => openEncounterModal(entry.name, entry.npcId));
+    }
     list.appendChild(item);
   });
 }
@@ -1291,6 +1287,52 @@ function closeLSLightbox() {
   const lightbox = document.getElementById('loadingScreenLightbox');
   lightbox.classList.remove('open');
   lightbox.setAttribute('aria-hidden', 'true');
+}
+
+// ═══════════════════════════════════════
+//  ENCOUNTER MODEL MODAL
+// ═══════════════════════════════════════
+function openEncounterModal(name, npcId) {
+  const modal  = document.getElementById('encounterModal');
+  const img    = document.getElementById('encounterModalImg');
+  const noImg  = document.getElementById('encounterNoImage');
+
+  document.getElementById('encounterModalTitle').textContent = name;
+  document.getElementById('encounterModalWowheadLink').href =
+    `https://www.wowhead.com/classic/npc=${npcId}`;
+
+  img.classList.remove('hidden');
+  noImg.classList.remove('visible');
+
+  img.onload  = null;
+  img.onerror = null;
+  img.src = '';
+
+  img.onload = () => { img.classList.remove('hidden'); };
+  img.onerror = () => {
+    img.classList.add('hidden');
+    noImg.classList.add('visible');
+  };
+  img.src = `assets/npc-models/${npcId}.jpg`;
+
+  modal.setAttribute('aria-hidden', 'false');
+  modal.classList.add('open');
+}
+
+function closeEncounterModal() {
+  const modal = document.getElementById('encounterModal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.getElementById('encounterModalImg').src = '';
+}
+
+function initEncounterModal() {
+  document.getElementById('encounterModalClose').addEventListener('click', closeEncounterModal);
+  document.querySelector('.encounter-modal-backdrop').addEventListener('click', closeEncounterModal);
+  document.addEventListener('keydown', e => {
+    const modal = document.getElementById('encounterModal');
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeEncounterModal();
+  });
 }
 
 init();
