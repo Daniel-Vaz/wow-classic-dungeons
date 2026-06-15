@@ -28,7 +28,7 @@
       <div class="header-logo-halo"></div>
       <img class="header-logo" src="assets/logo.png" alt="WoW Classic Dungeons Compendium">
     </div>
-    <p class="site-subtitle">Every Quest · Every Boss · Every Reward</p>
+    <p class="site-subtitle">The Definitive Guide to Azeroth's Classic Dungeons</p>
   </div>
   <div class="header-divider">
     <div class="header-divider-line header-divider-alliance"></div>
@@ -131,14 +131,46 @@
       <button class="map-modal-close" id="mapModalClose" aria-label="Close map">✕</button>
     </div>
     <div class="map-level-nav" id="mapLevelNav"></div>
-    <div class="map-modal-viewport" id="mapModalViewport">
-      <img id="mapModalImg" src="" alt="Zone map" draggable="false">
-      <div class="map-no-image" id="mapNoImage">Map not available</div>
+    <div class="map-modal-main">
+      <div class="map-modal-viewport" id="mapModalViewport">
+        <img id="mapModalImg" src="" alt="Zone map" draggable="false">
+        <div class="map-no-image" id="mapNoImage">Map not available</div>
+        <div id="mapPinContainer" class="map-pin-container" aria-hidden="true"></div>
+        <div id="mapCoordsDisplay" class="map-coords-display" style="display:none"></div>
+        <div id="mapPinEditDialog" class="map-pin-edit-dialog" style="display:none">
+          <div class="map-pin-edit-header">
+            <span class="map-pin-edit-title">Map Pin</span>
+            <span class="map-pin-edit-coords" id="mapPinEditCoords"></span>
+            <button class="map-pin-edit-close" id="mapPinEditClose">✕</button>
+          </div>
+          <input type="text" class="map-pin-edit-input" id="mapPinEditInput" placeholder="Label (optional)…" maxlength="40">
+          <div class="map-pin-edit-footer">
+            <button class="map-pin-edit-btn map-pin-save-btn" id="mapPinEditSave">Save</button>
+            <button class="map-pin-edit-btn map-pin-delete-btn" id="mapPinEditDelete">Delete</button>
+          </div>
+        </div>
+      </div>
+      <div class="map-pin-list-panel" id="mapPinListPanel">
+        <div class="map-pin-list-header">
+          <span class="map-pin-list-header-title">Pins</span>
+          <button class="map-pin-list-toggle" id="mapPinListToggle" title="Collapse pin list">‹</button>
+        </div>
+        <div class="map-pin-list" id="mapPinList"></div>
+      </div>
     </div>
     <div class="map-modal-footer">
       <button class="map-zoom-btn" id="mapZoomOut" title="Zoom out">−</button>
       <button class="map-zoom-btn map-zoom-btn--fit" id="mapZoomReset" title="Fit to view">⛶</button>
       <button class="map-zoom-btn" id="mapZoomIn" title="Zoom in">+</button>
+      <div class="map-footer-divider"></div>
+      <div class="map-coord-input-group">
+        <span class="map-coord-input-label">X</span>
+        <input type="number" class="map-coord-input" id="mapPinInputX" min="0" max="100" step="0.1" placeholder="0–100">
+        <span class="map-coord-input-label">Y</span>
+        <input type="number" class="map-coord-input" id="mapPinInputY" min="0" max="100" step="0.1" placeholder="0–100">
+        <button class="map-coord-place-btn" id="mapPinPlaceByCoord">Place Pin</button>
+      </div>
+      <span class="map-pin-footer-hint">or click map</span>
     </div>
   </div>
 </div>

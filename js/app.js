@@ -764,9 +764,20 @@ let mapScale = 1, mapX = 0, mapY = 0;
 let mapDragging = false, mapDragStartX = 0, mapDragStartY = 0;
 let mapNaturalW = 0, mapNaturalH = 0;
 
+// Coordinate & pin state
+let mapCurrentLocation = null;
+let mapCurrentLevelIndex = 0;
+let mapUserPins = [];
+let mapEditingPinId = null;
+let mapMouseDownX = 0, mapMouseDownY = 0, mapWasDragged = false;
+let pinPanelManualState = null; // null = follow screen size; true/false = user's explicit choice this session
+let resizeDebounceTimer = null;
+const PIN_PANEL_COLLAPSE_THRESHOLD = 900; // px — below this width the panel auto-collapses
+
 function applyMapTransform() {
   document.getElementById('mapModalImg').style.transform =
     `translate(${mapX}px, ${mapY}px) scale(${mapScale})`;
+  updatePinPositions();
 }
 
 function resetMapView() {
@@ -776,7 +787,7 @@ function resetMapView() {
   // Fit the image inside the viewport at scale 1
   const scaleW = mapNaturalW > 0 ? vpW / mapNaturalW : 1;
   const scaleH = mapNaturalH > 0 ? vpH / mapNaturalH : 1;
-  mapScale = Math.min(scaleW, scaleH, 1);
+  mapScale = Math.min(scaleW, scaleH);
   // Centre it
   mapX = (vpW - mapNaturalW * mapScale) / 2;
   mapY = (vpH - mapNaturalH * mapScale) / 2;
@@ -796,6 +807,7 @@ function loadMapImage(src) {
     mapNaturalH = img.naturalHeight;
     img.classList.remove('loading');
     resetMapView();
+    renderMapPins();
   };
   img.onerror = () => {
     img.style.display = 'none';
@@ -807,6 +819,11 @@ function loadMapImage(src) {
 function openMapModal(locationName) {
   const zoneId = ZONE_IDS[locationName];
   if (!zoneId) return;
+
+  mapCurrentLocation = locationName;
+  mapCurrentLevelIndex = 0;
+  closePinEditDialog();
+  applyPinListDefault();
 
   const wowheadUrl = `https://www.wowhead.com/classic/zone=${zoneId}`;
   document.getElementById('mapModalTitle').textContent = locationName;
@@ -825,6 +842,9 @@ function openMapModal(locationName) {
       btn.addEventListener('click', () => {
         levelNav.querySelectorAll('.map-level-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
+        mapCurrentLevelIndex = i;
+        closePinEditDialog();
+        loadMapUserPins();
         loadMapImage(level.src);
       });
       levelNav.appendChild(btn);
@@ -835,20 +855,21 @@ function openMapModal(locationName) {
   document.getElementById('mapModal').setAttribute('aria-hidden', 'false');
   document.getElementById('mapModal').classList.add('open');
 
+  loadMapUserPins();
   const firstSrc = levels ? levels[0].src : `assets/maps/${zoneId}.jpg`;
   loadMapImage(firstSrc);
 }
 
 function closeMapModal() {
+  closePinEditDialog();
   document.getElementById('mapModal').classList.remove('open');
   document.getElementById('mapModal').setAttribute('aria-hidden', 'true');
   document.getElementById('mapModalImg').src = '';
 }
 
 function initMapModal() {
-  const modal   = document.getElementById('mapModal');
-  const vp      = document.getElementById('mapModalViewport');
-  const img     = document.getElementById('mapModalImg');
+  const modal = document.getElementById('mapModal');
+  const vp    = document.getElementById('mapModalViewport');
 
   document.getElementById('mapModalClose').addEventListener('click', closeMapModal);
   document.querySelector('.map-modal-backdrop').addEventListener('click', closeMapModal);
@@ -878,20 +899,56 @@ function initMapModal() {
     applyMapTransform();
   }, { passive: false });
 
-  // Mouse drag
+  // Mouse drag — track start position to detect drag vs click
   vp.addEventListener('mousedown', e => {
+    if (e.target.closest('.map-pin-edit-dialog')) return;
     mapDragging = true;
     mapDragStartX = e.clientX - mapX;
     mapDragStartY = e.clientY - mapY;
+    mapMouseDownX = e.clientX;
+    mapMouseDownY = e.clientY;
+    mapWasDragged = false;
     e.preventDefault();
   });
   window.addEventListener('mousemove', e => {
     if (!mapDragging) return;
     mapX = e.clientX - mapDragStartX;
     mapY = e.clientY - mapDragStartY;
+    if (Math.abs(e.clientX - mapMouseDownX) > 4 || Math.abs(e.clientY - mapMouseDownY) > 4) {
+      mapWasDragged = true;
+    }
     applyMapTransform();
   });
   window.addEventListener('mouseup', () => { mapDragging = false; });
+
+  // Coordinate display on mouse move
+  vp.addEventListener('mousemove', e => {
+    const rect = vp.getBoundingClientRect();
+    const coords = getMapCoords(e.clientX - rect.left, e.clientY - rect.top);
+    const display = document.getElementById('mapCoordsDisplay');
+    if (coords) {
+      display.textContent = `${coords.x.toFixed(1)}, ${coords.y.toFixed(1)}`;
+      display.style.display = '';
+    } else {
+      display.style.display = 'none';
+    }
+  });
+  vp.addEventListener('mouseleave', () => {
+    document.getElementById('mapCoordsDisplay').style.display = 'none';
+  });
+
+  // Click on viewport — place a user pin (ignore drags and clicks on existing pins/dialog)
+  vp.addEventListener('click', e => {
+    if (mapWasDragged) return;
+    if (e.target.closest('.map-pin-edit-dialog')) return;
+    if (e.target.closest('.map-pin--user')) return; // handled by pin's own listener
+    closePinEditDialog();
+    if (e.target.closest('.map-pin--system') || e.target.closest('.map-pin--boss') || e.target.closest('.map-pin--quest')) return;
+    const rect = vp.getBoundingClientRect();
+    const coords = getMapCoords(e.clientX - rect.left, e.clientY - rect.top);
+    if (!coords) return;
+    placeUserPin(coords.x, coords.y);
+  });
 
   // Touch drag
   let lastTouchX = 0, lastTouchY = 0;
@@ -899,22 +956,61 @@ function initMapModal() {
     if (e.touches.length === 1) {
       lastTouchX = e.touches[0].clientX;
       lastTouchY = e.touches[0].clientY;
+      mapMouseDownX = lastTouchX;
+      mapMouseDownY = lastTouchY;
+      mapWasDragged = false;
     }
   }, { passive: true });
   vp.addEventListener('touchmove', e => {
     if (e.touches.length === 1) {
-      mapX += e.touches[0].clientX - lastTouchX;
-      mapY += e.touches[0].clientY - lastTouchY;
+      const dx = e.touches[0].clientX - lastTouchX;
+      const dy = e.touches[0].clientY - lastTouchY;
+      mapX += dx;
+      mapY += dy;
       lastTouchX = e.touches[0].clientX;
       lastTouchY = e.touches[0].clientY;
+      if (Math.abs(e.touches[0].clientX - mapMouseDownX) > 4 || Math.abs(e.touches[0].clientY - mapMouseDownY) > 4) {
+        mapWasDragged = true;
+      }
       applyMapTransform();
       e.preventDefault();
     }
   }, { passive: false });
 
+  // Pin list panel collapse/expand
+  document.getElementById('mapPinListToggle').addEventListener('click', togglePinListPanel);
+
+  // Place pin by typed coordinates
+  document.getElementById('mapPinPlaceByCoord').addEventListener('click', placeUserPinByInput);
+  document.getElementById('mapPinInputX').addEventListener('keydown', e => { if (e.key === 'Enter') placeUserPinByInput(); });
+  document.getElementById('mapPinInputY').addEventListener('keydown', e => { if (e.key === 'Enter') placeUserPinByInput(); });
+
+  // Pin edit dialog events
+  document.getElementById('mapPinEditClose').addEventListener('click', () => closePinEditDialog());
+  document.getElementById('mapPinEditSave').addEventListener('click', () => savePinEdit());
+  document.getElementById('mapPinEditDelete').addEventListener('click', () => deleteUserPin());
+  document.getElementById('mapPinEditInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') savePinEdit();
+    if (e.key === 'Escape') closePinEditDialog();
+  });
+
   // ESC key
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && modal.classList.contains('open')) closeMapModal();
+    if (e.key === 'Escape') {
+      if (mapEditingPinId) { closePinEditDialog(); return; }
+      if (modal.classList.contains('open')) closeMapModal();
+    }
+  });
+
+  // Responsive resize: re-centre the map and auto-toggle the pin panel
+  window.addEventListener('resize', () => {
+    if (!document.getElementById('mapModal').classList.contains('open')) return;
+    clearTimeout(resizeDebounceTimer);
+    resizeDebounceTimer = setTimeout(() => {
+      applyPinListResponsive();
+      // Wait for the panel CSS transition (0.22s) before recalculating the map layout
+      setTimeout(resetMapView, 240);
+    }, 150);
   });
 
   // Location link delegation (document-level — quest cards rebuild dynamically)
@@ -928,6 +1024,327 @@ function initMapModal() {
     const btn = e.target.closest('.map-instance-btn');
     if (btn) openMapModal(btn.dataset.mapName);
   });
+}
+
+// ═══════════════════════════════════════
+//  MAP COORDINATES & PINS
+// ═══════════════════════════════════════
+function mapPinsStorageKey() {
+  return `wow_map_pins::${mapCurrentLocation}::${mapCurrentLevelIndex}`;
+}
+
+function loadMapUserPins() {
+  mapUserPins = JSON.parse(localStorage.getItem(mapPinsStorageKey()) || '[]');
+}
+
+function saveMapUserPins() {
+  localStorage.setItem(mapPinsStorageKey(), JSON.stringify(mapUserPins));
+}
+
+function getMapCoords(vpX, vpY) {
+  if (!mapNaturalW || !mapNaturalH) return null;
+  const imgX = (vpX - mapX) / mapScale;
+  const imgY = (vpY - mapY) / mapScale;
+  if (imgX < 0 || imgX > mapNaturalW || imgY < 0 || imgY > mapNaturalH) return null;
+  return {
+    x: (imgX / mapNaturalW) * 100,
+    y: (imgY / mapNaturalH) * 100,
+  };
+}
+
+function coordsToViewport(x, y) {
+  return {
+    vx: mapX + (x / 100) * mapNaturalW * mapScale,
+    vy: mapY + (y / 100) * mapNaturalH * mapScale,
+  };
+}
+
+function renderMapPins() {
+  const container = document.getElementById('mapPinContainer');
+  if (!container) return;
+  container.innerHTML = '';
+
+  // System/predefined pins from MAP_PINS constant
+  const zoneId = ZONE_IDS[mapCurrentLocation];
+  let systemEntry = MAP_PINS[mapCurrentLocation] || (zoneId && MAP_PINS[zoneId]) || null;
+  let systemPins = [];
+  if (systemEntry) {
+    systemPins = Array.isArray(systemEntry[0]) ? (systemEntry[mapCurrentLevelIndex] || []) : systemEntry;
+    systemPins.forEach(pin => renderSinglePin(container, pin, 'system'));
+  }
+
+  // User pins
+  mapUserPins.forEach(pin => renderSinglePin(container, pin, 'user'));
+
+  renderPinList(systemPins, mapUserPins);
+}
+
+function renderPinList(systemPins, userPins) {
+  const list = document.getElementById('mapPinList');
+  if (!list) return;
+  list.innerHTML = '';
+
+  if (systemPins.length === 0 && userPins.length === 0) {
+    list.innerHTML = `<div class="pin-list-empty">No pins yet.<br>Click the map or use<br>the coordinate inputs.</div>`;
+    return;
+  }
+
+  if (systemPins.length > 0) {
+    const sectionLabel = document.createElement('div');
+    sectionLabel.className = 'map-pin-list-section-label';
+    sectionLabel.textContent = 'Map Pins';
+    list.appendChild(sectionLabel);
+    systemPins.forEach(pin => list.appendChild(buildPinListItem(pin, 'system')));
+  }
+
+  if (userPins.length > 0) {
+    if (systemPins.length > 0) {
+      const sectionLabel = document.createElement('div');
+      sectionLabel.className = 'map-pin-list-section-label';
+      sectionLabel.textContent = 'My Pins';
+      list.appendChild(sectionLabel);
+    }
+    userPins.forEach(pin => list.appendChild(buildPinListItem(pin, 'user')));
+  }
+}
+
+function buildPinListItem(pin, type) {
+  const pinType = pin.type || type;
+  const item = document.createElement('div');
+  item.className = 'pin-list-item';
+  if (type === 'user') item.dataset.pinId = pin.id;
+
+  const iconEl = document.createElement('div');
+  iconEl.className = `pin-list-icon pin-list-icon--${pinType}`;
+
+  const info = document.createElement('div');
+  info.className = 'pin-list-info';
+
+  const nameEl = document.createElement('div');
+  nameEl.className = 'pin-list-name';
+  nameEl.textContent = pin.label || `${pin.x.toFixed(1)}, ${pin.y.toFixed(1)}`;
+
+  const coordEl = document.createElement('div');
+  coordEl.className = 'pin-list-coords';
+  coordEl.textContent = pin.label ? `${pin.x.toFixed(1)}, ${pin.y.toFixed(1)}` : '';
+
+  info.appendChild(nameEl);
+  if (pin.label) info.appendChild(coordEl);
+  item.appendChild(iconEl);
+  item.appendChild(info);
+
+  if (type === 'user') {
+    const delBtn = document.createElement('button');
+    delBtn.className = 'pin-list-delete';
+    delBtn.title = 'Delete pin';
+    delBtn.textContent = '✕';
+    delBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      mapUserPins = mapUserPins.filter(p => p.id !== pin.id);
+      if (mapEditingPinId === pin.id) closePinEditDialog();
+      saveMapUserPins();
+      renderMapPins();
+    });
+    item.appendChild(delBtn);
+  }
+
+  item.addEventListener('click', () => navigateToPin(pin, type));
+  return item;
+}
+
+function navigateToPin(pin, type) {
+  const vp = document.getElementById('mapModalViewport');
+  mapX = vp.clientWidth  / 2 - (pin.x / 100) * mapNaturalW * mapScale;
+  mapY = vp.clientHeight / 2 - (pin.y / 100) * mapNaturalH * mapScale;
+  applyMapTransform();
+
+  // Highlight the pin on the map briefly
+  const pinEl = document.querySelector(
+    type === 'user'
+      ? `.map-pin[data-pin-id="${pin.id}"]`
+      : `.map-pin--system[data-x="${pin.x}"]`
+  );
+  if (pinEl) {
+    pinEl.classList.remove('pin-highlight');
+    void pinEl.offsetWidth; // reflow to restart animation
+    pinEl.classList.add('pin-highlight');
+    pinEl.addEventListener('animationend', () => pinEl.classList.remove('pin-highlight'), { once: true });
+  }
+
+  // Open edit dialog for user pins
+  if (type === 'user') openPinEditDialog(pin.id);
+}
+
+function renderSinglePin(container, pin, type) {
+  const { vx, vy } = coordsToViewport(pin.x, pin.y);
+  const pinType = pin.type || type;
+  const el = document.createElement('div');
+  el.className = `map-pin map-pin--${pinType}`;
+  el.style.left = `${vx}px`;
+  el.style.top  = `${vy}px`;
+  el.dataset.x = pin.x;
+  el.dataset.y = pin.y;
+  if (type === 'user') el.dataset.pinId = pin.id;
+
+  const coordStr = `${pin.x.toFixed(1)}, ${pin.y.toFixed(1)}`;
+  const tooltipInner = pin.label
+    ? `<strong>${pin.label}</strong><span>${coordStr}</span>`
+    : `<span>${coordStr}</span>`;
+
+  el.innerHTML = `
+    <div class="map-pin-marker"></div>
+    ${pin.label ? `<div class="map-pin-label">${pin.label}</div>` : ''}
+    <div class="map-pin-tooltip">${tooltipInner}</div>
+  `;
+
+  if (type === 'user') {
+    el.addEventListener('click', e => {
+      e.stopPropagation();
+      openPinEditDialog(pin.id);
+    });
+  }
+
+  container.appendChild(el);
+}
+
+function updatePinPositions() {
+  const container = document.getElementById('mapPinContainer');
+  if (!container) return;
+  container.querySelectorAll('.map-pin').forEach(el => {
+    const x = parseFloat(el.dataset.x);
+    const y = parseFloat(el.dataset.y);
+    if (isNaN(x) || isNaN(y)) return;
+    const { vx, vy } = coordsToViewport(x, y);
+    el.style.left = `${vx}px`;
+    el.style.top  = `${vy}px`;
+  });
+
+  // Reposition edit dialog if open
+  if (mapEditingPinId) {
+    const pin = mapUserPins.find(p => p.id === mapEditingPinId);
+    if (pin) repositionPinEditDialog(pin);
+  }
+}
+
+function placeUserPin(x, y) {
+  const id = Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+  const pin = { id, x, y, label: '' };
+  mapUserPins.push(pin);
+  saveMapUserPins();
+  renderMapPins();
+  openPinEditDialog(id);
+}
+
+function placeUserPinByInput() {
+  const xEl = document.getElementById('mapPinInputX');
+  const yEl = document.getElementById('mapPinInputY');
+  const x = parseFloat(xEl.value);
+  const y = parseFloat(yEl.value);
+
+  const xValid = !isNaN(x) && x >= 0 && x <= 100;
+  const yValid = !isNaN(y) && y >= 0 && y <= 100;
+  xEl.classList.toggle('input-error', !xValid);
+  yEl.classList.toggle('input-error', !yValid);
+  if (!xValid || !yValid) return;
+
+  xEl.classList.remove('input-error');
+  yEl.classList.remove('input-error');
+  xEl.value = '';
+  yEl.value = '';
+
+  // Pan the map to centre on the new pin
+  const vp = document.getElementById('mapModalViewport');
+  mapX = vp.clientWidth  / 2 - (x / 100) * mapNaturalW * mapScale;
+  mapY = vp.clientHeight / 2 - (y / 100) * mapNaturalH * mapScale;
+  applyMapTransform();
+
+  placeUserPin(x, y);
+}
+
+function openPinEditDialog(pinId) {
+  const pin = mapUserPins.find(p => p.id === pinId);
+  if (!pin) return;
+  mapEditingPinId = pinId;
+  document.getElementById('mapPinEditCoords').textContent = `${pin.x.toFixed(1)}, ${pin.y.toFixed(1)}`;
+  document.getElementById('mapPinEditInput').value = pin.label || '';
+  const dialog = document.getElementById('mapPinEditDialog');
+  dialog.style.display = 'block';
+  repositionPinEditDialog(pin);
+  document.getElementById('mapPinEditInput').focus();
+}
+
+function repositionPinEditDialog(pin) {
+  const { vx, vy } = coordsToViewport(pin.x, pin.y);
+  const dialog = document.getElementById('mapPinEditDialog');
+  const vp = document.getElementById('mapModalViewport');
+  const vpW = vp.clientWidth;
+  const vpH = vp.clientHeight;
+  const dw = dialog.offsetWidth || 210;
+  const dh = dialog.offsetHeight || 115;
+
+  let dleft = vx + 18;
+  let dtop  = vy - dh - 18;
+  if (dleft + dw > vpW - 8) dleft = vx - dw - 18;
+  if (dleft < 8) dleft = 8;
+  if (dtop < 8) dtop = vy + 20;
+  if (dtop + dh > vpH - 8) dtop = vpH - dh - 8;
+
+  dialog.style.left = `${dleft}px`;
+  dialog.style.top  = `${dtop}px`;
+}
+
+function closePinEditDialog() {
+  document.getElementById('mapPinEditDialog').style.display = 'none';
+  mapEditingPinId = null;
+}
+
+function savePinEdit() {
+  const pin = mapUserPins.find(p => p.id === mapEditingPinId);
+  if (pin) {
+    pin.label = document.getElementById('mapPinEditInput').value.trim();
+    saveMapUserPins();
+    renderMapPins();
+  }
+  closePinEditDialog();
+}
+
+function deleteUserPin() {
+  mapUserPins = mapUserPins.filter(p => p.id !== mapEditingPinId);
+  saveMapUserPins();
+  renderMapPins();
+  closePinEditDialog();
+}
+
+function setPinListCollapsed(collapsed) {
+  const panel = document.getElementById('mapPinListPanel');
+  const btn   = document.getElementById('mapPinListToggle');
+  panel.classList.toggle('collapsed', collapsed);
+  btn.textContent = collapsed ? '›' : '‹';
+  btn.title = collapsed ? 'Expand pin list' : 'Collapse pin list';
+}
+
+function togglePinListPanel() {
+  const collapsed = !document.getElementById('mapPinListPanel').classList.contains('collapsed');
+  pinPanelManualState = collapsed;
+  setPinListCollapsed(collapsed);
+}
+
+function applyPinListDefault() {
+  // Respect an explicit toggle the user made this session; otherwise use screen width
+  const collapsed = pinPanelManualState !== null
+    ? pinPanelManualState
+    : window.innerWidth < PIN_PANEL_COLLAPSE_THRESHOLD;
+  setPinListCollapsed(collapsed);
+}
+
+function applyPinListResponsive() {
+  const shouldCollapse = window.innerWidth < PIN_PANEL_COLLAPSE_THRESHOLD;
+  const isCollapsed = document.getElementById('mapPinListPanel').classList.contains('collapsed');
+  if (shouldCollapse !== isCollapsed) {
+    // Window crossed the threshold — override manual preference and re-sync
+    pinPanelManualState = null;
+    setPinListCollapsed(shouldCollapse);
+  }
 }
 
 // ═══════════════════════════════════════

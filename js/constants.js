@@ -439,8 +439,8 @@ const MULTI_LEVEL_MAPS = {
     { label: 'Sunken Temple', src: 'assets/maps/1477.jpg' },
   ],
   1581: [
-    { label: 'Cave Entrance', src: 'assets/maps/1581_cave.jpg' },
-    { label: 'Boat',          src: 'assets/maps/1581_boat.jpg' },
+    { label: 'DeadMines', src: 'assets/maps/1581_cave.jpg' },
+    { label: 'Ironclad Cove',          src: 'assets/maps/1581_boat.jpg' },
   ],
   1583: [
     { label: 'Hall of Blackhand',  src: 'assets/maps/1583_hallofblackhand.jpg' },
@@ -504,4 +504,20 @@ const MULTI_LEVEL_MAPS = {
     { label: 'Upper – The Rookery',        src: 'assets/maps/ubrs_rookery.jpg'         },
     { label: 'Upper – Blackrock Stadium',  src: 'assets/maps/ubrs_stadium.jpg'         },
   ],
+};
+
+// ═══════════════════════════════════════
+//  PREDEFINED MAP PINS
+//  Keyed by location name or zone ID (matches ZONE_IDS keys / DUNGEON_MAP_NAME values).
+//  For multi-level maps, value is an array-of-arrays indexed by level.
+//  For single-level maps, value is a flat array of pins.
+//  Pin: { x, y, label, type: 'boss'|'npc'|'quest'|'point' }
+//  Coordinates: 0–100 (0,0 = top-left, 100,100 = bottom-right)
+// ═══════════════════════════════════════
+const MAP_PINS = {
+  // Example — uncomment and fill real coordinates when known:
+  // 'Ragefire Chasm': [
+  //   { x: 48, y: 52, label: 'Oggleflint', type: 'boss' },
+  //   { x: 55, y: 60, label: 'Taragaman', type: 'boss' },
+  // ],
 };
