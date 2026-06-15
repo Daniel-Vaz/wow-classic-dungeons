@@ -274,6 +274,30 @@ function renderEncounterList(dungeon) {
       list.appendChild(header);
       return;
     }
+    if (entry.event) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'encounter-event-wrapper';
+
+      const label = document.createElement('div');
+      label.className = 'encounter-item encounter-event-header';
+      label.innerHTML = `<span class="encounter-skull">⚔</span><span class="encounter-name">${entry.name}</span><span class="encounter-event-badge">Event</span>`;
+      wrapper.appendChild(label);
+
+      const bossGroup = document.createElement('div');
+      bossGroup.className = 'encounter-event-bosses';
+
+      (entry.bosses || []).forEach(boss => {
+        const bossItem = document.createElement('div');
+        bossItem.className = 'encounter-item encounter-event-boss has-model';
+        bossItem.innerHTML = `<span class="encounter-skull">☠</span><span class="encounter-name">${boss.name}</span>`;
+        bossItem.addEventListener('click', () => openEncounterModal(boss.name, boss.npcId));
+        bossGroup.appendChild(bossItem);
+      });
+
+      wrapper.appendChild(bossGroup);
+      list.appendChild(wrapper);
+      return;
+    }
     const rareBadge = entry.rare ? '<span class="encounter-rare-badge">Rare</span>' : '';
     const icon = entry.rare ? '✧' : (entry.npcId ? '☠' : '⚔');
     const nameHtml = `<span class="encounter-skull">${icon}</span><span class="encounter-name">${entry.name}</span>${rareBadge}`;

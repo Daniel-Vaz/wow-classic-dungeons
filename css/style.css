@@ -1602,6 +1602,38 @@ button.guides-box-link {
 .encounter-item:not(.has-model) .encounter-skull {
   color: var(--border-gold);
 }
+.encounter-event-wrapper {
+  border-bottom: 1px solid var(--border);
+}
+.encounter-event-wrapper:last-child {
+  border-bottom: none;
+}
+.encounter-event-header {
+  cursor: default;
+  border-bottom: none;
+}
+.encounter-event-badge {
+  font-family: 'Cinzel', serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
+  color: #7dbcff;
+  border: 1px solid rgba(125,188,255,0.3);
+  border-radius: 2px;
+  padding: 1px 5px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+.encounter-event-bosses {
+  border-top: 1px solid var(--border);
+  background: rgba(0,0,0,0.15);
+}
+.encounter-event-boss {
+  padding-left: 32px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.encounter-event-boss:last-child {
+  border-bottom: none;
+}
 .encounter-empty {
   padding: 10px 14px;
   font-size: 0.78rem;
