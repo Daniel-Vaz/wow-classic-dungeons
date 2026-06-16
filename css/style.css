@@ -337,6 +337,22 @@ body::before {
   letter-spacing: 0.05em;
 }
 .dungeon-tab.active .tab-level { color: var(--gold-dim); }
+.dungeon-tab.dungeon-complete { color: var(--gold-light); }
+.dungeon-tab.dungeon-complete::after {
+  content: '✓';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 13px;
+  height: 13px;
+  font-size: 0.58rem;
+  line-height: 13px;
+  text-align: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  color: #1a1208;
+  box-shadow: 0 0 6px rgba(240,208,128,0.8);
+}
 
 /* ── MAIN LAYOUT ── */
 .main {
@@ -365,6 +381,55 @@ body::before {
   top: 0; left: 0; right: 0;
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.dungeon-header.all-complete {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px rgba(240,208,128,0.25), 0 0 28px rgba(200,168,75,0.25);
+  animation: dungeon-complete-glow 3s ease-in-out infinite;
+}
+.dungeon-header.all-complete::before {
+  background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+}
+@keyframes dungeon-complete-glow {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(240,208,128,0.25), 0 0 28px rgba(200,168,75,0.22); }
+  50%      { box-shadow: 0 0 0 1px rgba(240,208,128,0.4), 0 0 42px rgba(200,168,75,0.4); }
+}
+.dungeon-complete-ribbon {
+  display: none;
+  position: absolute;
+  top: 14px;
+  right: -2px;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px 6px 14px;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  color: #1a1208;
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 3px 0 0 3px;
+  box-shadow: 0 2px 14px rgba(240,208,128,0.5), -2px 2px 8px rgba(0,0,0,0.35);
+  z-index: 1;
+}
+.dungeon-header.all-complete .dungeon-complete-ribbon {
+  display: flex;
+  animation: ribbon-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.ribbon-icon { font-size: 0.95rem; }
+@keyframes ribbon-pop {
+  0%   { transform: scale(0.4) translateX(20px); opacity: 0; }
+  100% { transform: scale(1) translateX(0); opacity: 1; }
+}
+@media (max-width: 560px) {
+  .dungeon-complete-ribbon {
+    position: static;
+    width: 100%;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 4px;
+  }
 }
 .dungeon-icon {
   font-size: 2.5rem;
@@ -449,11 +514,32 @@ body::before {
   background: linear-gradient(90deg, var(--gold-dim), var(--gold));
   border-radius: 2px;
   transition: width 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+.progress-bar-fill.complete {
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+}
+.progress-bar-fill.complete::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0; left: -60%;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.65), transparent);
+  animation: progress-shine 2.2s ease-in-out infinite;
+}
+@keyframes progress-shine {
+  0%   { left: -60%; }
+  100% { left: 120%; }
 }
 .progress-fraction {
   font-family: 'Cinzel', serif;
   font-size: 0.7rem;
   color: var(--gold);
+}
+.progress-fraction.complete {
+  color: var(--gold-light);
+  text-shadow: 0 0 8px rgba(240,208,128,0.6);
 }
 
 /* ── QUEST GRID / LIST ── */

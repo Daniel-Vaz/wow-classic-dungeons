@@ -80,6 +80,7 @@ function buildLocationLink(name) {
 // ═══════════════════════════════════════
 function init() {
   buildDungeonTabs();
+  updateTabCompletionBadges();
   bindControls();
   initSidebarCollapse();
   initMapModal();
@@ -87,6 +88,26 @@ function init() {
   initEncounterModal();
   initVideoModal();
   selectDungeon('rfc');
+}
+
+// ═══════════════════════════════════════
+//  COMPLETION HELPERS
+// ═══════════════════════════════════════
+function isDungeonFullyComplete(dungeon) {
+  let quests = dungeon.quests.map(normalizeQuest).filter(q => q.absorbedBy === null);
+  if (factionFilter) {
+    quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
+  }
+  if (quests.length === 0) return false;
+  return quests.every(q => completed[dungeon.id + '::' + q.name]);
+}
+
+function updateTabCompletionBadges() {
+  document.querySelectorAll('.dungeon-tab').forEach(tab => {
+    const dungeon = DUNGEONS.find(d => d.id === tab.dataset.id);
+    if (!dungeon) return;
+    tab.classList.toggle('dungeon-complete', isDungeonFullyComplete(dungeon));
+  });
 }
 
 // ═══════════════════════════════════════
@@ -191,9 +212,14 @@ function renderDungeonHeader(dungeon) {
   guidesEl.innerHTML = mapBoxHtml + wowheadBoxHtml + videoBoxHtml;
 
   const pct = quests.length ? (completedCount / quests.length * 100) : 0;
+  const isComplete = quests.length > 0 && completedCount === quests.length;
   document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressBar').classList.toggle('complete', isComplete);
   document.getElementById('progressFraction').textContent = `${completedCount} / ${quests.length}`;
+  document.getElementById('progressFraction').classList.toggle('complete', isComplete);
+  document.getElementById('dungeonHeader').classList.toggle('all-complete', isComplete);
   renderStatsBar(dungeon);
+  updateTabCompletionBadges();
 }
 
 // ═══════════════════════════════════════
