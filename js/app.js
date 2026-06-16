@@ -860,8 +860,13 @@ function openMapModal(locationName) {
   loadMapImage(firstSrc);
 }
 
+function clearActivePinLabels() {
+  document.querySelectorAll('.map-pin.label-active').forEach(p => p.classList.remove('label-active'));
+}
+
 function closeMapModal() {
   closePinEditDialog();
+  clearActivePinLabels();
   document.getElementById('mapModal').classList.remove('open');
   document.getElementById('mapModal').setAttribute('aria-hidden', 'true');
   document.getElementById('mapModalImg').src = '';
@@ -944,6 +949,7 @@ function initMapModal() {
     if (e.target.closest('.map-pin--user')) return; // handled by pin's own listener
     closePinEditDialog();
     if (e.target.closest('.map-pin--system') || e.target.closest('.map-pin--boss') || e.target.closest('.map-pin--quest')) return;
+    clearActivePinLabels();
     const rect = vp.getBoundingClientRect();
     const coords = getMapCoords(e.clientX - rect.left, e.clientY - rect.top);
     if (!coords) return;
@@ -1169,6 +1175,8 @@ function navigateToPin(pin, type) {
     void pinEl.offsetWidth; // reflow to restart animation
     pinEl.classList.add('pin-highlight');
     pinEl.addEventListener('animationend', () => pinEl.classList.remove('pin-highlight'), { once: true });
+    clearActivePinLabels();
+    pinEl.classList.add('label-active');
   }
 
   // Open edit dialog for user pins
@@ -1193,16 +1201,16 @@ function renderSinglePin(container, pin, type) {
 
   el.innerHTML = `
     <div class="map-pin-marker"></div>
-    ${pin.label ? `<div class="map-pin-label">${pin.label}</div>` : ''}
     <div class="map-pin-tooltip">${tooltipInner}</div>
   `;
 
-  if (type === 'user') {
-    el.addEventListener('click', e => {
-      e.stopPropagation();
-      openPinEditDialog(pin.id);
-    });
-  }
+  el.addEventListener('click', e => {
+    e.stopPropagation();
+    const wasActive = el.classList.contains('label-active');
+    clearActivePinLabels();
+    if (!wasActive) el.classList.add('label-active');
+    if (type === 'user') openPinEditDialog(pin.id);
+  });
 
   container.appendChild(el);
 }
@@ -1327,6 +1335,9 @@ function togglePinListPanel() {
   const collapsed = !document.getElementById('mapPinListPanel').classList.contains('collapsed');
   pinPanelManualState = collapsed;
   setPinListCollapsed(collapsed);
+  // Wait for the panel's CSS width transition (0.22s) before recalculating the map layout
+  clearTimeout(resizeDebounceTimer);
+  resizeDebounceTimer = setTimeout(resetMapView, 240);
 }
 
 function applyPinListDefault() {

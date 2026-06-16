@@ -1311,6 +1311,16 @@ button.guides-box-link {
   #dungeonHeaderGuides .guides-box {
     width: 100%;
   }
+  .map-footer-divider {
+    display: none;
+  }
+  .map-pin-footer-hint {
+    display: none;
+  }
+  .map-coord-input-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* ── CLICKABLE LOCATION LINKS ── */
@@ -1500,8 +1510,11 @@ button.guides-box-link {
 .map-no-image.visible { display: flex; }
 .map-modal-footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 8px;
+  row-gap: 6px;
   padding: 8px 16px;
   border-top: 1px solid var(--border);
   background: rgba(0, 0, 0, 0.2);
@@ -2051,25 +2064,10 @@ button.guides-box-link {
   box-shadow: 0 0 10px currentColor, 0 2px 6px rgba(0,0,0,0.9);
 }
 
-.map-pin-label {
-  position: absolute;
-  bottom: calc(100% + 5px);
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Cinzel', serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.05em;
-  color: #fff;
-  white-space: nowrap;
-  text-shadow: 0 1px 4px #000, 0 0 8px #000, 0 0 12px rgba(0,0,0,0.8);
-  pointer-events: none;
-  line-height: 1;
-}
-
 .map-pin-tooltip {
   display: none;
   position: absolute;
-  bottom: calc(100% + 22px);
+  bottom: calc(100% + 9px);
   left: 50%;
   transform: translateX(-50%);
   background: rgba(8, 6, 3, 0.95);
@@ -2093,7 +2091,10 @@ button.guides-box-link {
   color: var(--text-dim);
   font-size: 0.62rem;
 }
-.map-pin:hover .map-pin-tooltip { display: block; }
+.map-pin:hover .map-pin-tooltip,
+.map-pin.label-active .map-pin-tooltip {
+  display: block;
+}
 
 /* Pin type colours */
 .map-pin--user    { color: #4ec9d4; }
