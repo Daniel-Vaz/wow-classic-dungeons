@@ -85,6 +85,7 @@ function init() {
   initMapModal();
   initLoadingScreenLightbox();
   initEncounterModal();
+  initVideoModal();
   selectDungeon('rfc');
 }
 
@@ -177,7 +178,17 @@ function renderDungeonHeader(dungeon) {
       })()
     : '';
 
-  guidesEl.innerHTML = mapBoxHtml + wowheadBoxHtml;
+  const videoEntries = VIDEO_GUIDES[dungeon.id] || [];
+  const videoBoxHtml = videoEntries.length > 0
+    ? `<div class="guides-box video-guides-box">
+        <div class="guides-box-label"><img src="assets/icons/youtube.svg" class="guides-box-youtube-logo" alt="YouTube"> Video Guides</div>
+        <div class="guides-box-links">${videoEntries
+          .map(v => `<button class="guides-box-link video-guide-btn" data-youtube-id="${v.youtubeId}" data-video-title="${dungeon.name}${videoEntries.length > 1 ? ' – ' + v.label : ''}">▶ ${v.label}</button>`)
+          .join('')}</div>
+      </div>`
+    : '';
+
+  guidesEl.innerHTML = mapBoxHtml + wowheadBoxHtml + videoBoxHtml;
 
   const pct = quests.length ? (completedCount / quests.length * 100) : 0;
   document.getElementById('progressBar').style.width = pct + '%';
@@ -1030,6 +1041,12 @@ function initMapModal() {
     const btn = e.target.closest('.map-instance-btn');
     if (btn) openMapModal(btn.dataset.mapName);
   });
+
+  // Video guide button in dungeon header
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.video-guide-btn');
+    if (btn) openVideoModal(btn.dataset.videoTitle, btn.dataset.youtubeId);
+  });
 }
 
 // ═══════════════════════════════════════
@@ -1430,6 +1447,35 @@ function initEncounterModal() {
   document.addEventListener('keydown', e => {
     const modal = document.getElementById('encounterModal');
     if (e.key === 'Escape' && modal.classList.contains('open')) closeEncounterModal();
+  });
+}
+
+// ═══════════════════════════════════════
+//  VIDEO GUIDE MODAL
+// ═══════════════════════════════════════
+function openVideoModal(title, youtubeId) {
+  const modal = document.getElementById('videoModal');
+  document.getElementById('videoModalTitle').textContent = title;
+  document.getElementById('videoModalYoutubeLink').href = `https://www.youtube.com/watch?v=${youtubeId}`;
+  document.getElementById('videoModalIframe').src = `https://www.youtube.com/embed/${youtubeId}`;
+
+  modal.setAttribute('aria-hidden', 'false');
+  modal.classList.add('open');
+}
+
+function closeVideoModal() {
+  const modal = document.getElementById('videoModal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.getElementById('videoModalIframe').src = '';
+}
+
+function initVideoModal() {
+  document.getElementById('videoModalClose').addEventListener('click', closeVideoModal);
+  document.querySelector('.video-modal-backdrop').addEventListener('click', closeVideoModal);
+  document.addEventListener('keydown', e => {
+    const modal = document.getElementById('videoModal');
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeVideoModal();
   });
 }
 

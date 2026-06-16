@@ -121,6 +121,24 @@
   <img id="loadingScreenLightboxImg" class="ls-lightbox-img" src="" alt="">
 </div>
 
+<!-- Video Guide Modal -->
+<div id="videoModal" class="video-modal" aria-hidden="true">
+  <div class="video-modal-backdrop"></div>
+  <div class="video-modal-panel" role="dialog" aria-labelledby="videoModalTitle">
+    <div class="video-modal-header">
+      <span class="video-modal-title" id="videoModalTitle"></span>
+      <a id="videoModalYoutubeLink" href="#" target="_blank" rel="noopener noreferrer" class="map-wowhead-link video-youtube-link"><img src="assets/icons/youtube.svg" class="map-wowhead-logo" alt="YouTube"> Watch on YouTube ↗</a>
+      <button class="map-modal-close" id="videoModalClose" aria-label="Close">✕</button>
+    </div>
+    <div class="video-modal-body">
+      <iframe id="videoModalIframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-modal-footer">
+      Special thanks to <a href="https://www.youtube.com/@Thraex" target="_blank" rel="noopener noreferrer" class="video-modal-credit-link">Thraex</a>, the original creator of these videos.
+    </div>
+  </div>
+</div>
+
 <!-- Map Modal -->
 <div id="mapModal" class="map-modal" aria-hidden="true">
   <div class="map-modal-backdrop"></div>

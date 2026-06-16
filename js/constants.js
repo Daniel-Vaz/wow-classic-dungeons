@@ -333,6 +333,39 @@ const STRATEGY_URLS = {
 };
 
 // ═══════════════════════════════════════
+//  YOUTUBE VIDEO GUIDES
+// ═══════════════════════════════════════
+const VIDEO_GUIDES = {
+  rfc:       [{ label: 'Guide', youtubeId: 'kmK5CP37rCo' }],
+  wc:        [{ label: 'Guide', youtubeId: 'd4ZsTWyeZ14' }],
+  deadmines: [{ label: 'Guide', youtubeId: 'OJwHyhfqeOs' }],
+  sfk:       [{ label: 'Guide', youtubeId: 'xKVXwRonM7M' }],
+  bfd:       [{ label: 'Guide', youtubeId: 'u8ujWkUCIo0' }],
+  stockades: [{ label: 'Guide', youtubeId: 'Bik80wgNQAI' }],
+  rfk:       [{ label: 'Guide', youtubeId: 'lDlZjWLbdbU' }],
+  gnomer:    [{ label: 'Guide', youtubeId: '25qzwh7pkDg' }],
+  rfd:       [{ label: 'Guide', youtubeId: 'Dl4KxA7rORE' }],
+  sm:        [{ label: 'Guide', youtubeId: '0_UW6a6Hr28' }],
+  uldaman:   [{ label: 'Guide', youtubeId: 'fHu6lBF04bg' }],
+  zf:        [{ label: 'Guide', youtubeId: 'KSE5CSMKWhg' }],
+  mara:      [{ label: 'Guide', youtubeId: 'um3d4wdd4Ag' }],
+  st:        [{ label: 'Guide', youtubeId: '45GIKTF9Cu4' }],
+  brd:       [{ label: 'Guide', youtubeId: 'AUq-Tb7rZTY' }],
+  lbrs:      [{ label: 'Guide', youtubeId: '3bKwDcQqINM' }],
+  ubrs:      [{ label: 'Guide', youtubeId: '8CZ6rip-EDY' }],
+  scholo:    [{ label: 'Guide', youtubeId: 'xnLVACle1pA' }],
+  strath:    [
+    { label: 'Live Side',   youtubeId: 'tCwpCbnSWE4' },
+    { label: 'Undead Side', youtubeId: '0ztg4Lqjwhs' },
+  ],
+  dm:        [
+    { label: 'East Wing',  youtubeId: 'B9De6Aq4aFs' },
+    { label: 'North Wing', youtubeId: 'tTv56xrIkzM' },
+    { label: 'West Wing',  youtubeId: '2ha9O7PQ2u8' },
+  ],
+};
+
+// ═══════════════════════════════════════
 //  ZONE MAP IDS  (Wowhead area table IDs)
 // ═══════════════════════════════════════
 const ZONE_IDS = {

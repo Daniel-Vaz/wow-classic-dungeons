@@ -980,6 +980,30 @@ button.guides-box-link {
   border-color: var(--gold);
   background: rgba(200,168,75,0.12);
 }
+.guides-box-youtube-logo {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.video-guides-box {
+  border-color: rgba(255,0,0,0.35);
+  background: rgba(255,0,0,0.04);
+}
+.video-guides-box .guides-box-links {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.video-guides-box .guides-box-link {
+  color: #ff4d4d;
+  border-color: rgba(255,77,77,0.3);
+}
+.video-guides-box .guides-box-link:hover {
+  color: #ff7a7a;
+  border-color: #ff4d4d;
+  background: rgba(255,77,77,0.08);
+}
 
 /* ── WOWHEAD LINK BUTTON ── */
 .wowhead-link-btn {
@@ -1424,6 +1448,15 @@ button.guides-box-link {
   border-color: #4da6ff;
   background: rgba(77, 166, 255, 0.06);
 }
+.video-youtube-link {
+  color: #ff4d4d;
+  border-color: rgba(255, 77, 77, 0.3);
+}
+.video-youtube-link:hover {
+  color: #ff7a7a;
+  border-color: #ff4d4d;
+  background: rgba(255, 77, 77, 0.08);
+}
 .map-modal-close {
   background: none;
   border: 1px solid var(--border);
@@ -1774,6 +1807,96 @@ button.guides-box-link {
 .encounter-no-image.visible { display: flex; }
 .encounter-modal.open .encounter-modal-panel {
   animation: mapFadeIn 0.18s ease both;
+}
+
+/* ── VIDEO GUIDE MODAL ── */
+.video-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.video-modal.open {
+  display: flex;
+}
+.video-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(5px);
+}
+.video-modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(960px, 92vw);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-gold);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(200, 168, 75, 0.1) inset;
+  overflow: hidden;
+}
+.video-modal-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  pointer-events: none;
+}
+.video-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-gold);
+  background: rgba(200, 168, 75, 0.04);
+  flex-shrink: 0;
+}
+.video-modal-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: var(--gold-light);
+  flex: 1;
+}
+.video-modal-body {
+  position: relative;
+  background: #06060a;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.video-modal-body iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-modal.open .video-modal-panel {
+  animation: mapFadeIn 0.18s ease both;
+}
+.video-modal-footer {
+  padding: 8px 16px;
+  border-top: 1px solid var(--border-gold);
+  background: rgba(200, 168, 75, 0.04);
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+  text-align: center;
+  flex-shrink: 0;
+}
+.video-modal-credit-link {
+  color: #ff4d4d;
+  text-decoration: none;
+}
+.video-modal-credit-link:hover {
+  color: #ff7a7a;
+  text-decoration: underline;
 }
 /* Make encounter names with models look clickable */
 .encounter-item.has-model {
