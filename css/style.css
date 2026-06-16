@@ -310,7 +310,7 @@ body::before {
   gap: 2px;
   scrollbar-width: thin;
   scrollbar-color: var(--gold-dim) transparent;
-  justify-content: center;
+  justify-content: safe center;
 }
 .dungeon-tab {
   padding: 10px 16px;
