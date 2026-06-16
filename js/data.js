@@ -1281,60 +1281,6 @@ const DUNGEONS = [
           }
         ],
         "absorbedBy": null
-      },
-      {
-        "id": 153,
-        "name": "Red Leather Bandanas",
-        "questLink": "https://www.wowhead.com/classic/quest=153/red-leather-bandanas",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": null,
-        "chainDepth": 0,
-        "startNpc": "Scout Galiaan",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=878/scout-galiaan",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Westfall",
-        "endNpc": "Scout Galiaan",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=878/scout-galiaan",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Westfall",
-        "levels": "15",
-        "minLevel": 10,
-        "faction": "Alliance",
-        "xp": 1050,
-        "money": 660,
-        "rewards": [],
-        "rewardChoices": [
-          {
-            "id": 3511,
-            "name": "Cloak of the People's Militia",
-            "url": "https://www.wowhead.com/classic/item=3511/cloak-of-the-people-s-militia",
-            "quality": 2
-          },
-          {
-            "id": 5944,
-            "name": "Greaves of the People's Militia",
-            "url": "https://www.wowhead.com/classic/item=5944/greaves-of-the-people-s-militia",
-            "quality": 2
-          },
-          {
-            "id": 12295,
-            "name": "Leggings of the People's Militia",
-            "url": "https://www.wowhead.com/classic/item=12295/leggings-of-the-people-s-militia",
-            "quality": 2
-          }
-        ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
       }
     ]
   },
@@ -9184,6 +9130,502 @@ const DUNGEONS = [
             "id": 8252,
             "name": "The Siren's Coral",
             "url": "https://www.wowhead.com/classic/quest=8252/the-siren-s-coral"
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null
+      },
+      {
+        "id": 9053,
+        "name": "A Better Ingredient",
+        "questLink": "https://www.wowhead.com/classic/quest=9053/a-better-ingredient",
+        "prequest": "Toxic Test",
+        "prequestLink": "https://www.wowhead.com/classic/quest=9051/toxic-test",
+        "prevQuestId": 9051,
+        "nextQuestId": null,
+        "chainId": 9053,
+        "chainDepth": 0,
+        "startNpc": "Torwa Pathfinder",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Un'Goro Crater",
+        "endNpc": "Torwa Pathfinder",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Un'Goro Crater",
+        "levels": "52",
+        "minLevel": 50,
+        "faction": "Both",
+        "xp": 6350,
+        "money": 15300,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 22274,
+            "name": "Grizzled Pelt",
+            "url": "https://www.wowhead.com/classic/item=22274/grizzled-pelt",
+            "quality": 3
+          },
+          {
+            "id": 22272,
+            "name": "Forest's Embrace",
+            "url": "https://www.wowhead.com/classic/item=22272/forest-s-embrace",
+            "quality": 3
+          },
+          {
+            "id": 22458,
+            "name": "Moonshadow Stave",
+            "url": "https://www.wowhead.com/classic/item=22458/moonshadow-stave",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [
+          "Druid"
+        ],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 9063,
+            "name": "Torwa Pathfinder",
+            "url": "https://www.wowhead.com/classic/quest=9063/torwa-pathfinder"
+          },
+          {
+            "id": 9052,
+            "name": "Bloodpetal Poison",
+            "url": "https://www.wowhead.com/classic/quest=9052/bloodpetal-poison"
+          },
+          {
+            "id": 9051,
+            "name": "Toxic Test",
+            "url": "https://www.wowhead.com/classic/quest=9051/toxic-test"
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null
+      },
+      {
+        "id": 8232,
+        "name": "The Green Drake",
+        "questLink": "https://www.wowhead.com/classic/quest=8232/the-green-drake",
+        "prequest": "Wavethrashing",
+        "prequestLink": "https://www.wowhead.com/classic/quest=8231/wavethrashing",
+        "prevQuestId": 8231,
+        "nextQuestId": null,
+        "chainId": 8232,
+        "chainDepth": 0,
+        "startNpc": "Ogtinc",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Azshara",
+        "endNpc": "Ogtinc",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Azshara",
+        "levels": "52",
+        "minLevel": 50,
+        "faction": "Both",
+        "xp": 6350,
+        "money": 15300,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 20083,
+            "name": "Hunting Spear",
+            "url": "https://www.wowhead.com/classic/item=20083/hunting-spear",
+            "quality": 3
+          },
+          {
+            "id": 19991,
+            "name": "Devilsaur Eye",
+            "url": "https://www.wowhead.com/classic/item=19991/devilsaur-eye",
+            "quality": 3
+          },
+          {
+            "id": 19992,
+            "name": "Devilsaur Tooth",
+            "url": "https://www.wowhead.com/classic/item=19992/devilsaur-tooth",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [
+          "Hunter"
+        ],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 8151,
+            "name": "The Hunter's Charm",
+            "url": "https://www.wowhead.com/classic/quest=8151/the-hunter-s-charm"
+          },
+          {
+            "id": 8153,
+            "name": "Courser Antlers",
+            "url": "https://www.wowhead.com/classic/quest=8153/courser-antlers"
+          },
+          {
+            "id": 8231,
+            "name": "Wavethrashing",
+            "url": "https://www.wowhead.com/classic/quest=8231/wavethrashing"
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null
+      },
+      {
+        "id": 8418,
+        "name": "Forging the Mightstone",
+        "questLink": "https://www.wowhead.com/classic/quest=8418/forging-the-mightstone",
+        "prequest": "Inert Scourgestones",
+        "prequestLink": "https://www.wowhead.com/classic/quest=8416/inert-scourgestones",
+        "prevQuestId": 8416,
+        "nextQuestId": null,
+        "chainId": 8418,
+        "chainDepth": 0,
+        "startNpc": "Commander Ashlam Valorfist",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Western Plaguelands",
+        "endNpc": "Commander Ashlam Valorfist",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Western Plaguelands",
+        "levels": "52",
+        "minLevel": 50,
+        "faction": "Alliance",
+        "xp": 6350,
+        "money": 15500,
+        "rewards": [
+          {
+            "id": 20620,
+            "name": "Holy Mightstone",
+            "url": "https://www.wowhead.com/classic/item=20620/holy-mightstone",
+            "quality": 1
+          }
+        ],
+        "rewardChoices": [
+          {
+            "id": 20504,
+            "name": "Lightforged Blade",
+            "url": "https://www.wowhead.com/classic/item=20504/lightforged-blade",
+            "quality": 3
+          },
+          {
+            "id": 20512,
+            "name": "Sanctified Orb",
+            "url": "https://www.wowhead.com/classic/item=20512/sanctified-orb",
+            "quality": 3
+          },
+          {
+            "id": 20505,
+            "name": "Chivalrous Signet",
+            "url": "https://www.wowhead.com/classic/item=20505/chivalrous-signet",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [
+          "Paladin"
+        ],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 8415,
+            "name": "Chillwind Point",
+            "url": "https://www.wowhead.com/classic/quest=8415/chillwind-point"
+          },
+          {
+            "id": 8414,
+            "name": "Dispelling Evil",
+            "url": "https://www.wowhead.com/classic/quest=8414/dispelling-evil"
+          },
+          {
+            "id": 8416,
+            "name": "Inert Scourgestones",
+            "url": "https://www.wowhead.com/classic/quest=8416/inert-scourgestones"
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null
+      },
+      {
+        "id": 8236,
+        "name": "The Azure Key",
+        "questLink": "https://www.wowhead.com/classic/quest=8236/the-azure-key",
+        "prequest": "Encoded Fragments",
+        "prequestLink": "https://www.wowhead.com/classic/quest=8235/encoded-fragments",
+        "prevQuestId": 8235,
+        "nextQuestId": null,
+        "chainId": 8236,
+        "chainDepth": 0,
+        "startNpc": "Archmage Xylem",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Azshara",
+        "endNpc": "Lord Jorach Ravenholdt",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6768/lord-jorach-ravenholdt",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Alterac Mountains",
+        "levels": "52",
+        "minLevel": 50,
+        "faction": "Both",
+        "xp": 6350,
+        "money": 7500,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 19984,
+            "name": "Ebon Mask",
+            "url": "https://www.wowhead.com/classic/item=19984/ebon-mask",
+            "quality": 3
+          },
+          {
+            "id": 20255,
+            "name": "Whisperwalk Boots",
+            "url": "https://www.wowhead.com/classic/item=20255/whisperwalk-boots",
+            "quality": 3
+          },
+          {
+            "id": 19982,
+            "name": "Duskbat Drape",
+            "url": "https://www.wowhead.com/classic/item=19982/duskbat-drape",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [
+          "Rogue"
+        ],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 8233,
+            "name": "A Simple Request",
+            "url": "https://www.wowhead.com/classic/quest=8233/a-simple-request"
+          },
+          {
+            "id": 8234,
+            "name": "Sealed Azure Bag",
+            "url": "https://www.wowhead.com/classic/quest=8234/sealed-azure-bag"
+          },
+          {
+            "id": 8235,
+            "name": "Encoded Fragments",
+            "url": "https://www.wowhead.com/classic/quest=8235/encoded-fragments"
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null
+      },
+      {
+        "id": 8413,
+        "name": "Da Voodoo",
+        "questLink": "https://www.wowhead.com/classic/quest=8413/da-voodoo",
+        "prequest": "Spirit Totem",
+        "prequestLink": "https://www.wowhead.com/classic/quest=8412/spirit-totem",
+        "prevQuestId": 8412,
+        "nextQuestId": null,
+        "chainId": 8413,
+        "chainDepth": 0,
+        "startNpc": "Bath'rah the Windwatcher",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Alterac Mountains",
+        "endNpc": "Bath'rah the Windwatcher",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Alterac Mountains",
+        "levels": "52",
+        "minLevel": 50,
+        "faction": "Horde",
+        "xp": 6350,
+        "money": 15500,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 20369,
+            "name": "Azurite Fists",
+            "url": "https://www.wowhead.com/classic/item=20369/azurite-fists",
+            "quality": 3
+          },
+          {
+            "id": 20503,
+            "name": "Enamored Water Spirit",
+            "url": "https://www.wowhead.com/classic/item=20503/enamored-water-spirit",
+            "quality": 3
+          },
+          {
+            "id": 20556,
+            "name": "Wildstaff",
+            "url": "https://www.wowhead.com/classic/item=20556/wildstaff",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [
+          "Shaman"
+        ],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 8410,
+            "name": "Elemental Mastery",
+            "url": "https://www.wowhead.com/classic/quest=8410/elemental-mastery"
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null
+      },
+      {
+        "id": 8422,
+        "name": "Trolls of a Feather",
+        "questLink": "https://www.wowhead.com/classic/quest=8422/trolls-of-a-feather",
+        "prequest": "The Wrong Stuff",
+        "prequestLink": "https://www.wowhead.com/classic/quest=8421/the-wrong-stuff",
+        "prevQuestId": 8421,
+        "nextQuestId": null,
+        "chainId": 8422,
+        "chainDepth": 0,
+        "startNpc": "Impsy",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14470/impsy",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Felwood",
+        "endNpc": "Impsy",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14470/impsy",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Felwood",
+        "levels": "52",
+        "minLevel": 50,
+        "faction": "Both",
+        "xp": 6350,
+        "money": 15500,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 20536,
+            "name": "Soul Harvester",
+            "url": "https://www.wowhead.com/classic/item=20536/soul-harvester",
+            "quality": 3
+          },
+          {
+            "id": 20534,
+            "name": "Abyss Shard",
+            "url": "https://www.wowhead.com/classic/item=20534/abyss-shard",
+            "quality": 3
+          },
+          {
+            "id": 20530,
+            "name": "Robes of Servitude",
+            "url": "https://www.wowhead.com/classic/item=20530/robes-of-servitude",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 8419,
+            "name": "An Imp's Request",
+            "url": "https://www.wowhead.com/classic/quest=8419/an-imp-s-request"
+          },
+          {
+            "id": 8421,
+            "name": "The Wrong Stuff",
+            "url": "https://www.wowhead.com/classic/quest=8421/the-wrong-stuff"
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null
+      },
+      {
+        "id": 8425,
+        "name": "Voodoo Feathers",
+        "questLink": "https://www.wowhead.com/classic/quest=8425/voodoo-feathers",
+        "prequest": "War on the Shadowsworn",
+        "prequestLink": "https://www.wowhead.com/classic/quest=8424/war-on-the-shadowsworn",
+        "prevQuestId": 8424,
+        "nextQuestId": null,
+        "chainId": 8425,
+        "chainDepth": 0,
+        "startNpc": "Fallen Hero of the Horde",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Swamp of Sorrows",
+        "endNpc": "Fallen Hero of the Horde",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Swamp of Sorrows",
+        "levels": "52",
+        "minLevel": 50,
+        "faction": "Both",
+        "xp": 6350,
+        "money": 15300,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 20521,
+            "name": "Fury Visor",
+            "url": "https://www.wowhead.com/classic/item=20521/fury-visor",
+            "quality": 3
+          },
+          {
+            "id": 20130,
+            "name": "Diamond Flask",
+            "url": "https://www.wowhead.com/classic/item=20130/diamond-flask",
+            "quality": 3
+          },
+          {
+            "id": 20517,
+            "name": "Razorsteel Shoulders",
+            "url": "https://www.wowhead.com/classic/item=20517/razorsteel-shoulders",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 8417,
+            "name": "A Troubled Spirit",
+            "url": "https://www.wowhead.com/classic/quest=8417/a-troubled-spirit"
+          },
+          {
+            "id": 8423,
+            "name": "Warrior Kinship",
+            "url": "https://www.wowhead.com/classic/quest=8423/warrior-kinship"
+          },
+          {
+            "id": 8424,
+            "name": "War on the Shadowsworn",
+            "url": "https://www.wowhead.com/classic/quest=8424/war-on-the-shadowsworn"
           }
         ],
         "postChain": [],
