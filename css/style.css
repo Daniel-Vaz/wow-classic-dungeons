@@ -1020,6 +1020,9 @@ body::before {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 .guides-box-link {
   font-family: 'Cinzel', serif;
@@ -1050,11 +1053,6 @@ button.guides-box-link {
 .map-instance-box .guides-box-label {
   opacity: 0.9;
 }
-.map-instance-box .guides-box-links {
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-}
 .map-instance-box .guides-box-link {
   color: var(--gold);
   border-color: rgba(200,168,75,0.45);
@@ -1075,11 +1073,6 @@ button.guides-box-link {
 .video-guides-box {
   border-color: rgba(255,0,0,0.35);
   background: rgba(255,0,0,0.04);
-}
-.video-guides-box .guides-box-links {
-  flex: 1;
-  justify-content: center;
-  align-items: center;
 }
 .video-guides-box .guides-box-link {
   color: #ff4d4d;
@@ -1411,9 +1404,30 @@ button.guides-box-link {
   #quest-container.grid-view {
     grid-template-columns: 1fr;
   }
-  .filter-group,
+  .filter-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .filter-btn {
+    text-align: center;
+  }
   .faction-group {
     width: 100%;
+  }
+  .faction-btn {
+    flex: 1;
+    text-align: center;
+  }
+  .controls-right {
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .dungeon-icon {
+    width: 100%;
+    justify-content: center;
   }
   #dungeonHeaderGuides {
     flex-direction: column;
