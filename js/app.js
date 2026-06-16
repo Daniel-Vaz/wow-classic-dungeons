@@ -1430,8 +1430,36 @@ function openEncounterModal(name, npcId) {
   };
   img.src = `assets/npc-models/${npcId}.jpg`;
 
+  renderEncounterLoot(npcId);
+
   modal.setAttribute('aria-hidden', 'false');
   modal.classList.add('open');
+}
+
+function renderEncounterLoot(npcId) {
+  const section = document.getElementById('encounterLoot');
+  const list = document.getElementById('encounterLootList');
+
+  const loot = (typeof ENCOUNTER_LOOT !== 'undefined' && ENCOUNTER_LOOT[npcId]) || [];
+  if (loot.length === 0) {
+    list.innerHTML = '<div class="encounter-loot-empty">No notable loot recorded for this encounter.</div>';
+    section.classList.add('visible');
+    return;
+  }
+
+  list.innerHTML = loot.map(item => {
+    const qClass = `q${Math.min(item.quality || 1, 5)}`;
+    return `
+    <div class="encounter-loot-row ${qClass}">
+      <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="item-link ${qClass}" data-wh-icon-size="medium">${item.name}</a>
+      <span class="encounter-loot-chance">${item.dropChance != null ? item.dropChance.toFixed(1) + '%' : '—'}</span>
+    </div>
+  `;
+  }).join('');
+
+  section.classList.add('visible');
+
+  if (typeof $WowheadPower !== 'undefined') $WowheadPower.refreshLinks();
 }
 
 function closeEncounterModal() {
