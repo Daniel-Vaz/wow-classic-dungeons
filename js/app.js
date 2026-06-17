@@ -8,6 +8,7 @@ let searchQuery = '';
 let completed = JSON.parse(localStorage.getItem('wow_completed') || '{}');
 let locationFilter = null;
 let factionFilter = null;
+let classFilter = null;
 
 // ═══════════════════════════════════════
 //  DATA NORMALISATION
@@ -98,6 +99,9 @@ function isDungeonFullyComplete(dungeon) {
   if (factionFilter) {
     quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
   }
+  if (classFilter) {
+    quests = quests.filter(q => q.requiredClasses.length === 0 || q.requiredClasses.includes(classFilter));
+  }
   if (quests.length === 0) return false;
   return quests.every(q => completed[dungeon.id + '::' + q.name]);
 }
@@ -157,6 +161,9 @@ function renderDungeonHeader(dungeon) {
   let quests = dungeon.quests.map(normalizeQuest).filter(q => q.absorbedBy === null);
   if (factionFilter) {
     quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
+  }
+  if (classFilter) {
+    quests = quests.filter(q => q.requiredClasses.length === 0 || q.requiredClasses.includes(classFilter));
   }
   const completedCount = quests.filter(q => completed[dungeon.id + '::' + q.name]).length;
 
@@ -229,6 +236,9 @@ function renderStatsBar(dungeon) {
   let quests = dungeon.quests.map(normalizeQuest).filter(q => q.absorbedBy === null);
   if (factionFilter) {
     quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
+  }
+  if (classFilter) {
+    quests = quests.filter(q => q.requiredClasses.length === 0 || q.requiredClasses.includes(classFilter));
   }
   const totalXP = quests.reduce((s, q) => s + (q.xp || 0), 0);
   const totalMoney = quests.reduce((s, q) => s + (q.money || 0), 0);
@@ -375,6 +385,10 @@ function renderQuests() {
 
   if (factionFilter) {
     quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
+  }
+
+  if (classFilter) {
+    quests = quests.filter(q => q.requiredClasses.length === 0 || q.requiredClasses.includes(classFilter));
   }
 
   if (searchQuery) {
@@ -777,6 +791,44 @@ function bindControls() {
     const cur = DUNGEONS.find(d => d.id === currentDungeonId);
     if (cur) renderDungeonHeader(cur);
     renderQuests();
+  });
+
+  const classFilterEl = document.getElementById('classFilter');
+  const classFilterTrigger = document.getElementById('classFilterTrigger');
+  const classFilterPanel = document.getElementById('classFilterPanel');
+
+  classFilterTrigger.addEventListener('click', e => {
+    e.stopPropagation();
+    const isOpen = classFilterEl.classList.toggle('open');
+    classFilterTrigger.setAttribute('aria-expanded', isOpen);
+  });
+
+  classFilterPanel.addEventListener('click', e => {
+    const opt = e.target.closest('.class-filter-option');
+    if (!opt) return;
+    const cls = opt.dataset.class;
+    classFilter = cls === 'all' ? null : cls;
+    document.querySelectorAll('.class-filter-option').forEach(o => o.classList.remove('active'));
+    opt.classList.add('active');
+    classFilterEl.classList.remove('open');
+    classFilterTrigger.setAttribute('aria-expanded', 'false');
+    const selectedEl = document.getElementById('classFilterSelected');
+    if (classFilter) {
+      const slug = classFilter.toLowerCase();
+      selectedEl.innerHTML = `<img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_${slug}.jpg" alt="">${classFilter}`;
+    } else {
+      selectedEl.textContent = 'All Classes';
+    }
+    const cur = DUNGEONS.find(d => d.id === currentDungeonId);
+    if (cur) renderDungeonHeader(cur);
+    renderQuests();
+  });
+
+  document.addEventListener('click', e => {
+    if (!classFilterEl.contains(e.target)) {
+      classFilterEl.classList.remove('open');
+      classFilterTrigger.setAttribute('aria-expanded', 'false');
+    }
   });
 
   document.getElementById('gridViewBtn').addEventListener('click', () => {
