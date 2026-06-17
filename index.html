@@ -7,7 +7,7 @@
   <title>WoW Classic — Dungeons Compendium</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -40,13 +40,16 @@
 </header>
 
 <div class="controls">
-  <div class="search-wrap">
-    <span class="search-icon">🔍</span>
-    <input class="search-input" type="text" id="searchInput" placeholder="Search quests, NPCs, locations…">
+  <div class="search-row">
+    <img class="controls-logo" src="assets/logo.png" alt="WoW Classic Dungeons">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input class="search-input" type="text" id="searchInput" placeholder="Search quests, NPCs, locations…">
+    </div>
   </div>
   <div class="filter-group" id="filterGroup">
     <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="has-items">Has Gear</button>
+    <button class="filter-btn" data-filter="has-gear">Has Gear</button>
     <button class="filter-btn" data-filter="completed">Completed</button>
     <button class="filter-btn" data-filter="incomplete">Incomplete</button>
   </div>
@@ -55,23 +58,32 @@
     <button class="faction-btn faction-btn-alliance" data-faction="Alliance"><img src="assets/icons/alliance.png" alt="Alliance" class="faction-icon"> Alliance</button>
     <button class="faction-btn faction-btn-horde" data-faction="Horde"><img src="assets/icons/horde.png" alt="Horde" class="faction-icon"> Horde</button>
   </div>
-  <div class="class-filter" id="classFilter">
-    <button class="class-filter-trigger" id="classFilterTrigger" aria-haspopup="listbox" aria-expanded="false">
-      <span id="classFilterSelected">All Classes</span>
-      <span class="class-filter-arrow">▾</span>
-    </button>
-    <ul class="class-filter-panel" id="classFilterPanel" role="listbox">
-      <li class="class-filter-option active" data-class="all" role="option">All Classes</li>
-      <li class="class-filter-option" data-class="Warrior" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_warrior.jpg" alt="">Warrior</li>
-      <li class="class-filter-option" data-class="Paladin" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_paladin.jpg" alt="">Paladin</li>
-      <li class="class-filter-option" data-class="Hunter" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_hunter.jpg" alt="">Hunter</li>
-      <li class="class-filter-option" data-class="Rogue" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_rogue.jpg" alt="">Rogue</li>
-      <li class="class-filter-option" data-class="Priest" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_priest.jpg" alt="">Priest</li>
-      <li class="class-filter-option" data-class="Shaman" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_shaman.jpg" alt="">Shaman</li>
-      <li class="class-filter-option" data-class="Mage" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_mage.jpg" alt="">Mage</li>
-      <li class="class-filter-option" data-class="Warlock" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_warlock.jpg" alt="">Warlock</li>
-      <li class="class-filter-option" data-class="Druid" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_druid.jpg" alt="">Druid</li>
-    </ul>
+  <div class="dropdown-filters">
+    <div class="class-filter" id="classFilter">
+      <button class="class-filter-trigger" id="classFilterTrigger" aria-haspopup="listbox" aria-expanded="false">
+        <span id="classFilterSelected">All Classes</span>
+        <span class="class-filter-arrow">▾</span>
+      </button>
+      <ul class="class-filter-panel" id="classFilterPanel" role="listbox">
+        <li class="class-filter-option active" data-class="all" role="option">All Classes</li>
+        <li class="class-filter-option" data-class="Warrior" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_warrior.jpg" alt="">Warrior</li>
+        <li class="class-filter-option" data-class="Paladin" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_paladin.jpg" alt="">Paladin</li>
+        <li class="class-filter-option" data-class="Hunter" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_hunter.jpg" alt="">Hunter</li>
+        <li class="class-filter-option" data-class="Rogue" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_rogue.jpg" alt="">Rogue</li>
+        <li class="class-filter-option" data-class="Priest" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_priest.jpg" alt="">Priest</li>
+        <li class="class-filter-option" data-class="Shaman" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_shaman.jpg" alt="">Shaman</li>
+        <li class="class-filter-option" data-class="Mage" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_mage.jpg" alt="">Mage</li>
+        <li class="class-filter-option" data-class="Warlock" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_warlock.jpg" alt="">Warlock</li>
+        <li class="class-filter-option" data-class="Druid" role="option"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_druid.jpg" alt="">Druid</li>
+      </ul>
+    </div>
+    <div class="dungeon-filter" id="dungeonFilter">
+      <button class="dungeon-filter-trigger" id="dungeonFilterTrigger" aria-haspopup="listbox" aria-expanded="false">
+        <span id="dungeonFilterSelected">Select Dungeon</span>
+        <span class="dungeon-filter-arrow">▾</span>
+      </button>
+      <ul class="dungeon-filter-panel" id="dungeonFilterPanel" role="listbox"></ul>
+    </div>
   </div>
   <div class="controls-right">
     <button class="view-btn active" id="gridViewBtn" title="Grid view">⊞</button>
@@ -83,20 +95,6 @@
 
 <div class="main">
   <div class="layout">
-    <aside class="sidebar">
-      <div class="sidebar-section">
-        <div class="sidebar-title">🧭 Quest Locations</div>
-        <div class="sidebar-body">
-          <div id="locationList"></div>
-        </div>
-      </div>
-      <div class="sidebar-section">
-        <div class="sidebar-title">💀 Encounters</div>
-        <div class="sidebar-body">
-          <div id="encounterList"></div>
-        </div>
-      </div>
-    </aside>
     <div class="content">
       <div class="dungeon-header" id="dungeonHeader">
         <div class="dungeon-complete-ribbon" id="dungeonCompleteRibbon">
@@ -113,8 +111,22 @@
           <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressBar" style="width:0%"></div></div>
           <div class="progress-fraction" id="progressFraction">0 / 0</div>
         </div>
+        <div class="stats-bar" id="statsBar"></div>
       </div>
-      <div class="stats-bar" id="statsBar"></div>
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-title">🧭 Quest Locations</div>
+          <div class="sidebar-body">
+            <div id="locationList"></div>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-title">💀 Encounters</div>
+          <div class="sidebar-body">
+            <div id="encounterList"></div>
+          </div>
+        </div>
+      </aside>
       <div id="quest-container" class="grid-view"></div>
     </div>
   </div>

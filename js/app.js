@@ -3,6 +3,7 @@
 // ═══════════════════════════════════════
 let currentDungeonId = 'rfc';
 let currentFilter = 'all';
+let hasGearOnly = false;
 let currentView = 'grid';
 let searchQuery = '';
 let completed = JSON.parse(localStorage.getItem('wow_completed') || '{}');
@@ -79,8 +80,18 @@ function buildLocationLink(name) {
 // ═══════════════════════════════════════
 //  INIT
 // ═══════════════════════════════════════
+function initScrollLogo() {
+  const header = document.querySelector('.site-header');
+  const onScroll = () => {
+    const past = window.scrollY > header.offsetHeight;
+    document.body.classList.toggle('scrolled', past);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
 function init() {
   buildDungeonTabs();
+  buildDungeonFilterPanel();
   updateTabCompletionBadges();
   bindControls();
   initSidebarCollapse();
@@ -88,6 +99,8 @@ function init() {
   initLoadingScreenLightbox();
   initEncounterModal();
   initVideoModal();
+  initScrollLogo();
+  initControlsHeightObserver();
   selectDungeon('rfc');
 }
 
@@ -112,6 +125,7 @@ function updateTabCompletionBadges() {
     if (!dungeon) return;
     tab.classList.toggle('dungeon-complete', isDungeonFullyComplete(dungeon));
   });
+  buildDungeonFilterPanel();
 }
 
 // ═══════════════════════════════════════
@@ -130,6 +144,49 @@ function buildDungeonTabs() {
 }
 
 // ═══════════════════════════════════════
+//  DUNGEON FILTER DROPDOWN (mobile)
+// ═══════════════════════════════════════
+function buildDungeonFilterPanel() {
+  const panel = document.getElementById('dungeonFilterPanel');
+  if (!panel) return;
+  panel.innerHTML = '';
+  DUNGEONS.forEach(d => {
+    const li = document.createElement('li');
+    li.className = 'dungeon-filter-option' + (d.id === currentDungeonId ? ' active' : '');
+    li.dataset.id = d.id;
+    li.setAttribute('role', 'option');
+    const isComplete = isDungeonFullyComplete(d);
+    li.innerHTML = `
+      <span class="df-icon">${d.icon}</span>
+      <span class="df-name">${d.name}</span>
+      <span class="df-levels">${d.levels}</span>
+      ${isComplete ? '<span class="df-complete">✓</span>' : ''}
+    `;
+    panel.appendChild(li);
+  });
+}
+
+function updateDungeonFilterTrigger() {
+  const dungeon = DUNGEONS.find(d => d.id === currentDungeonId);
+  if (!dungeon) return;
+  const el = document.getElementById('dungeonFilterSelected');
+  if (el) el.textContent = dungeon.icon + ' ' + dungeon.abbr;
+  document.querySelectorAll('.dungeon-filter-option').forEach(o => {
+    o.classList.toggle('active', o.dataset.id === currentDungeonId);
+  });
+}
+
+function initControlsHeightObserver() {
+  const controls = document.querySelector('.controls');
+  if (!controls) return;
+  const update = () => {
+    document.documentElement.style.setProperty('--controls-height', controls.offsetHeight + 'px');
+  };
+  update();
+  new ResizeObserver(update).observe(controls);
+}
+
+// ═══════════════════════════════════════
 //  SELECT DUNGEON
 // ═══════════════════════════════════════
 function selectDungeon(id) {
@@ -138,6 +195,7 @@ function selectDungeon(id) {
   document.querySelectorAll('.dungeon-tab').forEach(t => {
     t.classList.toggle('active', t.dataset.id === id);
   });
+  updateDungeonFilterTrigger();
   const dungeon = DUNGEONS.find(d => d.id === id);
   if (!dungeon) return;
   renderDungeonHeader(dungeon);
@@ -243,7 +301,6 @@ function renderStatsBar(dungeon) {
   const totalXP = quests.reduce((s, q) => s + (q.xp || 0), 0);
   const totalMoney = quests.reduce((s, q) => s + (q.money || 0), 0);
   const withGear = quests.filter(q => q.rewards.length > 0 || q.rewardChoices.length > 0 || q.legacyItems.length > 0).length;
-  const completedCount = quests.filter(q => completed[dungeon.id + '::' + q.name]).length;
 
   document.getElementById('statsBar').innerHTML = `
     <div class="stat-item">
@@ -264,11 +321,6 @@ function renderStatsBar(dungeon) {
     <div class="stat-item">
       <div class="stat-num" style="color:#c8a0d4">${withGear}</div>
       <div class="stat-label">Gear Rewards</div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <div class="stat-num" style="color:var(--gold)">${completedCount}</div>
-      <div class="stat-label">Completed</div>
     </div>
   `;
 }
@@ -373,7 +425,7 @@ function renderQuests() {
     const key = dungeon.id + '::' + q.name;
     const isComplete = !!completed[key];
     const hasGear = q.rewards.length > 0 || q.rewardChoices.length > 0 || q.legacyItems.length > 0;
-    if (currentFilter === 'has-items') return hasGear;
+    if (hasGearOnly && !hasGear) return false;
     if (currentFilter === 'completed') return isComplete;
     if (currentFilter === 'incomplete') return !isComplete;
     return true;
@@ -774,9 +826,14 @@ function bindControls() {
   document.getElementById('filterGroup').addEventListener('click', e => {
     const btn = e.target.closest('.filter-btn');
     if (!btn) return;
-    currentFilter = btn.dataset.filter;
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+    if (btn.dataset.filter === 'has-gear') {
+      hasGearOnly = !hasGearOnly;
+      btn.classList.toggle('active', hasGearOnly);
+    } else {
+      currentFilter = btn.dataset.filter;
+      document.querySelectorAll('.filter-btn:not([data-filter="has-gear"])').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
     renderQuests();
   });
 
@@ -828,6 +885,31 @@ function bindControls() {
     if (!classFilterEl.contains(e.target)) {
       classFilterEl.classList.remove('open');
       classFilterTrigger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  const dungeonFilterEl = document.getElementById('dungeonFilter');
+  const dungeonFilterTrigger = document.getElementById('dungeonFilterTrigger');
+  const dungeonFilterPanel = document.getElementById('dungeonFilterPanel');
+
+  dungeonFilterTrigger.addEventListener('click', e => {
+    e.stopPropagation();
+    const isOpen = dungeonFilterEl.classList.toggle('open');
+    dungeonFilterTrigger.setAttribute('aria-expanded', isOpen);
+  });
+
+  dungeonFilterPanel.addEventListener('click', e => {
+    const opt = e.target.closest('.dungeon-filter-option');
+    if (!opt) return;
+    dungeonFilterEl.classList.remove('open');
+    dungeonFilterTrigger.setAttribute('aria-expanded', 'false');
+    selectDungeon(opt.dataset.id);
+  });
+
+  document.addEventListener('click', e => {
+    if (!dungeonFilterEl.contains(e.target)) {
+      dungeonFilterEl.classList.remove('open');
+      dungeonFilterTrigger.setAttribute('aria-expanded', 'false');
     }
   });
 
