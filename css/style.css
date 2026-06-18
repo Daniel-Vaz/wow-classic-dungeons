@@ -897,6 +897,21 @@ body.scrolled .search-row .controls-logo {
   white-space: nowrap;
   flex-shrink: 0;
 }
+/* Dungeon quest badge — replaces the old "PART X/Y" label to make it
+   immediately clear this card is the actual dungeon objective. */
+.chain-badge.dungeon-badge {
+  color: var(--gold-light);
+  background: rgba(200,168,75,0.18);
+  border-color: var(--gold-dim);
+  letter-spacing: 0.12em;
+}
+/* Series "PART x/y" badge — secondary to the gold DUNGEON badge, sits beside it. */
+.chain-badge.series-badge {
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.04);
+  border-color: var(--border);
+  letter-spacing: 0.1em;
+}
 
 /* ── FACTION FILTER BUTTONS ── */
 .faction-group {
@@ -1247,9 +1262,20 @@ body.scrolled .search-row .controls-logo {
   padding: 10px;
   position: relative;
   background: rgba(200,168,75,0.02);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.quest-chain-group:hover {
+  border-color: var(--gold);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.5), 0 0 12px rgba(200,168,75,0.08);
+}
+.grid-view .quest-chain-group,
+#quest-container.grid-view > .quest-card {
+  grid-column: 1 / -1;       /* all top-level items span full grid width */
+}
+#quest-container.grid-view > .quest-card {
+  align-self: start;         /* don't stretch vertically when it's the only result */
 }
 .grid-view .quest-chain-group {
-  grid-column: 1 / -1;       /* chain spans full grid width */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 10px;
@@ -1277,6 +1303,119 @@ body.scrolled .search-row .controls-logo {
 .quest-card.chain-quest:first-of-type,
 .quest-chain-group .quest-card:nth-child(2) {  /* 2nd child because label is first */
   border-left-color: var(--gold);
+}
+
+/* ── BRANCHING CHAIN TREE ── */
+/* Tree mode lays children out vertically with connectors, so it must opt out
+   of the side-by-side grid that linear chain groups use in grid view. */
+.quest-chain-group.chain-tree,
+.grid-view .quest-chain-group.chain-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+/* Chains with prerequisites always render vertically so flow arrows make sense */
+.quest-chain-group.has-prechain,
+.grid-view .quest-chain-group.has-prechain {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Quest series group: wraps series prerequisite cards + the dungeon quest(s)
+   in one bordered box so users see them as a single questline. */
+.quest-series-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid rgba(200,168,75,0.3);
+  border-radius: 5px;
+  padding: 10px;
+  background: rgba(200,168,75,0.03);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.quest-series-group:hover {
+  border-color: var(--gold-dim);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.5), 0 0 12px rgba(200,168,75,0.08);
+}
+.quest-series-group > .chain-context-label {
+  color: var(--gold-dim);
+  margin-bottom: 2px;
+}
+.chain-tree-node {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+/* Faction variants of one step: grouped as a single "pick your faction" slot
+   so they don't read as two sequential prerequisites. */
+.chain-tree-node.faction-alt {
+  gap: 0;
+  border: 1px dashed var(--gold-dim);
+  border-radius: 6px;
+  padding: 8px;
+  background: rgba(200,168,75,0.03);
+}
+.chain-or-divider {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  padding: 6px 0;
+}
+
+/* "Leads to / unlocks" connector between a step and the next. Makes the
+   prerequisite flow explicit instead of looking like a flat list. */
+.chain-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 2px 0;
+  color: var(--gold);
+}
+.chain-flow-line {
+  width: 2px;
+  height: 12px;
+  background: var(--gold-dim);
+}
+.chain-flow-arrow {
+  font-size: 0.85rem;
+  line-height: 0.6;
+  color: var(--gold);
+}
+.chain-flow-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.56rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+}
+
+/* A branch point: the parallel follow-ups are grouped in one box (mirroring
+   the OR-slot) rather than hung off a trunk with per-branch tick connectors. */
+.chain-branches {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px dashed var(--gold-dim);
+  border-radius: 6px;
+  padding: 10px;
+  background: rgba(200,168,75,0.03);
+}
+.chain-branch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+/* Faint separator between sibling branches inside the group box. */
+.chain-branch + .chain-branch {
+  border-top: 1px dashed rgba(200,168,75,0.18);
+  padding-top: 10px;
 }
 
 
@@ -1513,15 +1652,24 @@ button.guides-box-link {
 ::-webkit-scrollbar-thumb { background: var(--border-gold); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--gold-dim); }
 
-/* ── PREREQUISITE / POSTCHAIN BREADCRUMB (inside chain group) ── */
+/* ── PREREQUISITE CARDS / POSTCHAIN BREADCRUMB (inside chain group) ── */
 .chain-prechain,
 .chain-postchain {
-  grid-column: 1 / -1;
   padding: 4px 4px 10px;
 }
 .list-view .chain-prechain,
 .list-view .chain-postchain {
   padding: 4px 14px 8px;
+}
+/* Prerequisites always render as a vertical list with flow connectors between
+   cards, whether in grid view or list view. */
+.chain-prechain {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.chain-prechain .chain-context-label {
+  margin-bottom: 2px;
 }
 .chain-postchain {
   padding-top: 10px;
@@ -1535,6 +1683,10 @@ button.guides-box-link {
   text-transform: uppercase;
   color: var(--text-dim);
   margin-bottom: 5px;
+}
+/* "Prerequisite" gate section sits above the series group */
+.chain-prechain.gate-section {
+  padding-bottom: 4px;
 }
 .prechain-flow {
   display: flex;
@@ -1578,6 +1730,17 @@ button.guides-box-link {
 .prechain-step.postchain-step {
   color: #809ab0;
   border-color: rgba(128,154,176,0.3);
+}
+/* OR-alternative post-chain steps (faction-specific follow-ups): stack the
+   faction badge above the quest name, both centered. */
+.prechain-step.postchain-or-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  padding: 8px 14px;
+  white-space: normal;
 }
 .prechain-step.postchain-step:hover {
   color: #aac4d8;
@@ -3223,7 +3386,8 @@ button.guides-box-link {
 .cinematic-subtitle.shine { position: fixed; }
 .cinematic-subtitle .shine-band {
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
   pointer-events: none;
   overflow: hidden;
 }

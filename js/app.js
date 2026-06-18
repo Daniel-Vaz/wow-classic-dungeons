@@ -54,6 +54,15 @@ function normalizeQuest(q) {
   };
 }
 
+// schema-2 dungeons key completions by quest ID so same-named quests in a
+// series (e.g. all five "Hidden Enemies") are tracked independently.
+// Legacy dungeons keep the name-based key to preserve existing saved progress.
+function questKey(dungeon, quest) {
+  return dungeon.schema === 2
+    ? dungeon.id + '::id::' + quest.id
+    : dungeon.id + '::' + quest.name;
+}
+
 function formatMoney(copper) {
   const g = Math.floor(copper / 10000);
   const s = Math.floor((copper % 10000) / 100);
@@ -163,12 +172,31 @@ async function playLogoCinematic(logo) {
   // one span per character so each letter can be chiseled in turn
   const STEP = 45; // ms between letters
   const frag = document.createDocumentFragment();
-  [...text].forEach((ch, i) => {
-    const span = document.createElement('span');
-    span.className = 'carve-letter';
-    span.textContent = ch === ' ' ? ' ' : ch;
-    span.style.animationDelay = (i * STEP) + 'ms';
-    frag.appendChild(span);
+  let charIndex = 0;
+  text.split(' ').forEach((word, wi) => {
+    if (wi > 0) {
+      // Space between words: display:inline so the browser treats it as a
+      // soft-wrap opportunity (prevents breaking in the middle of a word).
+      const sp = document.createElement('span');
+      sp.className = 'carve-letter';
+      sp.textContent = ' ';
+      sp.style.animationDelay = (charIndex * STEP) + 'ms';
+      sp.style.display = 'inline';
+      charIndex++;
+      frag.appendChild(sp);
+    }
+    // Wrap each word in an inline-block so it cannot be split across lines.
+    const wordEl = document.createElement('span');
+    wordEl.style.cssText = 'display:inline-block;white-space:nowrap';
+    [...word].forEach(ch => {
+      const span = document.createElement('span');
+      span.className = 'carve-letter';
+      span.textContent = ch;
+      span.style.animationDelay = (charIndex * STEP) + 'ms';
+      charIndex++;
+      wordEl.appendChild(span);
+    });
+    frag.appendChild(wordEl);
   });
   sub.style.opacity = '0';
   // NOTE: `frag` (the carve-letter spans) is intentionally left detached here.
@@ -205,8 +233,19 @@ async function playLogoCinematic(logo) {
   await sleep(800);
 
   // ── Phase 3: gold shine wave sweeps the carved letters ──
+  // Measure the actual text bounds so the shine travels end-to-end on the text.
+  const subRect = sub.getBoundingClientRect();
+  let textLeft = Infinity, textRight = -Infinity;
+  sub.querySelectorAll('.carve-letter').forEach(l => {
+    if (!l.textContent.trim()) return; // skip spaces
+    const r = l.getBoundingClientRect();
+    if (r.width > 0) { textLeft = Math.min(textLeft, r.left); textRight = Math.max(textRight, r.right); }
+  });
+  if (!isFinite(textLeft)) { textLeft = subRect.left + subRect.width * 0.1; textRight = subRect.right - subRect.width * 0.1; }
   const band = document.createElement('div');
   band.className = 'shine-band';
+  band.style.left = (textLeft - subRect.left) + 'px';
+  band.style.right = (subRect.right - textRight) + 'px';
   sub.appendChild(band);
   sub.classList.add('shine');
   await sleep(1200);
@@ -252,8 +291,37 @@ async function playLogoCinematic(logo) {
 // ═══════════════════════════════════════
 //  COMPLETION HELPERS
 // ═══════════════════════════════════════
+
+// Returns every quest that should count toward totals (count, XP, money, gear,
+// progress). For schema-2 dungeons this includes preChain context quests
+// (requires gates + earlier series members) which appear as real cards.
+// postChain ("Continue chain") stubs are excluded.
+// For legacy dungeons: dungeon.quests minus absorbed, unchanged.
+function getCountableQuests(dungeon) {
+  if (dungeon.schema !== 2) {
+    return dungeon.quests.map(normalizeQuest).filter(q => q.absorbedBy === null);
+  }
+  const seen = new Set();
+  const result = [];
+  function add(raw) {
+    const q = normalizeQuest(raw);
+    if (seen.has(q.id)) return;
+    seen.add(q.id);
+    result.push(q);
+  }
+  dungeon.quests.forEach(q => {
+    (q.preChain || []).forEach(entry => {
+      if (entry.or) entry.or.forEach(v => add(v));
+      else add(entry);
+    });
+    add(q);
+    // postChain intentionally excluded (Continue chain breadcrumbs only).
+  });
+  return result;
+}
+
 function isDungeonFullyComplete(dungeon) {
-  let quests = dungeon.quests.map(normalizeQuest).filter(q => q.absorbedBy === null);
+  let quests = getCountableQuests(dungeon);
   if (factionFilter) {
     quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
   }
@@ -261,7 +329,7 @@ function isDungeonFullyComplete(dungeon) {
     quests = quests.filter(q => q.requiredClasses.length === 0 || q.requiredClasses.includes(classFilter));
   }
   if (quests.length === 0) return false;
-  return quests.every(q => completed[dungeon.id + '::' + q.name]);
+  return quests.every(q => completed[questKey(dungeon, q)]);
 }
 
 function updateTabCompletionBadges() {
@@ -361,15 +429,15 @@ function renderDungeonHeader(dungeon) {
   }
   document.getElementById('dungeonHeaderName').textContent = dungeon.name;
 
-  // Exclude absorbed quests from all header counts — they're shown as chain context
-  let quests = dungeon.quests.map(normalizeQuest).filter(q => q.absorbedBy === null);
+  // All quests that count toward totals (schema-2 includes preChain context cards).
+  let quests = getCountableQuests(dungeon);
   if (factionFilter) {
     quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
   }
   if (classFilter) {
     quests = quests.filter(q => q.requiredClasses.length === 0 || q.requiredClasses.includes(classFilter));
   }
-  const completedCount = quests.filter(q => completed[dungeon.id + '::' + q.name]).length;
+  const completedCount = quests.filter(q => completed[questKey(dungeon, q)]).length;
 
   const locLinkHtml = ZONE_IDS[dungeon.location]
     ? `<span class="location-link" data-location="${dungeon.location}" title="View map">${dungeon.location}</span>`
@@ -437,7 +505,7 @@ function renderDungeonHeader(dungeon) {
 //  STATS BAR
 // ═══════════════════════════════════════
 function renderStatsBar(dungeon) {
-  let quests = dungeon.quests.map(normalizeQuest).filter(q => q.absorbedBy === null);
+  let quests = getCountableQuests(dungeon);
   if (factionFilter) {
     quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
   }
@@ -475,7 +543,7 @@ function renderStatsBar(dungeon) {
 //  SIDEBAR
 // ═══════════════════════════════════════
 function renderSidebar(dungeon) {
-  const quests = dungeon.quests.map(normalizeQuest);
+  const quests = getCountableQuests(dungeon);
 
   // By Location
   const locs = [...new Set(quests.map(q => (q.startLoc || '').split(',')[0].trim()).filter(Boolean))];
@@ -568,7 +636,7 @@ function renderQuests() {
   let quests = dungeon.quests.map(normalizeQuest).filter(q => {
     // Never show absorbed quests as standalone cards
     if (q.absorbedBy !== null) return false;
-    const key = dungeon.id + '::' + q.name;
+    const key = questKey(dungeon, q);
     const isComplete = !!completed[key];
     const hasGear = q.rewards.length > 0 || q.rewardChoices.length > 0 || q.legacyItems.length > 0;
     if (hasGearOnly && !hasGear) return false;
@@ -591,19 +659,27 @@ function renderQuests() {
 
   if (searchQuery) {
     const sq = searchQuery.toLowerCase();
-    quests = quests.filter(quest =>
-      (quest.name || '').toLowerCase().includes(sq) ||
-      (quest.startNpc || '').toLowerCase().includes(sq) ||
-      (quest.startObject || '').toLowerCase().includes(sq) ||
-      (quest.endNpc || '').toLowerCase().includes(sq) ||
-      (quest.endObject || '').toLowerCase().includes(sq) ||
-      (quest.startLoc || '').toLowerCase().includes(sq) ||
-      (quest.endLoc || '').toLowerCase().includes(sq) ||
-      quest.rewards.some(r => r.name.toLowerCase().includes(sq)) ||
-      quest.rewardChoices.some(r => r.name.toLowerCase().includes(sq)) ||
-      quest.legacyItems.some(r => r.name.toLowerCase().includes(sq)) ||
-      (quest.notes || '').toLowerCase().includes(sq)
-    );
+    const questFieldsMatch = (q) =>
+      (q.name || '').toLowerCase().includes(sq) ||
+      (q.startNpc || '').toLowerCase().includes(sq) ||
+      (q.startObject || '').toLowerCase().includes(sq) ||
+      (q.endNpc || '').toLowerCase().includes(sq) ||
+      (q.endObject || '').toLowerCase().includes(sq) ||
+      (q.startLoc || '').toLowerCase().includes(sq) ||
+      (q.endLoc || '').toLowerCase().includes(sq) ||
+      (q.rewards || []).some(r => r.name.toLowerCase().includes(sq)) ||
+      (q.rewardChoices || []).some(r => r.name.toLowerCase().includes(sq)) ||
+      (q.legacyItems || []).some(r => r.name.toLowerCase().includes(sq)) ||
+      (q.notes || '').toLowerCase().includes(sq);
+
+    quests = quests.filter(quest => {
+      if (questFieldsMatch(quest)) return true;
+      // Also match against preChain quests (rendered as cards inside chain groups)
+      return (quest.preChain || []).some(entry => {
+        const candidates = entry.or ? entry.or : [entry];
+        return candidates.some(c => questFieldsMatch(normalizeQuest(c)));
+      });
+    });
   }
 
   // Isolated quests (no chain) first, then quest chains
@@ -634,10 +710,27 @@ function renderQuests() {
     return;
   }
 
+  // schema-2 dungeons declare their chain structure explicitly in the data, so
+  // they use a dedicated config-driven renderer instead of the heuristic
+  // grouping below (which only legacy dungeons rely on).
+  if (dungeon.schema === 2) {
+    renderConfigGroups(dungeon, quests, container);
+    if (typeof $WowheadPower !== 'undefined') $WowheadPower.refreshLinks();
+    return;
+  }
+
   // Group quests so chain members render together with a wrapper.
-  // Absorbed quests (isDungeon prereqs of another dungeon quest) are skipped here
-  // and shown instead inside the chain group of their absorber.
+  // Chain structure is built from the FULL (unfiltered) member set so the tree
+  // shape survives faction/search filtering; the active filter only decides
+  // which chains appear and which faction variant shows inside each step.
+  const allMembers = dungeon.quests.map(normalizeQuest).filter(q => q.absorbedBy === null);
+  const membersByChain = {};
+  allMembers.forEach(m => {
+    if (m.chainId !== null) (membersByChain[m.chainId] = membersByChain[m.chainId] || []).push(m);
+  });
+
   const rendered = new Set();
+  const renderedChains = new Set();
 
   quests.forEach(quest => {
     if (rendered.has(quest.id)) return;
@@ -645,91 +738,549 @@ function renderQuests() {
     if (quest.absorbedBy !== null) return;
 
     const cid = quest.chainId;
-
-    if (cid !== null && quest.chainDepth === 0) {
-      const chainMembers = quests.filter(q => q.chainId === cid);
-      const rootPrechain = quest.preChain || [];
-      const rootPostchain = quest.postChain || [];
-      const isGroup = chainMembers.length > 1 || rootPrechain.length > 0 || rootPostchain.length > 0;
-
-      if (isGroup) {
-        const wrapper = document.createElement('div');
-        wrapper.className = 'quest-chain-group';
-
-        const dungeonPartCount = chainMembers.length;
-        const label = document.createElement('div');
-        label.className = 'chain-group-label';
-        label.textContent = dungeonPartCount > 1
-          ? `Quest Chain  (${dungeonPartCount} dungeon parts)`
-          : 'Quest Chain';
-        wrapper.appendChild(label);
-
-        if (rootPrechain.length > 0) {
-          wrapper.appendChild(buildPrechainBreadcrumb(rootPrechain));
-        }
-
-        // "Part X/Y" should count the whole chain — pre-quests, the dungeon
-        // quests themselves, and the next-in-chain quests — not just the
-        // dungeon parts. Offset each member by the number of pre-quests.
-        const chainTotal = rootPrechain.length + chainMembers.length + rootPostchain.length;
-        chainMembers.forEach((cq, idx) => {
-          rendered.add(cq.id);
-          const card = buildQuestCard(cq, dungeon, rootPrechain.length + idx, chainTotal);
-          wrapper.appendChild(card);
-        });
-
-        if (rootPostchain.length > 0) {
-          wrapper.appendChild(buildPostchainBreadcrumb(rootPostchain));
-        }
-
-        container.appendChild(wrapper);
-        return;
-      }
+    if (cid !== null) {
+      if (renderedChains.has(cid)) return;
+      renderedChains.add(cid);
+      const members = membersByChain[cid] || [quest];
+      members.forEach(m => rendered.add(m.id));
+      const el = buildChainGroup(members, dungeon);
+      if (el) container.appendChild(el);
+      return;
     }
 
-    if (!rendered.has(quest.id)) {
-      rendered.add(quest.id);
-      container.appendChild(buildQuestCard(quest, dungeon, null, null));
-    }
+    rendered.add(quest.id);
+    container.appendChild(buildQuestCard(quest, dungeon, null, null));
   });
 
   if (typeof $WowheadPower !== 'undefined') $WowheadPower.refreshLinks();
 }
 
 // ═══════════════════════════════════════
-//  PRECHAIN BREADCRUMB
+//  CONFIG-DRIVEN RENDERING (schema 2)
 // ═══════════════════════════════════════
-function buildPrechainBreadcrumb(preChain) {
+// schema-2 data declares relationships explicitly per quest:
+//   isDungeon            → DUNGEON badge
+//   series {id,index,total} → membership + "PART x/y" badge
+//   prevQuestId/nextQuestId → series neighbours (arrows + completion cascade)
+//   preChain[]  → context leading IN: requires gates ({or:[...]} | full quest,
+//                 relation:'requires') + earlier non-dungeon series members
+//                 (full quest, relation:'series')
+//   postChain[] → later non-dungeon series members (stubs → "Continue series")
+function renderConfigGroups(dungeon, visibleQuests, container) {
+  const visibleIds = new Set(visibleQuests.map(q => q.id));
+  // Standalone quests first, chained/gated groups at the bottom.
+  // Stable sort preserves declared order within each bucket.
+  const all = dungeon.quests.map(normalizeQuest).sort((a, b) => {
+    const aChained = (a.series || (a.preChain || []).length || (a.postChain || []).length) ? 1 : 0;
+    const bChained = (b.series || (b.preChain || []).length || (b.postChain || []).length) ? 1 : 0;
+    return aChained - bChained;
+  });
+  const rendered = new Set();
+
+  all.forEach(q => {
+    if (rendered.has(q.id)) return;
+    if (q.absorbedBy != null) { rendered.add(q.id); return; }
+
+    if (q.series) {
+      const members = all
+        .filter(m => m.series && m.series.id === q.series.id)
+        .sort((a, b) => a.series.index - b.series.index);
+      members.forEach(m => rendered.add(m.id));
+      // Also mark alsoUnlocks quests as rendered so they aren't shown standalone.
+      members.forEach(m => (m.alsoUnlocks || []).forEach(u => rendered.add(u.id)));
+      const isVisible = m => visibleIds.has(m.id) ||
+        (m.alsoUnlocks || []).some(u => visibleIds.has(u.id));
+      if (!members.some(isVisible)) return;
+      const el = buildConfigSeriesGroup(members, dungeon);
+      if (el) container.appendChild(el);
+      return;
+    }
+
+    rendered.add(q.id);
+    if (!visibleIds.has(q.id)) return;
+    if ((q.preChain || []).length || (q.postChain || []).length) {
+      container.appendChild(buildConfigGatedGroup(q, dungeon));
+    } else {
+      container.appendChild(buildQuestCard(q, dungeon, null, null));
+    }
+  });
+}
+
+// Cascade context for the prereqs/earlier-members of a group: completing a
+// dungeon quest marks all of them done; completing one of them marks the ones
+// before it (mirrors the legacy preChain cascade).
+function configCascadeContexts(ctxMembers, dungeonQuests = []) {
+  const members = ctxMembers.map(normalizeQuest);
+  const dungeonMembers = dungeonQuests.map(normalizeQuest);
+  return {
+    dungeonCtx:  members.length ? { type: 'dungeon',  members } : null,
+    // dungeonMembers: the quest(s) these prereqs gate — needed so that undoing a
+    // prereq card can also undo the dungeon quest that depended on it.
+    prechainCtx: members.length ? { type: 'prechain', members, dungeonMembers } : null,
+  };
+}
+
+// Requires gates → a "Prerequisite(s)" section. Single gate = one card; an OR
+// group = a "pick one" OR-box (reusing the faction-alt / or-divider styling).
+function buildConfigGates(gates, dungeon, ctx) {
   const el = document.createElement('div');
   el.className = 'chain-prechain';
   const label = document.createElement('div');
   label.className = 'chain-context-label';
-  label.textContent = 'Prerequisites';
+  label.textContent = gates.length > 1 ? 'Prerequisites' : 'Prerequisite';
   el.appendChild(label);
-  const flow = document.createElement('div');
-  flow.className = 'prechain-flow';
-  preChain.forEach((s, i) => {
-    if (i > 0) {
-      const arrow = document.createElement('span');
-      arrow.className = 'prechain-arrow';
-      arrow.textContent = '›';
-      flow.appendChild(arrow);
+
+  gates.forEach((g, i) => {
+    if (g.or) {
+      const node = document.createElement('div');
+      node.className = 'chain-tree-node faction-alt';
+      g.or.forEach((v, j) => {
+        if (j > 0) {
+          const or = document.createElement('div');
+          or.className = 'chain-or-divider';
+          or.textContent = 'or';
+          node.appendChild(or);
+        }
+        node.appendChild(buildQuestCard(normalizeQuest(v), dungeon, null, null, false, ctx));
+      });
+      el.appendChild(node);
+    } else {
+      el.appendChild(buildQuestCard(normalizeQuest(g), dungeon, null, null, false, ctx));
     }
-    const cls = 'prechain-step' + (s.isDungeon ? ' is-dungeon' : '');
-    const a = document.createElement('a');
-    a.href = s.url;
-    a.target = '_blank';
-    a.rel = 'noopener noreferrer';
-    a.className = cls;
-    a.title = s.isDungeon ? 'Dungeon quest — also in this list' : '';
-    a.textContent = s.name;
-    flow.appendChild(a);
+    if (i < gates.length - 1) el.appendChild(buildFlowConnector(0));
   });
-  const finalArrow = document.createElement('span');
-  finalArrow.textContent = '›';
-  finalArrow.className = 'prechain-arrow';
-  flow.appendChild(finalArrow);
-  el.appendChild(flow);
+  return el;
+}
+
+// A standalone dungeon quest that has requires gates but no series.
+function buildConfigGatedGroup(quest, dungeon) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'quest-chain-group has-prechain';
+  const label = document.createElement('div');
+  label.className = 'chain-group-label';
+  label.textContent = 'Quest Chain';
+  wrapper.appendChild(label);
+
+  const gates = (quest.preChain || []).filter(e => e.relation === 'requires');
+  const ctxMembers = gates.flatMap(g => g.or ? g.or : [g]);
+  const { dungeonCtx, prechainCtx } = configCascadeContexts(ctxMembers, [quest]);
+
+  if (gates.length) {
+    const gateEl = buildConfigGates(gates, dungeon, prechainCtx);
+    gateEl.classList.add('gate-section');
+    wrapper.appendChild(gateEl);
+    wrapper.appendChild(buildFlowConnector(0));
+  }
+  wrapper.appendChild(buildQuestCard(quest, dungeon, null, null, false, dungeonCtx));
+  const postChain = quest.postChain || [];
+  if (postChain.length) { const bc = buildPostchainBreadcrumb(postChain); if (bc) wrapper.appendChild(bc); }
+  return wrapper;
+}
+
+// A series group: optional requires gates, then the ordered series sequence
+// (earlier non-dungeon members + dungeon members) as cards joined by arrows,
+// then later non-dungeon members as a "Continue series" breadcrumb.
+function buildConfigSeriesGroup(members, dungeon) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'quest-chain-group has-prechain';
+  const label = document.createElement('div');
+  label.className = 'chain-group-label';
+  label.textContent = 'Quest Chain';
+  wrapper.appendChild(label);
+
+  // Group dungeon members and preChain entries by series.id so that a quest
+  // gated behind a named series (e.g. a 4-part prerequisite chain) renders
+  // as two distinct "Quest series" boxes rather than one interleaved list.
+  // Gates that carry their own series.id go into that series group; gates
+  // with no series.id (standalone prerequisites) become a separate gate section.
+  const seriesGroupsMap = new Map();  // seriesId → card[]
+  const standaloneGates = [];
+  const gateSeen = new Set();
+
+  function addToSeriesGroup(sid, card) {
+    if (!seriesGroupsMap.has(sid)) seriesGroupsMap.set(sid, []);
+    const g = seriesGroupsMap.get(sid);
+    if (!g.some(c => c.id === card.id)) g.push(card);
+  }
+
+  members.forEach(m => addToSeriesGroup(m.series.id, m));
+
+  members.forEach(m => (m.preChain || []).forEach(e => {
+    if (e.relation !== 'series' && e.relation !== 'requires') return;
+    const sid = e.series?.id;
+    if (sid) {
+      addToSeriesGroup(sid, normalizeQuest(e));
+    } else if (e.relation === 'requires') {
+      const key = e.or ? 'or:' + e.or.map(v => v.id).join(',') : 'q:' + e.id;
+      if (!gateSeen.has(key)) { gateSeen.add(key); standaloneGates.push(e); }
+    }
+  }));
+
+  seriesGroupsMap.forEach(g =>
+    g.sort((a, b) => (a.series?.index ?? 0) - (b.series?.index ?? 0))
+  );
+
+  // Follow-ups: later non-dungeon members → breadcrumb.
+  const followSeen = new Set();
+  const followups = [];
+  members.forEach(m => (m.postChain || []).forEach(s => {
+    if (followSeen.has(s.id)) return;
+    followSeen.add(s.id);
+    followups.push(s);
+  }));
+  followups.sort((a, b) => (a.series ? a.series.index : 0) - (b.series ? b.series.index : 0));
+
+  // Prerequisite series groups first, then the dungeon's own series group.
+  const dungeonSid = members[0].series.id;
+  const prereqGroups = [];
+  let mainGroup = null;
+  seriesGroupsMap.forEach((g, sid) => {
+    if (sid === dungeonSid) mainGroup = g;
+    else prereqGroups.push(g);
+  });
+  const orderedGroups = [...prereqGroups, mainGroup].filter(Boolean);
+
+  const standaloneGateCards = standaloneGates.flatMap(g => g.or ? g.or.map(normalizeQuest) : [normalizeQuest(g)]);
+  const allCtxCards = [...standaloneGateCards, ...orderedGroups.flatMap(g => g.filter(c => !c.isDungeon))];
+  // Include alsoUnlocks quests in dungeon context so checking either fork outcome
+  // marks the shared prerequisite chain as complete.
+  const alsoUnlocksAll = members.flatMap(m => (m.alsoUnlocks || []).map(normalizeQuest));
+  const { dungeonCtx, prechainCtx } = configCascadeContexts(allCtxCards, [...members, ...alsoUnlocksAll]);
+
+  if (standaloneGates.length) {
+    const gateEl = buildConfigGates(standaloneGates, dungeon, prechainCtx);
+    gateEl.classList.add('gate-section');
+    wrapper.appendChild(gateEl);
+    wrapper.appendChild(buildFlowConnector(0));
+  }
+
+  orderedGroups.forEach((g, i) => {
+    const sg = document.createElement('div');
+    sg.className = 'quest-series-group';
+    const sgLabel = document.createElement('div');
+    sgLabel.className = 'chain-context-label';
+    sgLabel.textContent = 'Quest series';
+    sg.appendChild(sgLabel);
+
+    // Detect if the last dungeon quest forks into parallel outcomes (alsoUnlocks).
+    const lastCard = g[g.length - 1];
+    const forkQuests = (lastCard && lastCard.isDungeon && (lastCard.alsoUnlocks || []).length)
+      ? [lastCard, ...lastCard.alsoUnlocks.map(normalizeQuest)]
+      : null;
+
+    if (forkQuests) {
+      // Render all cards before the fork normally.
+      g.slice(0, -1).forEach((c, j) => {
+        sg.appendChild(buildQuestCard(c, dungeon, null, null, false, prechainCtx));
+        if (j < g.length - 2) sg.appendChild(buildFlowConnector(0));
+      });
+      sg.appendChild(buildFlowConnector(forkQuests.length));
+      const branches = document.createElement('div');
+      branches.className = 'chain-branches';
+      forkQuests.forEach(fq => {
+        const col = document.createElement('div');
+        col.className = 'chain-branch';
+        col.appendChild(buildQuestCard(normalizeQuest(fq), dungeon, null, null, false, dungeonCtx));
+        branches.appendChild(col);
+      });
+      sg.appendChild(branches);
+    } else {
+      g.forEach((c, j) => {
+        const ctx = c.isDungeon ? dungeonCtx : prechainCtx;
+        sg.appendChild(buildQuestCard(c, dungeon, null, null, false, ctx));
+        if (j < g.length - 1) sg.appendChild(buildFlowConnector(0));
+      });
+      // Keep the "Continue series" follow-ups inside the last box so they read
+      // as part of the same questline rather than a detached section below it.
+      if (i === orderedGroups.length - 1 && followups.length) {
+        const bc = buildPostchainBreadcrumb(followups);
+        if (bc) sg.appendChild(bc);
+      }
+    }
+
+    wrapper.appendChild(sg);
+    if (i < orderedGroups.length - 1) wrapper.appendChild(buildFlowConnector(0));
+  });
+
+  return wrapper;
+}
+
+// ═══════════════════════════════════════
+//  CHAIN GROUP / TREE RENDERING
+// ═══════════════════════════════════════
+function questPassesFaction(q) {
+  return !factionFilter || !q.faction || q.faction === 'Both' || q.faction === factionFilter;
+}
+
+// Build the structural model of a chain: faction-variant "slots" (quests that
+// share a parent and name, e.g. the Alliance/Horde versions of one step) wired
+// into a parent→children tree by prevQuestId.
+function buildChainModel(members) {
+  const byId = {};
+  members.forEach(m => { byId[m.id] = m; });
+  const parentIdOf = m => (m.prevQuestId != null && byId[m.prevQuestId]) ? m.prevQuestId : null;
+
+  const slotByKey = new Map();      // "parentId|name" -> slot
+  const slotOfQuest = new Map();    // questId -> slot
+  members.forEach(m => {
+    const pid = parentIdOf(m);
+    const key = pid + '|' + m.name;
+    let slot = slotByKey.get(key);
+    if (!slot) { slot = { key, name: m.name, parentId: pid, variants: [] }; slotByKey.set(key, slot); }
+    slot.variants.push(m);
+    slotOfQuest.set(m.id, slot);
+  });
+
+  const childrenOf = new Map();     // slotKey -> [slot]
+  const roots = [];
+  slotByKey.forEach(slot => {
+    const parentSlot = slot.parentId != null ? slotOfQuest.get(slot.parentId) : null;
+    if (parentSlot) {
+      if (!childrenOf.has(parentSlot.key)) childrenOf.set(parentSlot.key, []);
+      childrenOf.get(parentSlot.key).push(slot);
+    } else {
+      roots.push(slot);
+    }
+  });
+
+  const visibleVariants = slot => slot.variants.filter(questPassesFaction);
+  const visibleChildren = slot => (childrenOf.get(slot.key) || []).filter(s => visibleVariants(s).length > 0);
+  return { roots, visibleVariants, visibleChildren };
+}
+
+function buildChainGroup(members, dungeon) {
+  const model = buildChainModel(members);
+  const visibleRoots = model.roots.filter(s => model.visibleVariants(s).length > 0);
+  if (visibleRoots.length === 0) return null;
+
+  const rootQuests = [].concat(...visibleRoots.map(model.visibleVariants));
+  const rootPrechain  = (rootQuests.find(q => (q.preChain  || []).length) || {}).preChain  || [];
+  const rootPostchain = (rootQuests.find(q => (q.postChain || []).length) || {}).postChain || [];
+
+  let hasBranch = visibleRoots.length > 1;
+  const walkDetect = slot => {
+    const kids = model.visibleChildren(slot);
+    if (kids.length > 1) hasBranch = true;
+    kids.forEach(walkDetect);
+  };
+  visibleRoots.forEach(walkDetect);
+
+  const totalVisible = rootQuests.length === 1 && model.visibleChildren(visibleRoots[0]).length === 0;
+  if (totalVisible && rootPrechain.length === 0 && rootPostchain.length === 0 && members.length === 1) {
+    return buildQuestCard(rootQuests[0], dungeon, null, null);
+  }
+
+  const gateChain   = rootPrechain.filter(s => s.preChainRole === 'gate');
+  const seriesChain = rootPrechain.filter(s => s.preChainRole === 'series' || !s.preChainRole);
+  const hasPrechain = rootPrechain.length > 0;
+
+  // Cascade contexts: prechainCtx for preChain item cards (cascade to predecessors),
+  // dungeonCtx for dungeon quest cards (cascade to all preChain items on complete).
+  const allPreChainNorm = rootPrechain.map(normalizeQuest);
+  const prechainCtx = hasPrechain ? { type: 'prechain', members: allPreChainNorm } : null;
+  const dungeonCtx  = hasPrechain ? { type: 'dungeon',  members: allPreChainNorm } : null;
+
+  const wrapper = document.createElement('div');
+  // has-prechain switches the wrapper to flex-column so all children stack
+  // vertically with flow connectors instead of the side-by-side grid.
+  wrapper.className = 'quest-chain-group'
+    + (hasPrechain ? ' has-prechain' : hasBranch ? ' chain-tree' : '');
+
+  const label = document.createElement('div');
+  label.className = 'chain-group-label';
+  label.textContent = hasBranch && !hasPrechain ? 'Quest Chain  (branching)' : 'Quest Chain';
+  wrapper.appendChild(label);
+
+  // ── Gate section: standalone prerequisites that unlock the series ──
+  if (gateChain.length > 0) {
+    const gateEl = buildPrechainCards(gateChain, dungeon, 'Prerequisite', prechainCtx);
+    if (gateEl) {
+      gateEl.classList.add('gate-section');
+      wrapper.appendChild(gateEl);
+    }
+    wrapper.appendChild(buildFlowConnector(0));
+  }
+
+  // ── Quest series group: series preChain + dungeon quest in one bordered box ──
+  // This makes it visually obvious that e.g. 1489→1490→914 are one questline.
+  if (seriesChain.length > 0) {
+    const sg = document.createElement('div');
+    sg.className = 'quest-series-group';
+    const sgLabel = document.createElement('div');
+    sgLabel.className = 'chain-context-label';
+    sgLabel.textContent = 'Quest series';
+    sg.appendChild(sgLabel);
+
+    // Series prerequisite cards (with flow connectors between them)
+    const sMembers = seriesChain.map(normalizeQuest);
+    const sModel = buildChainModel(sMembers);
+    const sRoots = sModel.roots.filter(s => sModel.visibleVariants(s).length > 0);
+    const sOrdered = [];
+    const walkS = s => {
+      if (sModel.visibleVariants(s).length > 0) sOrdered.push(s);
+      sModel.visibleChildren(s).forEach(walkS);
+    };
+    sRoots.forEach(walkS);
+
+    sOrdered.forEach(slot => {
+      const variants = sModel.visibleVariants(slot);
+      if (variants.length === 1) {
+        sg.appendChild(buildQuestCard(variants[0], dungeon, null, null, false, prechainCtx));
+      } else {
+        const node = document.createElement('div');
+        node.className = 'chain-tree-node faction-alt';
+        variants.forEach((q, j) => {
+          if (j > 0) {
+            const or = document.createElement('div');
+            or.className = 'chain-or-divider';
+            or.textContent = 'or';
+            node.appendChild(or);
+          }
+          node.appendChild(buildQuestCard(q, dungeon, null, null, false, prechainCtx));
+        });
+        sg.appendChild(node);
+      }
+      // Connector after every series item, including just before the dungeon card
+      sg.appendChild(buildFlowConnector(0));
+    });
+
+    appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, sg, dungeonCtx);
+    wrapper.appendChild(sg);
+  } else {
+    appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, wrapper, dungeonCtx);
+  }
+
+  if (rootPostchain.length > 0) { const bc = buildPostchainBreadcrumb(rootPostchain); if (bc) wrapper.appendChild(bc); }
+
+  return wrapper;
+}
+
+// Append in-dungeon quest cards (and their flow connectors) into a container.
+// When dungeonCtx is set the wrapper is already vertical (has-prechain mode), so
+// we add connectors between slots. Otherwise we preserve the existing flat layout.
+function appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, container, dungeonCtx) {
+  if (hasBranch) {
+    visibleRoots.forEach(root => renderChainSlot(root, model, dungeon, container, false, true, dungeonCtx));
+  } else {
+    const slots = [];
+    let cur = visibleRoots[0];
+    while (cur) { slots.push(cur); cur = model.visibleChildren(cur)[0]; }
+    slots.forEach((slot, idx) => {
+      model.visibleVariants(slot).forEach(q => {
+        container.appendChild(buildQuestCard(q, dungeon, idx, slots.length, false, dungeonCtx));
+      });
+      if (dungeonCtx && idx < slots.length - 1) container.appendChild(buildFlowConnector(0));
+    });
+  }
+}
+
+// Recursively render a slot (and its subtree) as an indented tree. Linear
+// runs stay in the current column, joined by a downward "leads to" connector;
+// a branch point nests each child branch under a shared trunk.
+// isDungeonChain: true when this slot is an in-dungeon quest (not a preChain item),
+// so buildQuestCard receives the isDungeonCard flag and shows the DUNGEON badge.
+function renderChainSlot(slot, model, dungeon, container, isBranchChild, isDungeonChain = false, dungeonCtx = null) {
+  const variants = model.visibleVariants(slot);
+  if (variants.length === 0) return;
+
+  const node = document.createElement('div');
+  node.className = 'chain-tree-node';
+  if (variants.length > 1) node.classList.add('faction-alt');
+  variants.forEach((q, i) => {
+    if (i > 0) {
+      const or = document.createElement('div');
+      or.className = 'chain-or-divider';
+      or.textContent = 'or';
+      node.appendChild(or);
+    }
+    node.appendChild(buildQuestCard(q, dungeon, null, null, isDungeonChain, dungeonCtx));
+  });
+  container.appendChild(node);
+
+  const kids = model.visibleChildren(slot);
+  if (kids.length === 1) {
+    container.appendChild(buildFlowConnector(0));
+    renderChainSlot(kids[0], model, dungeon, container, false, isDungeonChain, dungeonCtx);
+  } else if (kids.length > 1) {
+    container.appendChild(buildFlowConnector(kids.length));
+    const branches = document.createElement('div');
+    branches.className = 'chain-branches';
+    kids.forEach(kid => {
+      const col = document.createElement('div');
+      col.className = 'chain-branch';
+      renderChainSlot(kid, model, dungeon, col, false, isDungeonChain, dungeonCtx);
+      branches.appendChild(col);
+    });
+    container.appendChild(branches);
+  }
+}
+
+// Vertical "leads to" connector between a step and what it unlocks. When the
+// step forks (childCount > 1) it labels the fork so the follow-ups read as a group.
+function buildFlowConnector(childCount) {
+  const el = document.createElement('div');
+  el.className = 'chain-flow' + (childCount > 1 ? ' split' : '');
+  const label = childCount === 2 ? 'unlocks both' : childCount > 2 ? 'unlocks all' : '';
+  el.innerHTML = '<span class="chain-flow-line"></span>' +
+    (label ? `<span class="chain-flow-label">${label}</span>` : '') +
+    '<span class="chain-flow-arrow">▾</span>';
+  return el;
+}
+
+// ═══════════════════════════════════════
+//  PRECHAIN CARDS
+// ═══════════════════════════════════════
+// Prerequisites now carry full quest data, so render each as a proper quest card
+// (the same size as the in-dungeon cards — they share the chain group's grid)
+// instead of a minified breadcrumb link.
+//
+// The prerequisites form their own little chain, so the chain tree model wires
+// them via prevQuestId: sequential same-named steps (e.g. a 4-part "The Defias
+// Brotherhood" series) stay distinct cards, while true faction variants — quests
+// that share a parent AND a name — collapse into one "pick your faction" OR-slot.
+// They lay out as flat grid items (no flow connectors) to match the linear chain
+// cards below them.
+function buildPrechainCards(preChain, dungeon, sectionLabel, cascadeCtx = null) {
+  const members = preChain.map(normalizeQuest);
+  const model = buildChainModel(members);
+  const visibleRoots = model.roots.filter(s => model.visibleVariants(s).length > 0);
+  if (visibleRoots.length === 0) return null;
+
+  const ordered = [];
+  const walk = slot => {
+    if (model.visibleVariants(slot).length > 0) ordered.push(slot);
+    model.visibleChildren(slot).forEach(walk);
+  };
+  visibleRoots.forEach(walk);
+
+  const el = document.createElement('div');
+  el.className = 'chain-prechain';
+  const label = document.createElement('div');
+  label.className = 'chain-context-label';
+  label.textContent = sectionLabel || 'Prerequisites';
+  el.appendChild(label);
+
+  ordered.forEach((slot, slotIdx) => {
+    const variants = model.visibleVariants(slot);
+    if (variants.length === 1) {
+      el.appendChild(buildQuestCard(variants[0], dungeon, null, null, false, cascadeCtx));
+    } else {
+      const node = document.createElement('div');
+      node.className = 'chain-tree-node faction-alt';
+      variants.forEach((q, j) => {
+        if (j > 0) {
+          const or = document.createElement('div');
+          or.className = 'chain-or-divider';
+          or.textContent = 'or';
+          node.appendChild(or);
+        }
+        node.appendChild(buildQuestCard(q, dungeon, null, null, false, cascadeCtx));
+      });
+      el.appendChild(node);
+    }
+    if (slotIdx < ordered.length - 1) el.appendChild(buildFlowConnector(0));
+  });
+
   return el;
 }
 
@@ -737,11 +1288,23 @@ function buildPrechainBreadcrumb(preChain) {
 //  POSTCHAIN BREADCRUMB
 // ═══════════════════════════════════════
 function buildPostchainBreadcrumb(postChain) {
+  // Resolve OR groups against the active faction filter first.
+  // If every item in the postChain ends up empty, return null.
+  const resolved = postChain.map(s => {
+    if (!s.or) return s;
+    const visible = factionFilter
+      ? s.or.filter(v => !v.faction || v.faction === 'Both' || v.faction === factionFilter)
+      : s.or;
+    return visible.length ? { or: visible } : null;
+  }).filter(Boolean);
+
+  if (!resolved.length) return null;
+
   const el = document.createElement('div');
   el.className = 'chain-postchain';
   const label = document.createElement('div');
   label.className = 'chain-context-label';
-  label.textContent = 'Continue chain';
+  label.textContent = 'Continue series';
   el.appendChild(label);
   const flow = document.createElement('div');
   flow.className = 'prechain-flow';
@@ -749,21 +1312,62 @@ function buildPostchainBreadcrumb(postChain) {
   startArrow.className = 'prechain-arrow';
   startArrow.textContent = '›';
   flow.appendChild(startArrow);
-  postChain.forEach((s, i) => {
-    if (i > 0) {
-      const arrow = document.createElement('span');
-      arrow.className = 'prechain-arrow';
-      arrow.textContent = '›';
-      flow.appendChild(arrow);
-    }
+
+  function makeOrStep(v) {
     const a = document.createElement('a');
-    a.href = s.url;
+    a.href = v.url;
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
-    a.className = 'prechain-step postchain-step';
-    a.textContent = s.name;
-    flow.appendChild(a);
+    a.className = 'prechain-step postchain-step postchain-or-step';
+    if (v.faction && v.faction !== 'Both') {
+      const badge = document.createElement('span');
+      badge.className = `faction-badge faction-${v.faction.toLowerCase()}`;
+      badge.textContent = v.faction;
+      a.appendChild(badge);
+    }
+    const nameEl = document.createElement('span');
+    nameEl.textContent = v.name;
+    a.appendChild(nameEl);
+    return a;
+  }
+
+  resolved.forEach((s, i) => {
+    if (s.or) {
+      if (s.or.length === 1) {
+        // Faction filtered to one option — plain step, no OR box.
+        flow.appendChild(makeOrStep(s.or[0]));
+      } else {
+        // Multiple faction alternatives: "pick one" box.
+        const node = document.createElement('div');
+        node.className = 'chain-tree-node faction-alt';
+        s.or.forEach((v, j) => {
+          if (j > 0) {
+            const orDiv = document.createElement('div');
+            orDiv.className = 'chain-or-divider';
+            orDiv.textContent = 'or';
+            node.appendChild(orDiv);
+          }
+          node.appendChild(makeOrStep(v));
+        });
+        flow.appendChild(node);
+      }
+    } else {
+      if (i > 0) {
+        const arrow = document.createElement('span');
+        arrow.className = 'prechain-arrow';
+        arrow.textContent = '›';
+        flow.appendChild(arrow);
+      }
+      const a = document.createElement('a');
+      a.href = s.url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.className = 'prechain-step postchain-step';
+      a.textContent = s.name;
+      flow.appendChild(a);
+    }
   });
+
   el.appendChild(flow);
   return el;
 }
@@ -771,8 +1375,8 @@ function buildPostchainBreadcrumb(postChain) {
 // ═══════════════════════════════════════
 //  BUILD QUEST CARD
 // ═══════════════════════════════════════
-function buildQuestCard(quest, dungeon, chainPos, chainTotal) {
-  const key = dungeon.id + '::' + quest.name;
+function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = false, cascadeCtx = null) {
+  const key = questKey(dungeon, quest);
   const isComplete = !!completed[key];
   const card = document.createElement('div');
 
@@ -783,11 +1387,25 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal) {
     card.dataset.chainId = quest.chainId;
   }
 
-  // ---- Chain badge ----
-  let chainBadgeHtml = '';
-  if (chainPos !== null && chainTotal !== null) {
-    chainBadgeHtml = `<div class="chain-badge">PART ${chainPos + 1}/${chainTotal}</div>`;
+  // ---- Chain badges (dungeon quest indicator + series part) ----
+  // schema-2 dungeons carry explicit isDungeon / series fields, so the DUNGEON
+  // badge marks only declared objectives (incl. standalone ones) and series
+  // members get a separate "PART x/y" badge. Legacy dungeons keep deriving the
+  // badge from the chainPos / isDungeonCard params.
+  let dungeonBadgeHtml = '';
+  let seriesBadgeHtml = '';
+  if (dungeon.schema === 2) {
+    if (quest.isDungeon) dungeonBadgeHtml = `<div class="chain-badge dungeon-badge">DUNGEON</div>`;
+    if (quest.series && quest.series.total > 1) {
+      seriesBadgeHtml = `<div class="chain-badge series-badge">PART ${quest.series.index}/${quest.series.total}</div>`;
+    }
+  } else if (chainPos !== null && chainTotal !== null) {
+    const part = chainTotal > 1 ? ` ${chainPos + 1}/${chainTotal}` : '';
+    dungeonBadgeHtml = `<div class="chain-badge dungeon-badge">DUNGEON${part}</div>`;
+  } else if (isDungeonCard) {
+    dungeonBadgeHtml = `<div class="chain-badge dungeon-badge">DUNGEON</div>`;
   }
+  const chainBadgeHtml = dungeonBadgeHtml + seriesBadgeHtml;
 
   // ---- Rewards (always-give) ----
   const rewardItems = quest.rewards.length > 0 ? quest.rewards : quest.legacyItems;
@@ -910,18 +1528,57 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal) {
     if (!completed[key]) delete completed[key];
 
     if (quest.chainId !== null) {
-      if (!wasCompleted && quest.chainDepth > 0) {
-        // Completing: auto-complete all earlier members in the chain
-        dungeon.quests
-          .map(normalizeQuest)
-          .filter(q => q.chainId === quest.chainId && q.chainDepth < quest.chainDepth)
-          .forEach(q => { completed[dungeon.id + '::' + q.name] = true; });
-      } else if (wasCompleted) {
-        // Undoing: auto-undo all later members in the chain
-        dungeon.quests
-          .map(normalizeQuest)
-          .filter(q => q.chainId === quest.chainId && q.chainDepth > quest.chainDepth)
-          .forEach(q => { delete completed[dungeon.id + '::' + q.name]; });
+      // Cascade along the actual prerequisite tree (prevQuestId), not chainDepth —
+      // branching chains have parallel siblings at the same depth that must not
+      // affect one another (e.g. completing "Secret of the Circle" must not touch
+      // its sibling "Into the Depths").
+      const members = dungeon.quests.map(normalizeQuest).filter(q => q.chainId === quest.chainId);
+      const byId = {};
+      members.forEach(m => { byId[m.id] = m; });
+      const keyOf = m => questKey(dungeon, m);
+      const ancestors = m => {
+        const out = [];
+        const seen = new Set([m.id]);
+        let cur = m;
+        while (cur && cur.prevQuestId != null && byId[cur.prevQuestId] && !seen.has(cur.prevQuestId)) {
+          cur = byId[cur.prevQuestId];
+          seen.add(cur.id);
+          out.push(cur);
+        }
+        return out;
+      };
+
+      if (!wasCompleted) {
+        // Completing: every prerequisite leading here is implicitly done too.
+        ancestors(byId[quest.id]).forEach(m => { completed[keyOf(m)] = true; });
+      } else {
+        // Undoing: anything that depends on this quest is no longer reachable.
+        members
+          .filter(m => ancestors(m).some(a => a.id === quest.id))
+          .forEach(m => { delete completed[keyOf(m)]; });
+      }
+    }
+
+    // preChain cascade: completing a dungeon quest marks all its external
+    // prerequisites complete; completing a preChain item marks its predecessors.
+    if (cascadeCtx) {
+      const pcMembers = cascadeCtx.members;
+      const pcKeyOf = m => questKey(dungeon, m);
+      if (cascadeCtx.type === 'dungeon') {
+        pcMembers.forEach(m => {
+          if (!wasCompleted) completed[pcKeyOf(m)] = true;
+          else delete completed[pcKeyOf(m)];
+        });
+      } else if (cascadeCtx.type === 'prechain') {
+        const myIdx = pcMembers.findIndex(m => m.id === quest.id);
+        if (!wasCompleted && myIdx > 0) {
+          pcMembers.slice(0, myIdx).forEach(m => { completed[pcKeyOf(m)] = true; });
+        } else if (wasCompleted && myIdx >= 0) {
+          // Undo everything after this item in the prechain…
+          pcMembers.slice(myIdx + 1).forEach(m => { delete completed[pcKeyOf(m)]; });
+          // …and the dungeon quest(s) that these prereqs gate.
+          (cascadeCtx.dungeonMembers || []).forEach(m => { delete completed[pcKeyOf(m)]; });
+        }
       }
     }
 
