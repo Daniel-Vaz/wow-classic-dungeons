@@ -437,25 +437,25 @@ const DUNGEON_MAP_NAME = {
 const MULTI_LEVEL_MAPS = {
   // Keyed by zone ID
   209: [
-    { label: 'Courtyard',              src: 'assets/maps/209_courtyard.jpg'  },
-    { label: 'Kitchen & Reception',    src: 'assets/maps/209_kitchen.jpg'    },
-    { label: 'Jail',                   src: 'assets/maps/209_jail.jpg'       },
-    { label: 'Courtyard (1st Floor)',  src: 'assets/maps/209_courtyard1f.jpg'},
-    { label: "Fenrus' Room",           src: 'assets/maps/209_fenrus.jpg'     },
-    { label: "Fenrus' 1st Floor",      src: 'assets/maps/209_fenrus1f.jpg'   },
-    { label: "Nandos' & Arugal",       src: 'assets/maps/209_nandos.jpg'     },
+    { label: 'The Courtyard',          src: 'assets/maps/209_courtyard.jpg'  },
+    { label: 'Dining Hall',            src: 'assets/maps/209_kitchen.jpg'    },
+    { label: 'The Vacant Den',         src: 'assets/maps/209_jail.jpg'       },
+    { label: 'The Wall Walk',          src: 'assets/maps/209_courtyard1f.jpg'},
+    { label: "Lower Observatory",      src: 'assets/maps/209_fenrus.jpg'     },
+    { label: "Upper Observatory",      src: 'assets/maps/209_fenrus1f.jpg'   },
+    { label: "Arugal Chamber",         src: 'assets/maps/209_nandos.jpg'     },
   ],
   719: [
-    { label: "The Pool of Ask'ar", src: 'assets/maps/719_pool.jpg'       },
-    { label: 'Moonshrine Sanctum', src: 'assets/maps/719_moonshrine.jpg' },
-    { label: 'The Forgotten Pool', src: 'assets/maps/719_forgotten.jpg'  },
+    { label: "The Pool of Ask'ar",     src: 'assets/maps/719_pool.jpg'       },
+    { label: 'Moonshrine Sanctum',     src: 'assets/maps/719_moonshrine.jpg' },
+    { label: 'The Forgotten Pool',     src: 'assets/maps/719_forgotten.jpg'  },
   ],
   721: [
-    { label: 'Outside Entrance', src: 'assets/maps/721_outside.jpg' },
-    { label: 'First Level',      src: 'assets/maps/721_level1.jpg'  },
-    { label: 'Second Level',     src: 'assets/maps/721_level2.jpg'  },
-    { label: 'Third Level',      src: 'assets/maps/721_level3.jpg'  },
-    { label: 'Fourth Level',     src: 'assets/maps/721_level4.jpg'  },
+    { label: 'Outside Entrance',       src: 'assets/maps/721_outside.jpg' },
+    { label: 'The Hall of Gears',      src: 'assets/maps/721_level1.jpg'  },
+    { label: 'The Dormitory',          src: 'assets/maps/721_level2.jpg'  },
+    { label: 'Launch Bay',             src: 'assets/maps/721_level3.jpg'  },
+    { label: 'Tinkers\' Court',        src: 'assets/maps/721_level4.jpg'  },
   ],
   796: [
     { label: 'Graveyard', src: 'assets/maps/796_graveyard.jpg' },
@@ -467,9 +467,6 @@ const MULTI_LEVEL_MAPS = {
     { label: 'Excavation Exterior', src: 'assets/maps/1337_exterior.jpg' },
     { label: 'Ruins',               src: 'assets/maps/1337_ruins.jpg'    },
     { label: "Khaz'goroth's Seat",  src: 'assets/maps/1337_seat.jpg'     },
-  ],
-  1477: [
-    { label: 'Sunken Temple', src: 'assets/maps/1477.jpg' },
   ],
   1581: [
     { label: 'DeadMines', src: 'assets/maps/1581_cave.jpg' },

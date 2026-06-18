@@ -11878,7 +11878,7 @@ const DUNGEONS = [
   {
     "id": "dm",
     "name": "Dire Maul",
-    "abbr": "DM-D",
+    "abbr": "DireM",
     "icon": "🌳",
     "loadingScreen": "assets/loading-screens/800395.jpg",
     "faction": "Both",

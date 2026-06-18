@@ -101,7 +101,152 @@ function init() {
   initVideoModal();
   initScrollLogo();
   initControlsHeightObserver();
+  initLogoCinematic();
   selectDungeon('rfc');
+}
+
+// ═══════════════════════════════════════
+//  LOGO CINEMATIC — "Enter the Dungeon Gate"
+// ═══════════════════════════════════════
+function initLogoCinematic() {
+  const logo = document.querySelector('.header-logo');
+  if (!logo) return;
+  let playing = false;
+  logo.addEventListener('click', () => {
+    if (playing) return;
+    playing = true;
+    playLogoCinematic(logo).finally(() => { playing = false; });
+  });
+}
+
+async function playLogoCinematic(logo) {
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return; // respect reduced-motion: do nothing flashy
+
+  const subtitleEl = document.querySelector('.site-subtitle');
+  const text = (subtitleEl ? subtitleEl.textContent : '').trim()
+    || "The Definitive Guide to Azeroth's Classic Dungeons";
+
+  // ── Geometry: where the logo lives now, and where it should land ──
+  const start = logo.getBoundingClientRect();
+  const vw = window.innerWidth, vh = window.innerHeight;
+  const targetW = Math.min(360, vw * 0.5);
+  const scale = targetW / start.width;
+  const dx = (vw / 2) - (start.left + start.width / 2);
+  const dy = (vh * 0.36) - (start.top + start.height / 2);
+  // The zoom expands around the gate doors, which sit above the image center.
+  // gateFrac is the vertical focal point as a fraction of image height
+  // (0.5 = center; lower = higher up, on the gate).
+  const gateFrac = 0.35;
+  const offY = (gateFrac - 0.5) * start.height; // gate offset from center (negative = up)
+  // Resting translate is compensated so the logo still looks centered even
+  // though the transform-origin is above its center.
+  const restY = dy - (1 - scale) * offY;
+  const T1 = `translate(${dx}px, ${restY}px) scale(${scale})`;
+
+  // ── Build the stage ──
+  const overlay = document.createElement('div');
+  overlay.className = 'logo-cinematic-overlay';
+
+  const clone = document.createElement('img');
+  clone.className = 'cinematic-logo';
+  clone.src = logo.currentSrc || logo.src;
+  clone.alt = '';
+  clone.style.left = start.left + 'px';
+  clone.style.top = start.top + 'px';
+  clone.style.width = start.width + 'px';
+  clone.style.transformOrigin = `50% ${gateFrac * 100}%`; // pivot zoom on the gate
+
+  const sub = document.createElement('div');
+  sub.className = 'cinematic-subtitle';
+  // one span per character so each letter can be chiseled in turn
+  const STEP = 45; // ms between letters
+  const frag = document.createDocumentFragment();
+  [...text].forEach((ch, i) => {
+    const span = document.createElement('span');
+    span.className = 'carve-letter';
+    span.textContent = ch === ' ' ? ' ' : ch;
+    span.style.animationDelay = (i * STEP) + 'ms';
+    frag.appendChild(span);
+  });
+  sub.style.opacity = '0';
+  // NOTE: `frag` (the carve-letter spans) is intentionally left detached here.
+  // It is appended in Phase 2 so the per-letter animations start with the
+  // carving — otherwise they'd run during the lift while the subtitle is hidden.
+
+  overlay.appendChild(clone);
+  overlay.appendChild(sub);
+  document.body.appendChild(overlay);
+
+  // Hide the real logo so the clone is the sole star
+  logo.classList.remove('cinematic-returning');
+  logo.classList.add('cinematic-hidden');
+
+  // ── Phase 1: zoom the logo front & center ──
+  void overlay.offsetWidth; // force reflow before transitions/animations
+  overlay.classList.add('active');
+  const lift = clone.animate(
+    [{ transform: 'translate(0,0) scale(1)' }, { transform: T1 }],
+    { duration: 720, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' }
+  );
+  await lift.finished;
+
+  // ── Phase 2: carve the subtitle, letter by letter ──
+  sub.appendChild(frag); // attach now so the stagger starts from the first letter
+  sub.style.opacity = '1';
+  sub.classList.add('carving');
+  const carveTime = text.length * STEP + 400;
+  await sleep(carveTime);
+  sub.classList.remove('carving');
+  sub.style.transform = 'none';
+
+  // hold a beat so the finished carving can be read
+  await sleep(800);
+
+  // ── Phase 3: gold shine wave sweeps the carved letters ──
+  const band = document.createElement('div');
+  band.className = 'shine-band';
+  sub.appendChild(band);
+  sub.classList.add('shine');
+  await sleep(1200);
+
+  // ── Phase 4: zoom straight through the gate — no spin, grow until it
+  //            fills and surpasses the page ──
+  sub.animate([{ opacity: 1 }, { opacity: 0 }],
+    { duration: 380, easing: 'ease-in', fill: 'forwards' });
+  const zoom = clone.animate(
+    [
+      { transform: T1, filter: 'drop-shadow(0 0 30px rgba(200,140,40,0.5))' },
+      { transform: `translate(${dx}px, ${restY}px) scale(${scale * 0.9})`,
+        filter: 'drop-shadow(0 0 44px rgba(255,210,120,0.8))', offset: 0.16 },
+      { transform: `translate(${dx}px, ${restY}px) scale(${scale * 16})`,
+        filter: 'drop-shadow(0 0 60px rgba(255,210,120,0.9)) brightness(1.3)' }
+    ],
+    { duration: 1150, easing: 'cubic-bezier(.5,0,.85,.5)', fill: 'forwards' }
+  );
+  await zoom.finished;
+
+  // ── Phase 5: now engulfing the page — slowly fade it out ──
+  overlay.classList.add('black-out');
+  const fade = clone.animate(
+    [
+      { transform: `translate(${dx}px, ${restY}px) scale(${scale * 16})`, opacity: 1 },
+      { transform: `translate(${dx}px, ${restY}px) scale(${scale * 19})`, opacity: 0 }
+    ],
+    { duration: 820, easing: 'ease-in-out', fill: 'forwards' }
+  );
+  await fade.finished;
+
+  // dissolve the stage, then slowly fade the logo back to its place
+  overlay.classList.remove('active');
+  await sleep(450);
+  overlay.remove();
+
+  logo.classList.add('cinematic-returning');
+  logo.classList.remove('cinematic-hidden');
+  await sleep(1150);
+  logo.classList.remove('cinematic-returning');
 }
 
 // ═══════════════════════════════════════
@@ -164,6 +309,7 @@ function buildDungeonFilterPanel() {
     `;
     panel.appendChild(li);
   });
+  updateDungeonTabsVisibility();
 }
 
 function updateDungeonFilterTrigger() {
@@ -522,9 +668,13 @@ function renderQuests() {
           wrapper.appendChild(buildPrechainBreadcrumb(rootPrechain));
         }
 
+        // "Part X/Y" should count the whole chain — pre-quests, the dungeon
+        // quests themselves, and the next-in-chain quests — not just the
+        // dungeon parts. Offset each member by the number of pre-quests.
+        const chainTotal = rootPrechain.length + chainMembers.length + rootPostchain.length;
         chainMembers.forEach((cq, idx) => {
           rendered.add(cq.id);
-          const card = buildQuestCard(cq, dungeon, idx, chainMembers.length);
+          const card = buildQuestCard(cq, dungeon, rootPrechain.length + idx, chainTotal);
           wrapper.appendChild(card);
         });
 
@@ -805,21 +955,39 @@ function initSidebarCollapse() {
   });
 }
 
+function dungeonHasQuestsForFaction(dungeon) {
+  return !factionFilter || dungeon.quests.some(q => {
+    const nq = normalizeQuest(q);
+    return !nq.faction || nq.faction === 'Both' || nq.faction === factionFilter;
+  });
+}
+
 function updateDungeonTabsVisibility() {
   document.querySelectorAll('.dungeon-tab').forEach(tab => {
     const dungeon = DUNGEONS.find(d => d.id === tab.dataset.id);
     if (!dungeon) return;
-    const hasQuestsForFaction = !factionFilter || dungeon.quests.some(q => {
-      const nq = normalizeQuest(q);
-      return !nq.faction || nq.faction === 'Both' || nq.faction === factionFilter;
-    });
-    tab.classList.toggle('faction-dimmed', !hasQuestsForFaction);
+    tab.classList.toggle('faction-dimmed', !dungeonHasQuestsForFaction(dungeon));
+  });
+  document.querySelectorAll('.dungeon-filter-option').forEach(opt => {
+    const dungeon = DUNGEONS.find(d => d.id === opt.dataset.id);
+    if (!dungeon) return;
+    opt.classList.toggle('faction-dimmed', !dungeonHasQuestsForFaction(dungeon));
   });
 }
 
 function bindControls() {
-  document.getElementById('searchInput').addEventListener('input', e => {
+  const searchInput = document.getElementById('searchInput');
+  const searchClear = document.getElementById('searchClear');
+  searchInput.addEventListener('input', e => {
     searchQuery = e.target.value.trim();
+    searchClear.hidden = e.target.value === '';
+    renderQuests();
+  });
+  searchClear.addEventListener('click', () => {
+    searchInput.value = '';
+    searchQuery = '';
+    searchClear.hidden = true;
+    searchInput.focus();
     renderQuests();
   });
 
@@ -837,6 +1005,25 @@ function bindControls() {
     renderQuests();
   });
 
+  // Some classes are faction-restricted (Paladin = Alliance, Shaman = Horde).
+  // Hide the incompatible class options when a faction is selected, and reset
+  // the class filter if the currently selected class no longer fits.
+  function syncClassOptionsToFaction() {
+    let reset = false;
+    document.querySelectorAll('.class-filter-option[data-faction]').forEach(opt => {
+      const incompatible = factionFilter && opt.dataset.faction !== factionFilter;
+      opt.hidden = incompatible;
+      if (incompatible && opt.dataset.class === classFilter) reset = true;
+    });
+    if (reset) {
+      classFilter = null;
+      document.querySelectorAll('.class-filter-option').forEach(o => o.classList.remove('active'));
+      const allOpt = document.querySelector('.class-filter-option[data-class="all"]');
+      if (allOpt) allOpt.classList.add('active');
+      document.getElementById('classFilterSelected').textContent = 'All Classes';
+    }
+  }
+
   document.getElementById('factionGroup').addEventListener('click', e => {
     const btn = e.target.closest('.faction-btn');
     if (!btn) return;
@@ -844,6 +1031,7 @@ function bindControls() {
     factionFilter = f === 'all' ? null : f;
     document.querySelectorAll('.faction-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    syncClassOptionsToFaction();
     updateDungeonTabsVisibility();
     const cur = DUNGEONS.find(d => d.id === currentDungeonId);
     if (cur) renderDungeonHeader(cur);
