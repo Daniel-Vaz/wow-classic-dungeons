@@ -1742,6 +1742,20 @@ button.guides-box-link {
   padding: 8px 14px;
   white-space: normal;
 }
+.postchain-or-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.postchain-also-unlocks {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 .prechain-step.postchain-step:hover {
   color: #aac4d8;
   border-color: rgba(128,154,176,0.6);

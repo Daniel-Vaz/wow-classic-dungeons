@@ -852,6 +852,14 @@ function buildConfigGates(gates, dungeon, ctx) {
   return el;
 }
 
+// Sub-box header: "Quest series · <name>" when the grouped cards carry a
+// series name, else the generic "Quest series". Names let the distinct series
+// in a merged cross-series chain be told apart at a glance.
+function seriesGroupLabel(cards) {
+  const name = cards.find(c => c.series && c.series.name)?.series?.name;
+  return name ? `Quest series · ${name}` : 'Quest series';
+}
+
 // A standalone dungeon quest that has requires gates but no series.
 function buildConfigGatedGroup(quest, dungeon) {
   const wrapper = document.createElement('div');
@@ -861,16 +869,60 @@ function buildConfigGatedGroup(quest, dungeon) {
   label.textContent = 'Quest Chain';
   wrapper.appendChild(label);
 
-  const gates = (quest.preChain || []).filter(e => e.relation === 'requires');
-  const ctxMembers = gates.flatMap(g => g.or ? g.or : [g]);
-  const { dungeonCtx, prechainCtx } = configCascadeContexts(ctxMembers, [quest]);
+  // Build an ordered list of blocks preserving the interleaved order from the
+  // prechain: each block is either {type:'series', sid, cards[]} or
+  // {type:'gate', entries[]}, created on first encounter of each series.id /
+  // standalone gate key. This ensures a standalone quest between two series
+  // boxes renders in the correct position rather than always at the top.
+  const blocks = [];
+  const sidToBlock = new Map();
+  const gateKeySeen = new Set();
 
-  if (gates.length) {
-    const gateEl = buildConfigGates(gates, dungeon, prechainCtx);
-    gateEl.classList.add('gate-section');
-    wrapper.appendChild(gateEl);
+  (quest.preChain || []).forEach(e => {
+    if (e.relation !== 'series' && e.relation !== 'requires') return;
+    const sid = e.series?.id;
+    if (sid) {
+      if (!sidToBlock.has(sid)) { const b = { type: 'series', cards: [] }; sidToBlock.set(sid, b); blocks.push(b); }
+      const b = sidToBlock.get(sid);
+      if (!b.cards.some(c => c.id === e.id)) b.cards.push(normalizeQuest(e));
+    } else if (e.relation === 'requires') {
+      const key = e.or ? 'or:' + e.or.map(v => v.id).join(',') : 'q:' + e.id;
+      if (!gateKeySeen.has(key)) { gateKeySeen.add(key); blocks.push({ type: 'gate', entries: [e] }); }
+    }
+  });
+
+  blocks.forEach(b => {
+    if (b.type === 'series') b.cards.sort((a, b) => (a.series?.index ?? 0) - (b.series?.index ?? 0));
+  });
+
+  const allCtxCards = blocks.flatMap(b =>
+    b.type === 'gate'
+      ? b.entries.flatMap(g => g.or ? g.or.map(normalizeQuest) : [normalizeQuest(g)])
+      : b.cards
+  );
+  const { dungeonCtx, prechainCtx } = configCascadeContexts(allCtxCards, [quest]);
+
+  blocks.forEach((b, i) => {
+    if (b.type === 'gate') {
+      const gateEl = buildConfigGates(b.entries, dungeon, prechainCtx);
+      gateEl.classList.add('gate-section');
+      wrapper.appendChild(gateEl);
+    } else {
+      const sg = document.createElement('div');
+      sg.className = 'quest-series-group';
+      const sgLabel = document.createElement('div');
+      sgLabel.className = 'chain-context-label';
+      sgLabel.textContent = seriesGroupLabel(b.cards);
+      sg.appendChild(sgLabel);
+      b.cards.forEach((c, j) => {
+        sg.appendChild(buildQuestCard(c, dungeon, null, null, false, prechainCtx));
+        if (j < b.cards.length - 1) sg.appendChild(buildFlowConnector(0));
+      });
+      wrapper.appendChild(sg);
+    }
     wrapper.appendChild(buildFlowConnector(0));
-  }
+  });
+
   wrapper.appendChild(buildQuestCard(quest, dungeon, null, null, false, dungeonCtx));
   const postChain = quest.postChain || [];
   if (postChain.length) { const bc = buildPostchainBreadcrumb(postChain); if (bc) wrapper.appendChild(bc); }
@@ -888,37 +940,51 @@ function buildConfigSeriesGroup(members, dungeon) {
   label.textContent = 'Quest Chain';
   wrapper.appendChild(label);
 
-  // Group dungeon members and preChain entries by series.id so that a quest
-  // gated behind a named series (e.g. a 4-part prerequisite chain) renders
-  // as two distinct "Quest series" boxes rather than one interleaved list.
-  // Gates that carry their own series.id go into that series group; gates
-  // with no series.id (standalone prerequisites) become a separate gate section.
-  const seriesGroupsMap = new Map();  // seriesId → card[]
-  const standaloneGates = [];
-  const gateSeen = new Set();
+  // Build an ordered list of blocks preserving the interleaved order from the
+  // prechain: each block is either {type:'series', sid, cards[]} or
+  // {type:'gate', entries[]}. A series block is created on first encounter of
+  // its series.id; subsequent entries with the same id are appended to it.
+  // Standalone requires gates (no series.id) become their own gate block in
+  // position, so a standalone quest between two series boxes renders correctly.
+  const dungeonSid = members[0].series.id;
+  const blocks = [];           // ordered blocks
+  const sidToBlock = new Map();
+  const gateKeySeen = new Set();
 
-  function addToSeriesGroup(sid, card) {
-    if (!seriesGroupsMap.has(sid)) seriesGroupsMap.set(sid, []);
-    const g = seriesGroupsMap.get(sid);
-    if (!g.some(c => c.id === card.id)) g.push(card);
+  function ensureSeriesBlock(sid) {
+    if (!sidToBlock.has(sid)) {
+      const b = { type: 'series', sid, cards: [] };
+      sidToBlock.set(sid, b);
+      blocks.push(b);
+    }
+    return sidToBlock.get(sid);
   }
 
-  members.forEach(m => addToSeriesGroup(m.series.id, m));
+  function addToSeriesBlock(sid, card) {
+    const b = ensureSeriesBlock(sid);
+    if (!b.cards.some(c => c.id === card.id)) b.cards.push(card);
+  }
+
+  // Seed the dungeon series block first so it always ends up as the main group.
+  members.forEach(m => addToSeriesBlock(m.series.id, m));
 
   members.forEach(m => (m.preChain || []).forEach(e => {
     if (e.relation !== 'series' && e.relation !== 'requires') return;
     const sid = e.series?.id;
     if (sid) {
-      addToSeriesGroup(sid, normalizeQuest(e));
+      addToSeriesBlock(sid, normalizeQuest(e));
     } else if (e.relation === 'requires') {
       const key = e.or ? 'or:' + e.or.map(v => v.id).join(',') : 'q:' + e.id;
-      if (!gateSeen.has(key)) { gateSeen.add(key); standaloneGates.push(e); }
+      if (!gateKeySeen.has(key)) {
+        gateKeySeen.add(key);
+        blocks.push({ type: 'gate', entries: [e] });
+      }
     }
   }));
 
-  seriesGroupsMap.forEach(g =>
-    g.sort((a, b) => (a.series?.index ?? 0) - (b.series?.index ?? 0))
-  );
+  blocks.forEach(b => {
+    if (b.type === 'series') b.cards.sort((a, b) => (a.series?.index ?? 0) - (b.series?.index ?? 0));
+  });
 
   // Follow-ups: later non-dungeon members → breadcrumb.
   const followSeen = new Set();
@@ -930,36 +996,37 @@ function buildConfigSeriesGroup(members, dungeon) {
   }));
   followups.sort((a, b) => (a.series ? a.series.index : 0) - (b.series ? b.series.index : 0));
 
-  // Prerequisite series groups first, then the dungeon's own series group.
-  const dungeonSid = members[0].series.id;
-  const prereqGroups = [];
-  let mainGroup = null;
-  seriesGroupsMap.forEach((g, sid) => {
-    if (sid === dungeonSid) mainGroup = g;
-    else prereqGroups.push(g);
-  });
-  const orderedGroups = [...prereqGroups, mainGroup].filter(Boolean);
-
-  const standaloneGateCards = standaloneGates.flatMap(g => g.or ? g.or.map(normalizeQuest) : [normalizeQuest(g)]);
-  const allCtxCards = [...standaloneGateCards, ...orderedGroups.flatMap(g => g.filter(c => !c.isDungeon))];
+  const allCtxCards = blocks.flatMap(b =>
+    b.type === 'gate'
+      ? b.entries.flatMap(g => g.or ? g.or.map(normalizeQuest) : [normalizeQuest(g)])
+      : b.cards.filter(c => !c.isDungeon)
+  );
   // Include alsoUnlocks quests in dungeon context so checking either fork outcome
   // marks the shared prerequisite chain as complete.
   const alsoUnlocksAll = members.flatMap(m => (m.alsoUnlocks || []).map(normalizeQuest));
   const { dungeonCtx, prechainCtx } = configCascadeContexts(allCtxCards, [...members, ...alsoUnlocksAll]);
 
-  if (standaloneGates.length) {
-    const gateEl = buildConfigGates(standaloneGates, dungeon, prechainCtx);
-    gateEl.classList.add('gate-section');
-    wrapper.appendChild(gateEl);
-    wrapper.appendChild(buildFlowConnector(0));
-  }
+  // Render blocks in order, inserting flow connectors between them.
+  // The dungeon series block is the last block; followups attach to it.
+  const prereqBlocks = blocks.filter(b => !(b.type === 'series' && b.sid === dungeonSid));
+  const mainBlock = blocks.find(b => b.type === 'series' && b.sid === dungeonSid);
+  const orderedBlocks = [...prereqBlocks, mainBlock].filter(Boolean);
 
-  orderedGroups.forEach((g, i) => {
+  orderedBlocks.forEach((b, i) => {
+    const isLast = i === orderedBlocks.length - 1;
+    if (b.type === 'gate') {
+      const gateEl = buildConfigGates(b.entries, dungeon, prechainCtx);
+      gateEl.classList.add('gate-section');
+      wrapper.appendChild(gateEl);
+      if (!isLast) wrapper.appendChild(buildFlowConnector(0));
+      return;
+    }
+    const g = b.cards;
     const sg = document.createElement('div');
     sg.className = 'quest-series-group';
     const sgLabel = document.createElement('div');
     sgLabel.className = 'chain-context-label';
-    sgLabel.textContent = 'Quest series';
+    sgLabel.textContent = seriesGroupLabel(g);
     sg.appendChild(sgLabel);
 
     // Detect if the last dungeon quest forks into parallel outcomes (alsoUnlocks).
@@ -992,14 +1059,14 @@ function buildConfigSeriesGroup(members, dungeon) {
       });
       // Keep the "Continue series" follow-ups inside the last box so they read
       // as part of the same questline rather than a detached section below it.
-      if (i === orderedGroups.length - 1 && followups.length) {
+      if (isLast && followups.length) {
         const bc = buildPostchainBreadcrumb(followups);
         if (bc) sg.appendChild(bc);
       }
     }
 
     wrapper.appendChild(sg);
-    if (i < orderedGroups.length - 1) wrapper.appendChild(buildFlowConnector(0));
+    if (!isLast) wrapper.appendChild(buildFlowConnector(0));
   });
 
   return wrapper;
@@ -1314,6 +1381,9 @@ function buildPostchainBreadcrumb(postChain) {
   flow.appendChild(startArrow);
 
   function makeOrStep(v) {
+    const row = document.createElement('div');
+    row.className = 'postchain-or-row';
+
     const a = document.createElement('a');
     a.href = v.url;
     a.target = '_blank';
@@ -1328,7 +1398,41 @@ function buildPostchainBreadcrumb(postChain) {
     const nameEl = document.createElement('span');
     nameEl.textContent = v.name;
     a.appendChild(nameEl);
-    return a;
+    row.appendChild(a);
+
+    (v.then || []).forEach(t => {
+      const arrow = document.createElement('span');
+      arrow.className = 'prechain-arrow';
+      arrow.textContent = '›';
+      row.appendChild(arrow);
+      const ta = document.createElement('a');
+      ta.href = t.url;
+      ta.target = '_blank';
+      ta.rel = 'noopener noreferrer';
+      ta.className = 'prechain-step postchain-step';
+      ta.textContent = t.name;
+      row.appendChild(ta);
+    });
+
+    if (v.alsoUnlocks && v.alsoUnlocks.length) {
+      const also = document.createElement('span');
+      also.className = 'postchain-also-unlocks';
+      also.appendChild(document.createTextNode('(+ '));
+      v.alsoUnlocks.forEach((u, i) => {
+        if (i > 0) also.appendChild(document.createTextNode(', '));
+        const ua = document.createElement('a');
+        ua.href = u.url;
+        ua.target = '_blank';
+        ua.rel = 'noopener noreferrer';
+        ua.className = 'prechain-step postchain-step';
+        ua.textContent = u.name;
+        also.appendChild(ua);
+      });
+      also.appendChild(document.createTextNode(')'));
+      row.appendChild(also);
+    }
+
+    return row;
   }
 
   resolved.forEach((s, i) => {
