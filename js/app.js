@@ -46,6 +46,8 @@ function normalizeQuest(q) {
     startObjectLink: q.startObjectLink || '',
     endObject:       q.endObject       || '',
     endObjectLink:   q.endObjectLink   || '',
+    startNpcs:       Array.isArray(q.startNpcs) ? q.startNpcs : [],
+    endNpcs:         Array.isArray(q.endNpcs)   ? q.endNpcs   : [],
     preChain:       Array.isArray(q.preChain)  ? q.preChain  : [],
     postChain:      Array.isArray(q.postChain) ? q.postChain : [],
     absorbedBy:     q.absorbedBy     ?? null,
@@ -84,6 +86,27 @@ function buildLocationLink(name) {
   if (!name) return '';
   if (!ZONE_IDS[name]) return name;
   return `<span class="location-link" data-location="${name}" title="View map">${name}</span>`;
+}
+
+// Render a list of quest givers (start or turn-in NPCs/objects). Used when a
+// quest has more than one giver, e.g. a class quest offered by every city's
+// trainer. Each giver may carry a faction so it can be tagged Alliance/Horde,
+// and its own location so each giver shows where to find it.
+function renderGiverList(givers) {
+  return `<span class="npc-multi">${givers.map(g => {
+    const cls = g.type === 'object' ? 'object-link' : 'npc-link';
+    const inner = g.link
+      ? `<a href="${g.link}" target="_blank" rel="noopener noreferrer" class="${cls}">${g.name}</a>`
+      : g.name;
+    let mark = '';
+    if (g.faction === 'Alliance') {
+      mark = '<span class="faction-dot faction-alliance" title="Alliance only"></span>';
+    } else if (g.faction === 'Horde') {
+      mark = '<span class="faction-dot faction-horde" title="Horde only"></span>';
+    }
+    const locHtml = g.loc ? ` <span class="location">— ${buildLocationLink(g.loc)}</span>` : '';
+    return `<span class="npc-entry">${mark}${inner}${locHtml}</span>`;
+  }).join('')}</span>`;
 }
 
 // ═══════════════════════════════════════
@@ -398,6 +421,14 @@ function initControlsHeightObserver() {
   };
   update();
   new ResizeObserver(update).observe(controls);
+
+  const tabs = document.querySelector('.dungeon-tabs');
+  if (!tabs) return;
+  const updateTabs = () => {
+    document.documentElement.style.setProperty('--dungeon-tabs-height', tabs.offsetHeight + 'px');
+  };
+  updateTabs();
+  new ResizeObserver(updateTabs).observe(tabs);
 }
 
 // ═══════════════════════════════════════
@@ -665,6 +696,8 @@ function renderQuests() {
       (q.startObject || '').toLowerCase().includes(sq) ||
       (q.endNpc || '').toLowerCase().includes(sq) ||
       (q.endObject || '').toLowerCase().includes(sq) ||
+      (q.startNpcs || []).some(n => (n.name || '').toLowerCase().includes(sq)) ||
+      (q.endNpcs || []).some(n => (n.name || '').toLowerCase().includes(sq)) ||
       (q.startLoc || '').toLowerCase().includes(sq) ||
       (q.endLoc || '').toLowerCase().includes(sq) ||
       (q.rewards || []).some(r => r.name.toLowerCase().includes(sq)) ||
@@ -781,6 +814,18 @@ function renderConfigGroups(dungeon, visibleQuests, container) {
     if (rendered.has(q.id)) return;
     if (q.absorbedBy != null) { rendered.add(q.id); return; }
 
+    // Branching chains declared via `trees`: all members share a chainId and are
+    // rendered as a real fork tree (reusing the legacy chain-tree renderer) so a
+    // quest that unlocks two questlines shows them in one connected box.
+    if (q.treeChain && q.chainId !== null) {
+      const members = all.filter(m => m.treeChain && m.chainId === q.chainId);
+      members.forEach(m => rendered.add(m.id));
+      if (!members.some(m => visibleIds.has(m.id))) return;
+      const el = buildChainGroup(members, dungeon);
+      if (el) container.appendChild(el);
+      return;
+    }
+
     if (q.series) {
       const members = all
         .filter(m => m.series && m.series.id === q.series.id)
@@ -874,6 +919,8 @@ function buildConfigGatedGroup(quest, dungeon) {
   // {type:'gate', entries[]}, created on first encounter of each series.id /
   // standalone gate key. This ensures a standalone quest between two series
   // boxes renders in the correct position rather than always at the top.
+  const optionalEntries = (quest.preChain || []).filter(e => e.relation === 'optional' && questPassesFaction(e));
+
   const blocks = [];
   const sidToBlock = new Map();
   const gateKeySeen = new Set();
@@ -901,6 +948,11 @@ function buildConfigGatedGroup(quest, dungeon) {
       : b.cards
   );
   const { dungeonCtx, prechainCtx } = configCascadeContexts(allCtxCards, [quest]);
+
+  if (optionalEntries.length) {
+    wrapper.appendChild(buildOptionalPrereqSection(optionalEntries, dungeon, prechainCtx));
+    wrapper.appendChild(buildFlowConnector(0, true));
+  }
 
   blocks.forEach((b, i) => {
     if (b.type === 'gate') {
@@ -968,7 +1020,13 @@ function buildConfigSeriesGroup(members, dungeon) {
   // Seed the dungeon series block first so it always ends up as the main group.
   members.forEach(m => addToSeriesBlock(m.series.id, m));
 
+  const optionalEntriesSeries = [];
+  const optionalSeenSeries = new Set();
   members.forEach(m => (m.preChain || []).forEach(e => {
+    if (e.relation === 'optional' && questPassesFaction(e) && !optionalSeenSeries.has(e.id)) {
+      optionalSeenSeries.add(e.id);
+      optionalEntriesSeries.push(e);
+    }
     if (e.relation !== 'series' && e.relation !== 'requires') return;
     const sid = e.series?.id;
     if (sid) {
@@ -1011,6 +1069,11 @@ function buildConfigSeriesGroup(members, dungeon) {
   const prereqBlocks = blocks.filter(b => !(b.type === 'series' && b.sid === dungeonSid));
   const mainBlock = blocks.find(b => b.type === 'series' && b.sid === dungeonSid);
   const orderedBlocks = [...prereqBlocks, mainBlock].filter(Boolean);
+
+  if (optionalEntriesSeries.length) {
+    wrapper.appendChild(buildOptionalPrereqSection(optionalEntriesSeries, dungeon, prechainCtx));
+    wrapper.appendChild(buildFlowConnector(0, true));
+  }
 
   orderedBlocks.forEach((b, i) => {
     const isLast = i === orderedBlocks.length - 1;
@@ -1119,6 +1182,8 @@ function buildChainGroup(members, dungeon) {
   const model = buildChainModel(members);
   const visibleRoots = model.roots.filter(s => model.visibleVariants(s).length > 0);
   if (visibleRoots.length === 0) return null;
+  // `trees`-declared chains hoist a fork's single continuing tail out of the box.
+  const forkHeadsOnly = members.some(m => m.treeChain);
 
   const rootQuests = [].concat(...visibleRoots.map(model.visibleVariants));
   const rootPrechain  = (rootQuests.find(q => (q.preChain  || []).length) || {}).preChain  || [];
@@ -1151,7 +1216,7 @@ function buildChainGroup(members, dungeon) {
   // has-prechain switches the wrapper to flex-column so all children stack
   // vertically with flow connectors instead of the side-by-side grid.
   wrapper.className = 'quest-chain-group'
-    + (hasPrechain ? ' has-prechain' : hasBranch ? ' chain-tree' : '');
+    + (hasPrechain ? ' has-prechain' : (hasBranch || forkHeadsOnly) ? ' chain-tree' : '');
 
   const label = document.createElement('div');
   label.className = 'chain-group-label';
@@ -1211,10 +1276,10 @@ function buildChainGroup(members, dungeon) {
       sg.appendChild(buildFlowConnector(0));
     });
 
-    appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, sg, dungeonCtx);
+    appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, sg, dungeonCtx, forkHeadsOnly);
     wrapper.appendChild(sg);
   } else {
-    appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, wrapper, dungeonCtx);
+    appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, wrapper, dungeonCtx, forkHeadsOnly);
   }
 
   if (rootPostchain.length > 0) { const bc = buildPostchainBreadcrumb(rootPostchain); if (bc) wrapper.appendChild(bc); }
@@ -1225,9 +1290,11 @@ function buildChainGroup(members, dungeon) {
 // Append in-dungeon quest cards (and their flow connectors) into a container.
 // When dungeonCtx is set the wrapper is already vertical (has-prechain mode), so
 // we add connectors between slots. Otherwise we preserve the existing flat layout.
-function appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, container, dungeonCtx) {
-  if (hasBranch) {
-    visibleRoots.forEach(root => renderChainSlot(root, model, dungeon, container, false, true, dungeonCtx));
+function appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, container, dungeonCtx, forkHeadsOnly = false) {
+  // Tree chains (forkHeadsOnly) always use the recursive renderer so linear runs
+  // still get vertical "leads to" connectors even without a prechain context.
+  if (hasBranch || forkHeadsOnly) {
+    visibleRoots.forEach(root => renderChainSlot(root, model, dungeon, container, false, true, dungeonCtx, forkHeadsOnly));
   } else {
     const slots = [];
     let cur = visibleRoots[0];
@@ -1241,18 +1308,11 @@ function appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, container, 
   }
 }
 
-// Recursively render a slot (and its subtree) as an indented tree. Linear
-// runs stay in the current column, joined by a downward "leads to" connector;
-// a branch point nests each child branch under a shared trunk.
-// isDungeonChain: true when this slot is an in-dungeon quest (not a preChain item),
-// so buildQuestCard receives the isDungeonCard flag and shows the DUNGEON badge.
-function renderChainSlot(slot, model, dungeon, container, isBranchChild, isDungeonChain = false, dungeonCtx = null) {
-  const variants = model.visibleVariants(slot);
-  if (variants.length === 0) return;
-
+// One tree step as a card node. Multiple variants (same parent + name) collapse
+// into a single "pick your faction" OR-slot.
+function buildSlotNode(variants, dungeon, isDungeonChain, dungeonCtx) {
   const node = document.createElement('div');
-  node.className = 'chain-tree-node';
-  if (variants.length > 1) node.classList.add('faction-alt');
+  node.className = 'chain-tree-node' + (variants.length > 1 ? ' faction-alt' : '');
   variants.forEach((q, i) => {
     if (i > 0) {
       const or = document.createElement('div');
@@ -1262,36 +1322,81 @@ function renderChainSlot(slot, model, dungeon, container, isBranchChild, isDunge
     }
     node.appendChild(buildQuestCard(q, dungeon, null, null, isDungeonChain, dungeonCtx));
   });
-  container.appendChild(node);
+  return node;
+}
+
+// Recursively render a slot (and its subtree) as an indented tree. Linear
+// runs stay in the current column, joined by a downward "leads to" connector;
+// a branch point nests each child branch under a shared trunk.
+// isDungeonChain: true when this slot is an in-dungeon quest (not a preChain item),
+// so buildQuestCard receives the isDungeonCard flag and shows the DUNGEON badge.
+// forkHeadsOnly: when a fork has exactly one branch that keeps going, the box
+// holds only the parallel heads and that branch's continuation flows below it
+// (so the "unlocks" box wraps just the immediate alternatives, not a whole tail).
+function renderChainSlot(slot, model, dungeon, container, isBranchChild, isDungeonChain = false, dungeonCtx = null, forkHeadsOnly = false) {
+  const variants = model.visibleVariants(slot);
+  if (variants.length === 0) return;
+
+  container.appendChild(buildSlotNode(variants, dungeon, isDungeonChain, dungeonCtx));
 
   const kids = model.visibleChildren(slot);
   if (kids.length === 1) {
     container.appendChild(buildFlowConnector(0));
-    renderChainSlot(kids[0], model, dungeon, container, false, isDungeonChain, dungeonCtx);
+    renderChainSlot(kids[0], model, dungeon, container, false, isDungeonChain, dungeonCtx, forkHeadsOnly);
   } else if (kids.length > 1) {
     container.appendChild(buildFlowConnector(kids.length));
+    const continuing = forkHeadsOnly ? kids.filter(k => model.visibleChildren(k).length > 0) : [];
+    const pullOut = continuing.length === 1;  // one tail to hoist out of the box
+
     const branches = document.createElement('div');
     branches.className = 'chain-branches';
     kids.forEach(kid => {
       const col = document.createElement('div');
       col.className = 'chain-branch';
-      renderChainSlot(kid, model, dungeon, col, false, isDungeonChain, dungeonCtx);
+      if (pullOut) {
+        col.appendChild(buildSlotNode(model.visibleVariants(kid), dungeon, isDungeonChain, dungeonCtx));
+      } else {
+        renderChainSlot(kid, model, dungeon, col, false, isDungeonChain, dungeonCtx, forkHeadsOnly);
+      }
       branches.appendChild(col);
     });
     container.appendChild(branches);
+
+    if (pullOut) {
+      model.visibleChildren(continuing[0]).forEach(gk => {
+        container.appendChild(buildFlowConnector(0));
+        renderChainSlot(gk, model, dungeon, container, false, isDungeonChain, dungeonCtx, forkHeadsOnly);
+      });
+    }
   }
 }
 
 // Vertical "leads to" connector between a step and what it unlocks. When the
 // step forks (childCount > 1) it labels the fork so the follow-ups read as a group.
-function buildFlowConnector(childCount) {
+function buildFlowConnector(childCount, dashed = false) {
   const el = document.createElement('div');
-  el.className = 'chain-flow' + (childCount > 1 ? ' split' : '');
+  el.className = 'chain-flow' + (childCount > 1 ? ' split' : '') + (dashed ? ' optional' : '');
   const label = childCount === 2 ? 'unlocks both' : childCount > 2 ? 'unlocks all' : '';
   el.innerHTML = '<span class="chain-flow-line"></span>' +
     (label ? `<span class="chain-flow-label">${label}</span>` : '') +
     '<span class="chain-flow-arrow">▾</span>';
   return el;
+}
+
+// Optional prerequisites: quests that feed into the dungeon quest but are not
+// required — players can pick up the dungeon quest independently.
+function buildOptionalPrereqSection(entries, dungeon, ctx) {
+  const section = document.createElement('div');
+  section.className = 'optional-prereq-section';
+  const label = document.createElement('div');
+  label.className = 'chain-context-label';
+  label.textContent = entries.length > 1 ? 'Optional Prerequisites' : 'Optional Prerequisite';
+  section.appendChild(label);
+  entries.forEach((e, i) => {
+    section.appendChild(buildQuestCard(normalizeQuest(e), dungeon, null, null, false, ctx));
+    if (i < entries.length - 1) section.appendChild(buildFlowConnector(0));
+  });
+  return section;
 }
 
 // ═══════════════════════════════════════
@@ -1550,8 +1655,14 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
     : '';
 
   // ---- NPC / object / item link helpers ----
+  // A quest may have several givers (e.g. a class quest offered by every city's
+  // trainer); render the whole list, tagging any faction-restricted giver.
+  const startIsMulti = Array.isArray(quest.startNpcs) && quest.startNpcs.length > 1;
+  const endIsMulti = Array.isArray(quest.endNpcs) && quest.endNpcs.length > 1;
   let startNpcHtml;
-  if (quest.startNpcLink) {
+  if (startIsMulti) {
+    startNpcHtml = renderGiverList(quest.startNpcs);
+  } else if (quest.startNpcLink) {
     startNpcHtml = `<a href="${quest.startNpcLink}" target="_blank" rel="noopener noreferrer" class="npc-link">${quest.startNpc}</a>`;
   } else if (quest.startNpc) {
     startNpcHtml = quest.startNpc;
@@ -1569,19 +1680,24 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
 
   const endEntity = quest.endNpc || quest.endObject || '';
   const startEntity = quest.startNpc || quest.startObject || quest.startItem || '';
-  const endNpcHtml = quest.endNpcLink
-    ? `<a href="${quest.endNpcLink}" target="_blank" rel="noopener noreferrer" class="npc-link">${quest.endNpc}</a>`
-    : quest.endNpc
-      ? quest.endNpc
-      : quest.endObjectLink
-        ? `<a href="${quest.endObjectLink}" target="_blank" rel="noopener noreferrer" class="object-link">${quest.endObject}</a>`
-        : (quest.endObject || '—');
+  let endNpcHtml;
+  if (endIsMulti) {
+    endNpcHtml = renderGiverList(quest.endNpcs);
+  } else if (quest.endNpcLink) {
+    endNpcHtml = `<a href="${quest.endNpcLink}" target="_blank" rel="noopener noreferrer" class="npc-link">${quest.endNpc}</a>`;
+  } else if (quest.endNpc) {
+    endNpcHtml = quest.endNpc;
+  } else if (quest.endObjectLink) {
+    endNpcHtml = `<a href="${quest.endObjectLink}" target="_blank" rel="noopener noreferrer" class="object-link">${quest.endObject}</a>`;
+  } else {
+    endNpcHtml = quest.endObject || '—';
+  }
 
   // ---- Turn-in row ----
   const turninHtml = endEntity && endEntity !== startEntity
     ? `<div class="quest-row">
         <span class="quest-label">Turn in</span>
-        <span class="quest-value">${endNpcHtml}${quest.endLoc ? ` <span class="location">— ${buildLocationLink(quest.endLoc)}</span>` : ''}</span>
+        <span class="quest-value">${endNpcHtml}${!endIsMulti && quest.endLoc ? ` <span class="location">— ${buildLocationLink(quest.endLoc)}</span>` : ''}</span>
        </div>`
     : '';
 
@@ -1600,7 +1716,7 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
     <div class="quest-card-body">
       <div class="quest-row">
         <span class="quest-label">${endEntity && endEntity === startEntity ? 'Start / Turn in' : 'Start'}</span>
-        <span class="quest-value">${startNpcHtml}${quest.startLoc ? ` <span class="location">— ${buildLocationLink(quest.startLoc)}</span>` : ''}</span>
+        <span class="quest-value">${startNpcHtml}${!startIsMulti && quest.startLoc ? ` <span class="location">— ${buildLocationLink(quest.startLoc)}</span>` : ''}</span>
       </div>
       ${turninHtml}
       ${itemsHtml}

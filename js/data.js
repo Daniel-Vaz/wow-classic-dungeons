@@ -30,11 +30,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Neeru Fireblade",
+            "link": "https://www.wowhead.com/classic/npc=3216/neeru-fireblade",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "endNpc": "Neeru Fireblade",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3216/neeru-fireblade",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Neeru Fireblade",
+            "link": "https://www.wowhead.com/classic/npc=3216/neeru-fireblade",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "levels": "16",
         "minLevel": 9,
         "faction": "Horde",
@@ -58,7 +76,7 @@ const DUNGEONS = [
         "prequestLink": "",
         "prevQuestId": null,
         "nextQuestId": 5724,
-        "chainId": "rfc-searching-for-the-lost-satchel",
+        "chainId": "rfc-5722-searching-for-the-lost-satchel",
         "chainDepth": 0,
         "startNpc": "Rahauro",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11833/rahauro",
@@ -67,11 +85,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Thunder Bluff",
+        "startNpcs": [
+          {
+            "name": "Rahauro",
+            "link": "https://www.wowhead.com/classic/npc=11833/rahauro",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "endNpc": "Maur Grimtotem",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11834/maur-grimtotem",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ragefire Chasm",
+        "endNpcs": [
+          {
+            "name": "Maur Grimtotem",
+            "link": "https://www.wowhead.com/classic/npc=11834/maur-grimtotem",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ragefire Chasm"
+          }
+        ],
         "levels": "16",
         "minLevel": 9,
         "faction": "Horde",
@@ -86,9 +122,10 @@ const DUNGEONS = [
         "absorbedBy": null,
         "isDungeon": true,
         "series": {
-          "id": "rfc-searching-for-the-lost-satchel",
+          "id": "rfc-5722-searching-for-the-lost-satchel",
           "index": 1,
-          "total": 2
+          "total": 2,
+          "name": "Searching for the Lost Satchel"
         }
       },
       {
@@ -99,7 +136,7 @@ const DUNGEONS = [
         "prequestLink": "",
         "prevQuestId": 5722,
         "nextQuestId": null,
-        "chainId": "rfc-searching-for-the-lost-satchel",
+        "chainId": "rfc-5722-searching-for-the-lost-satchel",
         "chainDepth": 1,
         "startNpc": "Maur Grimtotem",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11834/maur-grimtotem",
@@ -108,11 +145,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ragefire Chasm",
+        "startNpcs": [
+          {
+            "name": "Maur Grimtotem",
+            "link": "https://www.wowhead.com/classic/npc=11834/maur-grimtotem",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ragefire Chasm"
+          }
+        ],
         "endNpc": "Rahauro",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11833/rahauro",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Thunder Bluff",
+        "endNpcs": [
+          {
+            "name": "Rahauro",
+            "link": "https://www.wowhead.com/classic/npc=11833/rahauro",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "levels": "16",
         "minLevel": 9,
         "faction": "Horde",
@@ -140,9 +195,10 @@ const DUNGEONS = [
         "absorbedBy": null,
         "isDungeon": true,
         "series": {
-          "id": "rfc-searching-for-the-lost-satchel",
+          "id": "rfc-5722-searching-for-the-lost-satchel",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "Searching for the Lost Satchel"
         }
       },
       {
@@ -162,11 +218,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Thunder Bluff",
+        "startNpcs": [
+          {
+            "name": "Rahauro",
+            "link": "https://www.wowhead.com/classic/npc=11833/rahauro",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "endNpc": "Rahauro",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11833/rahauro",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Thunder Bluff",
+        "endNpcs": [
+          {
+            "name": "Rahauro",
+            "link": "https://www.wowhead.com/classic/npc=11833/rahauro",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "levels": "15",
         "minLevel": 9,
         "faction": "Horde",
@@ -199,11 +273,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Undercity",
+        "startNpcs": [
+          {
+            "name": "Varimathras",
+            "link": "https://www.wowhead.com/classic/npc=2425/varimathras",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "endNpc": "Varimathras",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2425/varimathras",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Varimathras",
+            "link": "https://www.wowhead.com/classic/npc=2425/varimathras",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "levels": "16",
         "minLevel": 9,
         "faction": "Horde",
@@ -246,7 +338,7 @@ const DUNGEONS = [
         "prequestLink": "",
         "prevQuestId": 5727,
         "nextQuestId": 5729,
-        "chainId": "rfc-hidden-enemies",
+        "chainId": "rfc-5727-hidden-enemies",
         "chainDepth": 1,
         "startNpc": "Thrall",
         "startNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
@@ -255,11 +347,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "endNpc": "Thrall",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "levels": "16",
         "minLevel": 9,
         "faction": "Horde",
@@ -287,11 +397,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Orgrimmar",
+            "startNpcs": [
+              {
+                "name": "Thrall",
+                "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "endNpc": "Thrall",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Orgrimmar",
+            "endNpcs": [
+              {
+                "name": "Thrall",
+                "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "levels": "12",
             "minLevel": 9,
             "faction": "Horde",
@@ -324,11 +452,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Orgrimmar",
+            "startNpcs": [
+              {
+                "name": "Thrall",
+                "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "endNpc": "Thrall",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Orgrimmar",
+            "endNpcs": [
+              {
+                "name": "Thrall",
+                "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "levels": "12",
             "minLevel": 9,
             "faction": "Horde",
@@ -343,9 +489,10 @@ const DUNGEONS = [
             "absorbedBy": null,
             "relation": "series",
             "series": {
-              "id": "rfc-hidden-enemies",
+              "id": "rfc-5727-hidden-enemies",
               "index": 1,
-              "total": 4
+              "total": 4,
+              "name": "Hidden Enemies"
             },
             "requires": [
               {
@@ -361,28 +508,33 @@ const DUNGEONS = [
             "name": "Hidden Enemies",
             "url": "https://www.wowhead.com/classic/quest=5729/hidden-enemies",
             "series": {
-              "id": "rfc-hidden-enemies",
+              "id": "rfc-5727-hidden-enemies",
               "index": 3,
-              "total": 4
-            }
+              "total": 4,
+              "name": "Hidden Enemies"
+            },
+            "faction": "Horde"
           },
           {
             "id": 5730,
             "name": "Hidden Enemies",
             "url": "https://www.wowhead.com/classic/quest=5730/hidden-enemies",
             "series": {
-              "id": "rfc-hidden-enemies",
+              "id": "rfc-5727-hidden-enemies",
               "index": 4,
-              "total": 4
-            }
+              "total": 4,
+              "name": "Hidden Enemies"
+            },
+            "faction": "Horde"
           }
         ],
         "absorbedBy": null,
         "isDungeon": true,
         "series": {
-          "id": "rfc-hidden-enemies",
+          "id": "rfc-5727-hidden-enemies",
           "index": 2,
-          "total": 4
+          "total": 4,
+          "name": "Hidden Enemies"
         }
       }
     ]
@@ -416,11 +568,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "",
+        "startNpcs": [
+          {
+            "name": "Nalpak",
+            "link": "https://www.wowhead.com/classic/npc=5767/nalpak",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          }
+        ],
         "endNpc": "Nalpak",
         "endNpcLink": "https://www.wowhead.com/classic/npc=5767/nalpak",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "",
+        "endNpcs": [
+          {
+            "name": "Nalpak",
+            "link": "https://www.wowhead.com/classic/npc=5767/nalpak",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          }
+        ],
         "levels": "17",
         "minLevel": 13,
         "faction": "Both",
@@ -466,11 +636,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Crane Operator Bigglefuzz",
+            "link": "https://www.wowhead.com/classic/npc=3665/crane-operator-bigglefuzz",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
         "endNpc": "Crane Operator Bigglefuzz",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3665/crane-operator-bigglefuzz",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Crane Operator Bigglefuzz",
+            "link": "https://www.wowhead.com/classic/npc=3665/crane-operator-bigglefuzz",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
         "levels": "18",
         "minLevel": 14,
         "faction": "Both",
@@ -503,11 +691,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "",
+        "startNpcs": [
+          {
+            "name": "Ebru",
+            "link": "https://www.wowhead.com/classic/npc=5768/ebru",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          }
+        ],
         "endNpc": "Ebru",
         "endNpcLink": "https://www.wowhead.com/classic/npc=5768/ebru",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "",
+        "endNpcs": [
+          {
+            "name": "Ebru",
+            "link": "https://www.wowhead.com/classic/npc=5768/ebru",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          }
+        ],
         "levels": "21",
         "minLevel": 15,
         "faction": "Both",
@@ -559,11 +765,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Thunder Bluff",
+        "startNpcs": [
+          {
+            "name": "Apothecary Zamah",
+            "link": "https://www.wowhead.com/classic/npc=3419/apothecary-zamah",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "endNpc": "Apothecary Zamah",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3419/apothecary-zamah",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Thunder Bluff",
+        "endNpcs": [
+          {
+            "name": "Apothecary Zamah",
+            "link": "https://www.wowhead.com/classic/npc=3419/apothecary-zamah",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "levels": "18",
         "minLevel": 14,
         "faction": "Horde",
@@ -603,11 +827,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Mebok Mizzyrix",
+            "link": "https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
         "endNpc": "Mebok Mizzyrix",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Mebok Mizzyrix",
+            "link": "https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
         "levels": "18",
         "minLevel": 13,
         "faction": "Both",
@@ -635,11 +877,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "The Barrens",
+            "startNpcs": [
+              {
+                "name": "Mebok Mizzyrix",
+                "link": "https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
             "endNpc": "Mebok Mizzyrix",
             "endNpcLink": "https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "The Barrens",
+            "endNpcs": [
+              {
+                "name": "Mebok Mizzyrix",
+                "link": "https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
             "levels": "18",
             "minLevel": 13,
             "faction": "Both",
@@ -682,7 +942,7 @@ const DUNGEONS = [
         "prequestLink": "",
         "prevQuestId": 1490,
         "nextQuestId": null,
-        "chainId": "wc-hamuul-runetotem",
+        "chainId": "wc-1489-hamuul-runetotem",
         "chainDepth": 2,
         "startNpc": "Nara Wildmane",
         "startNpcLink": "https://www.wowhead.com/classic/npc=5770/nara-wildmane",
@@ -691,11 +951,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Thunder Bluff",
+        "startNpcs": [
+          {
+            "name": "Nara Wildmane",
+            "link": "https://www.wowhead.com/classic/npc=5770/nara-wildmane",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "endNpc": "Nara Wildmane",
         "endNpcLink": "https://www.wowhead.com/classic/npc=5770/nara-wildmane",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Thunder Bluff",
+        "endNpcs": [
+          {
+            "name": "Nara Wildmane",
+            "link": "https://www.wowhead.com/classic/npc=5770/nara-wildmane",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "levels": "22",
         "minLevel": 10,
         "faction": "Horde",
@@ -736,11 +1014,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thunder Bluff",
+            "startNpcs": [
+              {
+                "name": "Arch Druid Hamuul Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=5769/arch-druid-hamuul-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thunder Bluff"
+              }
+            ],
             "endNpc": "Tonga Runetotem",
             "endNpcLink": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "The Barrens",
+            "endNpcs": [
+              {
+                "name": "Tonga Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
             "levels": "10",
             "minLevel": 10,
             "faction": "Horde",
@@ -755,9 +1051,10 @@ const DUNGEONS = [
             "absorbedBy": null,
             "relation": "series",
             "series": {
-              "id": "wc-the-barrens-oases",
+              "id": "wc-886-the-barrens-oases",
               "index": 1,
-              "total": 4
+              "total": 4,
+              "name": "The Barrens Oases"
             }
           },
           {
@@ -777,11 +1074,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "The Barrens",
+            "startNpcs": [
+              {
+                "name": "Tonga Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
             "endNpc": "Tonga Runetotem",
             "endNpcLink": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "The Barrens",
+            "endNpcs": [
+              {
+                "name": "Tonga Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
             "levels": "13",
             "minLevel": 10,
             "faction": "Horde",
@@ -796,9 +1111,10 @@ const DUNGEONS = [
             "absorbedBy": null,
             "relation": "series",
             "series": {
-              "id": "wc-the-barrens-oases",
+              "id": "wc-886-the-barrens-oases",
               "index": 2,
-              "total": 4
+              "total": 4,
+              "name": "The Barrens Oases"
             }
           },
           {
@@ -818,11 +1134,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "The Barrens",
+            "startNpcs": [
+              {
+                "name": "Tonga Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
             "endNpc": "Tonga Runetotem",
             "endNpcLink": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "The Barrens",
+            "endNpcs": [
+              {
+                "name": "Tonga Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
             "levels": "16",
             "minLevel": 10,
             "faction": "Horde",
@@ -837,9 +1171,10 @@ const DUNGEONS = [
             "absorbedBy": null,
             "relation": "series",
             "series": {
-              "id": "wc-the-barrens-oases",
+              "id": "wc-886-the-barrens-oases",
               "index": 3,
-              "total": 4
+              "total": 4,
+              "name": "The Barrens Oases"
             }
           },
           {
@@ -859,11 +1194,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "The Barrens",
+            "startNpcs": [
+              {
+                "name": "Tonga Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
             "endNpc": "Tonga Runetotem",
             "endNpcLink": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "The Barrens",
+            "endNpcs": [
+              {
+                "name": "Tonga Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
             "levels": "16",
             "minLevel": 10,
             "faction": "Horde",
@@ -878,9 +1231,10 @@ const DUNGEONS = [
             "absorbedBy": null,
             "relation": "requires",
             "series": {
-              "id": "wc-the-barrens-oases",
+              "id": "wc-886-the-barrens-oases",
               "index": 4,
-              "total": 4
+              "total": 4,
+              "name": "The Barrens Oases"
             }
           },
           {
@@ -900,11 +1254,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "The Barrens",
+            "startNpcs": [
+              {
+                "name": "Tonga Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=3448/tonga-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
             "endNpc": "Arch Druid Hamuul Runetotem",
             "endNpcLink": "https://www.wowhead.com/classic/npc=5769/arch-druid-hamuul-runetotem",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Thunder Bluff",
+            "endNpcs": [
+              {
+                "name": "Arch Druid Hamuul Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=5769/arch-druid-hamuul-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thunder Bluff"
+              }
+            ],
             "levels": "16",
             "minLevel": 10,
             "faction": "Horde",
@@ -919,9 +1291,10 @@ const DUNGEONS = [
             "absorbedBy": null,
             "relation": "series",
             "series": {
-              "id": "wc-hamuul-runetotem",
+              "id": "wc-1489-hamuul-runetotem",
               "index": 1,
-              "total": 3
+              "total": 3,
+              "name": "Hamuul Runetotem"
             },
             "requires": [
               {
@@ -947,11 +1320,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thunder Bluff",
+            "startNpcs": [
+              {
+                "name": "Arch Druid Hamuul Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=5769/arch-druid-hamuul-runetotem",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thunder Bluff"
+              }
+            ],
             "endNpc": "Nara Wildmane",
             "endNpcLink": "https://www.wowhead.com/classic/npc=5770/nara-wildmane",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Thunder Bluff",
+            "endNpcs": [
+              {
+                "name": "Nara Wildmane",
+                "link": "https://www.wowhead.com/classic/npc=5770/nara-wildmane",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thunder Bluff"
+              }
+            ],
             "levels": "16",
             "minLevel": 10,
             "faction": "Horde",
@@ -966,9 +1357,10 @@ const DUNGEONS = [
             "absorbedBy": null,
             "relation": "series",
             "series": {
-              "id": "wc-hamuul-runetotem",
+              "id": "wc-1489-hamuul-runetotem",
               "index": 2,
-              "total": 3
+              "total": 3,
+              "name": "Hamuul Runetotem"
             }
           }
         ],
@@ -976,9 +1368,10 @@ const DUNGEONS = [
         "absorbedBy": null,
         "isDungeon": true,
         "series": {
-          "id": "wc-hamuul-runetotem",
+          "id": "wc-1489-hamuul-runetotem",
           "index": 3,
-          "total": 3
+          "total": 3,
+          "name": "Hamuul Runetotem"
         }
       },
       {
@@ -998,11 +1391,21 @@ const DUNGEONS = [
         "startItem": "Glowing Shard",
         "startItemLink": "https://www.wowhead.com/classic/item=10441/glowing-shard",
         "startLoc": "",
+        "startNpcs": [],
         "endNpc": "Falla Sagewind",
         "endNpcLink": "https://www.wowhead.com/classic/npc=8418/falla-sagewind",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Falla Sagewind",
+            "link": "https://www.wowhead.com/classic/npc=8418/falla-sagewind",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
         "levels": "26",
         "minLevel": 15,
         "faction": "Both",
@@ -1066,11 +1469,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Wilder Thistlenettle",
+            "link": "https://www.wowhead.com/classic/npc=656/wilder-thistlenettle",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "endNpc": "Wilder Thistlenettle",
         "endNpcLink": "https://www.wowhead.com/classic/npc=656/wilder-thistlenettle",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Wilder Thistlenettle",
+            "link": "https://www.wowhead.com/classic/npc=656/wilder-thistlenettle",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "levels": "18",
         "minLevel": 14,
         "faction": "Alliance",
@@ -1116,11 +1537,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Wilder Thistlenettle",
+            "link": "https://www.wowhead.com/classic/npc=656/wilder-thistlenettle",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "endNpc": "Wilder Thistlenettle",
         "endNpcLink": "https://www.wowhead.com/classic/npc=656/wilder-thistlenettle",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Wilder Thistlenettle",
+            "link": "https://www.wowhead.com/classic/npc=656/wilder-thistlenettle",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "levels": "20",
         "minLevel": 15,
         "faction": "Alliance",
@@ -1160,11 +1599,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Shoni the Shilent",
+            "link": "https://www.wowhead.com/classic/npc=6579/shoni-the-shilent",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "endNpc": "Shoni the Shilent",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6579/shoni-the-shilent",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Shoni the Shilent",
+            "link": "https://www.wowhead.com/classic/npc=6579/shoni-the-shilent",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "levels": "20",
         "minLevel": 15,
         "faction": "Alliance",
@@ -1205,11 +1662,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Gnoarn",
+                "link": "https://www.wowhead.com/classic/npc=6569/gnoarn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Shoni the Shilent",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6579/shoni-the-shilent",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Shoni the Shilent",
+                "link": "https://www.wowhead.com/classic/npc=6579/shoni-the-shilent",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "15",
             "minLevel": 15,
             "faction": "Alliance",
@@ -1226,7 +1701,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-2041-speak-with-shoni",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Speak with Shoni"
             }
           }
         ],
@@ -1236,7 +1712,8 @@ const DUNGEONS = [
         "series": {
           "id": "deadmines-2041-speak-with-shoni",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "Speak with Shoni"
         }
       },
       {
@@ -1256,11 +1733,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Westfall",
+        "startNpcs": [
+          {
+            "name": "Gryan Stoutmantle",
+            "link": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
+            "faction": "",
+            "type": "npc",
+            "loc": "Westfall"
+          }
+        ],
         "endNpc": "Gryan Stoutmantle",
         "endNpcLink": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Westfall",
+        "endNpcs": [
+          {
+            "name": "Gryan Stoutmantle",
+            "link": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
+            "faction": "",
+            "type": "npc",
+            "loc": "Westfall"
+          }
+        ],
         "levels": "22",
         "minLevel": 14,
         "faction": "Alliance",
@@ -1307,11 +1802,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Westfall",
+            "startNpcs": [
+              {
+                "name": "Gryan Stoutmantle",
+                "link": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
+                "faction": "",
+                "type": "npc",
+                "loc": "Westfall"
+              }
+            ],
             "endNpc": "Wiley the Black",
             "endNpcLink": "https://www.wowhead.com/classic/npc=266/wiley-the-black",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Redridge Mountains",
+            "endNpcs": [
+              {
+                "name": "Wiley the Black",
+                "link": "https://www.wowhead.com/classic/npc=266/wiley-the-black",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
             "levels": "18",
             "minLevel": 14,
             "faction": "Alliance",
@@ -1328,7 +1841,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-65-the-defias-brotherhood",
               "index": 1,
-              "total": 5
+              "total": 5,
+              "name": "The Defias Brotherhood"
             }
           },
           {
@@ -1348,11 +1862,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Redridge Mountains",
+            "startNpcs": [
+              {
+                "name": "Wiley the Black",
+                "link": "https://www.wowhead.com/classic/npc=266/wiley-the-black",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
             "endNpc": "Gryan Stoutmantle",
             "endNpcLink": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Westfall",
+            "endNpcs": [
+              {
+                "name": "Gryan Stoutmantle",
+                "link": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
+                "faction": "",
+                "type": "npc",
+                "loc": "Westfall"
+              }
+            ],
             "levels": "18",
             "minLevel": 14,
             "faction": "Alliance",
@@ -1369,7 +1901,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-65-the-defias-brotherhood",
               "index": 2,
-              "total": 5
+              "total": 5,
+              "name": "The Defias Brotherhood"
             }
           },
           {
@@ -1389,11 +1922,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Westfall",
+            "startNpcs": [
+              {
+                "name": "Gryan Stoutmantle",
+                "link": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
+                "faction": "",
+                "type": "npc",
+                "loc": "Westfall"
+              }
+            ],
             "endNpc": "Master Mathias Shaw",
             "endNpcLink": "https://www.wowhead.com/classic/npc=332/master-mathias-shaw",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Master Mathias Shaw",
+                "link": "https://www.wowhead.com/classic/npc=332/master-mathias-shaw",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "18",
             "minLevel": 14,
             "faction": "Alliance",
@@ -1410,7 +1961,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-65-the-defias-brotherhood",
               "index": 3,
-              "total": 5
+              "total": 5,
+              "name": "The Defias Brotherhood"
             }
           },
           {
@@ -1430,11 +1982,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Master Mathias Shaw",
+                "link": "https://www.wowhead.com/classic/npc=332/master-mathias-shaw",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Gryan Stoutmantle",
             "endNpcLink": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Westfall",
+            "endNpcs": [
+              {
+                "name": "Gryan Stoutmantle",
+                "link": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
+                "faction": "",
+                "type": "npc",
+                "loc": "Westfall"
+              }
+            ],
             "levels": "18",
             "minLevel": 14,
             "faction": "Alliance",
@@ -1451,7 +2021,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-65-the-defias-brotherhood",
               "index": 4,
-              "total": 5
+              "total": 5,
+              "name": "The Defias Brotherhood"
             }
           },
           {
@@ -1471,11 +2042,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Westfall",
+            "startNpcs": [
+              {
+                "name": "Gryan Stoutmantle",
+                "link": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
+                "faction": "",
+                "type": "npc",
+                "loc": "Westfall"
+              }
+            ],
             "endNpc": "Gryan Stoutmantle",
             "endNpcLink": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Westfall",
+            "endNpcs": [
+              {
+                "name": "Gryan Stoutmantle",
+                "link": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
+                "faction": "",
+                "type": "npc",
+                "loc": "Westfall"
+              }
+            ],
             "levels": "18",
             "minLevel": 14,
             "faction": "Alliance",
@@ -1492,7 +2081,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-65-the-defias-brotherhood",
               "index": 5,
-              "total": 5
+              "total": 5,
+              "name": "The Defias Brotherhood"
             }
           },
           {
@@ -1512,11 +2102,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Westfall",
+            "startNpcs": [
+              {
+                "name": "The Defias Traitor",
+                "link": "https://www.wowhead.com/classic/npc=467/the-defias-traitor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Westfall"
+              }
+            ],
             "endNpc": "Gryan Stoutmantle",
             "endNpcLink": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Westfall",
+            "endNpcs": [
+              {
+                "name": "Gryan Stoutmantle",
+                "link": "https://www.wowhead.com/classic/npc=234/gryan-stoutmantle",
+                "faction": "",
+                "type": "npc",
+                "loc": "Westfall"
+              }
+            ],
             "levels": "18",
             "minLevel": 14,
             "faction": "Alliance",
@@ -1533,7 +2141,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-155-the-defias-brotherhood",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "The Defias Brotherhood"
             },
             "requires": [
               {
@@ -1549,7 +2158,8 @@ const DUNGEONS = [
         "series": {
           "id": "deadmines-155-the-defias-brotherhood",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "The Defias Brotherhood"
         },
         "alsoUnlocks": [
           {
@@ -1569,11 +2179,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Westfall",
+            "startNpcs": [
+              {
+                "name": "Scout Riell",
+                "link": "https://www.wowhead.com/classic/npc=820/scout-riell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Westfall"
+              }
+            ],
             "endNpc": "Scout Riell",
             "endNpcLink": "https://www.wowhead.com/classic/npc=820/scout-riell",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Westfall",
+            "endNpcs": [
+              {
+                "name": "Scout Riell",
+                "link": "https://www.wowhead.com/classic/npc=820/scout-riell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Westfall"
+              }
+            ],
             "levels": "17",
             "minLevel": 14,
             "faction": "Alliance",
@@ -1627,11 +2255,21 @@ const DUNGEONS = [
         "startItem": "An Unsent Letter",
         "startItemLink": "https://www.wowhead.com/classic/item=2874/an-unsent-letter",
         "startLoc": "",
+        "startNpcs": [],
         "endNpc": "Baros Alexston",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1646/baros-alexston",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Baros Alexston",
+            "link": "https://www.wowhead.com/classic/npc=1646/baros-alexston",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "levels": "22",
         "minLevel": 16,
         "faction": "Alliance",
@@ -1650,7 +2288,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-373-the-unsent-letter",
               "index": 2,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           },
@@ -1661,7 +2300,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-373-the-unsent-letter",
               "index": 3,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           },
@@ -1672,7 +2312,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-373-the-unsent-letter",
               "index": 4,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           },
@@ -1683,7 +2324,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-373-the-unsent-letter",
               "index": 5,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           },
@@ -1694,7 +2336,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-373-the-unsent-letter",
               "index": 6,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           },
@@ -1705,7 +2348,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-373-the-unsent-letter",
               "index": 7,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           },
@@ -1716,7 +2360,8 @@ const DUNGEONS = [
             "series": {
               "id": "deadmines-373-the-unsent-letter",
               "index": 8,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           }
@@ -1726,7 +2371,8 @@ const DUNGEONS = [
         "series": {
           "id": "deadmines-373-the-unsent-letter",
           "index": 1,
-          "total": 8
+          "total": 8,
+          "name": "The Unsent Letter"
         }
       },
       {
@@ -1746,11 +2392,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Westfall",
+        "startNpcs": [
+          {
+            "name": "Scout Riell",
+            "link": "https://www.wowhead.com/classic/npc=820/scout-riell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Westfall"
+          }
+        ],
         "endNpc": "Scout Riell",
         "endNpcLink": "https://www.wowhead.com/classic/npc=820/scout-riell",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Westfall",
+        "endNpcs": [
+          {
+            "name": "Scout Riell",
+            "link": "https://www.wowhead.com/classic/npc=820/scout-riell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Westfall"
+          }
+        ],
         "levels": "17",
         "minLevel": 14,
         "faction": "Alliance",
@@ -1816,11 +2480,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Undercity",
+        "startNpcs": [
+          {
+            "name": "Keeper Bel'dugur",
+            "link": "https://www.wowhead.com/classic/npc=2934/keeper-bel-dugur",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "endNpc": "Keeper Bel'dugur",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2934/keeper-bel-dugur",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Keeper Bel'dugur",
+            "link": "https://www.wowhead.com/classic/npc=2934/keeper-bel-dugur",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "levels": "26",
         "minLevel": 16,
         "faction": "Horde",
@@ -1866,11 +2548,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Silverpine Forest",
+        "startNpcs": [
+          {
+            "name": "High Executor Hadrec",
+            "link": "https://www.wowhead.com/classic/npc=1952/high-executor-hadrec",
+            "faction": "",
+            "type": "npc",
+            "loc": "Silverpine Forest"
+          }
+        ],
         "endNpc": "Deathstalker Vincent",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4444/deathstalker-vincent",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Shadowfang Keep",
+        "endNpcs": [
+          {
+            "name": "Deathstalker Vincent",
+            "link": "https://www.wowhead.com/classic/npc=4444/deathstalker-vincent",
+            "faction": "",
+            "type": "npc",
+            "loc": "Shadowfang Keep"
+          }
+        ],
         "levels": "25",
         "minLevel": 18,
         "faction": "Horde",
@@ -1910,11 +2610,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Silverpine Forest",
+        "startNpcs": [
+          {
+            "name": "Dalar Dawnweaver",
+            "link": "https://www.wowhead.com/classic/npc=1938/dalar-dawnweaver",
+            "faction": "",
+            "type": "npc",
+            "loc": "Silverpine Forest"
+          }
+        ],
         "endNpc": "Dalar Dawnweaver",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1938/dalar-dawnweaver",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Silverpine Forest",
+        "endNpcs": [
+          {
+            "name": "Dalar Dawnweaver",
+            "link": "https://www.wowhead.com/classic/npc=1938/dalar-dawnweaver",
+            "faction": "",
+            "type": "npc",
+            "loc": "Silverpine Forest"
+          }
+        ],
         "levels": "27",
         "minLevel": 18,
         "faction": "Horde",
@@ -1968,11 +2686,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Darnassus",
+        "startNpcs": [
+          {
+            "name": "Dawnwatcher Shaedlass",
+            "link": "https://www.wowhead.com/classic/npc=4786/dawnwatcher-shaedlass",
+            "faction": "",
+            "type": "npc",
+            "loc": "Darnassus"
+          }
+        ],
         "endNpc": "Argent Guard Thaelrid",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4787/argent-guard-thaelrid",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Blackfathom Deeps",
+        "endNpcs": [
+          {
+            "name": "Argent Guard Thaelrid",
+            "link": "https://www.wowhead.com/classic/npc=4787/argent-guard-thaelrid",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackfathom Deeps"
+          }
+        ],
         "levels": "24",
         "minLevel": 18,
         "faction": "Alliance",
@@ -1989,7 +2725,8 @@ const DUNGEONS = [
         "series": {
           "id": "bfd-1198-in-search-of-thaelrid",
           "index": 1,
-          "total": 2
+          "total": 2,
+          "name": "In Search of Thaelrid"
         }
       },
       {
@@ -2009,11 +2746,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Darnassus",
+        "startNpcs": [
+          {
+            "name": "Argent Guard Manados",
+            "link": "https://www.wowhead.com/classic/npc=4784/argent-guard-manados",
+            "faction": "",
+            "type": "npc",
+            "loc": "Darnassus"
+          }
+        ],
         "endNpc": "Argent Guard Manados",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4784/argent-guard-manados",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Darnassus",
+        "endNpcs": [
+          {
+            "name": "Argent Guard Manados",
+            "link": "https://www.wowhead.com/classic/npc=4784/argent-guard-manados",
+            "faction": "",
+            "type": "npc",
+            "loc": "Darnassus"
+          }
+        ],
         "levels": "25",
         "minLevel": 20,
         "faction": "Alliance",
@@ -2059,11 +2814,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ashenvale",
+        "startNpcs": [
+          {
+            "name": "Je'neu Sancrea",
+            "link": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ashenvale"
+          }
+        ],
         "endNpc": "Je'neu Sancrea",
         "endNpcLink": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ashenvale",
+        "endNpcs": [
+          {
+            "name": "Je'neu Sancrea",
+            "link": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ashenvale"
+          }
+        ],
         "levels": "22",
         "minLevel": 17,
         "faction": "Horde",
@@ -2091,11 +2864,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stonetalon Mountains",
+            "startNpcs": [
+              {
+                "name": "Tsunaman",
+                "link": "https://www.wowhead.com/classic/npc=11862/tsunaman",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stonetalon Mountains"
+              }
+            ],
             "endNpc": "Je'neu Sancrea",
             "endNpcLink": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ashenvale",
+            "endNpcs": [
+              {
+                "name": "Je'neu Sancrea",
+                "link": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ashenvale"
+              }
+            ],
             "levels": "22",
             "minLevel": 17,
             "faction": "Horde",
@@ -2112,7 +2903,8 @@ const DUNGEONS = [
             "series": {
               "id": "bfd-6562-trouble-in-the-deeps",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Trouble in the Deeps"
             }
           }
         ],
@@ -2122,7 +2914,8 @@ const DUNGEONS = [
         "series": {
           "id": "bfd-6562-trouble-in-the-deeps",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "Trouble in the Deeps"
         }
       },
       {
@@ -2142,11 +2935,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Darkshore",
+        "startNpcs": [
+          {
+            "name": "Gershala Nightwhisper",
+            "link": "https://www.wowhead.com/classic/npc=8997/gershala-nightwhisper",
+            "faction": "",
+            "type": "npc",
+            "loc": "Darkshore"
+          }
+        ],
         "endNpc": "Gershala Nightwhisper",
         "endNpcLink": "https://www.wowhead.com/classic/npc=8997/gershala-nightwhisper",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Darkshore",
+        "endNpcs": [
+          {
+            "name": "Gershala Nightwhisper",
+            "link": "https://www.wowhead.com/classic/npc=8997/gershala-nightwhisper",
+            "faction": "",
+            "type": "npc",
+            "loc": "Darkshore"
+          }
+        ],
         "levels": "24",
         "minLevel": 18,
         "faction": "Alliance",
@@ -2187,11 +2998,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Argos Nightwhisper",
+                "link": "https://www.wowhead.com/classic/npc=4984/argos-nightwhisper",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Gershala Nightwhisper",
             "endNpcLink": "https://www.wowhead.com/classic/npc=8997/gershala-nightwhisper",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Darkshore",
+            "endNpcs": [
+              {
+                "name": "Gershala Nightwhisper",
+                "link": "https://www.wowhead.com/classic/npc=8997/gershala-nightwhisper",
+                "faction": "",
+                "type": "npc",
+                "loc": "Darkshore"
+              }
+            ],
             "levels": "24",
             "minLevel": 18,
             "faction": "Alliance",
@@ -2208,7 +3037,8 @@ const DUNGEONS = [
             "series": {
               "id": "bfd-3765-the-corruption-abroad",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "The Corruption Abroad"
             }
           }
         ],
@@ -2218,7 +3048,8 @@ const DUNGEONS = [
         "series": {
           "id": "bfd-3765-the-corruption-abroad",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "The Corruption Abroad"
         }
       },
       {
@@ -2238,11 +3069,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ashenvale",
+        "startNpcs": [
+          {
+            "name": "Je'neu Sancrea",
+            "link": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ashenvale"
+          }
+        ],
         "endNpc": "Je'neu Sancrea",
         "endNpcLink": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ashenvale",
+        "endNpcs": [
+          {
+            "name": "Je'neu Sancrea",
+            "link": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ashenvale"
+          }
+        ],
         "levels": "26",
         "minLevel": 17,
         "faction": "Horde",
@@ -2283,11 +3132,21 @@ const DUNGEONS = [
             "startItem": "Damp Note",
             "startItemLink": "https://www.wowhead.com/classic/item=16790/damp-note",
             "startLoc": "",
+            "startNpcs": [],
             "endNpc": "Je'neu Sancrea",
             "endNpcLink": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ashenvale",
+            "endNpcs": [
+              {
+                "name": "Je'neu Sancrea",
+                "link": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ashenvale"
+              }
+            ],
             "levels": "22",
             "minLevel": 17,
             "faction": "Horde",
@@ -2304,7 +3163,8 @@ const DUNGEONS = [
             "series": {
               "id": "bfd-6564-allegiance-to-the-old-gods",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Allegiance to the Old Gods"
             }
           }
         ],
@@ -2314,7 +3174,8 @@ const DUNGEONS = [
         "series": {
           "id": "bfd-6564-allegiance-to-the-old-gods",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "Allegiance to the Old Gods"
         }
       },
       {
@@ -2334,11 +3195,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ashenvale",
+        "startNpcs": [
+          {
+            "name": "Je'neu Sancrea",
+            "link": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ashenvale"
+          }
+        ],
         "endNpc": "Je'neu Sancrea",
         "endNpcLink": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ashenvale",
+        "endNpcs": [
+          {
+            "name": "Je'neu Sancrea",
+            "link": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ashenvale"
+          }
+        ],
         "levels": "27",
         "minLevel": 21,
         "faction": "Horde",
@@ -2371,11 +3250,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Blackfathom Deeps",
+        "startNpcs": [
+          {
+            "name": "Argent Guard Thaelrid",
+            "link": "https://www.wowhead.com/classic/npc=4787/argent-guard-thaelrid",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackfathom Deeps"
+          }
+        ],
         "endNpc": "Dawnwatcher Selgorm",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4783/dawnwatcher-selgorm",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Darnassus",
+        "endNpcs": [
+          {
+            "name": "Dawnwatcher Selgorm",
+            "link": "https://www.wowhead.com/classic/npc=4783/dawnwatcher-selgorm",
+            "faction": "",
+            "type": "npc",
+            "loc": "Darnassus"
+          }
+        ],
         "levels": "27",
         "minLevel": 18,
         "faction": "Alliance",
@@ -2405,7 +3302,8 @@ const DUNGEONS = [
         "series": {
           "id": "bfd-1198-in-search-of-thaelrid",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "In Search of Thaelrid"
         }
       },
       {
@@ -2425,11 +3323,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Blackfathom Deeps",
+        "startNpcs": [
+          {
+            "name": "Argent Guard Thaelrid",
+            "link": "https://www.wowhead.com/classic/npc=4787/argent-guard-thaelrid",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackfathom Deeps"
+          }
+        ],
         "endNpc": "Bashana Runetotem",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9087/bashana-runetotem",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Thunder Bluff",
+        "endNpcs": [
+          {
+            "name": "Bashana Runetotem",
+            "link": "https://www.wowhead.com/classic/npc=9087/bashana-runetotem",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "levels": "27",
         "minLevel": 18,
         "faction": "Horde",
@@ -2475,11 +3391,21 @@ const DUNGEONS = [
         "startItem": "Strange Water Globe",
         "startItemLink": "https://www.wowhead.com/classic/item=16782/strange-water-globe",
         "startLoc": "",
+        "startNpcs": [],
         "endNpc": "Je'neu Sancrea",
         "endNpcLink": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ashenvale",
+        "endNpcs": [
+          {
+            "name": "Je'neu Sancrea",
+            "link": "https://www.wowhead.com/classic/npc=12736/je-neu-sancrea",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ashenvale"
+          }
+        ],
         "levels": "30",
         "minLevel": 21,
         "faction": "Horde",
@@ -2525,11 +3451,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "Gerrig Bonegrip",
+            "link": "https://www.wowhead.com/classic/npc=2786/gerrig-bonegrip",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "endNpc": "Gerrig Bonegrip",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2786/gerrig-bonegrip",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "Gerrig Bonegrip",
+            "link": "https://www.wowhead.com/classic/npc=2786/gerrig-bonegrip",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "levels": "23",
         "minLevel": 10,
         "faction": "Alliance",
@@ -2583,11 +3527,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Warden Thelwater",
+            "link": "https://www.wowhead.com/classic/npc=1719/warden-thelwater",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "endNpc": "Warden Thelwater",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1719/warden-thelwater",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Warden Thelwater",
+            "link": "https://www.wowhead.com/classic/npc=1719/warden-thelwater",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "levels": "26",
         "minLevel": 22,
         "faction": "Alliance",
@@ -2620,11 +3582,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Redridge Mountains",
+        "startNpcs": [
+          {
+            "name": "Guard Berton",
+            "link": "https://www.wowhead.com/classic/npc=859/guard-berton",
+            "faction": "",
+            "type": "npc",
+            "loc": "Redridge Mountains"
+          }
+        ],
         "endNpc": "Guard Berton",
         "endNpcLink": "https://www.wowhead.com/classic/npc=859/guard-berton",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Redridge Mountains",
+        "endNpcs": [
+          {
+            "name": "Guard Berton",
+            "link": "https://www.wowhead.com/classic/npc=859/guard-berton",
+            "faction": "",
+            "type": "npc",
+            "loc": "Redridge Mountains"
+          }
+        ],
         "levels": "25",
         "minLevel": 22,
         "faction": "Alliance",
@@ -2670,11 +3650,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Nikova Raskol",
+            "link": "https://www.wowhead.com/classic/npc=1721/nikova-raskol",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "endNpc": "Nikova Raskol",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1721/nikova-raskol",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Nikova Raskol",
+            "link": "https://www.wowhead.com/classic/npc=1721/nikova-raskol",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "levels": "26",
         "minLevel": 22,
         "faction": "Alliance",
@@ -2707,11 +3705,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Duskwood",
+        "startNpcs": [
+          {
+            "name": "Councilman Millstipe",
+            "link": "https://www.wowhead.com/classic/npc=270/councilman-millstipe",
+            "faction": "",
+            "type": "npc",
+            "loc": "Duskwood"
+          }
+        ],
         "endNpc": "Councilman Millstipe",
         "endNpcLink": "https://www.wowhead.com/classic/npc=270/councilman-millstipe",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Duskwood",
+        "endNpcs": [
+          {
+            "name": "Councilman Millstipe",
+            "link": "https://www.wowhead.com/classic/npc=270/councilman-millstipe",
+            "faction": "",
+            "type": "npc",
+            "loc": "Duskwood"
+          }
+        ],
         "levels": "26",
         "minLevel": 22,
         "faction": "Alliance",
@@ -2757,11 +3773,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Warden Thelwater",
+            "link": "https://www.wowhead.com/classic/npc=1719/warden-thelwater",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "endNpc": "Warden Thelwater",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1719/warden-thelwater",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Warden Thelwater",
+            "link": "https://www.wowhead.com/classic/npc=1719/warden-thelwater",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "levels": "29",
         "minLevel": 16,
         "faction": "Alliance",
@@ -2789,11 +3823,21 @@ const DUNGEONS = [
             "startItem": "An Unsent Letter",
             "startItemLink": "https://www.wowhead.com/classic/item=2874/an-unsent-letter",
             "startLoc": "",
+            "startNpcs": [],
             "endNpc": "Baros Alexston",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1646/baros-alexston",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Baros Alexston",
+                "link": "https://www.wowhead.com/classic/npc=1646/baros-alexston",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "22",
             "minLevel": 16,
             "faction": "Alliance",
@@ -2810,7 +3854,8 @@ const DUNGEONS = [
             "series": {
               "id": "stockades-373-the-unsent-letter",
               "index": 1,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             }
           },
           {
@@ -2830,11 +3875,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Baros Alexston",
+                "link": "https://www.wowhead.com/classic/npc=1646/baros-alexston",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Warden Thelwater",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1719/warden-thelwater",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Warden Thelwater",
+                "link": "https://www.wowhead.com/classic/npc=1719/warden-thelwater",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "22",
             "minLevel": 16,
             "faction": "Alliance",
@@ -2851,7 +3914,8 @@ const DUNGEONS = [
             "series": {
               "id": "stockades-373-the-unsent-letter",
               "index": 2,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             }
           }
         ],
@@ -2863,7 +3927,8 @@ const DUNGEONS = [
             "series": {
               "id": "stockades-373-the-unsent-letter",
               "index": 4,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           },
@@ -2874,7 +3939,8 @@ const DUNGEONS = [
             "series": {
               "id": "stockades-373-the-unsent-letter",
               "index": 5,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           },
@@ -2885,7 +3951,8 @@ const DUNGEONS = [
             "series": {
               "id": "stockades-373-the-unsent-letter",
               "index": 6,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           },
@@ -2896,7 +3963,8 @@ const DUNGEONS = [
             "series": {
               "id": "stockades-373-the-unsent-letter",
               "index": 7,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           },
@@ -2907,7 +3975,8 @@ const DUNGEONS = [
             "series": {
               "id": "stockades-373-the-unsent-letter",
               "index": 8,
-              "total": 8
+              "total": 8,
+              "name": "The Unsent Letter"
             },
             "faction": "Alliance"
           }
@@ -2917,7 +3986,8 @@ const DUNGEONS = [
         "series": {
           "id": "stockades-373-the-unsent-letter",
           "index": 3,
-          "total": 8
+          "total": 8,
+          "name": "The Unsent Letter"
         }
       },
       {
@@ -2937,11 +4007,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Wetlands",
+        "startNpcs": [
+          {
+            "name": "Motley Garmason",
+            "link": "https://www.wowhead.com/classic/npc=1074/motley-garmason",
+            "faction": "",
+            "type": "npc",
+            "loc": "Wetlands"
+          }
+        ],
         "endNpc": "Motley Garmason",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1074/motley-garmason",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Wetlands",
+        "endNpcs": [
+          {
+            "name": "Motley Garmason",
+            "link": "https://www.wowhead.com/classic/npc=1074/motley-garmason",
+            "faction": "",
+            "type": "npc",
+            "loc": "Wetlands"
+          }
+        ],
         "levels": "27",
         "minLevel": 22,
         "faction": "Alliance",
@@ -2982,11 +4070,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Wetlands",
+            "startNpcs": [
+              {
+                "name": "Motley Garmason",
+                "link": "https://www.wowhead.com/classic/npc=1074/motley-garmason",
+                "faction": "",
+                "type": "npc",
+                "loc": "Wetlands"
+              }
+            ],
             "endNpc": "Motley Garmason",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1074/motley-garmason",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Wetlands",
+            "endNpcs": [
+              {
+                "name": "Motley Garmason",
+                "link": "https://www.wowhead.com/classic/npc=1074/motley-garmason",
+                "faction": "",
+                "type": "npc",
+                "loc": "Wetlands"
+              }
+            ],
             "levels": "30",
             "minLevel": 25,
             "faction": "Alliance",
@@ -3039,11 +4145,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Gnomeregan",
+        "startNpcs": [
+          {
+            "name": "Kernobee",
+            "link": "https://www.wowhead.com/classic/npc=7850/kernobee",
+            "faction": "",
+            "type": "npc",
+            "loc": "Gnomeregan"
+          }
+        ],
         "endNpc": "Scooty",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7853/scooty",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stranglethorn Vale",
+        "endNpcs": [
+          {
+            "name": "Scooty",
+            "link": "https://www.wowhead.com/classic/npc=7853/scooty",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stranglethorn Vale"
+          }
+        ],
         "levels": "30",
         "minLevel": 20,
         "faction": "Both",
@@ -3089,11 +4213,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Gnomeregan",
+        "startNpcs": [
+          {
+            "name": "The Sparklematic 5200",
+            "link": "https://www.wowhead.com/classic/object=142487/the-sparklematic-5200",
+            "faction": "",
+            "type": "object",
+            "loc": "Gnomeregan"
+          }
+        ],
         "endNpc": "",
         "endNpcLink": "",
         "endObject": "The Sparklematic 5200",
         "endObjectLink": "https://www.wowhead.com/classic/object=142487/the-sparklematic-5200",
         "endLoc": "Gnomeregan",
+        "endNpcs": [
+          {
+            "name": "The Sparklematic 5200",
+            "link": "https://www.wowhead.com/classic/object=142487/the-sparklematic-5200",
+            "faction": "",
+            "type": "object",
+            "loc": "Gnomeregan"
+          }
+        ],
         "levels": "30",
         "minLevel": 25,
         "faction": "Both",
@@ -3112,7 +4254,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2951-the-sparklematic-5200",
               "index": 2,
-              "total": 3
+              "total": 3,
+              "name": "The Sparklematic 5200!"
             }
           },
           {
@@ -3122,7 +4265,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2951-the-sparklematic-5200",
               "index": 3,
-              "total": 3
+              "total": 3,
+              "name": "The Sparklematic 5200!"
             }
           }
         ],
@@ -3131,7 +4275,8 @@ const DUNGEONS = [
         "series": {
           "id": "gnomer-2951-the-sparklematic-5200",
           "index": 1,
-          "total": 3
+          "total": 3,
+          "name": "The Sparklematic 5200!"
         }
       },
       {
@@ -3151,11 +4296,21 @@ const DUNGEONS = [
         "startItem": "Grime-Encrusted Ring",
         "startItemLink": "https://www.wowhead.com/classic/item=9326/grime-encrusted-ring",
         "startLoc": "",
+        "startNpcs": [],
         "endNpc": "",
         "endNpcLink": "",
         "endObject": "The Sparklematic 5200",
         "endObjectLink": "https://www.wowhead.com/classic/object=142487/the-sparklematic-5200",
         "endLoc": "Gnomeregan",
+        "endNpcs": [
+          {
+            "name": "The Sparklematic 5200",
+            "link": "https://www.wowhead.com/classic/object=142487/the-sparklematic-5200",
+            "faction": "",
+            "type": "object",
+            "loc": "Gnomeregan"
+          }
+        ],
         "levels": "34",
         "minLevel": 28,
         "faction": "Both",
@@ -3176,7 +4331,8 @@ const DUNGEONS = [
                 "series": {
                   "id": "gnomer-2947-return-of-the-ring",
                   "index": 1,
-                  "total": 2
+                  "total": 2,
+                  "name": "Return of the Ring"
                 },
                 "faction": "Alliance",
                 "then": [
@@ -3187,7 +4343,8 @@ const DUNGEONS = [
                     "series": {
                       "id": "gnomer-2947-return-of-the-ring",
                       "index": 2,
-                      "total": 2
+                      "total": 2,
+                      "name": "Return of the Ring"
                     },
                     "faction": "Alliance"
                   }
@@ -3208,7 +4365,8 @@ const DUNGEONS = [
                 "series": {
                   "id": "gnomer-2949-return-of-the-ring",
                   "index": 1,
-                  "total": 2
+                  "total": 2,
+                  "name": "Return of the Ring"
                 },
                 "faction": "Horde",
                 "then": [
@@ -3219,7 +4377,8 @@ const DUNGEONS = [
                     "series": {
                       "id": "gnomer-2949-return-of-the-ring",
                       "index": 2,
-                      "total": 2
+                      "total": 2,
+                      "name": "Return of the Ring"
                     },
                     "faction": "Horde"
                   }
@@ -3249,11 +4408,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "Tinkmaster Overspark",
+            "link": "https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "endNpc": "Tinkmaster Overspark",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "Tinkmaster Overspark",
+            "link": "https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "levels": "26",
         "minLevel": 20,
         "faction": "Alliance",
@@ -3281,11 +4458,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Brother Sarno",
+                "link": "https://www.wowhead.com/classic/npc=7917/brother-sarno",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Tinkmaster Overspark",
             "endNpcLink": "https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Tinkmaster Overspark",
+                "link": "https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "26",
             "minLevel": 20,
             "faction": "Alliance",
@@ -3302,7 +4497,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2923-tinkmaster-overspark",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Tinkmaster Overspark"
             }
           },
           {
@@ -3322,11 +4518,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Brother Sarno",
+                "link": "https://www.wowhead.com/classic/npc=7917/brother-sarno",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Tinkmaster Overspark",
             "endNpcLink": "https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Tinkmaster Overspark",
+                "link": "https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "26",
             "minLevel": 20,
             "faction": "Alliance",
@@ -3343,7 +4557,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2923-tinkmaster-overspark",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Tinkmaster Overspark"
             }
           }
         ],
@@ -3353,7 +4568,8 @@ const DUNGEONS = [
         "series": {
           "id": "gnomer-2923-tinkmaster-overspark",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "Tinkmaster Overspark"
         }
       },
       {
@@ -3373,11 +4589,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Shoni the Shilent",
+            "link": "https://www.wowhead.com/classic/npc=6579/shoni-the-shilent",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "endNpc": "Shoni the Shilent",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6579/shoni-the-shilent",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Shoni the Shilent",
+            "link": "https://www.wowhead.com/classic/npc=6579/shoni-the-shilent",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "levels": "30",
         "minLevel": 20,
         "faction": "Alliance",
@@ -3423,11 +4657,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "Klockmort Spannerspan",
+            "link": "https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "endNpc": "Klockmort Spannerspan",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "Klockmort Spannerspan",
+            "link": "https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "levels": "30",
         "minLevel": 24,
         "faction": "Alliance",
@@ -3455,11 +4707,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Darnassus",
+            "startNpcs": [
+              {
+                "name": "Mathiel",
+                "link": "https://www.wowhead.com/classic/npc=6142/mathiel",
+                "faction": "",
+                "type": "npc",
+                "loc": "Darnassus"
+              }
+            ],
             "endNpc": "Klockmort Spannerspan",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Klockmort Spannerspan",
+                "link": "https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "30",
             "minLevel": 24,
             "faction": "Alliance",
@@ -3476,7 +4746,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2925-klockmort-s-essentials",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Klockmort's Essentials"
             }
           },
           {
@@ -3496,11 +4767,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Darnassus",
+            "startNpcs": [
+              {
+                "name": "Mathiel",
+                "link": "https://www.wowhead.com/classic/npc=6142/mathiel",
+                "faction": "",
+                "type": "npc",
+                "loc": "Darnassus"
+              }
+            ],
             "endNpc": "Klockmort Spannerspan",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Klockmort Spannerspan",
+                "link": "https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "30",
             "minLevel": 24,
             "faction": "Alliance",
@@ -3517,7 +4806,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2925-klockmort-s-essentials",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Klockmort's Essentials"
             }
           }
         ],
@@ -3527,7 +4817,8 @@ const DUNGEONS = [
         "series": {
           "id": "gnomer-2925-klockmort-s-essentials",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "Klockmort's Essentials"
         }
       },
       {
@@ -3547,11 +4838,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "Master Mechanic Castpipe",
+            "link": "https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "endNpc": "Master Mechanic Castpipe",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "Master Mechanic Castpipe",
+            "link": "https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "levels": "30",
         "minLevel": 25,
         "faction": "Alliance",
@@ -3592,11 +4901,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stonetalon Mountains",
+            "startNpcs": [
+              {
+                "name": "Gaxim Rustfizzle",
+                "link": "https://www.wowhead.com/classic/npc=4077/gaxim-rustfizzle",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stonetalon Mountains"
+              }
+            ],
             "endNpc": "Master Mechanic Castpipe",
             "endNpcLink": "https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Master Mechanic Castpipe",
+                "link": "https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "28",
             "minLevel": 25,
             "faction": "Alliance",
@@ -3613,7 +4940,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2931-castpipe-s-task",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Castpipe's Task"
             }
           },
           {
@@ -3633,11 +4961,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stonetalon Mountains",
+            "startNpcs": [
+              {
+                "name": "Gaxim Rustfizzle",
+                "link": "https://www.wowhead.com/classic/npc=4077/gaxim-rustfizzle",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stonetalon Mountains"
+              }
+            ],
             "endNpc": "Master Mechanic Castpipe",
             "endNpcLink": "https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Master Mechanic Castpipe",
+                "link": "https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "28",
             "minLevel": 25,
             "faction": "Alliance",
@@ -3654,7 +5000,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2931-castpipe-s-task",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Castpipe's Task"
             }
           }
         ],
@@ -3664,7 +5011,8 @@ const DUNGEONS = [
         "series": {
           "id": "gnomer-2931-castpipe-s-task",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "Castpipe's Task"
         }
       },
       {
@@ -3684,11 +5032,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "High Tinker Mekkatorque",
+            "link": "https://www.wowhead.com/classic/npc=7937/high-tinker-mekkatorque",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "endNpc": "High Tinker Mekkatorque",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7937/high-tinker-mekkatorque",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "High Tinker Mekkatorque",
+            "link": "https://www.wowhead.com/classic/npc=7937/high-tinker-mekkatorque",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "levels": "35",
         "minLevel": 25,
         "faction": "Alliance",
@@ -3740,11 +5106,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Nogg",
+            "link": "https://www.wowhead.com/classic/npc=3412/nogg",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "endNpc": "Nogg",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3412/nogg",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Nogg",
+            "link": "https://www.wowhead.com/classic/npc=3412/nogg",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "levels": "35",
         "minLevel": 25,
         "faction": "Horde",
@@ -3775,7 +5159,7 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null,
+        "absorbedBy": 2842,
         "isDungeon": true,
         "series": null
       },
@@ -3796,11 +5180,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dun Morogh",
+        "startNpcs": [
+          {
+            "name": "Ozzie Togglevolt",
+            "link": "https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dun Morogh"
+          }
+        ],
         "endNpc": "Ozzie Togglevolt",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dun Morogh",
+        "endNpcs": [
+          {
+            "name": "Ozzie Togglevolt",
+            "link": "https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dun Morogh"
+          }
+        ],
         "levels": "27",
         "minLevel": 20,
         "faction": "Alliance",
@@ -3828,11 +5230,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Gnoarn",
+                "link": "https://www.wowhead.com/classic/npc=6569/gnoarn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Ozzie Togglevolt",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Dun Morogh",
+            "endNpcs": [
+              {
+                "name": "Ozzie Togglevolt",
+                "link": "https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dun Morogh"
+              }
+            ],
             "levels": "27",
             "minLevel": 20,
             "faction": "Alliance",
@@ -3849,7 +5269,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2927-the-day-after",
               "index": 1,
-              "total": 3
+              "total": 3,
+              "name": "The Day After"
             }
           }
         ],
@@ -3859,7 +5280,8 @@ const DUNGEONS = [
         "series": {
           "id": "gnomer-2927-the-day-after",
           "index": 2,
-          "total": 3
+          "total": 3,
+          "name": "The Day After"
         }
       },
       {
@@ -3879,11 +5301,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dun Morogh",
+        "startNpcs": [
+          {
+            "name": "Ozzie Togglevolt",
+            "link": "https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dun Morogh"
+          }
+        ],
         "endNpc": "Ozzie Togglevolt",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dun Morogh",
+        "endNpcs": [
+          {
+            "name": "Ozzie Togglevolt",
+            "link": "https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dun Morogh"
+          }
+        ],
         "levels": "30",
         "minLevel": 20,
         "faction": "Alliance",
@@ -3911,11 +5351,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Gnoarn",
+                "link": "https://www.wowhead.com/classic/npc=6569/gnoarn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Ozzie Togglevolt",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Dun Morogh",
+            "endNpcs": [
+              {
+                "name": "Ozzie Togglevolt",
+                "link": "https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dun Morogh"
+              }
+            ],
             "levels": "27",
             "minLevel": 20,
             "faction": "Alliance",
@@ -3932,7 +5390,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2927-the-day-after",
               "index": 1,
-              "total": 3
+              "total": 3,
+              "name": "The Day After"
             }
           }
         ],
@@ -3942,7 +5401,8 @@ const DUNGEONS = [
         "series": {
           "id": "gnomer-2927-the-day-after",
           "index": 3,
-          "total": 3
+          "total": 3,
+          "name": "The Day After"
         }
       },
       {
@@ -3962,11 +5422,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Sovik",
+            "link": "https://www.wowhead.com/classic/npc=3413/sovik",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "endNpc": "Scooty",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7853/scooty",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stranglethorn Vale",
+        "endNpcs": [
+          {
+            "name": "Scooty",
+            "link": "https://www.wowhead.com/classic/npc=7853/scooty",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stranglethorn Vale"
+          }
+        ],
         "levels": "35",
         "minLevel": 20,
         "faction": "Horde",
@@ -3994,11 +5472,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Orgrimmar",
+            "startNpcs": [
+              {
+                "name": "Nogg",
+                "link": "https://www.wowhead.com/classic/npc=3412/nogg",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "endNpc": "Nogg",
             "endNpcLink": "https://www.wowhead.com/classic/npc=3412/nogg",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Orgrimmar",
+            "endNpcs": [
+              {
+                "name": "Nogg",
+                "link": "https://www.wowhead.com/classic/npc=3412/nogg",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "levels": "35",
             "minLevel": 25,
             "faction": "Horde",
@@ -4031,7 +5527,8 @@ const DUNGEONS = [
             "postChain": [],
             "absorbedBy": null,
             "relation": "requires",
-            "series": null
+            "series": null,
+            "isDungeon": true
           }
         ],
         "postChain": [
@@ -4042,7 +5539,8 @@ const DUNGEONS = [
             "series": {
               "id": "gnomer-2842-chief-engineer-scooty",
               "index": 2,
-              "total": 2
+              "total": 2,
+              "name": "Chief Engineer Scooty"
             },
             "faction": "Horde"
           }
@@ -4052,7 +5550,8 @@ const DUNGEONS = [
         "series": {
           "id": "gnomer-2842-chief-engineer-scooty",
           "index": 1,
-          "total": 2
+          "total": 2,
+          "name": "Chief Engineer Scooty"
         }
       }
     ]
@@ -4086,11 +5585,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Mebok Mizzyrix",
+            "link": "https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
         "endNpc": "Mebok Mizzyrix",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Mebok Mizzyrix",
+            "link": "https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
         "levels": "26",
         "minLevel": 20,
         "faction": "Both",
@@ -4130,11 +5647,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Thunder Bluff",
+        "startNpcs": [
+          {
+            "name": "Auld Stonespire",
+            "link": "https://www.wowhead.com/classic/npc=4451/auld-stonespire",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "endNpc": "Auld Stonespire",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4451/auld-stonespire",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Thunder Bluff",
+        "endNpcs": [
+          {
+            "name": "Auld Stonespire",
+            "link": "https://www.wowhead.com/classic/npc=4451/auld-stonespire",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "levels": "34",
         "minLevel": 29,
         "faction": "Horde",
@@ -4186,11 +5721,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Undercity",
+        "startNpcs": [
+          {
+            "name": "Master Apothecary Faranell",
+            "link": "https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "endNpc": "Master Apothecary Faranell",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Master Apothecary Faranell",
+            "link": "https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "levels": "33",
         "minLevel": 30,
         "faction": "Horde",
@@ -4209,7 +5762,8 @@ const DUNGEONS = [
             "series": {
               "id": "rfk-1109-going-going-guano",
               "index": 2,
-              "total": 2
+              "total": 2,
+              "name": "Going, Going, Guano!"
             },
             "faction": "Horde"
           }
@@ -4219,7 +5773,8 @@ const DUNGEONS = [
         "series": {
           "id": "rfk-1109-going-going-guano",
           "index": 1,
-          "total": 2
+          "total": 2,
+          "name": "Going, Going, Guano!"
         }
       },
       {
@@ -4239,11 +5794,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Feralas",
+        "startNpcs": [
+          {
+            "name": "Falfindel Waywarder",
+            "link": "https://www.wowhead.com/classic/npc=4048/falfindel-waywarder",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
         "endNpc": "Falfindel Waywarder",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4048/falfindel-waywarder",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Feralas",
+        "endNpcs": [
+          {
+            "name": "Falfindel Waywarder",
+            "link": "https://www.wowhead.com/classic/npc=4048/falfindel-waywarder",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
         "levels": "34",
         "minLevel": 29,
         "faction": "Alliance",
@@ -4297,11 +5870,21 @@ const DUNGEONS = [
             "startItem": "Lonebrow's Journal",
             "startItemLink": "https://www.wowhead.com/classic/item=5790/lonebrow-s-journal",
             "startLoc": "",
+            "startNpcs": [],
             "endNpc": "Falfindel Waywarder",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4048/falfindel-waywarder",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Feralas",
+            "endNpcs": [
+              {
+                "name": "Falfindel Waywarder",
+                "link": "https://www.wowhead.com/classic/npc=4048/falfindel-waywarder",
+                "faction": "",
+                "type": "npc",
+                "loc": "Feralas"
+              }
+            ],
             "levels": "34",
             "minLevel": 29,
             "faction": "Alliance",
@@ -4318,7 +5901,8 @@ const DUNGEONS = [
             "series": {
               "id": "rfk-1100-lonebrow-s-journal",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Lonebrow's Journal"
             }
           }
         ],
@@ -4328,7 +5912,8 @@ const DUNGEONS = [
         "series": {
           "id": "rfk-1100-lonebrow-s-journal",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "Lonebrow's Journal"
         }
       },
       {
@@ -4348,11 +5933,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Razorfen Kraul",
+        "startNpcs": [
+          {
+            "name": "Willix the Importer",
+            "link": "https://www.wowhead.com/classic/npc=4508/willix-the-importer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Razorfen Kraul"
+          }
+        ],
         "endNpc": "Willix the Importer",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4508/willix-the-importer",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Razorfen Kraul",
+        "endNpcs": [
+          {
+            "name": "Willix the Importer",
+            "link": "https://www.wowhead.com/classic/npc=4508/willix-the-importer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Razorfen Kraul"
+          }
+        ],
         "levels": "30",
         "minLevel": 22,
         "faction": "Both",
@@ -4404,11 +6007,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Razorfen Kraul",
+        "startNpcs": [
+          {
+            "name": "Heralath Fallowbrook",
+            "link": "https://www.wowhead.com/classic/npc=4510/heralath-fallowbrook",
+            "faction": "",
+            "type": "npc",
+            "loc": "Razorfen Kraul"
+          }
+        ],
         "endNpc": "Treshala Fallowbrook",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4521/treshala-fallowbrook",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Darnassus",
+        "endNpcs": [
+          {
+            "name": "Treshala Fallowbrook",
+            "link": "https://www.wowhead.com/classic/npc=4521/treshala-fallowbrook",
+            "faction": "",
+            "type": "npc",
+            "loc": "Darnassus"
+          }
+        ],
         "levels": "30",
         "minLevel": 25,
         "faction": "Alliance",
@@ -4454,11 +6075,21 @@ const DUNGEONS = [
         "startItem": "Small Scroll",
         "startItemLink": "https://www.wowhead.com/classic/item=17008/small-scroll",
         "startLoc": "",
+        "startNpcs": [],
         "endNpc": "Varimathras",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2425/varimathras",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Varimathras",
+            "link": "https://www.wowhead.com/classic/npc=2425/varimathras",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "levels": "36",
         "minLevel": 28,
         "faction": "Horde",
@@ -4477,7 +6108,8 @@ const DUNGEONS = [
             "series": {
               "id": "rfk-6522-an-unholy-alliance",
               "index": 2,
-              "total": 2
+              "total": 2,
+              "name": "An Unholy Alliance"
             },
             "faction": "Horde"
           }
@@ -4487,7 +6119,8 @@ const DUNGEONS = [
         "series": {
           "id": "rfk-6522-an-unholy-alliance",
           "index": 1,
-          "total": 2
+          "total": 2,
+          "name": "An Unholy Alliance"
         }
       }
     ]
@@ -4521,11 +6154,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "Librarian Mae Paledust",
+            "link": "https://www.wowhead.com/classic/npc=3979/librarian-mae-paledust",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "endNpc": "Librarian Mae Paledust",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3979/librarian-mae-paledust",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "Librarian Mae Paledust",
+            "link": "https://www.wowhead.com/classic/npc=3979/librarian-mae-paledust",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "levels": "38",
         "minLevel": 28,
         "faction": "Alliance",
@@ -4565,11 +6216,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Hillsbrad Foothills",
+        "startNpcs": [
+          {
+            "name": "Raleigh the Devout",
+            "link": "https://www.wowhead.com/classic/npc=3980/raleigh-the-devout",
+            "faction": "",
+            "type": "npc",
+            "loc": "Hillsbrad Foothills"
+          }
+        ],
         "endNpc": "Raleigh the Devout",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3980/raleigh-the-devout",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Hillsbrad Foothills",
+        "endNpcs": [
+          {
+            "name": "Raleigh the Devout",
+            "link": "https://www.wowhead.com/classic/npc=3980/raleigh-the-devout",
+            "faction": "",
+            "type": "npc",
+            "loc": "Hillsbrad Foothills"
+          }
+        ],
         "levels": "40",
         "minLevel": 34,
         "faction": "Alliance",
@@ -4622,11 +6291,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Brother Crowley",
+                "link": "https://www.wowhead.com/classic/npc=12336/brother-crowley",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Brother Anton",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1182/brother-anton",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Desolace",
+            "endNpcs": [
+              {
+                "name": "Brother Anton",
+                "link": "https://www.wowhead.com/classic/npc=1182/brother-anton",
+                "faction": "",
+                "type": "npc",
+                "loc": "Desolace"
+              }
+            ],
             "levels": "39",
             "minLevel": 34,
             "faction": "Alliance",
@@ -4643,7 +6330,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-6141-brother-anton",
               "index": 1,
-              "total": 3
+              "total": 3,
+              "name": "Brother Anton"
             }
           },
           {
@@ -4663,11 +6351,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Desolace",
+            "startNpcs": [
+              {
+                "name": "Brother Anton",
+                "link": "https://www.wowhead.com/classic/npc=1182/brother-anton",
+                "faction": "",
+                "type": "npc",
+                "loc": "Desolace"
+              }
+            ],
             "endNpc": "Brother Anton",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1182/brother-anton",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Desolace",
+            "endNpcs": [
+              {
+                "name": "Brother Anton",
+                "link": "https://www.wowhead.com/classic/npc=1182/brother-anton",
+                "faction": "",
+                "type": "npc",
+                "loc": "Desolace"
+              }
+            ],
             "levels": "39",
             "minLevel": 34,
             "faction": "Alliance",
@@ -4684,7 +6390,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-6141-brother-anton",
               "index": 2,
-              "total": 3
+              "total": 3,
+              "name": "Brother Anton"
             }
           },
           {
@@ -4704,11 +6411,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Desolace",
+            "startNpcs": [
+              {
+                "name": "Brother Anton",
+                "link": "https://www.wowhead.com/classic/npc=1182/brother-anton",
+                "faction": "",
+                "type": "npc",
+                "loc": "Desolace"
+              }
+            ],
             "endNpc": "Raleigh the Devout",
             "endNpcLink": "https://www.wowhead.com/classic/npc=3980/raleigh-the-devout",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Hillsbrad Foothills",
+            "endNpcs": [
+              {
+                "name": "Raleigh the Devout",
+                "link": "https://www.wowhead.com/classic/npc=3980/raleigh-the-devout",
+                "faction": "",
+                "type": "npc",
+                "loc": "Hillsbrad Foothills"
+              }
+            ],
             "levels": "40",
             "minLevel": 34,
             "faction": "Alliance",
@@ -4725,7 +6450,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-6141-brother-anton",
               "index": 3,
-              "total": 3
+              "total": 3,
+              "name": "Brother Anton"
             }
           }
         ],
@@ -4751,11 +6477,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Scarlet Monastery",
+        "startNpcs": [
+          {
+            "name": "Vorrel Sengutz",
+            "link": "https://www.wowhead.com/classic/npc=3981/vorrel-sengutz",
+            "faction": "",
+            "type": "npc",
+            "loc": "Scarlet Monastery"
+          }
+        ],
         "endNpc": "Monika Sengutz",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3982/monika-sengutz",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Hillsbrad Foothills",
+        "endNpcs": [
+          {
+            "name": "Monika Sengutz",
+            "link": "https://www.wowhead.com/classic/npc=3982/monika-sengutz",
+            "faction": "",
+            "type": "npc",
+            "loc": "Hillsbrad Foothills"
+          }
+        ],
         "levels": "33",
         "minLevel": 25,
         "faction": "Horde",
@@ -4808,11 +6552,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Thunder Bluff",
+        "startNpcs": [
+          {
+            "name": "Sage Truthseeker",
+            "link": "https://www.wowhead.com/classic/npc=3978/sage-truthseeker",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "endNpc": "Sage Truthseeker",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3978/sage-truthseeker",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Thunder Bluff",
+        "endNpcs": [
+          {
+            "name": "Sage Truthseeker",
+            "link": "https://www.wowhead.com/classic/npc=3978/sage-truthseeker",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
         "levels": "38",
         "minLevel": 28,
         "faction": "Horde",
@@ -4864,11 +6626,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Undercity",
+        "startNpcs": [
+          {
+            "name": "Master Apothecary Faranell",
+            "link": "https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "endNpc": "Master Apothecary Faranell",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Master Apothecary Faranell",
+            "link": "https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "levels": "33",
         "minLevel": 30,
         "faction": "Horde",
@@ -4896,11 +6676,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Undercity",
+            "startNpcs": [
+              {
+                "name": "Master Apothecary Faranell",
+                "link": "https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Undercity"
+              }
+            ],
             "endNpc": "Master Apothecary Faranell",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Undercity",
+            "endNpcs": [
+              {
+                "name": "Master Apothecary Faranell",
+                "link": "https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Undercity"
+              }
+            ],
             "levels": "33",
             "minLevel": 30,
             "faction": "Horde",
@@ -4917,7 +6715,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1109-going-going-guano",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "Going, Going, Guano!"
             }
           }
         ],
@@ -4927,7 +6726,8 @@ const DUNGEONS = [
         "series": {
           "id": "sm-1109-going-going-guano",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "Going, Going, Guano!"
         }
       },
       {
@@ -4947,11 +6747,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Undercity",
+        "startNpcs": [
+          {
+            "name": "Varimathras",
+            "link": "https://www.wowhead.com/classic/npc=2425/varimathras",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "endNpc": "Varimathras",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2425/varimathras",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Varimathras",
+            "link": "https://www.wowhead.com/classic/npc=2425/varimathras",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "levels": "42",
         "minLevel": 33,
         "faction": "Horde",
@@ -5003,11 +6821,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Undercity",
+        "startNpcs": [
+          {
+            "name": "Parqual Fintallas",
+            "link": "https://www.wowhead.com/classic/npc=4488/parqual-fintallas",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "endNpc": "Parqual Fintallas",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4488/parqual-fintallas",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Parqual Fintallas",
+            "link": "https://www.wowhead.com/classic/npc=4488/parqual-fintallas",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "levels": "36",
         "minLevel": 26,
         "faction": "Horde",
@@ -5035,11 +6871,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thousand Needles",
+            "startNpcs": [
+              {
+                "name": "Dorn Plainstalker",
+                "link": "https://www.wowhead.com/classic/npc=2986/dorn-plainstalker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "endNpc": "Dorn Plainstalker",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2986/dorn-plainstalker",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Thousand Needles",
+            "endNpcs": [
+              {
+                "name": "Dorn Plainstalker",
+                "link": "https://www.wowhead.com/classic/npc=2986/dorn-plainstalker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "levels": "26",
             "minLevel": 25,
             "faction": "Horde",
@@ -5056,7 +6910,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1149-test-of-faith",
               "index": 1,
-              "total": 10
+              "total": 10,
+              "name": "Test of Faith"
             }
           },
           {
@@ -5076,11 +6931,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thousand Needles",
+            "startNpcs": [
+              {
+                "name": "Dorn Plainstalker",
+                "link": "https://www.wowhead.com/classic/npc=2986/dorn-plainstalker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "endNpc": "Dorn Plainstalker",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2986/dorn-plainstalker",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Thousand Needles",
+            "endNpcs": [
+              {
+                "name": "Dorn Plainstalker",
+                "link": "https://www.wowhead.com/classic/npc=2986/dorn-plainstalker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "levels": "30",
             "minLevel": 25,
             "faction": "Horde",
@@ -5097,7 +6970,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1149-test-of-faith",
               "index": 2,
-              "total": 10
+              "total": 10,
+              "name": "Test of Faith"
             }
           },
           {
@@ -5117,11 +6991,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thousand Needles",
+            "startNpcs": [
+              {
+                "name": "Dorn Plainstalker",
+                "link": "https://www.wowhead.com/classic/npc=2986/dorn-plainstalker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "endNpc": "Dorn Plainstalker",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2986/dorn-plainstalker",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Thousand Needles",
+            "endNpcs": [
+              {
+                "name": "Dorn Plainstalker",
+                "link": "https://www.wowhead.com/classic/npc=2986/dorn-plainstalker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "levels": "30",
             "minLevel": 25,
             "faction": "Horde",
@@ -5138,7 +7030,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1149-test-of-faith",
               "index": 3,
-              "total": 10
+              "total": 10,
+              "name": "Test of Faith"
             }
           },
           {
@@ -5158,11 +7051,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thousand Needles",
+            "startNpcs": [
+              {
+                "name": "Dorn Plainstalker",
+                "link": "https://www.wowhead.com/classic/npc=2986/dorn-plainstalker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "endNpc": "Braug Dimspirit",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4489/braug-dimspirit",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stonetalon Mountains",
+            "endNpcs": [
+              {
+                "name": "Braug Dimspirit",
+                "link": "https://www.wowhead.com/classic/npc=4489/braug-dimspirit",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stonetalon Mountains"
+              }
+            ],
             "levels": "30",
             "minLevel": 26,
             "faction": "Horde",
@@ -5179,7 +7090,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1149-test-of-faith",
               "index": 4,
-              "total": 10
+              "total": 10,
+              "name": "Test of Faith"
             }
           },
           {
@@ -5199,11 +7111,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stonetalon Mountains",
+            "startNpcs": [
+              {
+                "name": "Braug Dimspirit",
+                "link": "https://www.wowhead.com/classic/npc=4489/braug-dimspirit",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stonetalon Mountains"
+              }
+            ],
             "endNpc": "Braug Dimspirit",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4489/braug-dimspirit",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stonetalon Mountains",
+            "endNpcs": [
+              {
+                "name": "Braug Dimspirit",
+                "link": "https://www.wowhead.com/classic/npc=4489/braug-dimspirit",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stonetalon Mountains"
+              }
+            ],
             "levels": "30",
             "minLevel": 26,
             "faction": "Horde",
@@ -5220,7 +7150,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1149-test-of-faith",
               "index": 5,
-              "total": 10
+              "total": 10,
+              "name": "Test of Faith"
             }
           },
           {
@@ -5240,11 +7171,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stonetalon Mountains",
+            "startNpcs": [
+              {
+                "name": "Braug Dimspirit",
+                "link": "https://www.wowhead.com/classic/npc=4489/braug-dimspirit",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stonetalon Mountains"
+              }
+            ],
             "endNpc": "Braug Dimspirit",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4489/braug-dimspirit",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stonetalon Mountains",
+            "endNpcs": [
+              {
+                "name": "Braug Dimspirit",
+                "link": "https://www.wowhead.com/classic/npc=4489/braug-dimspirit",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stonetalon Mountains"
+              }
+            ],
             "levels": "30",
             "minLevel": 26,
             "faction": "Horde",
@@ -5261,7 +7210,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1149-test-of-faith",
               "index": 6,
-              "total": 10
+              "total": 10,
+              "name": "Test of Faith"
             }
           },
           {
@@ -5281,11 +7231,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stonetalon Mountains",
+            "startNpcs": [
+              {
+                "name": "Braug Dimspirit",
+                "link": "https://www.wowhead.com/classic/npc=4489/braug-dimspirit",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stonetalon Mountains"
+              }
+            ],
             "endNpc": "Parqual Fintallas",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4488/parqual-fintallas",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Undercity",
+            "endNpcs": [
+              {
+                "name": "Parqual Fintallas",
+                "link": "https://www.wowhead.com/classic/npc=4488/parqual-fintallas",
+                "faction": "",
+                "type": "npc",
+                "loc": "Undercity"
+              }
+            ],
             "levels": "30",
             "minLevel": 26,
             "faction": "Horde",
@@ -5302,7 +7270,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1149-test-of-faith",
               "index": 7,
-              "total": 10
+              "total": 10,
+              "name": "Test of Faith"
             }
           }
         ],
@@ -5314,7 +7283,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1149-test-of-faith",
               "index": 9,
-              "total": 10
+              "total": 10,
+              "name": "Test of Faith"
             },
             "faction": "Horde"
           },
@@ -5325,7 +7295,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1149-test-of-faith",
               "index": 10,
-              "total": 10
+              "total": 10,
+              "name": "Test of Faith"
             },
             "faction": "Horde"
           }
@@ -5335,7 +7306,8 @@ const DUNGEONS = [
         "series": {
           "id": "sm-1149-test-of-faith",
           "index": 8,
-          "total": 10
+          "total": 10,
+          "name": "Test of Faith"
         }
       },
       {
@@ -5355,11 +7327,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Thousand Needles",
+        "startNpcs": [
+          {
+            "name": "Magus Tirth",
+            "link": "https://www.wowhead.com/classic/npc=6548/magus-tirth",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thousand Needles"
+          }
+        ],
         "endNpc": "Tabetha",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6546/tabetha",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dustwallow Marsh",
+        "endNpcs": [
+          {
+            "name": "Tabetha",
+            "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
         "levels": "40",
         "minLevel": 30,
         "faction": "Both",
@@ -5382,18 +7372,64 @@ const DUNGEONS = [
             "nextQuestId": null,
             "chainId": null,
             "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
+            "startNpc": "Ursyn Ghull",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=3048/ursyn-ghull",
             "startObject": "",
             "startObjectLink": "",
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thunder Bluff",
+            "startNpcs": [
+              {
+                "name": "Ursyn Ghull",
+                "link": "https://www.wowhead.com/classic/npc=3048/ursyn-ghull",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Thunder Bluff"
+              },
+              {
+                "name": "Anastasia Hartwell",
+                "link": "https://www.wowhead.com/classic/npc=4568/anastasia-hartwell",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Undercity"
+              },
+              {
+                "name": "Bink",
+                "link": "https://www.wowhead.com/classic/npc=5144/bink",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Ironforge"
+              },
+              {
+                "name": "Jennea Cannon",
+                "link": "https://www.wowhead.com/classic/npc=5497/jennea-cannon",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Stormwind City"
+              },
+              {
+                "name": "Deino",
+                "link": "https://www.wowhead.com/classic/npc=5885/deino",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "endNpc": "Tabetha",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6546/tabetha",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Dustwallow Marsh",
+            "endNpcs": [
+              {
+                "name": "Tabetha",
+                "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dustwallow Marsh"
+              }
+            ],
             "levels": "38",
             "minLevel": 30,
             "faction": "Both",
@@ -5428,11 +7464,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Dustwallow Marsh",
+            "startNpcs": [
+              {
+                "name": "Tabetha",
+                "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dustwallow Marsh"
+              }
+            ],
             "endNpc": "Magus Tirth",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6548/magus-tirth",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Thousand Needles",
+            "endNpcs": [
+              {
+                "name": "Magus Tirth",
+                "link": "https://www.wowhead.com/classic/npc=6548/magus-tirth",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "levels": "38",
             "minLevel": 30,
             "faction": "Both",
@@ -5451,7 +7505,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1949-hidden-secrets",
               "index": 1,
-              "total": 5
+              "total": 5,
+              "name": "Hidden Secrets"
             },
             "requires": [
               {
@@ -5477,11 +7532,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thousand Needles",
+            "startNpcs": [
+              {
+                "name": "Magus Tirth",
+                "link": "https://www.wowhead.com/classic/npc=6548/magus-tirth",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "endNpc": "Magus Tirth",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6548/magus-tirth",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Thousand Needles",
+            "endNpcs": [
+              {
+                "name": "Magus Tirth",
+                "link": "https://www.wowhead.com/classic/npc=6548/magus-tirth",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "levels": "30",
             "minLevel": 30,
             "faction": "Both",
@@ -5500,7 +7573,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1949-hidden-secrets",
               "index": 2,
-              "total": 5
+              "total": 5,
+              "name": "Hidden Secrets"
             }
           }
         ],
@@ -5512,7 +7586,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1949-hidden-secrets",
               "index": 4,
-              "total": 5
+              "total": 5,
+              "name": "Hidden Secrets"
             }
           },
           {
@@ -5522,7 +7597,8 @@ const DUNGEONS = [
             "series": {
               "id": "sm-1949-hidden-secrets",
               "index": 5,
-              "total": 5
+              "total": 5,
+              "name": "Hidden Secrets"
             }
           }
         ],
@@ -5531,7 +7607,8 @@ const DUNGEONS = [
         "series": {
           "id": "sm-1949-hidden-secrets",
           "index": 3,
-          "total": 5
+          "total": 5,
+          "name": "Hidden Secrets"
         }
       }
     ]
@@ -5565,11 +7642,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Myriam Moonsinger",
+            "link": "https://www.wowhead.com/classic/npc=12866/myriam-moonsinger",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
         "endNpc": "Myriam Moonsinger",
         "endNpcLink": "https://www.wowhead.com/classic/npc=12866/myriam-moonsinger",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Myriam Moonsinger",
+            "link": "https://www.wowhead.com/classic/npc=12866/myriam-moonsinger",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
         "levels": "35",
         "minLevel": 28,
         "faction": "Both",
@@ -5602,11 +7697,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Archbishop Benedictus",
+            "link": "https://www.wowhead.com/classic/npc=1284/archbishop-benedictus",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "endNpc": "Archbishop Benedictus",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1284/archbishop-benedictus",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Archbishop Benedictus",
+            "link": "https://www.wowhead.com/classic/npc=1284/archbishop-benedictus",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "levels": "42",
         "minLevel": 39,
         "faction": "Alliance",
@@ -5652,11 +7765,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Undercity",
+        "startNpcs": [
+          {
+            "name": "Andrew Brownell",
+            "link": "https://www.wowhead.com/classic/npc=2308/andrew-brownell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "endNpc": "Andrew Brownell",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2308/andrew-brownell",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Andrew Brownell",
+            "link": "https://www.wowhead.com/classic/npc=2308/andrew-brownell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "levels": "42",
         "minLevel": 37,
         "faction": "Horde",
@@ -5702,11 +7833,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Razorfen Downs",
+        "startNpcs": [
+          {
+            "name": "Belnistrasz",
+            "link": "https://www.wowhead.com/classic/npc=8516/belnistrasz",
+            "faction": "",
+            "type": "npc",
+            "loc": "Razorfen Downs"
+          }
+        ],
         "endNpc": "",
         "endNpcLink": "",
         "endObject": "Belnistrasz's Brazier",
         "endObjectLink": "https://www.wowhead.com/classic/object=152097/belnistrasz-s-brazier",
         "endLoc": "Razorfen Downs",
+        "endNpcs": [
+          {
+            "name": "Belnistrasz's Brazier",
+            "link": "https://www.wowhead.com/classic/object=152097/belnistrasz-s-brazier",
+            "faction": "",
+            "type": "object",
+            "loc": "Razorfen Downs"
+          }
+        ],
         "levels": "37",
         "minLevel": 32,
         "faction": "Both",
@@ -5730,7 +7879,8 @@ const DUNGEONS = [
         "series": {
           "id": "rfd-3523-scourge-of-the-downs",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "Scourge of the Downs"
         }
       },
       {
@@ -5750,11 +7900,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Undercity",
+        "startNpcs": [
+          {
+            "name": "Varimathras",
+            "link": "https://www.wowhead.com/classic/npc=2425/varimathras",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "endNpc": "Varimathras",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2425/varimathras",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Varimathras",
+            "link": "https://www.wowhead.com/classic/npc=2425/varimathras",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "levels": "36",
         "minLevel": 28,
         "faction": "Horde",
@@ -5801,11 +7969,21 @@ const DUNGEONS = [
             "startItem": "Small Scroll",
             "startItemLink": "https://www.wowhead.com/classic/item=17008/small-scroll",
             "startLoc": "",
+            "startNpcs": [],
             "endNpc": "Varimathras",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2425/varimathras",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Undercity",
+            "endNpcs": [
+              {
+                "name": "Varimathras",
+                "link": "https://www.wowhead.com/classic/npc=2425/varimathras",
+                "faction": "",
+                "type": "npc",
+                "loc": "Undercity"
+              }
+            ],
             "levels": "36",
             "minLevel": 28,
             "faction": "Horde",
@@ -5822,7 +8000,8 @@ const DUNGEONS = [
             "series": {
               "id": "rfd-6522-an-unholy-alliance",
               "index": 1,
-              "total": 2
+              "total": 2,
+              "name": "An Unholy Alliance"
             }
           }
         ],
@@ -5832,7 +8011,8 @@ const DUNGEONS = [
         "series": {
           "id": "rfd-6522-an-unholy-alliance",
           "index": 2,
-          "total": 2
+          "total": 2,
+          "name": "An Unholy Alliance"
         }
       },
       {
@@ -5852,11 +8032,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Razorfen Downs",
+        "startNpcs": [
+          {
+            "name": "Belnistrasz",
+            "link": "https://www.wowhead.com/classic/npc=8516/belnistrasz",
+            "faction": "",
+            "type": "npc",
+            "loc": "Razorfen Downs"
+          }
+        ],
         "endNpc": "Belnistrasz",
         "endNpcLink": "https://www.wowhead.com/classic/npc=8516/belnistrasz",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Razorfen Downs",
+        "endNpcs": [
+          {
+            "name": "Belnistrasz",
+            "link": "https://www.wowhead.com/classic/npc=8516/belnistrasz",
+            "faction": "",
+            "type": "npc",
+            "loc": "Razorfen Downs"
+          }
+        ],
         "levels": "37",
         "minLevel": 32,
         "faction": "Both",
@@ -5873,7 +8071,8 @@ const DUNGEONS = [
         "series": {
           "id": "rfd-3523-scourge-of-the-downs",
           "index": 1,
-          "total": 2
+          "total": 2,
+          "name": "Scourge of the Downs"
         }
       }
     ]
@@ -5907,11 +8106,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Theldurin the Lost",
+            "link": "https://www.wowhead.com/classic/npc=2785/theldurin-the-lost",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "endNpc": "Theldurin the Lost",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2785/theldurin-the-lost",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Theldurin the Lost",
+            "link": "https://www.wowhead.com/classic/npc=2785/theldurin-the-lost",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "levels": "40",
         "minLevel": 30,
         "faction": "Both",
@@ -6030,11 +8247,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Rigglefuzz",
+            "link": "https://www.wowhead.com/classic/npc=2817/rigglefuzz",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "endNpc": "Rigglefuzz",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2817/rigglefuzz",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Rigglefuzz",
+            "link": "https://www.wowhead.com/classic/npc=2817/rigglefuzz",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "levels": "36",
         "minLevel": 30,
         "faction": "Both",
@@ -6086,11 +8321,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "Krom Stoutarm",
+            "link": "https://www.wowhead.com/classic/npc=6294/krom-stoutarm",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "endNpc": "Krom Stoutarm",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6294/krom-stoutarm",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "Krom Stoutarm",
+            "link": "https://www.wowhead.com/classic/npc=6294/krom-stoutarm",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "levels": "43",
         "minLevel": 33,
         "faction": "Alliance",
@@ -6123,11 +8376,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Undercity",
+        "startNpcs": [
+          {
+            "name": "Patrick Garrett",
+            "link": "https://www.wowhead.com/classic/npc=5651/patrick-garrett",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "endNpc": "Patrick Garrett",
         "endNpcLink": "https://www.wowhead.com/classic/npc=5651/patrick-garrett",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Patrick Garrett",
+            "link": "https://www.wowhead.com/classic/npc=5651/patrick-garrett",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
         "levels": "43",
         "minLevel": 33,
         "faction": "Horde",
@@ -6160,11 +8431,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Loch Modan",
+        "startNpcs": [
+          {
+            "name": "Prospector Ironband",
+            "link": "https://www.wowhead.com/classic/npc=1344/prospector-ironband",
+            "faction": "",
+            "type": "npc",
+            "loc": "Loch Modan"
+          }
+        ],
         "endNpc": "Prospector Ironband",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1344/prospector-ironband",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Loch Modan",
+        "endNpcs": [
+          {
+            "name": "Prospector Ironband",
+            "link": "https://www.wowhead.com/classic/npc=1344/prospector-ironband",
+            "faction": "",
+            "type": "npc",
+            "loc": "Loch Modan"
+          }
+        ],
         "levels": "38",
         "minLevel": 30,
         "faction": "Alliance",
@@ -6199,11 +8488,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Prospector Stormpike",
+                "link": "https://www.wowhead.com/classic/npc=1356/prospector-stormpike",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Prospector Ironband",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1344/prospector-ironband",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Loch Modan",
+            "endNpcs": [
+              {
+                "name": "Prospector Ironband",
+                "link": "https://www.wowhead.com/classic/npc=1344/prospector-ironband",
+                "faction": "",
+                "type": "npc",
+                "loc": "Loch Modan"
+              }
+            ],
             "levels": "37",
             "minLevel": 30,
             "faction": "Alliance",
@@ -6241,11 +8548,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Loch Modan",
+            "startNpcs": [
+              {
+                "name": "Prospector Ironband",
+                "link": "https://www.wowhead.com/classic/npc=1344/prospector-ironband",
+                "faction": "",
+                "type": "npc",
+                "loc": "Loch Modan"
+              }
+            ],
             "endNpc": "",
             "endNpcLink": "",
             "endObject": "Battered Dwarven Skeleton",
             "endObjectLink": "https://www.wowhead.com/classic/object=2875/battered-dwarven-skeleton",
             "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Battered Dwarven Skeleton",
+                "link": "https://www.wowhead.com/classic/object=2875/battered-dwarven-skeleton",
+                "faction": "",
+                "type": "object",
+                "loc": "Badlands"
+              }
+            ],
             "levels": "38",
             "minLevel": 30,
             "faction": "Alliance",
@@ -6302,11 +8627,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Battered Dwarven Skeleton",
+                "link": "https://www.wowhead.com/classic/object=2875/battered-dwarven-skeleton",
+                "faction": "",
+                "type": "object",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Prospector Ironband",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1344/prospector-ironband",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Loch Modan",
+            "endNpcs": [
+              {
+                "name": "Prospector Ironband",
+                "link": "https://www.wowhead.com/classic/npc=1344/prospector-ironband",
+                "faction": "",
+                "type": "npc",
+                "loc": "Loch Modan"
+              }
+            ],
             "levels": "42",
             "minLevel": 30,
             "faction": "Alliance",
@@ -6362,11 +8705,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "",
+        "startNpcs": [
+          {
+            "name": "Hammertoe Grez",
+            "link": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          }
+        ],
         "endNpc": "Hammertoe Grez",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "",
+        "endNpcs": [
+          {
+            "name": "Hammertoe Grez",
+            "link": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          }
+        ],
         "levels": "40",
         "minLevel": 35,
         "faction": "Alliance",
@@ -6394,11 +8755,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Crumpled Map",
+                "link": "https://www.wowhead.com/classic/object=2868/crumpled-map",
+                "faction": "",
+                "type": "object",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Prospector Ryedol",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2910/prospector-ryedol",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Prospector Ryedol",
+                "link": "https://www.wowhead.com/classic/npc=2910/prospector-ryedol",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "levels": "35",
             "minLevel": 35,
             "faction": "Alliance",
@@ -6436,11 +8815,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Prospector Ryedol",
+                "link": "https://www.wowhead.com/classic/npc=2910/prospector-ryedol",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Hammertoe Grez",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "",
+            "endNpcs": [
+              {
+                "name": "Hammertoe Grez",
+                "link": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
+                "faction": "",
+                "type": "npc",
+                "loc": ""
+              }
+            ],
             "levels": "35",
             "minLevel": 35,
             "faction": "Alliance",
@@ -6514,11 +8911,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Uldaman",
+        "startNpcs": [
+          {
+            "name": "Baelog",
+            "link": "https://www.wowhead.com/classic/npc=6906/baelog",
+            "faction": "",
+            "type": "npc",
+            "loc": "Uldaman"
+          }
+        ],
         "endNpc": "Prospector Stormpike",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1356/prospector-stormpike",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "Prospector Stormpike",
+            "link": "https://www.wowhead.com/classic/npc=1356/prospector-stormpike",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "levels": "40",
         "minLevel": 35,
         "faction": "Alliance",
@@ -6559,11 +8974,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Prospector Stormpike",
+                "link": "https://www.wowhead.com/classic/npc=1356/prospector-stormpike",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Baelog",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6906/baelog",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Uldaman",
+            "endNpcs": [
+              {
+                "name": "Baelog",
+                "link": "https://www.wowhead.com/classic/npc=6906/baelog",
+                "faction": "",
+                "type": "npc",
+                "loc": "Uldaman"
+              }
+            ],
             "levels": "40",
             "minLevel": 35,
             "faction": "Alliance",
@@ -6612,11 +9045,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "Advisor Belgrum",
+            "link": "https://www.wowhead.com/classic/npc=2918/advisor-belgrum",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "endNpc": "Advisor Belgrum",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2918/advisor-belgrum",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "Advisor Belgrum",
+            "link": "https://www.wowhead.com/classic/npc=2918/advisor-belgrum",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "levels": "45",
         "minLevel": 35,
         "faction": "Alliance",
@@ -6651,11 +9102,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Crumpled Map",
+                "link": "https://www.wowhead.com/classic/object=2868/crumpled-map",
+                "faction": "",
+                "type": "object",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Prospector Ryedol",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2910/prospector-ryedol",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Prospector Ryedol",
+                "link": "https://www.wowhead.com/classic/npc=2910/prospector-ryedol",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "levels": "35",
             "minLevel": 35,
             "faction": "Alliance",
@@ -6693,11 +9162,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Prospector Ryedol",
+                "link": "https://www.wowhead.com/classic/npc=2910/prospector-ryedol",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Hammertoe Grez",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "",
+            "endNpcs": [
+              {
+                "name": "Hammertoe Grez",
+                "link": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
+                "faction": "",
+                "type": "npc",
+                "loc": ""
+              }
+            ],
             "levels": "35",
             "minLevel": 35,
             "faction": "Alliance",
@@ -6735,11 +9222,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "",
+            "startNpcs": [
+              {
+                "name": "Hammertoe Grez",
+                "link": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
+                "faction": "",
+                "type": "npc",
+                "loc": ""
+              }
+            ],
             "endNpc": "Hammertoe Grez",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "",
+            "endNpcs": [
+              {
+                "name": "Hammertoe Grez",
+                "link": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
+                "faction": "",
+                "type": "npc",
+                "loc": ""
+              }
+            ],
             "levels": "40",
             "minLevel": 35,
             "faction": "Alliance",
@@ -6778,11 +9283,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "",
+            "startNpcs": [
+              {
+                "name": "Hammertoe Grez",
+                "link": "https://www.wowhead.com/classic/npc=2909/hammertoe-grez",
+                "faction": "",
+                "type": "npc",
+                "loc": ""
+              }
+            ],
             "endNpc": "Prospector Ryedol",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2910/prospector-ryedol",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Prospector Ryedol",
+                "link": "https://www.wowhead.com/classic/npc=2910/prospector-ryedol",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "levels": "40",
             "minLevel": 35,
             "faction": "Alliance",
@@ -6820,11 +9343,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Prospector Ryedol",
+                "link": "https://www.wowhead.com/classic/npc=2910/prospector-ryedol",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Historian Karnik",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2916/historian-karnik",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Historian Karnik",
+                "link": "https://www.wowhead.com/classic/npc=2916/historian-karnik",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "40",
             "minLevel": 35,
             "faction": "Alliance",
@@ -6862,11 +9403,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Historian Karnik",
+                "link": "https://www.wowhead.com/classic/npc=2916/historian-karnik",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Advisor Belgrum",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2918/advisor-belgrum",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Advisor Belgrum",
+                "link": "https://www.wowhead.com/classic/npc=2918/advisor-belgrum",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "40",
             "minLevel": 35,
             "faction": "Alliance",
@@ -6910,11 +9469,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Advisor Belgrum",
+                "link": "https://www.wowhead.com/classic/npc=2918/advisor-belgrum",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Historian Karnik",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2916/historian-karnik",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Historian Karnik",
+                "link": "https://www.wowhead.com/classic/npc=2916/historian-karnik",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "40",
             "minLevel": 35,
             "faction": "Alliance",
@@ -6952,11 +9529,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Historian Karnik",
+                "link": "https://www.wowhead.com/classic/npc=2916/historian-karnik",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Advisor Belgrum",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2918/advisor-belgrum",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Advisor Belgrum",
+                "link": "https://www.wowhead.com/classic/npc=2918/advisor-belgrum",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "44",
             "minLevel": 35,
             "faction": "Alliance",
@@ -7007,11 +9602,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Uldaman",
+        "startNpcs": [
+          {
+            "name": "Talvash's Scrying Bowl",
+            "link": "https://www.wowhead.com/classic/object=112877/talvash-s-scrying-bowl",
+            "faction": "",
+            "type": "object",
+            "loc": "Uldaman"
+          }
+        ],
         "endNpc": "Talvash del Kissel",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6826/talvash-del-kissel",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "Talvash del Kissel",
+            "link": "https://www.wowhead.com/classic/npc=6826/talvash-del-kissel",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "levels": "44",
         "minLevel": 37,
         "faction": "Alliance",
@@ -7039,11 +9652,21 @@ const DUNGEONS = [
             "startItem": "Shattered Necklace",
             "startItemLink": "https://www.wowhead.com/classic/item=7666/shattered-necklace",
             "startLoc": "",
+            "startNpcs": [],
             "endNpc": "Talvash del Kissel",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6826/talvash-del-kissel",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Talvash del Kissel",
+                "link": "https://www.wowhead.com/classic/npc=6826/talvash-del-kissel",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "41",
             "minLevel": 37,
             "faction": "Alliance",
@@ -7081,11 +9704,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Talvash del Kissel",
+                "link": "https://www.wowhead.com/classic/npc=6826/talvash-del-kissel",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Talvash del Kissel",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6826/talvash-del-kissel",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Talvash del Kissel",
+                "link": "https://www.wowhead.com/classic/npc=6826/talvash-del-kissel",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "41",
             "minLevel": 37,
             "faction": "Alliance",
@@ -7123,11 +9764,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Talvash del Kissel",
+                "link": "https://www.wowhead.com/classic/npc=6826/talvash-del-kissel",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Remains of a Paladin",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6912/remains-of-a-paladin",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Uldaman",
+            "endNpcs": [
+              {
+                "name": "Remains of a Paladin",
+                "link": "https://www.wowhead.com/classic/npc=6912/remains-of-a-paladin",
+                "faction": "",
+                "type": "npc",
+                "loc": "Uldaman"
+              }
+            ],
             "levels": "42",
             "minLevel": 37,
             "faction": "Alliance",
@@ -7165,11 +9824,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Uldaman",
+            "startNpcs": [
+              {
+                "name": "Remains of a Paladin",
+                "link": "https://www.wowhead.com/classic/npc=6912/remains-of-a-paladin",
+                "faction": "",
+                "type": "npc",
+                "loc": "Uldaman"
+              }
+            ],
             "endNpc": "",
             "endNpcLink": "",
             "endObject": "Talvash's Scrying Bowl",
             "endObjectLink": "https://www.wowhead.com/classic/object=112877/talvash-s-scrying-bowl",
             "endLoc": "Uldaman",
+            "endNpcs": [
+              {
+                "name": "Talvash's Scrying Bowl",
+                "link": "https://www.wowhead.com/classic/object=112877/talvash-s-scrying-bowl",
+                "faction": "",
+                "type": "object",
+                "loc": "Uldaman"
+              }
+            ],
             "levels": "43",
             "minLevel": 37,
             "faction": "Alliance",
@@ -7231,11 +9908,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Loch Modan",
+        "startNpcs": [
+          {
+            "name": "Ghak Healtouch",
+            "link": "https://www.wowhead.com/classic/npc=1470/ghak-healtouch",
+            "faction": "",
+            "type": "npc",
+            "loc": "Loch Modan"
+          }
+        ],
         "endNpc": "Ghak Healtouch",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1470/ghak-healtouch",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Loch Modan",
+        "endNpcs": [
+          {
+            "name": "Ghak Healtouch",
+            "link": "https://www.wowhead.com/classic/npc=1470/ghak-healtouch",
+            "faction": "",
+            "type": "npc",
+            "loc": "Loch Modan"
+          }
+        ],
         "levels": "42",
         "minLevel": 38,
         "faction": "Alliance",
@@ -7270,11 +9965,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Loch Modan",
+            "startNpcs": [
+              {
+                "name": "Ghak Healtouch",
+                "link": "https://www.wowhead.com/classic/npc=1470/ghak-healtouch",
+                "faction": "",
+                "type": "npc",
+                "loc": "Loch Modan"
+              }
+            ],
             "endNpc": "Ghak Healtouch",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1470/ghak-healtouch",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Loch Modan",
+            "endNpcs": [
+              {
+                "name": "Ghak Healtouch",
+                "link": "https://www.wowhead.com/classic/npc=1470/ghak-healtouch",
+                "faction": "",
+                "type": "npc",
+                "loc": "Loch Modan"
+              }
+            ],
             "levels": "39",
             "minLevel": 36,
             "faction": "Alliance",
@@ -7323,11 +10036,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Loch Modan",
+            "startNpcs": [
+              {
+                "name": "Ghak Healtouch",
+                "link": "https://www.wowhead.com/classic/npc=1470/ghak-healtouch",
+                "faction": "",
+                "type": "npc",
+                "loc": "Loch Modan"
+              }
+            ],
             "endNpc": "Ghak Healtouch",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1470/ghak-healtouch",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Loch Modan",
+            "endNpcs": [
+              {
+                "name": "Ghak Healtouch",
+                "link": "https://www.wowhead.com/classic/npc=1470/ghak-healtouch",
+                "faction": "",
+                "type": "npc",
+                "loc": "Loch Modan"
+              }
+            ],
             "levels": "44",
             "minLevel": 40,
             "faction": "Alliance",
@@ -7361,11 +10092,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Jarkal Mossmeld",
+            "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "endNpc": "Jarkal Mossmeld",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Jarkal Mossmeld",
+            "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "levels": "42",
         "minLevel": 36,
         "faction": "Horde",
@@ -7400,11 +10149,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Jarkal Mossmeld",
+                "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Jarkal Mossmeld",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Jarkal Mossmeld",
+                "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "levels": "39",
             "minLevel": 36,
             "faction": "Horde",
@@ -7466,11 +10233,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Dran Droffers",
+            "link": "https://www.wowhead.com/classic/npc=6986/dran-droffers",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "endNpc": "Jarkal Mossmeld",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Jarkal Mossmeld",
+            "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "levels": "44",
         "minLevel": 37,
         "faction": "Horde",
@@ -7505,11 +10290,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Orgrimmar",
+            "startNpcs": [
+              {
+                "name": "Dran Droffers",
+                "link": "https://www.wowhead.com/classic/npc=6986/dran-droffers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "endNpc": "Dran Droffers",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6986/dran-droffers",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Orgrimmar",
+            "endNpcs": [
+              {
+                "name": "Dran Droffers",
+                "link": "https://www.wowhead.com/classic/npc=6986/dran-droffers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "levels": "41",
             "minLevel": 37,
             "faction": "Horde",
@@ -7547,11 +10350,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Orgrimmar",
+            "startNpcs": [
+              {
+                "name": "Dran Droffers",
+                "link": "https://www.wowhead.com/classic/npc=6986/dran-droffers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "endNpc": "Remains of a Paladin",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6912/remains-of-a-paladin",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Uldaman",
+            "endNpcs": [
+              {
+                "name": "Remains of a Paladin",
+                "link": "https://www.wowhead.com/classic/npc=6912/remains-of-a-paladin",
+                "faction": "",
+                "type": "npc",
+                "loc": "Uldaman"
+              }
+            ],
             "levels": "41",
             "minLevel": 37,
             "faction": "Horde",
@@ -7589,11 +10410,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Uldaman",
+            "startNpcs": [
+              {
+                "name": "Remains of a Paladin",
+                "link": "https://www.wowhead.com/classic/npc=6912/remains-of-a-paladin",
+                "faction": "",
+                "type": "npc",
+                "loc": "Uldaman"
+              }
+            ],
             "endNpc": "Jarkal Mossmeld",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Jarkal Mossmeld",
+                "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "levels": "42",
             "minLevel": 37,
             "faction": "Horde",
@@ -7631,11 +10470,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Jarkal Mossmeld",
+                "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Jarkal Mossmeld",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Jarkal Mossmeld",
+                "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "levels": "42",
             "minLevel": 37,
             "faction": "Horde",
@@ -7673,11 +10530,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Jarkal Mossmeld",
+                "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Jarkal Mossmeld",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Jarkal Mossmeld",
+                "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "levels": "44",
             "minLevel": 37,
             "faction": "Horde",
@@ -7716,11 +10591,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Jarkal Mossmeld",
+                "link": "https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Dran Droffers",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6986/dran-droffers",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Orgrimmar",
+            "endNpcs": [
+              {
+                "name": "Dran Droffers",
+                "link": "https://www.wowhead.com/classic/npc=6986/dran-droffers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "levels": "44",
             "minLevel": 37,
             "faction": "Horde",
@@ -7775,11 +10668,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dustwallow Marsh",
+        "startNpcs": [
+          {
+            "name": "Tabetha",
+            "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
         "endNpc": "Tabetha",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6546/tabetha",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dustwallow Marsh",
+        "endNpcs": [
+          {
+            "name": "Tabetha",
+            "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
         "levels": "40",
         "minLevel": 35,
         "faction": "Both",
@@ -7802,18 +10713,64 @@ const DUNGEONS = [
             "nextQuestId": 1954,
             "chainId": null,
             "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
+            "startNpc": "Ursyn Ghull",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=3048/ursyn-ghull",
             "startObject": "",
             "startObjectLink": "",
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thunder Bluff",
+            "startNpcs": [
+              {
+                "name": "Ursyn Ghull",
+                "link": "https://www.wowhead.com/classic/npc=3048/ursyn-ghull",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Thunder Bluff"
+              },
+              {
+                "name": "Anastasia Hartwell",
+                "link": "https://www.wowhead.com/classic/npc=4568/anastasia-hartwell",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Undercity"
+              },
+              {
+                "name": "Bink",
+                "link": "https://www.wowhead.com/classic/npc=5144/bink",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Ironforge"
+              },
+              {
+                "name": "Jennea Cannon",
+                "link": "https://www.wowhead.com/classic/npc=5497/jennea-cannon",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Stormwind City"
+              },
+              {
+                "name": "Deino",
+                "link": "https://www.wowhead.com/classic/npc=5885/deino",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "endNpc": "Tabetha",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6546/tabetha",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Dustwallow Marsh",
+            "endNpcs": [
+              {
+                "name": "Tabetha",
+                "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dustwallow Marsh"
+              }
+            ],
             "levels": "40",
             "minLevel": 35,
             "faction": "Both",
@@ -7853,11 +10810,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Dustwallow Marsh",
+            "startNpcs": [
+              {
+                "name": "Tabetha",
+                "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dustwallow Marsh"
+              }
+            ],
             "endNpc": "Tabetha",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6546/tabetha",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Dustwallow Marsh",
+            "endNpcs": [
+              {
+                "name": "Tabetha",
+                "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dustwallow Marsh"
+              }
+            ],
             "levels": "40",
             "minLevel": 35,
             "faction": "Both",
@@ -7897,11 +10872,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Dustwallow Marsh",
+            "startNpcs": [
+              {
+                "name": "Tabetha",
+                "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dustwallow Marsh"
+              }
+            ],
             "endNpc": "Tabetha",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6546/tabetha",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Dustwallow Marsh",
+            "endNpcs": [
+              {
+                "name": "Tabetha",
+                "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dustwallow Marsh"
+              }
+            ],
             "levels": "40",
             "minLevel": 35,
             "faction": "Both",
@@ -7975,11 +10968,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Uldaman",
+        "startNpcs": [
+          {
+            "name": "The Discs of Norgannon",
+            "link": "https://www.wowhead.com/classic/object=131474/the-discs-of-norgannon",
+            "faction": "",
+            "type": "object",
+            "loc": "Uldaman"
+          }
+        ],
         "endNpc": "",
         "endNpcLink": "",
         "endObject": "The Discs of Norgannon",
         "endObjectLink": "https://www.wowhead.com/classic/object=131474/the-discs-of-norgannon",
         "endLoc": "Uldaman",
+        "endNpcs": [
+          {
+            "name": "The Discs of Norgannon",
+            "link": "https://www.wowhead.com/classic/object=131474/the-discs-of-norgannon",
+            "faction": "",
+            "type": "object",
+            "loc": "Uldaman"
+          }
+        ],
         "levels": "47",
         "minLevel": 40,
         "faction": "Both",
@@ -8127,11 +11138,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Thousand Needles",
+        "startNpcs": [
+          {
+            "name": "Pozzik",
+            "link": "https://www.wowhead.com/classic/npc=4630/pozzik",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thousand Needles"
+          }
+        ],
         "endNpc": "Pozzik",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4630/pozzik",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Thousand Needles",
+        "endNpcs": [
+          {
+            "name": "Pozzik",
+            "link": "https://www.wowhead.com/classic/npc=4630/pozzik",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thousand Needles"
+          }
+        ],
         "levels": "42",
         "minLevel": 29,
         "faction": "Both",
@@ -8159,11 +11188,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thousand Needles",
+            "startNpcs": [
+              {
+                "name": "Fizzle Brassbolts",
+                "link": "https://www.wowhead.com/classic/npc=4454/fizzle-brassbolts",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "endNpc": "Martek the Exiled",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4618/martek-the-exiled",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Martek the Exiled",
+                "link": "https://www.wowhead.com/classic/npc=4618/martek-the-exiled",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "levels": "35",
             "minLevel": 26,
             "faction": "Both",
@@ -8201,11 +11248,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Martek the Exiled",
+                "link": "https://www.wowhead.com/classic/npc=4618/martek-the-exiled",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Martek the Exiled",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4618/martek-the-exiled",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Martek the Exiled",
+                "link": "https://www.wowhead.com/classic/npc=4618/martek-the-exiled",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "levels": "39",
             "minLevel": 28,
             "faction": "Both",
@@ -8243,11 +11308,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Martek the Exiled",
+                "link": "https://www.wowhead.com/classic/npc=4618/martek-the-exiled",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
             "endNpc": "Fizzle Brassbolts",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4454/fizzle-brassbolts",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Thousand Needles",
+            "endNpcs": [
+              {
+                "name": "Fizzle Brassbolts",
+                "link": "https://www.wowhead.com/classic/npc=4454/fizzle-brassbolts",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "levels": "38",
             "minLevel": 28,
             "faction": "Both",
@@ -8299,11 +11382,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thousand Needles",
+            "startNpcs": [
+              {
+                "name": "Pozzik",
+                "link": "https://www.wowhead.com/classic/npc=4630/pozzik",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "endNpc": "",
             "endNpcLink": "",
             "endObject": "Rizzle's Unguarded Plans",
             "endObjectLink": "https://www.wowhead.com/classic/object=20805/rizzle-s-unguarded-plans",
             "endLoc": "Thousand Needles",
+            "endNpcs": [
+              {
+                "name": "Rizzle's Unguarded Plans",
+                "link": "https://www.wowhead.com/classic/object=20805/rizzle-s-unguarded-plans",
+                "faction": "",
+                "type": "object",
+                "loc": "Thousand Needles"
+              }
+            ],
             "levels": "41",
             "minLevel": 29,
             "faction": "Both",
@@ -8347,11 +11448,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thousand Needles",
+            "startNpcs": [
+              {
+                "name": "Rizzle's Unguarded Plans",
+                "link": "https://www.wowhead.com/classic/object=20805/rizzle-s-unguarded-plans",
+                "faction": "",
+                "type": "object",
+                "loc": "Thousand Needles"
+              }
+            ],
             "endNpc": "Pozzik",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4630/pozzik",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Thousand Needles",
+            "endNpcs": [
+              {
+                "name": "Pozzik",
+                "link": "https://www.wowhead.com/classic/npc=4630/pozzik",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "levels": "41",
             "minLevel": 29,
             "faction": "Both",
@@ -8390,6 +11509,7 @@ const DUNGEONS = [
     "levels": "44–54",
     "location": "Tanaris",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-zulfarrak-dungeon-quests",
+    "schema": 2,
     "quests": [
       {
         "id": 3042,
@@ -8408,11 +11528,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Tanaris",
+        "startNpcs": [
+          {
+            "name": "Trenton Lighthammer",
+            "link": "https://www.wowhead.com/classic/npc=7804/trenton-lighthammer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "endNpc": "Trenton Lighthammer",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7804/trenton-lighthammer",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Tanaris",
+        "endNpcs": [
+          {
+            "name": "Trenton Lighthammer",
+            "link": "https://www.wowhead.com/classic/npc=7804/trenton-lighthammer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "levels": "45",
         "minLevel": 40,
         "faction": "Both",
@@ -8424,53 +11562,20 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 2864,
-        "name": "Tran'rek",
-        "questLink": "https://www.wowhead.com/classic/quest=2864/tran-rek",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 2865,
-        "chainId": 2864,
-        "chainDepth": 0,
-        "startNpc": "Krazek",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=773/krazek",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Stranglethorn Vale",
-        "endNpc": "Tran'rek",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=7876/tran-rek",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "45",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 390,
-        "money": 240,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 2865,
         "name": "Scarab Shells",
         "questLink": "https://www.wowhead.com/classic/quest=2865/scarab-shells",
-        "prequest": "Tran'rek",
-        "prequestLink": "https://www.wowhead.com/classic/quest=2864/tran-rek",
-        "prevQuestId": 2864,
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 2864,
-        "chainDepth": 1,
+        "chainId": null,
+        "chainDepth": 0,
         "startNpc": "Tran'rek",
         "startNpcLink": "https://www.wowhead.com/classic/npc=7876/tran-rek",
         "startObject": "",
@@ -8478,11 +11583,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Tanaris",
+        "startNpcs": [
+          {
+            "name": "Tran'rek",
+            "link": "https://www.wowhead.com/classic/npc=7876/tran-rek",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "endNpc": "Tran'rek",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7876/tran-rek",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Tanaris",
+        "endNpcs": [
+          {
+            "name": "Tran'rek",
+            "link": "https://www.wowhead.com/classic/npc=7876/tran-rek",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "levels": "45",
         "minLevel": 40,
         "faction": "Both",
@@ -8492,20 +11615,78 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 2864,
+            "name": "Tran'rek",
+            "questLink": "https://www.wowhead.com/classic/quest=2864/tran-rek",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 2865,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Krazek",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=773/krazek",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Stranglethorn Vale",
+            "startNpcs": [
+              {
+                "name": "Krazek",
+                "link": "https://www.wowhead.com/classic/npc=773/krazek",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stranglethorn Vale"
+              }
+            ],
+            "endNpc": "Tran'rek",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=7876/tran-rek",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Tran'rek",
+                "link": "https://www.wowhead.com/classic/npc=7876/tran-rek",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "45",
+            "minLevel": 40,
+            "faction": "Both",
+            "xp": 390,
+            "money": 240,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "optional",
+            "series": null
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 2846,
         "name": "Tiara of the Deep",
         "questLink": "https://www.wowhead.com/classic/quest=2846/tiara-of-the-deep",
-        "prequest": "Tabetha's Task",
-        "prequestLink": "https://www.wowhead.com/classic/quest=2861/tabetha-s-task",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 2861,
         "nextQuestId": null,
-        "chainId": 2846,
-        "chainDepth": 0,
+        "chainId": "zf-2861-tabetha-s-task",
+        "chainDepth": 1,
         "startNpc": "Tabetha",
         "startNpcLink": "https://www.wowhead.com/classic/npc=6546/tabetha",
         "startObject": "",
@@ -8513,11 +11694,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dustwallow Marsh",
+        "startNpcs": [
+          {
+            "name": "Tabetha",
+            "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
         "endNpc": "Tabetha",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6546/tabetha",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dustwallow Marsh",
+        "endNpcs": [
+          {
+            "name": "Tabetha",
+            "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
         "levels": "46",
         "minLevel": 40,
         "faction": "Both",
@@ -8551,18 +11750,57 @@ const DUNGEONS = [
             "nextQuestId": 2846,
             "chainId": null,
             "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
+            "startNpc": "Anastasia Hartwell",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=4568/anastasia-hartwell",
             "startObject": "",
             "startObjectLink": "",
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Undercity",
+            "startNpcs": [
+              {
+                "name": "Anastasia Hartwell",
+                "link": "https://www.wowhead.com/classic/npc=4568/anastasia-hartwell",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Undercity"
+              },
+              {
+                "name": "Bink",
+                "link": "https://www.wowhead.com/classic/npc=5144/bink",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Ironforge"
+              },
+              {
+                "name": "Jennea Cannon",
+                "link": "https://www.wowhead.com/classic/npc=5497/jennea-cannon",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Stormwind City"
+              },
+              {
+                "name": "Deino",
+                "link": "https://www.wowhead.com/classic/npc=5885/deino",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
+            ],
             "endNpc": "Tabetha",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6546/tabetha",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Dustwallow Marsh",
+            "endNpcs": [
+              {
+                "name": "Tabetha",
+                "link": "https://www.wowhead.com/classic/npc=6546/tabetha",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dustwallow Marsh"
+              }
+            ],
             "levels": "46",
             "minLevel": 40,
             "faction": "Both",
@@ -8575,11 +11813,24 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "zf-2861-tabetha-s-task",
+              "index": 1,
+              "total": 2,
+              "name": "Tabetha's Task"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "zf-2861-tabetha-s-task",
+          "index": 2,
+          "total": 2,
+          "name": "Tabetha's Task"
+        }
       },
       {
         "id": 2768,
@@ -8598,11 +11849,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Tanaris",
+        "startNpcs": [
+          {
+            "name": "Chief Engineer Bilgewhizzle",
+            "link": "https://www.wowhead.com/classic/npc=7407/chief-engineer-bilgewhizzle",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "endNpc": "Chief Engineer Bilgewhizzle",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7407/chief-engineer-bilgewhizzle",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Tanaris",
+        "endNpcs": [
+          {
+            "name": "Chief Engineer Bilgewhizzle",
+            "link": "https://www.wowhead.com/classic/npc=7407/chief-engineer-bilgewhizzle",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "levels": "47",
         "minLevel": 40,
         "faction": "Both",
@@ -8627,17 +11896,19 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 2770,
         "name": "Gahz'rilla",
         "questLink": "https://www.wowhead.com/classic/quest=2770/gahz-rilla",
-        "prequest": "The Brassbolts Brothers",
-        "prequestLink": "https://www.wowhead.com/classic/quest=2769/the-brassbolts-brothers",
-        "prevQuestId": 2769,
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 2770,
+        "chainId": null,
         "chainDepth": 0,
         "startNpc": "Wizzle Brassbolts",
         "startNpcLink": "https://www.wowhead.com/classic/npc=4453/wizzle-brassbolts",
@@ -8646,11 +11917,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Thousand Needles",
+        "startNpcs": [
+          {
+            "name": "Wizzle Brassbolts",
+            "link": "https://www.wowhead.com/classic/npc=4453/wizzle-brassbolts",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thousand Needles"
+          }
+        ],
         "endNpc": "Wizzle Brassbolts",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4453/wizzle-brassbolts",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Thousand Needles",
+        "endNpcs": [
+          {
+            "name": "Wizzle Brassbolts",
+            "link": "https://www.wowhead.com/classic/npc=4453/wizzle-brassbolts",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thousand Needles"
+          }
+        ],
         "levels": "50",
         "minLevel": 40,
         "faction": "Both",
@@ -8685,11 +11974,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Klockmort Spannerspan",
+                "link": "https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Wizzle Brassbolts",
             "endNpcLink": "https://www.wowhead.com/classic/npc=4453/wizzle-brassbolts",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Thousand Needles",
+            "endNpcs": [
+              {
+                "name": "Wizzle Brassbolts",
+                "link": "https://www.wowhead.com/classic/npc=4453/wizzle-brassbolts",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thousand Needles"
+              }
+            ],
             "levels": "46",
             "minLevel": 40,
             "faction": "Alliance",
@@ -8702,56 +12009,24 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "optional",
+            "series": null
           }
         ],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3520,
-        "name": "Screecher Spirits",
-        "questLink": "https://www.wowhead.com/classic/quest=3520/screecher-spirits",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 3527,
-        "chainId": 3520,
-        "chainDepth": 0,
-        "startNpc": "Yeh'kinya",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Yeh'kinya",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "44",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 3750,
-        "money": 2280,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 3527,
         "name": "The Prophecy of Mosh'aru",
         "questLink": "https://www.wowhead.com/classic/quest=3527/the-prophecy-of-mosh-aru",
-        "prequest": "Screecher Spirits",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3520/screecher-spirits",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 3520,
         "nextQuestId": 4787,
-        "chainId": 3520,
+        "chainId": "zf-3520-screecher-spirits",
         "chainDepth": 1,
         "startNpc": "Yeh'kinya",
         "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
@@ -8760,11 +12035,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Tanaris",
+        "startNpcs": [
+          {
+            "name": "Yeh'kinya",
+            "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "endNpc": "Yeh'kinya",
         "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Tanaris",
+        "endNpcs": [
+          {
+            "name": "Yeh'kinya",
+            "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "levels": "47",
         "minLevel": 40,
         "faction": "Both",
@@ -8774,31 +12067,155 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 3520,
+            "name": "Screecher Spirits",
+            "questLink": "https://www.wowhead.com/classic/quest=3520/screecher-spirits",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 3527,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Yeh'kinya",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Yeh'kinya",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "44",
+            "minLevel": 40,
+            "faction": "Both",
+            "xp": 3750,
+            "money": 2280,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "zf-3520-screecher-spirits",
+              "index": 1,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          }
+        ],
         "postChain": [
           {
             "id": 4787,
             "name": "The Ancient Egg",
-            "url": "https://www.wowhead.com/classic/quest=4787/the-ancient-egg"
+            "url": "https://www.wowhead.com/classic/quest=4787/the-ancient-egg",
+            "series": {
+              "id": "zf-3520-screecher-spirits",
+              "index": 3,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
           },
           {
             "id": 3528,
             "name": "The God Hakkar",
-            "url": "https://www.wowhead.com/classic/quest=3528/the-god-hakkar"
+            "url": "https://www.wowhead.com/classic/quest=3528/the-god-hakkar",
+            "series": {
+              "id": "zf-3520-screecher-spirits",
+              "index": 4,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 5065,
+            "name": "The Lost Tablets of Mosh'aru",
+            "url": "https://www.wowhead.com/classic/quest=5065/the-lost-tablets-of-mosh-aru",
+            "series": {
+              "id": "zf-3520-screecher-spirits",
+              "index": 5,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 4788,
+            "name": "The Final Tablets",
+            "url": "https://www.wowhead.com/classic/quest=4788/the-final-tablets",
+            "series": {
+              "id": "zf-3520-screecher-spirits",
+              "index": 6,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 8181,
+            "name": "Confront Yeh'kinya",
+            "url": "https://www.wowhead.com/classic/quest=8181/confront-yeh-kinya",
+            "series": {
+              "id": "zf-3520-screecher-spirits",
+              "index": 7,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 8182,
+            "name": "The Hand of Rastakhan",
+            "url": "https://www.wowhead.com/classic/quest=8182/the-hand-of-rastakhan",
+            "series": {
+              "id": "zf-3520-screecher-spirits",
+              "index": 8,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
           }
         ],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "zf-3520-screecher-spirits",
+          "index": 2,
+          "total": 8,
+          "name": "Screecher Spirits"
+        }
       },
       {
         "id": 2991,
         "name": "Nekrum's Medallion",
         "questLink": "https://www.wowhead.com/classic/quest=2991/nekrum-s-medallion",
-        "prequest": "Thadius Grimshade",
-        "prequestLink": "https://www.wowhead.com/classic/quest=2990/thadius-grimshade",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 2990,
         "nextQuestId": 2992,
-        "chainId": 2991,
-        "chainDepth": 0,
+        "chainId": "zf-2988-witherbark-cages",
+        "chainDepth": 3,
         "startNpc": "Thadius Grimshade",
         "startNpcLink": "https://www.wowhead.com/classic/npc=8022/thadius-grimshade",
         "startObject": "",
@@ -8806,11 +12223,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Blasted Lands",
+        "startNpcs": [
+          {
+            "name": "Thadius Grimshade",
+            "link": "https://www.wowhead.com/classic/npc=8022/thadius-grimshade",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blasted Lands"
+          }
+        ],
         "endNpc": "Thadius Grimshade",
         "endNpcLink": "https://www.wowhead.com/classic/npc=8022/thadius-grimshade",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Blasted Lands",
+        "endNpcs": [
+          {
+            "name": "Thadius Grimshade",
+            "link": "https://www.wowhead.com/classic/npc=8022/thadius-grimshade",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blasted Lands"
+          }
+        ],
         "levels": "47",
         "minLevel": 40,
         "faction": "Alliance",
@@ -8838,11 +12273,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "The Hinterlands",
+            "startNpcs": [
+              {
+                "name": "Gryphon Master Talonaxe",
+                "link": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
             "endNpc": "Gryphon Master Talonaxe",
             "endNpcLink": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "The Hinterlands",
+            "endNpcs": [
+              {
+                "name": "Gryphon Master Talonaxe",
+                "link": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
             "levels": "45",
             "minLevel": 40,
             "faction": "Alliance",
@@ -8855,7 +12308,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "zf-2988-witherbark-cages",
+              "index": 1,
+              "total": 7,
+              "name": "Witherbark Cages"
+            }
           },
           {
             "id": 2989,
@@ -8874,11 +12333,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "The Hinterlands",
+            "startNpcs": [
+              {
+                "name": "Gryphon Master Talonaxe",
+                "link": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
             "endNpc": "Gryphon Master Talonaxe",
             "endNpcLink": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "The Hinterlands",
+            "endNpcs": [
+              {
+                "name": "Gryphon Master Talonaxe",
+                "link": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
             "levels": "48",
             "minLevel": 40,
             "faction": "Alliance",
@@ -8891,7 +12368,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "zf-2988-witherbark-cages",
+              "index": 2,
+              "total": 7,
+              "name": "Witherbark Cages"
+            }
           },
           {
             "id": 2990,
@@ -8910,11 +12393,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "The Hinterlands",
+            "startNpcs": [
+              {
+                "name": "Gryphon Master Talonaxe",
+                "link": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
             "endNpc": "Thadius Grimshade",
             "endNpcLink": "https://www.wowhead.com/classic/npc=8022/thadius-grimshade",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Blasted Lands",
+            "endNpcs": [
+              {
+                "name": "Thadius Grimshade",
+                "link": "https://www.wowhead.com/classic/npc=8022/thadius-grimshade",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blasted Lands"
+              }
+            ],
             "levels": "47",
             "minLevel": 40,
             "faction": "Alliance",
@@ -8927,84 +12428,72 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "zf-2988-witherbark-cages",
+              "index": 3,
+              "total": 7,
+              "name": "Witherbark Cages"
+            }
           }
         ],
         "postChain": [
           {
             "id": 2992,
             "name": "The Divination",
-            "url": "https://www.wowhead.com/classic/quest=2992/the-divination"
+            "url": "https://www.wowhead.com/classic/quest=2992/the-divination",
+            "series": {
+              "id": "zf-2988-witherbark-cages",
+              "index": 5,
+              "total": 7,
+              "name": "Witherbark Cages"
+            },
+            "faction": "Alliance"
           },
           {
             "id": 2993,
             "name": "Return to the Hinterlands",
-            "url": "https://www.wowhead.com/classic/quest=2993/return-to-the-hinterlands"
+            "url": "https://www.wowhead.com/classic/quest=2993/return-to-the-hinterlands",
+            "series": {
+              "id": "zf-2988-witherbark-cages",
+              "index": 6,
+              "total": 7,
+              "name": "Witherbark Cages"
+            },
+            "faction": "Alliance"
           },
           {
             "id": 2994,
             "name": "Saving Sharpbeak",
-            "url": "https://www.wowhead.com/classic/quest=2994/saving-sharpbeak"
+            "url": "https://www.wowhead.com/classic/quest=2994/saving-sharpbeak",
+            "series": {
+              "id": "zf-2988-witherbark-cages",
+              "index": 7,
+              "total": 7,
+              "name": "Witherbark Cages"
+            },
+            "faction": "Alliance"
           }
         ],
-        "absorbedBy": null
-      },
-      {
-        "id": 2988,
-        "name": "Witherbark Cages",
-        "questLink": "https://www.wowhead.com/classic/quest=2988/witherbark-cages",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 2989,
-        "chainId": null,
-        "chainDepth": 0,
-        "startNpc": "Gryphon Master Talonaxe",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "The Hinterlands",
-        "endNpc": "Gryphon Master Talonaxe",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "The Hinterlands",
-        "levels": "45",
-        "minLevel": 40,
-        "faction": "Alliance",
-        "xp": 3900,
-        "money": 2340,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [
-          {
-            "id": 2989,
-            "name": "The Altar of Zul",
-            "url": "https://www.wowhead.com/classic/quest=2989/the-altar-of-zul"
-          },
-          {
-            "id": 2990,
-            "name": "Thadius Grimshade",
-            "url": "https://www.wowhead.com/classic/quest=2990/thadius-grimshade"
-          }
-        ],
-        "absorbedBy": 2991
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "zf-2988-witherbark-cages",
+          "index": 4,
+          "total": 7,
+          "name": "Witherbark Cages"
+        }
       },
       {
         "id": 2936,
         "name": "The Spider God",
         "questLink": "https://www.wowhead.com/classic/quest=2936/the-spider-god",
-        "prequest": "Consult Master Gadrin",
-        "prequestLink": "https://www.wowhead.com/classic/quest=2935/consult-master-gadrin",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 2935,
         "nextQuestId": 2937,
-        "chainId": 2936,
-        "chainDepth": 0,
+        "chainId": "zf-2933-venom-bottles",
+        "chainDepth": 3,
         "startNpc": "Master Gadrin",
         "startNpcLink": "https://www.wowhead.com/classic/npc=3188/master-gadrin",
         "startObject": "",
@@ -9012,11 +12501,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Durotar",
+        "startNpcs": [
+          {
+            "name": "Master Gadrin",
+            "link": "https://www.wowhead.com/classic/npc=3188/master-gadrin",
+            "faction": "",
+            "type": "npc",
+            "loc": "Durotar"
+          }
+        ],
         "endNpc": "Master Gadrin",
         "endNpcLink": "https://www.wowhead.com/classic/npc=3188/master-gadrin",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Durotar",
+        "endNpcs": [
+          {
+            "name": "Master Gadrin",
+            "link": "https://www.wowhead.com/classic/npc=3188/master-gadrin",
+            "faction": "",
+            "type": "npc",
+            "loc": "Durotar"
+          }
+        ],
         "levels": "45",
         "minLevel": 40,
         "faction": "Horde",
@@ -9044,11 +12551,106 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "The Hinterlands",
+            "startNpcs": [
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142702/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142703/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142704/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142705/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142706/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142707/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142708/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142710/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142711/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142712/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142713/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              },
+              {
+                "name": "Venom Bottle",
+                "link": "https://www.wowhead.com/classic/object=142714/venom-bottle",
+                "faction": "",
+                "type": "object",
+                "loc": "The Hinterlands"
+              }
+            ],
             "endNpc": "Apothecary Lydon",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2216/apothecary-lydon",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Hillsbrad Foothills",
+            "endNpcs": [
+              {
+                "name": "Apothecary Lydon",
+                "link": "https://www.wowhead.com/classic/npc=2216/apothecary-lydon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Hillsbrad Foothills"
+              }
+            ],
             "levels": "43",
             "minLevel": 40,
             "faction": "Horde",
@@ -9061,7 +12663,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "zf-2933-venom-bottles",
+              "index": 1,
+              "total": 6,
+              "name": "Venom Bottles"
+            }
           },
           {
             "id": 2934,
@@ -9080,11 +12688,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Hillsbrad Foothills",
+            "startNpcs": [
+              {
+                "name": "Apothecary Lydon",
+                "link": "https://www.wowhead.com/classic/npc=2216/apothecary-lydon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Hillsbrad Foothills"
+              }
+            ],
             "endNpc": "Apothecary Lydon",
             "endNpcLink": "https://www.wowhead.com/classic/npc=2216/apothecary-lydon",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Hillsbrad Foothills",
+            "endNpcs": [
+              {
+                "name": "Apothecary Lydon",
+                "link": "https://www.wowhead.com/classic/npc=2216/apothecary-lydon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Hillsbrad Foothills"
+              }
+            ],
             "levels": "45",
             "minLevel": 40,
             "faction": "Horde",
@@ -9097,7 +12723,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "zf-2933-venom-bottles",
+              "index": 2,
+              "total": 6,
+              "name": "Venom Bottles"
+            }
           },
           {
             "id": 2935,
@@ -9116,11 +12748,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Hillsbrad Foothills",
+            "startNpcs": [
+              {
+                "name": "Apothecary Lydon",
+                "link": "https://www.wowhead.com/classic/npc=2216/apothecary-lydon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Hillsbrad Foothills"
+              }
+            ],
             "endNpc": "Master Gadrin",
             "endNpcLink": "https://www.wowhead.com/classic/npc=3188/master-gadrin",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Durotar",
+            "endNpcs": [
+              {
+                "name": "Master Gadrin",
+                "link": "https://www.wowhead.com/classic/npc=3188/master-gadrin",
+                "faction": "",
+                "type": "npc",
+                "loc": "Durotar"
+              }
+            ],
             "levels": "45",
             "minLevel": 40,
             "faction": "Horde",
@@ -9133,63 +12783,49 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "zf-2933-venom-bottles",
+              "index": 3,
+              "total": 6,
+              "name": "Venom Bottles"
+            }
           }
         ],
         "postChain": [
           {
             "id": 2937,
             "name": "Summoning Shadra",
-            "url": "https://www.wowhead.com/classic/quest=2937/summoning-shadra"
-          }
-        ],
-        "absorbedBy": null
-      },
-      {
-        "id": 2933,
-        "name": "Venom Bottles",
-        "questLink": "https://www.wowhead.com/classic/quest=2933/venom-bottles",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 2934,
-        "chainId": null,
-        "chainDepth": 0,
-        "startNpc": "",
-        "startNpcLink": "",
-        "startObject": "Venom Bottle",
-        "startObjectLink": "https://www.wowhead.com/classic/object=142702/venom-bottle",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "The Hinterlands",
-        "endNpc": "Apothecary Lydon",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=2216/apothecary-lydon",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Hillsbrad Foothills",
-        "levels": "43",
-        "minLevel": 40,
-        "faction": "Horde",
-        "xp": 3600,
-        "money": 2160,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [
-          {
-            "id": 2934,
-            "name": "Undamaged Venom Sac",
-            "url": "https://www.wowhead.com/classic/quest=2934/undamaged-venom-sac"
+            "url": "https://www.wowhead.com/classic/quest=2937/summoning-shadra",
+            "series": {
+              "id": "zf-2933-venom-bottles",
+              "index": 5,
+              "total": 6,
+              "name": "Venom Bottles"
+            },
+            "faction": "Horde"
           },
           {
-            "id": 2935,
-            "name": "Consult Master Gadrin",
-            "url": "https://www.wowhead.com/classic/quest=2935/consult-master-gadrin"
+            "id": 2938,
+            "name": "Venom to the Undercity",
+            "url": "https://www.wowhead.com/classic/quest=2938/venom-to-the-undercity",
+            "series": {
+              "id": "zf-2933-venom-bottles",
+              "index": 6,
+              "total": 6,
+              "name": "Venom Bottles"
+            },
+            "faction": "Horde"
           }
         ],
-        "absorbedBy": 2936
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "zf-2933-venom-bottles",
+          "index": 4,
+          "total": 6,
+          "name": "Venom Bottles"
+        }
       }
     ]
   },
@@ -9203,6 +12839,7 @@ const DUNGEONS = [
     "levels": "46–55",
     "location": "Desolace",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-maraudon-dungeon-quest",
+    "schema": 2,
     "quests": [
       {
         "id": 7067,
@@ -9221,11 +12858,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Desolace",
+        "startNpcs": [
+          {
+            "name": "Centaur Pariah",
+            "link": "https://www.wowhead.com/classic/npc=13717/centaur-pariah",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "endNpc": "Centaur Pariah",
         "endNpcLink": "https://www.wowhead.com/classic/npc=13717/centaur-pariah",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Desolace",
+        "endNpcs": [
+          {
+            "name": "Centaur Pariah",
+            "link": "https://www.wowhead.com/classic/npc=13717/centaur-pariah",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "levels": "48",
         "minLevel": 39,
         "faction": "Both",
@@ -9244,7 +12899,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7028,
@@ -9263,11 +12920,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Desolace",
+        "startNpcs": [
+          {
+            "name": "Willow",
+            "link": "https://www.wowhead.com/classic/npc=13656/willow",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "endNpc": "Willow",
         "endNpcLink": "https://www.wowhead.com/classic/npc=13656/willow",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Desolace",
+        "endNpcs": [
+          {
+            "name": "Willow",
+            "link": "https://www.wowhead.com/classic/npc=13656/willow",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "levels": "47",
         "minLevel": 41,
         "faction": "Both",
@@ -9304,7 +12979,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7044,
@@ -9323,11 +13000,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "",
+        "startNpcs": [
+          {
+            "name": "Cavindra",
+            "link": "https://www.wowhead.com/classic/npc=13697/cavindra",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          }
+        ],
         "endNpc": "Celebras the Redeemed",
         "endNpcLink": "https://www.wowhead.com/classic/npc=13716/celebras-the-redeemed",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Maraudon",
+        "endNpcs": [
+          {
+            "name": "Celebras the Redeemed",
+            "link": "https://www.wowhead.com/classic/npc=13716/celebras-the-redeemed",
+            "faction": "",
+            "type": "npc",
+            "loc": "Maraudon"
+          }
+        ],
         "levels": "49",
         "minLevel": 41,
         "faction": "Both",
@@ -9339,7 +13034,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7070,
@@ -9358,11 +13055,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dustwallow Marsh",
+        "startNpcs": [
+          {
+            "name": "Archmage Tervosh",
+            "link": "https://www.wowhead.com/classic/npc=4967/archmage-tervosh",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
         "endNpc": "Archmage Tervosh",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4967/archmage-tervosh",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dustwallow Marsh",
+        "endNpcs": [
+          {
+            "name": "Archmage Tervosh",
+            "link": "https://www.wowhead.com/classic/npc=4967/archmage-tervosh",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
         "levels": "42",
         "minLevel": 39,
         "faction": "Alliance",
@@ -9387,7 +13102,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7041,
@@ -9406,11 +13123,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Desolace",
+        "startNpcs": [
+          {
+            "name": "Talendria",
+            "link": "https://www.wowhead.com/classic/npc=11715/talendria",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "endNpc": "Talendria",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11715/talendria",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Desolace",
+        "endNpcs": [
+          {
+            "name": "Talendria",
+            "link": "https://www.wowhead.com/classic/npc=11715/talendria",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "levels": "47",
         "minLevel": 41,
         "faction": "Alliance",
@@ -9441,7 +13176,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7065,
@@ -9460,11 +13197,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Desolace",
+        "startNpcs": [
+          {
+            "name": "Keeper Marandis",
+            "link": "https://www.wowhead.com/classic/npc=13698/keeper-marandis",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "endNpc": "Keeper Marandis",
         "endNpcLink": "https://www.wowhead.com/classic/npc=13698/keeper-marandis",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Desolace",
+        "endNpcs": [
+          {
+            "name": "Keeper Marandis",
+            "link": "https://www.wowhead.com/classic/npc=13698/keeper-marandis",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "levels": "51",
         "minLevel": 45,
         "faction": "Alliance",
@@ -9495,7 +13250,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7068,
@@ -9514,11 +13271,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Uthel'nay",
+            "link": "https://www.wowhead.com/classic/npc=7311/uthel-nay",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "endNpc": "Uthel'nay",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7311/uthel-nay",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Uthel'nay",
+            "link": "https://www.wowhead.com/classic/npc=7311/uthel-nay",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "levels": "42",
         "minLevel": 39,
         "faction": "Horde",
@@ -9543,7 +13318,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7029,
@@ -9562,11 +13339,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Desolace",
+        "startNpcs": [
+          {
+            "name": "Vark Battlescar",
+            "link": "https://www.wowhead.com/classic/npc=11823/vark-battlescar",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "endNpc": "Vark Battlescar",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11823/vark-battlescar",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Desolace",
+        "endNpcs": [
+          {
+            "name": "Vark Battlescar",
+            "link": "https://www.wowhead.com/classic/npc=11823/vark-battlescar",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "levels": "47",
         "minLevel": 41,
         "faction": "Horde",
@@ -9597,7 +13392,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7064,
@@ -9616,11 +13413,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Desolace",
+        "startNpcs": [
+          {
+            "name": "Selendra",
+            "link": "https://www.wowhead.com/classic/npc=13699/selendra",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "endNpc": "Selendra",
         "endNpcLink": "https://www.wowhead.com/classic/npc=13699/selendra",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Desolace",
+        "endNpcs": [
+          {
+            "name": "Selendra",
+            "link": "https://www.wowhead.com/classic/npc=13699/selendra",
+            "faction": "",
+            "type": "npc",
+            "loc": "Desolace"
+          }
+        ],
         "levels": "51",
         "minLevel": 45,
         "faction": "Horde",
@@ -9651,7 +13466,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7046,
@@ -9670,11 +13487,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Maraudon",
+        "startNpcs": [
+          {
+            "name": "Celebras the Redeemed",
+            "link": "https://www.wowhead.com/classic/npc=13716/celebras-the-redeemed",
+            "faction": "",
+            "type": "npc",
+            "loc": "Maraudon"
+          }
+        ],
         "endNpc": "Celebras the Redeemed",
         "endNpcLink": "https://www.wowhead.com/classic/npc=13716/celebras-the-redeemed",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Maraudon",
+        "endNpcs": [
+          {
+            "name": "Celebras the Redeemed",
+            "link": "https://www.wowhead.com/classic/npc=13716/celebras-the-redeemed",
+            "faction": "",
+            "type": "npc",
+            "loc": "Maraudon"
+          }
+        ],
         "levels": "49",
         "minLevel": 41,
         "faction": "Both",
@@ -9693,7 +13528,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7066,
@@ -9712,11 +13549,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Maraudon",
+        "startNpcs": [
+          {
+            "name": "Zaetar's Spirit",
+            "link": "https://www.wowhead.com/classic/npc=12238/zaetar-s-spirit",
+            "faction": "",
+            "type": "npc",
+            "loc": "Maraudon"
+          }
+        ],
         "endNpc": "Keeper Remulos",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11832/keeper-remulos",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Moonglade",
+        "endNpcs": [
+          {
+            "name": "Keeper Remulos",
+            "link": "https://www.wowhead.com/classic/npc=11832/keeper-remulos",
+            "faction": "",
+            "type": "npc",
+            "loc": "Moonglade"
+          }
+        ],
         "levels": "51",
         "minLevel": 39,
         "faction": "Both",
@@ -9728,7 +13583,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       }
     ]
   },
@@ -9742,6 +13599,7 @@ const DUNGEONS = [
     "levels": "50–60",
     "location": "Swamp of Sorrows",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-temple-of-atalhakkar-sunken-temple-dungeon-quests",
+    "schema": 2,
     "quests": [
       {
         "id": 1446,
@@ -9760,11 +13618,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "The Hinterlands",
+        "startNpcs": [
+          {
+            "name": "Atal'ai Exile",
+            "link": "https://www.wowhead.com/classic/npc=5598/atal-ai-exile",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Hinterlands"
+          }
+        ],
         "endNpc": "Atal'ai Exile",
         "endNpcLink": "https://www.wowhead.com/classic/npc=5598/atal-ai-exile",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "The Hinterlands",
+        "endNpcs": [
+          {
+            "name": "Atal'ai Exile",
+            "link": "https://www.wowhead.com/classic/npc=5598/atal-ai-exile",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Hinterlands"
+          }
+        ],
         "levels": "53",
         "minLevel": 38,
         "faction": "Both",
@@ -9789,122 +13665,19 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3520,
-        "name": "Screecher Spirits",
-        "questLink": "https://www.wowhead.com/classic/quest=3520/screecher-spirits",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 3527,
-        "chainId": 3520,
-        "chainDepth": 0,
-        "startNpc": "Yeh'kinya",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Yeh'kinya",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "44",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 3750,
-        "money": 2280,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3527,
-        "name": "The Prophecy of Mosh'aru",
-        "questLink": "https://www.wowhead.com/classic/quest=3527/the-prophecy-of-mosh-aru",
-        "prequest": "Screecher Spirits",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3520/screecher-spirits",
-        "prevQuestId": 3520,
-        "nextQuestId": 4787,
-        "chainId": 3520,
-        "chainDepth": 1,
-        "startNpc": "Yeh'kinya",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Yeh'kinya",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "47",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 5250,
-        "money": 3150,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4787,
-        "name": "The Ancient Egg",
-        "questLink": "https://www.wowhead.com/classic/quest=4787/the-ancient-egg",
-        "prequest": "The Prophecy of Mosh'aru",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3527/the-prophecy-of-mosh-aru",
-        "prevQuestId": 3527,
-        "nextQuestId": 3528,
-        "chainId": 3520,
-        "chainDepth": 2,
-        "startNpc": "Yeh'kinya",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Yeh'kinya",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "50",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 5900,
-        "money": 3600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 3528,
         "name": "The God Hakkar",
         "questLink": "https://www.wowhead.com/classic/quest=3528/the-god-hakkar",
-        "prequest": "The Ancient Egg",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4787/the-ancient-egg",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4787,
-        "nextQuestId": null,
-        "chainId": 3520,
+        "nextQuestId": 5065,
+        "chainId": "st-3520-screecher-spirits",
         "chainDepth": 3,
         "startNpc": "Yeh'kinya",
         "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
@@ -9913,11 +13686,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Tanaris",
+        "startNpcs": [
+          {
+            "name": "Yeh'kinya",
+            "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "endNpc": "Yeh'kinya",
         "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Tanaris",
+        "endNpcs": [
+          {
+            "name": "Yeh'kinya",
+            "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "levels": "53",
         "minLevel": 40,
         "faction": "Both",
@@ -9946,89 +13737,252 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "preChain": [
+          {
+            "id": 3520,
+            "name": "Screecher Spirits",
+            "questLink": "https://www.wowhead.com/classic/quest=3520/screecher-spirits",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 3527,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Yeh'kinya",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Yeh'kinya",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "44",
+            "minLevel": 40,
+            "faction": "Both",
+            "xp": 3750,
+            "money": 2280,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-3520-screecher-spirits",
+              "index": 1,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 3527,
+            "name": "The Prophecy of Mosh'aru",
+            "questLink": "https://www.wowhead.com/classic/quest=3527/the-prophecy-of-mosh-aru",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3520,
+            "nextQuestId": 4787,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Yeh'kinya",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Yeh'kinya",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "47",
+            "minLevel": 40,
+            "faction": "Both",
+            "xp": 5250,
+            "money": 3150,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-3520-screecher-spirits",
+              "index": 2,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 4787,
+            "name": "The Ancient Egg",
+            "questLink": "https://www.wowhead.com/classic/quest=4787/the-ancient-egg",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3527,
+            "nextQuestId": 3528,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Yeh'kinya",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Yeh'kinya",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "50",
+            "minLevel": 40,
+            "faction": "Both",
+            "xp": 5900,
+            "money": 3600,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-3520-screecher-spirits",
+              "index": 3,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          }
+        ],
+        "postChain": [
+          {
+            "id": 5065,
+            "name": "The Lost Tablets of Mosh'aru",
+            "url": "https://www.wowhead.com/classic/quest=5065/the-lost-tablets-of-mosh-aru",
+            "series": {
+              "id": "st-3520-screecher-spirits",
+              "index": 5,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 4788,
+            "name": "The Final Tablets",
+            "url": "https://www.wowhead.com/classic/quest=4788/the-final-tablets",
+            "series": {
+              "id": "st-3520-screecher-spirits",
+              "index": 6,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 8181,
+            "name": "Confront Yeh'kinya",
+            "url": "https://www.wowhead.com/classic/quest=8181/confront-yeh-kinya",
+            "series": {
+              "id": "st-3520-screecher-spirits",
+              "index": 7,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 8182,
+            "name": "The Hand of Rastakhan",
+            "url": "https://www.wowhead.com/classic/quest=8182/the-hand-of-rastakhan",
+            "series": {
+              "id": "st-3520-screecher-spirits",
+              "index": 8,
+              "total": 8,
+              "name": "Screecher Spirits"
+            }
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-3520-screecher-spirits",
+          "index": 4,
+          "total": 8,
+          "name": "Screecher Spirits"
+        }
       },
       {
-        "id": 3445,
-        "name": "The Sunken Temple",
-        "questLink": "https://www.wowhead.com/classic/quest=3445/the-sunken-temple",
+        "id": 3446,
+        "name": "Into the Depths",
+        "questLink": "https://www.wowhead.com/classic/quest=3446/into-the-depths",
         "prequest": "",
         "prequestLink": "",
-        "prevQuestId": null,
+        "prevQuestId": 3444,
         "nextQuestId": null,
-        "chainId": 3380,
-        "chainDepth": 0,
-        "startNpc": "Angelas Moonbreeze",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=7900/angelas-moonbreeze",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Feralas",
-        "endNpc": "Marvon Rivetseeker",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "51",
-        "minLevel": 46,
-        "faction": "Alliance",
-        "xp": 3650,
-        "money": 4350,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3380,
-        "name": "The Sunken Temple",
-        "questLink": "https://www.wowhead.com/classic/quest=3380/the-sunken-temple",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": 3380,
-        "chainDepth": 0,
-        "startNpc": "Witch Doctor Uzer'i",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8115/witch-doctor-uzer-i",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Feralas",
-        "endNpc": "Marvon Rivetseeker",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "51",
-        "minLevel": 46,
-        "faction": "Horde",
-        "xp": 3650,
-        "money": 4350,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3444,
-        "name": "The Stone Circle",
-        "questLink": "https://www.wowhead.com/classic/quest=3444/the-stone-circle",
-        "prequest": "The Sunken Temple",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3380/the-sunken-temple",
-        "prevQuestId": 3380,
-        "nextQuestId": null,
-        "chainId": 3380,
+        "chainId": "st-3444-the-stone-circle",
         "chainDepth": 1,
         "startNpc": "Marvon Rivetseeker",
         "startNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
@@ -10037,46 +13991,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Tanaris",
-        "endNpc": "Marvon Rivetseeker",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "51",
-        "minLevel": 46,
-        "faction": "Both",
-        "xp": 4900,
-        "money": 5850,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3446,
-        "name": "Into the Depths",
-        "questLink": "https://www.wowhead.com/classic/quest=3446/into-the-depths",
-        "prequest": "The Stone Circle",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3444/the-stone-circle",
-        "prevQuestId": 3444,
-        "nextQuestId": null,
-        "chainId": 3380,
-        "chainDepth": 2,
-        "startNpc": "Marvon Rivetseeker",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
+        "startNpcs": [
+          {
+            "name": "Marvon Rivetseeker",
+            "link": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "endNpc": "",
         "endNpcLink": "",
         "endObject": "Altar of Hakkar",
         "endObjectLink": "https://www.wowhead.com/classic/object=148836/altar-of-hakkar",
         "endLoc": "The Temple of Atal'Hakkar",
+        "endNpcs": [
+          {
+            "name": "Altar of Hakkar",
+            "link": "https://www.wowhead.com/classic/object=148836/altar-of-hakkar",
+            "faction": "",
+            "type": "object",
+            "loc": "The Temple of Atal'Hakkar"
+          }
+        ],
         "levels": "51",
         "minLevel": 46,
         "faction": "Both",
@@ -10086,20 +14023,276 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "or": [
+              {
+                "id": 3445,
+                "name": "The Sunken Temple",
+                "questLink": "https://www.wowhead.com/classic/quest=3445/the-sunken-temple",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Angelas Moonbreeze",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=7900/angelas-moonbreeze",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Feralas",
+                "startNpcs": [
+                  {
+                    "name": "Angelas Moonbreeze",
+                    "link": "https://www.wowhead.com/classic/npc=7900/angelas-moonbreeze",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Feralas"
+                  }
+                ],
+                "endNpc": "Marvon Rivetseeker",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Tanaris",
+                "endNpcs": [
+                  {
+                    "name": "Marvon Rivetseeker",
+                    "link": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Tanaris"
+                  }
+                ],
+                "levels": "51",
+                "minLevel": 46,
+                "faction": "Alliance",
+                "xp": 3650,
+                "money": 4350,
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              },
+              {
+                "id": 3380,
+                "name": "The Sunken Temple",
+                "questLink": "https://www.wowhead.com/classic/quest=3380/the-sunken-temple",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Witch Doctor Uzer'i",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=8115/witch-doctor-uzer-i",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Feralas",
+                "startNpcs": [
+                  {
+                    "name": "Witch Doctor Uzer'i",
+                    "link": "https://www.wowhead.com/classic/npc=8115/witch-doctor-uzer-i",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Feralas"
+                  }
+                ],
+                "endNpc": "Marvon Rivetseeker",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Tanaris",
+                "endNpcs": [
+                  {
+                    "name": "Marvon Rivetseeker",
+                    "link": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Tanaris"
+                  }
+                ],
+                "levels": "51",
+                "minLevel": 46,
+                "faction": "Horde",
+                "xp": 3650,
+                "money": 4350,
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              }
+            ],
+            "relation": "requires"
+          },
+          {
+            "id": 3444,
+            "name": "The Stone Circle",
+            "questLink": "https://www.wowhead.com/classic/quest=3444/the-stone-circle",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3380,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Marvon Rivetseeker",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Marvon Rivetseeker",
+                "link": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Marvon Rivetseeker",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Marvon Rivetseeker",
+                "link": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "51",
+            "minLevel": 46,
+            "faction": "Both",
+            "xp": 4900,
+            "money": 5850,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-3444-the-stone-circle",
+              "index": 1,
+              "total": 2,
+              "name": "The Stone Circle"
+            },
+            "requires": [
+              {
+                "type": "or",
+                "ids": [
+                  3445,
+                  3380
+                ]
+              }
+            ]
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-3444-the-stone-circle",
+          "index": 2,
+          "total": 2,
+          "name": "The Stone Circle"
+        },
+        "alsoUnlocks": [
+          {
+            "id": 3447,
+            "name": "Secret of the Circle",
+            "questLink": "https://www.wowhead.com/classic/quest=3447/secret-of-the-circle",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Marvon Rivetseeker",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Marvon Rivetseeker",
+                "link": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "",
+            "endNpcLink": "",
+            "endObject": "Idol of Hakkar",
+            "endObjectLink": "https://www.wowhead.com/classic/object=148838/idol-of-hakkar",
+            "endLoc": "The Temple of Atal'Hakkar",
+            "endNpcs": [
+              {
+                "name": "Idol of Hakkar",
+                "link": "https://www.wowhead.com/classic/object=148838/idol-of-hakkar",
+                "faction": "",
+                "type": "object",
+                "loc": "The Temple of Atal'Hakkar"
+              }
+            ],
+            "levels": "51",
+            "minLevel": 46,
+            "faction": "Both",
+            "xp": 6100,
+            "money": 7200,
+            "rewards": [
+              {
+                "id": 10773,
+                "name": "Hakkari Urn",
+                "url": "https://www.wowhead.com/classic/item=10773/hakkari-urn",
+                "quality": 2
+              }
+            ],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "isDungeon": true,
+            "series": null
+          }
+        ]
       },
       {
         "id": 3447,
         "name": "Secret of the Circle",
         "questLink": "https://www.wowhead.com/classic/quest=3447/secret-of-the-circle",
-        "prequest": "The Stone Circle",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3444/the-stone-circle",
-        "prevQuestId": 3444,
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 3380,
-        "chainDepth": 2,
+        "chainId": null,
+        "chainDepth": 0,
         "startNpc": "Marvon Rivetseeker",
         "startNpcLink": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
         "startObject": "",
@@ -10107,11 +14300,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Tanaris",
+        "startNpcs": [
+          {
+            "name": "Marvon Rivetseeker",
+            "link": "https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
         "endNpc": "",
         "endNpcLink": "",
         "endObject": "Idol of Hakkar",
         "endObjectLink": "https://www.wowhead.com/classic/object=148838/idol-of-hakkar",
         "endLoc": "The Temple of Atal'Hakkar",
+        "endNpcs": [
+          {
+            "name": "Idol of Hakkar",
+            "link": "https://www.wowhead.com/classic/object=148838/idol-of-hakkar",
+            "faction": "",
+            "type": "object",
+            "loc": "The Temple of Atal'Hakkar"
+          }
+        ],
         "levels": "51",
         "minLevel": 46,
         "faction": "Both",
@@ -10130,52 +14341,19 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": 3446,
+        "isDungeon": true,
+        "series": null
       },
       {
-        "id": 1448,
-        "name": "In Search of The Temple",
-        "questLink": "https://www.wowhead.com/classic/quest=1448/in-search-of-the-temple",
+        "id": 1475,
+        "name": "Into The Temple of Atal'Hakkar",
+        "questLink": "https://www.wowhead.com/classic/quest=1475/into-the-temple-of-atal-hakkar",
         "prequest": "",
         "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 1449,
-        "chainId": 1448,
-        "chainDepth": 0,
-        "startNpc": "Brohann Caskbelly",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Stormwind City",
-        "endNpc": "Brohann Caskbelly",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Stormwind City",
-        "levels": "43",
-        "minLevel": 38,
-        "faction": "Alliance",
-        "xp": 3600,
-        "money": 2160,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 1449,
-        "name": "To The Hinterlands",
-        "questLink": "https://www.wowhead.com/classic/quest=1449/to-the-hinterlands",
-        "prequest": "In Search of The Temple",
-        "prequestLink": "https://www.wowhead.com/classic/quest=1448/in-search-of-the-temple",
-        "prevQuestId": 1448,
-        "nextQuestId": 1450,
-        "chainId": 1448,
+        "prevQuestId": 1469,
+        "nextQuestId": null,
+        "chainId": "st-1469-rhapsody-s-tale",
         "chainDepth": 1,
         "startNpc": "Brohann Caskbelly",
         "startNpcLink": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
@@ -10184,186 +14362,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stormwind City",
-        "endNpc": "Falstad Wildhammer",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=5635/falstad-wildhammer",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "The Hinterlands",
-        "levels": "43",
-        "minLevel": 38,
-        "faction": "Alliance",
-        "xp": 1800,
-        "money": 1080,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 1450,
-        "name": "Gryphon Master Talonaxe",
-        "questLink": "https://www.wowhead.com/classic/quest=1450/gryphon-master-talonaxe",
-        "prequest": "To The Hinterlands",
-        "prequestLink": "https://www.wowhead.com/classic/quest=1449/to-the-hinterlands",
-        "prevQuestId": 1449,
-        "nextQuestId": 1451,
-        "chainId": 1448,
-        "chainDepth": 2,
-        "startNpc": "Falstad Wildhammer",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=5635/falstad-wildhammer",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "The Hinterlands",
-        "endNpc": "Gryphon Master Talonaxe",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "The Hinterlands",
-        "levels": "43",
-        "minLevel": 38,
-        "faction": "Alliance",
-        "xp": 890,
-        "money": 540,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 1451,
-        "name": "Rhapsody Shindigger",
-        "questLink": "https://www.wowhead.com/classic/quest=1451/rhapsody-shindigger",
-        "prequest": "Gryphon Master Talonaxe",
-        "prequestLink": "https://www.wowhead.com/classic/quest=1450/gryphon-master-talonaxe",
-        "prevQuestId": 1450,
-        "nextQuestId": 1452,
-        "chainId": 1448,
-        "chainDepth": 3,
-        "startNpc": "Gryphon Master Talonaxe",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "The Hinterlands",
-        "endNpc": "Rhapsody Shindigger",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "The Hinterlands",
-        "levels": "43",
-        "minLevel": 38,
-        "faction": "Alliance",
-        "xp": 1800,
-        "money": 1080,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 1452,
-        "name": "Rhapsody's Kalimdor Kocktail",
-        "questLink": "https://www.wowhead.com/classic/quest=1452/rhapsody-s-kalimdor-kocktail",
-        "prequest": "Rhapsody Shindigger",
-        "prequestLink": "https://www.wowhead.com/classic/quest=1451/rhapsody-shindigger",
-        "prevQuestId": 1451,
-        "nextQuestId": null,
-        "chainId": 1448,
-        "chainDepth": 4,
-        "startNpc": "Rhapsody Shindigger",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "The Hinterlands",
-        "endNpc": "Rhapsody Shindigger",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "The Hinterlands",
-        "levels": "43",
-        "minLevel": 38,
-        "faction": "Alliance",
-        "xp": 3600,
-        "money": 2160,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 1469,
-        "name": "Rhapsody's Tale",
-        "questLink": "https://www.wowhead.com/classic/quest=1469/rhapsody-s-tale",
-        "prequest": "Rhapsody's Kalimdor Kocktail",
-        "prequestLink": "https://www.wowhead.com/classic/quest=1452/rhapsody-s-kalimdor-kocktail",
-        "prevQuestId": 1452,
-        "nextQuestId": 1475,
-        "chainId": 1448,
-        "chainDepth": 5,
-        "startNpc": "Rhapsody Shindigger",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "The Hinterlands",
+        "startNpcs": [
+          {
+            "name": "Brohann Caskbelly",
+            "link": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "endNpc": "Brohann Caskbelly",
         "endNpcLink": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stormwind City",
-        "levels": "43",
-        "minLevel": 38,
-        "faction": "Alliance",
-        "xp": 2700,
-        "money": 1620,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 1475,
-        "name": "Into The Temple of Atal'Hakkar",
-        "questLink": "https://www.wowhead.com/classic/quest=1475/into-the-temple-of-atal-hakkar",
-        "prequest": "Rhapsody's Tale",
-        "prequestLink": "https://www.wowhead.com/classic/quest=1469/rhapsody-s-tale",
-        "prevQuestId": 1469,
-        "nextQuestId": null,
-        "chainId": 1448,
-        "chainDepth": 6,
-        "startNpc": "Brohann Caskbelly",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Stormwind City",
-        "endNpc": "Brohann Caskbelly",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Brohann Caskbelly",
+            "link": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
         "levels": "50",
         "minLevel": 38,
         "faction": "Alliance",
@@ -10380,89 +14401,393 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 1448,
+            "name": "In Search of The Temple",
+            "questLink": "https://www.wowhead.com/classic/quest=1448/in-search-of-the-temple",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 1449,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Brohann Caskbelly",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Brohann Caskbelly",
+                "link": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "endNpc": "Brohann Caskbelly",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Brohann Caskbelly",
+                "link": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "levels": "43",
+            "minLevel": 38,
+            "faction": "Alliance",
+            "xp": 3600,
+            "money": 2160,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-1448-in-search-of-the-temple",
+              "index": 1,
+              "total": 5,
+              "name": "In Search of The Temple"
+            }
+          },
+          {
+            "id": 1449,
+            "name": "To The Hinterlands",
+            "questLink": "https://www.wowhead.com/classic/quest=1449/to-the-hinterlands",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 1448,
+            "nextQuestId": 1450,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Brohann Caskbelly",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Brohann Caskbelly",
+                "link": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "endNpc": "Falstad Wildhammer",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=5635/falstad-wildhammer",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "The Hinterlands",
+            "endNpcs": [
+              {
+                "name": "Falstad Wildhammer",
+                "link": "https://www.wowhead.com/classic/npc=5635/falstad-wildhammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
+            "levels": "43",
+            "minLevel": 38,
+            "faction": "Alliance",
+            "xp": 1800,
+            "money": 1080,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-1448-in-search-of-the-temple",
+              "index": 2,
+              "total": 5,
+              "name": "In Search of The Temple"
+            }
+          },
+          {
+            "id": 1450,
+            "name": "Gryphon Master Talonaxe",
+            "questLink": "https://www.wowhead.com/classic/quest=1450/gryphon-master-talonaxe",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 1449,
+            "nextQuestId": 1451,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Falstad Wildhammer",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5635/falstad-wildhammer",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "The Hinterlands",
+            "startNpcs": [
+              {
+                "name": "Falstad Wildhammer",
+                "link": "https://www.wowhead.com/classic/npc=5635/falstad-wildhammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
+            "endNpc": "Gryphon Master Talonaxe",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "The Hinterlands",
+            "endNpcs": [
+              {
+                "name": "Gryphon Master Talonaxe",
+                "link": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
+            "levels": "43",
+            "minLevel": 38,
+            "faction": "Alliance",
+            "xp": 890,
+            "money": 540,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-1448-in-search-of-the-temple",
+              "index": 3,
+              "total": 5,
+              "name": "In Search of The Temple"
+            }
+          },
+          {
+            "id": 1451,
+            "name": "Rhapsody Shindigger",
+            "questLink": "https://www.wowhead.com/classic/quest=1451/rhapsody-shindigger",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 1450,
+            "nextQuestId": 1452,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Gryphon Master Talonaxe",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "The Hinterlands",
+            "startNpcs": [
+              {
+                "name": "Gryphon Master Talonaxe",
+                "link": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
+            "endNpc": "Rhapsody Shindigger",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "The Hinterlands",
+            "endNpcs": [
+              {
+                "name": "Rhapsody Shindigger",
+                "link": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
+            "levels": "43",
+            "minLevel": 38,
+            "faction": "Alliance",
+            "xp": 1800,
+            "money": 1080,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-1448-in-search-of-the-temple",
+              "index": 4,
+              "total": 5,
+              "name": "In Search of The Temple"
+            }
+          },
+          {
+            "id": 1452,
+            "name": "Rhapsody's Kalimdor Kocktail",
+            "questLink": "https://www.wowhead.com/classic/quest=1452/rhapsody-s-kalimdor-kocktail",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 1451,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Rhapsody Shindigger",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "The Hinterlands",
+            "startNpcs": [
+              {
+                "name": "Rhapsody Shindigger",
+                "link": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
+            "endNpc": "Rhapsody Shindigger",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "The Hinterlands",
+            "endNpcs": [
+              {
+                "name": "Rhapsody Shindigger",
+                "link": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
+            "levels": "43",
+            "minLevel": 38,
+            "faction": "Alliance",
+            "xp": 3600,
+            "money": 2160,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "st-1448-in-search-of-the-temple",
+              "index": 5,
+              "total": 5,
+              "name": "In Search of The Temple"
+            }
+          },
+          {
+            "id": 1469,
+            "name": "Rhapsody's Tale",
+            "questLink": "https://www.wowhead.com/classic/quest=1469/rhapsody-s-tale",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 1452,
+            "nextQuestId": 1475,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Rhapsody Shindigger",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "The Hinterlands",
+            "startNpcs": [
+              {
+                "name": "Rhapsody Shindigger",
+                "link": "https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
+            "endNpc": "Brohann Caskbelly",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Brohann Caskbelly",
+                "link": "https://www.wowhead.com/classic/npc=5384/brohann-caskbelly",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "levels": "43",
+            "minLevel": 38,
+            "faction": "Alliance",
+            "xp": 2700,
+            "money": 1620,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-1469-rhapsody-s-tale",
+              "index": 1,
+              "total": 2,
+              "name": "Rhapsody's Tale"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 1452
+              }
+            ]
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4141,
-        "name": "Muigin and Larion",
-        "questLink": "https://www.wowhead.com/classic/quest=4141/muigin-and-larion",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 4142,
-        "chainId": 4141,
-        "chainDepth": 0,
-        "startNpc": "Muigin",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9119/muigin",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Un'Goro Crater",
-        "endNpc": "Muigin",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9119/muigin",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Un'Goro Crater",
-        "levels": "52",
-        "minLevel": 47,
-        "faction": "Alliance",
-        "xp": 5100,
-        "money": 12300,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4142,
-        "name": "A Visit to Gregan",
-        "questLink": "https://www.wowhead.com/classic/quest=4142/a-visit-to-gregan",
-        "prequest": "Muigin and Larion",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4141/muigin-and-larion",
-        "prevQuestId": 4141,
-        "nextQuestId": 4143,
-        "chainId": 4141,
-        "chainDepth": 1,
-        "startNpc": "Muigin",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9119/muigin",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Un'Goro Crater",
-        "endNpc": "Gregan Brewspewer",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=7775/gregan-brewspewer",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Feralas",
-        "levels": "52",
-        "minLevel": 47,
-        "faction": "Alliance",
-        "xp": 3800,
-        "money": 9000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-1469-rhapsody-s-tale",
+          "index": 2,
+          "total": 2,
+          "name": "Rhapsody's Tale"
+        }
       },
       {
         "id": 4143,
         "name": "Haze of Evil",
         "questLink": "https://www.wowhead.com/classic/quest=4143/haze-of-evil",
-        "prequest": "A Visit to Gregan",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4142/a-visit-to-gregan",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4142,
-        "nextQuestId": null,
-        "chainId": 4141,
+        "nextQuestId": 4144,
+        "chainId": "st-4141-muigin-and-larion",
         "chainDepth": 2,
         "startNpc": "Gregan Brewspewer",
         "startNpcLink": "https://www.wowhead.com/classic/npc=7775/gregan-brewspewer",
@@ -10471,11 +14796,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Feralas",
+        "startNpcs": [
+          {
+            "name": "Gregan Brewspewer",
+            "link": "https://www.wowhead.com/classic/npc=7775/gregan-brewspewer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
         "endNpc": "Muigin",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9119/muigin",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Un'Goro Crater",
+        "endNpcs": [
+          {
+            "name": "Muigin",
+            "link": "https://www.wowhead.com/classic/npc=9119/muigin",
+            "faction": "",
+            "type": "npc",
+            "loc": "Un'Goro Crater"
+          }
+        ],
         "levels": "52",
         "minLevel": 47,
         "faction": "Alliance",
@@ -10485,124 +14828,160 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 1424,
-        "name": "Pool of Tears",
-        "questLink": "https://www.wowhead.com/classic/quest=1424/pool-of-tears",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 1429,
-        "chainId": 1424,
-        "chainDepth": 0,
-        "startNpc": "Fel'zerul",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Swamp of Sorrows",
-        "endNpc": "Fel'zerul",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Swamp of Sorrows",
-        "levels": "43",
-        "minLevel": 38,
-        "faction": "Horde",
-        "xp": 4450,
-        "money": 12000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 1429,
-        "name": "The Atal'ai Exile",
-        "questLink": "https://www.wowhead.com/classic/quest=1429/the-atal-ai-exile",
-        "prequest": "Pool of Tears",
-        "prequestLink": "https://www.wowhead.com/classic/quest=1424/pool-of-tears",
-        "prevQuestId": 1424,
-        "nextQuestId": 1444,
-        "chainId": 1424,
-        "chainDepth": 1,
-        "startNpc": "Fel'zerul",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Swamp of Sorrows",
-        "endNpc": "Atal'ai Exile",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=5598/atal-ai-exile",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "The Hinterlands",
-        "levels": "44",
-        "minLevel": 38,
-        "faction": "Horde",
-        "xp": 3750,
-        "money": 2280,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 1444,
-        "name": "Return to Fel'Zerul",
-        "questLink": "https://www.wowhead.com/classic/quest=1444/return-to-fel-zerul",
-        "prequest": "The Atal'ai Exile",
-        "prequestLink": "https://www.wowhead.com/classic/quest=1429/the-atal-ai-exile",
-        "prevQuestId": 1429,
-        "nextQuestId": 1445,
-        "chainId": 1424,
-        "chainDepth": 2,
-        "startNpc": "Atal'ai Exile",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=5598/atal-ai-exile",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "The Hinterlands",
-        "endNpc": "Fel'zerul",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Swamp of Sorrows",
-        "levels": "44",
-        "minLevel": 38,
-        "faction": "Horde",
-        "xp": 3750,
-        "money": 2280,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "preChain": [
+          {
+            "id": 4141,
+            "name": "Muigin and Larion",
+            "questLink": "https://www.wowhead.com/classic/quest=4141/muigin-and-larion",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 4142,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Muigin",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9119/muigin",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Un'Goro Crater",
+            "startNpcs": [
+              {
+                "name": "Muigin",
+                "link": "https://www.wowhead.com/classic/npc=9119/muigin",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
+            "endNpc": "Muigin",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9119/muigin",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Un'Goro Crater",
+            "endNpcs": [
+              {
+                "name": "Muigin",
+                "link": "https://www.wowhead.com/classic/npc=9119/muigin",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 47,
+            "faction": "Alliance",
+            "xp": 5100,
+            "money": 12300,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-4141-muigin-and-larion",
+              "index": 1,
+              "total": 4,
+              "name": "Muigin and Larion"
+            }
+          },
+          {
+            "id": 4142,
+            "name": "A Visit to Gregan",
+            "questLink": "https://www.wowhead.com/classic/quest=4142/a-visit-to-gregan",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4141,
+            "nextQuestId": 4143,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Muigin",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9119/muigin",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Un'Goro Crater",
+            "startNpcs": [
+              {
+                "name": "Muigin",
+                "link": "https://www.wowhead.com/classic/npc=9119/muigin",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
+            "endNpc": "Gregan Brewspewer",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=7775/gregan-brewspewer",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Feralas",
+            "endNpcs": [
+              {
+                "name": "Gregan Brewspewer",
+                "link": "https://www.wowhead.com/classic/npc=7775/gregan-brewspewer",
+                "faction": "",
+                "type": "npc",
+                "loc": "Feralas"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 47,
+            "faction": "Alliance",
+            "xp": 3800,
+            "money": 9000,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-4141-muigin-and-larion",
+              "index": 2,
+              "total": 4,
+              "name": "Muigin and Larion"
+            }
+          }
+        ],
+        "postChain": [
+          {
+            "id": 4144,
+            "name": "Bloodpetal Sprouts",
+            "url": "https://www.wowhead.com/classic/quest=4144/bloodpetal-sprouts",
+            "series": {
+              "id": "st-4141-muigin-and-larion",
+              "index": 4,
+              "total": 4,
+              "name": "Muigin and Larion"
+            },
+            "faction": "Alliance"
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-4141-muigin-and-larion",
+          "index": 3,
+          "total": 4,
+          "name": "Muigin and Larion"
+        }
       },
       {
         "id": 1445,
         "name": "The Temple of Atal'Hakkar",
         "questLink": "https://www.wowhead.com/classic/quest=1445/the-temple-of-atal-hakkar",
-        "prequest": "Return to Fel'Zerul",
-        "prequestLink": "https://www.wowhead.com/classic/quest=1444/return-to-fel-zerul",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 1444,
         "nextQuestId": null,
-        "chainId": 1424,
+        "chainId": "st-1424-pool-of-tears",
         "chainDepth": 3,
         "startNpc": "Fel'zerul",
         "startNpcLink": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
@@ -10611,11 +14990,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Swamp of Sorrows",
+        "startNpcs": [
+          {
+            "name": "Fel'zerul",
+            "link": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
+            "faction": "",
+            "type": "npc",
+            "loc": "Swamp of Sorrows"
+          }
+        ],
         "endNpc": "Fel'zerul",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Swamp of Sorrows",
+        "endNpcs": [
+          {
+            "name": "Fel'zerul",
+            "link": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
+            "faction": "",
+            "type": "npc",
+            "loc": "Swamp of Sorrows"
+          }
+        ],
         "levels": "50",
         "minLevel": 38,
         "faction": "Horde",
@@ -10632,89 +15029,207 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 1424,
+            "name": "Pool of Tears",
+            "questLink": "https://www.wowhead.com/classic/quest=1424/pool-of-tears",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 1429,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Fel'zerul",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Swamp of Sorrows",
+            "startNpcs": [
+              {
+                "name": "Fel'zerul",
+                "link": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
+                "faction": "",
+                "type": "npc",
+                "loc": "Swamp of Sorrows"
+              }
+            ],
+            "endNpc": "Fel'zerul",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Swamp of Sorrows",
+            "endNpcs": [
+              {
+                "name": "Fel'zerul",
+                "link": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
+                "faction": "",
+                "type": "npc",
+                "loc": "Swamp of Sorrows"
+              }
+            ],
+            "levels": "43",
+            "minLevel": 38,
+            "faction": "Horde",
+            "xp": 4450,
+            "money": 12000,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-1424-pool-of-tears",
+              "index": 1,
+              "total": 4,
+              "name": "Pool of Tears"
+            }
+          },
+          {
+            "id": 1429,
+            "name": "The Atal'ai Exile",
+            "questLink": "https://www.wowhead.com/classic/quest=1429/the-atal-ai-exile",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 1424,
+            "nextQuestId": 1444,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Fel'zerul",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Swamp of Sorrows",
+            "startNpcs": [
+              {
+                "name": "Fel'zerul",
+                "link": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
+                "faction": "",
+                "type": "npc",
+                "loc": "Swamp of Sorrows"
+              }
+            ],
+            "endNpc": "Atal'ai Exile",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=5598/atal-ai-exile",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "The Hinterlands",
+            "endNpcs": [
+              {
+                "name": "Atal'ai Exile",
+                "link": "https://www.wowhead.com/classic/npc=5598/atal-ai-exile",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
+            "levels": "44",
+            "minLevel": 38,
+            "faction": "Horde",
+            "xp": 3750,
+            "money": 2280,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-1424-pool-of-tears",
+              "index": 2,
+              "total": 4,
+              "name": "Pool of Tears"
+            }
+          },
+          {
+            "id": 1444,
+            "name": "Return to Fel'Zerul",
+            "questLink": "https://www.wowhead.com/classic/quest=1444/return-to-fel-zerul",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 1429,
+            "nextQuestId": 1445,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Atal'ai Exile",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5598/atal-ai-exile",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "The Hinterlands",
+            "startNpcs": [
+              {
+                "name": "Atal'ai Exile",
+                "link": "https://www.wowhead.com/classic/npc=5598/atal-ai-exile",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Hinterlands"
+              }
+            ],
+            "endNpc": "Fel'zerul",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Swamp of Sorrows",
+            "endNpcs": [
+              {
+                "name": "Fel'zerul",
+                "link": "https://www.wowhead.com/classic/npc=1443/fel-zerul",
+                "faction": "",
+                "type": "npc",
+                "loc": "Swamp of Sorrows"
+              }
+            ],
+            "levels": "44",
+            "minLevel": 38,
+            "faction": "Horde",
+            "xp": 3750,
+            "money": 2280,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-1424-pool-of-tears",
+              "index": 3,
+              "total": 4,
+              "name": "Pool of Tears"
+            }
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4145,
-        "name": "Larion and Muigin",
-        "questLink": "https://www.wowhead.com/classic/quest=4145/larion-and-muigin",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 4147,
-        "chainId": 4145,
-        "chainDepth": 0,
-        "startNpc": "Larion",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9118/larion",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Un'Goro Crater",
-        "endNpc": "Larion",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9118/larion",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Un'Goro Crater",
-        "levels": "52",
-        "minLevel": 47,
-        "faction": "Horde",
-        "xp": 5100,
-        "money": 7500,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4147,
-        "name": "Marvon's Workshop",
-        "questLink": "https://www.wowhead.com/classic/quest=4147/marvon-s-workshop",
-        "prequest": "Larion and Muigin",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4145/larion-and-muigin",
-        "prevQuestId": 4145,
-        "nextQuestId": 4146,
-        "chainId": 4145,
-        "chainDepth": 1,
-        "startNpc": "Larion",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9118/larion",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Un'Goro Crater",
-        "endNpc": "Liv Rizzlefix",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8496/liv-rizzlefix",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "The Barrens",
-        "levels": "52",
-        "minLevel": 47,
-        "faction": "Horde",
-        "xp": 2550,
-        "money": 6000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-1424-pool-of-tears",
+          "index": 4,
+          "total": 4,
+          "name": "Pool of Tears"
+        }
       },
       {
         "id": 4146,
         "name": "Zapper Fuel",
         "questLink": "https://www.wowhead.com/classic/quest=4146/zapper-fuel",
-        "prequest": "Marvon's Workshop",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4147/marvon-s-workshop",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4147,
-        "nextQuestId": null,
-        "chainId": 4145,
+        "nextQuestId": 4148,
+        "chainId": "st-4145-larion-and-muigin",
         "chainDepth": 2,
         "startNpc": "Liv Rizzlefix",
         "startNpcLink": "https://www.wowhead.com/classic/npc=8496/liv-rizzlefix",
@@ -10723,11 +15238,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Liv Rizzlefix",
+            "link": "https://www.wowhead.com/classic/npc=8496/liv-rizzlefix",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
         "endNpc": "Larion",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9118/larion",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Un'Goro Crater",
+        "endNpcs": [
+          {
+            "name": "Larion",
+            "link": "https://www.wowhead.com/classic/npc=9118/larion",
+            "faction": "",
+            "type": "npc",
+            "loc": "Un'Goro Crater"
+          }
+        ],
         "levels": "52",
         "minLevel": 47,
         "faction": "Horde",
@@ -10737,9 +15270,150 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "preChain": [
+          {
+            "id": 4145,
+            "name": "Larion and Muigin",
+            "questLink": "https://www.wowhead.com/classic/quest=4145/larion-and-muigin",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 4147,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Larion",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9118/larion",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Un'Goro Crater",
+            "startNpcs": [
+              {
+                "name": "Larion",
+                "link": "https://www.wowhead.com/classic/npc=9118/larion",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
+            "endNpc": "Larion",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9118/larion",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Un'Goro Crater",
+            "endNpcs": [
+              {
+                "name": "Larion",
+                "link": "https://www.wowhead.com/classic/npc=9118/larion",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 47,
+            "faction": "Horde",
+            "xp": 5100,
+            "money": 7500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-4145-larion-and-muigin",
+              "index": 1,
+              "total": 4,
+              "name": "Larion and Muigin"
+            }
+          },
+          {
+            "id": 4147,
+            "name": "Marvon's Workshop",
+            "questLink": "https://www.wowhead.com/classic/quest=4147/marvon-s-workshop",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4145,
+            "nextQuestId": 4146,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Larion",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9118/larion",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Un'Goro Crater",
+            "startNpcs": [
+              {
+                "name": "Larion",
+                "link": "https://www.wowhead.com/classic/npc=9118/larion",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
+            "endNpc": "Liv Rizzlefix",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8496/liv-rizzlefix",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "The Barrens",
+            "endNpcs": [
+              {
+                "name": "Liv Rizzlefix",
+                "link": "https://www.wowhead.com/classic/npc=8496/liv-rizzlefix",
+                "faction": "",
+                "type": "npc",
+                "loc": "The Barrens"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 47,
+            "faction": "Horde",
+            "xp": 2550,
+            "money": 6000,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-4145-larion-and-muigin",
+              "index": 2,
+              "total": 4,
+              "name": "Larion and Muigin"
+            }
+          }
+        ],
+        "postChain": [
+          {
+            "id": 4148,
+            "name": "Bloodpetal Zapper",
+            "url": "https://www.wowhead.com/classic/quest=4148/bloodpetal-zapper",
+            "series": {
+              "id": "st-4145-larion-and-muigin",
+              "index": 4,
+              "total": 4,
+              "name": "Larion and Muigin"
+            },
+            "faction": "Horde"
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-4145-larion-and-muigin",
+          "index": 3,
+          "total": 4,
+          "name": "Larion and Muigin"
+        }
       },
       {
         "id": 3373,
@@ -10748,8 +15422,8 @@ const DUNGEONS = [
         "prequest": "",
         "prequestLink": "",
         "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": null,
+        "nextQuestId": 3374,
+        "chainId": "st-3373-the-essence-of-eranikus",
         "chainDepth": 0,
         "startNpc": "",
         "startNpcLink": "",
@@ -10758,11 +15432,21 @@ const DUNGEONS = [
         "startItem": "Essence of Eranikus",
         "startItemLink": "https://www.wowhead.com/classic/item=10454/essence-of-eranikus",
         "startLoc": "",
+        "startNpcs": [],
         "endNpc": "",
         "endNpcLink": "",
         "endObject": "Essence Font",
         "endObjectLink": "https://www.wowhead.com/classic/object=148512/essence-font",
         "endLoc": "The Temple of Atal'Hakkar",
+        "endNpcs": [
+          {
+            "name": "Essence Font",
+            "link": "https://www.wowhead.com/classic/object=148512/essence-font",
+            "faction": "",
+            "type": "object",
+            "loc": "The Temple of Atal'Hakkar"
+          }
+        ],
         "levels": "55",
         "minLevel": 48,
         "faction": "Both",
@@ -10780,19 +15464,49 @@ const DUNGEONS = [
         "requiredClasses": [],
         "notes": "",
         "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "postChain": [
+          {
+            "id": 3374,
+            "name": "The Essence of Eranikus",
+            "url": "https://www.wowhead.com/classic/quest=3374/the-essence-of-eranikus",
+            "series": {
+              "id": "st-3373-the-essence-of-eranikus",
+              "index": 2,
+              "total": 3,
+              "name": "The Essence of Eranikus"
+            }
+          },
+          {
+            "id": 3512,
+            "name": "In Eranikus' Own Words",
+            "url": "https://www.wowhead.com/classic/quest=3512/in-eranikus-own-words",
+            "series": {
+              "id": "st-3373-the-essence-of-eranikus",
+              "index": 3,
+              "total": 3,
+              "name": "The Essence of Eranikus"
+            }
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-3373-the-essence-of-eranikus",
+          "index": 1,
+          "total": 3,
+          "name": "The Essence of Eranikus"
+        }
       },
       {
         "id": 9053,
         "name": "A Better Ingredient",
         "questLink": "https://www.wowhead.com/classic/quest=9053/a-better-ingredient",
-        "prequest": "Toxic Test",
-        "prequestLink": "https://www.wowhead.com/classic/quest=9051/toxic-test",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 9051,
         "nextQuestId": null,
-        "chainId": 9053,
-        "chainDepth": 0,
+        "chainId": "st-9063-torwa-pathfinder",
+        "chainDepth": 3,
         "startNpc": "Torwa Pathfinder",
         "startNpcLink": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
         "startObject": "",
@@ -10800,11 +15514,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Un'Goro Crater",
+        "startNpcs": [
+          {
+            "name": "Torwa Pathfinder",
+            "link": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
+            "faction": "",
+            "type": "npc",
+            "loc": "Un'Goro Crater"
+          }
+        ],
         "endNpc": "Torwa Pathfinder",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Un'Goro Crater",
+        "endNpcs": [
+          {
+            "name": "Torwa Pathfinder",
+            "link": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
+            "faction": "",
+            "type": "npc",
+            "loc": "Un'Goro Crater"
+          }
+        ],
         "levels": "52",
         "minLevel": 50,
         "faction": "Both",
@@ -10846,18 +15578,57 @@ const DUNGEONS = [
             "nextQuestId": 9052,
             "chainId": null,
             "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
+            "startNpc": "Turak Runetotem",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=3033/turak-runetotem",
             "startObject": "",
             "startObjectLink": "",
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thunder Bluff",
+            "startNpcs": [
+              {
+                "name": "Turak Runetotem",
+                "link": "https://www.wowhead.com/classic/npc=3033/turak-runetotem",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Thunder Bluff"
+              },
+              {
+                "name": "Mathrengyl Bearwalker",
+                "link": "https://www.wowhead.com/classic/npc=4217/mathrengyl-bearwalker",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Darnassus"
+              },
+              {
+                "name": "Theridran",
+                "link": "https://www.wowhead.com/classic/npc=5505/theridran",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Stormwind City"
+              },
+              {
+                "name": "Loganaar",
+                "link": "https://www.wowhead.com/classic/npc=12042/loganaar",
+                "faction": "",
+                "type": "npc",
+                "loc": "Moonglade"
+              }
+            ],
             "endNpc": "Torwa Pathfinder",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Un'Goro Crater",
+            "endNpcs": [
+              {
+                "name": "Torwa Pathfinder",
+                "link": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -10872,7 +15643,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-9063-torwa-pathfinder",
+              "index": 1,
+              "total": 4,
+              "name": "Torwa Pathfinder"
+            }
           },
           {
             "id": 9052,
@@ -10891,11 +15668,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Un'Goro Crater",
+            "startNpcs": [
+              {
+                "name": "Torwa Pathfinder",
+                "link": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
             "endNpc": "Torwa Pathfinder",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Un'Goro Crater",
+            "endNpcs": [
+              {
+                "name": "Torwa Pathfinder",
+                "link": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -10917,7 +15712,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-9063-torwa-pathfinder",
+              "index": 2,
+              "total": 4,
+              "name": "Torwa Pathfinder"
+            }
           },
           {
             "id": 9051,
@@ -10936,11 +15737,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Un'Goro Crater",
+            "startNpcs": [
+              {
+                "name": "Torwa Pathfinder",
+                "link": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
             "endNpc": "Torwa Pathfinder",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Un'Goro Crater",
+            "endNpcs": [
+              {
+                "name": "Torwa Pathfinder",
+                "link": "https://www.wowhead.com/classic/npc=9619/torwa-pathfinder",
+                "faction": "",
+                "type": "npc",
+                "loc": "Un'Goro Crater"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -10955,22 +15774,35 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-9063-torwa-pathfinder",
+              "index": 3,
+              "total": 4,
+              "name": "Torwa Pathfinder"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-9063-torwa-pathfinder",
+          "index": 4,
+          "total": 4,
+          "name": "Torwa Pathfinder"
+        }
       },
       {
         "id": 8232,
         "name": "The Green Drake",
         "questLink": "https://www.wowhead.com/classic/quest=8232/the-green-drake",
-        "prequest": "Wavethrashing",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8231/wavethrashing",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 8231,
         "nextQuestId": null,
-        "chainId": 8232,
-        "chainDepth": 0,
+        "chainId": "st-8151-the-hunter-s-charm",
+        "chainDepth": 3,
         "startNpc": "Ogtinc",
         "startNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
         "startObject": "",
@@ -10978,11 +15810,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Azshara",
+        "startNpcs": [
+          {
+            "name": "Ogtinc",
+            "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+            "faction": "",
+            "type": "npc",
+            "loc": "Azshara"
+          }
+        ],
         "endNpc": "Ogtinc",
         "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Azshara",
+        "endNpcs": [
+          {
+            "name": "Ogtinc",
+            "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+            "faction": "",
+            "type": "npc",
+            "loc": "Azshara"
+          }
+        ],
         "levels": "52",
         "minLevel": 50,
         "faction": "Both",
@@ -11024,18 +15874,64 @@ const DUNGEONS = [
             "nextQuestId": 8153,
             "chainId": null,
             "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
+            "startNpc": "Holt Thunderhorn",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=3039/holt-thunderhorn",
             "startObject": "",
             "startObjectLink": "",
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Thunder Bluff",
+            "startNpcs": [
+              {
+                "name": "Holt Thunderhorn",
+                "link": "https://www.wowhead.com/classic/npc=3039/holt-thunderhorn",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Thunder Bluff"
+              },
+              {
+                "name": "Ormak Grimshot",
+                "link": "https://www.wowhead.com/classic/npc=3352/ormak-grimshot",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              },
+              {
+                "name": "Dorion",
+                "link": "https://www.wowhead.com/classic/npc=4205/dorion",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Darnassus"
+              },
+              {
+                "name": "Olmin Burningbeard",
+                "link": "https://www.wowhead.com/classic/npc=5116/olmin-burningbeard",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Ironforge"
+              },
+              {
+                "name": "Ulfir Ironbeard",
+                "link": "https://www.wowhead.com/classic/npc=5516/ulfir-ironbeard",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Ogtinc",
             "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Ogtinc",
+                "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -11050,7 +15946,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8151-the-hunter-s-charm",
+              "index": 1,
+              "total": 4,
+              "name": "The Hunter's Charm"
+            }
           },
           {
             "id": 8153,
@@ -11069,11 +15971,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Azshara",
+            "startNpcs": [
+              {
+                "name": "Ogtinc",
+                "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
             "endNpc": "Ogtinc",
             "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Ogtinc",
+                "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -11088,7 +16008,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8151-the-hunter-s-charm",
+              "index": 2,
+              "total": 4,
+              "name": "The Hunter's Charm"
+            }
           },
           {
             "id": 8231,
@@ -11107,11 +16033,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Azshara",
+            "startNpcs": [
+              {
+                "name": "Ogtinc",
+                "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
             "endNpc": "Ogtinc",
             "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Ogtinc",
+                "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -11126,22 +16070,332 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8151-the-hunter-s-charm",
+              "index": 3,
+              "total": 4,
+              "name": "The Hunter's Charm"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-8151-the-hunter-s-charm",
+          "index": 4,
+          "total": 4,
+          "name": "The Hunter's Charm"
+        }
+      },
+      {
+        "id": 8253,
+        "name": "Destroy Morphaz",
+        "questLink": "https://www.wowhead.com/classic/quest=8253/destroy-morphaz",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 8252,
+        "nextQuestId": null,
+        "chainId": "st-8251-magic-dust",
+        "chainDepth": 2,
+        "startNpc": "Archmage Xylem",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Azshara",
+        "startNpcs": [
+          {
+            "name": "Archmage Xylem",
+            "link": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+            "faction": "",
+            "type": "npc",
+            "loc": "Azshara"
+          }
+        ],
+        "endNpc": "Archmage Xylem",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Azshara",
+        "endNpcs": [
+          {
+            "name": "Archmage Xylem",
+            "link": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+            "faction": "",
+            "type": "npc",
+            "loc": "Azshara"
+          }
+        ],
+        "levels": "52",
+        "minLevel": 50,
+        "faction": "Both",
+        "xp": 6350,
+        "money": 15500,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 20035,
+            "name": "Glacial Spike",
+            "url": "https://www.wowhead.com/classic/item=20035/glacial-spike",
+            "quality": 3
+          },
+          {
+            "id": 20037,
+            "name": "Arcane Crystal Pendant",
+            "url": "https://www.wowhead.com/classic/item=20037/arcane-crystal-pendant",
+            "quality": 3
+          },
+          {
+            "id": 20036,
+            "name": "Fire Ruby",
+            "url": "https://www.wowhead.com/classic/item=20036/fire-ruby",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [
+          "Mage"
+        ],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 8250,
+            "name": "Magecraft",
+            "questLink": "https://www.wowhead.com/classic/quest=8250/magecraft",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Maginor Dumas",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=331/maginor-dumas",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Maginor Dumas",
+                "link": "https://www.wowhead.com/classic/npc=331/maginor-dumas",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Stormwind City"
+              },
+              {
+                "name": "Archmage Shymm",
+                "link": "https://www.wowhead.com/classic/npc=3047/archmage-shymm",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Thunder Bluff"
+              },
+              {
+                "name": "Pierce Shackleton",
+                "link": "https://www.wowhead.com/classic/npc=4567/pierce-shackleton",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Undercity"
+              },
+              {
+                "name": "Uthel'nay",
+                "link": "https://www.wowhead.com/classic/npc=7311/uthel-nay",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              },
+              {
+                "name": "Dink",
+                "link": "https://www.wowhead.com/classic/npc=7312/dink",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "endNpc": "Sanath Lim-yo",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8395/sanath-lim-yo",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Sanath Lim-yo",
+                "link": "https://www.wowhead.com/classic/npc=8395/sanath-lim-yo",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 50,
+            "faction": "Both",
+            "xp": 510,
+            "money": 1200,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [
+              "Mage"
+            ],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null
+          },
+          {
+            "id": 8251,
+            "name": "Magic Dust",
+            "questLink": "https://www.wowhead.com/classic/quest=8251/magic-dust",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 8250,
+            "nextQuestId": 8252,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Archmage Xylem",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Azshara",
+            "startNpcs": [
+              {
+                "name": "Archmage Xylem",
+                "link": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
+            "endNpc": "Archmage Xylem",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Archmage Xylem",
+                "link": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 50,
+            "faction": "Both",
+            "xp": 5100,
+            "money": 12300,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [
+              "Mage"
+            ],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-8251-magic-dust",
+              "index": 1,
+              "total": 3,
+              "name": "Magic Dust"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 8250
+              }
+            ]
+          },
+          {
+            "id": 8252,
+            "name": "The Siren's Coral",
+            "questLink": "https://www.wowhead.com/classic/quest=8252/the-siren-s-coral",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 8251,
+            "nextQuestId": 8253,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Archmage Xylem",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Azshara",
+            "startNpcs": [
+              {
+                "name": "Archmage Xylem",
+                "link": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
+            "endNpc": "Archmage Xylem",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Archmage Xylem",
+                "link": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 50,
+            "faction": "Both",
+            "xp": 5100,
+            "money": 7500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [
+              "Mage"
+            ],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-8251-magic-dust",
+              "index": 2,
+              "total": 3,
+              "name": "Magic Dust"
+            }
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-8251-magic-dust",
+          "index": 3,
+          "total": 3,
+          "name": "Magic Dust"
+        }
       },
       {
         "id": 8418,
         "name": "Forging the Mightstone",
         "questLink": "https://www.wowhead.com/classic/quest=8418/forging-the-mightstone",
-        "prequest": "Inert Scourgestones",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8416/inert-scourgestones",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 8416,
         "nextQuestId": null,
-        "chainId": 8418,
-        "chainDepth": 0,
+        "chainId": "st-8416-inert-scourgestones",
+        "chainDepth": 1,
         "startNpc": "Commander Ashlam Valorfist",
         "startNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
         "startObject": "",
@@ -11149,11 +16403,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Commander Ashlam Valorfist",
+            "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "endNpc": "Commander Ashlam Valorfist",
         "endNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Commander Ashlam Valorfist",
+            "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "levels": "52",
         "minLevel": 50,
         "faction": "Alliance",
@@ -11209,11 +16481,36 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Lord Grayson Shadowbreaker",
+                "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              },
+              {
+                "name": "Brandur Ironhammer",
+                "link": "https://www.wowhead.com/classic/npc=5149/brandur-ironhammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Commander Ashlam Valorfist",
             "endNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Commander Ashlam Valorfist",
+                "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Alliance",
@@ -11228,7 +16525,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "st-8415-chillwind-point",
+              "index": 1,
+              "total": 2,
+              "name": "Chillwind Point"
+            }
           },
           {
             "id": 8414,
@@ -11247,11 +16550,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Commander Ashlam Valorfist",
+                "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "endNpc": "High Priest Thel'danis",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1854/high-priest-thel-danis",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "High Priest Thel'danis",
+                "link": "https://www.wowhead.com/classic/npc=1854/high-priest-thel-danis",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Alliance",
@@ -11266,7 +16587,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "requires",
+            "series": {
+              "id": "st-8415-chillwind-point",
+              "index": 2,
+              "total": 2,
+              "name": "Chillwind Point"
+            }
           },
           {
             "id": 8416,
@@ -11285,11 +16612,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "High Priest Thel'danis",
+                "link": "https://www.wowhead.com/classic/npc=1854/high-priest-thel-danis",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "endNpc": "Commander Ashlam Valorfist",
             "endNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Commander Ashlam Valorfist",
+                "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Alliance",
@@ -11304,22 +16649,323 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8416-inert-scourgestones",
+              "index": 1,
+              "total": 2,
+              "name": "Inert Scourgestones"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 8414
+              }
+            ]
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-8416-inert-scourgestones",
+          "index": 2,
+          "total": 2,
+          "name": "Inert Scourgestones"
+        }
+      },
+      {
+        "id": 8257,
+        "name": "Blood of Morphaz",
+        "questLink": "https://www.wowhead.com/classic/quest=8257/blood-of-morphaz",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 8256,
+        "nextQuestId": null,
+        "chainId": "st-8254-cenarion-aid",
+        "chainDepth": 3,
+        "startNpc": "Ogtinc",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Azshara",
+        "startNpcs": [
+          {
+            "name": "Ogtinc",
+            "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+            "faction": "",
+            "type": "npc",
+            "loc": "Azshara"
+          }
+        ],
+        "endNpc": "Greta Mosshoof",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10922/greta-mosshoof",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Felwood",
+        "endNpcs": [
+          {
+            "name": "Greta Mosshoof",
+            "link": "https://www.wowhead.com/classic/npc=10922/greta-mosshoof",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
+        "levels": "52",
+        "minLevel": 50,
+        "faction": "Both",
+        "xp": 6350,
+        "money": 15500,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 19990,
+            "name": "Blessed Prayer Beads",
+            "url": "https://www.wowhead.com/classic/item=19990/blessed-prayer-beads",
+            "quality": 3
+          },
+          {
+            "id": 20082,
+            "name": "Woestave",
+            "url": "https://www.wowhead.com/classic/item=20082/woestave",
+            "quality": 3
+          },
+          {
+            "id": 20006,
+            "name": "Circle of Hope",
+            "url": "https://www.wowhead.com/classic/item=20006/circle-of-hope",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [
+          "Priest"
+        ],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 8254,
+            "name": "Cenarion Aid",
+            "questLink": "https://www.wowhead.com/classic/quest=8254/cenarion-aid",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 8255,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Brother Joshua",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5489/brother-joshua",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Brother Joshua",
+                "link": "https://www.wowhead.com/classic/npc=5489/brother-joshua",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Stormwind City"
+              },
+              {
+                "name": "Ur'kyo",
+                "link": "https://www.wowhead.com/classic/npc=6018/ur-kyo",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              },
+              {
+                "name": "High Priest Rohan",
+                "link": "https://www.wowhead.com/classic/npc=11406/high-priest-rohan",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "endNpc": "Ogtinc",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Ogtinc",
+                "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 50,
+            "faction": "Both",
+            "xp": 510,
+            "money": 1200,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [
+              "Priest"
+            ],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-8254-cenarion-aid",
+              "index": 1,
+              "total": 4,
+              "name": "Cenarion Aid"
+            }
+          },
+          {
+            "id": 8255,
+            "name": "Of Coursers We Know",
+            "questLink": "https://www.wowhead.com/classic/quest=8255/of-coursers-we-know",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 8254,
+            "nextQuestId": 8256,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Ogtinc",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Azshara",
+            "startNpcs": [
+              {
+                "name": "Ogtinc",
+                "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
+            "endNpc": "Ogtinc",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Ogtinc",
+                "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 50,
+            "faction": "Both",
+            "xp": 5100,
+            "money": 12300,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [
+              "Priest"
+            ],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-8254-cenarion-aid",
+              "index": 2,
+              "total": 4,
+              "name": "Cenarion Aid"
+            }
+          },
+          {
+            "id": 8256,
+            "name": "The Ichor of Undeath",
+            "questLink": "https://www.wowhead.com/classic/quest=8256/the-ichor-of-undeath",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 8255,
+            "nextQuestId": 8257,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Ogtinc",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Azshara",
+            "startNpcs": [
+              {
+                "name": "Ogtinc",
+                "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
+            "endNpc": "Ogtinc",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Ogtinc",
+                "link": "https://www.wowhead.com/classic/npc=8405/ogtinc",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 50,
+            "faction": "Both",
+            "xp": 5100,
+            "money": 12300,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [
+              "Priest"
+            ],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "st-8254-cenarion-aid",
+              "index": 3,
+              "total": 4,
+              "name": "Cenarion Aid"
+            }
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-8254-cenarion-aid",
+          "index": 4,
+          "total": 4,
+          "name": "Cenarion Aid"
+        }
       },
       {
         "id": 8236,
         "name": "The Azure Key",
         "questLink": "https://www.wowhead.com/classic/quest=8236/the-azure-key",
-        "prequest": "Encoded Fragments",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8235/encoded-fragments",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 8235,
         "nextQuestId": null,
-        "chainId": 8236,
-        "chainDepth": 0,
+        "chainId": "st-8233-a-simple-request",
+        "chainDepth": 3,
         "startNpc": "Archmage Xylem",
         "startNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
         "startObject": "",
@@ -11327,11 +16973,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Azshara",
+        "startNpcs": [
+          {
+            "name": "Archmage Xylem",
+            "link": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+            "faction": "",
+            "type": "npc",
+            "loc": "Azshara"
+          }
+        ],
         "endNpc": "Lord Jorach Ravenholdt",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6768/lord-jorach-ravenholdt",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Alterac Mountains",
+        "endNpcs": [
+          {
+            "name": "Lord Jorach Ravenholdt",
+            "link": "https://www.wowhead.com/classic/npc=6768/lord-jorach-ravenholdt",
+            "faction": "",
+            "type": "npc",
+            "loc": "Alterac Mountains"
+          }
+        ],
         "levels": "52",
         "minLevel": 50,
         "faction": "Both",
@@ -11373,18 +17037,64 @@ const DUNGEONS = [
             "nextQuestId": 8234,
             "chainId": null,
             "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
+            "startNpc": "Osborne the Night Man",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=918/osborne-the-night-man",
             "startObject": "",
             "startObjectLink": "",
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Osborne the Night Man",
+                "link": "https://www.wowhead.com/classic/npc=918/osborne-the-night-man",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Stormwind City"
+              },
+              {
+                "name": "Ormok",
+                "link": "https://www.wowhead.com/classic/npc=3328/ormok",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              },
+              {
+                "name": "Syurna",
+                "link": "https://www.wowhead.com/classic/npc=4163/syurna",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Darnassus"
+              },
+              {
+                "name": "Miles Dexter",
+                "link": "https://www.wowhead.com/classic/npc=4583/miles-dexter",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Undercity"
+              },
+              {
+                "name": "Hulfdan Blackbeard",
+                "link": "https://www.wowhead.com/classic/npc=5165/hulfdan-blackbeard",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Lord Jorach Ravenholdt",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6768/lord-jorach-ravenholdt",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Alterac Mountains",
+            "endNpcs": [
+              {
+                "name": "Lord Jorach Ravenholdt",
+                "link": "https://www.wowhead.com/classic/npc=6768/lord-jorach-ravenholdt",
+                "faction": "",
+                "type": "npc",
+                "loc": "Alterac Mountains"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -11399,7 +17109,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8233-a-simple-request",
+              "index": 1,
+              "total": 4,
+              "name": "A Simple Request"
+            }
           },
           {
             "id": 8234,
@@ -11418,11 +17134,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Alterac Mountains",
+            "startNpcs": [
+              {
+                "name": "Lord Jorach Ravenholdt",
+                "link": "https://www.wowhead.com/classic/npc=6768/lord-jorach-ravenholdt",
+                "faction": "",
+                "type": "npc",
+                "loc": "Alterac Mountains"
+              }
+            ],
             "endNpc": "Archmage Xylem",
             "endNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Archmage Xylem",
+                "link": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -11437,7 +17171,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8233-a-simple-request",
+              "index": 2,
+              "total": 4,
+              "name": "A Simple Request"
+            }
           },
           {
             "id": 8235,
@@ -11456,11 +17196,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Azshara",
+            "startNpcs": [
+              {
+                "name": "Archmage Xylem",
+                "link": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
             "endNpc": "Archmage Xylem",
             "endNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Azshara",
+            "endNpcs": [
+              {
+                "name": "Archmage Xylem",
+                "link": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
+                "faction": "",
+                "type": "npc",
+                "loc": "Azshara"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -11475,21 +17233,34 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8233-a-simple-request",
+              "index": 3,
+              "total": 4,
+              "name": "A Simple Request"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-8233-a-simple-request",
+          "index": 4,
+          "total": 4,
+          "name": "A Simple Request"
+        }
       },
       {
         "id": 8413,
         "name": "Da Voodoo",
         "questLink": "https://www.wowhead.com/classic/quest=8413/da-voodoo",
-        "prequest": "Spirit Totem",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8412/spirit-totem",
-        "prevQuestId": 8412,
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 8413,
+        "chainId": null,
         "chainDepth": 0,
         "startNpc": "Bath'rah the Windwatcher",
         "startNpcLink": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
@@ -11498,11 +17269,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Alterac Mountains",
+        "startNpcs": [
+          {
+            "name": "Bath'rah the Windwatcher",
+            "link": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+            "faction": "",
+            "type": "npc",
+            "loc": "Alterac Mountains"
+          }
+        ],
         "endNpc": "Bath'rah the Windwatcher",
         "endNpcLink": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Alterac Mountains",
+        "endNpcs": [
+          {
+            "name": "Bath'rah the Windwatcher",
+            "link": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+            "faction": "",
+            "type": "npc",
+            "loc": "Alterac Mountains"
+          }
+        ],
         "levels": "52",
         "minLevel": 50,
         "faction": "Horde",
@@ -11535,32 +17324,176 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [
           {
-            "id": 8410,
-            "name": "Elemental Mastery",
-            "questLink": "https://www.wowhead.com/classic/quest=8410/elemental-mastery",
+            "or": [
+              {
+                "id": 8410,
+                "name": "Elemental Mastery",
+                "questLink": "https://www.wowhead.com/classic/quest=8410/elemental-mastery",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Beram Skychaser",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=3032/beram-skychaser",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Thunder Bluff",
+                "startNpcs": [
+                  {
+                    "name": "Beram Skychaser",
+                    "link": "https://www.wowhead.com/classic/npc=3032/beram-skychaser",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Thunder Bluff"
+                  },
+                  {
+                    "name": "Sagorne Creststrider",
+                    "link": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Orgrimmar"
+                  }
+                ],
+                "endNpc": "Bath'rah the Windwatcher",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Alterac Mountains",
+                "endNpcs": [
+                  {
+                    "name": "Bath'rah the Windwatcher",
+                    "link": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Alterac Mountains"
+                  }
+                ],
+                "levels": "52",
+                "minLevel": 50,
+                "faction": "Horde",
+                "xp": 3800,
+                "money": 9000,
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [
+                  "Shaman"
+                ],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              },
+              {
+                "id": 8411,
+                "name": "Mastering the Elements",
+                "questLink": "https://www.wowhead.com/classic/quest=8411/mastering-the-elements",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Bath'rah the Windwatcher",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Alterac Mountains",
+                "startNpcs": [
+                  {
+                    "name": "Bath'rah the Windwatcher",
+                    "link": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Alterac Mountains"
+                  }
+                ],
+                "endNpc": "Bath'rah the Windwatcher",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Alterac Mountains",
+                "endNpcs": [
+                  {
+                    "name": "Bath'rah the Windwatcher",
+                    "link": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Alterac Mountains"
+                  }
+                ],
+                "levels": "52",
+                "minLevel": 50,
+                "faction": "Horde",
+                "xp": 3800,
+                "money": 9000,
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [
+                  "Shaman"
+                ],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              }
+            ],
+            "relation": "requires"
+          },
+          {
+            "id": 8412,
+            "name": "Spirit Totem",
+            "questLink": "https://www.wowhead.com/classic/quest=8412/spirit-totem",
             "prequest": "",
             "prequestLink": "",
-            "prevQuestId": null,
+            "prevQuestId": 8410,
             "nextQuestId": null,
             "chainId": null,
             "chainDepth": 0,
-            "startNpc": "Beram Skychaser",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=3032/beram-skychaser",
+            "startNpc": "Bath'rah the Windwatcher",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
             "startObject": "",
             "startObjectLink": "",
             "startItem": "",
             "startItemLink": "",
-            "startLoc": "Thunder Bluff",
+            "startLoc": "Alterac Mountains",
+            "startNpcs": [
+              {
+                "name": "Bath'rah the Windwatcher",
+                "link": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+                "faction": "",
+                "type": "npc",
+                "loc": "Alterac Mountains"
+              }
+            ],
             "endNpc": "Bath'rah the Windwatcher",
             "endNpcLink": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Alterac Mountains",
+            "endNpcs": [
+              {
+                "name": "Bath'rah the Windwatcher",
+                "link": "https://www.wowhead.com/classic/npc=6176/bath-rah-the-windwatcher",
+                "faction": "",
+                "type": "npc",
+                "loc": "Alterac Mountains"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Horde",
-            "xp": 3800,
-            "money": 9000,
+            "xp": 5100,
+            "money": 12300,
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -11570,22 +17503,34 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "or",
+                "ids": [
+                  8410,
+                  8411
+                ]
+              }
+            ]
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 8422,
         "name": "Trolls of a Feather",
         "questLink": "https://www.wowhead.com/classic/quest=8422/trolls-of-a-feather",
-        "prequest": "The Wrong Stuff",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8421/the-wrong-stuff",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 8421,
         "nextQuestId": null,
-        "chainId": 8422,
-        "chainDepth": 0,
+        "chainId": "st-8421-the-wrong-stuff",
+        "chainDepth": 1,
         "startNpc": "Impsy",
         "startNpcLink": "https://www.wowhead.com/classic/npc=14470/impsy",
         "startObject": "",
@@ -11593,11 +17538,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Felwood",
+        "startNpcs": [
+          {
+            "name": "Impsy",
+            "link": "https://www.wowhead.com/classic/npc=14470/impsy",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
         "endNpc": "Impsy",
         "endNpcLink": "https://www.wowhead.com/classic/npc=14470/impsy",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Felwood",
+        "endNpcs": [
+          {
+            "name": "Impsy",
+            "link": "https://www.wowhead.com/classic/npc=14470/impsy",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
         "levels": "52",
         "minLevel": 50,
         "faction": "Both",
@@ -11630,42 +17593,144 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [
           {
-            "id": 8419,
-            "name": "An Imp's Request",
-            "questLink": "https://www.wowhead.com/classic/quest=8419/an-imp-s-request",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": null,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Stormwind City",
-            "endNpc": "Impsy",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=14470/impsy",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Felwood",
-            "levels": "52",
-            "minLevel": 50,
-            "faction": "Both",
-            "xp": 3800,
-            "money": 9000,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [
-              "Warlock"
+            "or": [
+              {
+                "id": 8419,
+                "name": "An Imp's Request",
+                "questLink": "https://www.wowhead.com/classic/quest=8419/an-imp-s-request",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Demisette Cloyce",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=461/demisette-cloyce",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Stormwind City",
+                "startNpcs": [
+                  {
+                    "name": "Demisette Cloyce",
+                    "link": "https://www.wowhead.com/classic/npc=461/demisette-cloyce",
+                    "faction": "Alliance",
+                    "type": "npc",
+                    "loc": "Stormwind City"
+                  },
+                  {
+                    "name": "Zevrost",
+                    "link": "https://www.wowhead.com/classic/npc=3326/zevrost",
+                    "faction": "Horde",
+                    "type": "npc",
+                    "loc": "Orgrimmar"
+                  },
+                  {
+                    "name": "Kaal Soulreaper",
+                    "link": "https://www.wowhead.com/classic/npc=4563/kaal-soulreaper",
+                    "faction": "Horde",
+                    "type": "npc",
+                    "loc": "Undercity"
+                  },
+                  {
+                    "name": "Briarthorn",
+                    "link": "https://www.wowhead.com/classic/npc=5172/briarthorn",
+                    "faction": "Alliance",
+                    "type": "npc",
+                    "loc": "Ironforge"
+                  }
+                ],
+                "endNpc": "Impsy",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=14470/impsy",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Felwood",
+                "endNpcs": [
+                  {
+                    "name": "Impsy",
+                    "link": "https://www.wowhead.com/classic/npc=14470/impsy",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Felwood"
+                  }
+                ],
+                "levels": "52",
+                "minLevel": 50,
+                "faction": "Both",
+                "xp": 3800,
+                "money": 9000,
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [
+                  "Warlock"
+                ],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              },
+              {
+                "id": 8420,
+                "name": "Hot and Itchy",
+                "questLink": "https://www.wowhead.com/classic/quest=8420/hot-and-itchy",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Impsy",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=14470/impsy",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Felwood",
+                "startNpcs": [
+                  {
+                    "name": "Impsy",
+                    "link": "https://www.wowhead.com/classic/npc=14470/impsy",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Felwood"
+                  }
+                ],
+                "endNpc": "Impsy",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=14470/impsy",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Felwood",
+                "endNpcs": [
+                  {
+                    "name": "Impsy",
+                    "link": "https://www.wowhead.com/classic/npc=14470/impsy",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Felwood"
+                  }
+                ],
+                "levels": "52",
+                "minLevel": 50,
+                "faction": "Both",
+                "xp": 3800,
+                "money": 9000,
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [
+                  "Warlock"
+                ],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              }
             ],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "requires"
           },
           {
             "id": 8421,
@@ -11684,11 +17749,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Felwood",
+            "startNpcs": [
+              {
+                "name": "Impsy",
+                "link": "https://www.wowhead.com/classic/npc=14470/impsy",
+                "faction": "",
+                "type": "npc",
+                "loc": "Felwood"
+              }
+            ],
             "endNpc": "Impsy",
             "endNpcLink": "https://www.wowhead.com/classic/npc=14470/impsy",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Felwood",
+            "endNpcs": [
+              {
+                "name": "Impsy",
+                "link": "https://www.wowhead.com/classic/npc=14470/impsy",
+                "faction": "",
+                "type": "npc",
+                "loc": "Felwood"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -11703,22 +17786,44 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8421-the-wrong-stuff",
+              "index": 1,
+              "total": 2,
+              "name": "The Wrong Stuff"
+            },
+            "requires": [
+              {
+                "type": "or",
+                "ids": [
+                  8419,
+                  8420
+                ]
+              }
+            ]
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-8421-the-wrong-stuff",
+          "index": 2,
+          "total": 2,
+          "name": "The Wrong Stuff"
+        }
       },
       {
         "id": 8425,
         "name": "Voodoo Feathers",
         "questLink": "https://www.wowhead.com/classic/quest=8425/voodoo-feathers",
-        "prequest": "War on the Shadowsworn",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8424/war-on-the-shadowsworn",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 8424,
         "nextQuestId": null,
-        "chainId": 8425,
-        "chainDepth": 0,
+        "chainId": "st-8417-a-troubled-spirit",
+        "chainDepth": 3,
         "startNpc": "Fallen Hero of the Horde",
         "startNpcLink": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
         "startObject": "",
@@ -11726,11 +17831,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Swamp of Sorrows",
+        "startNpcs": [
+          {
+            "name": "Fallen Hero of the Horde",
+            "link": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
+            "faction": "",
+            "type": "npc",
+            "loc": "Swamp of Sorrows"
+          }
+        ],
         "endNpc": "Fallen Hero of the Horde",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Swamp of Sorrows",
+        "endNpcs": [
+          {
+            "name": "Fallen Hero of the Horde",
+            "link": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
+            "faction": "",
+            "type": "npc",
+            "loc": "Swamp of Sorrows"
+          }
+        ],
         "levels": "52",
         "minLevel": 50,
         "faction": "Both",
@@ -11772,18 +17895,64 @@ const DUNGEONS = [
             "nextQuestId": 8423,
             "chainId": null,
             "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
+            "startNpc": "Sorek",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=3354/sorek",
             "startObject": "",
             "startObjectLink": "",
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Orgrimmar",
+            "startNpcs": [
+              {
+                "name": "Sorek",
+                "link": "https://www.wowhead.com/classic/npc=3354/sorek",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              },
+              {
+                "name": "Christoph Walker",
+                "link": "https://www.wowhead.com/classic/npc=4593/christoph-walker",
+                "faction": "Horde",
+                "type": "npc",
+                "loc": "Undercity"
+              },
+              {
+                "name": "Kelv Sternhammer",
+                "link": "https://www.wowhead.com/classic/npc=5113/kelv-sternhammer",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Ironforge"
+              },
+              {
+                "name": "Wu Shen",
+                "link": "https://www.wowhead.com/classic/npc=5479/wu-shen",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Stormwind City"
+              },
+              {
+                "name": "Darnath Bladesinger",
+                "link": "https://www.wowhead.com/classic/npc=7315/darnath-bladesinger",
+                "faction": "Alliance",
+                "type": "npc",
+                "loc": "Darnassus"
+              }
+            ],
             "endNpc": "Fallen Hero of the Horde",
             "endNpcLink": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Swamp of Sorrows",
+            "endNpcs": [
+              {
+                "name": "Fallen Hero of the Horde",
+                "link": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
+                "faction": "",
+                "type": "npc",
+                "loc": "Swamp of Sorrows"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -11798,7 +17967,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8417-a-troubled-spirit",
+              "index": 1,
+              "total": 4,
+              "name": "A Troubled Spirit"
+            }
           },
           {
             "id": 8423,
@@ -11817,11 +17992,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Swamp of Sorrows",
+            "startNpcs": [
+              {
+                "name": "Fallen Hero of the Horde",
+                "link": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
+                "faction": "",
+                "type": "npc",
+                "loc": "Swamp of Sorrows"
+              }
+            ],
             "endNpc": "Fallen Hero of the Horde",
             "endNpcLink": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Swamp of Sorrows",
+            "endNpcs": [
+              {
+                "name": "Fallen Hero of the Horde",
+                "link": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
+                "faction": "",
+                "type": "npc",
+                "loc": "Swamp of Sorrows"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -11836,7 +18029,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8417-a-troubled-spirit",
+              "index": 2,
+              "total": 4,
+              "name": "A Troubled Spirit"
+            }
           },
           {
             "id": 8424,
@@ -11855,11 +18054,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Swamp of Sorrows",
+            "startNpcs": [
+              {
+                "name": "Fallen Hero of the Horde",
+                "link": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
+                "faction": "",
+                "type": "npc",
+                "loc": "Swamp of Sorrows"
+              }
+            ],
             "endNpc": "Fallen Hero of the Horde",
             "endNpcLink": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Swamp of Sorrows",
+            "endNpcs": [
+              {
+                "name": "Fallen Hero of the Horde",
+                "link": "https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde",
+                "faction": "",
+                "type": "npc",
+                "loc": "Swamp of Sorrows"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -11874,345 +18091,24 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "st-8417-a-troubled-spirit",
+              "index": 3,
+              "total": 4,
+              "name": "A Troubled Spirit"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 8250,
-        "name": "Magecraft",
-        "questLink": "https://www.wowhead.com/classic/quest=8250/magecraft",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": 8250,
-        "chainDepth": 0,
-        "startNpc": "",
-        "startNpcLink": "",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Stormwind City",
-        "endNpc": "Sanath Lim-yo",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8395/sanath-lim-yo",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Azshara",
-        "levels": "52",
-        "minLevel": 50,
-        "faction": "Both",
-        "xp": 510,
-        "money": 1200,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Mage"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 8251,
-        "name": "Magic Dust",
-        "questLink": "https://www.wowhead.com/classic/quest=8251/magic-dust",
-        "prequest": "Magecraft",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8250/magecraft",
-        "prevQuestId": 8250,
-        "nextQuestId": 8252,
-        "chainId": 8250,
-        "chainDepth": 1,
-        "startNpc": "Archmage Xylem",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Azshara",
-        "endNpc": "Archmage Xylem",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Azshara",
-        "levels": "52",
-        "minLevel": 50,
-        "faction": "Both",
-        "xp": 5100,
-        "money": 12300,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Mage"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 8252,
-        "name": "The Siren's Coral",
-        "questLink": "https://www.wowhead.com/classic/quest=8252/the-siren-s-coral",
-        "prequest": "Magic Dust",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8251/magic-dust",
-        "prevQuestId": 8251,
-        "nextQuestId": 8253,
-        "chainId": 8250,
-        "chainDepth": 2,
-        "startNpc": "Archmage Xylem",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Azshara",
-        "endNpc": "Archmage Xylem",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Azshara",
-        "levels": "52",
-        "minLevel": 50,
-        "faction": "Both",
-        "xp": 5100,
-        "money": 7500,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Mage"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 8253,
-        "name": "Destroy Morphaz",
-        "questLink": "https://www.wowhead.com/classic/quest=8253/destroy-morphaz",
-        "prequest": "The Siren's Coral",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8252/the-siren-s-coral",
-        "prevQuestId": 8252,
-        "nextQuestId": null,
-        "chainId": 8250,
-        "chainDepth": 3,
-        "startNpc": "Archmage Xylem",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Azshara",
-        "endNpc": "Archmage Xylem",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8379/archmage-xylem",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Azshara",
-        "levels": "52",
-        "minLevel": 50,
-        "faction": "Both",
-        "xp": 6350,
-        "money": 15500,
-        "rewards": [],
-        "rewardChoices": [
-          {
-            "id": 20035,
-            "name": "Glacial Spike",
-            "url": "https://www.wowhead.com/classic/item=20035/glacial-spike",
-            "quality": 3
-          },
-          {
-            "id": 20037,
-            "name": "Arcane Crystal Pendant",
-            "url": "https://www.wowhead.com/classic/item=20037/arcane-crystal-pendant",
-            "quality": 3
-          },
-          {
-            "id": 20036,
-            "name": "Fire Ruby",
-            "url": "https://www.wowhead.com/classic/item=20036/fire-ruby",
-            "quality": 3
-          }
-        ],
-        "requiredClasses": [
-          "Mage"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 8254,
-        "name": "Cenarion Aid",
-        "questLink": "https://www.wowhead.com/classic/quest=8254/cenarion-aid",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 8255,
-        "chainId": 8254,
-        "chainDepth": 0,
-        "startNpc": "",
-        "startNpcLink": "",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Stormwind City",
-        "endNpc": "Ogtinc",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Azshara",
-        "levels": "52",
-        "minLevel": 50,
-        "faction": "Both",
-        "xp": 510,
-        "money": 1200,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Priest"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 8255,
-        "name": "Of Coursers We Know",
-        "questLink": "https://www.wowhead.com/classic/quest=8255/of-coursers-we-know",
-        "prequest": "Cenarion Aid",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8254/cenarion-aid",
-        "prevQuestId": 8254,
-        "nextQuestId": 8256,
-        "chainId": 8254,
-        "chainDepth": 1,
-        "startNpc": "Ogtinc",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Azshara",
-        "endNpc": "Ogtinc",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Azshara",
-        "levels": "52",
-        "minLevel": 50,
-        "faction": "Both",
-        "xp": 5100,
-        "money": 12300,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Priest"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 8256,
-        "name": "The Ichor of Undeath",
-        "questLink": "https://www.wowhead.com/classic/quest=8256/the-ichor-of-undeath",
-        "prequest": "Of Coursers We Know",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8255/of-coursers-we-know",
-        "prevQuestId": 8255,
-        "nextQuestId": 8257,
-        "chainId": 8254,
-        "chainDepth": 2,
-        "startNpc": "Ogtinc",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Azshara",
-        "endNpc": "Ogtinc",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Azshara",
-        "levels": "52",
-        "minLevel": 50,
-        "faction": "Both",
-        "xp": 5100,
-        "money": 12300,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Priest"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 8257,
-        "name": "Blood of Morphaz",
-        "questLink": "https://www.wowhead.com/classic/quest=8257/blood-of-morphaz",
-        "prequest": "The Ichor of Undeath",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8256/the-ichor-of-undeath",
-        "prevQuestId": 8256,
-        "nextQuestId": null,
-        "chainId": 8254,
-        "chainDepth": 3,
-        "startNpc": "Ogtinc",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8405/ogtinc",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Azshara",
-        "endNpc": "Greta Mosshoof",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=10922/greta-mosshoof",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Felwood",
-        "levels": "52",
-        "minLevel": 50,
-        "faction": "Both",
-        "xp": 6350,
-        "money": 15500,
-        "rewards": [],
-        "rewardChoices": [
-          {
-            "id": 19990,
-            "name": "Blessed Prayer Beads",
-            "url": "https://www.wowhead.com/classic/item=19990/blessed-prayer-beads",
-            "quality": 3
-          },
-          {
-            "id": 20082,
-            "name": "Woestave",
-            "url": "https://www.wowhead.com/classic/item=20082/woestave",
-            "quality": 3
-          },
-          {
-            "id": 20006,
-            "name": "Circle of Hope",
-            "url": "https://www.wowhead.com/classic/item=20006/circle-of-hope",
-            "quality": 3
-          }
-        ],
-        "requiredClasses": [
-          "Priest"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "st-8417-a-troubled-spirit",
+          "index": 4,
+          "total": 4,
+          "name": "A Troubled Spirit"
+        }
       }
     ]
   },
@@ -12226,51 +18122,17 @@ const DUNGEONS = [
     "levels": "52–60",
     "location": "Blackrock Mountain",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-blackrock-depths-dungeon-quests",
+    "schema": 2,
     "quests": [
-      {
-        "id": 4324,
-        "name": "Yuka Screwspigot",
-        "questLink": "https://www.wowhead.com/classic/quest=4324/yuka-screwspigot",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 4136,
-        "chainId": 4324,
-        "chainDepth": 0,
-        "startNpc": "Yorba Screwspigot",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9706/yorba-screwspigot",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Yuka Screwspigot",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9544/yuka-screwspigot",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Burning Steppes",
-        "levels": "53",
-        "minLevel": 48,
-        "faction": "Both",
-        "xp": 0,
-        "money": 0,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
       {
         "id": 4136,
         "name": "Ribbly Screwspigot",
         "questLink": "https://www.wowhead.com/classic/quest=4136/ribbly-screwspigot",
-        "prequest": "Yuka Screwspigot",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4324/yuka-screwspigot",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4324,
         "nextQuestId": null,
-        "chainId": 4324,
+        "chainId": "brd-4324-yuka-screwspigot",
         "chainDepth": 1,
         "startNpc": "Yuka Screwspigot",
         "startNpcLink": "https://www.wowhead.com/classic/npc=9544/yuka-screwspigot",
@@ -12279,11 +18141,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Yuka Screwspigot",
+            "link": "https://www.wowhead.com/classic/npc=9544/yuka-screwspigot",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "endNpc": "Yuka Screwspigot",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9544/yuka-screwspigot",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Yuka Screwspigot",
+            "link": "https://www.wowhead.com/classic/npc=9544/yuka-screwspigot",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "levels": "53",
         "minLevel": 48,
         "faction": "Both",
@@ -12312,9 +18192,77 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 4324,
+            "name": "Yuka Screwspigot",
+            "questLink": "https://www.wowhead.com/classic/quest=4324/yuka-screwspigot",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 4136,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Yorba Screwspigot",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9706/yorba-screwspigot",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Yorba Screwspigot",
+                "link": "https://www.wowhead.com/classic/npc=9706/yorba-screwspigot",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Yuka Screwspigot",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9544/yuka-screwspigot",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Yuka Screwspigot",
+                "link": "https://www.wowhead.com/classic/npc=9544/yuka-screwspigot",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "53",
+            "minLevel": 48,
+            "faction": "Both",
+            "xp": 0,
+            "money": 0,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4324-yuka-screwspigot",
+              "index": 1,
+              "total": 2,
+              "name": "Yuka Screwspigot"
+            }
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4324-yuka-screwspigot",
+          "index": 2,
+          "total": 2,
+          "name": "Yuka Screwspigot"
+        }
       },
       {
         "id": 4123,
@@ -12333,11 +18281,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Maxwort Uberglint",
+            "link": "https://www.wowhead.com/classic/npc=9536/maxwort-uberglint",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "endNpc": "Maxwort Uberglint",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9536/maxwort-uberglint",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Maxwort Uberglint",
+            "link": "https://www.wowhead.com/classic/npc=9536/maxwort-uberglint",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "levels": "55",
         "minLevel": 50,
         "faction": "Both",
@@ -12349,7 +18315,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7848,
@@ -12368,11 +18336,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "",
+        "startNpcs": [
+          {
+            "name": "Lothos Riftwaker",
+            "link": "https://www.wowhead.com/classic/npc=14387/lothos-riftwaker",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          }
+        ],
         "endNpc": "Lothos Riftwaker",
         "endNpcLink": "https://www.wowhead.com/classic/npc=14387/lothos-riftwaker",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "",
+        "endNpcs": [
+          {
+            "name": "Lothos Riftwaker",
+            "link": "https://www.wowhead.com/classic/npc=14387/lothos-riftwaker",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -12384,7 +18370,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4286,
@@ -12403,11 +18391,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Oralius",
+            "link": "https://www.wowhead.com/classic/npc=9177/oralius",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "endNpc": "Oralius",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9177/oralius",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Oralius",
+            "link": "https://www.wowhead.com/classic/npc=9177/oralius",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "levels": "56",
         "minLevel": 50,
         "faction": "Alliance",
@@ -12426,52 +18432,19 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4128,
-        "name": "Ragnar Thunderbrew",
-        "questLink": "https://www.wowhead.com/classic/quest=4128/ragnar-thunderbrew",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 4126,
-        "chainId": 4128,
-        "chainDepth": 0,
-        "startNpc": "Enohar Thunderbrew",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9540/enohar-thunderbrew",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blasted Lands",
-        "endNpc": "Ragnar Thunderbrew",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=1267/ragnar-thunderbrew",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Dun Morogh",
-        "levels": "55",
-        "minLevel": 50,
-        "faction": "Alliance",
-        "xp": 560,
-        "money": 3300,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4126,
         "name": "Hurley Blackbreath",
         "questLink": "https://www.wowhead.com/classic/quest=4126/hurley-blackbreath",
-        "prequest": "Ragnar Thunderbrew",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4128/ragnar-thunderbrew",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4128,
         "nextQuestId": null,
-        "chainId": 4128,
+        "chainId": "brd-4128-ragnar-thunderbrew",
         "chainDepth": 1,
         "startNpc": "Ragnar Thunderbrew",
         "startNpcLink": "https://www.wowhead.com/classic/npc=1267/ragnar-thunderbrew",
@@ -12480,11 +18453,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dun Morogh",
+        "startNpcs": [
+          {
+            "name": "Ragnar Thunderbrew",
+            "link": "https://www.wowhead.com/classic/npc=1267/ragnar-thunderbrew",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dun Morogh"
+          }
+        ],
         "endNpc": "Ragnar Thunderbrew",
         "endNpcLink": "https://www.wowhead.com/classic/npc=1267/ragnar-thunderbrew",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dun Morogh",
+        "endNpcs": [
+          {
+            "name": "Ragnar Thunderbrew",
+            "link": "https://www.wowhead.com/classic/npc=1267/ragnar-thunderbrew",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dun Morogh"
+          }
+        ],
         "levels": "55",
         "minLevel": 50,
         "faction": "Alliance",
@@ -12514,9 +18505,77 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 4128,
+            "name": "Ragnar Thunderbrew",
+            "questLink": "https://www.wowhead.com/classic/quest=4128/ragnar-thunderbrew",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 4126,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Enohar Thunderbrew",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9540/enohar-thunderbrew",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Blasted Lands",
+            "startNpcs": [
+              {
+                "name": "Enohar Thunderbrew",
+                "link": "https://www.wowhead.com/classic/npc=9540/enohar-thunderbrew",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blasted Lands"
+              }
+            ],
+            "endNpc": "Ragnar Thunderbrew",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=1267/ragnar-thunderbrew",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Dun Morogh",
+            "endNpcs": [
+              {
+                "name": "Ragnar Thunderbrew",
+                "link": "https://www.wowhead.com/classic/npc=1267/ragnar-thunderbrew",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dun Morogh"
+              }
+            ],
+            "levels": "55",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 560,
+            "money": 3300,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4128-ragnar-thunderbrew",
+              "index": 1,
+              "total": 2,
+              "name": "Ragnar Thunderbrew"
+            }
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4128-ragnar-thunderbrew",
+          "index": 2,
+          "total": 2,
+          "name": "Ragnar Thunderbrew"
+        }
       },
       {
         "id": 4081,
@@ -12526,7 +18585,7 @@ const DUNGEONS = [
         "prequestLink": "",
         "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 4081,
+        "chainId": null,
         "chainDepth": 0,
         "startNpc": "",
         "startNpcLink": "",
@@ -12535,11 +18594,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "WANTED",
+            "link": "https://www.wowhead.com/classic/object=164867/wanted",
+            "faction": "",
+            "type": "object",
+            "loc": "Badlands"
+          }
+        ],
         "endNpc": "Warlord Goretooth",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Warlord Goretooth",
+            "link": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "levels": "52",
         "minLevel": 48,
         "faction": "Horde",
@@ -12551,154 +18628,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4082,
-        "name": "KILL ON SIGHT: High Ranking Dark Iron Officials",
-        "questLink": "https://www.wowhead.com/classic/quest=4082/kill-on-sight-high-ranking-dark-iron-officials",
-        "prequest": "KILL ON SIGHT: Dark Iron Dwarves",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4081/kill-on-sight-dark-iron-dwarves",
-        "prevQuestId": 4081,
-        "nextQuestId": null,
-        "chainId": 4081,
-        "chainDepth": 1,
-        "startNpc": "",
-        "startNpcLink": "",
-        "startObject": "KILL ON SIGHT",
-        "startObjectLink": "https://www.wowhead.com/classic/object=164868/kill-on-sight",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Badlands",
-        "endNpc": "Warlord Goretooth",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Badlands",
-        "levels": "54",
-        "minLevel": 50,
-        "faction": "Horde",
-        "xp": 5450,
-        "money": 16500,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4122,
-        "name": "Grark Lorkrub",
-        "questLink": "https://www.wowhead.com/classic/quest=4122/grark-lorkrub",
-        "prequest": "KILL ON SIGHT: Dark Iron Dwarves",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4081/kill-on-sight-dark-iron-dwarves",
-        "prevQuestId": 4081,
-        "nextQuestId": null,
-        "chainId": 4081,
-        "chainDepth": 1,
-        "startNpc": "Lexlort",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9080/lexlort",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Badlands",
-        "endNpc": "Grark Lorkrub",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9520/grark-lorkrub",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Burning Steppes",
-        "levels": "58",
-        "minLevel": 52,
-        "faction": "Horde",
-        "xp": 6200,
-        "money": 37200,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4121,
-        "name": "Precarious Predicament",
-        "questLink": "https://www.wowhead.com/classic/quest=4121/precarious-predicament",
-        "prequest": "Grark Lorkrub",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4122/grark-lorkrub",
-        "prevQuestId": 4122,
-        "nextQuestId": null,
-        "chainId": 4081,
-        "chainDepth": 2,
-        "startNpc": "Grark Lorkrub",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9520/grark-lorkrub",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Burning Steppes",
-        "endNpc": "Lexlort",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9080/lexlort",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Badlands",
-        "levels": "58",
-        "minLevel": 52,
-        "faction": "Horde",
-        "xp": 7750,
-        "money": 26500,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4132,
-        "name": "Operation: Death to Angerforge",
-        "questLink": "https://www.wowhead.com/classic/quest=4132/operation-death-to-angerforge",
-        "prequest": "Precarious Predicament",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4121/precarious-predicament",
-        "prevQuestId": 4121,
-        "nextQuestId": null,
-        "chainId": 4081,
-        "chainDepth": 3,
-        "startNpc": "Warlord Goretooth",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Badlands",
-        "endNpc": "Warlord Goretooth",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Badlands",
-        "levels": "58",
-        "minLevel": 52,
-        "faction": "Horde",
-        "xp": 7750,
-        "money": 26500,
-        "rewards": [
-          {
-            "id": 12059,
-            "name": "Conqueror's Medallion",
-            "url": "https://www.wowhead.com/classic/item=12059/conqueror-s-medallion",
-            "quality": 3
-          }
-        ],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": 4132,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7201,
@@ -12717,11 +18649,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Shadowmage Vivian Lagrave",
+            "link": "https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "endNpc": "Shadowmage Vivian Lagrave",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Shadowmage Vivian Lagrave",
+            "link": "https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "levels": "54",
         "minLevel": 48,
         "faction": "Horde",
@@ -12740,52 +18690,19 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4133,
-        "name": "Vivian Lagrave",
-        "questLink": "https://www.wowhead.com/classic/quest=4133/vivian-lagrave",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 4134,
-        "chainId": 4133,
-        "chainDepth": 0,
-        "startNpc": "Apothecary Zinge",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=5204/apothecary-zinge",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Undercity",
-        "endNpc": "Shadowmage Vivian Lagrave",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Badlands",
-        "levels": "55",
-        "minLevel": 50,
-        "faction": "Horde",
-        "xp": 560,
-        "money": 3300,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4134,
         "name": "Lost Thunderbrew Recipe",
         "questLink": "https://www.wowhead.com/classic/quest=4134/lost-thunderbrew-recipe",
-        "prequest": "Vivian Lagrave",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4133/vivian-lagrave",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4133,
         "nextQuestId": null,
-        "chainId": 4133,
+        "chainId": "brd-4133-vivian-lagrave",
         "chainDepth": 1,
         "startNpc": "Shadowmage Vivian Lagrave",
         "startNpcLink": "https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave",
@@ -12794,11 +18711,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Shadowmage Vivian Lagrave",
+            "link": "https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "endNpc": "Shadowmage Vivian Lagrave",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Shadowmage Vivian Lagrave",
+            "link": "https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "levels": "55",
         "minLevel": 50,
         "faction": "Horde",
@@ -12834,54 +18769,87 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 4133,
+            "name": "Vivian Lagrave",
+            "questLink": "https://www.wowhead.com/classic/quest=4133/vivian-lagrave",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 4134,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Apothecary Zinge",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5204/apothecary-zinge",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Undercity",
+            "startNpcs": [
+              {
+                "name": "Apothecary Zinge",
+                "link": "https://www.wowhead.com/classic/npc=5204/apothecary-zinge",
+                "faction": "",
+                "type": "npc",
+                "loc": "Undercity"
+              }
+            ],
+            "endNpc": "Shadowmage Vivian Lagrave",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Shadowmage Vivian Lagrave",
+                "link": "https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "levels": "55",
+            "minLevel": 50,
+            "faction": "Horde",
+            "xp": 560,
+            "money": 3300,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4133-vivian-lagrave",
+              "index": 1,
+              "total": 2,
+              "name": "Vivian Lagrave"
+            }
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3801,
-        "name": "Dark Iron Legacy",
-        "questLink": "https://www.wowhead.com/classic/quest=3801/dark-iron-legacy",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 3802,
-        "chainId": 3801,
-        "chainDepth": 0,
-        "startNpc": "Franclorn Forgewright",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8888/franclorn-forgewright",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "",
-        "endNpc": "Franclorn Forgewright",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8888/franclorn-forgewright",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "",
-        "levels": "52",
-        "minLevel": 48,
-        "faction": "Both",
-        "xp": 510,
-        "money": 1200,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4133-vivian-lagrave",
+          "index": 2,
+          "total": 2,
+          "name": "Vivian Lagrave"
+        }
       },
       {
         "id": 3802,
         "name": "Dark Iron Legacy",
         "questLink": "https://www.wowhead.com/classic/quest=3802/dark-iron-legacy",
-        "prequest": "Dark Iron Legacy",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3801/dark-iron-legacy",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 3801,
         "nextQuestId": null,
-        "chainId": 3801,
+        "chainId": "brd-3801-dark-iron-legacy",
         "chainDepth": 1,
         "startNpc": "Franclorn Forgewright",
         "startNpcLink": "https://www.wowhead.com/classic/npc=8888/franclorn-forgewright",
@@ -12890,11 +18858,36 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "",
+        "startNpcs": [
+          {
+            "name": "Franclorn Forgewright",
+            "link": "https://www.wowhead.com/classic/npc=8888/franclorn-forgewright",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          },
+          {
+            "name": "Franclorn Forgewright",
+            "link": "https://www.wowhead.com/classic/npc=184290/franclorn-forgewright",
+            "faction": "",
+            "type": "npc",
+            "loc": ""
+          }
+        ],
         "endNpc": "",
         "endNpcLink": "",
         "endObject": "Monument of Franclorn Forgewright",
         "endObjectLink": "https://www.wowhead.com/classic/object=164689/monument-of-franclorn-forgewright",
         "endLoc": "Blackrock Depths",
+        "endNpcs": [
+          {
+            "name": "Monument of Franclorn Forgewright",
+            "link": "https://www.wowhead.com/classic/object=164689/monument-of-franclorn-forgewright",
+            "faction": "",
+            "type": "object",
+            "loc": "Blackrock Depths"
+          }
+        ],
         "levels": "52",
         "minLevel": 48,
         "faction": "Both",
@@ -12911,19 +18904,101 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 3801,
+            "name": "Dark Iron Legacy",
+            "questLink": "https://www.wowhead.com/classic/quest=3801/dark-iron-legacy",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 3802,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Franclorn Forgewright",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8888/franclorn-forgewright",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "",
+            "startNpcs": [
+              {
+                "name": "Franclorn Forgewright",
+                "link": "https://www.wowhead.com/classic/npc=8888/franclorn-forgewright",
+                "faction": "",
+                "type": "npc",
+                "loc": ""
+              },
+              {
+                "name": "Franclorn Forgewright",
+                "link": "https://www.wowhead.com/classic/npc=184290/franclorn-forgewright",
+                "faction": "",
+                "type": "npc",
+                "loc": ""
+              }
+            ],
+            "endNpc": "Franclorn Forgewright",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8888/franclorn-forgewright",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "",
+            "endNpcs": [
+              {
+                "name": "Franclorn Forgewright",
+                "link": "https://www.wowhead.com/classic/npc=8888/franclorn-forgewright",
+                "faction": "",
+                "type": "npc",
+                "loc": ""
+              },
+              {
+                "name": "Franclorn Forgewright",
+                "link": "https://www.wowhead.com/classic/npc=184290/franclorn-forgewright",
+                "faction": "",
+                "type": "npc",
+                "loc": ""
+              }
+            ],
+            "levels": "52",
+            "minLevel": 48,
+            "faction": "Both",
+            "xp": 510,
+            "money": 1200,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-3801-dark-iron-legacy",
+              "index": 1,
+              "total": 2,
+              "name": "Dark Iron Legacy"
+            }
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-3801-dark-iron-legacy",
+          "index": 2,
+          "total": 2,
+          "name": "Dark Iron Legacy"
+        }
       },
       {
         "id": 4024,
         "name": "A Taste of Flame",
         "questLink": "https://www.wowhead.com/classic/quest=4024/a-taste-of-flame",
-        "prequest": "A Taste of Flame",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4022/a-taste-of-flame",
-        "prevQuestId": 4022,
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 4024,
+        "chainId": null,
         "chainDepth": 0,
         "startNpc": "Cyrus Therepentous",
         "startNpcLink": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
@@ -12932,11 +19007,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Cyrus Therepentous",
+            "link": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "endNpc": "Cyrus Therepentous",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Cyrus Therepentous",
+            "link": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "levels": "58",
         "minLevel": 52,
         "faction": "Both",
@@ -12967,437 +19060,135 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [
           {
-            "id": 4022,
-            "name": "A Taste of Flame",
-            "questLink": "https://www.wowhead.com/classic/quest=4022/a-taste-of-flame",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": null,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Cyrus Therepentous",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Burning Steppes",
-            "endNpc": "Cyrus Therepentous",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Burning Steppes",
-            "levels": "54",
-            "minLevel": 52,
-            "faction": "Both",
-            "xp": 5450,
-            "money": 26100,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
+            "or": [
+              {
+                "id": 4022,
+                "name": "A Taste of Flame",
+                "questLink": "https://www.wowhead.com/classic/quest=4022/a-taste-of-flame",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Cyrus Therepentous",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Burning Steppes",
+                "startNpcs": [
+                  {
+                    "name": "Cyrus Therepentous",
+                    "link": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Burning Steppes"
+                  }
+                ],
+                "endNpc": "Cyrus Therepentous",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Burning Steppes",
+                "endNpcs": [
+                  {
+                    "name": "Cyrus Therepentous",
+                    "link": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Burning Steppes"
+                  }
+                ],
+                "levels": "54",
+                "minLevel": 52,
+                "faction": "Both",
+                "xp": 5450,
+                "money": 26100,
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              },
+              {
+                "id": 4023,
+                "name": "A Taste of Flame",
+                "questLink": "https://www.wowhead.com/classic/quest=4023/a-taste-of-flame",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Cyrus Therepentous",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Burning Steppes",
+                "startNpcs": [
+                  {
+                    "name": "Cyrus Therepentous",
+                    "link": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Burning Steppes"
+                  }
+                ],
+                "endNpc": "Cyrus Therepentous",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Burning Steppes",
+                "endNpcs": [
+                  {
+                    "name": "Cyrus Therepentous",
+                    "link": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Burning Steppes"
+                  }
+                ],
+                "levels": "54",
+                "minLevel": 52,
+                "faction": "Both",
+                "xp": 5450,
+                "money": 26100,
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              }
+            ],
+            "relation": "requires"
           }
         ],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3441,
-        "name": "Divine Retribution",
-        "questLink": "https://www.wowhead.com/classic/quest=3441/divine-retribution",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": 3441,
-        "chainDepth": 0,
-        "startNpc": "Velarok Windblade",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Searing Gorge",
-        "endNpc": "Velarok Windblade",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Searing Gorge",
-        "levels": "48",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 440,
-        "money": 270,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3442,
-        "name": "The Flawless Flame",
-        "questLink": "https://www.wowhead.com/classic/quest=3442/the-flawless-flame",
-        "prequest": "Divine Retribution",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3441/divine-retribution",
-        "prevQuestId": 3441,
-        "nextQuestId": 3443,
-        "chainId": 3441,
-        "chainDepth": 1,
-        "startNpc": "Velarok Windblade",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Searing Gorge",
-        "endNpc": "Velarok Windblade",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Searing Gorge",
-        "levels": "48",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 4400,
-        "money": 14000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3443,
-        "name": "Forging the Shaft",
-        "questLink": "https://www.wowhead.com/classic/quest=3443/forging-the-shaft",
-        "prequest": "The Flawless Flame",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3442/the-flawless-flame",
-        "prevQuestId": 3442,
-        "nextQuestId": 3452,
-        "chainId": 3441,
-        "chainDepth": 2,
-        "startNpc": "Velarok Windblade",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Searing Gorge",
-        "endNpc": "Velarok Windblade",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Searing Gorge",
-        "levels": "48",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 4400,
-        "money": 14000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3452,
-        "name": "The Flame's Casing",
-        "questLink": "https://www.wowhead.com/classic/quest=3452/the-flame-s-casing",
-        "prequest": "Forging the Shaft",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3443/forging-the-shaft",
-        "prevQuestId": 3443,
-        "nextQuestId": 3453,
-        "chainId": 3441,
-        "chainDepth": 3,
-        "startNpc": "Velarok Windblade",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Searing Gorge",
-        "endNpc": "Velarok Windblade",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Searing Gorge",
-        "levels": "50",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 4700,
-        "money": 7500,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3453,
-        "name": "The Torch of Retribution",
-        "questLink": "https://www.wowhead.com/classic/quest=3453/the-torch-of-retribution",
-        "prequest": "The Flame's Casing",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3452/the-flame-s-casing",
-        "prevQuestId": 3452,
-        "nextQuestId": 3454,
-        "chainId": 3441,
-        "chainDepth": 4,
-        "startNpc": "Velarok Windblade",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Searing Gorge",
-        "endNpc": "Velarok Windblade",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Searing Gorge",
-        "levels": "50",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 470,
-        "money": 270,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3454,
-        "name": "The Torch of Retribution",
-        "questLink": "https://www.wowhead.com/classic/quest=3454/the-torch-of-retribution",
-        "prequest": "The Torch of Retribution",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3453/the-torch-of-retribution",
-        "prevQuestId": 3453,
-        "nextQuestId": null,
-        "chainId": 3441,
-        "chainDepth": 5,
-        "startNpc": "Velarok Windblade",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Searing Gorge",
-        "endNpc": "",
-        "endNpcLink": "",
-        "endObject": "Torch of Retribution",
-        "endObjectLink": "https://www.wowhead.com/classic/object=149047/torch-of-retribution",
-        "endLoc": "Searing Gorge",
-        "levels": "50",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 4700,
-        "money": 2820,
-        "rewards": [
-          {
-            "id": 10515,
-            "name": "Torch of Retribution",
-            "url": "https://www.wowhead.com/classic/item=10515/torch-of-retribution",
-            "quality": 1
-          }
-        ],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3462,
-        "name": "Squire Maltrake",
-        "questLink": "https://www.wowhead.com/classic/quest=3462/squire-maltrake",
-        "prequest": "The Torch of Retribution",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3454/the-torch-of-retribution",
-        "prevQuestId": 3454,
-        "nextQuestId": 3463,
-        "chainId": 3441,
-        "chainDepth": 6,
-        "startNpc": "Velarok Windblade",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Searing Gorge",
-        "endNpc": "Squire Maltrake",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8509/squire-maltrake",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Searing Gorge",
-        "levels": "50",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 470,
-        "money": 270,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3463,
-        "name": "Set Them Ablaze!",
-        "questLink": "https://www.wowhead.com/classic/quest=3463/set-them-ablaze",
-        "prequest": "Squire Maltrake",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3462/squire-maltrake",
-        "prevQuestId": 3462,
-        "nextQuestId": null,
-        "chainId": 3441,
-        "chainDepth": 7,
-        "startNpc": "Squire Maltrake",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8509/squire-maltrake",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Searing Gorge",
-        "endNpc": "Squire Maltrake",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8509/squire-maltrake",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Searing Gorge",
-        "levels": "52",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 7600,
-        "money": 23000,
-        "rewards": [],
-        "rewardChoices": [
-          {
-            "id": 10742,
-            "name": "Dragonflight Leggings",
-            "url": "https://www.wowhead.com/classic/item=10742/dragonflight-leggings",
-            "quality": 2
-          },
-          {
-            "id": 10743,
-            "name": "Drakefire Headguard",
-            "url": "https://www.wowhead.com/classic/item=10743/drakefire-headguard",
-            "quality": 2
-          },
-          {
-            "id": 10744,
-            "name": "Axe of the Ebon Drake",
-            "url": "https://www.wowhead.com/classic/item=10744/axe-of-the-ebon-drake",
-            "quality": 2
-          }
-        ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3481,
-        "name": "Trinkets",
-        "questLink": "https://www.wowhead.com/classic/quest=3481/trinkets",
-        "prequest": "Set Them Ablaze!",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3463/set-them-ablaze",
-        "prevQuestId": 3463,
-        "nextQuestId": null,
-        "chainId": 3441,
-        "chainDepth": 8,
-        "startNpc": "",
-        "startNpcLink": "",
-        "startObject": "Hoard of the Black Dragonflight",
-        "startObjectLink": "https://www.wowhead.com/classic/object=149502/hoard-of-the-black-dragonflight",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Searing Gorge",
-        "endNpc": "",
-        "endNpcLink": "",
-        "endObject": "Hoard of the Black Dragonflight",
-        "endObjectLink": "https://www.wowhead.com/classic/object=149502/hoard-of-the-black-dragonflight",
-        "endLoc": "Searing Gorge",
-        "levels": "50",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 470,
-        "money": 270,
-        "rewards": [
-          {
-            "id": 10569,
-            "name": "Hoard of the Black Dragonflight",
-            "url": "https://www.wowhead.com/classic/item=10569/hoard-of-the-black-dragonflight",
-            "quality": 1
-          }
-        ],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4262,
-        "name": "Overmaster Pyron",
-        "questLink": "https://www.wowhead.com/classic/quest=4262/overmaster-pyron",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 4263,
-        "chainId": 4262,
-        "chainDepth": 0,
-        "startNpc": "Jalinda Sprig",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Burning Steppes",
-        "endNpc": "Jalinda Sprig",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Burning Steppes",
-        "levels": "52",
-        "minLevel": 48,
-        "faction": "Alliance",
-        "xp": 5100,
-        "money": 15500,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4263,
         "name": "Incendius!",
         "questLink": "https://www.wowhead.com/classic/quest=4263/incendius",
-        "prequest": "Overmaster Pyron",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4262/overmaster-pyron",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4262,
         "nextQuestId": null,
-        "chainId": 4262,
+        "chainId": "brd-4262-overmaster-pyron",
         "chainDepth": 1,
         "startNpc": "Jalinda Sprig",
         "startNpcLink": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig",
@@ -13406,11 +19197,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Jalinda Sprig",
+            "link": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "endNpc": "Jalinda Sprig",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Jalinda Sprig",
+            "link": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "levels": "56",
         "minLevel": 48,
         "faction": "Alliance",
@@ -13445,97 +19254,88 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3702,
-        "name": "The Smoldering Ruins of Thaurissan",
-        "questLink": "https://www.wowhead.com/classic/quest=3702/the-smoldering-ruins-of-thaurissan",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 3701,
-        "chainId": 3702,
-        "chainDepth": 0,
-        "startNpc": "Royal Historian Archesonus",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Ironforge",
-        "endNpc": "Royal Historian Archesonus",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Ironforge",
-        "levels": "54",
-        "minLevel": 50,
-        "faction": "Alliance",
-        "xp": 540,
-        "money": 2580,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3701,
-        "name": "The Smoldering Ruins of Thaurissan",
-        "questLink": "https://www.wowhead.com/classic/quest=3701/the-smoldering-ruins-of-thaurissan",
-        "prequest": "The Smoldering Ruins of Thaurissan",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3702/the-smoldering-ruins-of-thaurissan",
-        "prevQuestId": 3702,
-        "nextQuestId": null,
-        "chainId": 3702,
-        "chainDepth": 1,
-        "startNpc": "Royal Historian Archesonus",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Ironforge",
-        "endNpc": "Royal Historian Archesonus",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Ironforge",
-        "levels": "54",
-        "minLevel": 50,
-        "faction": "Alliance",
-        "xp": 5450,
-        "money": 16500,
-        "rewards": [
+        "preChain": [
           {
-            "id": 12102,
-            "name": "Ring of the Aristocrat",
-            "url": "https://www.wowhead.com/classic/item=12102/ring-of-the-aristocrat",
-            "quality": 2
+            "id": 4262,
+            "name": "Overmaster Pyron",
+            "questLink": "https://www.wowhead.com/classic/quest=4262/overmaster-pyron",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 4263,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Jalinda Sprig",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Jalinda Sprig",
+                "link": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "endNpc": "Jalinda Sprig",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Jalinda Sprig",
+                "link": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 5100,
+            "money": 15500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4262-overmaster-pyron",
+              "index": 1,
+              "total": 2,
+              "name": "Overmaster Pyron"
+            }
           }
         ],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4262-overmaster-pyron",
+          "index": 2,
+          "total": 2,
+          "name": "Overmaster Pyron"
+        }
       },
       {
         "id": 4341,
         "name": "Kharan Mighthammer",
         "questLink": "https://www.wowhead.com/classic/quest=4341/kharan-mighthammer",
-        "prequest": "The Smoldering Ruins of Thaurissan",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3701/the-smoldering-ruins-of-thaurissan",
-        "prevQuestId": 3701,
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 3702,
-        "chainDepth": 2,
+        "chainId": null,
+        "chainDepth": 0,
         "startNpc": "King Magni Bronzebeard",
         "startNpcLink": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
         "startObject": "",
@@ -13543,11 +19343,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "King Magni Bronzebeard",
+            "link": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "endNpc": "Kharan Mighthammer",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Blackrock Depths",
+        "endNpcs": [
+          {
+            "name": "Kharan Mighthammer",
+            "link": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
         "levels": "59",
         "minLevel": 50,
         "faction": "Alliance",
@@ -13557,90 +19375,150 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 3702,
+            "name": "The Smoldering Ruins of Thaurissan",
+            "questLink": "https://www.wowhead.com/classic/quest=3702/the-smoldering-ruins-of-thaurissan",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 3701,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Royal Historian Archesonus",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "endNpc": "Royal Historian Archesonus",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 540,
+            "money": 2580,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-3702-the-smoldering-ruins-of-thaurissan",
+              "index": 1,
+              "total": 2,
+              "name": "The Smoldering Ruins of Thaurissan"
+            }
+          },
+          {
+            "id": 3701,
+            "name": "The Smoldering Ruins of Thaurissan",
+            "questLink": "https://www.wowhead.com/classic/quest=3701/the-smoldering-ruins-of-thaurissan",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3702,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Royal Historian Archesonus",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "endNpc": "Royal Historian Archesonus",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 16500,
+            "rewards": [
+              {
+                "id": 12102,
+                "name": "Ring of the Aristocrat",
+                "url": "https://www.wowhead.com/classic/item=12102/ring-of-the-aristocrat",
+                "quality": 2
+              }
+            ],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "brd-3702-the-smoldering-ruins-of-thaurissan",
+              "index": 2,
+              "total": 2,
+              "name": "The Smoldering Ruins of Thaurissan"
+            }
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4342,
-        "name": "Kharan's Tale",
-        "questLink": "https://www.wowhead.com/classic/quest=4342/kharan-s-tale",
-        "prequest": "Kharan Mighthammer",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4341/kharan-mighthammer",
-        "prevQuestId": 4341,
-        "nextQuestId": 4361,
-        "chainId": 3702,
-        "chainDepth": 3,
-        "startNpc": "Kharan Mighthammer",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blackrock Depths",
-        "endNpc": "Kharan Mighthammer",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Blackrock Depths",
-        "levels": "59",
-        "minLevel": 50,
-        "faction": "Alliance",
-        "xp": 1600,
-        "money": 9600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4361,
-        "name": "The Bearer of Bad News",
-        "questLink": "https://www.wowhead.com/classic/quest=4361/the-bearer-of-bad-news",
-        "prequest": "Kharan's Tale",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4342/kharan-s-tale",
-        "prevQuestId": 4342,
-        "nextQuestId": 4362,
-        "chainId": 3702,
-        "chainDepth": 4,
-        "startNpc": "Kharan Mighthammer",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blackrock Depths",
-        "endNpc": "King Magni Bronzebeard",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Ironforge",
-        "levels": "59",
-        "minLevel": 50,
-        "faction": "Alliance",
-        "xp": 6400,
-        "money": 38400,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": 4363,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4362,
         "name": "The Fate of the Kingdom",
         "questLink": "https://www.wowhead.com/classic/quest=4362/the-fate-of-the-kingdom",
-        "prequest": "The Bearer of Bad News",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4361/the-bearer-of-bad-news",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4361,
         "nextQuestId": 4363,
-        "chainId": 3702,
-        "chainDepth": 5,
+        "chainId": "brd-4342-kharan-s-tale",
+        "chainDepth": 2,
         "startNpc": "King Magni Bronzebeard",
         "startNpcLink": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
         "startObject": "",
@@ -13648,11 +19526,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "King Magni Bronzebeard",
+            "link": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
         "endNpc": "Princess Moira Bronzebeard",
         "endNpcLink": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Blackrock Depths",
+        "endNpcs": [
+          {
+            "name": "Princess Moira Bronzebeard",
+            "link": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
         "levels": "59",
         "minLevel": 50,
         "faction": "Alliance",
@@ -13662,400 +19558,375 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 3702,
+            "name": "The Smoldering Ruins of Thaurissan",
+            "questLink": "https://www.wowhead.com/classic/quest=3702/the-smoldering-ruins-of-thaurissan",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 3701,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Royal Historian Archesonus",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "endNpc": "Royal Historian Archesonus",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 540,
+            "money": 2580,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-3702-the-smoldering-ruins-of-thaurissan",
+              "index": 1,
+              "total": 2,
+              "name": "The Smoldering Ruins of Thaurissan"
+            }
+          },
+          {
+            "id": 3701,
+            "name": "The Smoldering Ruins of Thaurissan",
+            "questLink": "https://www.wowhead.com/classic/quest=3701/the-smoldering-ruins-of-thaurissan",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3702,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Royal Historian Archesonus",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "endNpc": "Royal Historian Archesonus",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 16500,
+            "rewards": [
+              {
+                "id": 12102,
+                "name": "Ring of the Aristocrat",
+                "url": "https://www.wowhead.com/classic/item=12102/ring-of-the-aristocrat",
+                "quality": 2
+              }
+            ],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "brd-3702-the-smoldering-ruins-of-thaurissan",
+              "index": 2,
+              "total": 2,
+              "name": "The Smoldering Ruins of Thaurissan"
+            }
+          },
+          {
+            "id": 4341,
+            "name": "Kharan Mighthammer",
+            "questLink": "https://www.wowhead.com/classic/quest=4341/kharan-mighthammer",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3701,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "King Magni Bronzebeard",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "King Magni Bronzebeard",
+                "link": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "endNpc": "Kharan Mighthammer",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Blackrock Depths",
+            "endNpcs": [
+              {
+                "name": "Kharan Mighthammer",
+                "link": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "levels": "59",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 6400,
+            "money": 38400,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "single",
+                "id": 3701
+              }
+            ],
+            "isDungeon": true
+          },
+          {
+            "id": 4342,
+            "name": "Kharan's Tale",
+            "questLink": "https://www.wowhead.com/classic/quest=4342/kharan-s-tale",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4341,
+            "nextQuestId": 4361,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Kharan Mighthammer",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Blackrock Depths",
+            "startNpcs": [
+              {
+                "name": "Kharan Mighthammer",
+                "link": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "endNpc": "Kharan Mighthammer",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Blackrock Depths",
+            "endNpcs": [
+              {
+                "name": "Kharan Mighthammer",
+                "link": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "levels": "59",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 1600,
+            "money": 9600,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4342-kharan-s-tale",
+              "index": 1,
+              "total": 4,
+              "name": "Kharan's Tale"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 4341
+              }
+            ]
+          },
+          {
+            "id": 4361,
+            "name": "The Bearer of Bad News",
+            "questLink": "https://www.wowhead.com/classic/quest=4361/the-bearer-of-bad-news",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4342,
+            "nextQuestId": 4362,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Kharan Mighthammer",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Blackrock Depths",
+            "startNpcs": [
+              {
+                "name": "Kharan Mighthammer",
+                "link": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "endNpc": "King Magni Bronzebeard",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "King Magni Bronzebeard",
+                "link": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "levels": "59",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 6400,
+            "money": 38400,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4342-kharan-s-tale",
+              "index": 2,
+              "total": 4,
+              "name": "Kharan's Tale"
+            }
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4342-kharan-s-tale",
+          "index": 3,
+          "total": 4,
+          "name": "Kharan's Tale"
+        }
       },
       {
-        "id": 4363,
-        "name": "The Princess's Surprise",
-        "questLink": "https://www.wowhead.com/classic/quest=4363/the-princess-s-surprise",
-        "prequest": "The Fate of the Kingdom",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4362/the-fate-of-the-kingdom",
-        "prevQuestId": 4362,
+        "id": 4082,
+        "name": "KILL ON SIGHT: High Ranking Dark Iron Officials",
+        "questLink": "https://www.wowhead.com/classic/quest=4082/kill-on-sight-high-ranking-dark-iron-officials",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 3702,
-        "chainDepth": 6,
-        "startNpc": "Princess Moira Bronzebeard",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
-        "startObject": "",
-        "startObjectLink": "",
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "KILL ON SIGHT",
+        "startObjectLink": "https://www.wowhead.com/classic/object=164868/kill-on-sight",
         "startItem": "",
         "startItemLink": "",
-        "startLoc": "Blackrock Depths",
-        "endNpc": "King Magni Bronzebeard",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+        "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "KILL ON SIGHT",
+            "link": "https://www.wowhead.com/classic/object=164868/kill-on-sight",
+            "faction": "",
+            "type": "object",
+            "loc": "Badlands"
+          }
+        ],
+        "endNpc": "Warlord Goretooth",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
         "endObject": "",
         "endObjectLink": "",
-        "endLoc": "Ironforge",
-        "levels": "59",
+        "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Warlord Goretooth",
+            "link": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
+        "levels": "54",
         "minLevel": 50,
-        "faction": "Alliance",
-        "xp": 9650,
-        "money": 26500,
-        "rewards": [],
-        "rewardChoices": [
-          {
-            "id": 12548,
-            "name": "Magni's Will",
-            "url": "https://www.wowhead.com/classic/item=12548/magni-s-will",
-            "quality": 3
-          },
-          {
-            "id": 12543,
-            "name": "Songstone of Ironforge",
-            "url": "https://www.wowhead.com/classic/item=12543/songstone-of-ironforge",
-            "quality": 3
-          }
-        ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3906,
-        "name": "Disharmony of Flame",
-        "questLink": "https://www.wowhead.com/classic/quest=3906/disharmony-of-flame",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 3907,
-        "chainId": 3906,
-        "chainDepth": 0,
-        "startNpc": "Thunderheart",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9084/thunderheart",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Badlands",
-        "endNpc": "Thunderheart",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9084/thunderheart",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Badlands",
-        "levels": "52",
-        "minLevel": 48,
-        "faction": "Horde",
-        "xp": 5100,
-        "money": 15500,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3907,
-        "name": "Disharmony of Fire",
-        "questLink": "https://www.wowhead.com/classic/quest=3907/disharmony-of-fire",
-        "prequest": "Disharmony of Flame",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3906/disharmony-of-flame",
-        "prevQuestId": 3906,
-        "nextQuestId": null,
-        "chainId": 3906,
-        "chainDepth": 1,
-        "startNpc": "Thunderheart",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9084/thunderheart",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Badlands",
-        "endNpc": "Thunderheart",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9084/thunderheart",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Badlands",
-        "levels": "56",
-        "minLevel": 48,
-        "faction": "Horde",
-        "xp": 7300,
-        "money": 25500,
-        "rewards": [],
-        "rewardChoices": [
-          {
-            "id": 12113,
-            "name": "Sunborne Cape",
-            "url": "https://www.wowhead.com/classic/item=12113/sunborne-cape",
-            "quality": 2
-          },
-          {
-            "id": 12114,
-            "name": "Nightfall Gloves",
-            "url": "https://www.wowhead.com/classic/item=12114/nightfall-gloves",
-            "quality": 2
-          },
-          {
-            "id": 12112,
-            "name": "Crypt Demon Bracers",
-            "url": "https://www.wowhead.com/classic/item=12112/crypt-demon-bracers",
-            "quality": 2
-          },
-          {
-            "id": 12115,
-            "name": "Stalwart Clutch",
-            "url": "https://www.wowhead.com/classic/item=12115/stalwart-clutch",
-            "quality": 2
-          }
-        ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3981,
-        "name": "Commander Gor'shak",
-        "questLink": "https://www.wowhead.com/classic/quest=3981/commander-gor-shak",
-        "prequest": "Disharmony of Flame",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3906/disharmony-of-flame",
-        "prevQuestId": 3906,
-        "nextQuestId": 3982,
-        "chainId": 3906,
-        "chainDepth": 1,
-        "startNpc": "Galamav the Marksman",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9081/galamav-the-marksman",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Badlands",
-        "endNpc": "Commander Gor'shak",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Blackrock Depths",
-        "levels": "52",
-        "minLevel": 48,
-        "faction": "Horde",
-        "xp": 5100,
-        "money": 12300,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3982,
-        "name": "What Is Going On?",
-        "questLink": "https://www.wowhead.com/classic/quest=3982/what-is-going-on",
-        "prequest": "Commander Gor'shak",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3981/commander-gor-shak",
-        "prevQuestId": 3981,
-        "nextQuestId": 4001,
-        "chainId": 3906,
-        "chainDepth": 2,
-        "startNpc": "Commander Gor'shak",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blackrock Depths",
-        "endNpc": "Commander Gor'shak",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Blackrock Depths",
-        "levels": "54",
-        "minLevel": 48,
-        "faction": "Horde",
-        "xp": 5450,
-        "money": 26100,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4001,
-        "name": "What Is Going On?",
-        "questLink": "https://www.wowhead.com/classic/quest=4001/what-is-going-on",
-        "prequest": "What Is Going On?",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3982/what-is-going-on",
-        "prevQuestId": 3982,
-        "nextQuestId": 4002,
-        "chainId": 3906,
-        "chainDepth": 3,
-        "startNpc": "Commander Gor'shak",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blackrock Depths",
-        "endNpc": "Thrall",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Orgrimmar",
-        "levels": "54",
-        "minLevel": 48,
-        "faction": "Horde",
-        "xp": 6800,
-        "money": 32700,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4002,
-        "name": "The Eastern Kingdoms",
-        "questLink": "https://www.wowhead.com/classic/quest=4002/the-eastern-kingdoms",
-        "prequest": "What Is Going On?",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4001/what-is-going-on",
-        "prevQuestId": 4001,
-        "nextQuestId": 4003,
-        "chainId": 3906,
-        "chainDepth": 4,
-        "startNpc": "Thrall",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Orgrimmar",
-        "endNpc": "Thrall",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Orgrimmar",
-        "levels": "54",
-        "minLevel": 48,
-        "faction": "Horde",
-        "xp": 540,
-        "money": 2580,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4003,
-        "name": "The Royal Rescue",
-        "questLink": "https://www.wowhead.com/classic/quest=4003/the-royal-rescue",
-        "prequest": "The Eastern Kingdoms",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4002/the-eastern-kingdoms",
-        "prevQuestId": 4002,
-        "nextQuestId": 4004,
-        "chainId": 3906,
-        "chainDepth": 5,
-        "startNpc": "Thrall",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Orgrimmar",
-        "endNpc": "Princess Moira Bronzebeard",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Blackrock Depths",
-        "levels": "59",
-        "minLevel": 48,
-        "faction": "Horde",
-        "xp": 8050,
-        "money": 48300,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4004,
-        "name": "The Princess Saved?",
-        "questLink": "https://www.wowhead.com/classic/quest=4004/the-princess-saved",
-        "prequest": "The Royal Rescue",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4003/the-royal-rescue",
-        "prevQuestId": 4003,
-        "nextQuestId": null,
-        "chainId": 3906,
-        "chainDepth": 6,
-        "startNpc": "Princess Moira Bronzebeard",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blackrock Depths",
-        "endNpc": "Thrall",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Orgrimmar",
-        "levels": "60",
-        "minLevel": 48,
-        "faction": "Horde",
-        "xp": 9950,
-        "money": 27000,
-        "rewards": [],
-        "rewardChoices": [
-          {
-            "id": 12544,
-            "name": "Thrall's Resolve",
-            "url": "https://www.wowhead.com/classic/item=12544/thrall-s-resolve",
-            "quality": 3
-          },
-          {
-            "id": 12545,
-            "name": "Eye of Orgrimmar",
-            "url": "https://www.wowhead.com/classic/item=12545/eye-of-orgrimmar",
-            "quality": 3
-          }
-        ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4061,
-        "name": "The Rise of the Machines",
-        "questLink": "https://www.wowhead.com/classic/quest=4061/the-rise-of-the-machines",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 4062,
-        "chainId": 4061,
-        "chainDepth": 0,
-        "startNpc": "Hierophant Theodora Mulvadania",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9079/hierophant-theodora-mulvadania",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Badlands",
-        "endNpc": "Hierophant Theodora Mulvadania",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9079/hierophant-theodora-mulvadania",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Badlands",
-        "levels": "54",
-        "minLevel": 52,
         "faction": "Horde",
         "xp": 5450,
         "money": 16500,
@@ -14063,54 +19934,78 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 4081,
+            "name": "KILL ON SIGHT: Dark Iron Dwarves",
+            "questLink": "https://www.wowhead.com/classic/quest=4081/kill-on-sight-dark-iron-dwarves",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "",
+            "startNpcLink": "",
+            "startObject": "WANTED",
+            "startObjectLink": "https://www.wowhead.com/classic/object=164867/wanted",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "WANTED",
+                "link": "https://www.wowhead.com/classic/object=164867/wanted",
+                "faction": "",
+                "type": "object",
+                "loc": "Badlands"
+              }
+            ],
+            "endNpc": "Warlord Goretooth",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Warlord Goretooth",
+                "link": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 48,
+            "faction": "Horde",
+            "xp": 5100,
+            "money": 15500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "isDungeon": true
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4062,
-        "name": "The Rise of the Machines",
-        "questLink": "https://www.wowhead.com/classic/quest=4062/the-rise-of-the-machines",
-        "prequest": "The Rise of the Machines",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4061/the-rise-of-the-machines",
-        "prevQuestId": 4061,
-        "nextQuestId": 4063,
-        "chainId": 4061,
-        "chainDepth": 1,
-        "startNpc": "Hierophant Theodora Mulvadania",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9079/hierophant-theodora-mulvadania",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Badlands",
-        "endNpc": "Lotwil Veriatus",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=2921/lotwil-veriatus",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Badlands",
-        "levels": "54",
-        "minLevel": 52,
-        "faction": "Horde",
-        "xp": 1350,
-        "money": 6600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": 4132,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4063,
         "name": "The Rise of the Machines",
         "questLink": "https://www.wowhead.com/classic/quest=4063/the-rise-of-the-machines",
-        "prequest": "The Rise of the Machines",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4062/the-rise-of-the-machines",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4062,
         "nextQuestId": null,
-        "chainId": 4061,
+        "chainId": "brd-4061-the-rise-of-the-machines",
         "chainDepth": 2,
         "startNpc": "Lotwil Veriatus",
         "startNpcLink": "https://www.wowhead.com/classic/npc=2921/lotwil-veriatus",
@@ -14119,11 +20014,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Lotwil Veriatus",
+            "link": "https://www.wowhead.com/classic/npc=2921/lotwil-veriatus",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "endNpc": "Lotwil Veriatus",
         "endNpcLink": "https://www.wowhead.com/classic/npc=2921/lotwil-veriatus",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Lotwil Veriatus",
+            "link": "https://www.wowhead.com/classic/npc=2921/lotwil-veriatus",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "levels": "58",
         "minLevel": 52,
         "faction": "Horde",
@@ -14158,9 +20071,440 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 4061,
+            "name": "The Rise of the Machines",
+            "questLink": "https://www.wowhead.com/classic/quest=4061/the-rise-of-the-machines",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 4062,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Hierophant Theodora Mulvadania",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9079/hierophant-theodora-mulvadania",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Hierophant Theodora Mulvadania",
+                "link": "https://www.wowhead.com/classic/npc=9079/hierophant-theodora-mulvadania",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "endNpc": "Hierophant Theodora Mulvadania",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9079/hierophant-theodora-mulvadania",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Hierophant Theodora Mulvadania",
+                "link": "https://www.wowhead.com/classic/npc=9079/hierophant-theodora-mulvadania",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 52,
+            "faction": "Horde",
+            "xp": 5450,
+            "money": 16500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4061-the-rise-of-the-machines",
+              "index": 1,
+              "total": 3,
+              "name": "The Rise of the Machines"
+            }
+          },
+          {
+            "id": 4062,
+            "name": "The Rise of the Machines",
+            "questLink": "https://www.wowhead.com/classic/quest=4062/the-rise-of-the-machines",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4061,
+            "nextQuestId": 4063,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Hierophant Theodora Mulvadania",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9079/hierophant-theodora-mulvadania",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Hierophant Theodora Mulvadania",
+                "link": "https://www.wowhead.com/classic/npc=9079/hierophant-theodora-mulvadania",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "endNpc": "Lotwil Veriatus",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=2921/lotwil-veriatus",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Lotwil Veriatus",
+                "link": "https://www.wowhead.com/classic/npc=2921/lotwil-veriatus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 52,
+            "faction": "Horde",
+            "xp": 1350,
+            "money": 6600,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4061-the-rise-of-the-machines",
+              "index": 2,
+              "total": 3,
+              "name": "The Rise of the Machines"
+            }
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4061-the-rise-of-the-machines",
+          "index": 3,
+          "total": 3,
+          "name": "The Rise of the Machines"
+        }
+      },
+      {
+        "id": 4132,
+        "name": "Operation: Death to Angerforge",
+        "questLink": "https://www.wowhead.com/classic/quest=4132/operation-death-to-angerforge",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Warlord Goretooth",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Warlord Goretooth",
+            "link": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
+        "endNpc": "Warlord Goretooth",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Warlord Goretooth",
+            "link": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 52,
+        "faction": "Horde",
+        "xp": 7750,
+        "money": 26500,
+        "rewards": [
+          {
+            "id": 12059,
+            "name": "Conqueror's Medallion",
+            "url": "https://www.wowhead.com/classic/item=12059/conqueror-s-medallion",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 4081,
+            "name": "KILL ON SIGHT: Dark Iron Dwarves",
+            "questLink": "https://www.wowhead.com/classic/quest=4081/kill-on-sight-dark-iron-dwarves",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "",
+            "startNpcLink": "",
+            "startObject": "WANTED",
+            "startObjectLink": "https://www.wowhead.com/classic/object=164867/wanted",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "WANTED",
+                "link": "https://www.wowhead.com/classic/object=164867/wanted",
+                "faction": "",
+                "type": "object",
+                "loc": "Badlands"
+              }
+            ],
+            "endNpc": "Warlord Goretooth",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Warlord Goretooth",
+                "link": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 48,
+            "faction": "Horde",
+            "xp": 5100,
+            "money": 15500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "isDungeon": true
+          },
+          {
+            "id": 4082,
+            "name": "KILL ON SIGHT: High Ranking Dark Iron Officials",
+            "questLink": "https://www.wowhead.com/classic/quest=4082/kill-on-sight-high-ranking-dark-iron-officials",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4081,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "",
+            "startNpcLink": "",
+            "startObject": "KILL ON SIGHT",
+            "startObjectLink": "https://www.wowhead.com/classic/object=164868/kill-on-sight",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "KILL ON SIGHT",
+                "link": "https://www.wowhead.com/classic/object=164868/kill-on-sight",
+                "faction": "",
+                "type": "object",
+                "loc": "Badlands"
+              }
+            ],
+            "endNpc": "Warlord Goretooth",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Warlord Goretooth",
+                "link": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 50,
+            "faction": "Horde",
+            "xp": 5450,
+            "money": 16500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "single",
+                "id": 4081
+              }
+            ],
+            "isDungeon": true
+          },
+          {
+            "id": 4122,
+            "name": "Grark Lorkrub",
+            "questLink": "https://www.wowhead.com/classic/quest=4122/grark-lorkrub",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4081,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Lexlort",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9080/lexlort",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Lexlort",
+                "link": "https://www.wowhead.com/classic/npc=9080/lexlort",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "endNpc": "Grark Lorkrub",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9520/grark-lorkrub",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Grark Lorkrub",
+                "link": "https://www.wowhead.com/classic/npc=9520/grark-lorkrub",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "58",
+            "minLevel": 52,
+            "faction": "Horde",
+            "xp": 6200,
+            "money": 37200,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "single",
+                "id": 4082
+              }
+            ]
+          },
+          {
+            "id": 4121,
+            "name": "Precarious Predicament",
+            "questLink": "https://www.wowhead.com/classic/quest=4121/precarious-predicament",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4122,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Grark Lorkrub",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9520/grark-lorkrub",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Grark Lorkrub",
+                "link": "https://www.wowhead.com/classic/npc=9520/grark-lorkrub",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "endNpc": "Lexlort",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9080/lexlort",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Badlands",
+            "endNpcs": [
+              {
+                "name": "Lexlort",
+                "link": "https://www.wowhead.com/classic/npc=9080/lexlort",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "levels": "58",
+            "minLevel": 52,
+            "faction": "Horde",
+            "xp": 7750,
+            "money": 26500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "single",
+                "id": 4122
+              }
+            ]
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4201,
@@ -14179,11 +20523,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Blackrock Depths",
+        "startNpcs": [
+          {
+            "name": "Mistress Nagmara",
+            "link": "https://www.wowhead.com/classic/npc=9500/mistress-nagmara",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
         "endNpc": "Mistress Nagmara",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9500/mistress-nagmara",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Blackrock Depths",
+        "endNpcs": [
+          {
+            "name": "Mistress Nagmara",
+            "link": "https://www.wowhead.com/classic/npc=9500/mistress-nagmara",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
         "levels": "54",
         "minLevel": 50,
         "faction": "Both",
@@ -14208,53 +20570,20 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4023,
-        "name": "A Taste of Flame",
-        "questLink": "https://www.wowhead.com/classic/quest=4023/a-taste-of-flame",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": null,
-        "chainDepth": 0,
-        "startNpc": "Cyrus Therepentous",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Burning Steppes",
-        "endNpc": "Cyrus Therepentous",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Burning Steppes",
-        "levels": "54",
-        "minLevel": 52,
-        "faction": "Both",
-        "xp": 5450,
-        "money": 26100,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4242,
         "name": "Abandoned Hope",
         "questLink": "https://www.wowhead.com/classic/quest=4242/abandoned-hope",
-        "prequest": "Marshal Windsor",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4241/marshal-windsor",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4241,
         "nextQuestId": null,
-        "chainId": 4242,
-        "chainDepth": 0,
+        "chainId": "brd-4182-dragonkin-menace",
+        "chainDepth": 8,
         "startNpc": "Marshal Windsor",
         "startNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
         "startObject": "",
@@ -14262,11 +20591,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Blackrock Depths",
+        "startNpcs": [
+          {
+            "name": "Marshal Windsor",
+            "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
         "endNpc": "Marshal Maxwell",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Marshal Maxwell",
+            "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "levels": "54",
         "minLevel": 48,
         "faction": "Alliance",
@@ -14313,11 +20660,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Helendis Riverhorn",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14330,7 +20695,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 1,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4183,
@@ -14349,11 +20720,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Magistrate Solomon",
             "endNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Redridge Mountains",
+            "endNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14366,7 +20755,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 2,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4184,
@@ -14385,11 +20780,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Redridge Mountains",
+            "startNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
             "endNpc": "Highlord Bolvar Fordragon",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14402,7 +20815,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 3,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4185,
@@ -14421,11 +20840,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Highlord Bolvar Fordragon",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14438,7 +20875,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 4,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4186,
@@ -14457,11 +20900,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Magistrate Solomon",
             "endNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Redridge Mountains",
+            "endNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14474,7 +20935,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 5,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4223,
@@ -14493,11 +20960,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Redridge Mountains",
+            "startNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
             "endNpc": "Marshal Maxwell",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14510,7 +20995,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 6,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4224,
@@ -14529,11 +21020,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Marshal Maxwell",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14546,7 +21055,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 7,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4241,
@@ -14565,11 +21080,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Marshal Windsor",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Blackrock Depths",
+            "endNpcs": [
+              {
+                "name": "Marshal Windsor",
+                "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14582,39 +21115,62 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 8,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": 4282
+        "absorbedBy": 4322,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4182-dragonkin-menace",
+          "index": 9,
+          "total": 9,
+          "name": "Dragonkin Menace"
+        }
       },
       {
-        "id": 4282,
-        "name": "A Shred of Hope",
-        "questLink": "https://www.wowhead.com/classic/quest=4282/a-shred-of-hope",
-        "prequest": "A Crumpled Up Note",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4264/a-crumpled-up-note",
-        "prevQuestId": 4264,
-        "nextQuestId": null,
-        "chainId": 4282,
+        "id": 4264,
+        "name": "A Crumpled Up Note",
+        "questLink": "https://www.wowhead.com/classic/quest=4264/a-crumpled-up-note",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 4282,
+        "chainId": "brd-4264-a-crumpled-up-note",
         "chainDepth": 0,
-        "startNpc": "Marshal Windsor",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+        "startNpc": "",
+        "startNpcLink": "",
         "startObject": "",
         "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blackrock Depths",
+        "startItem": "A Crumpled Up Note",
+        "startItemLink": "https://www.wowhead.com/classic/item=11446/a-crumpled-up-note",
+        "startLoc": "",
+        "startNpcs": [],
         "endNpc": "Marshal Windsor",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Blackrock Depths",
+        "endNpcs": [
+          {
+            "name": "Marshal Windsor",
+            "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
         "levels": "58",
         "minLevel": 50,
         "faction": "Alliance",
         "xp": 6200,
-        "money": 9000,
+        "money": 37200,
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -14637,11 +21193,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Helendis Riverhorn",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14654,7 +21228,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 1,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4183,
@@ -14673,11 +21253,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Magistrate Solomon",
             "endNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Redridge Mountains",
+            "endNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14690,7 +21288,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 2,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4184,
@@ -14709,11 +21313,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Redridge Mountains",
+            "startNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
             "endNpc": "Highlord Bolvar Fordragon",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14726,7 +21348,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 3,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4185,
@@ -14745,11 +21373,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Highlord Bolvar Fordragon",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14762,7 +21408,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 4,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4186,
@@ -14781,11 +21433,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Magistrate Solomon",
             "endNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Redridge Mountains",
+            "endNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14798,7 +21468,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 5,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4223,
@@ -14817,11 +21493,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Redridge Mountains",
+            "startNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
             "endNpc": "Marshal Maxwell",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14834,7 +21528,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 6,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4224,
@@ -14853,11 +21553,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Marshal Maxwell",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14870,7 +21588,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 7,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4241,
@@ -14889,11 +21613,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Marshal Windsor",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Blackrock Depths",
+            "endNpcs": [
+              {
+                "name": "Marshal Windsor",
+                "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14906,7 +21648,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 8,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
           },
           {
             "id": 4242,
@@ -14925,11 +21673,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Blackrock Depths",
+            "startNpcs": [
+              {
+                "name": "Marshal Windsor",
+                "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
             "endNpc": "Marshal Maxwell",
             "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "54",
             "minLevel": 48,
             "faction": "Alliance",
@@ -14961,57 +21727,35 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 4264,
-            "name": "A Crumpled Up Note",
-            "questLink": "https://www.wowhead.com/classic/quest=4264/a-crumpled-up-note",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 4242,
-            "nextQuestId": 4282,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "A Crumpled Up Note",
-            "startItemLink": "https://www.wowhead.com/classic/item=11446/a-crumpled-up-note",
-            "startLoc": "",
-            "endNpc": "Marshal Windsor",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Blackrock Depths",
-            "levels": "58",
-            "minLevel": 50,
-            "faction": "Alliance",
-            "xp": 6200,
-            "money": 37200,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "requires",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 9,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            },
+            "isDungeon": true
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": 4322,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4264-a-crumpled-up-note",
+          "index": 1,
+          "total": 2,
+          "name": "A Crumpled Up Note"
+        }
       },
       {
-        "id": 4322,
-        "name": "Jail Break!",
-        "questLink": "https://www.wowhead.com/classic/quest=4322/jail-break",
-        "prequest": "A Shred of Hope",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4282/a-shred-of-hope",
-        "prevQuestId": 4282,
-        "nextQuestId": 6402,
-        "chainId": 4282,
+        "id": 4282,
+        "name": "A Shred of Hope",
+        "questLink": "https://www.wowhead.com/classic/quest=4282/a-shred-of-hope",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 4264,
+        "nextQuestId": null,
+        "chainId": "brd-4264-a-crumpled-up-note",
         "chainDepth": 1,
         "startNpc": "Marshal Windsor",
         "startNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
@@ -15020,11 +21764,650 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Blackrock Depths",
+        "startNpcs": [
+          {
+            "name": "Marshal Windsor",
+            "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "endNpc": "Marshal Windsor",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Blackrock Depths",
+        "endNpcs": [
+          {
+            "name": "Marshal Windsor",
+            "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 50,
+        "faction": "Alliance",
+        "xp": 6200,
+        "money": 9000,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 4182,
+            "name": "Dragonkin Menace",
+            "questLink": "https://www.wowhead.com/classic/quest=4182/dragonkin-menace",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 4183,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Helendis Riverhorn",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "endNpc": "Helendis Riverhorn",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 16500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 1,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4183,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4183/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4182,
+            "nextQuestId": 4184,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Helendis Riverhorn",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "endNpc": "Magistrate Solomon",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Redridge Mountains",
+            "endNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 4100,
+            "money": 19800,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 2,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4184,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4184/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4183,
+            "nextQuestId": 4185,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Magistrate Solomon",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Redridge Mountains",
+            "startNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
+            "endNpc": "Highlord Bolvar Fordragon",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 4100,
+            "money": 19800,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 3,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4185,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4185/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4184,
+            "nextQuestId": 4186,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Highlord Bolvar Fordragon",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "endNpc": "Highlord Bolvar Fordragon",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 540,
+            "money": 2580,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 4,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4186,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4186/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4185,
+            "nextQuestId": 4223,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Highlord Bolvar Fordragon",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "endNpc": "Magistrate Solomon",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Redridge Mountains",
+            "endNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 26100,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 5,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4223,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4223/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4186,
+            "nextQuestId": 4224,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Magistrate Solomon",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Redridge Mountains",
+            "startNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
+            "endNpc": "Marshal Maxwell",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 540,
+            "money": 2580,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 6,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4224,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4224/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4223,
+            "nextQuestId": 4241,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Marshal Maxwell",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "endNpc": "Marshal Maxwell",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 540,
+            "money": 2580,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 7,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4241,
+            "name": "Marshal Windsor",
+            "questLink": "https://www.wowhead.com/classic/quest=4241/marshal-windsor",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4224,
+            "nextQuestId": 4242,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Marshal Maxwell",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "endNpc": "Marshal Windsor",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Blackrock Depths",
+            "endNpcs": [
+              {
+                "name": "Marshal Windsor",
+                "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 26100,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 8,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4242,
+            "name": "Abandoned Hope",
+            "questLink": "https://www.wowhead.com/classic/quest=4242/abandoned-hope",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4241,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Marshal Windsor",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Blackrock Depths",
+            "startNpcs": [
+              {
+                "name": "Marshal Windsor",
+                "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "endNpc": "Marshal Maxwell",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 26100,
+            "rewards": [],
+            "rewardChoices": [
+              {
+                "id": 12018,
+                "name": "Conservator Helm",
+                "url": "https://www.wowhead.com/classic/item=12018/conservator-helm",
+                "quality": 2
+              },
+              {
+                "id": 12021,
+                "name": "Shieldplate Sabatons",
+                "url": "https://www.wowhead.com/classic/item=12021/shieldplate-sabatons",
+                "quality": 2
+              },
+              {
+                "id": 12041,
+                "name": "Windshear Leggings",
+                "url": "https://www.wowhead.com/classic/item=12041/windshear-leggings",
+                "quality": 2
+              }
+            ],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 9,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            },
+            "isDungeon": true
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": 4322,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4264-a-crumpled-up-note",
+          "index": 2,
+          "total": 2,
+          "name": "A Crumpled Up Note"
+        }
+      },
+      {
+        "id": 4322,
+        "name": "Jail Break!",
+        "questLink": "https://www.wowhead.com/classic/quest=4322/jail-break",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 6402,
+        "chainId": "brd-4322-jail-break",
+        "chainDepth": 0,
+        "startNpc": "Marshal Windsor",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Depths",
+        "startNpcs": [
+          {
+            "name": "Marshal Windsor",
+            "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
         "endNpc": "Marshal Maxwell",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Marshal Maxwell",
+            "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "levels": "58",
         "minLevel": 50,
         "faction": "Alliance",
@@ -15054,15 +22437,1651 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 4182,
+            "name": "Dragonkin Menace",
+            "questLink": "https://www.wowhead.com/classic/quest=4182/dragonkin-menace",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 4183,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Helendis Riverhorn",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "endNpc": "Helendis Riverhorn",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 16500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 1,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4183,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4183/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4182,
+            "nextQuestId": 4184,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Helendis Riverhorn",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Helendis Riverhorn",
+                "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "endNpc": "Magistrate Solomon",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Redridge Mountains",
+            "endNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 4100,
+            "money": 19800,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 2,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4184,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4184/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4183,
+            "nextQuestId": 4185,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Magistrate Solomon",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Redridge Mountains",
+            "startNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
+            "endNpc": "Highlord Bolvar Fordragon",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 4100,
+            "money": 19800,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 3,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4185,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4185/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4184,
+            "nextQuestId": 4186,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Highlord Bolvar Fordragon",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "endNpc": "Highlord Bolvar Fordragon",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 540,
+            "money": 2580,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 4,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4186,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4186/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4185,
+            "nextQuestId": 4223,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Highlord Bolvar Fordragon",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Highlord Bolvar Fordragon",
+                "link": "https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "endNpc": "Magistrate Solomon",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Redridge Mountains",
+            "endNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 26100,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 5,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4223,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4223/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4186,
+            "nextQuestId": 4224,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Magistrate Solomon",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Redridge Mountains",
+            "startNpcs": [
+              {
+                "name": "Magistrate Solomon",
+                "link": "https://www.wowhead.com/classic/npc=344/magistrate-solomon",
+                "faction": "",
+                "type": "npc",
+                "loc": "Redridge Mountains"
+              }
+            ],
+            "endNpc": "Marshal Maxwell",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 540,
+            "money": 2580,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 6,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4224,
+            "name": "The True Masters",
+            "questLink": "https://www.wowhead.com/classic/quest=4224/the-true-masters",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4223,
+            "nextQuestId": 4241,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Marshal Maxwell",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "endNpc": "Marshal Maxwell",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 540,
+            "money": 2580,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 7,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4241,
+            "name": "Marshal Windsor",
+            "questLink": "https://www.wowhead.com/classic/quest=4241/marshal-windsor",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4224,
+            "nextQuestId": 4242,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Marshal Maxwell",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "endNpc": "Marshal Windsor",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Blackrock Depths",
+            "endNpcs": [
+              {
+                "name": "Marshal Windsor",
+                "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 26100,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 8,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            }
+          },
+          {
+            "id": 4242,
+            "name": "Abandoned Hope",
+            "questLink": "https://www.wowhead.com/classic/quest=4242/abandoned-hope",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4241,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Marshal Windsor",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Blackrock Depths",
+            "startNpcs": [
+              {
+                "name": "Marshal Windsor",
+                "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "endNpc": "Marshal Maxwell",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 48,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 26100,
+            "rewards": [],
+            "rewardChoices": [
+              {
+                "id": 12018,
+                "name": "Conservator Helm",
+                "url": "https://www.wowhead.com/classic/item=12018/conservator-helm",
+                "quality": 2
+              },
+              {
+                "id": 12021,
+                "name": "Shieldplate Sabatons",
+                "url": "https://www.wowhead.com/classic/item=12021/shieldplate-sabatons",
+                "quality": 2
+              },
+              {
+                "id": 12041,
+                "name": "Windshear Leggings",
+                "url": "https://www.wowhead.com/classic/item=12041/windshear-leggings",
+                "quality": 2
+              }
+            ],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "brd-4182-dragonkin-menace",
+              "index": 9,
+              "total": 9,
+              "name": "Dragonkin Menace"
+            },
+            "isDungeon": true
+          },
+          {
+            "id": 4264,
+            "name": "A Crumpled Up Note",
+            "questLink": "https://www.wowhead.com/classic/quest=4264/a-crumpled-up-note",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4242,
+            "nextQuestId": 4282,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "",
+            "startNpcLink": "",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "A Crumpled Up Note",
+            "startItemLink": "https://www.wowhead.com/classic/item=11446/a-crumpled-up-note",
+            "startLoc": "",
+            "startNpcs": [],
+            "endNpc": "Marshal Windsor",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Blackrock Depths",
+            "endNpcs": [
+              {
+                "name": "Marshal Windsor",
+                "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "levels": "58",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 6200,
+            "money": 37200,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4264-a-crumpled-up-note",
+              "index": 1,
+              "total": 2,
+              "name": "A Crumpled Up Note"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 4242
+              }
+            ],
+            "isDungeon": true
+          },
+          {
+            "id": 4282,
+            "name": "A Shred of Hope",
+            "questLink": "https://www.wowhead.com/classic/quest=4282/a-shred-of-hope",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4264,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Marshal Windsor",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Blackrock Depths",
+            "startNpcs": [
+              {
+                "name": "Marshal Windsor",
+                "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "endNpc": "Marshal Windsor",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Blackrock Depths",
+            "endNpcs": [
+              {
+                "name": "Marshal Windsor",
+                "link": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "levels": "58",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 6200,
+            "money": 9000,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "brd-4264-a-crumpled-up-note",
+              "index": 2,
+              "total": 2,
+              "name": "A Crumpled Up Note"
+            },
+            "isDungeon": true
+          }
+        ],
         "postChain": [
           {
             "id": 6402,
             "name": "Stormwind Rendezvous",
-            "url": "https://www.wowhead.com/classic/quest=6402/stormwind-rendezvous"
+            "url": "https://www.wowhead.com/classic/quest=6402/stormwind-rendezvous",
+            "series": {
+              "id": "brd-4322-jail-break",
+              "index": 2,
+              "total": 5,
+              "name": "Jail Break!"
+            },
+            "faction": "Alliance"
+          },
+          {
+            "id": 6403,
+            "name": "The Great Masquerade",
+            "url": "https://www.wowhead.com/classic/quest=6403/the-great-masquerade",
+            "series": {
+              "id": "brd-4322-jail-break",
+              "index": 3,
+              "total": 5,
+              "name": "Jail Break!"
+            },
+            "faction": "Alliance"
+          },
+          {
+            "id": 6501,
+            "name": "The Dragon's Eye",
+            "url": "https://www.wowhead.com/classic/quest=6501/the-dragon-s-eye",
+            "series": {
+              "id": "brd-4322-jail-break",
+              "index": 4,
+              "total": 5,
+              "name": "Jail Break!"
+            },
+            "faction": "Alliance"
+          },
+          {
+            "id": 6502,
+            "name": "Drakefire Amulet",
+            "url": "https://www.wowhead.com/classic/quest=6502/drakefire-amulet",
+            "series": {
+              "id": "brd-4322-jail-break",
+              "index": 5,
+              "total": 5,
+              "name": "Jail Break!"
+            },
+            "faction": "Alliance"
           }
         ],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4322-jail-break",
+          "index": 1,
+          "total": 5,
+          "name": "Jail Break!"
+        }
+      },
+      {
+        "id": 4363,
+        "name": "The Princess's Surprise",
+        "questLink": "https://www.wowhead.com/classic/quest=4363/the-princess-s-surprise",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 4362,
+        "nextQuestId": null,
+        "chainId": "brd-4342-kharan-s-tale",
+        "chainDepth": 3,
+        "startNpc": "Princess Moira Bronzebeard",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Depths",
+        "startNpcs": [
+          {
+            "name": "Princess Moira Bronzebeard",
+            "link": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "endNpc": "King Magni Bronzebeard",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "King Magni Bronzebeard",
+            "link": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
+        "levels": "59",
+        "minLevel": 50,
+        "faction": "Alliance",
+        "xp": 9650,
+        "money": 26500,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 12548,
+            "name": "Magni's Will",
+            "url": "https://www.wowhead.com/classic/item=12548/magni-s-will",
+            "quality": 3
+          },
+          {
+            "id": 12543,
+            "name": "Songstone of Ironforge",
+            "url": "https://www.wowhead.com/classic/item=12543/songstone-of-ironforge",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 3702,
+            "name": "The Smoldering Ruins of Thaurissan",
+            "questLink": "https://www.wowhead.com/classic/quest=3702/the-smoldering-ruins-of-thaurissan",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 3701,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Royal Historian Archesonus",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "endNpc": "Royal Historian Archesonus",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 540,
+            "money": 2580,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-3702-the-smoldering-ruins-of-thaurissan",
+              "index": 1,
+              "total": 2,
+              "name": "The Smoldering Ruins of Thaurissan"
+            }
+          },
+          {
+            "id": 3701,
+            "name": "The Smoldering Ruins of Thaurissan",
+            "questLink": "https://www.wowhead.com/classic/quest=3701/the-smoldering-ruins-of-thaurissan",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3702,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Royal Historian Archesonus",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "endNpc": "Royal Historian Archesonus",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "Royal Historian Archesonus",
+                "link": "https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "levels": "54",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 5450,
+            "money": 16500,
+            "rewards": [
+              {
+                "id": 12102,
+                "name": "Ring of the Aristocrat",
+                "url": "https://www.wowhead.com/classic/item=12102/ring-of-the-aristocrat",
+                "quality": 2
+              }
+            ],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "brd-3702-the-smoldering-ruins-of-thaurissan",
+              "index": 2,
+              "total": 2,
+              "name": "The Smoldering Ruins of Thaurissan"
+            }
+          },
+          {
+            "id": 4341,
+            "name": "Kharan Mighthammer",
+            "questLink": "https://www.wowhead.com/classic/quest=4341/kharan-mighthammer",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3701,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "King Magni Bronzebeard",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "King Magni Bronzebeard",
+                "link": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "endNpc": "Kharan Mighthammer",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Blackrock Depths",
+            "endNpcs": [
+              {
+                "name": "Kharan Mighthammer",
+                "link": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "levels": "59",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 6400,
+            "money": 38400,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "single",
+                "id": 3701
+              }
+            ],
+            "isDungeon": true
+          },
+          {
+            "id": 4342,
+            "name": "Kharan's Tale",
+            "questLink": "https://www.wowhead.com/classic/quest=4342/kharan-s-tale",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4341,
+            "nextQuestId": 4361,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Kharan Mighthammer",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Blackrock Depths",
+            "startNpcs": [
+              {
+                "name": "Kharan Mighthammer",
+                "link": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "endNpc": "Kharan Mighthammer",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Blackrock Depths",
+            "endNpcs": [
+              {
+                "name": "Kharan Mighthammer",
+                "link": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "levels": "59",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 1600,
+            "money": 9600,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4342-kharan-s-tale",
+              "index": 1,
+              "total": 4,
+              "name": "Kharan's Tale"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 4341
+              }
+            ]
+          },
+          {
+            "id": 4361,
+            "name": "The Bearer of Bad News",
+            "questLink": "https://www.wowhead.com/classic/quest=4361/the-bearer-of-bad-news",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4342,
+            "nextQuestId": 4362,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Kharan Mighthammer",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Blackrock Depths",
+            "startNpcs": [
+              {
+                "name": "Kharan Mighthammer",
+                "link": "https://www.wowhead.com/classic/npc=9021/kharan-mighthammer",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Depths"
+              }
+            ],
+            "endNpc": "King Magni Bronzebeard",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "King Magni Bronzebeard",
+                "link": "https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
+            "levels": "59",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 6400,
+            "money": 38400,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "brd-4342-kharan-s-tale",
+              "index": 2,
+              "total": 4,
+              "name": "Kharan's Tale"
+            }
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-4342-kharan-s-tale",
+          "index": 4,
+          "total": 4,
+          "name": "Kharan's Tale"
+        }
+      },
+      {
+        "id": 3906,
+        "name": "Disharmony of Flame",
+        "questLink": "https://www.wowhead.com/classic/quest=3906/disharmony-of-flame",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 3907,
+        "chainId": "brd-tree-3906-disharmony-of-flame",
+        "chainDepth": 0,
+        "startNpc": "Thunderheart",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9084/thunderheart",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Thunderheart",
+            "link": "https://www.wowhead.com/classic/npc=9084/thunderheart",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
+        "endNpc": "Thunderheart",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9084/thunderheart",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Thunderheart",
+            "link": "https://www.wowhead.com/classic/npc=9084/thunderheart",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
+        "levels": "52",
+        "minLevel": 48,
+        "faction": "Horde",
+        "xp": 5100,
+        "money": 15500,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "treeChain": true
+      },
+      {
+        "id": 3907,
+        "name": "Disharmony of Fire",
+        "questLink": "https://www.wowhead.com/classic/quest=3907/disharmony-of-fire",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 3906,
+        "nextQuestId": null,
+        "chainId": "brd-tree-3906-disharmony-of-flame",
+        "chainDepth": 0,
+        "startNpc": "Thunderheart",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9084/thunderheart",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Thunderheart",
+            "link": "https://www.wowhead.com/classic/npc=9084/thunderheart",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
+        "endNpc": "Thunderheart",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9084/thunderheart",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Thunderheart",
+            "link": "https://www.wowhead.com/classic/npc=9084/thunderheart",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
+        "levels": "56",
+        "minLevel": 48,
+        "faction": "Horde",
+        "xp": 7300,
+        "money": 25500,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 12113,
+            "name": "Sunborne Cape",
+            "url": "https://www.wowhead.com/classic/item=12113/sunborne-cape",
+            "quality": 2
+          },
+          {
+            "id": 12114,
+            "name": "Nightfall Gloves",
+            "url": "https://www.wowhead.com/classic/item=12114/nightfall-gloves",
+            "quality": 2
+          },
+          {
+            "id": 12112,
+            "name": "Crypt Demon Bracers",
+            "url": "https://www.wowhead.com/classic/item=12112/crypt-demon-bracers",
+            "quality": 2
+          },
+          {
+            "id": 12115,
+            "name": "Stalwart Clutch",
+            "url": "https://www.wowhead.com/classic/item=12115/stalwart-clutch",
+            "quality": 2
+          }
+        ],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null,
+        "treeChain": true
+      },
+      {
+        "id": 3981,
+        "name": "Commander Gor'shak",
+        "questLink": "https://www.wowhead.com/classic/quest=3981/commander-gor-shak",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 3906,
+        "nextQuestId": 3982,
+        "chainId": "brd-tree-3906-disharmony-of-flame",
+        "chainDepth": 0,
+        "startNpc": "Galamav the Marksman",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9081/galamav-the-marksman",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Galamav the Marksman",
+            "link": "https://www.wowhead.com/classic/npc=9081/galamav-the-marksman",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
+        "endNpc": "Commander Gor'shak",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Blackrock Depths",
+        "endNpcs": [
+          {
+            "name": "Commander Gor'shak",
+            "link": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "levels": "52",
+        "minLevel": 48,
+        "faction": "Horde",
+        "xp": 5100,
+        "money": 12300,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-tree-3906-disharmony-of-flame-s3981",
+          "index": 1,
+          "total": 6,
+          "name": "Commander Gor'shak"
+        },
+        "treeChain": true
+      },
+      {
+        "id": 3982,
+        "name": "What Is Going On?",
+        "questLink": "https://www.wowhead.com/classic/quest=3982/what-is-going-on",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 3981,
+        "nextQuestId": 4001,
+        "chainId": "brd-tree-3906-disharmony-of-flame",
+        "chainDepth": 0,
+        "startNpc": "Commander Gor'shak",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Depths",
+        "startNpcs": [
+          {
+            "name": "Commander Gor'shak",
+            "link": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "endNpc": "Commander Gor'shak",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Blackrock Depths",
+        "endNpcs": [
+          {
+            "name": "Commander Gor'shak",
+            "link": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "levels": "54",
+        "minLevel": 48,
+        "faction": "Horde",
+        "xp": 5450,
+        "money": 26100,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "brd-tree-3906-disharmony-of-flame-s3981",
+          "index": 2,
+          "total": 6,
+          "name": "Commander Gor'shak"
+        },
+        "treeChain": true
+      },
+      {
+        "id": 4001,
+        "name": "What Is Going On?",
+        "questLink": "https://www.wowhead.com/classic/quest=4001/what-is-going-on",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 3982,
+        "nextQuestId": 4002,
+        "chainId": "brd-tree-3906-disharmony-of-flame",
+        "chainDepth": 0,
+        "startNpc": "Commander Gor'shak",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Depths",
+        "startNpcs": [
+          {
+            "name": "Commander Gor'shak",
+            "link": "https://www.wowhead.com/classic/npc=9020/commander-gor-shak",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "endNpc": "Thrall",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
+        "levels": "54",
+        "minLevel": 48,
+        "faction": "Horde",
+        "xp": 6800,
+        "money": 32700,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "brd-tree-3906-disharmony-of-flame-s3981",
+          "index": 3,
+          "total": 6,
+          "name": "Commander Gor'shak"
+        },
+        "treeChain": true
+      },
+      {
+        "id": 4002,
+        "name": "The Eastern Kingdoms",
+        "questLink": "https://www.wowhead.com/classic/quest=4002/the-eastern-kingdoms",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 4001,
+        "nextQuestId": 4003,
+        "chainId": "brd-tree-3906-disharmony-of-flame",
+        "chainDepth": 0,
+        "startNpc": "Thrall",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
+        "endNpc": "Thrall",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
+        "levels": "54",
+        "minLevel": 48,
+        "faction": "Horde",
+        "xp": 540,
+        "money": 2580,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "brd-tree-3906-disharmony-of-flame-s3981",
+          "index": 4,
+          "total": 6,
+          "name": "Commander Gor'shak"
+        },
+        "treeChain": true
+      },
+      {
+        "id": 4003,
+        "name": "The Royal Rescue",
+        "questLink": "https://www.wowhead.com/classic/quest=4003/the-royal-rescue",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 4002,
+        "nextQuestId": 4004,
+        "chainId": "brd-tree-3906-disharmony-of-flame",
+        "chainDepth": 0,
+        "startNpc": "Thrall",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
+        "endNpc": "Princess Moira Bronzebeard",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Blackrock Depths",
+        "endNpcs": [
+          {
+            "name": "Princess Moira Bronzebeard",
+            "link": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "levels": "59",
+        "minLevel": 48,
+        "faction": "Horde",
+        "xp": 8050,
+        "money": 48300,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-tree-3906-disharmony-of-flame-s3981",
+          "index": 5,
+          "total": 6,
+          "name": "Commander Gor'shak"
+        },
+        "treeChain": true
+      },
+      {
+        "id": 4004,
+        "name": "The Princess Saved?",
+        "questLink": "https://www.wowhead.com/classic/quest=4004/the-princess-saved",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 4003,
+        "nextQuestId": null,
+        "chainId": "brd-tree-3906-disharmony-of-flame",
+        "chainDepth": 0,
+        "startNpc": "Princess Moira Bronzebeard",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Depths",
+        "startNpcs": [
+          {
+            "name": "Princess Moira Bronzebeard",
+            "link": "https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "endNpc": "Thrall",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 48,
+        "faction": "Horde",
+        "xp": 9950,
+        "money": 27000,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 12544,
+            "name": "Thrall's Resolve",
+            "url": "https://www.wowhead.com/classic/item=12544/thrall-s-resolve",
+            "quality": 3
+          },
+          {
+            "id": 12545,
+            "name": "Eye of Orgrimmar",
+            "url": "https://www.wowhead.com/classic/item=12545/eye-of-orgrimmar",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "brd-tree-3906-disharmony-of-flame-s3981",
+          "index": 6,
+          "total": 6,
+          "name": "Commander Gor'shak"
+        },
+        "treeChain": true
       }
     ]
   },
