@@ -24095,6 +24095,7 @@ const DUNGEONS = [
     "levels": "58–60",
     "location": "Feralas",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-dire-maul-dungeon-quests",
+    "schema": 2,
     "quests": [
       {
         "id": 7441,
@@ -24113,11 +24114,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Feralas",
+        "startNpcs": [
+          {
+            "name": "Azj'Tordin",
+            "link": "https://www.wowhead.com/classic/npc=14355/azj-tordin",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
         "endNpc": "Azj'Tordin",
         "endNpcLink": "https://www.wowhead.com/classic/npc=14355/azj-tordin",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Feralas",
+        "endNpcs": [
+          {
+            "name": "Azj'Tordin",
+            "link": "https://www.wowhead.com/classic/npc=14355/azj-tordin",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
         "levels": "58",
         "minLevel": 54,
         "faction": "Both",
@@ -24142,130 +24161,20 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 7482,
-        "name": "Elven Legends",
-        "questLink": "https://www.wowhead.com/classic/quest=7482/elven-legends",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": 7482,
-        "chainDepth": 0,
-        "startNpc": "Scholar Runethorn",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=14374/scholar-runethorn",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Feralas",
-        "endNpc": "Scholar Runethorn",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=14374/scholar-runethorn",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Feralas",
-        "levels": "60",
-        "minLevel": 54,
-        "faction": "Alliance",
-        "xp": 8300,
-        "money": 18000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 7481,
-        "name": "Elven Legends",
-        "questLink": "https://www.wowhead.com/classic/quest=7481/elven-legends",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": 7482,
-        "chainDepth": 0,
-        "startNpc": "Sage Korolusk",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=14373/sage-korolusk",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Feralas",
-        "endNpc": "Sage Korolusk",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=14373/sage-korolusk",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Feralas",
-        "levels": "60",
-        "minLevel": 54,
-        "faction": "Horde",
-        "xp": 8300,
-        "money": 18000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 7485,
-        "name": "Libram of Protection",
-        "questLink": "https://www.wowhead.com/classic/quest=7485/libram-of-protection",
-        "prequest": "Elven Legends",
-        "prequestLink": "https://www.wowhead.com/classic/quest=7482/elven-legends",
-        "prevQuestId": 7482,
-        "nextQuestId": null,
-        "chainId": 7482,
-        "chainDepth": 1,
-        "startNpc": "Lorekeeper Lydros",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Dire Maul",
-        "endNpc": "Lorekeeper Lydros",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Dire Maul",
-        "levels": "60",
-        "minLevel": 54,
-        "faction": "Both",
-        "xp": 1650,
-        "money": 0,
-        "rewards": [
-          {
-            "id": 18331,
-            "name": "Arcanum of Protection",
-            "url": "https://www.wowhead.com/classic/item=18331/arcanum-of-protection",
-            "quality": 2
-          }
-        ],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7488,
         "name": "Lethtendris's Web",
         "questLink": "https://www.wowhead.com/classic/quest=7488/lethtendris-s-web",
-        "prequest": "Feathermoon Stronghold",
-        "prequestLink": "https://www.wowhead.com/classic/quest=7494/feathermoon-stronghold",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 7494,
         "nextQuestId": null,
-        "chainId": 7488,
-        "chainDepth": 0,
+        "chainId": "dm-7494-feathermoon-stronghold",
+        "chainDepth": 1,
         "startNpc": "Latronicus Moonspear",
         "startNpcLink": "https://www.wowhead.com/classic/npc=7877/latronicus-moonspear",
         "startObject": "",
@@ -24273,11 +24182,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Feralas",
+        "startNpcs": [
+          {
+            "name": "Latronicus Moonspear",
+            "link": "https://www.wowhead.com/classic/npc=7877/latronicus-moonspear",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
         "endNpc": "Latronicus Moonspear",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7877/latronicus-moonspear",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Feralas",
+        "endNpcs": [
+          {
+            "name": "Latronicus Moonspear",
+            "link": "https://www.wowhead.com/classic/npc=7877/latronicus-moonspear",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
         "levels": "57",
         "minLevel": 54,
         "faction": "Alliance",
@@ -24312,11 +24239,43 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Crier Goodman",
+                "link": "https://www.wowhead.com/classic/npc=2198/crier-goodman",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              },
+              {
+                "name": "Courier Hammerfall",
+                "link": "https://www.wowhead.com/classic/npc=10877/courier-hammerfall",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              },
+              {
+                "name": "Herald Moonstalker",
+                "link": "https://www.wowhead.com/classic/npc=10878/herald-moonstalker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Darnassus"
+              }
+            ],
             "endNpc": "Latronicus Moonspear",
             "endNpcLink": "https://www.wowhead.com/classic/npc=7877/latronicus-moonspear",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Feralas",
+            "endNpcs": [
+              {
+                "name": "Latronicus Moonspear",
+                "link": "https://www.wowhead.com/classic/npc=7877/latronicus-moonspear",
+                "faction": "",
+                "type": "npc",
+                "loc": "Feralas"
+              }
+            ],
             "levels": "57",
             "minLevel": 54,
             "faction": "Alliance",
@@ -24329,22 +24288,35 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "dm-7494-feathermoon-stronghold",
+              "index": 1,
+              "total": 2,
+              "name": "Feathermoon Stronghold"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "dm-7494-feathermoon-stronghold",
+          "index": 2,
+          "total": 2,
+          "name": "Feathermoon Stronghold"
+        }
       },
       {
         "id": 7489,
         "name": "Lethtendris's Web",
         "questLink": "https://www.wowhead.com/classic/quest=7489/lethtendris-s-web",
-        "prequest": "Camp Mojache",
-        "prequestLink": "https://www.wowhead.com/classic/quest=7492/camp-mojache",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 7492,
         "nextQuestId": null,
-        "chainId": 7489,
-        "chainDepth": 0,
+        "chainId": "dm-7492-camp-mojache",
+        "chainDepth": 1,
         "startNpc": "Talo Thornhoof",
         "startNpcLink": "https://www.wowhead.com/classic/npc=7776/talo-thornhoof",
         "startObject": "",
@@ -24352,11 +24324,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Feralas",
+        "startNpcs": [
+          {
+            "name": "Talo Thornhoof",
+            "link": "https://www.wowhead.com/classic/npc=7776/talo-thornhoof",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
         "endNpc": "Talo Thornhoof",
         "endNpcLink": "https://www.wowhead.com/classic/npc=7776/talo-thornhoof",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Feralas",
+        "endNpcs": [
+          {
+            "name": "Talo Thornhoof",
+            "link": "https://www.wowhead.com/classic/npc=7776/talo-thornhoof",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
         "levels": "57",
         "minLevel": 54,
         "faction": "Horde",
@@ -24391,11 +24381,43 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Undercity",
+            "startNpcs": [
+              {
+                "name": "Harbinger Balthazad",
+                "link": "https://www.wowhead.com/classic/npc=10879/harbinger-balthazad",
+                "faction": "",
+                "type": "npc",
+                "loc": "Undercity"
+              },
+              {
+                "name": "Warcaller Gorlach",
+                "link": "https://www.wowhead.com/classic/npc=10880/warcaller-gorlach",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              },
+              {
+                "name": "Bluff Runner Windstrider",
+                "link": "https://www.wowhead.com/classic/npc=10881/bluff-runner-windstrider",
+                "faction": "",
+                "type": "npc",
+                "loc": "Thunder Bluff"
+              }
+            ],
             "endNpc": "Talo Thornhoof",
             "endNpcLink": "https://www.wowhead.com/classic/npc=7776/talo-thornhoof",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Feralas",
+            "endNpcs": [
+              {
+                "name": "Talo Thornhoof",
+                "link": "https://www.wowhead.com/classic/npc=7776/talo-thornhoof",
+                "faction": "",
+                "type": "npc",
+                "loc": "Feralas"
+              }
+            ],
             "levels": "57",
             "minLevel": 54,
             "faction": "Horde",
@@ -24408,11 +24430,24 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "dm-7492-camp-mojache",
+              "index": 1,
+              "total": 2,
+              "name": "Camp Mojache"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "dm-7492-camp-mojache",
+          "index": 2,
+          "total": 2,
+          "name": "Camp Mojache"
+        }
       },
       {
         "id": 7463,
@@ -24431,11 +24466,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
         "endNpc": "Lorekeeper Lydros",
         "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
         "levels": "60",
         "minLevel": 60,
         "faction": "Both",
@@ -24449,59 +24502,20 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 7461,
-        "name": "The Madness Within",
-        "questLink": "https://www.wowhead.com/classic/quest=7461/the-madness-within",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 7877,
-        "chainId": 7461,
-        "chainDepth": 0,
-        "startNpc": "Shen'dralar Ancient",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=14358/shen-dralar-ancient",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Dire Maul",
-        "endNpc": "Shen'dralar Ancient",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=14358/shen-dralar-ancient",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Dire Maul",
-        "levels": "60",
-        "minLevel": 56,
-        "faction": "Both",
-        "xp": 9950,
-        "money": 59700,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [
-          {
-            "id": 7877,
-            "name": "The Treasure of the Shen'dralar",
-            "url": "https://www.wowhead.com/classic/quest=7877/the-treasure-of-the-shen-dralar"
-          }
-        ],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 7462,
         "name": "The Treasure of the Shen'dralar",
         "questLink": "https://www.wowhead.com/classic/quest=7462/the-treasure-of-the-shen-dralar",
-        "prequest": "The Madness Within",
-        "prequestLink": "https://www.wowhead.com/classic/quest=7461/the-madness-within",
-        "prevQuestId": 7461,
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 7461,
-        "chainDepth": 1,
+        "chainId": null,
+        "chainDepth": 0,
         "startNpc": "",
         "startNpcLink": "",
         "startObject": "",
@@ -24509,11 +24523,13 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "",
+        "startNpcs": [],
         "endNpc": "",
         "endNpcLink": "",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "",
+        "endNpcs": [],
         "levels": "60",
         "minLevel": 56,
         "faction": "Both",
@@ -24542,54 +24558,83 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 7461,
+            "name": "The Madness Within",
+            "questLink": "https://www.wowhead.com/classic/quest=7461/the-madness-within",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 7877,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Shen'dralar Ancient",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=14358/shen-dralar-ancient",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Dire Maul",
+            "startNpcs": [
+              {
+                "name": "Shen'dralar Ancient",
+                "link": "https://www.wowhead.com/classic/npc=14358/shen-dralar-ancient",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dire Maul"
+              }
+            ],
+            "endNpc": "Shen'dralar Ancient",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=14358/shen-dralar-ancient",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Dire Maul",
+            "endNpcs": [
+              {
+                "name": "Shen'dralar Ancient",
+                "link": "https://www.wowhead.com/classic/npc=14358/shen-dralar-ancient",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dire Maul"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 56,
+            "faction": "Both",
+            "xp": 9950,
+            "money": 59700,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "dm-7461-the-madness-within",
+              "index": 1,
+              "total": 2,
+              "name": "The Madness Within"
+            },
+            "isDungeon": true
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5527,
-        "name": "A Reliquary of Purity",
-        "questLink": "https://www.wowhead.com/classic/quest=5527/a-reliquary-of-purity",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 5526,
-        "chainId": 5527,
-        "chainDepth": 0,
-        "startNpc": "Rabine Saturna",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11801/rabine-saturna",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Moonglade",
-        "endNpc": "Rabine Saturna",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11801/rabine-saturna",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Moonglade",
-        "levels": "60",
-        "minLevel": 56,
-        "faction": "Both",
-        "xp": 6600,
-        "money": 39600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 5526,
         "name": "Shards of the Felvine",
         "questLink": "https://www.wowhead.com/classic/quest=5526/shards-of-the-felvine",
-        "prequest": "A Reliquary of Purity",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5527/a-reliquary-of-purity",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 5527,
         "nextQuestId": null,
-        "chainId": 5527,
+        "chainId": "dm-5527-a-reliquary-of-purity",
         "chainDepth": 1,
         "startNpc": "Rabine Saturna",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11801/rabine-saturna",
@@ -24598,11 +24643,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Moonglade",
+        "startNpcs": [
+          {
+            "name": "Rabine Saturna",
+            "link": "https://www.wowhead.com/classic/npc=11801/rabine-saturna",
+            "faction": "",
+            "type": "npc",
+            "loc": "Moonglade"
+          }
+        ],
         "endNpc": "Rabine Saturna",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11801/rabine-saturna",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Moonglade",
+        "endNpcs": [
+          {
+            "name": "Rabine Saturna",
+            "link": "https://www.wowhead.com/classic/npc=11801/rabine-saturna",
+            "faction": "",
+            "type": "npc",
+            "loc": "Moonglade"
+          }
+        ],
         "levels": "60",
         "minLevel": 56,
         "faction": "Both",
@@ -24625,9 +24688,77 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 5527,
+            "name": "A Reliquary of Purity",
+            "questLink": "https://www.wowhead.com/classic/quest=5527/a-reliquary-of-purity",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 5526,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Rabine Saturna",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11801/rabine-saturna",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Moonglade",
+            "startNpcs": [
+              {
+                "name": "Rabine Saturna",
+                "link": "https://www.wowhead.com/classic/npc=11801/rabine-saturna",
+                "faction": "",
+                "type": "npc",
+                "loc": "Moonglade"
+              }
+            ],
+            "endNpc": "Rabine Saturna",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11801/rabine-saturna",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Moonglade",
+            "endNpcs": [
+              {
+                "name": "Rabine Saturna",
+                "link": "https://www.wowhead.com/classic/npc=11801/rabine-saturna",
+                "faction": "",
+                "type": "npc",
+                "loc": "Moonglade"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 56,
+            "faction": "Both",
+            "xp": 6600,
+            "money": 39600,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "dm-5527-a-reliquary-of-purity",
+              "index": 1,
+              "total": 2,
+              "name": "A Reliquary of Purity"
+            }
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "dm-5527-a-reliquary-of-purity",
+          "index": 2,
+          "total": 2,
+          "name": "A Reliquary of Purity"
+        }
       },
       {
         "id": 5518,
@@ -24646,11 +24777,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Knot Thimblejack",
+            "link": "https://www.wowhead.com/classic/npc=14338/knot-thimblejack",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
         "endNpc": "Knot Thimblejack",
         "endNpcLink": "https://www.wowhead.com/classic/npc=14338/knot-thimblejack",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Knot Thimblejack",
+            "link": "https://www.wowhead.com/classic/npc=14338/knot-thimblejack",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
         "levels": "60",
         "minLevel": 56,
         "faction": "Both",
@@ -24669,7 +24818,81 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7461,
+        "name": "The Madness Within",
+        "questLink": "https://www.wowhead.com/classic/quest=7461/the-madness-within",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 7877,
+        "chainId": "dm-7461-the-madness-within",
+        "chainDepth": 0,
+        "startNpc": "Shen'dralar Ancient",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14358/shen-dralar-ancient",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Shen'dralar Ancient",
+            "link": "https://www.wowhead.com/classic/npc=14358/shen-dralar-ancient",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "endNpc": "Shen'dralar Ancient",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14358/shen-dralar-ancient",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Shen'dralar Ancient",
+            "link": "https://www.wowhead.com/classic/npc=14358/shen-dralar-ancient",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 56,
+        "faction": "Both",
+        "xp": 9950,
+        "money": 59700,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [
+          {
+            "id": 7877,
+            "name": "The Treasure of the Shen'dralar",
+            "url": "https://www.wowhead.com/classic/quest=7877/the-treasure-of-the-shen-dralar",
+            "series": {
+              "id": "dm-7461-the-madness-within",
+              "index": 2,
+              "total": 2,
+              "name": "The Madness Within"
+            }
+          }
+        ],
+        "absorbedBy": 7462,
+        "isDungeon": true,
+        "series": {
+          "id": "dm-7461-the-madness-within",
+          "index": 1,
+          "total": 2,
+          "name": "The Madness Within"
+        }
       },
       {
         "id": 7703,
@@ -24688,11 +24911,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Captain Kromcrush",
+            "link": "https://www.wowhead.com/classic/npc=14325/captain-kromcrush",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
         "endNpc": "Captain Kromcrush",
         "endNpcLink": "https://www.wowhead.com/classic/npc=14325/captain-kromcrush",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Captain Kromcrush",
+            "link": "https://www.wowhead.com/classic/npc=14325/captain-kromcrush",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
         "levels": "60",
         "minLevel": 56,
         "faction": "Both",
@@ -24729,40 +24970,66 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
-        "id": 7483,
-        "name": "Libram of Rapidity",
-        "questLink": "https://www.wowhead.com/classic/quest=7483/libram-of-rapidity",
+        "id": 5528,
+        "name": "The Gordok Taste Test",
+        "questLink": "https://www.wowhead.com/classic/quest=5528/the-gordok-taste-test",
         "prequest": "",
         "prequestLink": "",
         "prevQuestId": null,
         "nextQuestId": null,
         "chainId": null,
         "chainDepth": 0,
-        "startNpc": "Lorekeeper Lydros",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+        "startNpc": "Stomper Kreeg",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14322/stomper-kreeg",
         "startObject": "",
         "startObjectLink": "",
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dire Maul",
-        "endNpc": "Lorekeeper Lydros",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+        "startNpcs": [
+          {
+            "name": "Stomper Kreeg",
+            "link": "https://www.wowhead.com/classic/npc=14322/stomper-kreeg",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "endNpc": "Stomper Kreeg",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14322/stomper-kreeg",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Stomper Kreeg",
+            "link": "https://www.wowhead.com/classic/npc=14322/stomper-kreeg",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
         "levels": "60",
-        "minLevel": 54,
+        "minLevel": 56,
         "faction": "Both",
-        "xp": 1650,
+        "xp": 0,
         "money": 0,
         "rewards": [
           {
-            "id": 18329,
-            "name": "Arcanum of Rapidity",
-            "url": "https://www.wowhead.com/classic/item=18329/arcanum-of-rapidity",
+            "id": 18269,
+            "name": "Gordok Green Grog",
+            "url": "https://www.wowhead.com/classic/item=18269/gordok-green-grog",
+            "quality": 2
+          },
+          {
+            "id": 18284,
+            "name": "Kreeg's Stout Beatdown",
+            "url": "https://www.wowhead.com/classic/item=18284/kreeg-s-stout-beatdown",
             "quality": 2
           }
         ],
@@ -24771,7 +25038,1076 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 1193,
+        "name": "A Broken Trap",
+        "questLink": "https://www.wowhead.com/classic/quest=1193/a-broken-trap",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "Broken Trap",
+        "startObjectLink": "https://www.wowhead.com/classic/object=179485/broken-trap",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Broken Trap",
+            "link": "https://www.wowhead.com/classic/object=179485/broken-trap",
+            "faction": "",
+            "type": "object",
+            "loc": "Dire Maul"
+          }
+        ],
+        "endNpc": "",
+        "endNpcLink": "",
+        "endObject": "Broken Trap",
+        "endObjectLink": "https://www.wowhead.com/classic/object=179485/broken-trap",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Broken Trap",
+            "link": "https://www.wowhead.com/classic/object=179485/broken-trap",
+            "faction": "",
+            "type": "object",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 56,
+        "faction": "Both",
+        "xp": 0,
+        "money": 0,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7703,
+        "name": "Unfinished Gordok Business",
+        "questLink": "https://www.wowhead.com/classic/quest=7703/unfinished-gordok-business",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Captain Kromcrush",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14325/captain-kromcrush",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Captain Kromcrush",
+            "link": "https://www.wowhead.com/classic/npc=14325/captain-kromcrush",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "endNpc": "Captain Kromcrush",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14325/captain-kromcrush",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Captain Kromcrush",
+            "link": "https://www.wowhead.com/classic/npc=14325/captain-kromcrush",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 56,
+        "faction": "Both",
+        "xp": 8300,
+        "money": 49800,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 18366,
+            "name": "Gordok's Handguards",
+            "url": "https://www.wowhead.com/classic/item=18366/gordok-s-handguards",
+            "quality": 3
+          },
+          {
+            "id": 18367,
+            "name": "Gordok's Gauntlets",
+            "url": "https://www.wowhead.com/classic/item=18367/gordok-s-gauntlets",
+            "quality": 3
+          },
+          {
+            "id": 18368,
+            "name": "Gordok's Gloves",
+            "url": "https://www.wowhead.com/classic/item=18368/gordok-s-gloves",
+            "quality": 3
+          },
+          {
+            "id": 18369,
+            "name": "Gordok's Handwraps",
+            "url": "https://www.wowhead.com/classic/item=18369/gordok-s-handwraps",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7504,
+        "name": "Holy Bologna: What the Light Won't Tell You",
+        "questLink": "https://www.wowhead.com/classic/quest=7504/holy-bologna-what-the-light-won-t-tell-you",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "Holy Bologna: What the Light Won't Tell You",
+        "startItemLink": "https://www.wowhead.com/classic/item=18362/holy-bologna-what-the-light-won-t-tell-you",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Javon",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14381/lorekeeper-javon",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Javon",
+            "link": "https://www.wowhead.com/classic/npc=14381/lorekeeper-javon",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [
+          {
+            "id": 18469,
+            "name": "Royal Seal of Eldre'Thalas",
+            "url": "https://www.wowhead.com/classic/item=18469/royal-seal-of-eldre-thalas",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7441,
+        "name": "Pusillin and the Elder Azj'Tordin",
+        "questLink": "https://www.wowhead.com/classic/quest=7441/pusillin-and-the-elder-azj-tordin",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Azj'Tordin",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14355/azj-tordin",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Feralas",
+        "startNpcs": [
+          {
+            "name": "Azj'Tordin",
+            "link": "https://www.wowhead.com/classic/npc=14355/azj-tordin",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
+        "endNpc": "Azj'Tordin",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14355/azj-tordin",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Feralas",
+        "endNpcs": [
+          {
+            "name": "Azj'Tordin",
+            "link": "https://www.wowhead.com/classic/npc=14355/azj-tordin",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 54,
+        "faction": "Both",
+        "xp": 7750,
+        "money": 17500,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 18411,
+            "name": "Spry Boots",
+            "url": "https://www.wowhead.com/classic/item=18411/spry-boots",
+            "quality": 2
+          },
+          {
+            "id": 18410,
+            "name": "Sprinter's Sword",
+            "url": "https://www.wowhead.com/classic/item=18410/sprinter-s-sword",
+            "quality": 2
+          }
+        ],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7503,
+        "name": "The Greatest Race of Hunters",
+        "questLink": "https://www.wowhead.com/classic/quest=7503/the-greatest-race-of-hunters",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "The Greatest Race of Hunters",
+        "startItemLink": "https://www.wowhead.com/classic/item=18361/the-greatest-race-of-hunters",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Mykos",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14382/lorekeeper-mykos",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Mykos",
+            "link": "https://www.wowhead.com/classic/npc=14382/lorekeeper-mykos",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [
+          {
+            "id": 18473,
+            "name": "Royal Seal of Eldre'Thalas",
+            "url": "https://www.wowhead.com/classic/item=18473/royal-seal-of-eldre-thalas",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7498,
+        "name": "Garona: A Study on Stealth and Treachery",
+        "questLink": "https://www.wowhead.com/classic/quest=7498/garona-a-study-on-stealth-and-treachery",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "Garona: A Study on Stealth and Treachery",
+        "startItemLink": "https://www.wowhead.com/classic/item=18356/garona-a-study-on-stealth-and-treachery",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Kildrath",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14383/lorekeeper-kildrath",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Kildrath",
+            "link": "https://www.wowhead.com/classic/npc=14383/lorekeeper-kildrath",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [
+          {
+            "id": 18465,
+            "name": "Royal Seal of Eldre'Thalas",
+            "url": "https://www.wowhead.com/classic/item=18465/royal-seal-of-eldre-thalas",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7500,
+        "name": "The Arcanist's Cookbook",
+        "questLink": "https://www.wowhead.com/classic/quest=7500/the-arcanist-s-cookbook",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "The Arcanist's Cookbook",
+        "startItemLink": "https://www.wowhead.com/classic/item=18358/the-arcanist-s-cookbook",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Kildrath",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14383/lorekeeper-kildrath",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Kildrath",
+            "link": "https://www.wowhead.com/classic/npc=14383/lorekeeper-kildrath",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [
+          {
+            "id": 18468,
+            "name": "Royal Seal of Eldre'Thalas",
+            "url": "https://www.wowhead.com/classic/item=18468/royal-seal-of-eldre-thalas",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7502,
+        "name": "Harnessing Shadows",
+        "questLink": "https://www.wowhead.com/classic/quest=7502/harnessing-shadows",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "Harnessing Shadows",
+        "startItemLink": "https://www.wowhead.com/classic/item=18360/harnessing-shadows",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Mykos",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14382/lorekeeper-mykos",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Mykos",
+            "link": "https://www.wowhead.com/classic/npc=14382/lorekeeper-mykos",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [
+          {
+            "id": 18467,
+            "name": "Royal Seal of Eldre'Thalas",
+            "url": "https://www.wowhead.com/classic/item=18467/royal-seal-of-eldre-thalas",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7501,
+        "name": "The Light and How To Swing It",
+        "questLink": "https://www.wowhead.com/classic/quest=7501/the-light-and-how-to-swing-it",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "The Light and How to Swing It",
+        "startItemLink": "https://www.wowhead.com/classic/item=18359/the-light-and-how-to-swing-it",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Mykos",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14382/lorekeeper-mykos",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Mykos",
+            "link": "https://www.wowhead.com/classic/npc=14382/lorekeeper-mykos",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Alliance",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [
+          {
+            "id": 18472,
+            "name": "Royal Seal of Eldre'Thalas",
+            "url": "https://www.wowhead.com/classic/item=18472/royal-seal-of-eldre-thalas",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7505,
+        "name": "Frost Shock and You",
+        "questLink": "https://www.wowhead.com/classic/quest=7505/frost-shock-and-you",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "Frost Shock and You",
+        "startItemLink": "https://www.wowhead.com/classic/item=18363/frost-shock-and-you",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Javon",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14381/lorekeeper-javon",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Javon",
+            "link": "https://www.wowhead.com/classic/npc=14381/lorekeeper-javon",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Horde",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [
+          {
+            "id": 18471,
+            "name": "Royal Seal of Eldre'Thalas",
+            "url": "https://www.wowhead.com/classic/item=18471/royal-seal-of-eldre-thalas",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7506,
+        "name": "The Emerald Dream",
+        "questLink": "https://www.wowhead.com/classic/quest=7506/the-emerald-dream",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "The Emerald Dream",
+        "startItemLink": "https://www.wowhead.com/classic/item=18364/the-emerald-dream",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Javon",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14381/lorekeeper-javon",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Javon",
+            "link": "https://www.wowhead.com/classic/npc=14381/lorekeeper-javon",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [
+          {
+            "id": 18470,
+            "name": "Royal Seal of Eldre'Thalas",
+            "url": "https://www.wowhead.com/classic/item=18470/royal-seal-of-eldre-thalas",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7507,
+        "name": "Nostro's Compendium",
+        "questLink": "https://www.wowhead.com/classic/quest=7507/nostro-s-compendium",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "Nostro's Compendium of Dragon Slaying",
+        "startItemLink": "https://www.wowhead.com/classic/item=18401/nostro-s-compendium-of-dragon-slaying",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Lydros",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 9950,
+        "money": 59700,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": 7509,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7508,
+        "name": "The Forging of Quel'Serrar",
+        "questLink": "https://www.wowhead.com/classic/quest=7508/the-forging-of-quel-serrar",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 7509,
+        "chainId": "dm-7508-the-forging-of-quel-serrar",
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "A Dull and Flat Elven Blade",
+        "startItemLink": "https://www.wowhead.com/classic/item=18513/a-dull-and-flat-elven-blade",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Lydros",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 0,
+        "money": 0,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 7507,
+            "name": "Nostro's Compendium",
+            "questLink": "https://www.wowhead.com/classic/quest=7507/nostro-s-compendium",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "",
+            "startNpcLink": "",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "Nostro's Compendium of Dragon Slaying",
+            "startItemLink": "https://www.wowhead.com/classic/item=18401/nostro-s-compendium-of-dragon-slaying",
+            "startLoc": "",
+            "startNpcs": [],
+            "endNpc": "Lorekeeper Lydros",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Dire Maul",
+            "endNpcs": [
+              {
+                "name": "Lorekeeper Lydros",
+                "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dire Maul"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 60,
+            "faction": "Both",
+            "xp": 9950,
+            "money": 59700,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "isDungeon": true
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "dm-7508-the-forging-of-quel-serrar",
+          "index": 1,
+          "total": 2,
+          "name": "The Forging of Quel'Serrar"
+        }
+      },
+      {
+        "id": 7509,
+        "name": "The Forging of Quel'Serrar",
+        "questLink": "https://www.wowhead.com/classic/quest=7509/the-forging-of-quel-serrar",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7508,
+        "nextQuestId": null,
+        "chainId": "dm-7508-the-forging-of-quel-serrar",
+        "chainDepth": 1,
+        "startNpc": "Lorekeeper Lydros",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "endNpc": "Lorekeeper Lydros",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 9950,
+        "money": 59700,
+        "rewards": [
+          {
+            "id": 18348,
+            "name": "Quel'Serrar",
+            "url": "https://www.wowhead.com/classic/item=18348/quel-serrar",
+            "quality": 4
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior",
+          "Paladin"
+        ],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 7507,
+            "name": "Nostro's Compendium",
+            "questLink": "https://www.wowhead.com/classic/quest=7507/nostro-s-compendium",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "",
+            "startNpcLink": "",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "Nostro's Compendium of Dragon Slaying",
+            "startItemLink": "https://www.wowhead.com/classic/item=18401/nostro-s-compendium-of-dragon-slaying",
+            "startLoc": "",
+            "startNpcs": [],
+            "endNpc": "Lorekeeper Lydros",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Dire Maul",
+            "endNpcs": [
+              {
+                "name": "Lorekeeper Lydros",
+                "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dire Maul"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 60,
+            "faction": "Both",
+            "xp": 9950,
+            "money": 59700,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "isDungeon": true
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "dm-7508-the-forging-of-quel-serrar",
+          "index": 2,
+          "total": 2,
+          "name": "The Forging of Quel'Serrar"
+        }
+      },
+      {
+        "id": 7499,
+        "name": "Codex of Defense",
+        "questLink": "https://www.wowhead.com/classic/quest=7499/codex-of-defense",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "Codex of Defense",
+        "startItemLink": "https://www.wowhead.com/classic/item=18357/codex-of-defense",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Lorekeeper Kildrath",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14383/lorekeeper-kildrath",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Kildrath",
+            "link": "https://www.wowhead.com/classic/npc=14383/lorekeeper-kildrath",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [
+          {
+            "id": 18466,
+            "name": "Royal Seal of Eldre'Thalas",
+            "url": "https://www.wowhead.com/classic/item=18466/royal-seal-of-eldre-thalas",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 5525,
+        "name": "Free Knot!",
+        "questLink": "https://www.wowhead.com/classic/quest=5525/free-knot",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Knot Thimblejack",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14338/knot-thimblejack",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Knot Thimblejack",
+            "link": "https://www.wowhead.com/classic/npc=14338/knot-thimblejack",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "endNpc": "Knot Thimblejack",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14338/knot-thimblejack",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Knot Thimblejack",
+            "link": "https://www.wowhead.com/classic/npc=14338/knot-thimblejack",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 56,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 7482,
+        "name": "Elven Legends",
+        "questLink": "https://www.wowhead.com/classic/quest=7482/elven-legends",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 7484,
+        "chainId": "dm-tree-7482-elven-legends",
+        "chainDepth": 0,
+        "startNpc": "Scholar Runethorn",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14374/scholar-runethorn",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Feralas",
+        "startNpcs": [
+          {
+            "name": "Scholar Runethorn",
+            "link": "https://www.wowhead.com/classic/npc=14374/scholar-runethorn",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
+        "endNpc": "Scholar Runethorn",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14374/scholar-runethorn",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Feralas",
+        "endNpcs": [
+          {
+            "name": "Scholar Runethorn",
+            "link": "https://www.wowhead.com/classic/npc=14374/scholar-runethorn",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Alliance",
+        "xp": 8300,
+        "money": 18000,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null,
+        "treeChain": true
       },
       {
         "id": 7484,
@@ -24779,9 +26115,9 @@ const DUNGEONS = [
         "questLink": "https://www.wowhead.com/classic/quest=7484/libram-of-focus",
         "prequest": "",
         "prequestLink": "",
-        "prevQuestId": null,
+        "prevQuestId": 7481,
         "nextQuestId": null,
-        "chainId": null,
+        "chainId": "dm-tree-7482-elven-legends",
         "chainDepth": 0,
         "startNpc": "Lorekeeper Lydros",
         "startNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
@@ -24790,11 +26126,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
         "endNpc": "Lorekeeper Lydros",
         "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
         "levels": "60",
         "minLevel": 54,
         "faction": "Both",
@@ -24813,7 +26167,192 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null,
+        "treeChain": true
+      },
+      {
+        "id": 7485,
+        "name": "Libram of Protection",
+        "questLink": "https://www.wowhead.com/classic/quest=7485/libram-of-protection",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7481,
+        "nextQuestId": null,
+        "chainId": "dm-tree-7482-elven-legends",
+        "chainDepth": 0,
+        "startNpc": "Lorekeeper Lydros",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "endNpc": "Lorekeeper Lydros",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Both",
+        "xp": 1650,
+        "money": 0,
+        "rewards": [
+          {
+            "id": 18331,
+            "name": "Arcanum of Protection",
+            "url": "https://www.wowhead.com/classic/item=18331/arcanum-of-protection",
+            "quality": 2
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null,
+        "treeChain": true
+      },
+      {
+        "id": 7483,
+        "name": "Libram of Rapidity",
+        "questLink": "https://www.wowhead.com/classic/quest=7483/libram-of-rapidity",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7481,
+        "nextQuestId": null,
+        "chainId": "dm-tree-7482-elven-legends",
+        "chainDepth": 0,
+        "startNpc": "Lorekeeper Lydros",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dire Maul",
+        "startNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "endNpc": "Lorekeeper Lydros",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Lorekeeper Lydros",
+            "link": "https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Both",
+        "xp": 1650,
+        "money": 0,
+        "rewards": [
+          {
+            "id": 18329,
+            "name": "Arcanum of Rapidity",
+            "url": "https://www.wowhead.com/classic/item=18329/arcanum-of-rapidity",
+            "quality": 2
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null,
+        "treeChain": true
+      },
+      {
+        "id": 7481,
+        "name": "Elven Legends",
+        "questLink": "https://www.wowhead.com/classic/quest=7481/elven-legends",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 7484,
+        "chainId": "dm-tree-7482-elven-legends",
+        "chainDepth": 0,
+        "startNpc": "Sage Korolusk",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14373/sage-korolusk",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Feralas",
+        "startNpcs": [
+          {
+            "name": "Sage Korolusk",
+            "link": "https://www.wowhead.com/classic/npc=14373/sage-korolusk",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
+        "endNpc": "Sage Korolusk",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14373/sage-korolusk",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Feralas",
+        "endNpcs": [
+          {
+            "name": "Sage Korolusk",
+            "link": "https://www.wowhead.com/classic/npc=14373/sage-korolusk",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 54,
+        "faction": "Horde",
+        "xp": 8300,
+        "money": 18000,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null,
+        "treeChain": true
       }
     ]
   },
