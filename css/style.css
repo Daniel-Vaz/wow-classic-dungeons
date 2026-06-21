@@ -2112,7 +2112,9 @@ button.guides-box-link {
     overflow: hidden;
     pointer-events: none;
     border-color: transparent;
-    transition: max-height 0.4s ease, opacity 0.3s ease, margin-bottom 0.4s ease;
+    transition: max-height 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.6s ease 0.12s,
+                margin-bottom 0.85s cubic-bezier(0.22, 1, 0.36, 1);
   }
   body.dungeon-docked .dungeon-card-section {
     max-height: 760px;
@@ -2125,7 +2127,10 @@ button.guides-box-link {
   #dungeonHeader {
     max-height: 1000px;
     overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.4s ease, padding 0.4s ease;
+    transition: max-height 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.5s ease,
+                margin 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+                padding 0.85s cubic-bezier(0.22, 1, 0.36, 1);
   }
   body.dungeon-docked #dungeonHeader {
     max-height: 0;
@@ -2334,23 +2339,14 @@ button.guides-box-link {
 .dungeon-card-dqf .dqf-chevron { margin-left: 8px; }
 
 @media (max-width: 900px) {
-  /* The full banner shows at the top initially; once scrolled it docks into the
-     compact card, which becomes a third collapsible sidebar section alongside
-     Locations and Encounters. */
+  /* The full dungeon header stays visible on mobile at all times. */
   .dungeon-card-section { display: none; }
-  body.dungeon-docked #dungeonHeader { display: none; }
-  body.dungeon-docked .dungeon-card-section { display: block; }
   .sidebar {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 16px;
-    position: sticky;
-    top: calc(var(--controls-height, 64px) + var(--dungeon-tabs-height, 44px));
-    z-index: 50;
-    background: rgba(10,8,5,0.97);
-    backdrop-filter: blur(8px);
     padding: 8px 0;
   }
   .sidebar-section {

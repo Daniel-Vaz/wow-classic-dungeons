@@ -142,15 +142,29 @@ function initScrollLogo() {
 // is purely CSS — this handler only toggles the body.dungeon-docked flag, and
 // only matters on desktop (≥901px); the mobile layout shows the compact card
 // unconditionally regardless of this class.
+// Hysteresis: we DOCK once the page is scrolled past the controls/tabs, but we
+// only UNDOCK again when scrolled back near the very top. The wide gap between
+// the two thresholds is what makes the card "stick" docked. It also defeats a
+// feedback loop: docking collapses the banner, which shrinks the page; on short
+// pages (few dungeons, collapsed/filtered quests) the browser then clamps
+// scrollY downward. With a single threshold that clamp would drop us back below
+// it and undock — causing the dock to flicker back and forth. By undocking only
+// near the top, the post-dock clamp can never reach the undock threshold.
 function initDungeonDock() {
-  let offset = 108;
+  let dockThreshold = 108;   // scroll past this (going down) → dock
+  const undockThreshold = 8; // only undock once back this close to the top
   const readOffset = () => {
     const cs = getComputedStyle(document.documentElement);
-    offset = (parseInt(cs.getPropertyValue('--controls-height'), 10) || 64)
-           + (parseInt(cs.getPropertyValue('--dungeon-tabs-height'), 10) || 44);
+    dockThreshold = (parseInt(cs.getPropertyValue('--controls-height'), 10) || 64)
+                  + (parseInt(cs.getPropertyValue('--dungeon-tabs-height'), 10) || 44);
   };
   const onScroll = () => {
-    document.body.classList.toggle('dungeon-docked', window.scrollY > offset);
+    const docked = document.body.classList.contains('dungeon-docked');
+    if (!docked && window.scrollY > dockThreshold) {
+      document.body.classList.add('dungeon-docked');
+    } else if (docked && window.scrollY < undockThreshold) {
+      document.body.classList.remove('dungeon-docked');
+    }
   };
   readOffset();
   onScroll();
