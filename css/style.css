@@ -166,6 +166,12 @@ body::before {
     drop-shadow(0 0 14px rgba(200,140,40,0.15))
     drop-shadow(0 8px 20px rgba(0,0,0,0.9));
 }
+.controls-logo:hover {
+  filter:
+    drop-shadow(0 0 12px rgba(200,140,40,0.6))
+    drop-shadow(0 0 6px rgba(200,140,40,0.25));
+  transform: scale(1.08);
+}
 
 .site-subtitle {
   font-family: 'Cinzel', serif;
@@ -226,7 +232,7 @@ body::before {
   transform: scale(0.7);
   pointer-events: none;
   overflow: hidden;
-  transition: width 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin-right 0.35s ease;
+  transition: width 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin-right 0.35s ease, filter 0.3s ease;
 }
 body.scrolled .controls-logo {
   width: 32px;
@@ -2037,6 +2043,51 @@ button.guides-box-link {
     flex-direction: column;
     min-height: 0;
     flex: 1 1 auto;
+  }
+  /* Locations fits its content rather than being squeezed to a sliver, but keeps
+     a floor (so a short list still reads clearly) and a cap + the ability to
+     shrink (so a long list or a docked dungeon card can't crowd out Encounters). */
+  .sidebar-section:has(#locationList) {
+    flex: 0 0 auto;
+    min-height: 0;
+  }
+  .sidebar-section:has(#locationList).expanded {
+    flex: 0 1 auto;
+    min-height: 110px;
+  }
+  .sidebar-section:has(#locationList) .sidebar-body {
+    max-height: 32vh;
+  }
+  /* Quest Locations starts collapsed on desktop too — long lists (BRD, Dire Maul)
+     otherwise crowd the sticky column. Click the title to expand; the shared
+     initSidebarCollapse handler toggles `.expanded`. */
+  .sidebar-section:has(#locationList) .sidebar-title {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar-section:has(#locationList) .sidebar-title::after {
+    content: '▼';
+    font-size: 0.55rem;
+    opacity: 0.5;
+    transition: transform 0.2s;
+  }
+  .sidebar-section:has(#locationList).expanded .sidebar-title::after {
+    transform: rotate(180deg);
+  }
+  .sidebar-section:has(#locationList) .sidebar-body {
+    display: none;
+  }
+  .sidebar-section:has(#locationList).expanded .sidebar-body {
+    display: block;
+  }
+  /* Encounters absorbs the remaining column height, scrolls when it overflows,
+     and keeps a minimum so it stays visible alongside a tall Locations list. */
+  .sidebar-section:has(#encounterList) {
+    flex: 1 1 auto;
+    min-height: 120px;
   }
   .sidebar-title {
     flex-shrink: 0;

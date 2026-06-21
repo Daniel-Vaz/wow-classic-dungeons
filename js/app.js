@@ -1132,18 +1132,120 @@ function renderConfigGroups(dungeon, visibleQuests, container) {
   });
 }
 
-// Cascade context for the prereqs/earlier-members of a group: completing a
-// dungeon quest marks all of them done; completing one of them marks the ones
-// before it (mirrors the legacy preChain cascade).
-function configCascadeContexts(ctxMembers, dungeonQuests = []) {
-  const members = ctxMembers.map(normalizeQuest);
-  const dungeonMembers = dungeonQuests.map(normalizeQuest);
-  return {
-    dungeonCtx:  members.length ? { type: 'dungeon',  members } : null,
-    // dungeonMembers: the quest(s) these prereqs gate — needed so that undoing a
-    // prereq card can also undo the dungeon quest that depended on it.
-    prechainCtx: members.length ? { type: 'prechain', members, dungeonMembers } : null,
+// ── Unified chain completion cascade ──────────────────────────────────────
+// A chain's quests form a prerequisite DAG wired by prevQuestId/nextQuestId:
+// these edges connect every series, gate and parallel branch (forks share a
+// prevQuestId, convergences share a nextQuestId). Completing a quest implies
+// all of its prerequisites are done; un-completing it un-does everything that
+// depended on it. We walk that DAG across the WHOLE chain rather than just the
+// toggled quest's own series spine.
+
+// Build a cascade context from an arbitrary set of chain quests (deduped &
+// normalized). Handed to every card in a chain group so the cascade can see
+// the entire chain; null when there is nothing to chain.
+function chainCascadeCtx(quests) {
+  const members = [];
+  const seen = new Set();
+  quests.forEach(q => {
+    if (!q || q.id == null || seen.has(q.id)) return;
+    seen.add(q.id);
+    members.push(normalizeQuest(q));
+  });
+  return members.length ? { members } : null;
+}
+
+// The full member set of the chain the toggled quest belongs to: same-chainId
+// in-dungeon quests (flow/tree/series declared top-level) ∪ the renderer's
+// cascade-context members ∪ the quest itself.
+function chainMemberMap(quest, dungeon, cascadeCtx) {
+  const map = new Map();
+  const add = q => { if (q && q.id != null && !map.has(q.id)) map.set(q.id, normalizeQuest(q)); };
+  if (quest.chainId != null) {
+    dungeon.quests.forEach(q => { if (q.chainId === quest.chainId) add(q); });
+  }
+  if (cascadeCtx) {
+    (cascadeCtx.members || []).forEach(add);
+    (cascadeCtx.dungeonMembers || []).forEach(add);
+  }
+  add(quest);
+  return map;
+}
+
+// Cascade a completion toggle along the whole-chain prerequisite graph.
+function applyChainCascade(quest, dungeon, cascadeCtx, wasCompleted) {
+  const members = chainMemberMap(quest, dungeon, cascadeCtx);
+  if (members.size < 2) return;
+
+  const prereqs = new Map();     // id → Set(prerequisite ids)
+  const dependents = new Map();  // id → Set(dependent ids)
+  const edge = (map, from, to) => {
+    let s = map.get(from);
+    if (!s) { s = new Set(); map.set(from, s); }
+    s.add(to);
   };
+  const link = (pre, post) => {
+    if (pre === post || !members.has(pre) || !members.has(post)) return;
+    edge(prereqs, post, pre);
+    edge(dependents, pre, post);
+  };
+  // Wire every prerequisite a quest declares (the prevQuestId spine, `requires`
+  // gates, and required preChain members) as edges pointing INTO targetId.
+  const declarePrereqEdges = (decl, targetId) => {
+    if (decl.prevQuestId != null) link(decl.prevQuestId, targetId);
+    // `requires` gates connect prerequisites that aren't on the prev/next spine
+    // (e.g. an OR gate whose options feed into a series step).
+    (decl.requires || []).forEach(r => {
+      if (r.type === 'single' && r.id != null) link(r.id, targetId);
+      else if (r.type === 'or') (r.ids || []).forEach(id => link(id, targetId));
+    });
+    // preChain containment: a quest's required prerequisites (series steps and
+    // gates — not optional ones) are its prerequisites even when no prev/next or
+    // requires edge wires them, so completing the quest cascades to all of them.
+    (decl.preChain || []).forEach(e => {
+      if (e.relation !== 'series' && e.relation !== 'requires') return;
+      if (e.or) e.or.forEach(v => { if (v && v.id != null) link(v.id, targetId); });
+      else if (e.id != null) link(e.id, targetId);
+    });
+  };
+  members.forEach(m => {
+    declarePrereqEdges(m, m.id);
+    if (m.nextQuestId != null) link(m.id, m.nextQuestId);
+    // Parallel "also unlocks" forks share the host quest's prerequisite chain
+    // (they branch off the same questline), so each fork inherits the host's
+    // prerequisites — completing any fork marks the shared chain done while the
+    // forks stay independent of one another.
+    (m.alsoUnlocks || []).forEach(f => {
+      if (f && f.id != null && members.has(f.id)) declarePrereqEdges(m, f.id);
+    });
+  });
+
+  const reach = (startId, adj) => {
+    const out = new Set();
+    const stack = [startId];
+    while (stack.length) {
+      const cur = stack.pop();
+      (adj.get(cur) || []).forEach(n => { if (!out.has(n)) { out.add(n); stack.push(n); } });
+    }
+    out.delete(startId);
+    return out;
+  };
+
+  if (!wasCompleted) {
+    // Completing: every prerequisite leading here is implicitly done too.
+    reach(quest.id, prereqs).forEach(id => { completed[questKey(dungeon, members.get(id))] = true; });
+  } else {
+    // Un-completing: anything that depended on this quest is no longer reachable.
+    reach(quest.id, dependents).forEach(id => { delete completed[questKey(dungeon, members.get(id))]; });
+  }
+}
+
+// Cascade context for a chain group: one whole-chain context shared by every
+// card (prerequisites + the dungeon quests they gate). Direction is derived
+// from the prerequisite graph, so dungeon cards and prereq cards use the same
+// context. The two names are kept for call-site clarity.
+function configCascadeContexts(ctxMembers, dungeonQuests = []) {
+  const ctx = chainCascadeCtx([...dungeonQuests, ...ctxMembers]);
+  return { dungeonCtx: ctx, prechainCtx: ctx };
 }
 
 // Requires gates → a "Prerequisite(s)" section. Single gate = one card; an OR
@@ -1340,10 +1442,15 @@ function buildConfigSeriesGroup(members, dungeon) {
   }));
   followups.sort((a, b) => (a.series ? a.series.index : 0) - (b.series ? b.series.index : 0));
 
+  // Cascade context spans the whole chain, including prerequisite steps that are
+  // themselves dungeon quests (cross-series merges, e.g. BRD's "Abandoned Hope" /
+  // "A Crumpled Up Note" leading into "Jail Break!"). They render in their own
+  // groups too, but the cascade graph must still see them so completing the final
+  // quest marks the entire preceding chain done.
   const allCtxCards = blocks.flatMap(b =>
     b.type === 'gate'
       ? b.entries.flatMap(g => g.or ? g.or.map(normalizeQuest) : [normalizeQuest(g)])
-      : b.cards.filter(c => !c.isDungeon)
+      : b.cards
   );
   // Include alsoUnlocks quests in dungeon context so checking either fork outcome
   // marks the shared prerequisite chain as complete.
@@ -1493,11 +1600,11 @@ function buildChainGroup(members, dungeon) {
   const seriesChain = rootPrechain.filter(s => s.preChainRole === 'series' || !s.preChainRole);
   const hasPrechain = rootPrechain.length > 0;
 
-  // Cascade contexts: prechainCtx for preChain item cards (cascade to predecessors),
-  // dungeonCtx for dungeon quest cards (cascade to all preChain items on complete).
-  const allPreChainNorm = rootPrechain.map(normalizeQuest);
-  const prechainCtx = hasPrechain ? { type: 'prechain', members: allPreChainNorm } : null;
-  const dungeonCtx  = hasPrechain ? { type: 'dungeon',  members: allPreChainNorm } : null;
+  // One whole-chain cascade context shared by every card: the in-dungeon chain
+  // members plus their prerequisites. Direction comes from the prereq graph.
+  const chainCtx = chainCascadeCtx([...members, ...rootPrechain]);
+  const prechainCtx = chainCtx;
+  const dungeonCtx  = chainCtx;
 
   const wrapper = document.createElement('div');
   // has-prechain switches the wrapper to flex-column so all children stack
@@ -1790,9 +1897,10 @@ function flowExitCount(node) {
 function buildFlowGroup(flow, members, dungeon) {
   const byId = {};
   members.forEach(m => { byId[m.id] = normalizeQuest(m); });
-  // Completing the dungeon quest marks the whole prerequisite graph done.
-  const prereqMembers = members.filter(m => !m.isDungeon).map(normalizeQuest);
-  const ctx = { byId, dungeon, dungeonCtx: { type: 'dungeon', members: prereqMembers } };
+  // Every quest in the flow belongs to one prerequisite DAG, so each card gets
+  // the same whole-chain context; the cascade walks the graph both directions.
+  const cardCtx = chainCascadeCtx(members);
+  const ctx = { byId, dungeon, cardCtx };
 
   const wrapper = document.createElement('div');
   wrapper.className = 'quest-chain-group has-prechain';
@@ -1807,7 +1915,7 @@ function buildFlowGroup(flow, members, dungeon) {
 function flowCard(id, ctx) {
   const q = ctx.byId[id];
   if (!q) return document.createComment('flow: missing quest ' + id);
-  return buildQuestCard(q, ctx.dungeon, null, null, false, q.isDungeon ? ctx.dungeonCtx : null);
+  return buildQuestCard(q, ctx.dungeon, null, null, false, ctx.cardCtx);
 }
 
 function renderFlowNode(node, container, ctx) {
@@ -2267,60 +2375,10 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
     completed[key] = !wasCompleted;
     if (!completed[key]) delete completed[key];
 
-    if (quest.chainId !== null) {
-      // Cascade along the actual prerequisite tree (prevQuestId), not chainDepth —
-      // branching chains have parallel siblings at the same depth that must not
-      // affect one another (e.g. completing "Secret of the Circle" must not touch
-      // its sibling "Into the Depths").
-      const members = dungeon.quests.map(normalizeQuest).filter(q => q.chainId === quest.chainId);
-      const byId = {};
-      members.forEach(m => { byId[m.id] = m; });
-      const keyOf = m => questKey(dungeon, m);
-      const ancestors = m => {
-        const out = [];
-        const seen = new Set([m.id]);
-        let cur = m;
-        while (cur && cur.prevQuestId != null && byId[cur.prevQuestId] && !seen.has(cur.prevQuestId)) {
-          cur = byId[cur.prevQuestId];
-          seen.add(cur.id);
-          out.push(cur);
-        }
-        return out;
-      };
-
-      if (!wasCompleted) {
-        // Completing: every prerequisite leading here is implicitly done too.
-        ancestors(byId[quest.id]).forEach(m => { completed[keyOf(m)] = true; });
-      } else {
-        // Undoing: anything that depends on this quest is no longer reachable.
-        members
-          .filter(m => ancestors(m).some(a => a.id === quest.id))
-          .forEach(m => { delete completed[keyOf(m)]; });
-      }
-    }
-
-    // preChain cascade: completing a dungeon quest marks all its external
-    // prerequisites complete; completing a preChain item marks its predecessors.
-    if (cascadeCtx) {
-      const pcMembers = cascadeCtx.members;
-      const pcKeyOf = m => questKey(dungeon, m);
-      if (cascadeCtx.type === 'dungeon') {
-        pcMembers.forEach(m => {
-          if (!wasCompleted) completed[pcKeyOf(m)] = true;
-          else delete completed[pcKeyOf(m)];
-        });
-      } else if (cascadeCtx.type === 'prechain') {
-        const myIdx = pcMembers.findIndex(m => m.id === quest.id);
-        if (!wasCompleted && myIdx > 0) {
-          pcMembers.slice(0, myIdx).forEach(m => { completed[pcKeyOf(m)] = true; });
-        } else if (wasCompleted && myIdx >= 0) {
-          // Undo everything after this item in the prechain…
-          pcMembers.slice(myIdx + 1).forEach(m => { delete completed[pcKeyOf(m)]; });
-          // …and the dungeon quest(s) that these prereqs gate.
-          (cascadeCtx.dungeonMembers || []).forEach(m => { delete completed[pcKeyOf(m)]; });
-        }
-      }
-    }
+    // Cascade across the whole chain's prerequisite graph: completing a quest
+    // marks every prerequisite leading to it (across all series, gates and
+    // parallel branches); un-completing it clears everything that depended on it.
+    applyChainCascade(quest, dungeon, cascadeCtx, wasCompleted);
 
     localStorage.setItem('wow_completed', JSON.stringify(completed));
     renderDungeonHeader(DUNGEONS.find(d => d.id === currentDungeonId));
