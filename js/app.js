@@ -1923,6 +1923,11 @@ function buildFlowGroup(flow, members, dungeon) {
   label.textContent = 'Quest Chain';
   wrapper.appendChild(label);
   renderFlowNode(flow.tree, wrapper, ctx);
+  // Post-dungeon follow-ups peeled off the flow's tail render as a breadcrumb.
+  if (flow.postChain && flow.postChain.length) {
+    const bc = buildPostchainBreadcrumb(flow.postChain);
+    if (bc) wrapper.appendChild(bc);
+  }
   return wrapper;
 }
 
