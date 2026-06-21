@@ -26366,6 +26366,7 @@ const DUNGEONS = [
     "levels": "55–60",
     "location": "Blackrock Mountain",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-lower-blackrock-spire-dungeon-quests",
+    "schema": 2,
     "quests": [
       {
         "id": 4862,
@@ -26384,11 +26385,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Kibler",
+            "link": "https://www.wowhead.com/classic/npc=10260/kibler",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "endNpc": "Kibler",
         "endNpcLink": "https://www.wowhead.com/classic/npc=10260/kibler",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Kibler",
+            "link": "https://www.wowhead.com/classic/npc=10260/kibler",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "levels": "59",
         "minLevel": 55,
         "faction": "Both",
@@ -26407,7 +26426,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4729,
@@ -26426,11 +26447,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Kibler",
+            "link": "https://www.wowhead.com/classic/npc=10260/kibler",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "endNpc": "Kibler",
         "endNpcLink": "https://www.wowhead.com/classic/npc=10260/kibler",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Kibler",
+            "link": "https://www.wowhead.com/classic/npc=10260/kibler",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "levels": "59",
         "minLevel": 55,
         "faction": "Both",
@@ -26449,7 +26488,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4701,
@@ -26468,11 +26509,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Helendis Riverhorn",
+            "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "endNpc": "Helendis Riverhorn",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Helendis Riverhorn",
+            "link": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
         "levels": "59",
         "minLevel": 55,
         "faction": "Alliance",
@@ -26503,7 +26562,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4724,
@@ -26522,11 +26583,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Galamav the Marksman",
+            "link": "https://www.wowhead.com/classic/npc=9081/galamav-the-marksman",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "endNpc": "Galamav the Marksman",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9081/galamav-the-marksman",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Galamav the Marksman",
+            "link": "https://www.wowhead.com/classic/npc=9081/galamav-the-marksman",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "levels": "59",
         "minLevel": 55,
         "faction": "Horde",
@@ -26557,7 +26636,1176 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 4788,
+        "name": "The Final Tablets",
+        "questLink": "https://www.wowhead.com/classic/quest=4788/the-final-tablets",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5065,
+        "nextQuestId": 8181,
+        "chainId": "lbrs-5065-the-lost-tablets-of-mosh-aru",
+        "chainDepth": 1,
+        "startNpc": "Prospector Ironboot",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Tanaris",
+        "startNpcs": [
+          {
+            "name": "Prospector Ironboot",
+            "link": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
+        "endNpc": "Prospector Ironboot",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Tanaris",
+        "endNpcs": [
+          {
+            "name": "Prospector Ironboot",
+            "link": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tanaris"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 40,
+        "faction": "Both",
+        "xp": 7750,
+        "money": 46500,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 3520,
+            "name": "Screecher Spirits",
+            "questLink": "https://www.wowhead.com/classic/quest=3520/screecher-spirits",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 3527,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Yeh'kinya",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Yeh'kinya",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "44",
+            "minLevel": 40,
+            "faction": "Both",
+            "xp": 3750,
+            "money": 2280,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "lbrs-3520-screecher-spirits",
+              "index": 1,
+              "total": 4,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 3527,
+            "name": "The Prophecy of Mosh'aru",
+            "questLink": "https://www.wowhead.com/classic/quest=3527/the-prophecy-of-mosh-aru",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3520,
+            "nextQuestId": 4787,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Yeh'kinya",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Yeh'kinya",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "47",
+            "minLevel": 40,
+            "faction": "Both",
+            "xp": 5250,
+            "money": 3150,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "lbrs-3520-screecher-spirits",
+              "index": 2,
+              "total": 4,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 4787,
+            "name": "The Ancient Egg",
+            "questLink": "https://www.wowhead.com/classic/quest=4787/the-ancient-egg",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3527,
+            "nextQuestId": 3528,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Yeh'kinya",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Yeh'kinya",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "50",
+            "minLevel": 40,
+            "faction": "Both",
+            "xp": 5900,
+            "money": 3600,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "lbrs-3520-screecher-spirits",
+              "index": 3,
+              "total": 4,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 3528,
+            "name": "The God Hakkar",
+            "questLink": "https://www.wowhead.com/classic/quest=3528/the-god-hakkar",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 4787,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Yeh'kinya",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Yeh'kinya",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Yeh'kinya",
+                "link": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "53",
+            "minLevel": 40,
+            "faction": "Both",
+            "xp": 7900,
+            "money": 24000,
+            "rewards": [],
+            "rewardChoices": [
+              {
+                "id": 10749,
+                "name": "Avenguard Helm",
+                "url": "https://www.wowhead.com/classic/item=10749/avenguard-helm",
+                "quality": 3
+              },
+              {
+                "id": 10750,
+                "name": "Lifeforce Dirk",
+                "url": "https://www.wowhead.com/classic/item=10750/lifeforce-dirk",
+                "quality": 3
+              },
+              {
+                "id": 10751,
+                "name": "Gemburst Circlet",
+                "url": "https://www.wowhead.com/classic/item=10751/gemburst-circlet",
+                "quality": 3
+              }
+            ],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "lbrs-3520-screecher-spirits",
+              "index": 4,
+              "total": 4,
+              "name": "Screecher Spirits"
+            }
+          },
+          {
+            "id": 5065,
+            "name": "The Lost Tablets of Mosh'aru",
+            "questLink": "https://www.wowhead.com/classic/quest=5065/the-lost-tablets-of-mosh-aru",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 3528,
+            "nextQuestId": 4788,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Prospector Ironboot",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Prospector Ironboot",
+                "link": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Prospector Ironboot",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Prospector Ironboot",
+                "link": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "58",
+            "minLevel": 40,
+            "faction": "Both",
+            "xp": 7750,
+            "money": 46500,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "lbrs-5065-the-lost-tablets-of-mosh-aru",
+              "index": 1,
+              "total": 4,
+              "name": "The Lost Tablets of Mosh'aru"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 3528
+              }
+            ]
+          }
+        ],
+        "postChain": [
+          {
+            "id": 8181,
+            "name": "Confront Yeh'kinya",
+            "url": "https://www.wowhead.com/classic/quest=8181/confront-yeh-kinya",
+            "series": {
+              "id": "lbrs-5065-the-lost-tablets-of-mosh-aru",
+              "index": 3,
+              "total": 4,
+              "name": "The Lost Tablets of Mosh'aru"
+            }
+          },
+          {
+            "id": 8182,
+            "name": "The Hand of Rastakhan",
+            "url": "https://www.wowhead.com/classic/quest=8182/the-hand-of-rastakhan",
+            "series": {
+              "id": "lbrs-5065-the-lost-tablets-of-mosh-aru",
+              "index": 4,
+              "total": 4,
+              "name": "The Lost Tablets of Mosh'aru"
+            }
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "lbrs-5065-the-lost-tablets-of-mosh-aru",
+          "index": 2,
+          "total": 4,
+          "name": "The Lost Tablets of Mosh'aru"
+        }
+      },
+      {
+        "id": 5081,
+        "name": "Maxwell's Mission",
+        "questLink": "https://www.wowhead.com/classic/quest=5081/maxwell-s-mission",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5002,
+        "nextQuestId": null,
+        "chainId": "lbrs-5001-bijou-s-belongings",
+        "chainDepth": 2,
+        "startNpc": "Marshal Maxwell",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Marshal Maxwell",
+            "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Marshal Maxwell",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Marshal Maxwell",
+            "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Alliance",
+        "xp": 8300,
+        "money": 18000,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 13958,
+            "name": "Wyrmthalak's Shackles",
+            "url": "https://www.wowhead.com/classic/item=13958/wyrmthalak-s-shackles",
+            "quality": 3
+          },
+          {
+            "id": 13959,
+            "name": "Omokk's Girth Restrainer",
+            "url": "https://www.wowhead.com/classic/item=13959/omokk-s-girth-restrainer",
+            "quality": 3
+          },
+          {
+            "id": 13961,
+            "name": "Halycon's Muzzle",
+            "url": "https://www.wowhead.com/classic/item=13961/halycon-s-muzzle",
+            "quality": 3
+          },
+          {
+            "id": 13962,
+            "name": "Vosh'gajin's Strand",
+            "url": "https://www.wowhead.com/classic/item=13962/vosh-gajin-s-strand",
+            "quality": 3
+          },
+          {
+            "id": 13963,
+            "name": "Voone's Vice Grips",
+            "url": "https://www.wowhead.com/classic/item=13963/voone-s-vice-grips",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 5002,
+            "name": "Message to Maxwell",
+            "questLink": "https://www.wowhead.com/classic/quest=5002/message-to-maxwell",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5001,
+            "nextQuestId": 5081,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Bijou",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Blackrock Spire",
+            "startNpcs": [
+              {
+                "name": "Bijou",
+                "link": "https://www.wowhead.com/classic/npc=10257/bijou",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Spire"
+              }
+            ],
+            "endNpc": "Marshal Maxwell",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Marshal Maxwell",
+                "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
+            "levels": "59",
+            "minLevel": 55,
+            "faction": "Alliance",
+            "xp": 6400,
+            "money": 18000,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "lbrs-5001-bijou-s-belongings",
+              "index": 2,
+              "total": 3,
+              "name": "Bijou's Belongings"
+            }
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "lbrs-5001-bijou-s-belongings",
+          "index": 3,
+          "total": 3,
+          "name": "Bijou's Belongings"
+        }
+      },
+      {
+        "id": 4982,
+        "name": "Bijou's Belongings",
+        "questLink": "https://www.wowhead.com/classic/quest=4982/bijou-s-belongings",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 4981,
+        "nextQuestId": 4983,
+        "chainId": "lbrs-4981-operative-bijou",
+        "chainDepth": 1,
+        "startNpc": "Bijou",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Spire",
+        "startNpcs": [
+          {
+            "name": "Bijou",
+            "link": "https://www.wowhead.com/classic/npc=10257/bijou",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Spire"
+          }
+        ],
+        "endNpc": "Bijou",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Blackrock Spire",
+        "endNpcs": [
+          {
+            "name": "Bijou",
+            "link": "https://www.wowhead.com/classic/npc=10257/bijou",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Spire"
+          }
+        ],
+        "levels": "59",
+        "minLevel": 55,
+        "faction": "Horde",
+        "xp": 6400,
+        "money": 38400,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [
+          {
+            "id": 4981,
+            "name": "Operative Bijou",
+            "questLink": "https://www.wowhead.com/classic/quest=4981/operative-bijou",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 4982,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Lexlort",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=9080/lexlort",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Badlands",
+            "startNpcs": [
+              {
+                "name": "Lexlort",
+                "link": "https://www.wowhead.com/classic/npc=9080/lexlort",
+                "faction": "",
+                "type": "npc",
+                "loc": "Badlands"
+              }
+            ],
+            "endNpc": "Bijou",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Blackrock Spire",
+            "endNpcs": [
+              {
+                "name": "Bijou",
+                "link": "https://www.wowhead.com/classic/npc=10257/bijou",
+                "faction": "",
+                "type": "npc",
+                "loc": "Blackrock Spire"
+              }
+            ],
+            "levels": "59",
+            "minLevel": 55,
+            "faction": "Horde",
+            "xp": 6400,
+            "money": 38400,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "lbrs-4981-operative-bijou",
+              "index": 1,
+              "total": 3,
+              "name": "Operative Bijou"
+            }
+          }
+        ],
+        "postChain": [
+          {
+            "id": 4983,
+            "name": "Bijou's Reconnaissance Report",
+            "url": "https://www.wowhead.com/classic/quest=4983/bijou-s-reconnaissance-report",
+            "series": {
+              "id": "lbrs-4981-operative-bijou",
+              "index": 3,
+              "total": 3,
+              "name": "Operative Bijou"
+            },
+            "faction": "Horde"
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "lbrs-4981-operative-bijou",
+          "index": 2,
+          "total": 3,
+          "name": "Operative Bijou"
+        }
+      },
+      {
+        "id": 5089,
+        "name": "General Drakkisath's Command",
+        "questLink": "https://www.wowhead.com/classic/quest=5089/general-drakkisath-s-command",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 5102,
+        "chainId": "lbrs-5089-general-drakkisath-s-command",
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "General Drakkisath's Command",
+        "startItemLink": "https://www.wowhead.com/classic/item=12780/general-drakkisath-s-command",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Marshal Maxwell",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Marshal Maxwell",
+            "link": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Alliance",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [
+          {
+            "id": 5102,
+            "name": "General Drakkisath's Demise",
+            "url": "https://www.wowhead.com/classic/quest=5102/general-drakkisath-s-demise",
+            "series": {
+              "id": "lbrs-5089-general-drakkisath-s-command",
+              "index": 2,
+              "total": 2,
+              "name": "General Drakkisath's Command"
+            },
+            "faction": "Alliance"
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "lbrs-5089-general-drakkisath-s-command",
+          "index": 1,
+          "total": 2,
+          "name": "General Drakkisath's Command"
+        }
+      },
+      {
+        "id": 4742,
+        "name": "Seal of Ascension",
+        "questLink": "https://www.wowhead.com/classic/quest=4742/seal-of-ascension",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 4743,
+        "chainId": "lbrs-4742-seal-of-ascension",
+        "chainDepth": 0,
+        "startNpc": "Scarshield Infiltrator",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10299/scarshield-infiltrator",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Spire",
+        "startNpcs": [
+          {
+            "name": "Scarshield Infiltrator",
+            "link": "https://www.wowhead.com/classic/npc=10299/scarshield-infiltrator",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Spire"
+          }
+        ],
+        "endNpc": "Scarshield Infiltrator",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10299/scarshield-infiltrator",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Blackrock Spire",
+        "endNpcs": [
+          {
+            "name": "Scarshield Infiltrator",
+            "link": "https://www.wowhead.com/classic/npc=10299/scarshield-infiltrator",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Spire"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 57,
+        "faction": "Both",
+        "xp": 8300,
+        "money": 49800,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [
+          {
+            "id": 4743,
+            "name": "Seal of Ascension",
+            "url": "https://www.wowhead.com/classic/quest=4743/seal-of-ascension",
+            "series": {
+              "id": "lbrs-4742-seal-of-ascension",
+              "index": 2,
+              "total": 2,
+              "name": "Seal of Ascension"
+            }
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "lbrs-4742-seal-of-ascension",
+          "index": 1,
+          "total": 2,
+          "name": "Seal of Ascension"
+        }
+      },
+      {
+        "id": 5001,
+        "name": "Bijou's Belongings",
+        "questLink": "https://www.wowhead.com/classic/quest=5001/bijou-s-belongings",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 5002,
+        "chainId": "lbrs-5001-bijou-s-belongings",
+        "chainDepth": 0,
+        "startNpc": "Bijou",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Spire",
+        "startNpcs": [
+          {
+            "name": "Bijou",
+            "link": "https://www.wowhead.com/classic/npc=10257/bijou",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Spire"
+          }
+        ],
+        "endNpc": "Bijou",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Blackrock Spire",
+        "endNpcs": [
+          {
+            "name": "Bijou",
+            "link": "https://www.wowhead.com/classic/npc=10257/bijou",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Spire"
+          }
+        ],
+        "levels": "59",
+        "minLevel": 55,
+        "faction": "Alliance",
+        "xp": 6400,
+        "money": 38400,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [
+          {
+            "id": 5002,
+            "name": "Message to Maxwell",
+            "url": "https://www.wowhead.com/classic/quest=5002/message-to-maxwell",
+            "series": {
+              "id": "lbrs-5001-bijou-s-belongings",
+              "index": 2,
+              "total": 3,
+              "name": "Bijou's Belongings"
+            },
+            "faction": "Alliance"
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "lbrs-5001-bijou-s-belongings",
+          "index": 1,
+          "total": 3,
+          "name": "Bijou's Belongings"
+        }
+      },
+      {
+        "id": 4866,
+        "name": "Mother's Milk",
+        "questLink": "https://www.wowhead.com/classic/quest=4866/mother-s-milk",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Ragged John",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9563/ragged-john",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Ragged John",
+            "link": "https://www.wowhead.com/classic/npc=9563/ragged-john",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Ragged John",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9563/ragged-john",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Ragged John",
+            "link": "https://www.wowhead.com/classic/npc=9563/ragged-john",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Both",
+        "xp": 9950,
+        "money": 18000,
+        "rewards": [
+          {
+            "id": 15873,
+            "name": "Ragged John's Neverending Cup",
+            "url": "https://www.wowhead.com/classic/item=15873/ragged-john-s-neverending-cup",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 4867,
+        "name": "Urok Doomhowl",
+        "questLink": "https://www.wowhead.com/classic/quest=4867/urok-doomhowl",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Warosh",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10799/warosh",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Spire",
+        "startNpcs": [
+          {
+            "name": "Warosh",
+            "link": "https://www.wowhead.com/classic/npc=10799/warosh",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Spire"
+          }
+        ],
+        "endNpc": "Warosh",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10799/warosh",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Blackrock Spire",
+        "endNpcs": [
+          {
+            "name": "Warosh",
+            "link": "https://www.wowhead.com/classic/npc=10799/warosh",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blackrock Spire"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Both",
+        "xp": 9950,
+        "money": 59700,
+        "rewards": [
+          {
+            "id": 15867,
+            "name": "Prismcharm",
+            "url": "https://www.wowhead.com/classic/item=15867/prismcharm",
+            "quality": 2
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 5103,
+        "name": "Hot Fiery Death",
+        "questLink": "https://www.wowhead.com/classic/quest=5103/hot-fiery-death",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 5124,
+        "chainId": "lbrs-5103-hot-fiery-death",
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "Human Remains",
+        "startObjectLink": "https://www.wowhead.com/classic/object=176090/human-remains",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Spire",
+        "startNpcs": [
+          {
+            "name": "Human Remains",
+            "link": "https://www.wowhead.com/classic/object=176090/human-remains",
+            "faction": "",
+            "type": "object",
+            "loc": "Blackrock Spire"
+          }
+        ],
+        "endNpc": "Malyfous Darkhammer",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10637/malyfous-darkhammer",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Winterspring",
+        "endNpcs": [
+          {
+            "name": "Malyfous Darkhammer",
+            "link": "https://www.wowhead.com/classic/npc=10637/malyfous-darkhammer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Winterspring"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior",
+          "Paladin",
+          "Shaman"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [
+          {
+            "id": 5124,
+            "name": "Fiery Plate Gauntlets",
+            "url": "https://www.wowhead.com/classic/quest=5124/fiery-plate-gauntlets",
+            "series": {
+              "id": "lbrs-5103-hot-fiery-death",
+              "index": 2,
+              "total": 2,
+              "name": "Hot Fiery Death"
+            }
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "lbrs-5103-hot-fiery-death",
+          "index": 1,
+          "total": 2,
+          "name": "Hot Fiery Death"
+        }
+      },
+      {
+        "id": 5306,
+        "name": "Snakestone of the Shadow Huntress",
+        "questLink": "https://www.wowhead.com/classic/quest=5306/snakestone-of-the-shadow-huntress",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Kilram",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11192/kilram",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Winterspring",
+        "startNpcs": [
+          {
+            "name": "Kilram",
+            "link": "https://www.wowhead.com/classic/npc=11192/kilram",
+            "faction": "",
+            "type": "npc",
+            "loc": "Winterspring"
+          }
+        ],
+        "endNpc": "Kilram",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11192/kilram",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Winterspring",
+        "endNpcs": [
+          {
+            "name": "Kilram",
+            "link": "https://www.wowhead.com/classic/npc=11192/kilram",
+            "faction": "",
+            "type": "npc",
+            "loc": "Winterspring"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 50,
+        "faction": "Both",
+        "xp": 8300,
+        "money": 49800,
+        "rewards": [
+          {
+            "id": 12821,
+            "name": "Plans: Dawn's Edge",
+            "url": "https://www.wowhead.com/classic/item=12821/plans-dawn-s-edge",
+            "quality": 3
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 4903,
@@ -26567,7 +27815,7 @@ const DUNGEONS = [
         "prequestLink": "",
         "prevQuestId": null,
         "nextQuestId": 4941,
-        "chainId": 4903,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
         "chainDepth": 0,
         "startNpc": "",
         "startNpcLink": "",
@@ -26576,11 +27824,21 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "",
+        "startNpcs": [],
         "endNpc": "Warlord Goretooth",
         "endNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Badlands",
+        "endNpcs": [
+          {
+            "name": "Warlord Goretooth",
+            "link": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Horde",
@@ -26623,18 +27881,26 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s4903",
+          "index": 1,
+          "total": 3,
+          "name": "Warlord's Command"
+        },
+        "treeChain": true
       },
       {
         "id": 4941,
         "name": "Eitrigg's Wisdom",
         "questLink": "https://www.wowhead.com/classic/quest=4941/eitrigg-s-wisdom",
-        "prequest": "Warlord's Command",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4903/warlord-s-command",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4903,
         "nextQuestId": 4974,
-        "chainId": 4903,
-        "chainDepth": 1,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
+        "chainDepth": 0,
         "startNpc": "Warlord Goretooth",
         "startNpcLink": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
         "startObject": "",
@@ -26642,11 +27908,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Badlands",
+        "startNpcs": [
+          {
+            "name": "Warlord Goretooth",
+            "link": "https://www.wowhead.com/classic/npc=9077/warlord-goretooth",
+            "faction": "",
+            "type": "npc",
+            "loc": "Badlands"
+          }
+        ],
         "endNpc": "Thrall",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Horde",
@@ -26658,18 +27942,26 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s4903",
+          "index": 2,
+          "total": 3,
+          "name": "Warlord's Command"
+        },
+        "treeChain": true
       },
       {
         "id": 4974,
         "name": "For The Horde!",
         "questLink": "https://www.wowhead.com/classic/quest=4974/for-the-horde",
-        "prequest": "Eitrigg's Wisdom",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4941/eitrigg-s-wisdom",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 4941,
-        "nextQuestId": null,
-        "chainId": 4903,
-        "chainDepth": 2,
+        "nextQuestId": 6566,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
+        "chainDepth": 0,
         "startNpc": "Thrall",
         "startNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
         "startObject": "",
@@ -26677,11 +27969,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "endNpc": "Thrall",
         "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Horde",
@@ -26712,516 +28022,242 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s4903",
+          "index": 3,
+          "total": 3,
+          "name": "Warlord's Command"
+        },
+        "treeChain": true
       },
       {
-        "id": 3520,
-        "name": "Screecher Spirits",
-        "questLink": "https://www.wowhead.com/classic/quest=3520/screecher-spirits",
+        "id": 6566,
+        "name": "What the Wind Carries",
+        "questLink": "https://www.wowhead.com/classic/quest=6566/what-the-wind-carries",
         "prequest": "",
         "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 3527,
-        "chainId": 3520,
+        "prevQuestId": 4974,
+        "nextQuestId": 6567,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
         "chainDepth": 0,
-        "startNpc": "Yeh'kinya",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
+        "startNpc": "Thrall",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
         "startObject": "",
         "startObjectLink": "",
         "startItem": "",
         "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Yeh'kinya",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "44",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 3750,
-        "money": 2280,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3527,
-        "name": "The Prophecy of Mosh'aru",
-        "questLink": "https://www.wowhead.com/classic/quest=3527/the-prophecy-of-mosh-aru",
-        "prequest": "Screecher Spirits",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3520/screecher-spirits",
-        "prevQuestId": 3520,
-        "nextQuestId": 4787,
-        "chainId": 3520,
-        "chainDepth": 1,
-        "startNpc": "Yeh'kinya",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Yeh'kinya",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "47",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 5250,
-        "money": 3150,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4787,
-        "name": "The Ancient Egg",
-        "questLink": "https://www.wowhead.com/classic/quest=4787/the-ancient-egg",
-        "prequest": "The Prophecy of Mosh'aru",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3527/the-prophecy-of-mosh-aru",
-        "prevQuestId": 3527,
-        "nextQuestId": 3528,
-        "chainId": 3520,
-        "chainDepth": 2,
-        "startNpc": "Yeh'kinya",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Yeh'kinya",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "50",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 5900,
-        "money": 3600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 3528,
-        "name": "The God Hakkar",
-        "questLink": "https://www.wowhead.com/classic/quest=3528/the-god-hakkar",
-        "prequest": "The Ancient Egg",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4787/the-ancient-egg",
-        "prevQuestId": 4787,
-        "nextQuestId": null,
-        "chainId": 3520,
-        "chainDepth": 3,
-        "startNpc": "Yeh'kinya",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Yeh'kinya",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=8579/yeh-kinya",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "53",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 7900,
-        "money": 24000,
-        "rewards": [],
-        "rewardChoices": [
+        "startLoc": "Orgrimmar",
+        "startNpcs": [
           {
-            "id": 10749,
-            "name": "Avenguard Helm",
-            "url": "https://www.wowhead.com/classic/item=10749/avenguard-helm",
-            "quality": 3
-          },
-          {
-            "id": 10750,
-            "name": "Lifeforce Dirk",
-            "url": "https://www.wowhead.com/classic/item=10750/lifeforce-dirk",
-            "quality": 3
-          },
-          {
-            "id": 10751,
-            "name": "Gemburst Circlet",
-            "url": "https://www.wowhead.com/classic/item=10751/gemburst-circlet",
-            "quality": 3
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
           }
         ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5065,
-        "name": "The Lost Tablets of Mosh'aru",
-        "questLink": "https://www.wowhead.com/classic/quest=5065/the-lost-tablets-of-mosh-aru",
-        "prequest": "The God Hakkar",
-        "prequestLink": "https://www.wowhead.com/classic/quest=3528/the-god-hakkar",
-        "prevQuestId": 3528,
-        "nextQuestId": 4788,
-        "chainId": 3520,
-        "chainDepth": 4,
-        "startNpc": "Prospector Ironboot",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Prospector Ironboot",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
+        "endNpc": "Thrall",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
         "endObject": "",
         "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "58",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 7750,
-        "money": 46500,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4788,
-        "name": "The Final Tablets",
-        "questLink": "https://www.wowhead.com/classic/quest=4788/the-final-tablets",
-        "prequest": "The Lost Tablets of Mosh'aru",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5065/the-lost-tablets-of-mosh-aru",
-        "prevQuestId": 5065,
-        "nextQuestId": null,
-        "chainId": 3520,
-        "chainDepth": 5,
-        "startNpc": "Prospector Ironboot",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Prospector Ironboot",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=10460/prospector-ironboot",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "58",
-        "minLevel": 40,
-        "faction": "Both",
-        "xp": 7750,
-        "money": 46500,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5001,
-        "name": "Bijou's Belongings",
-        "questLink": "https://www.wowhead.com/classic/quest=5001/bijou-s-belongings",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 5002,
-        "chainId": 5001,
-        "chainDepth": 0,
-        "startNpc": "Bijou",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blackrock Spire",
-        "endNpc": "Bijou",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Blackrock Spire",
-        "levels": "59",
-        "minLevel": 55,
-        "faction": "Alliance",
-        "xp": 6400,
-        "money": 38400,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5002,
-        "name": "Message to Maxwell",
-        "questLink": "https://www.wowhead.com/classic/quest=5002/message-to-maxwell",
-        "prequest": "Bijou's Belongings",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5001/bijou-s-belongings",
-        "prevQuestId": 5001,
-        "nextQuestId": 5081,
-        "chainId": 5001,
-        "chainDepth": 1,
-        "startNpc": "Bijou",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blackrock Spire",
-        "endNpc": "Marshal Maxwell",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Burning Steppes",
-        "levels": "59",
-        "minLevel": 55,
-        "faction": "Alliance",
-        "xp": 6400,
-        "money": 18000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5081,
-        "name": "Maxwell's Mission",
-        "questLink": "https://www.wowhead.com/classic/quest=5081/maxwell-s-mission",
-        "prequest": "Message to Maxwell",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5002/message-to-maxwell",
-        "prevQuestId": 5002,
-        "nextQuestId": null,
-        "chainId": 5001,
-        "chainDepth": 2,
-        "startNpc": "Marshal Maxwell",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Burning Steppes",
-        "endNpc": "Marshal Maxwell",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Burning Steppes",
+        "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
-        "faction": "Alliance",
-        "xp": 8300,
-        "money": 18000,
-        "rewards": [],
-        "rewardChoices": [
-          {
-            "id": 13958,
-            "name": "Wyrmthalak's Shackles",
-            "url": "https://www.wowhead.com/classic/item=13958/wyrmthalak-s-shackles",
-            "quality": 3
-          },
-          {
-            "id": 13959,
-            "name": "Omokk's Girth Restrainer",
-            "url": "https://www.wowhead.com/classic/item=13959/omokk-s-girth-restrainer",
-            "quality": 3
-          },
-          {
-            "id": 13961,
-            "name": "Halycon's Muzzle",
-            "url": "https://www.wowhead.com/classic/item=13961/halycon-s-muzzle",
-            "quality": 3
-          },
-          {
-            "id": 13962,
-            "name": "Vosh'gajin's Strand",
-            "url": "https://www.wowhead.com/classic/item=13962/vosh-gajin-s-strand",
-            "quality": 3
-          },
-          {
-            "id": 13963,
-            "name": "Voone's Vice Grips",
-            "url": "https://www.wowhead.com/classic/item=13963/voone-s-vice-grips",
-            "quality": 3
-          }
-        ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4981,
-        "name": "Operative Bijou",
-        "questLink": "https://www.wowhead.com/classic/quest=4981/operative-bijou",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 4982,
-        "chainId": 4981,
-        "chainDepth": 0,
-        "startNpc": "Lexlort",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=9080/lexlort",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Badlands",
-        "endNpc": "Bijou",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Blackrock Spire",
-        "levels": "59",
-        "minLevel": 55,
         "faction": "Horde",
-        "xp": 6400,
-        "money": 38400,
+        "xp": 660,
+        "money": 3900,
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s6566",
+          "index": 1,
+          "total": 5,
+          "name": "What the Wind Carries"
+        },
+        "treeChain": true
       },
       {
-        "id": 4982,
-        "name": "Bijou's Belongings",
-        "questLink": "https://www.wowhead.com/classic/quest=4982/bijou-s-belongings",
-        "prequest": "Operative Bijou",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4981/operative-bijou",
-        "prevQuestId": 4981,
-        "nextQuestId": 4983,
-        "chainId": 4981,
-        "chainDepth": 1,
-        "startNpc": "Bijou",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blackrock Spire",
-        "endNpc": "Bijou",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Blackrock Spire",
-        "levels": "59",
-        "minLevel": 55,
-        "faction": "Horde",
-        "xp": 6400,
-        "money": 38400,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 4983,
-        "name": "Bijou's Reconnaissance Report",
-        "questLink": "https://www.wowhead.com/classic/quest=4983/bijou-s-reconnaissance-report",
-        "prequest": "Bijou's Belongings",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4982/bijou-s-belongings",
-        "prevQuestId": 4982,
-        "nextQuestId": null,
-        "chainId": 4981,
-        "chainDepth": 2,
-        "startNpc": "Bijou",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=10257/bijou",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Blackrock Spire",
-        "endNpc": "Lexlort",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9080/lexlort",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Badlands",
-        "levels": "59",
-        "minLevel": 55,
-        "faction": "Horde",
-        "xp": 6400,
-        "money": 18000,
-        "rewards": [],
-        "rewardChoices": [
-          {
-            "id": 15858,
-            "name": "Freewind Gloves",
-            "url": "https://www.wowhead.com/classic/item=15858/freewind-gloves",
-            "quality": 2
-          },
-          {
-            "id": 15859,
-            "name": "Seapost Girdle",
-            "url": "https://www.wowhead.com/classic/item=15859/seapost-girdle",
-            "quality": 2
-          }
-        ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5089,
-        "name": "General Drakkisath's Command",
-        "questLink": "https://www.wowhead.com/classic/quest=5089/general-drakkisath-s-command",
+        "id": 6567,
+        "name": "The Champion of the Horde",
+        "questLink": "https://www.wowhead.com/classic/quest=6567/the-champion-of-the-horde",
         "prequest": "",
         "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 5102,
-        "chainId": null,
+        "prevQuestId": 6566,
+        "nextQuestId": 6568,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
         "chainDepth": 0,
-        "startNpc": "",
-        "startNpcLink": "",
+        "startNpc": "Thrall",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=4949/thrall",
         "startObject": "",
         "startObjectLink": "",
-        "startItem": "General Drakkisath's Command",
-        "startItemLink": "https://www.wowhead.com/classic/item=12780/general-drakkisath-s-command",
-        "startLoc": "",
-        "endNpc": "Marshal Maxwell",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Thrall",
+            "link": "https://www.wowhead.com/classic/npc=4949/thrall",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
+        "endNpc": "Rexxar",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10182/rexxar",
         "endObject": "",
         "endObjectLink": "",
-        "endLoc": "Burning Steppes",
+        "endLoc": "Feralas",
+        "endNpcs": [
+          {
+            "name": "Rexxar",
+            "link": "https://www.wowhead.com/classic/npc=10182/rexxar",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
-        "faction": "Alliance",
+        "faction": "Horde",
+        "xp": 3300,
+        "money": 19800,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s6566",
+          "index": 2,
+          "total": 5,
+          "name": "What the Wind Carries"
+        },
+        "treeChain": true
+      },
+      {
+        "id": 6568,
+        "name": "The Testament of Rexxar",
+        "questLink": "https://www.wowhead.com/classic/quest=6568/the-testament-of-rexxar",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 6567,
+        "nextQuestId": 6569,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
+        "chainDepth": 0,
+        "startNpc": "Rexxar",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10182/rexxar",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Feralas",
+        "startNpcs": [
+          {
+            "name": "Rexxar",
+            "link": "https://www.wowhead.com/classic/npc=10182/rexxar",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
+        "endNpc": "Myranda the Hag",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Myranda the Hag",
+            "link": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Horde",
+        "xp": 4950,
+        "money": 29700,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s6566",
+          "index": 3,
+          "total": 5,
+          "name": "What the Wind Carries"
+        },
+        "treeChain": true
+      },
+      {
+        "id": 6569,
+        "name": "Oculus Illusions",
+        "questLink": "https://www.wowhead.com/classic/quest=6569/oculus-illusions",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 6568,
+        "nextQuestId": 6570,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
+        "chainDepth": 0,
+        "startNpc": "Myranda the Hag",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Myranda the Hag",
+            "link": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "endNpc": "Myranda the Hag",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Myranda the Hag",
+            "link": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Horde",
         "xp": 6600,
         "money": 39600,
         "rewards": [],
@@ -27229,82 +28265,418 @@ const DUNGEONS = [
         "requiredClasses": [],
         "notes": "",
         "preChain": [],
-        "postChain": [
-          {
-            "id": 5102,
-            "name": "General Drakkisath's Demise",
-            "url": "https://www.wowhead.com/classic/quest=5102/general-drakkisath-s-demise"
-          }
-        ],
-        "absorbedBy": null
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s6566",
+          "index": 4,
+          "total": 5,
+          "name": "What the Wind Carries"
+        },
+        "treeChain": true
       },
       {
-        "id": 4742,
-        "name": "Seal of Ascension",
-        "questLink": "https://www.wowhead.com/classic/quest=4742/seal-of-ascension",
+        "id": 6570,
+        "name": "Emberstrife",
+        "questLink": "https://www.wowhead.com/classic/quest=6570/emberstrife",
         "prequest": "",
         "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 4743,
-        "chainId": 4742,
+        "prevQuestId": 6569,
+        "nextQuestId": 6584,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
         "chainDepth": 0,
-        "startNpc": "Scarshield Infiltrator",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=10299/scarshield-infiltrator",
+        "startNpc": "Myranda the Hag",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
         "startObject": "",
         "startObjectLink": "",
         "startItem": "",
         "startItemLink": "",
-        "startLoc": "Blackrock Spire",
-        "endNpc": "Scarshield Infiltrator",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=10299/scarshield-infiltrator",
+        "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Myranda the Hag",
+            "link": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "endNpc": "Emberstrife",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10321/emberstrife",
         "endObject": "",
         "endObjectLink": "",
-        "endLoc": "Blackrock Spire",
+        "endLoc": "Dustwallow Marsh",
+        "endNpcs": [
+          {
+            "name": "Emberstrife",
+            "link": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
         "levels": "60",
-        "minLevel": 57,
-        "faction": "Both",
-        "xp": 8300,
-        "money": 49800,
+        "minLevel": 55,
+        "faction": "Horde",
+        "xp": 4950,
+        "money": 29700,
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s6566",
+          "index": 5,
+          "total": 5,
+          "name": "What the Wind Carries"
+        },
+        "treeChain": true
       },
       {
-        "id": 4743,
-        "name": "Seal of Ascension",
-        "questLink": "https://www.wowhead.com/classic/quest=4743/seal-of-ascension",
-        "prequest": "Seal of Ascension",
-        "prequestLink": "https://www.wowhead.com/classic/quest=4742/seal-of-ascension",
-        "prevQuestId": 4742,
-        "nextQuestId": null,
-        "chainId": 4742,
-        "chainDepth": 1,
-        "startNpc": "Scarshield Infiltrator",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=10299/scarshield-infiltrator",
+        "id": 6584,
+        "name": "The Test of Skulls, Chronalis",
+        "questLink": "https://www.wowhead.com/classic/quest=6584/the-test-of-skulls-chronalis",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 6570,
+        "nextQuestId": 6585,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
+        "chainDepth": 0,
+        "startNpc": "Emberstrife",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10321/emberstrife",
         "startObject": "",
         "startObjectLink": "",
         "startItem": "",
         "startItemLink": "",
-        "startLoc": "Blackrock Spire",
-        "endNpc": "Scarshield Infiltrator",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=10299/scarshield-infiltrator",
+        "startLoc": "Dustwallow Marsh",
+        "startNpcs": [
+          {
+            "name": "Emberstrife",
+            "link": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
+        "endNpc": "Emberstrife",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10321/emberstrife",
         "endObject": "",
         "endObjectLink": "",
-        "endLoc": "Blackrock Spire",
+        "endLoc": "Dustwallow Marsh",
+        "endNpcs": [
+          {
+            "name": "Emberstrife",
+            "link": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
         "levels": "60",
-        "minLevel": 57,
+        "minLevel": 55,
         "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "treeChain": true
+      },
+      {
+        "id": 6582,
+        "name": "The Test of Skulls, Scryer",
+        "questLink": "https://www.wowhead.com/classic/quest=6582/the-test-of-skulls-scryer",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 6570,
+        "nextQuestId": 6585,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
+        "chainDepth": 0,
+        "startNpc": "Emberstrife",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dustwallow Marsh",
+        "startNpcs": [
+          {
+            "name": "Emberstrife",
+            "link": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
+        "endNpc": "Emberstrife",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dustwallow Marsh",
+        "endNpcs": [
+          {
+            "name": "Emberstrife",
+            "link": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "treeChain": true
+      },
+      {
+        "id": 6583,
+        "name": "The Test of Skulls, Somnus",
+        "questLink": "https://www.wowhead.com/classic/quest=6583/the-test-of-skulls-somnus",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 6570,
+        "nextQuestId": 6585,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
+        "chainDepth": 0,
+        "startNpc": "Emberstrife",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dustwallow Marsh",
+        "startNpcs": [
+          {
+            "name": "Emberstrife",
+            "link": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
+        "endNpc": "Emberstrife",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dustwallow Marsh",
+        "endNpcs": [
+          {
+            "name": "Emberstrife",
+            "link": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "treeChain": true
+      },
+      {
+        "id": 6585,
+        "name": "The Test of Skulls, Axtroz",
+        "questLink": "https://www.wowhead.com/classic/quest=6585/the-test-of-skulls-axtroz",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 6583,
+        "nextQuestId": 6601,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
+        "chainDepth": 0,
+        "startNpc": "Emberstrife",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dustwallow Marsh",
+        "startNpcs": [
+          {
+            "name": "Emberstrife",
+            "link": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
+        "endNpc": "Emberstrife",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dustwallow Marsh",
+        "endNpcs": [
+          {
+            "name": "Emberstrife",
+            "link": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s6585",
+          "index": 1,
+          "total": 3,
+          "name": "The Test of Skulls, Axtroz"
+        },
+        "treeChain": true
+      },
+      {
+        "id": 6601,
+        "name": "Ascension",
+        "questLink": "https://www.wowhead.com/classic/quest=6601/ascension",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 6585,
+        "nextQuestId": 6602,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
+        "chainDepth": 0,
+        "startNpc": "Emberstrife",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Dustwallow Marsh",
+        "startNpcs": [
+          {
+            "name": "Emberstrife",
+            "link": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dustwallow Marsh"
+          }
+        ],
+        "endNpc": "Rexxar",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10182/rexxar",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Feralas",
+        "endNpcs": [
+          {
+            "name": "Rexxar",
+            "link": "https://www.wowhead.com/classic/npc=10182/rexxar",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Horde",
+        "xp": 4950,
+        "money": 29700,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s6585",
+          "index": 2,
+          "total": 3,
+          "name": "The Test of Skulls, Axtroz"
+        },
+        "treeChain": true
+      },
+      {
+        "id": 6602,
+        "name": "Blood of the Black Dragon Champion",
+        "questLink": "https://www.wowhead.com/classic/quest=6602/blood-of-the-black-dragon-champion",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 6601,
+        "nextQuestId": null,
+        "chainId": "lbrs-tree-4903-warlord-s-command",
+        "chainDepth": 0,
+        "startNpc": "Rexxar",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=10182/rexxar",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Feralas",
+        "startNpcs": [
+          {
+            "name": "Rexxar",
+            "link": "https://www.wowhead.com/classic/npc=10182/rexxar",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
+        "endNpc": "Rexxar",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=10182/rexxar",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Feralas",
+        "endNpcs": [
+          {
+            "name": "Rexxar",
+            "link": "https://www.wowhead.com/classic/npc=10182/rexxar",
+            "faction": "",
+            "type": "npc",
+            "loc": "Feralas"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Horde",
         "xp": 9950,
         "money": 59700,
         "rewards": [
           {
-            "id": 12344,
-            "name": "Seal of Ascension",
-            "url": "https://www.wowhead.com/classic/item=12344/seal-of-ascension",
+            "id": 16309,
+            "name": "Drakefire Amulet",
+            "url": "https://www.wowhead.com/classic/item=16309/drakefire-amulet",
             "quality": 3
           }
         ],
@@ -27313,7 +28685,15 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "lbrs-tree-4903-warlord-s-command-s6585",
+          "index": 3,
+          "total": 3,
+          "name": "The Test of Skulls, Axtroz"
+        },
+        "treeChain": true
       }
     ]
   },
@@ -27327,6 +28707,7 @@ const DUNGEONS = [
     "levels": "58–60",
     "location": "Western Plaguelands",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-scholomance-dungeon-quests",
+    "schema": 2,
     "quests": [
       {
         "id": 5529,
@@ -27335,8 +28716,8 @@ const DUNGEONS = [
         "prequest": "",
         "prequestLink": "",
         "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": 5529,
+        "nextQuestId": 5582,
+        "chainId": "scholo-5529-plagued-hatchlings",
         "chainDepth": 0,
         "startNpc": "Betina Bigglezink",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
@@ -27345,11 +28726,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Betina Bigglezink",
+            "link": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "endNpc": "Betina Bigglezink",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Betina Bigglezink",
+            "link": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "58",
         "minLevel": 55,
         "faction": "Both",
@@ -27361,17 +28760,24 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-5529-plagued-hatchlings",
+          "index": 1,
+          "total": 2,
+          "name": "Plagued Hatchlings"
+        }
       },
       {
         "id": 5582,
         "name": "Healthy Dragon Scale",
         "questLink": "https://www.wowhead.com/classic/quest=5582/healthy-dragon-scale",
-        "prequest": "Plagued Hatchlings",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5529/plagued-hatchlings",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 5529,
         "nextQuestId": null,
-        "chainId": 5529,
+        "chainId": "scholo-5529-plagued-hatchlings",
         "chainDepth": 1,
         "startNpc": "",
         "startNpcLink": "",
@@ -27380,11 +28786,21 @@ const DUNGEONS = [
         "startItem": "Healthy Dragon Scale",
         "startItemLink": "https://www.wowhead.com/classic/item=13920/healthy-dragon-scale",
         "startLoc": "",
+        "startNpcs": [],
         "endNpc": "Betina Bigglezink",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Betina Bigglezink",
+            "link": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "58",
         "minLevel": 55,
         "faction": "Both",
@@ -27396,7 +28812,14 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-5529-plagued-hatchlings",
+          "index": 2,
+          "total": 2,
+          "name": "Plagued Hatchlings"
+        }
       },
       {
         "id": 5382,
@@ -27406,7 +28829,7 @@ const DUNGEONS = [
         "prequestLink": "",
         "prevQuestId": null,
         "nextQuestId": 5515,
-        "chainId": 5382,
+        "chainId": "scholo-5382-doctor-theolen-krastinov-the-butcher",
         "chainDepth": 0,
         "startNpc": "Eva Sarkhoff",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
@@ -27415,11 +28838,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Eva Sarkhoff",
+            "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "endNpc": "Eva Sarkhoff",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Eva Sarkhoff",
+            "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -27431,17 +28872,24 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": 5466
+        "absorbedBy": 5466,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-5382-doctor-theolen-krastinov-the-butcher",
+          "index": 1,
+          "total": 3,
+          "name": "Doctor Theolen Krastinov, the Butcher"
+        }
       },
       {
         "id": 5515,
         "name": "Krastinov's Bag of Horrors",
         "questLink": "https://www.wowhead.com/classic/quest=5515/krastinov-s-bag-of-horrors",
-        "prequest": "Doctor Theolen Krastinov, the Butcher",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5382/doctor-theolen-krastinov-the-butcher",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 5382,
         "nextQuestId": 5384,
-        "chainId": 5382,
+        "chainId": "scholo-5382-doctor-theolen-krastinov-the-butcher",
         "chainDepth": 1,
         "startNpc": "Eva Sarkhoff",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
@@ -27450,11 +28898,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Eva Sarkhoff",
+            "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "endNpc": "Eva Sarkhoff",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Eva Sarkhoff",
+            "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -27466,17 +28932,24 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": 5466
+        "absorbedBy": 5466,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-5382-doctor-theolen-krastinov-the-butcher",
+          "index": 2,
+          "total": 3,
+          "name": "Doctor Theolen Krastinov, the Butcher"
+        }
       },
       {
         "id": 5384,
         "name": "Kirtonos the Herald",
         "questLink": "https://www.wowhead.com/classic/quest=5384/kirtonos-the-herald",
-        "prequest": "Krastinov's Bag of Horrors",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5515/krastinov-s-bag-of-horrors",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 5515,
         "nextQuestId": null,
-        "chainId": 5382,
+        "chainId": "scholo-5382-doctor-theolen-krastinov-the-butcher",
         "chainDepth": 2,
         "startNpc": "Eva Sarkhoff",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
@@ -27485,11 +28958,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Eva Sarkhoff",
+            "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "endNpc": "Eva Sarkhoff",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Eva Sarkhoff",
+            "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -27521,156 +29012,25 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": 5466
-      },
-      {
-        "id": 5461,
-        "name": "The Human, Ras Frostwhisper",
-        "questLink": "https://www.wowhead.com/classic/quest=5461/the-human-ras-frostwhisper",
-        "prequest": "Kirtonos the Herald",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5384/kirtonos-the-herald",
-        "prevQuestId": 5384,
-        "nextQuestId": 5462,
-        "chainId": 5382,
-        "chainDepth": 3,
-        "startNpc": "Magistrate Marduke",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Western Plaguelands",
-        "endNpc": "Magistrate Marduke",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Western Plaguelands",
-        "levels": "60",
-        "minLevel": 57,
-        "faction": "Both",
-        "xp": 6600,
-        "money": 39600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [
-          {
-            "id": 5462,
-            "name": "The Dying, Ras Frostwhisper",
-            "url": "https://www.wowhead.com/classic/quest=5462/the-dying-ras-frostwhisper"
-          },
-          {
-            "id": 5463,
-            "name": "Menethil's Gift",
-            "url": "https://www.wowhead.com/classic/quest=5463/menethil-s-gift"
-          },
-          {
-            "id": 5464,
-            "name": "Menethil's Gift",
-            "url": "https://www.wowhead.com/classic/quest=5464/menethil-s-gift"
-          },
-          {
-            "id": 5465,
-            "name": "Soulbound Keepsake",
-            "url": "https://www.wowhead.com/classic/quest=5465/soulbound-keepsake"
-          }
-        ],
-        "absorbedBy": 5466
-      },
-      {
-        "id": 5343,
-        "name": "Barov Family Fortune",
-        "questLink": "https://www.wowhead.com/classic/quest=5343/barov-family-fortune",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 5344,
-        "chainId": null,
-        "chainDepth": 0,
-        "startNpc": "Weldon Barov",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11023/weldon-barov",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Western Plaguelands",
-        "endNpc": "Weldon Barov",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11023/weldon-barov",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Western Plaguelands",
-        "levels": "60",
-        "minLevel": 52,
-        "faction": "Alliance",
-        "xp": 6600,
-        "money": 18000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [
-          {
-            "id": 5344,
-            "name": "The Last Barov",
-            "url": "https://www.wowhead.com/classic/quest=5344/the-last-barov"
-          }
-        ],
-        "absorbedBy": null
-      },
-      {
-        "id": 5341,
-        "name": "Barov Family Fortune",
-        "questLink": "https://www.wowhead.com/classic/quest=5341/barov-family-fortune",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 5342,
-        "chainId": null,
-        "chainDepth": 0,
-        "startNpc": "Alexi Barov",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11022/alexi-barov",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tirisfal Glades",
-        "endNpc": "Alexi Barov",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11022/alexi-barov",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tirisfal Glades",
-        "levels": "60",
-        "minLevel": 52,
-        "faction": "Horde",
-        "xp": 6600,
-        "money": 18000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [
-          {
-            "id": 5342,
-            "name": "The Last Barov",
-            "url": "https://www.wowhead.com/classic/quest=5342/the-last-barov"
-          }
-        ],
-        "absorbedBy": null
+        "absorbedBy": 5466,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-5382-doctor-theolen-krastinov-the-butcher",
+          "index": 3,
+          "total": 3,
+          "name": "Doctor Theolen Krastinov, the Butcher"
+        }
       },
       {
         "id": 5466,
         "name": "The Lich, Ras Frostwhisper",
         "questLink": "https://www.wowhead.com/classic/quest=5466/the-lich-ras-frostwhisper",
-        "prequest": "Soulbound Keepsake",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5465/soulbound-keepsake",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 5465,
         "nextQuestId": null,
-        "chainId": 5466,
-        "chainDepth": 0,
+        "chainId": "scholo-5461-the-human-ras-frostwhisper",
+        "chainDepth": 5,
         "startNpc": "Magistrate Marduke",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
         "startObject": "",
@@ -27678,11 +29038,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Magistrate Marduke",
+            "link": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "endNpc": "Magistrate Marduke",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Magistrate Marduke",
+            "link": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 57,
         "faction": "Both",
@@ -27736,11 +29114,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "endNpc": "Eva Sarkhoff",
             "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "levels": "60",
             "minLevel": 55,
             "faction": "Both",
@@ -27753,7 +29149,14 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "scholo-5382-doctor-theolen-krastinov-the-butcher",
+              "index": 1,
+              "total": 3,
+              "name": "Doctor Theolen Krastinov, the Butcher"
+            },
+            "isDungeon": true
           },
           {
             "id": 5515,
@@ -27772,11 +29175,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "endNpc": "Eva Sarkhoff",
             "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "levels": "60",
             "minLevel": 55,
             "faction": "Both",
@@ -27789,7 +29210,14 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "scholo-5382-doctor-theolen-krastinov-the-butcher",
+              "index": 2,
+              "total": 3,
+              "name": "Doctor Theolen Krastinov, the Butcher"
+            },
+            "isDungeon": true
           },
           {
             "id": 5384,
@@ -27808,11 +29236,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "endNpc": "Eva Sarkhoff",
             "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "levels": "60",
             "minLevel": 55,
             "faction": "Both",
@@ -27845,7 +29291,14 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "requires",
+            "series": {
+              "id": "scholo-5382-doctor-theolen-krastinov-the-butcher",
+              "index": 3,
+              "total": 3,
+              "name": "Doctor Theolen Krastinov, the Butcher"
+            },
+            "isDungeon": true
           },
           {
             "id": 5461,
@@ -27864,11 +29317,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Magistrate Marduke",
+                "link": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "endNpc": "Magistrate Marduke",
             "endNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Magistrate Marduke",
+                "link": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "levels": "60",
             "minLevel": 57,
             "faction": "Both",
@@ -27881,7 +29352,19 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "scholo-5461-the-human-ras-frostwhisper",
+              "index": 1,
+              "total": 6,
+              "name": "The Human, Ras Frostwhisper"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 5384
+              }
+            ]
           },
           {
             "id": 5462,
@@ -27900,11 +29383,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Magistrate Marduke",
+                "link": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "endNpc": "Leonid Barthalomew the Revered",
             "endNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Eastern Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Leonid Barthalomew the Revered",
+                "link": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
             "levels": "60",
             "minLevel": 57,
             "faction": "Both",
@@ -27917,7 +29418,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "scholo-5461-the-human-ras-frostwhisper",
+              "index": 2,
+              "total": 6,
+              "name": "The Human, Ras Frostwhisper"
+            }
           },
           {
             "id": 5463,
@@ -27936,11 +29443,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Eastern Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Leonid Barthalomew the Revered",
+                "link": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
             "endNpc": "",
             "endNpcLink": "",
             "endObject": "Menethil's Gift",
             "endObjectLink": "https://www.wowhead.com/classic/object=176631/menethil-s-gift",
             "endLoc": "Stratholme",
+            "endNpcs": [
+              {
+                "name": "Menethil's Gift",
+                "link": "https://www.wowhead.com/classic/object=176631/menethil-s-gift",
+                "faction": "",
+                "type": "object",
+                "loc": "Stratholme"
+              }
+            ],
             "levels": "60",
             "minLevel": 57,
             "faction": "Both",
@@ -27953,7 +29478,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "scholo-5461-the-human-ras-frostwhisper",
+              "index": 3,
+              "total": 6,
+              "name": "The Human, Ras Frostwhisper"
+            }
           },
           {
             "id": 5464,
@@ -27972,11 +29503,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stratholme",
+            "startNpcs": [
+              {
+                "name": "Menethil's Gift",
+                "link": "https://www.wowhead.com/classic/object=176631/menethil-s-gift",
+                "faction": "",
+                "type": "object",
+                "loc": "Stratholme"
+              }
+            ],
             "endNpc": "Leonid Barthalomew the Revered",
             "endNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Eastern Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Leonid Barthalomew the Revered",
+                "link": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
             "levels": "60",
             "minLevel": 57,
             "faction": "Both",
@@ -27989,7 +29538,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "scholo-5461-the-human-ras-frostwhisper",
+              "index": 4,
+              "total": 6,
+              "name": "The Human, Ras Frostwhisper"
+            }
           },
           {
             "id": 5465,
@@ -28008,11 +29563,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Eastern Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Leonid Barthalomew the Revered",
+                "link": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
             "endNpc": "Magistrate Marduke",
             "endNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Magistrate Marduke",
+                "link": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
             "levels": "60",
             "minLevel": 57,
             "faction": "Both",
@@ -28025,22 +29598,181 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "scholo-5461-the-human-ras-frostwhisper",
+              "index": 5,
+              "total": 6,
+              "name": "The Human, Ras Frostwhisper"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-5461-the-human-ras-frostwhisper",
+          "index": 6,
+          "total": 6,
+          "name": "The Human, Ras Frostwhisper"
+        }
       },
       {
-        "id": 7646,
-        "name": "The Divination Scryer",
-        "questLink": "https://www.wowhead.com/classic/quest=7646/the-divination-scryer",
-        "prequest": "Blessed Arcanite Barding",
-        "prequestLink": "https://www.wowhead.com/classic/quest=7644/blessed-arcanite-barding",
-        "prevQuestId": 7644,
-        "nextQuestId": 7647,
-        "chainId": 7646,
+        "id": 5343,
+        "name": "Barov Family Fortune",
+        "questLink": "https://www.wowhead.com/classic/quest=5343/barov-family-fortune",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 5344,
+        "chainId": "scholo-5343-barov-family-fortune",
         "chainDepth": 0,
+        "startNpc": "Weldon Barov",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11023/weldon-barov",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Weldon Barov",
+            "link": "https://www.wowhead.com/classic/npc=11023/weldon-barov",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "endNpc": "Weldon Barov",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11023/weldon-barov",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Weldon Barov",
+            "link": "https://www.wowhead.com/classic/npc=11023/weldon-barov",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 52,
+        "faction": "Alliance",
+        "xp": 6600,
+        "money": 18000,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [
+          {
+            "id": 5344,
+            "name": "The Last Barov",
+            "url": "https://www.wowhead.com/classic/quest=5344/the-last-barov",
+            "series": {
+              "id": "scholo-5343-barov-family-fortune",
+              "index": 2,
+              "total": 2,
+              "name": "Barov Family Fortune"
+            },
+            "faction": "Alliance"
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-5343-barov-family-fortune",
+          "index": 1,
+          "total": 2,
+          "name": "Barov Family Fortune"
+        }
+      },
+      {
+        "id": 5341,
+        "name": "Barov Family Fortune",
+        "questLink": "https://www.wowhead.com/classic/quest=5341/barov-family-fortune",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 5342,
+        "chainId": "scholo-5341-barov-family-fortune",
+        "chainDepth": 0,
+        "startNpc": "Alexi Barov",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11022/alexi-barov",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Tirisfal Glades",
+        "startNpcs": [
+          {
+            "name": "Alexi Barov",
+            "link": "https://www.wowhead.com/classic/npc=11022/alexi-barov",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tirisfal Glades"
+          }
+        ],
+        "endNpc": "Alexi Barov",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11022/alexi-barov",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Tirisfal Glades",
+        "endNpcs": [
+          {
+            "name": "Alexi Barov",
+            "link": "https://www.wowhead.com/classic/npc=11022/alexi-barov",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tirisfal Glades"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 52,
+        "faction": "Horde",
+        "xp": 6600,
+        "money": 18000,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [
+          {
+            "id": 5342,
+            "name": "The Last Barov",
+            "url": "https://www.wowhead.com/classic/quest=5342/the-last-barov",
+            "series": {
+              "id": "scholo-5341-barov-family-fortune",
+              "index": 2,
+              "total": 2,
+              "name": "Barov Family Fortune"
+            },
+            "faction": "Horde"
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-5341-barov-family-fortune",
+          "index": 1,
+          "total": 2,
+          "name": "Barov Family Fortune"
+        }
+      },
+      {
+        "id": 7647,
+        "name": "Judgment and Redemption",
+        "questLink": "https://www.wowhead.com/classic/quest=7647/judgment-and-redemption",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7646,
+        "nextQuestId": 7666,
+        "chainId": "scholo-7643-ancient-equine-spirit",
+        "chainDepth": 3,
         "startNpc": "Lord Grayson Shadowbreaker",
         "startNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
         "startObject": "",
@@ -28048,16 +29780,34 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stormwind City",
-        "endNpc": "Lord Grayson Shadowbreaker",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+        "startNpcs": [
+          {
+            "name": "Lord Grayson Shadowbreaker",
+            "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
+        "endNpc": "Darkreaver's Fallen Charger",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14568/darkreaver-s-fallen-charger",
         "endObject": "",
         "endObjectLink": "",
-        "endLoc": "Stormwind City",
+        "endLoc": "Scholomance",
+        "endNpcs": [
+          {
+            "name": "Darkreaver's Fallen Charger",
+            "link": "https://www.wowhead.com/classic/npc=14568/darkreaver-s-fallen-charger",
+            "faction": "",
+            "type": "npc",
+            "loc": "Scholomance"
+          }
+        ],
         "levels": "60",
         "minLevel": 60,
         "faction": "Alliance",
-        "xp": 3300,
-        "money": 19800,
+        "xp": 9950,
+        "money": 59700,
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -28065,6 +29815,125 @@ const DUNGEONS = [
         ],
         "notes": "",
         "preChain": [
+          {
+            "or": [
+              {
+                "id": 7638,
+                "name": "Lord Grayson Shadowbreaker",
+                "questLink": "https://www.wowhead.com/classic/quest=7638/lord-grayson-shadowbreaker",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Duthorian Rall",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=6171/duthorian-rall",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Stormwind City",
+                "startNpcs": [
+                  {
+                    "name": "Duthorian Rall",
+                    "link": "https://www.wowhead.com/classic/npc=6171/duthorian-rall",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Stormwind City"
+                  }
+                ],
+                "endNpc": "Lord Grayson Shadowbreaker",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Stormwind City",
+                "endNpcs": [
+                  {
+                    "name": "Lord Grayson Shadowbreaker",
+                    "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Stormwind City"
+                  }
+                ],
+                "levels": "60",
+                "minLevel": 60,
+                "faction": "Alliance",
+                "xp": 660,
+                "money": 3900,
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [
+                  "Paladin"
+                ],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              },
+              {
+                "id": 7670,
+                "name": "Lord Grayson Shadowbreaker",
+                "questLink": "https://www.wowhead.com/classic/quest=7670/lord-grayson-shadowbreaker",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Brandur Ironhammer",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=5149/brandur-ironhammer",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Ironforge",
+                "startNpcs": [
+                  {
+                    "name": "Brandur Ironhammer",
+                    "link": "https://www.wowhead.com/classic/npc=5149/brandur-ironhammer",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Ironforge"
+                  }
+                ],
+                "endNpc": "Lord Grayson Shadowbreaker",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Stormwind City",
+                "endNpcs": [
+                  {
+                    "name": "Lord Grayson Shadowbreaker",
+                    "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Stormwind City"
+                  }
+                ],
+                "levels": "60",
+                "minLevel": 60,
+                "faction": "Alliance",
+                "xp": 660,
+                "money": 3900,
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [
+                  "Paladin"
+                ],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              }
+            ],
+            "relation": "requires"
+          },
           {
             "id": 7637,
             "name": "Emphasis on Sacrifice",
@@ -28082,11 +29951,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Lord Grayson Shadowbreaker",
+                "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "High Priest Rohan",
             "endNpcLink": "https://www.wowhead.com/classic/npc=11406/high-priest-rohan",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Ironforge",
+            "endNpcs": [
+              {
+                "name": "High Priest Rohan",
+                "link": "https://www.wowhead.com/classic/npc=11406/high-priest-rohan",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "levels": "60",
             "minLevel": 60,
             "faction": "Alliance",
@@ -28101,7 +29988,22 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "scholo-7637-emphasis-on-sacrifice",
+              "index": 1,
+              "total": 3,
+              "name": "Emphasis on Sacrifice"
+            },
+            "requires": [
+              {
+                "type": "or",
+                "ids": [
+                  7638,
+                  7670
+                ]
+              }
+            ]
           },
           {
             "id": 7639,
@@ -28120,11 +30022,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Ironforge",
+            "startNpcs": [
+              {
+                "name": "High Priest Rohan",
+                "link": "https://www.wowhead.com/classic/npc=11406/high-priest-rohan",
+                "faction": "",
+                "type": "npc",
+                "loc": "Ironforge"
+              }
+            ],
             "endNpc": "Lord Grayson Shadowbreaker",
             "endNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Lord Grayson Shadowbreaker",
+                "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "60",
             "minLevel": 60,
             "faction": "Alliance",
@@ -28139,7 +30059,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "scholo-7637-emphasis-on-sacrifice",
+              "index": 2,
+              "total": 3,
+              "name": "Emphasis on Sacrifice"
+            }
           },
           {
             "id": 7640,
@@ -28158,11 +30084,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Lord Grayson Shadowbreaker",
+                "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Lord Grayson Shadowbreaker",
             "endNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Lord Grayson Shadowbreaker",
+                "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "60",
             "minLevel": 60,
             "faction": "Alliance",
@@ -28177,7 +30121,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "requires",
+            "series": {
+              "id": "scholo-7637-emphasis-on-sacrifice",
+              "index": 3,
+              "total": 3,
+              "name": "Emphasis on Sacrifice"
+            }
           },
           {
             "id": 7641,
@@ -28196,11 +30146,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Lord Grayson Shadowbreaker",
+                "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Grimand Elmore",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1416/grimand-elmore",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Grimand Elmore",
+                "link": "https://www.wowhead.com/classic/npc=1416/grimand-elmore",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "60",
             "minLevel": 60,
             "faction": "Alliance",
@@ -28215,7 +30183,19 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "scholo-7641-the-work-of-grimand-elmore",
+              "index": 1,
+              "total": 2,
+              "name": "The Work of Grimand Elmore"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 7640
+              }
+            ]
           },
           {
             "id": 7642,
@@ -28234,11 +30214,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Grimand Elmore",
+                "link": "https://www.wowhead.com/classic/npc=1416/grimand-elmore",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Grimand Elmore",
             "endNpcLink": "https://www.wowhead.com/classic/npc=1416/grimand-elmore",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Grimand Elmore",
+                "link": "https://www.wowhead.com/classic/npc=1416/grimand-elmore",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "60",
             "minLevel": 60,
             "faction": "Alliance",
@@ -28253,7 +30251,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "requires",
+            "series": {
+              "id": "scholo-7641-the-work-of-grimand-elmore",
+              "index": 2,
+              "total": 2,
+              "name": "The Work of Grimand Elmore"
+            }
           },
           {
             "id": 7643,
@@ -28272,11 +30276,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Lord Grayson Shadowbreaker",
+                "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "endNpc": "Ancient Equine Spirit",
             "endNpcLink": "https://www.wowhead.com/classic/npc=14566/ancient-equine-spirit",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Dire Maul",
+            "endNpcs": [
+              {
+                "name": "Ancient Equine Spirit",
+                "link": "https://www.wowhead.com/classic/npc=14566/ancient-equine-spirit",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dire Maul"
+              }
+            ],
             "levels": "60",
             "minLevel": 60,
             "faction": "Alliance",
@@ -28291,7 +30313,19 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "scholo-7643-ancient-equine-spirit",
+              "index": 1,
+              "total": 5,
+              "name": "Ancient Equine Spirit"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 7642
+              }
+            ]
           },
           {
             "id": 7644,
@@ -28310,11 +30344,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Dire Maul",
+            "startNpcs": [
+              {
+                "name": "Ancient Equine Spirit",
+                "link": "https://www.wowhead.com/classic/npc=14566/ancient-equine-spirit",
+                "faction": "",
+                "type": "npc",
+                "loc": "Dire Maul"
+              }
+            ],
             "endNpc": "Lord Grayson Shadowbreaker",
             "endNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Lord Grayson Shadowbreaker",
+                "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
             "levels": "60",
             "minLevel": 60,
             "faction": "Alliance",
@@ -28329,132 +30381,109 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "scholo-7643-ancient-equine-spirit",
+              "index": 2,
+              "total": 5,
+              "name": "Ancient Equine Spirit"
+            }
+          },
+          {
+            "id": 7646,
+            "name": "The Divination Scryer",
+            "questLink": "https://www.wowhead.com/classic/quest=7646/the-divination-scryer",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 7644,
+            "nextQuestId": 7647,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Lord Grayson Shadowbreaker",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Stormwind City",
+            "startNpcs": [
+              {
+                "name": "Lord Grayson Shadowbreaker",
+                "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "endNpc": "Lord Grayson Shadowbreaker",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Stormwind City",
+            "endNpcs": [
+              {
+                "name": "Lord Grayson Shadowbreaker",
+                "link": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
+                "faction": "",
+                "type": "npc",
+                "loc": "Stormwind City"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 60,
+            "faction": "Alliance",
+            "xp": 3300,
+            "money": 19800,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [
+              "Paladin"
+            ],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "scholo-7643-ancient-equine-spirit",
+              "index": 3,
+              "total": 5,
+              "name": "Ancient Equine Spirit"
+            }
           }
         ],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 7647,
-        "name": "Judgment and Redemption",
-        "questLink": "https://www.wowhead.com/classic/quest=7647/judgment-and-redemption",
-        "prequest": "The Divination Scryer",
-        "prequestLink": "https://www.wowhead.com/classic/quest=7646/the-divination-scryer",
-        "prevQuestId": 7646,
-        "nextQuestId": null,
-        "chainId": 7646,
-        "chainDepth": 1,
-        "startNpc": "Lord Grayson Shadowbreaker",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Stormwind City",
-        "endNpc": "Darkreaver's Fallen Charger",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=14568/darkreaver-s-fallen-charger",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Scholomance",
-        "levels": "60",
-        "minLevel": 60,
-        "faction": "Alliance",
-        "xp": 9950,
-        "money": 59700,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Paladin"
+        "postChain": [
+          {
+            "id": 7666,
+            "name": "Again Into the Great Ossuary",
+            "url": "https://www.wowhead.com/classic/quest=7666/again-into-the-great-ossuary",
+            "series": {
+              "id": "scholo-7643-ancient-equine-spirit",
+              "index": 5,
+              "total": 5,
+              "name": "Ancient Equine Spirit"
+            },
+            "faction": "Alliance"
+          }
         ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 7638,
-        "name": "Lord Grayson Shadowbreaker",
-        "questLink": "https://www.wowhead.com/classic/quest=7638/lord-grayson-shadowbreaker",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": null,
-        "chainDepth": 0,
-        "startNpc": "Duthorian Rall",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=6171/duthorian-rall",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Stormwind City",
-        "endNpc": "Lord Grayson Shadowbreaker",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Stormwind City",
-        "levels": "60",
-        "minLevel": 60,
-        "faction": "Alliance",
-        "xp": 660,
-        "money": 3900,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Paladin"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 7667,
-        "name": "Material Assistance",
-        "questLink": "https://www.wowhead.com/classic/quest=7667/material-assistance",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 8258,
-        "chainId": 7667,
-        "chainDepth": 0,
-        "startNpc": "Sagorne Creststrider",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Orgrimmar",
-        "endNpc": "Sagorne Creststrider",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Orgrimmar",
-        "levels": "60",
-        "minLevel": 58,
-        "faction": "Horde",
-        "xp": 4950,
-        "money": 29700,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Shaman"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-7643-ancient-equine-spirit",
+          "index": 4,
+          "total": 5,
+          "name": "Ancient Equine Spirit"
+        }
       },
       {
         "id": 8258,
         "name": "The Darkreaver Menace",
         "questLink": "https://www.wowhead.com/classic/quest=8258/the-darkreaver-menace",
-        "prequest": "Material Assistance",
-        "prequestLink": "https://www.wowhead.com/classic/quest=7667/material-assistance",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 7667,
         "nextQuestId": null,
-        "chainId": 7667,
+        "chainId": "scholo-7667-material-assistance",
         "chainDepth": 1,
         "startNpc": "Sagorne Creststrider",
         "startNpcLink": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
@@ -28463,11 +30492,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Orgrimmar",
+        "startNpcs": [
+          {
+            "name": "Sagorne Creststrider",
+            "link": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "endNpc": "Sagorne Creststrider",
         "endNpcLink": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Orgrimmar",
+        "endNpcs": [
+          {
+            "name": "Sagorne Creststrider",
+            "link": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          }
+        ],
         "levels": "60",
         "minLevel": 58,
         "faction": "Horde",
@@ -28486,334 +30533,90 @@ const DUNGEONS = [
           "Shaman"
         ],
         "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 7629,
-        "name": "Imp Delivery",
-        "questLink": "https://www.wowhead.com/classic/quest=7629/imp-delivery",
-        "prequest": "Xorothian Stardust",
-        "prequestLink": "https://www.wowhead.com/classic/quest=7625/xorothian-stardust",
-        "prevQuestId": 7625,
-        "nextQuestId": null,
-        "chainId": 7629,
-        "chainDepth": 0,
-        "startNpc": "Gorzeeki Wildeyes",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Burning Steppes",
-        "endNpc": "Gorzeeki Wildeyes",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Burning Steppes",
-        "levels": "60",
-        "minLevel": 60,
-        "faction": "Both",
-        "xp": 6600,
-        "money": 39600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Warlock"
-        ],
-        "notes": "",
         "preChain": [
           {
-            "id": 7562,
-            "name": "Mor'zul Bloodbringer",
-            "questLink": "https://www.wowhead.com/classic/quest=7562/mor-zul-bloodbringer",
+            "id": 7667,
+            "name": "Material Assistance",
+            "questLink": "https://www.wowhead.com/classic/quest=7667/material-assistance",
             "prequest": "",
             "prequestLink": "",
             "prevQuestId": null,
-            "nextQuestId": 7563,
+            "nextQuestId": 8258,
             "chainId": null,
             "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
+            "startNpc": "Sagorne Creststrider",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
             "startObject": "",
             "startObjectLink": "",
             "startItem": "",
             "startItemLink": "",
-            "startLoc": "Stormwind City",
-            "endNpc": "Mor'zul Bloodbringer",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Burning Steppes",
-            "levels": "58",
-            "minLevel": 60,
-            "faction": "Both",
-            "xp": 620,
-            "money": 3750,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [
-              "Warlock"
+            "startLoc": "Orgrimmar",
+            "startNpcs": [
+              {
+                "name": "Sagorne Creststrider",
+                "link": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
             ],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 7563,
-            "name": "Rage of Blood",
-            "questLink": "https://www.wowhead.com/classic/quest=7563/rage-of-blood",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 7562,
-            "nextQuestId": 7564,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Mor'zul Bloodbringer",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Burning Steppes",
-            "endNpc": "Mor'zul Bloodbringer",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "endNpc": "Sagorne Creststrider",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
             "endObject": "",
             "endObjectLink": "",
-            "endLoc": "Burning Steppes",
-            "levels": "58",
-            "minLevel": 60,
-            "faction": "Both",
-            "xp": 7750,
-            "money": 46500,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [
-              "Warlock"
+            "endLoc": "Orgrimmar",
+            "endNpcs": [
+              {
+                "name": "Sagorne Creststrider",
+                "link": "https://www.wowhead.com/classic/npc=13417/sagorne-creststrider",
+                "faction": "",
+                "type": "npc",
+                "loc": "Orgrimmar"
+              }
             ],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 7564,
-            "name": "Wildeyes",
-            "questLink": "https://www.wowhead.com/classic/quest=7564/wildeyes",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 7563,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Mor'zul Bloodbringer",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Burning Steppes",
-            "endNpc": "Gorzeeki Wildeyes",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Burning Steppes",
-            "levels": "58",
-            "minLevel": 60,
-            "faction": "Both",
-            "xp": 3100,
-            "money": 18600,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [
-              "Warlock"
-            ],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 7623,
-            "name": "Lord Banehollow",
-            "questLink": "https://www.wowhead.com/classic/quest=7623/lord-banehollow",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 7564,
-            "nextQuestId": 7624,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Gorzeeki Wildeyes",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Burning Steppes",
-            "endNpc": "Lord Banehollow",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Felwood",
-            "levels": "58",
-            "minLevel": 60,
-            "faction": "Both",
-            "xp": 6200,
-            "money": 37200,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [
-              "Warlock"
-            ],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          },
-          {
-            "id": 7624,
-            "name": "Ulathek the Traitor",
-            "questLink": "https://www.wowhead.com/classic/quest=7624/ulathek-the-traitor",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 7623,
-            "nextQuestId": 7625,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Lord Banehollow",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Felwood",
-            "endNpc": "Lord Banehollow",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Felwood",
-            "levels": "58",
-            "minLevel": 60,
-            "faction": "Both",
-            "xp": 6200,
-            "money": 37200,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [
-              "Warlock"
-            ],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          },
-          {
-            "id": 7625,
-            "name": "Xorothian Stardust",
-            "questLink": "https://www.wowhead.com/classic/quest=7625/xorothian-stardust",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 7624,
-            "nextQuestId": 7629,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Lord Banehollow",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Felwood",
-            "endNpc": "Gorzeeki Wildeyes",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Burning Steppes",
             "levels": "60",
-            "minLevel": 60,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 39600,
+            "minLevel": 58,
+            "faction": "Horde",
+            "xp": 4950,
+            "money": 29700,
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
-              "Warlock"
+              "Shaman"
             ],
             "notes": "",
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "scholo-7667-material-assistance",
+              "index": 1,
+              "total": 2,
+              "name": "Material Assistance"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 7562,
-        "name": "Mor'zul Bloodbringer",
-        "questLink": "https://www.wowhead.com/classic/quest=7562/mor-zul-bloodbringer",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 7563,
-        "chainId": null,
-        "chainDepth": 0,
-        "startNpc": "",
-        "startNpcLink": "",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Stormwind City",
-        "endNpc": "Mor'zul Bloodbringer",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Burning Steppes",
-        "levels": "58",
-        "minLevel": 60,
-        "faction": "Both",
-        "xp": 620,
-        "money": 3750,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [
-          "Warlock"
-        ],
-        "notes": "",
-        "preChain": [],
-        "postChain": [
-          {
-            "id": 7563,
-            "name": "Rage of Blood",
-            "url": "https://www.wowhead.com/classic/quest=7563/rage-of-blood"
-          },
-          {
-            "id": 7564,
-            "name": "Wildeyes",
-            "url": "https://www.wowhead.com/classic/quest=7564/wildeyes"
-          }
-        ],
-        "absorbedBy": 7629
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-7667-material-assistance",
+          "index": 2,
+          "total": 2,
+          "name": "Material Assistance"
+        }
       },
       {
         "id": 4771,
         "name": "Dawn's Gambit",
         "questLink": "https://www.wowhead.com/classic/quest=4771/dawn-s-gambit",
-        "prequest": "Betina Bigglezink",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5531/betina-bigglezink",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 5531,
         "nextQuestId": null,
-        "chainId": 4771,
-        "chainDepth": 0,
+        "chainId": "scholo-5522-leonid-barthalomew",
+        "chainDepth": 2,
         "startNpc": "Betina Bigglezink",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
         "startObject": "",
@@ -28821,11 +30624,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Betina Bigglezink",
+            "link": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "endNpc": "Betina Bigglezink",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Betina Bigglezink",
+            "link": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 57,
         "faction": "Both",
@@ -28866,11 +30687,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Tinkee Steamboil",
+                "link": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Tinkee Steamboil",
             "endNpcLink": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Tinkee Steamboil",
+                "link": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "52",
             "minLevel": 50,
             "faction": "Both",
@@ -28883,7 +30722,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "scholo-4726-broodling-essence",
+              "index": 1,
+              "total": 4,
+              "name": "Broodling Essence"
+            }
           },
           {
             "id": 4808,
@@ -28902,11 +30747,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Tinkee Steamboil",
+                "link": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Felnok Steelspring",
             "endNpcLink": "https://www.wowhead.com/classic/npc=10468/felnok-steelspring",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Winterspring",
+            "endNpcs": [
+              {
+                "name": "Felnok Steelspring",
+                "link": "https://www.wowhead.com/classic/npc=10468/felnok-steelspring",
+                "faction": "",
+                "type": "npc",
+                "loc": "Winterspring"
+              }
+            ],
             "levels": "54",
             "minLevel": 50,
             "faction": "Both",
@@ -28919,7 +30782,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "scholo-4726-broodling-essence",
+              "index": 2,
+              "total": 4,
+              "name": "Broodling Essence"
+            }
           },
           {
             "id": 4809,
@@ -28938,11 +30807,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Winterspring",
+            "startNpcs": [
+              {
+                "name": "Felnok Steelspring",
+                "link": "https://www.wowhead.com/classic/npc=10468/felnok-steelspring",
+                "faction": "",
+                "type": "npc",
+                "loc": "Winterspring"
+              }
+            ],
             "endNpc": "Felnok Steelspring",
             "endNpcLink": "https://www.wowhead.com/classic/npc=10468/felnok-steelspring",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Winterspring",
+            "endNpcs": [
+              {
+                "name": "Felnok Steelspring",
+                "link": "https://www.wowhead.com/classic/npc=10468/felnok-steelspring",
+                "faction": "",
+                "type": "npc",
+                "loc": "Winterspring"
+              }
+            ],
             "levels": "54",
             "minLevel": 50,
             "faction": "Both",
@@ -28955,7 +30842,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "scholo-4726-broodling-essence",
+              "index": 3,
+              "total": 4,
+              "name": "Broodling Essence"
+            }
           },
           {
             "id": 4810,
@@ -28974,11 +30867,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Winterspring",
+            "startNpcs": [
+              {
+                "name": "Felnok Steelspring",
+                "link": "https://www.wowhead.com/classic/npc=10468/felnok-steelspring",
+                "faction": "",
+                "type": "npc",
+                "loc": "Winterspring"
+              }
+            ],
             "endNpc": "Tinkee Steamboil",
             "endNpcLink": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Tinkee Steamboil",
+                "link": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "54",
             "minLevel": 50,
             "faction": "Both",
@@ -29004,7 +30915,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "requires",
+            "series": {
+              "id": "scholo-4726-broodling-essence",
+              "index": 4,
+              "total": 4,
+              "name": "Broodling Essence"
+            }
           },
           {
             "id": 4907,
@@ -29023,11 +30940,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Winterspring",
+            "startNpcs": [
+              {
+                "name": "Felnok Steelspring",
+                "link": "https://www.wowhead.com/classic/npc=10468/felnok-steelspring",
+                "faction": "",
+                "type": "npc",
+                "loc": "Winterspring"
+              }
+            ],
             "endNpc": "Tinkee Steamboil",
             "endNpcLink": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Tinkee Steamboil",
+                "link": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "60",
             "minLevel": 57,
             "faction": "Both",
@@ -29040,7 +30975,19 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "series",
+            "series": {
+              "id": "scholo-4907-tinkee-steamboil",
+              "index": 1,
+              "total": 2,
+              "name": "Tinkee Steamboil"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 4810
+              }
+            ]
           },
           {
             "id": 4734,
@@ -29059,11 +31006,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Tinkee Steamboil",
+                "link": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Tinkee Steamboil",
             "endNpcLink": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Burning Steppes",
+            "endNpcs": [
+              {
+                "name": "Tinkee Steamboil",
+                "link": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "levels": "60",
             "minLevel": 57,
             "faction": "Both",
@@ -29083,7 +31048,13 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "gate"
+            "relation": "requires",
+            "series": {
+              "id": "scholo-4907-tinkee-steamboil",
+              "index": 2,
+              "total": 2,
+              "name": "Tinkee Steamboil"
+            }
           },
           {
             "id": 5522,
@@ -29102,11 +31073,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Burning Steppes",
+            "startNpcs": [
+              {
+                "name": "Tinkee Steamboil",
+                "link": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil",
+                "faction": "",
+                "type": "npc",
+                "loc": "Burning Steppes"
+              }
+            ],
             "endNpc": "Leonid Barthalomew the Revered",
             "endNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Eastern Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Leonid Barthalomew the Revered",
+                "link": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
             "levels": "60",
             "minLevel": 57,
             "faction": "Both",
@@ -29119,7 +31108,19 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "scholo-5522-leonid-barthalomew",
+              "index": 1,
+              "total": 3,
+              "name": "Leonid Barthalomew"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 4734
+              }
+            ]
           },
           {
             "id": 5531,
@@ -29138,11 +31139,29 @@ const DUNGEONS = [
             "startItem": "",
             "startItemLink": "",
             "startLoc": "Eastern Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Leonid Barthalomew the Revered",
+                "link": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
             "endNpc": "Betina Bigglezink",
             "endNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
             "endObject": "",
             "endObjectLink": "",
             "endLoc": "Eastern Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Betina Bigglezink",
+                "link": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
             "levels": "60",
             "minLevel": 57,
             "faction": "Both",
@@ -29155,11 +31174,866 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "preChainRole": "series"
+            "relation": "series",
+            "series": {
+              "id": "scholo-5522-leonid-barthalomew",
+              "index": 2,
+              "total": 3,
+              "name": "Leonid Barthalomew"
+            }
           }
         ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-5522-leonid-barthalomew",
+          "index": 3,
+          "total": 3,
+          "name": "Leonid Barthalomew"
+        }
+      },
+      {
+        "id": 7562,
+        "name": "Mor'zul Bloodbringer",
+        "questLink": "https://www.wowhead.com/classic/quest=7562/mor-zul-bloodbringer",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 7563,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Spackle Thornberry",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5520/spackle-thornberry",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Spackle Thornberry",
+            "link": "https://www.wowhead.com/classic/npc=5520/spackle-thornberry",
+            "faction": "Alliance",
+            "type": "npc",
+            "loc": "Stormwind City"
+          },
+          {
+            "name": "Martha Strain",
+            "link": "https://www.wowhead.com/classic/npc=5753/martha-strain",
+            "faction": "Horde",
+            "type": "npc",
+            "loc": "Undercity"
+          },
+          {
+            "name": "Kurgul",
+            "link": "https://www.wowhead.com/classic/npc=5815/kurgul",
+            "faction": "Horde",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          },
+          {
+            "name": "Jubahl Corpseseeker",
+            "link": "https://www.wowhead.com/classic/npc=6382/jubahl-corpseseeker",
+            "faction": "Alliance",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
+        "endNpc": "Mor'zul Bloodbringer",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 620,
+        "money": 3750,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "scholo-7562-mor-zul-bloodbringer",
+          "index": 1,
+          "total": 3,
+          "name": "Mor'zul Bloodbringer"
+        },
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7563,
+        "name": "Rage of Blood",
+        "questLink": "https://www.wowhead.com/classic/quest=7563/rage-of-blood",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7562,
+        "nextQuestId": 7564,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Mor'zul Bloodbringer",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 7750,
+        "money": 46500,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "scholo-7562-mor-zul-bloodbringer",
+          "index": 2,
+          "total": 3,
+          "name": "Mor'zul Bloodbringer"
+        },
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7564,
+        "name": "Wildeyes",
+        "questLink": "https://www.wowhead.com/classic/quest=7564/wildeyes",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7563,
+        "nextQuestId": 7623,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 3100,
+        "money": 18600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "scholo-7562-mor-zul-bloodbringer",
+          "index": 3,
+          "total": 3,
+          "name": "Mor'zul Bloodbringer"
+        },
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7623,
+        "name": "Lord Banehollow",
+        "questLink": "https://www.wowhead.com/classic/quest=7623/lord-banehollow",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7564,
+        "nextQuestId": 7624,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Gorzeeki Wildeyes",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Lord Banehollow",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Felwood",
+        "endNpcs": [
+          {
+            "name": "Lord Banehollow",
+            "link": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6200,
+        "money": 37200,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "scholo-7623-lord-banehollow",
+          "index": 1,
+          "total": 4,
+          "name": "Lord Banehollow"
+        },
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7624,
+        "name": "Ulathek the Traitor",
+        "questLink": "https://www.wowhead.com/classic/quest=7624/ulathek-the-traitor",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7623,
+        "nextQuestId": 7625,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Lord Banehollow",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Felwood",
+        "startNpcs": [
+          {
+            "name": "Lord Banehollow",
+            "link": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
+        "endNpc": "Lord Banehollow",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Felwood",
+        "endNpcs": [
+          {
+            "name": "Lord Banehollow",
+            "link": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6200,
+        "money": 37200,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "scholo-7623-lord-banehollow",
+          "index": 2,
+          "total": 4,
+          "name": "Lord Banehollow"
+        },
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7625,
+        "name": "Xorothian Stardust",
+        "questLink": "https://www.wowhead.com/classic/quest=7625/xorothian-stardust",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7624,
+        "nextQuestId": 7629,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Lord Banehollow",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Felwood",
+        "startNpcs": [
+          {
+            "name": "Lord Banehollow",
+            "link": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "scholo-7623-lord-banehollow",
+          "index": 3,
+          "total": 4,
+          "name": "Lord Banehollow"
+        },
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7626,
+        "name": "Bell of Dethmoora",
+        "questLink": "https://www.wowhead.com/classic/quest=7626/bell-of-dethmoora",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7564,
+        "nextQuestId": 7630,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7628,
+        "name": "Doomsday Candle",
+        "questLink": "https://www.wowhead.com/classic/quest=7628/doomsday-candle",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7564,
+        "nextQuestId": 7630,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7627,
+        "name": "Wheel of the Black March",
+        "questLink": "https://www.wowhead.com/classic/quest=7627/wheel-of-the-black-march",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7564,
+        "nextQuestId": 7630,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7630,
+        "name": "Arcanite",
+        "questLink": "https://www.wowhead.com/classic/quest=7630/arcanite",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7626,
+        "nextQuestId": 7629,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Gorzeeki Wildeyes",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7629,
+        "name": "Imp Delivery",
+        "questLink": "https://www.wowhead.com/classic/quest=7629/imp-delivery",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7625,
+        "nextQuestId": 7631,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Gorzeeki Wildeyes",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "scholo-7623-lord-banehollow",
+          "index": 4,
+          "total": 4,
+          "name": "Lord Banehollow"
+        },
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7631,
+        "name": "Dreadsteed of Xoroth",
+        "questLink": "https://www.wowhead.com/classic/quest=7631/dreadsteed-of-xoroth",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7629,
+        "nextQuestId": null,
+        "chainId": "scholo-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Dreadsteed Spirit",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14504/dreadsteed-spirit",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Dreadsteed Spirit",
+            "link": "https://www.wowhead.com/classic/npc=14504/dreadsteed-spirit",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "scholo-flow-7562-mor-zul-bloodbringer"
+      }
+    ],
+    "flows": [
+      {
+        "id": "scholo-flow-7562-mor-zul-bloodbringer",
+        "tree": {
+          "type": "series",
+          "items": [
+            {
+              "type": "leaf",
+              "id": 7562
+            },
+            {
+              "type": "leaf",
+              "id": 7563
+            },
+            {
+              "type": "leaf",
+              "id": 7564
+            },
+            {
+              "type": "all",
+              "items": [
+                {
+                  "type": "series",
+                  "items": [
+                    {
+                      "type": "leaf",
+                      "id": 7623
+                    },
+                    {
+                      "type": "leaf",
+                      "id": 7624
+                    },
+                    {
+                      "type": "leaf",
+                      "id": 7625
+                    }
+                  ]
+                },
+                {
+                  "type": "series",
+                  "items": [
+                    {
+                      "type": "all",
+                      "items": [
+                        {
+                          "type": "leaf",
+                          "id": 7626
+                        },
+                        {
+                          "type": "leaf",
+                          "id": 7628
+                        },
+                        {
+                          "type": "leaf",
+                          "id": 7627
+                        }
+                      ]
+                    },
+                    {
+                      "type": "leaf",
+                      "id": 7630
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "leaf",
+              "id": 7629
+            },
+            {
+              "type": "leaf",
+              "id": 7631
+            }
+          ]
+        }
       }
     ]
   },
@@ -29173,6 +32047,7 @@ const DUNGEONS = [
     "levels": "58–60",
     "location": "Eastern Plaguelands",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-stratholme-dungeon-quests",
+    "schema": 2,
     "quests": [
       {
         "id": 5214,
@@ -29191,11 +32066,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Smokey LaRue",
+            "link": "https://www.wowhead.com/classic/npc=11033/smokey-larue",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "endNpc": "Smokey LaRue",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11033/smokey-larue",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Smokey LaRue",
+            "link": "https://www.wowhead.com/classic/npc=11033/smokey-larue",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -29214,7 +32107,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 5251,
@@ -29224,7 +32119,7 @@ const DUNGEONS = [
         "prequestLink": "",
         "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 5251,
+        "chainId": null,
         "chainDepth": 0,
         "startNpc": "Duke Nicholas Zverenhoff",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
@@ -29233,11 +32128,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Duke Nicholas Zverenhoff",
+            "link": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "endNpc": "Duke Nicholas Zverenhoff",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Duke Nicholas Zverenhoff",
+            "link": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -29249,77 +32162,9 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5262,
-        "name": "The Truth Comes Crashing Down",
-        "questLink": "https://www.wowhead.com/classic/quest=5262/the-truth-comes-crashing-down",
-        "prequest": "The Archivist",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5251/the-archivist",
-        "prevQuestId": 5251,
-        "nextQuestId": 5263,
-        "chainId": 5251,
-        "chainDepth": 1,
-        "startNpc": "",
-        "startNpcLink": "",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "Head of Balnazzar",
-        "startItemLink": "https://www.wowhead.com/classic/item=13250/head-of-balnazzar",
-        "startLoc": "",
-        "endNpc": "Duke Nicholas Zverenhoff",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "60",
-        "minLevel": 55,
-        "faction": "Both",
-        "xp": 8300,
-        "money": 49800,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5263,
-        "name": "Above and Beyond",
-        "questLink": "https://www.wowhead.com/classic/quest=5263/above-and-beyond",
-        "prequest": "The Truth Comes Crashing Down",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5262/the-truth-comes-crashing-down",
-        "prevQuestId": 5262,
-        "nextQuestId": null,
-        "chainId": 5251,
-        "chainDepth": 2,
-        "startNpc": "Duke Nicholas Zverenhoff",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Duke Nicholas Zverenhoff",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "60",
-        "minLevel": 55,
-        "faction": "Both",
-        "xp": 8300,
-        "money": 49800,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": 5263,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 5212,
@@ -29329,7 +32174,7 @@ const DUNGEONS = [
         "prequestLink": "",
         "prevQuestId": null,
         "nextQuestId": 5213,
-        "chainId": 5212,
+        "chainId": "strath-5212-the-flesh-does-not-lie",
         "chainDepth": 0,
         "startNpc": "Betina Bigglezink",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
@@ -29338,11 +32183,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Betina Bigglezink",
+            "link": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "endNpc": "Betina Bigglezink",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Betina Bigglezink",
+            "link": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -29354,55 +32217,14 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5213,
-        "name": "The Active Agent",
-        "questLink": "https://www.wowhead.com/classic/quest=5213/the-active-agent",
-        "prequest": "The Flesh Does Not Lie",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5212/the-flesh-does-not-lie",
-        "prevQuestId": 5212,
-        "nextQuestId": null,
-        "chainId": 5212,
-        "chainDepth": 1,
-        "startNpc": "Betina Bigglezink",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Betina Bigglezink",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "60",
-        "minLevel": 55,
-        "faction": "Both",
-        "xp": 6600,
-        "money": 39600,
-        "rewards": [],
-        "rewardChoices": [
-          {
-            "id": 13209,
-            "name": "Seal of the Dawn",
-            "url": "https://www.wowhead.com/classic/item=13209/seal-of-the-dawn",
-            "quality": 3
-          },
-          {
-            "id": 19812,
-            "name": "Rune of the Dawn",
-            "url": "https://www.wowhead.com/classic/item=19812/rune-of-the-dawn",
-            "quality": 3
-          }
-        ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "strath-5212-the-flesh-does-not-lie",
+          "index": 1,
+          "total": 2,
+          "name": "The Flesh Does Not Lie"
+        }
       },
       {
         "id": 5243,
@@ -29421,11 +32243,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Leonid Barthalomew the Revered",
+            "link": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "endNpc": "Leonid Barthalomew the Revered",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Leonid Barthalomew the Revered",
+            "link": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -29463,273 +32303,19 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5543,
-        "name": "Blood Tinged Skies",
-        "questLink": "https://www.wowhead.com/classic/quest=5543/blood-tinged-skies",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": 5543,
-        "chainDepth": 0,
-        "startNpc": "Tirion Fordring",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Tirion Fordring",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "56",
-        "minLevel": 52,
-        "faction": "Both",
-        "xp": 5800,
-        "money": 34800,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": 5944
-      },
-      {
-        "id": 5742,
-        "name": "Redemption",
-        "questLink": "https://www.wowhead.com/classic/quest=5742/redemption",
-        "prequest": "Blood Tinged Skies",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5543/blood-tinged-skies",
-        "prevQuestId": 5543,
-        "nextQuestId": 5781,
-        "chainId": 5543,
-        "chainDepth": 1,
-        "startNpc": "Tirion Fordring",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Tirion Fordring",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "56",
-        "minLevel": 52,
-        "faction": "Both",
-        "xp": 580,
-        "money": 3450,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": 5944
-      },
-      {
-        "id": 5781,
-        "name": "Of Forgotten Memories",
-        "questLink": "https://www.wowhead.com/classic/quest=5781/of-forgotten-memories",
-        "prequest": "Redemption",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5742/redemption",
-        "prevQuestId": 5742,
-        "nextQuestId": 5845,
-        "chainId": 5543,
-        "chainDepth": 2,
-        "startNpc": "Tirion Fordring",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Tirion Fordring",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "57",
-        "minLevel": 52,
-        "faction": "Both",
-        "xp": 6000,
-        "money": 36000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": 5944
-      },
-      {
-        "id": 5845,
-        "name": "Of Lost Honor",
-        "questLink": "https://www.wowhead.com/classic/quest=5845/of-lost-honor",
-        "prequest": "Of Forgotten Memories",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5781/of-forgotten-memories",
-        "prevQuestId": 5781,
-        "nextQuestId": 5846,
-        "chainId": 5543,
-        "chainDepth": 3,
-        "startNpc": "Tirion Fordring",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Tirion Fordring",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "58",
-        "minLevel": 52,
-        "faction": "Both",
-        "xp": 6200,
-        "money": 37200,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": 5944
-      },
-      {
-        "id": 5846,
-        "name": "Of Love and Family",
-        "questLink": "https://www.wowhead.com/classic/quest=5846/of-love-and-family",
-        "prequest": "Of Lost Honor",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5845/of-lost-honor",
-        "prevQuestId": 5845,
-        "nextQuestId": 5848,
-        "chainId": 5543,
-        "chainDepth": 4,
-        "startNpc": "Tirion Fordring",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Artist Renfray",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11936/artist-renfray",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Western Plaguelands",
-        "levels": "58",
-        "minLevel": 52,
-        "faction": "Both",
-        "xp": 6200,
-        "money": 37200,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": 5944
-      },
-      {
-        "id": 5848,
-        "name": "Of Love and Family",
-        "questLink": "https://www.wowhead.com/classic/quest=5848/of-love-and-family",
-        "prequest": "Of Love and Family",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5846/of-love-and-family",
-        "prevQuestId": 5846,
-        "nextQuestId": 5861,
-        "chainId": 5543,
-        "chainDepth": 5,
-        "startNpc": "Artist Renfray",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11936/artist-renfray",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Western Plaguelands",
-        "endNpc": "Tirion Fordring",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "60",
-        "minLevel": 52,
-        "faction": "Both",
-        "xp": 6600,
-        "money": 39600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [
-          {
-            "id": 5861,
-            "name": "Find Myranda",
-            "url": "https://www.wowhead.com/classic/quest=5861/find-myranda"
-          },
-          {
-            "id": 5862,
-            "name": "Scarlet Subterfuge",
-            "url": "https://www.wowhead.com/classic/quest=5862/scarlet-subterfuge"
-          }
-        ],
-        "absorbedBy": 5944
-      },
-      {
-        "id": 5281,
-        "name": "The Restless Souls",
-        "questLink": "https://www.wowhead.com/classic/quest=5281/the-restless-souls",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": 5282,
-        "chainId": 5281,
-        "chainDepth": 0,
-        "startNpc": "Caretaker Alen",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11038/caretaker-alen",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Egan",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11140/egan",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "60",
-        "minLevel": 55,
-        "faction": "Both",
-        "xp": 6600,
-        "money": 39600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 5282,
         "name": "The Restless Souls",
         "questLink": "https://www.wowhead.com/classic/quest=5282/the-restless-souls",
-        "prequest": "The Restless Souls",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5281/the-restless-souls",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 5281,
         "nextQuestId": null,
-        "chainId": 5281,
+        "chainId": "strath-5281-the-restless-souls",
         "chainDepth": 1,
         "startNpc": "Egan",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11140/egan",
@@ -29738,11 +32324,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Egan",
+            "link": "https://www.wowhead.com/classic/npc=11140/egan",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "endNpc": "Egan",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11140/egan",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Egan",
+            "link": "https://www.wowhead.com/classic/npc=11140/egan",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -29759,215 +32363,343 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 5281,
+            "name": "The Restless Souls",
+            "questLink": "https://www.wowhead.com/classic/quest=5281/the-restless-souls",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 5282,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Caretaker Alen",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11038/caretaker-alen",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Eastern Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Caretaker Alen",
+                "link": "https://www.wowhead.com/classic/npc=11038/caretaker-alen",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "endNpc": "Egan",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11140/egan",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Eastern Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Egan",
+                "link": "https://www.wowhead.com/classic/npc=11140/egan",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 55,
+            "faction": "Both",
+            "xp": 6600,
+            "money": 39600,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "strath-5281-the-restless-souls",
+              "index": 1,
+              "total": 2,
+              "name": "The Restless Souls"
+            }
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "strath-5281-the-restless-souls",
+          "index": 2,
+          "total": 2,
+          "name": "The Restless Souls"
+        }
       },
       {
-        "id": 5382,
-        "name": "Doctor Theolen Krastinov, the Butcher",
-        "questLink": "https://www.wowhead.com/classic/quest=5382/doctor-theolen-krastinov-the-butcher",
+        "id": 5262,
+        "name": "The Truth Comes Crashing Down",
+        "questLink": "https://www.wowhead.com/classic/quest=5262/the-truth-comes-crashing-down",
         "prequest": "",
         "prequestLink": "",
         "prevQuestId": null,
-        "nextQuestId": 5515,
-        "chainId": 5382,
+        "nextQuestId": 5263,
+        "chainId": "strath-5262-the-truth-comes-crashing-down",
         "chainDepth": 0,
-        "startNpc": "Eva Sarkhoff",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+        "startNpc": "",
+        "startNpcLink": "",
         "startObject": "",
         "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Western Plaguelands",
-        "endNpc": "Eva Sarkhoff",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+        "startItem": "Head of Balnazzar",
+        "startItemLink": "https://www.wowhead.com/classic/item=13250/head-of-balnazzar",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "Duke Nicholas Zverenhoff",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
         "endObject": "",
         "endObjectLink": "",
-        "endLoc": "Western Plaguelands",
-        "levels": "60",
-        "minLevel": 55,
-        "faction": "Both",
-        "xp": 6600,
-        "money": 39600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": 5466
-      },
-      {
-        "id": 5515,
-        "name": "Krastinov's Bag of Horrors",
-        "questLink": "https://www.wowhead.com/classic/quest=5515/krastinov-s-bag-of-horrors",
-        "prequest": "Doctor Theolen Krastinov, the Butcher",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5382/doctor-theolen-krastinov-the-butcher",
-        "prevQuestId": 5382,
-        "nextQuestId": 5384,
-        "chainId": 5382,
-        "chainDepth": 1,
-        "startNpc": "Eva Sarkhoff",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Western Plaguelands",
-        "endNpc": "Eva Sarkhoff",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Western Plaguelands",
-        "levels": "60",
-        "minLevel": 55,
-        "faction": "Both",
-        "xp": 6600,
-        "money": 39600,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": 5466
-      },
-      {
-        "id": 5384,
-        "name": "Kirtonos the Herald",
-        "questLink": "https://www.wowhead.com/classic/quest=5384/kirtonos-the-herald",
-        "prequest": "Krastinov's Bag of Horrors",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5515/krastinov-s-bag-of-horrors",
-        "prevQuestId": 5515,
-        "nextQuestId": null,
-        "chainId": 5382,
-        "chainDepth": 2,
-        "startNpc": "Eva Sarkhoff",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Western Plaguelands",
-        "endNpc": "Eva Sarkhoff",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Western Plaguelands",
+        "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Duke Nicholas Zverenhoff",
+            "link": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
         "xp": 8300,
         "money": 49800,
-        "rewards": [
-          {
-            "id": 13544,
-            "name": "Spectral Essence",
-            "url": "https://www.wowhead.com/classic/item=13544/spectral-essence",
-            "quality": 2
-          }
-        ],
-        "rewardChoices": [
-          {
-            "id": 15805,
-            "name": "Penelope's Rose",
-            "url": "https://www.wowhead.com/classic/item=15805/penelope-s-rose",
-            "quality": 3
-          },
-          {
-            "id": 15806,
-            "name": "Mirah's Song",
-            "url": "https://www.wowhead.com/classic/item=15806/mirah-s-song",
-            "quality": 3
-          }
-        ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": 5466
-      },
-      {
-        "id": 5461,
-        "name": "The Human, Ras Frostwhisper",
-        "questLink": "https://www.wowhead.com/classic/quest=5461/the-human-ras-frostwhisper",
-        "prequest": "Kirtonos the Herald",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5384/kirtonos-the-herald",
-        "prevQuestId": 5384,
-        "nextQuestId": 5462,
-        "chainId": 5382,
-        "chainDepth": 3,
-        "startNpc": "Magistrate Marduke",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Western Plaguelands",
-        "endNpc": "Magistrate Marduke",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Western Plaguelands",
-        "levels": "60",
-        "minLevel": 57,
-        "faction": "Both",
-        "xp": 6600,
-        "money": 39600,
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 5251,
+            "name": "The Archivist",
+            "questLink": "https://www.wowhead.com/classic/quest=5251/the-archivist",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Duke Nicholas Zverenhoff",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Eastern Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Duke Nicholas Zverenhoff",
+                "link": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "endNpc": "Duke Nicholas Zverenhoff",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Eastern Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Duke Nicholas Zverenhoff",
+                "link": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 55,
+            "faction": "Both",
+            "xp": 8300,
+            "money": 18000,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "isDungeon": true
+          }
+        ],
         "postChain": [],
-        "absorbedBy": 5466
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "strath-5262-the-truth-comes-crashing-down",
+          "index": 1,
+          "total": 2,
+          "name": "The Truth Comes Crashing Down"
+        }
       },
       {
-        "id": 5462,
-        "name": "The Dying, Ras Frostwhisper",
-        "questLink": "https://www.wowhead.com/classic/quest=5462/the-dying-ras-frostwhisper",
-        "prequest": "The Human, Ras Frostwhisper",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5461/the-human-ras-frostwhisper",
-        "prevQuestId": 5461,
-        "nextQuestId": 5463,
-        "chainId": 5382,
-        "chainDepth": 4,
-        "startNpc": "Magistrate Marduke",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+        "id": 5263,
+        "name": "Above and Beyond",
+        "questLink": "https://www.wowhead.com/classic/quest=5263/above-and-beyond",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5262,
+        "nextQuestId": null,
+        "chainId": "strath-5262-the-truth-comes-crashing-down",
+        "chainDepth": 1,
+        "startNpc": "Duke Nicholas Zverenhoff",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
         "startObject": "",
         "startObjectLink": "",
         "startItem": "",
         "startItemLink": "",
-        "startLoc": "Western Plaguelands",
-        "endNpc": "Leonid Barthalomew the Revered",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+        "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Duke Nicholas Zverenhoff",
+            "link": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "endNpc": "Duke Nicholas Zverenhoff",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Duke Nicholas Zverenhoff",
+            "link": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "60",
-        "minLevel": 57,
+        "minLevel": 55,
         "faction": "Both",
-        "xp": 4950,
-        "money": 29700,
+        "xp": 8300,
+        "money": 49800,
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": 5466
+        "preChain": [
+          {
+            "id": 5251,
+            "name": "The Archivist",
+            "questLink": "https://www.wowhead.com/classic/quest=5251/the-archivist",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Duke Nicholas Zverenhoff",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Eastern Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Duke Nicholas Zverenhoff",
+                "link": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "endNpc": "Duke Nicholas Zverenhoff",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Eastern Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Duke Nicholas Zverenhoff",
+                "link": "https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 55,
+            "faction": "Both",
+            "xp": 8300,
+            "money": 18000,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "isDungeon": true
+          }
+        ],
+        "postChain": [
+          {
+            "or": [
+              {
+                "id": 5264,
+                "name": "Lord Maxwell Tyrosus",
+                "url": "https://www.wowhead.com/classic/quest=5264/lord-maxwell-tyrosus",
+                "series": {
+                  "id": "strath-5264-lord-maxwell-tyrosus",
+                  "index": 1,
+                  "total": 2,
+                  "name": "Lord Maxwell Tyrosus"
+                },
+                "then": [
+                  {
+                    "id": 5265,
+                    "name": "The Argent Hold",
+                    "url": "https://www.wowhead.com/classic/quest=5265/the-argent-hold",
+                    "series": {
+                      "id": "strath-5264-lord-maxwell-tyrosus",
+                      "index": 2,
+                      "total": 2,
+                      "name": "Lord Maxwell Tyrosus"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "strath-5262-the-truth-comes-crashing-down",
+          "index": 2,
+          "total": 2,
+          "name": "The Truth Comes Crashing Down"
+        }
       },
       {
         "id": 5463,
         "name": "Menethil's Gift",
         "questLink": "https://www.wowhead.com/classic/quest=5463/menethil-s-gift",
-        "prequest": "The Dying, Ras Frostwhisper",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5462/the-dying-ras-frostwhisper",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 5462,
         "nextQuestId": 5464,
-        "chainId": 5382,
-        "chainDepth": 5,
+        "chainId": "strath-5461-the-human-ras-frostwhisper",
+        "chainDepth": 2,
         "startNpc": "Leonid Barthalomew the Revered",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
         "startObject": "",
@@ -29975,11 +32707,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Leonid Barthalomew the Revered",
+            "link": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "endNpc": "",
         "endNpcLink": "",
         "endObject": "Menethil's Gift",
         "endObjectLink": "https://www.wowhead.com/classic/object=176631/menethil-s-gift",
         "endLoc": "Stratholme",
+        "endNpcs": [
+          {
+            "name": "Menethil's Gift",
+            "link": "https://www.wowhead.com/classic/object=176631/menethil-s-gift",
+            "faction": "",
+            "type": "object",
+            "loc": "Stratholme"
+          }
+        ],
         "levels": "60",
         "minLevel": 57,
         "faction": "Both",
@@ -29989,60 +32739,387 @@ const DUNGEONS = [
         "rewardChoices": [],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": 5466
-      },
-      {
-        "id": 5464,
-        "name": "Menethil's Gift",
-        "questLink": "https://www.wowhead.com/classic/quest=5464/menethil-s-gift",
-        "prequest": "Menethil's Gift",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5463/menethil-s-gift",
-        "prevQuestId": 5463,
-        "nextQuestId": 5465,
-        "chainId": 5382,
-        "chainDepth": 6,
-        "startNpc": "",
-        "startNpcLink": "",
-        "startObject": "Menethil's Gift",
-        "startObjectLink": "https://www.wowhead.com/classic/object=176631/menethil-s-gift",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Stratholme",
-        "endNpc": "Leonid Barthalomew the Revered",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "60",
-        "minLevel": 57,
-        "faction": "Both",
-        "xp": 8300,
-        "money": 49800,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 5382,
+            "name": "Doctor Theolen Krastinov, the Butcher",
+            "questLink": "https://www.wowhead.com/classic/quest=5382/doctor-theolen-krastinov-the-butcher",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": 5515,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Eva Sarkhoff",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Eva Sarkhoff",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 55,
+            "faction": "Both",
+            "xp": 6600,
+            "money": 39600,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "strath-5382-doctor-theolen-krastinov-the-butcher",
+              "index": 1,
+              "total": 3,
+              "name": "Doctor Theolen Krastinov, the Butcher"
+            }
+          },
+          {
+            "id": 5515,
+            "name": "Krastinov's Bag of Horrors",
+            "questLink": "https://www.wowhead.com/classic/quest=5515/krastinov-s-bag-of-horrors",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5382,
+            "nextQuestId": 5384,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Eva Sarkhoff",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Eva Sarkhoff",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 55,
+            "faction": "Both",
+            "xp": 6600,
+            "money": 39600,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "strath-5382-doctor-theolen-krastinov-the-butcher",
+              "index": 2,
+              "total": 3,
+              "name": "Doctor Theolen Krastinov, the Butcher"
+            }
+          },
+          {
+            "id": 5384,
+            "name": "Kirtonos the Herald",
+            "questLink": "https://www.wowhead.com/classic/quest=5384/kirtonos-the-herald",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5515,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Eva Sarkhoff",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Eva Sarkhoff",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Eva Sarkhoff",
+                "link": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 55,
+            "faction": "Both",
+            "xp": 8300,
+            "money": 49800,
+            "rewards": [
+              {
+                "id": 13544,
+                "name": "Spectral Essence",
+                "url": "https://www.wowhead.com/classic/item=13544/spectral-essence",
+                "quality": 2
+              }
+            ],
+            "rewardChoices": [
+              {
+                "id": 15805,
+                "name": "Penelope's Rose",
+                "url": "https://www.wowhead.com/classic/item=15805/penelope-s-rose",
+                "quality": 3
+              },
+              {
+                "id": 15806,
+                "name": "Mirah's Song",
+                "url": "https://www.wowhead.com/classic/item=15806/mirah-s-song",
+                "quality": 3
+              }
+            ],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "strath-5382-doctor-theolen-krastinov-the-butcher",
+              "index": 3,
+              "total": 3,
+              "name": "Doctor Theolen Krastinov, the Butcher"
+            }
+          },
+          {
+            "id": 5461,
+            "name": "The Human, Ras Frostwhisper",
+            "questLink": "https://www.wowhead.com/classic/quest=5461/the-human-ras-frostwhisper",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5384,
+            "nextQuestId": 5462,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Magistrate Marduke",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Magistrate Marduke",
+                "link": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Magistrate Marduke",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Magistrate Marduke",
+                "link": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 57,
+            "faction": "Both",
+            "xp": 6600,
+            "money": 39600,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "strath-5461-the-human-ras-frostwhisper",
+              "index": 1,
+              "total": 6,
+              "name": "The Human, Ras Frostwhisper"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 5384
+              }
+            ]
+          },
+          {
+            "id": 5462,
+            "name": "The Dying, Ras Frostwhisper",
+            "questLink": "https://www.wowhead.com/classic/quest=5462/the-dying-ras-frostwhisper",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5461,
+            "nextQuestId": 5463,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Magistrate Marduke",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Magistrate Marduke",
+                "link": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Leonid Barthalomew the Revered",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Eastern Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Leonid Barthalomew the Revered",
+                "link": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 57,
+            "faction": "Both",
+            "xp": 4950,
+            "money": 29700,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "strath-5461-the-human-ras-frostwhisper",
+              "index": 2,
+              "total": 6,
+              "name": "The Human, Ras Frostwhisper"
+            }
+          }
+        ],
         "postChain": [
+          {
+            "id": 5464,
+            "name": "Menethil's Gift",
+            "url": "https://www.wowhead.com/classic/quest=5464/menethil-s-gift",
+            "series": {
+              "id": "strath-5461-the-human-ras-frostwhisper",
+              "index": 4,
+              "total": 6,
+              "name": "The Human, Ras Frostwhisper"
+            }
+          },
           {
             "id": 5465,
             "name": "Soulbound Keepsake",
-            "url": "https://www.wowhead.com/classic/quest=5465/soulbound-keepsake"
+            "url": "https://www.wowhead.com/classic/quest=5465/soulbound-keepsake",
+            "series": {
+              "id": "strath-5461-the-human-ras-frostwhisper",
+              "index": 5,
+              "total": 6,
+              "name": "The Human, Ras Frostwhisper"
+            }
+          },
+          {
+            "id": 5466,
+            "name": "The Lich, Ras Frostwhisper",
+            "url": "https://www.wowhead.com/classic/quest=5466/the-lich-ras-frostwhisper",
+            "series": {
+              "id": "strath-5461-the-human-ras-frostwhisper",
+              "index": 6,
+              "total": 6,
+              "name": "The Human, Ras Frostwhisper"
+            }
           }
         ],
-        "absorbedBy": 5466
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "strath-5461-the-human-ras-frostwhisper",
+          "index": 3,
+          "total": 6,
+          "name": "The Human, Ras Frostwhisper"
+        }
       },
       {
-        "id": 6133,
-        "name": "The Ranger Lord's Behest",
-        "questLink": "https://www.wowhead.com/classic/quest=6133/the-ranger-lord-s-behest",
+        "id": 6163,
+        "name": "Ramstein",
+        "questLink": "https://www.wowhead.com/classic/quest=6163/ramstein",
         "prequest": "",
         "prequestLink": "",
         "prevQuestId": null,
         "nextQuestId": null,
-        "chainId": 6133,
+        "chainId": null,
         "chainDepth": 0,
         "startNpc": "Nathanos Blightcaller",
         "startNpcLink": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
@@ -30051,94 +33128,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Eastern Plaguelands",
-        "endNpc": "Nathanos Blightcaller",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "60",
-        "minLevel": 54,
-        "faction": "Horde",
-        "xp": 6600,
-        "money": 9000,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 6135,
-        "name": "Duskwing, Oh How I Hate Thee",
-        "questLink": "https://www.wowhead.com/classic/quest=6135/duskwing-oh-how-i-hate-thee",
-        "prequest": "The Ranger Lord's Behest",
-        "prequestLink": "https://www.wowhead.com/classic/quest=6133/the-ranger-lord-s-behest",
-        "prevQuestId": 6133,
-        "nextQuestId": null,
-        "chainId": 6133,
-        "chainDepth": 1,
-        "startNpc": "Nathanos Blightcaller",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Nathanos Blightcaller",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "60",
-        "minLevel": 56,
-        "faction": "Horde",
-        "xp": 6600,
-        "money": 9000,
-        "rewards": [],
-        "rewardChoices": [
+        "startNpcs": [
           {
-            "id": 16994,
-            "name": "Duskwing Gloves",
-            "url": "https://www.wowhead.com/classic/item=16994/duskwing-gloves",
-            "quality": 2
-          },
-          {
-            "id": 16995,
-            "name": "Duskwing Mantle",
-            "url": "https://www.wowhead.com/classic/item=16995/duskwing-mantle",
-            "quality": 2
+            "name": "Nathanos Blightcaller",
+            "link": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
           }
         ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 6163,
-        "name": "Ramstein",
-        "questLink": "https://www.wowhead.com/classic/quest=6163/ramstein",
-        "prequest": "Duskwing, Oh How I Hate Thee",
-        "prequestLink": "https://www.wowhead.com/classic/quest=6135/duskwing-oh-how-i-hate-thee",
-        "prevQuestId": 6135,
-        "nextQuestId": null,
-        "chainId": 6133,
-        "chainDepth": 2,
-        "startNpc": "Nathanos Blightcaller",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
         "endNpc": "Nathanos Blightcaller",
         "endNpcLink": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Nathanos Blightcaller",
+            "link": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 56,
         "faction": "Horde",
@@ -30161,9 +33173,141 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [],
+        "preChain": [
+          {
+            "id": 6133,
+            "name": "The Ranger Lord's Behest",
+            "questLink": "https://www.wowhead.com/classic/quest=6133/the-ranger-lord-s-behest",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": null,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Nathanos Blightcaller",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Eastern Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Nathanos Blightcaller",
+                "link": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "endNpc": "Nathanos Blightcaller",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Eastern Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Nathanos Blightcaller",
+                "link": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 54,
+            "faction": "Horde",
+            "xp": 6600,
+            "money": 9000,
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null
+          },
+          {
+            "id": 6135,
+            "name": "Duskwing, Oh How I Hate Thee",
+            "questLink": "https://www.wowhead.com/classic/quest=6135/duskwing-oh-how-i-hate-thee",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 6133,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Nathanos Blightcaller",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Eastern Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Nathanos Blightcaller",
+                "link": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "endNpc": "Nathanos Blightcaller",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Eastern Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Nathanos Blightcaller",
+                "link": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+                "faction": "",
+                "type": "npc",
+                "loc": "Eastern Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 56,
+            "faction": "Horde",
+            "xp": 6600,
+            "money": 9000,
+            "rewards": [],
+            "rewardChoices": [
+              {
+                "id": 16994,
+                "name": "Duskwing Gloves",
+                "url": "https://www.wowhead.com/classic/item=16994/duskwing-gloves",
+                "quality": 2
+              },
+              {
+                "id": 16995,
+                "name": "Duskwing Mantle",
+                "url": "https://www.wowhead.com/classic/item=16995/duskwing-mantle",
+                "quality": 2
+              }
+            ],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "single",
+                "id": 6133
+              }
+            ]
+          }
+        ],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 5122,
@@ -30172,8 +33316,8 @@ const DUNGEONS = [
         "prequest": "",
         "prequestLink": "",
         "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": 5122,
+        "nextQuestId": 5125,
+        "chainId": "strath-5122-the-medallion-of-faith",
         "chainDepth": 0,
         "startNpc": "Aurius",
         "startNpcLink": "https://www.wowhead.com/classic/npc=10917/aurius",
@@ -30182,11 +33326,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stratholme",
+        "startNpcs": [
+          {
+            "name": "Aurius",
+            "link": "https://www.wowhead.com/classic/npc=10917/aurius",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stratholme"
+          }
+        ],
         "endNpc": "Aurius",
         "endNpcLink": "https://www.wowhead.com/classic/npc=10917/aurius",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stratholme",
+        "endNpcs": [
+          {
+            "name": "Aurius",
+            "link": "https://www.wowhead.com/classic/npc=10917/aurius",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stratholme"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -30198,17 +33360,24 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "strath-5122-the-medallion-of-faith",
+          "index": 1,
+          "total": 2,
+          "name": "The Medallion of Faith"
+        }
       },
       {
         "id": 5125,
         "name": "Aurius' Reckoning",
         "questLink": "https://www.wowhead.com/classic/quest=5125/aurius-reckoning",
-        "prequest": "The Medallion of Faith",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5122/the-medallion-of-faith",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 5122,
         "nextQuestId": null,
-        "chainId": 5122,
+        "chainId": "strath-5122-the-medallion-of-faith",
         "chainDepth": 1,
         "startNpc": "Aurius",
         "startNpcLink": "https://www.wowhead.com/classic/npc=10917/aurius",
@@ -30217,11 +33386,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Stratholme",
+        "startNpcs": [
+          {
+            "name": "Aurius",
+            "link": "https://www.wowhead.com/classic/npc=10917/aurius",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stratholme"
+          }
+        ],
         "endNpc": "Aurius",
         "endNpcLink": "https://www.wowhead.com/classic/npc=10917/aurius",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Stratholme",
+        "endNpcs": [
+          {
+            "name": "Aurius",
+            "link": "https://www.wowhead.com/classic/npc=10917/aurius",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stratholme"
+          }
+        ],
         "levels": "60",
         "minLevel": 55,
         "faction": "Both",
@@ -30246,17 +33433,723 @@ const DUNGEONS = [
         "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "strath-5122-the-medallion-of-faith",
+          "index": 2,
+          "total": 2,
+          "name": "The Medallion of Faith"
+        }
+      },
+      {
+        "id": 5213,
+        "name": "The Active Agent",
+        "questLink": "https://www.wowhead.com/classic/quest=5213/the-active-agent",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5212,
+        "nextQuestId": null,
+        "chainId": "strath-5212-the-flesh-does-not-lie",
+        "chainDepth": 1,
+        "startNpc": "Betina Bigglezink",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Betina Bigglezink",
+            "link": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "endNpc": "Betina Bigglezink",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Betina Bigglezink",
+            "link": "https://www.wowhead.com/classic/npc=11035/betina-bigglezink",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 13209,
+            "name": "Seal of the Dawn",
+            "url": "https://www.wowhead.com/classic/item=13209/seal-of-the-dawn",
+            "quality": 3
+          },
+          {
+            "id": 19812,
+            "name": "Rune of the Dawn",
+            "url": "https://www.wowhead.com/classic/item=19812/rune-of-the-dawn",
+            "quality": 3
+          }
+        ],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "strath-5212-the-flesh-does-not-lie",
+          "index": 2,
+          "total": 2,
+          "name": "The Flesh Does Not Lie"
+        }
+      },
+      {
+        "id": 5543,
+        "name": "Blood Tinged Skies",
+        "questLink": "https://www.wowhead.com/classic/quest=5543/blood-tinged-skies",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 5742,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
+        "chainDepth": 0,
+        "startNpc": "Tirion Fordring",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          },
+          {
+            "name": "Lord Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=12126/lord-tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "endNpc": "Tirion Fordring",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "levels": "56",
+        "minLevel": 52,
+        "faction": "Both",
+        "xp": 5800,
+        "money": 34800,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
+      },
+      {
+        "id": 5544,
+        "name": "Carrion Grubbage",
+        "questLink": "https://www.wowhead.com/classic/quest=5544/carrion-grubbage",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 5742,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
+        "chainDepth": 0,
+        "startNpc": "Tirion Fordring",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          },
+          {
+            "name": "Lord Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=12126/lord-tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "endNpc": "Tirion Fordring",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "levels": "56",
+        "minLevel": 52,
+        "faction": "Both",
+        "xp": 5800,
+        "money": 34800,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
+      },
+      {
+        "id": 5542,
+        "name": "Demon Dogs",
+        "questLink": "https://www.wowhead.com/classic/quest=5542/demon-dogs",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 5742,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
+        "chainDepth": 0,
+        "startNpc": "Tirion Fordring",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          },
+          {
+            "name": "Lord Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=12126/lord-tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "endNpc": "Tirion Fordring",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "levels": "56",
+        "minLevel": 52,
+        "faction": "Both",
+        "xp": 5800,
+        "money": 34800,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
+      },
+      {
+        "id": 5742,
+        "name": "Redemption",
+        "questLink": "https://www.wowhead.com/classic/quest=5742/redemption",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5543,
+        "nextQuestId": 5781,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
+        "chainDepth": 0,
+        "startNpc": "Tirion Fordring",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "endNpc": "Tirion Fordring",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "levels": "56",
+        "minLevel": 52,
+        "faction": "Both",
+        "xp": 580,
+        "money": 3450,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "strath-5742-redemption",
+          "index": 1,
+          "total": 7,
+          "name": "Redemption"
+        },
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
+      },
+      {
+        "id": 5781,
+        "name": "Of Forgotten Memories",
+        "questLink": "https://www.wowhead.com/classic/quest=5781/of-forgotten-memories",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5742,
+        "nextQuestId": 5845,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
+        "chainDepth": 0,
+        "startNpc": "Tirion Fordring",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "endNpc": "Tirion Fordring",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "levels": "57",
+        "minLevel": 52,
+        "faction": "Both",
+        "xp": 6000,
+        "money": 36000,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "strath-5742-redemption",
+          "index": 2,
+          "total": 7,
+          "name": "Redemption"
+        },
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
+      },
+      {
+        "id": 5845,
+        "name": "Of Lost Honor",
+        "questLink": "https://www.wowhead.com/classic/quest=5845/of-lost-honor",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5781,
+        "nextQuestId": 5846,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
+        "chainDepth": 0,
+        "startNpc": "Tirion Fordring",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "endNpc": "Tirion Fordring",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 52,
+        "faction": "Both",
+        "xp": 6200,
+        "money": 37200,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "strath-5742-redemption",
+          "index": 3,
+          "total": 7,
+          "name": "Redemption"
+        },
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
+      },
+      {
+        "id": 5846,
+        "name": "Of Love and Family",
+        "questLink": "https://www.wowhead.com/classic/quest=5846/of-love-and-family",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5845,
+        "nextQuestId": 5848,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
+        "chainDepth": 0,
+        "startNpc": "Tirion Fordring",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "endNpc": "Artist Renfray",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11936/artist-renfray",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Artist Renfray",
+            "link": "https://www.wowhead.com/classic/npc=11936/artist-renfray",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 52,
+        "faction": "Both",
+        "xp": 6200,
+        "money": 37200,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "strath-5742-redemption",
+          "index": 4,
+          "total": 7,
+          "name": "Redemption"
+        },
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
+      },
+      {
+        "id": 5848,
+        "name": "Of Love and Family",
+        "questLink": "https://www.wowhead.com/classic/quest=5848/of-love-and-family",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5846,
+        "nextQuestId": 5861,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
+        "chainDepth": 0,
+        "startNpc": "Artist Renfray",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11936/artist-renfray",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Artist Renfray",
+            "link": "https://www.wowhead.com/classic/npc=11936/artist-renfray",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "endNpc": "Tirion Fordring",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Eastern Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 52,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "strath-5742-redemption",
+          "index": 5,
+          "total": 7,
+          "name": "Redemption"
+        },
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
+      },
+      {
+        "id": 5861,
+        "name": "Find Myranda",
+        "questLink": "https://www.wowhead.com/classic/quest=5861/find-myranda",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5848,
+        "nextQuestId": 5862,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
+        "chainDepth": 0,
+        "startNpc": "Tirion Fordring",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Eastern Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Eastern Plaguelands"
+          }
+        ],
+        "endNpc": "Myranda the Hag",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Myranda the Hag",
+            "link": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 52,
+        "faction": "Both",
+        "xp": 4950,
+        "money": 29700,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "strath-5742-redemption",
+          "index": 6,
+          "total": 7,
+          "name": "Redemption"
+        },
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
+      },
+      {
+        "id": 5862,
+        "name": "Scarlet Subterfuge",
+        "questLink": "https://www.wowhead.com/classic/quest=5862/scarlet-subterfuge",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 5861,
+        "nextQuestId": 5944,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
+        "chainDepth": 0,
+        "startNpc": "Myranda the Hag",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Myranda the Hag",
+            "link": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "endNpc": "Highlord Taelan Fordring",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=1842/highlord-taelan-fordring",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Highlord Taelan Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1842/highlord-taelan-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 52,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "strath-5742-redemption",
+          "index": 7,
+          "total": 7,
+          "name": "Redemption"
+        },
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
       },
       {
         "id": 5944,
         "name": "In Dreams",
         "questLink": "https://www.wowhead.com/classic/quest=5944/in-dreams",
-        "prequest": "Scarlet Subterfuge",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5862/scarlet-subterfuge",
+        "prequest": "",
+        "prequestLink": "",
         "prevQuestId": 5862,
         "nextQuestId": null,
-        "chainId": 5944,
+        "chainId": "strath-flow-5543-blood-tinged-skies",
         "chainDepth": 0,
         "startNpc": "Highlord Taelan Fordring",
         "startNpcLink": "https://www.wowhead.com/classic/npc=1842/highlord-taelan-fordring",
@@ -30265,11 +34158,29 @@ const DUNGEONS = [
         "startItem": "",
         "startItemLink": "",
         "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Highlord Taelan Fordring",
+            "link": "https://www.wowhead.com/classic/npc=1842/highlord-taelan-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "endNpc": "Lord Tirion Fordring",
         "endNpcLink": "https://www.wowhead.com/classic/npc=12126/lord-tirion-fordring",
         "endObject": "",
         "endObjectLink": "",
         "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Lord Tirion Fordring",
+            "link": "https://www.wowhead.com/classic/npc=12126/lord-tirion-fordring",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
         "levels": "60",
         "minLevel": 52,
         "faction": "Both",
@@ -30310,1266 +34221,72 @@ const DUNGEONS = [
         ],
         "requiredClasses": [],
         "notes": "",
-        "preChain": [
-          {
-            "id": 5543,
-            "name": "Blood Tinged Skies",
-            "questLink": "https://www.wowhead.com/classic/quest=5543/blood-tinged-skies",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": null,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Tirion Fordring",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Eastern Plaguelands",
-            "endNpc": "Tirion Fordring",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Eastern Plaguelands",
-            "levels": "56",
-            "minLevel": 52,
-            "faction": "Both",
-            "xp": 5800,
-            "money": 34800,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 5742,
-            "name": "Redemption",
-            "questLink": "https://www.wowhead.com/classic/quest=5742/redemption",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5543,
-            "nextQuestId": 5781,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Tirion Fordring",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Eastern Plaguelands",
-            "endNpc": "Tirion Fordring",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Eastern Plaguelands",
-            "levels": "56",
-            "minLevel": 52,
-            "faction": "Both",
-            "xp": 580,
-            "money": 3450,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 5781,
-            "name": "Of Forgotten Memories",
-            "questLink": "https://www.wowhead.com/classic/quest=5781/of-forgotten-memories",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5742,
-            "nextQuestId": 5845,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Tirion Fordring",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Eastern Plaguelands",
-            "endNpc": "Tirion Fordring",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Eastern Plaguelands",
-            "levels": "57",
-            "minLevel": 52,
-            "faction": "Both",
-            "xp": 6000,
-            "money": 36000,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 5845,
-            "name": "Of Lost Honor",
-            "questLink": "https://www.wowhead.com/classic/quest=5845/of-lost-honor",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5781,
-            "nextQuestId": 5846,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Tirion Fordring",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Eastern Plaguelands",
-            "endNpc": "Tirion Fordring",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Eastern Plaguelands",
-            "levels": "58",
-            "minLevel": 52,
-            "faction": "Both",
-            "xp": 6200,
-            "money": 37200,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 5846,
-            "name": "Of Love and Family",
-            "questLink": "https://www.wowhead.com/classic/quest=5846/of-love-and-family",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5845,
-            "nextQuestId": 5848,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Tirion Fordring",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Eastern Plaguelands",
-            "endNpc": "Artist Renfray",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=11936/artist-renfray",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Western Plaguelands",
-            "levels": "58",
-            "minLevel": 52,
-            "faction": "Both",
-            "xp": 6200,
-            "money": 37200,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 5848,
-            "name": "Of Love and Family",
-            "questLink": "https://www.wowhead.com/classic/quest=5848/of-love-and-family",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5846,
-            "nextQuestId": 5861,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Artist Renfray",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=11936/artist-renfray",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Western Plaguelands",
-            "endNpc": "Tirion Fordring",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Eastern Plaguelands",
-            "levels": "60",
-            "minLevel": 52,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 39600,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 5861,
-            "name": "Find Myranda",
-            "questLink": "https://www.wowhead.com/classic/quest=5861/find-myranda",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5848,
-            "nextQuestId": 5862,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Tirion Fordring",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Eastern Plaguelands",
-            "endNpc": "Myranda the Hag",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=11872/myranda-the-hag",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Western Plaguelands",
-            "levels": "60",
-            "minLevel": 52,
-            "faction": "Both",
-            "xp": 4950,
-            "money": 29700,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          }
-        ],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 5466,
-        "name": "The Lich, Ras Frostwhisper",
-        "questLink": "https://www.wowhead.com/classic/quest=5466/the-lich-ras-frostwhisper",
-        "prequest": "Soulbound Keepsake",
-        "prequestLink": "https://www.wowhead.com/classic/quest=5465/soulbound-keepsake",
-        "prevQuestId": 5465,
-        "nextQuestId": null,
-        "chainId": 5466,
-        "chainDepth": 0,
-        "startNpc": "Magistrate Marduke",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Western Plaguelands",
-        "endNpc": "Magistrate Marduke",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Western Plaguelands",
-        "levels": "60",
-        "minLevel": 57,
-        "faction": "Both",
-        "xp": 9950,
-        "money": 59700,
-        "rewards": [
-          {
-            "id": 14002,
-            "name": "Darrowshire Strongguard",
-            "url": "https://www.wowhead.com/classic/item=14002/darrowshire-strongguard",
-            "quality": 3
-          }
-        ],
-        "rewardChoices": [
-          {
-            "id": 13982,
-            "name": "Warblade of Caer Darrow",
-            "url": "https://www.wowhead.com/classic/item=13982/warblade-of-caer-darrow",
-            "quality": 3
-          },
-          {
-            "id": 13986,
-            "name": "Crown of Caer Darrow",
-            "url": "https://www.wowhead.com/classic/item=13986/crown-of-caer-darrow",
-            "quality": 3
-          },
-          {
-            "id": 13984,
-            "name": "Darrowspike",
-            "url": "https://www.wowhead.com/classic/item=13984/darrowspike",
-            "quality": 3
-          }
-        ],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [
-          {
-            "id": 5382,
-            "name": "Doctor Theolen Krastinov, the Butcher",
-            "questLink": "https://www.wowhead.com/classic/quest=5382/doctor-theolen-krastinov-the-butcher",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": null,
-            "nextQuestId": 5515,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Eva Sarkhoff",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Western Plaguelands",
-            "endNpc": "Eva Sarkhoff",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Western Plaguelands",
-            "levels": "60",
-            "minLevel": 55,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 39600,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 5515,
-            "name": "Krastinov's Bag of Horrors",
-            "questLink": "https://www.wowhead.com/classic/quest=5515/krastinov-s-bag-of-horrors",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5382,
-            "nextQuestId": 5384,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Eva Sarkhoff",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Western Plaguelands",
-            "endNpc": "Eva Sarkhoff",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Western Plaguelands",
-            "levels": "60",
-            "minLevel": 55,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 39600,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 5384,
-            "name": "Kirtonos the Herald",
-            "questLink": "https://www.wowhead.com/classic/quest=5384/kirtonos-the-herald",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5515,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Eva Sarkhoff",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Western Plaguelands",
-            "endNpc": "Eva Sarkhoff",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=11216/eva-sarkhoff",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Western Plaguelands",
-            "levels": "60",
-            "minLevel": 55,
-            "faction": "Both",
-            "xp": 8300,
-            "money": 49800,
-            "rewards": [
-              {
-                "id": 13544,
-                "name": "Spectral Essence",
-                "url": "https://www.wowhead.com/classic/item=13544/spectral-essence",
-                "quality": 2
-              }
-            ],
-            "rewardChoices": [
-              {
-                "id": 15805,
-                "name": "Penelope's Rose",
-                "url": "https://www.wowhead.com/classic/item=15805/penelope-s-rose",
-                "quality": 3
-              },
-              {
-                "id": 15806,
-                "name": "Mirah's Song",
-                "url": "https://www.wowhead.com/classic/item=15806/mirah-s-song",
-                "quality": 3
-              }
-            ],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 5461,
-            "name": "The Human, Ras Frostwhisper",
-            "questLink": "https://www.wowhead.com/classic/quest=5461/the-human-ras-frostwhisper",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5384,
-            "nextQuestId": 5462,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Magistrate Marduke",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Western Plaguelands",
-            "endNpc": "Magistrate Marduke",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Western Plaguelands",
-            "levels": "60",
-            "minLevel": 57,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 39600,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          },
-          {
-            "id": 5462,
-            "name": "The Dying, Ras Frostwhisper",
-            "questLink": "https://www.wowhead.com/classic/quest=5462/the-dying-ras-frostwhisper",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5461,
-            "nextQuestId": 5463,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Magistrate Marduke",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Western Plaguelands",
-            "endNpc": "Leonid Barthalomew the Revered",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Eastern Plaguelands",
-            "levels": "60",
-            "minLevel": 57,
-            "faction": "Both",
-            "xp": 4950,
-            "money": 29700,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          },
-          {
-            "id": 5463,
-            "name": "Menethil's Gift",
-            "questLink": "https://www.wowhead.com/classic/quest=5463/menethil-s-gift",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5462,
-            "nextQuestId": 5464,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Leonid Barthalomew the Revered",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Eastern Plaguelands",
-            "endNpc": "",
-            "endNpcLink": "",
-            "endObject": "Menethil's Gift",
-            "endObjectLink": "https://www.wowhead.com/classic/object=176631/menethil-s-gift",
-            "endLoc": "Stratholme",
-            "levels": "60",
-            "minLevel": 57,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 39600,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          },
-          {
-            "id": 5464,
-            "name": "Menethil's Gift",
-            "questLink": "https://www.wowhead.com/classic/quest=5464/menethil-s-gift",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5463,
-            "nextQuestId": 5465,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "",
-            "startNpcLink": "",
-            "startObject": "Menethil's Gift",
-            "startObjectLink": "https://www.wowhead.com/classic/object=176631/menethil-s-gift",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Stratholme",
-            "endNpc": "Leonid Barthalomew the Revered",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Eastern Plaguelands",
-            "levels": "60",
-            "minLevel": 57,
-            "faction": "Both",
-            "xp": 8300,
-            "money": 49800,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          },
-          {
-            "id": 5465,
-            "name": "Soulbound Keepsake",
-            "questLink": "https://www.wowhead.com/classic/quest=5465/soulbound-keepsake",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 5464,
-            "nextQuestId": 5466,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Leonid Barthalomew the Revered",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Eastern Plaguelands",
-            "endNpc": "Magistrate Marduke",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=11286/magistrate-marduke",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Western Plaguelands",
-            "levels": "60",
-            "minLevel": 57,
-            "faction": "Both",
-            "xp": 4950,
-            "money": 29700,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          }
-        ],
-        "postChain": [],
-        "absorbedBy": null
-      },
-      {
-        "id": 8945,
-        "name": "Dead Man's Plea",
-        "questLink": "https://www.wowhead.com/classic/quest=8945/dead-man-s-plea",
-        "prequest": "In Search of Anthion",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8929/in-search-of-anthion",
-        "prevQuestId": 8929,
-        "nextQuestId": 8946,
-        "chainId": 8945,
-        "chainDepth": 0,
-        "startNpc": "Anthion Harmon",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=16016/anthion-harmon",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "",
-        "endNpc": "Ysida Harmon",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=16031/ysida-harmon",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Stratholme",
-        "levels": "60",
-        "minLevel": 58,
-        "faction": "Both",
-        "xp": 8300,
-        "money": 49800,
-        "rewards": [
-          {
-            "id": 22137,
-            "name": "Ysida's Satchel",
-            "url": "https://www.wowhead.com/classic/item=22137/ysida-s-satchel",
-            "quality": 1
-          }
-        ],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [
-          {
-            "id": 8922,
-            "name": "A Supernatural Device",
-            "questLink": "https://www.wowhead.com/classic/quest=8922/a-supernatural-device",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": null,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Deliana",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16013/deliana",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Ironforge",
-            "endNpc": "Mux Manascrambler",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Tanaris",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Alliance",
-            "xp": 6600,
-            "money": 39600,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 8921,
-            "name": "The Ectoplasmic Distiller",
-            "questLink": "https://www.wowhead.com/classic/quest=8921/the-ectoplasmic-distiller",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 8922,
-            "nextQuestId": 8924,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Mux Manascrambler",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Tanaris",
-            "endNpc": "Mux Manascrambler",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Tanaris",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 0,
-            "rewards": [
-              {
-                "id": 22320,
-                "name": "Mux's Quality Goods",
-                "url": "https://www.wowhead.com/classic/item=22320/mux-s-quality-goods",
-                "quality": 1
-              }
-            ],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 8924,
-            "name": "Hunting for Ectoplasm",
-            "questLink": "https://www.wowhead.com/classic/quest=8924/hunting-for-ectoplasm",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 8921,
-            "nextQuestId": 8925,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Mux Manascrambler",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Tanaris",
-            "endNpc": "Mux Manascrambler",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Tanaris",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 9000,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 8925,
-            "name": "A Portable Power Source",
-            "questLink": "https://www.wowhead.com/classic/quest=8925/a-portable-power-source",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 8924,
-            "nextQuestId": 8928,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Mux Manascrambler",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Tanaris",
-            "endNpc": "Mux Manascrambler",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Tanaris",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 9000,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 8928,
-            "name": "A Shifty Merchant",
-            "questLink": "https://www.wowhead.com/classic/quest=8928/a-shifty-merchant",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 8925,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Mux Manascrambler",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Tanaris",
-            "endNpc": "Mux Manascrambler",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Tanaris",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Both",
-            "xp": 3300,
-            "money": 19800,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 8977,
-            "name": "Return to Deliana",
-            "questLink": "https://www.wowhead.com/classic/quest=8977/return-to-deliana",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 8928,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Mux Manascrambler",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Tanaris",
-            "endNpc": "Deliana",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16013/deliana",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Ironforge",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Alliance",
-            "xp": 6600,
-            "money": 39600,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "gate"
-          },
-          {
-            "id": 8926,
-            "name": "Just Compensation",
-            "questLink": "https://www.wowhead.com/classic/quest=8926/just-compensation",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 8977,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Deliana",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16013/deliana",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Ironforge",
-            "endNpc": "Deliana",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16013/deliana",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Ironforge",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Alliance",
-            "xp": 9950,
-            "money": 59700,
-            "rewards": [
-              {
-                "id": 22106,
-                "name": "Feralheart Belt",
-                "url": "https://www.wowhead.com/classic/item=22106/feralheart-belt",
-                "quality": 3
-              },
-              {
-                "id": 22110,
-                "name": "Feralheart Gloves",
-                "url": "https://www.wowhead.com/classic/item=22110/feralheart-gloves",
-                "quality": 4
-              }
-            ],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          },
-          {
-            "id": 8929,
-            "name": "In Search of Anthion",
-            "questLink": "https://www.wowhead.com/classic/quest=8929/in-search-of-anthion",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": null,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Deliana",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16013/deliana",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Ironforge",
-            "endNpc": "Anthion Harmon",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16016/anthion-harmon",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Alliance",
-            "xp": 6600,
-            "money": 39600,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          }
-        ],
-        "postChain": [
-          {
-            "id": 8946,
-            "name": "Proof of Life",
-            "url": "https://www.wowhead.com/classic/quest=8946/proof-of-life"
-          },
-          {
-            "id": 8947,
-            "name": "Anthion's Strange Request",
-            "url": "https://www.wowhead.com/classic/quest=8947/anthion-s-strange-request"
-          },
-          {
-            "id": 8948,
-            "name": "Anthion's Old Friend",
-            "url": "https://www.wowhead.com/classic/quest=8948/anthion-s-old-friend"
-          },
-          {
-            "id": 8949,
-            "name": "Falrin's Vendetta",
-            "url": "https://www.wowhead.com/classic/quest=8949/falrin-s-vendetta"
-          },
-          {
-            "id": 8950,
-            "name": "The Instigator's Enchantment",
-            "url": "https://www.wowhead.com/classic/quest=8950/the-instigator-s-enchantment"
-          }
-        ],
-        "absorbedBy": null
-      },
-      {
-        "id": 8928,
-        "name": "A Shifty Merchant",
-        "questLink": "https://www.wowhead.com/classic/quest=8928/a-shifty-merchant",
-        "prequest": "A Portable Power Source",
-        "prequestLink": "https://www.wowhead.com/classic/quest=8925/a-portable-power-source",
-        "prevQuestId": 8925,
-        "nextQuestId": null,
-        "chainId": 8928,
-        "chainDepth": 0,
-        "startNpc": "Mux Manascrambler",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Tanaris",
-        "endNpc": "Mux Manascrambler",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Tanaris",
-        "levels": "60",
-        "minLevel": 58,
-        "faction": "Both",
-        "xp": 3300,
-        "money": 19800,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [
-          {
-            "id": 8922,
-            "name": "A Supernatural Device",
-            "questLink": "https://www.wowhead.com/classic/quest=8922/a-supernatural-device",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": null,
-            "nextQuestId": null,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Deliana",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16013/deliana",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Ironforge",
-            "endNpc": "Mux Manascrambler",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Tanaris",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Alliance",
-            "xp": 6600,
-            "money": 39600,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          },
-          {
-            "id": 8921,
-            "name": "The Ectoplasmic Distiller",
-            "questLink": "https://www.wowhead.com/classic/quest=8921/the-ectoplasmic-distiller",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 8922,
-            "nextQuestId": 8924,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Mux Manascrambler",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Tanaris",
-            "endNpc": "Mux Manascrambler",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Tanaris",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 0,
-            "rewards": [
-              {
-                "id": 22320,
-                "name": "Mux's Quality Goods",
-                "url": "https://www.wowhead.com/classic/item=22320/mux-s-quality-goods",
-                "quality": 1
-              }
-            ],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          },
-          {
-            "id": 8924,
-            "name": "Hunting for Ectoplasm",
-            "questLink": "https://www.wowhead.com/classic/quest=8924/hunting-for-ectoplasm",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 8921,
-            "nextQuestId": 8925,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Mux Manascrambler",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Tanaris",
-            "endNpc": "Mux Manascrambler",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Tanaris",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 9000,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          },
-          {
-            "id": 8925,
-            "name": "A Portable Power Source",
-            "questLink": "https://www.wowhead.com/classic/quest=8925/a-portable-power-source",
-            "prequest": "",
-            "prequestLink": "",
-            "prevQuestId": 8924,
-            "nextQuestId": 8928,
-            "chainId": null,
-            "chainDepth": 0,
-            "startNpc": "Mux Manascrambler",
-            "startNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "startObject": "",
-            "startObjectLink": "",
-            "startItem": "",
-            "startItemLink": "",
-            "startLoc": "Tanaris",
-            "endNpc": "Mux Manascrambler",
-            "endNpcLink": "https://www.wowhead.com/classic/npc=16014/mux-manascrambler",
-            "endObject": "",
-            "endObjectLink": "",
-            "endLoc": "Tanaris",
-            "levels": "60",
-            "minLevel": 58,
-            "faction": "Both",
-            "xp": 6600,
-            "money": 9000,
-            "rewards": [],
-            "rewardChoices": [],
-            "requiredClasses": [],
-            "notes": "",
-            "preChain": [],
-            "postChain": [],
-            "absorbedBy": null,
-            "preChainRole": "series"
-          }
-        ],
-        "postChain": [],
-        "absorbedBy": 8945
-      },
-      {
-        "id": 5544,
-        "name": "Carrion Grubbage",
-        "questLink": "https://www.wowhead.com/classic/quest=5544/carrion-grubbage",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": null,
-        "chainDepth": 0,
-        "startNpc": "Tirion Fordring",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Tirion Fordring",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "56",
-        "minLevel": 52,
-        "faction": "Both",
-        "xp": 5800,
-        "money": 34800,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
         "preChain": [],
         "postChain": [],
-        "absorbedBy": null
-      },
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "strath-flow-5543-blood-tinged-skies"
+      }
+    ],
+    "flows": [
       {
-        "id": 5542,
-        "name": "Demon Dogs",
-        "questLink": "https://www.wowhead.com/classic/quest=5542/demon-dogs",
-        "prequest": "",
-        "prequestLink": "",
-        "prevQuestId": null,
-        "nextQuestId": null,
-        "chainId": null,
-        "chainDepth": 0,
-        "startNpc": "Tirion Fordring",
-        "startNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "startObject": "",
-        "startObjectLink": "",
-        "startItem": "",
-        "startItemLink": "",
-        "startLoc": "Eastern Plaguelands",
-        "endNpc": "Tirion Fordring",
-        "endNpcLink": "https://www.wowhead.com/classic/npc=1855/tirion-fordring",
-        "endObject": "",
-        "endObjectLink": "",
-        "endLoc": "Eastern Plaguelands",
-        "levels": "56",
-        "minLevel": 52,
-        "faction": "Both",
-        "xp": 5800,
-        "money": 34800,
-        "rewards": [],
-        "rewardChoices": [],
-        "requiredClasses": [],
-        "notes": "",
-        "preChain": [],
-        "postChain": [],
-        "absorbedBy": null
+        "id": "strath-flow-5543-blood-tinged-skies",
+        "tree": {
+          "type": "series",
+          "items": [
+            {
+              "type": "all",
+              "items": [
+                {
+                  "type": "leaf",
+                  "id": 5543
+                },
+                {
+                  "type": "leaf",
+                  "id": 5544
+                },
+                {
+                  "type": "leaf",
+                  "id": 5542
+                }
+              ]
+            },
+            {
+              "type": "leaf",
+              "id": 5742
+            },
+            {
+              "type": "leaf",
+              "id": 5781
+            },
+            {
+              "type": "leaf",
+              "id": 5845
+            },
+            {
+              "type": "leaf",
+              "id": 5846
+            },
+            {
+              "type": "leaf",
+              "id": 5848
+            },
+            {
+              "type": "leaf",
+              "id": 5861
+            },
+            {
+              "type": "leaf",
+              "id": 5862
+            },
+            {
+              "type": "leaf",
+              "id": 5944
+            }
+          ]
+        }
       }
     ]
   },

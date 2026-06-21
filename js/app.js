@@ -10,6 +10,10 @@ let completed = JSON.parse(localStorage.getItem('wow_completed') || '{}');
 let locationFilter = null;
 let factionFilter = null;
 let classFilter = null;
+// When set (to a dungeon quest's name), only that main dungeon quest's chain shows.
+let dungeonQuestFilter = null;
+// Collapsed/expanded state of the dungeon-quest panel. null = use per-dungeon default.
+let dungeonQuestFiltersOpen = null;
 
 // ═══════════════════════════════════════
 //  DATA NORMALISATION
@@ -63,6 +67,14 @@ function questKey(dungeon, quest) {
   return dungeon.schema === 2
     ? dungeon.id + '::id::' + quest.id
     : dungeon.id + '::' + quest.name;
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
 function formatMoney(copper) {
@@ -121,6 +133,31 @@ function initScrollLogo() {
   window.addEventListener('scroll', onScroll, { passive: true });
 }
 
+// ═══════════════════════════════════════
+//  DUNGEON CARD DOCK
+// ═══════════════════════════════════════
+// As soon as the page is scrolled down past the sticky controls, dock the
+// dungeon card: the full banner collapses and the compact card (already in the
+// sticky right column) cross-fades in above Locations/Encounters. All of this
+// is purely CSS — this handler only toggles the body.dungeon-docked flag, and
+// only matters on desktop (≥901px); the mobile layout shows the compact card
+// unconditionally regardless of this class.
+function initDungeonDock() {
+  let offset = 108;
+  const readOffset = () => {
+    const cs = getComputedStyle(document.documentElement);
+    offset = (parseInt(cs.getPropertyValue('--controls-height'), 10) || 64)
+           + (parseInt(cs.getPropertyValue('--dungeon-tabs-height'), 10) || 44);
+  };
+  const onScroll = () => {
+    document.body.classList.toggle('dungeon-docked', window.scrollY > offset);
+  };
+  readOffset();
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', () => { readOffset(); onScroll(); }, { passive: true });
+}
+
 function init() {
   buildDungeonTabs();
   buildDungeonFilterPanel();
@@ -132,6 +169,7 @@ function init() {
   initEncounterModal();
   initVideoModal();
   initScrollLogo();
+  initDungeonDock();
   initControlsHeightObserver();
   initLogoCinematic();
   selectDungeon('rfc');
@@ -141,13 +179,15 @@ function init() {
 //  LOGO CINEMATIC — "Enter the Dungeon Gate"
 // ═══════════════════════════════════════
 function initLogoCinematic() {
-  const logo = document.querySelector('.header-logo');
-  if (!logo) return;
+  const logos = document.querySelectorAll('.header-logo, .controls-logo');
+  if (!logos.length) return;
   let playing = false;
-  logo.addEventListener('click', () => {
-    if (playing) return;
-    playing = true;
-    playLogoCinematic(logo).finally(() => { playing = false; });
+  logos.forEach(logo => {
+    logo.addEventListener('click', () => {
+      if (playing) return;
+      playing = true;
+      playLogoCinematic(logo).finally(() => { playing = false; });
+    });
   });
 }
 
@@ -437,6 +477,8 @@ function initControlsHeightObserver() {
 function selectDungeon(id) {
   currentDungeonId = id;
   locationFilter = null;
+  dungeonQuestFilter = null;
+  dungeonQuestFiltersOpen = null;
   document.querySelectorAll('.dungeon-tab').forEach(t => {
     t.classList.toggle('active', t.dataset.id === id);
   });
@@ -521,6 +563,8 @@ function renderDungeonHeader(dungeon) {
 
   guidesEl.innerHTML = mapBoxHtml + wowheadBoxHtml + videoBoxHtml;
 
+  renderDungeonQuestFilters(dungeon, quests);
+
   const pct = quests.length ? (completedCount / quests.length * 100) : 0;
   const isComplete = quests.length > 0 && completedCount === quests.length;
   document.getElementById('progressBar').style.width = pct + '%';
@@ -529,7 +573,224 @@ function renderDungeonHeader(dungeon) {
   document.getElementById('progressFraction').classList.toggle('complete', isComplete);
   document.getElementById('dungeonHeader').classList.toggle('all-complete', isComplete);
   renderStatsBar(dungeon);
+  renderDungeonCardCompact(dungeon);
   updateTabCompletionBadges();
+}
+
+// ═══════════════════════════════════════
+//  COMPACT DUNGEON CARD (docked right column / mobile section)
+// ═══════════════════════════════════════
+// A condensed presentation of the dungeon header that lives inside the sticky
+// right column. On desktop it cross-fades in once the full banner is scrolled
+// past (see initDungeonDock); on mobile it is always shown as a third
+// collapsible sidebar section. All of its controls reuse the document-level
+// delegated handlers (.map-instance-btn, .video-guide-btn, .guides-box-link,
+// .dungeon-loading-screen), so nothing needs re-binding here.
+function renderDungeonCardCompact(dungeon) {
+  const el = document.getElementById('dungeonCardCompact');
+  if (!el) return;
+
+  // Same countable-quest set + active filters used by the banner/stats bar.
+  let quests = getCountableQuests(dungeon);
+  if (factionFilter) {
+    quests = quests.filter(q => !q.faction || q.faction === 'Both' || q.faction === factionFilter);
+  }
+  if (classFilter) {
+    quests = quests.filter(q => q.requiredClasses.length === 0 || q.requiredClasses.includes(classFilter));
+  }
+  const completedCount = quests.filter(q => completed[questKey(dungeon, q)]).length;
+  const pct = quests.length ? (completedCount / quests.length * 100) : 0;
+  const isComplete = quests.length > 0 && completedCount === quests.length;
+  const totalXP = quests.reduce((s, q) => s + (q.xp || 0), 0);
+  const totalMoney = quests.reduce((s, q) => s + (q.money || 0), 0);
+  const withGear = quests.filter(q => q.rewards.length > 0 || q.rewardChoices.length > 0 || q.legacyItems.length > 0).length;
+
+  // Section title doubles as the dungeon name (informative when collapsed).
+  const titleEl = document.getElementById('dungeonCardTitle');
+  if (titleEl) titleEl.textContent = `${dungeon.icon} ${dungeon.name}`;
+
+  // Media: loading-screen image (reuses the lightbox via .dungeon-loading-screen)
+  // with a small circular instance-map button overlaid in the corner.
+  const mapName = DUNGEON_MAP_NAME[dungeon.id];
+  const mapOrbHtml = mapName
+    ? `<button class="map-instance-btn dungeon-card-map-orb" data-map-name="${mapName}" title="View instance map" aria-label="View instance map">🗺</button>`
+    : '';
+  const mediaInner = dungeon.loadingScreen
+    ? `<img src="${dungeon.loadingScreen}" alt="${escapeHtml(dungeon.name)} loading screen" class="dungeon-loading-screen dungeon-card-img">`
+    : `<div class="dungeon-card-icon">${dungeon.icon}</div>`;
+  const mediaHtml = `<div class="dungeon-card-media">${mediaInner}${mapOrbHtml}</div>`;
+
+  // Compact meta line: level range · faction · location (location reuses the map link).
+  const locLinkHtml = ZONE_IDS[dungeon.location]
+    ? `<span class="location-link" data-location="${dungeon.location}" title="View map">${dungeon.location}</span>`
+    : escapeHtml(dungeon.location);
+  const metaHtml = `<div class="dungeon-card-meta">Lv ${escapeHtml(dungeon.levels)} · ${escapeHtml(dungeon.faction)} · ${locLinkHtml}</div>`;
+
+  // Quest-completion bar (own ids so it doesn't collide with the banner's).
+  const progressHtml = `
+    <div class="dungeon-card-progress">
+      <div class="dungeon-card-progress-head">
+        <span class="progress-label">QUEST PROGRESS</span>
+        <span class="progress-fraction${isComplete ? ' complete' : ''}" id="progressFractionCompact">${completedCount} / ${quests.length}</span>
+      </div>
+      <div class="progress-bar-wrap"><div class="progress-bar-fill${isComplete ? ' complete' : ''}" id="progressBarCompact" style="width:${pct}%"></div></div>
+    </div>`;
+
+  // Rewards info: compact 2-col stat grid (XP / money / gear rewards).
+  const rewardsHtml = `
+    <div class="dungeon-card-stats">
+      <div class="stat-item"><div class="stat-num" style="color:#84d4a0">${totalXP.toLocaleString()}</div><div class="stat-label">Total XP</div></div>
+      <div class="stat-item"><div class="stat-num stat-num--money">${formatMoney(totalMoney)}</div><div class="stat-label">Money</div></div>
+      <div class="stat-item"><div class="stat-num" style="color:#c8a0d4">${withGear}</div><div class="stat-label">Gear Rewards</div></div>
+      <div class="stat-item"><div class="stat-num">${quests.length}</div><div class="stat-label">Quests</div></div>
+    </div>`;
+
+  // Guides: Wowhead quest/strategy links + video buttons collapsed into one panel.
+  const strategyEntries = STRATEGY_URLS[dungeon.id] || [];
+  const videoEntries = VIDEO_GUIDES[dungeon.id] || [];
+  const guideLinks = [];
+  if (dungeon.guideUrl) {
+    guideLinks.push(`<a href="${dungeon.guideUrl}" target="_blank" rel="noopener noreferrer" class="guides-box-link">📖 Quest Guide</a>`);
+  }
+  strategyEntries.forEach(e => {
+    guideLinks.push(`<a href="${e.url}" target="_blank" rel="noopener noreferrer" class="guides-box-link">🎯 ${escapeHtml(e.label)}</a>`);
+  });
+  videoEntries.forEach(v => {
+    const title = `${dungeon.name}${videoEntries.length > 1 ? ' – ' + v.label : ''}`;
+    guideLinks.push(`<button class="guides-box-link video-guide-btn" data-youtube-id="${v.youtubeId}" data-video-title="${escapeHtml(title)}">▶ ${escapeHtml(v.label)}</button>`);
+  });
+  const guidesHtml = guideLinks.length
+    ? `<div class="dungeon-card-guides">
+        <button class="dcg-toggle" type="button" aria-expanded="false">
+          <span class="dcg-label">📖 Guides</span>
+          <span class="dqf-count">${guideLinks.length}</span>
+          <span class="dqf-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="dcg-panel">${guideLinks.join('')}</div>
+      </div>`
+    : '';
+
+  // Main Dungeon Quests filter — same panel as the banner; populated below by
+  // renderDungeonQuestFilters, which targets every .dungeon-quest-filters node.
+  const dqfHtml = '<div class="dungeon-quest-filters dungeon-card-dqf" id="dungeonCardQuestFilters"></div>';
+
+  el.innerHTML = mediaHtml + metaHtml + progressHtml + rewardsHtml + guidesHtml + dqfHtml;
+
+  const toggle = el.querySelector('.dcg-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const guides = toggle.closest('.dungeon-card-guides');
+      const open = guides.classList.toggle('dcg-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  }
+
+  // Now that the compact panel container exists, render the quest filters into
+  // both it and the banner so they share the active selection.
+  renderDungeonQuestFilters(dungeon, quests);
+}
+
+// ═══════════════════════════════════════
+//  DUNGEON QUEST FILTER PANEL
+// ═══════════════════════════════════════
+// A collapsible panel with one chip per main dungeon quest (isDungeon). Picking
+// one toggles a filter that shows only that quest's full chain. Faction variants
+// share a name, so chips are de-duped by name and the filter matches by name.
+//
+// Large dungeons (e.g. Dire Maul, BRD) have 25–30 dungeon quests, which is a wall
+// of chips — overwhelming, especially on mobile. So the panel is collapsed by
+// default for every dungeon, stays scrollable, and keeps a compact "active filter"
+// row visible while collapsed so the current selection (and a clear button) are
+// always reachable without expanding.
+// Renders the panel into every `.dungeon-quest-filters` container on the page
+// (the full banner + the compact docked card) so both stay in sync. The shared
+// global state (dungeonQuestFilter / dungeonQuestFiltersOpen) means an
+// interaction in either one re-renders all of them.
+function renderDungeonQuestFilters(dungeon, quests) {
+  document.querySelectorAll('.dungeon-quest-filters').forEach(el => {
+    renderDungeonQuestFiltersInto(el, dungeon, quests);
+  });
+}
+
+function renderDungeonQuestFiltersInto(el, dungeon, quests) {
+  const seen = new Set();
+  const dungeonQuests = quests.filter(q => {
+    if (!q.isDungeon || seen.has(q.name)) return false;
+    seen.add(q.name);
+    return true;
+  });
+
+  if (dungeonQuests.length === 0) {
+    el.innerHTML = '';
+    el.classList.remove('dqf-open', 'dqf-filtered');
+    return;
+  }
+
+  // Drop a stale selection if the active dungeon doesn't offer it.
+  if (dungeonQuestFilter && !dungeonQuests.some(q => q.name === dungeonQuestFilter)) {
+    dungeonQuestFilter = null;
+  }
+
+  // Resolve the open state: explicit user choice wins, else collapsed by default.
+  if (dungeonQuestFiltersOpen === null) {
+    dungeonQuestFiltersOpen = false;
+  }
+  const open = dungeonQuestFiltersOpen;
+
+  el.classList.toggle('dqf-open', open);
+  el.classList.toggle('dqf-filtered', !!dungeonQuestFilter);
+
+  const activeRow = dungeonQuestFilter
+    ? `<div class="dqf-active-row">
+        <span class="dqf-active-tag">Showing chain</span>
+        <span class="dqf-active-name">${escapeHtml(dungeonQuestFilter)}</span>
+        <button class="dqf-clear" type="button" title="Show all quests" aria-label="Clear filter">✕</button>
+      </div>`
+    : '';
+
+  el.innerHTML = `
+    <button class="dqf-toggle" type="button" aria-expanded="${open}">
+      <span class="dqf-toggle-label">🗝️ Main Dungeon Quests</span>
+      <span class="dqf-count">${dungeonQuests.length}</span>
+      <span class="dqf-chevron" aria-hidden="true">▾</span>
+    </button>
+    ${activeRow}
+    <div class="dqf-panel">
+      ${dungeonQuests.map(q => {
+        const name = escapeHtml(q.name);
+        const active = dungeonQuestFilter === q.name ? ' active' : '';
+        return `<button class="dqf-btn${active}" type="button" data-quest-name="${name}" title="${name}">${name}</button>`;
+      }).join('')}
+    </div>`;
+
+  el.querySelector('.dqf-toggle').addEventListener('click', () => {
+    dungeonQuestFiltersOpen = !dungeonQuestFiltersOpen;
+    el.classList.toggle('dqf-open', dungeonQuestFiltersOpen);
+    el.querySelector('.dqf-toggle').setAttribute('aria-expanded', String(dungeonQuestFiltersOpen));
+  });
+
+  const clearBtn = el.querySelector('.dqf-clear');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      dungeonQuestFilter = null;
+      renderDungeonQuestFilters(dungeon, quests);
+      renderQuests();
+    });
+  }
+
+  el.querySelectorAll('.dqf-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const name = btn.dataset.questName;
+      dungeonQuestFilter = dungeonQuestFilter === name ? null : name;
+      // On phones, collapse after picking so the long list stops eating the
+      // screen — the active-filter row still shows what's selected.
+      if (dungeonQuestFilter && window.matchMedia('(max-width: 600px)').matches) {
+        dungeonQuestFiltersOpen = false;
+      }
+      renderDungeonQuestFilters(dungeon, quests);
+      renderQuests();
+    });
+  });
 }
 
 // ═══════════════════════════════════════
@@ -676,6 +937,12 @@ function renderQuests() {
     return true;
   });
 
+  // Dungeon-quest filter: narrow to the selected main dungeon quest so only its
+  // chain renders (the group renderers expand the full chain around it).
+  if (dungeonQuestFilter) {
+    quests = quests.filter(q => q.name === dungeonQuestFilter);
+  }
+
   if (locationFilter) {
     quests = quests.filter(q => (q.startLoc || '').startsWith(locationFilter));
   }
@@ -813,6 +1080,20 @@ function renderConfigGroups(dungeon, visibleQuests, container) {
   all.forEach(q => {
     if (rendered.has(q.id)) return;
     if (q.absorbedBy != null) { rendered.add(q.id); return; }
+
+    // Flow chains declared via `flows`: a series-parallel DAG (fork + "complete
+    // all to unlock" convergence) rendered by the dedicated flow renderer. All
+    // members share one flowId; the nested structure lives on dungeon.flows.
+    if (q.flowChain && q.flowId != null) {
+      const members = all.filter(m => m.flowId === q.flowId);
+      members.forEach(m => rendered.add(m.id));
+      if (!members.some(m => visibleIds.has(m.id))) return;
+      const flow = (dungeon.flows || []).find(f => f.id === q.flowId);
+      const el = flow ? buildFlowGroup(flow, members, dungeon)
+                      : buildQuestCard(q, dungeon, null, null);
+      if (el) container.appendChild(el);
+      return;
+    }
 
     // Branching chains declared via `trees`: all members share a chainId and are
     // rendered as a real fork tree (reusing the legacy chain-tree renderer) so a
@@ -1044,11 +1325,16 @@ function buildConfigSeriesGroup(members, dungeon) {
     if (b.type === 'series') b.cards.sort((a, b) => (a.series?.index ?? 0) - (b.series?.index ?? 0));
   });
 
-  // Follow-ups: later non-dungeon members → breadcrumb.
+  // Follow-ups: later non-dungeon members → breadcrumb. Skip any that already
+  // render as a full card in a series block (e.g. an intermediate member that is
+  // both a later step of one dungeon quest and an earlier step of the next).
+  const blockCardIds = new Set(
+    blocks.flatMap(b => (b.type === 'series' ? b.cards.map(c => c.id) : []))
+  );
   const followSeen = new Set();
   const followups = [];
   members.forEach(m => (m.postChain || []).forEach(s => {
-    if (followSeen.has(s.id)) return;
+    if (followSeen.has(s.id) || blockCardIds.has(s.id)) return;
     followSeen.add(s.id);
     followups.push(s);
   }));
@@ -1175,7 +1461,8 @@ function buildChainModel(members) {
 
   const visibleVariants = slot => slot.variants.filter(questPassesFaction);
   const visibleChildren = slot => (childrenOf.get(slot.key) || []).filter(s => visibleVariants(s).length > 0);
-  return { roots, visibleVariants, visibleChildren };
+  const slotOf = qid => slotOfQuest.get(qid);
+  return { roots, visibleVariants, visibleChildren, slotOf };
 }
 
 function buildChainGroup(members, dungeon) {
@@ -1291,10 +1578,13 @@ function buildChainGroup(members, dungeon) {
 // When dungeonCtx is set the wrapper is already vertical (has-prechain mode), so
 // we add connectors between slots. Otherwise we preserve the existing flat layout.
 function appendDungeonSlots(visibleRoots, model, hasBranch, dungeon, container, dungeonCtx, forkHeadsOnly = false) {
-  // Tree chains (forkHeadsOnly) always use the recursive renderer so linear runs
-  // still get vertical "leads to" connectors even without a prechain context.
-  if (hasBranch || forkHeadsOnly) {
-    visibleRoots.forEach(root => renderChainSlot(root, model, dungeon, container, false, true, dungeonCtx, forkHeadsOnly));
+  // Tree chains (forkHeadsOnly) use the dedicated tree renderer: it boxes
+  // consecutive series-runs into "Quest series" groups and renders many→one
+  // convergences (parallel branches all unlocking one follow-up) explicitly.
+  if (forkHeadsOnly) {
+    visibleRoots.forEach(root => renderTreeSpine(root, model, dungeon, container, dungeonCtx, true));
+  } else if (hasBranch) {
+    visibleRoots.forEach(root => renderChainSlot(root, model, dungeon, container, false, true, dungeonCtx, false));
   } else {
     const slots = [];
     let cur = visibleRoots[0];
@@ -1371,16 +1661,246 @@ function renderChainSlot(slot, model, dungeon, container, isBranchChild, isDunge
   }
 }
 
+// Render a `trees`-declared chain as a vertical spine. Consecutive nodes that
+// share a series.id are wrapped in one bordered "Quest series" box (so e.g.
+// 6566→6567→6568→6569→6570 read as one questline); a fork whose branches all
+// lead to the same follow-up renders as parallel "unlocks all" heads that then
+// converge — via a "complete all to unlock" merge connector — on that follow-up.
+function renderTreeSpine(startSlot, model, dungeon, container, dungeonCtx, isDungeonChain = false) {
+  let slot = startSlot;
+  let seriesBox = null;       // currently open .quest-series-group, or null
+  let currentSid = null;
+  let firstEl = true;         // suppress the leading connector
+  let skipConnector = false;  // a convergence connector already bridged the gap
+
+  while (slot) {
+    const variants = model.visibleVariants(slot);
+    if (variants.length === 0) break;
+    const sid = variants[0].series ? variants[0].series.id : null;
+
+    if (sid && sid === currentSid && seriesBox) {
+      // Same series as the open box: connector + card stay inside the box.
+      seriesBox.appendChild(buildFlowConnector(0));
+      seriesBox.appendChild(buildSlotNode(variants, dungeon, isDungeonChain, dungeonCtx));
+    } else {
+      if (!firstEl && !skipConnector) container.appendChild(buildFlowConnector(0));
+      skipConnector = false;
+      if (sid) {
+        seriesBox = document.createElement('div');
+        seriesBox.className = 'quest-series-group';
+        const lbl = document.createElement('div');
+        lbl.className = 'chain-context-label';
+        lbl.textContent = seriesGroupLabel(variants);
+        seriesBox.appendChild(lbl);
+        seriesBox.appendChild(buildSlotNode(variants, dungeon, isDungeonChain, dungeonCtx));
+        container.appendChild(seriesBox);
+        currentSid = sid;
+      } else {
+        seriesBox = null; currentSid = null;
+        container.appendChild(buildSlotNode(variants, dungeon, isDungeonChain, dungeonCtx));
+      }
+    }
+    firstEl = false;
+
+    const kids = model.visibleChildren(slot);
+    if (kids.length === 0) break;
+    if (kids.length === 1) { slot = kids[0]; continue; }
+
+    // ── Fork ──
+    seriesBox = null; currentSid = null;
+    const kidNext = kids.map(k => {
+      const v = model.visibleVariants(k)[0];
+      return v ? v.nextQuestId : null;
+    });
+    const converges = kidNext.every(n => n != null && n === kidNext[0]);
+    const convSlot = converges ? model.slotOf(kidNext[0]) : null;
+
+    container.appendChild(buildFlowConnector(kids.length));
+    const branches = document.createElement('div');
+    branches.className = 'chain-branches';
+    kids.forEach(kid => {
+      const col = document.createElement('div');
+      col.className = 'chain-branch';
+      if (convSlot) {
+        // Converging branches: each is just its head (the shared follow-up is
+        // rendered once, after the merge connector).
+        col.appendChild(buildSlotNode(model.visibleVariants(kid), dungeon, isDungeonChain, dungeonCtx));
+      } else {
+        renderTreeSpine(kid, model, dungeon, col, dungeonCtx, isDungeonChain);
+      }
+      branches.appendChild(col);
+    });
+    container.appendChild(branches);
+
+    if (convSlot) {
+      container.appendChild(buildFlowConnector(kids.length, false,
+        { merge: true, label: 'complete all to unlock' }));
+      skipConnector = true;
+      slot = convSlot;     // continue the spine from the convergence node
+      continue;
+    }
+    break;                 // diverging branches are fully rendered recursively
+  }
+}
+
 // Vertical "leads to" connector between a step and what it unlocks. When the
-// step forks (childCount > 1) it labels the fork so the follow-ups read as a group.
-function buildFlowConnector(childCount, dashed = false) {
+// step forks (childCount > 1) it labels the fork so the follow-ups read as a
+// group. `opts.label` overrides the auto label; `opts.merge` styles it as a
+// many→one join (parallel branches converging on a single follow-up).
+function buildFlowConnector(childCount, dashed = false, opts = {}) {
   const el = document.createElement('div');
-  el.className = 'chain-flow' + (childCount > 1 ? ' split' : '') + (dashed ? ' optional' : '');
-  const label = childCount === 2 ? 'unlocks both' : childCount > 2 ? 'unlocks all' : '';
+  el.className = 'chain-flow' + (childCount > 1 && !opts.merge ? ' split' : '')
+    + (opts.merge ? ' merge' : '') + (dashed ? ' optional' : '');
+  const label = opts.label != null ? opts.label
+    : childCount === 2 ? 'unlocks both' : childCount > 2 ? 'unlocks all' : '';
   el.innerHTML = '<span class="chain-flow-line"></span>' +
     (label ? `<span class="chain-flow-label">${label}</span>` : '') +
     '<span class="chain-flow-arrow">▾</span>';
   return el;
+}
+
+// ═══════════════════════════════════════
+//  FLOW CHAINS (series-parallel DAG)
+// ═══════════════════════════════════════
+// A `flows` chain renders a true fork/convergence dependency graph that the
+// linear series + requires renderers can't express: one quest unlocking several
+// parallel questlines, groups of quests that must ALL be completed to unlock the
+// next (a many→one join), and those joins nesting (the Dreadsteed questline:
+// three relics → Arcanite; then Arcanite + the imp line → Imp Delivery).
+//
+// The structure is a nested tree of nodes:
+//   {type:'leaf', id}                 — one quest card
+//   {type:'series', items:[...]}      — vertical sequence joined by "leads to"
+//   {type:'all', items:[...]}         — parallel branches, complete ALL to unlock
+//   {type:'any', items:[...]}         — parallel branches, complete ONE to unlock
+// A parallel group unlocks whatever follows it in the enclosing series; that is
+// where the "complete all/one to unlock" merge connector is drawn.
+
+function flowEntryCount(node) {
+  if (node.type === 'leaf') return 1;
+  if (node.type === 'series') return flowEntryCount(node.items[0]);
+  return node.items.reduce((s, c) => s + flowEntryCount(c), 0);
+}
+function flowExitCount(node) {
+  if (node.type === 'leaf') return 1;
+  if (node.type === 'series') return flowExitCount(node.items[node.items.length - 1]);
+  return node.items.reduce((s, c) => s + flowExitCount(c), 0);
+}
+
+function buildFlowGroup(flow, members, dungeon) {
+  const byId = {};
+  members.forEach(m => { byId[m.id] = normalizeQuest(m); });
+  // Completing the dungeon quest marks the whole prerequisite graph done.
+  const prereqMembers = members.filter(m => !m.isDungeon).map(normalizeQuest);
+  const ctx = { byId, dungeon, dungeonCtx: { type: 'dungeon', members: prereqMembers } };
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'quest-chain-group has-prechain';
+  const label = document.createElement('div');
+  label.className = 'chain-group-label';
+  label.textContent = 'Quest Chain';
+  wrapper.appendChild(label);
+  renderFlowNode(flow.tree, wrapper, ctx);
+  return wrapper;
+}
+
+function flowCard(id, ctx) {
+  const q = ctx.byId[id];
+  if (!q) return document.createComment('flow: missing quest ' + id);
+  return buildQuestCard(q, ctx.dungeon, null, null, false, q.isDungeon ? ctx.dungeonCtx : null);
+}
+
+function renderFlowNode(node, container, ctx) {
+  if (node.type === 'leaf') {
+    container.appendChild(flowCard(node.id, ctx));
+  } else if (node.type === 'series') {
+    renderFlowSeries(node.items, container, ctx);
+  } else {
+    renderFlowParallel(node, container, ctx);
+  }
+}
+
+// Parallel branches stack vertically inside one dashed "branches" box (matching
+// the existing tree renderer). Each branch is rendered recursively.
+function renderFlowParallel(node, container, ctx) {
+  const branches = document.createElement('div');
+  branches.className = 'chain-branches';
+  node.items.forEach(child => {
+    const col = document.createElement('div');
+    col.className = 'chain-branch';
+    renderFlowNode(child, col, ctx);
+    branches.appendChild(col);
+  });
+  container.appendChild(branches);
+}
+
+// A series lays its items out vertically. Consecutive leaf quests that share a
+// series id are boxed together as a "Quest series" group (with PART x/y badges).
+// Connectors between items express the relationship: a fork connector before a
+// parallel group ("unlocks all/one"), a merge connector after one ("complete
+// all/one to unlock"), or a plain "leads to" arrow between sequential quests.
+function renderFlowSeries(items, container, ctx) {
+  // Group consecutive same-series leaves into runs; parallel blocks and lone
+  // leaves are their own segments.
+  const segs = [];
+  let i = 0;
+  while (i < items.length) {
+    const it = items[i];
+    if (it.type === 'leaf') {
+      const sid = ctx.byId[it.id] && ctx.byId[it.id].series ? ctx.byId[it.id].series.id : null;
+      if (sid) {
+        const run = [it.id];
+        let j = i + 1;
+        while (j < items.length && items[j].type === 'leaf'
+               && ctx.byId[items[j].id] && ctx.byId[items[j].id].series
+               && ctx.byId[items[j].id].series.id === sid) {
+          run.push(items[j].id); j++;
+        }
+        if (run.length >= 2) { segs.push({ kind: 'seriesRun', ids: run }); i = j; continue; }
+      }
+      segs.push({ kind: 'leaf', id: it.id }); i++;
+    } else {
+      segs.push({ kind: 'parallel', node: it }); i++;
+    }
+  }
+
+  const anyLabel = (n, fork) => n.label
+    || (n.type === 'any'
+        ? (fork ? 'unlocks one' : 'complete one to unlock')
+        : (fork ? (flowEntryCount(n) > 2 ? 'unlocks all' : 'unlocks both')
+                : (flowExitCount(n) > 2 ? 'complete all to unlock' : 'complete both to unlock')));
+
+  segs.forEach((seg, k) => {
+    if (k > 0) {
+      const prev = segs[k - 1];
+      if (prev.kind === 'parallel') {
+        container.appendChild(buildFlowConnector(flowExitCount(prev.node), false,
+          { merge: true, label: anyLabel(prev.node, false) }));
+      } else if (seg.kind === 'parallel') {
+        container.appendChild(buildFlowConnector(flowEntryCount(seg.node), false,
+          { label: anyLabel(seg.node, true) }));
+      } else {
+        container.appendChild(buildFlowConnector(0));
+      }
+    }
+    if (seg.kind === 'seriesRun') {
+      const box = document.createElement('div');
+      box.className = 'quest-series-group';
+      const lbl = document.createElement('div');
+      lbl.className = 'chain-context-label';
+      lbl.textContent = seriesGroupLabel(seg.ids.map(id => ctx.byId[id]));
+      box.appendChild(lbl);
+      seg.ids.forEach((id, idx) => {
+        if (idx > 0) box.appendChild(buildFlowConnector(0));
+        box.appendChild(flowCard(id, ctx));
+      });
+      container.appendChild(box);
+    } else if (seg.kind === 'leaf') {
+      container.appendChild(flowCard(seg.id, ctx));
+    } else {
+      renderFlowParallel(seg.node, container, ctx);
+    }
+  });
 }
 
 // Optional prerequisites: quests that feed into the dungeon quest but are not
