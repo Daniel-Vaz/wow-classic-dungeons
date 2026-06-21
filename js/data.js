@@ -33967,8 +33967,8 @@ const DUNGEONS = [
         "prequestLink": "",
         "prevQuestId": 6501,
         "nextQuestId": null,
-        "chainId": "ubrs-4322-jail-break",
-        "chainDepth": 4,
+        "chainId": "ubrs-6403-the-great-masquerade",
+        "chainDepth": 2,
         "startNpc": "Haleh",
         "startNpcLink": "https://www.wowhead.com/classic/npc=10929/haleh",
         "startObject": "",
@@ -34769,7 +34769,7 @@ const DUNGEONS = [
             "series": {
               "id": "ubrs-4322-jail-break",
               "index": 1,
-              "total": 5,
+              "total": 2,
               "name": "Jail Break!"
             },
             "requires": [
@@ -34831,11 +34831,11 @@ const DUNGEONS = [
             "preChain": [],
             "postChain": [],
             "absorbedBy": null,
-            "relation": "series",
+            "relation": "requires",
             "series": {
               "id": "ubrs-4322-jail-break",
               "index": 2,
-              "total": 5,
+              "total": 2,
               "name": "Jail Break!"
             }
           },
@@ -34893,11 +34893,17 @@ const DUNGEONS = [
             "absorbedBy": null,
             "relation": "series",
             "series": {
-              "id": "ubrs-4322-jail-break",
-              "index": 3,
-              "total": 5,
-              "name": "Jail Break!"
-            }
+              "id": "ubrs-6403-the-great-masquerade",
+              "index": 1,
+              "total": 3,
+              "name": "The Great Masquerade"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 6402
+              }
+            ]
           },
           {
             "id": 6501,
@@ -34953,10 +34959,10 @@ const DUNGEONS = [
             "absorbedBy": null,
             "relation": "series",
             "series": {
-              "id": "ubrs-4322-jail-break",
-              "index": 4,
-              "total": 5,
-              "name": "Jail Break!"
+              "id": "ubrs-6403-the-great-masquerade",
+              "index": 2,
+              "total": 3,
+              "name": "The Great Masquerade"
             }
           }
         ],
@@ -34964,10 +34970,10 @@ const DUNGEONS = [
         "absorbedBy": null,
         "isDungeon": true,
         "series": {
-          "id": "ubrs-4322-jail-break",
-          "index": 5,
-          "total": 5,
-          "name": "Jail Break!"
+          "id": "ubrs-6403-the-great-masquerade",
+          "index": 3,
+          "total": 3,
+          "name": "The Great Masquerade"
         }
       },
       {
