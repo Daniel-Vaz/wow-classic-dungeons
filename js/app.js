@@ -872,6 +872,55 @@ function renderSidebar(dungeon) {
 }
 
 // ═══════════════════════════════════════
+//  ENCOUNTER HOVER PREVIEW
+// ═══════════════════════════════════════
+let encounterPreviewEl = null;
+
+function getEncounterPreview() {
+  if (encounterPreviewEl) return encounterPreviewEl;
+  const el = document.createElement('div');
+  el.className = 'encounter-preview';
+  el.innerHTML = '<img alt=""><div class="encounter-preview-name"></div>';
+  document.body.appendChild(el);
+  encounterPreviewEl = el;
+  return el;
+}
+
+function positionEncounterPreview(el, anchor) {
+  const rect = anchor.getBoundingClientRect();
+  const pw = el.offsetWidth;
+  const ph = el.offsetHeight;
+  const gap = 12;
+  // Prefer placing the preview to the left of the sidebar item; fall back to
+  // the right if there isn't room.
+  let left = rect.left - pw - gap;
+  if (left < gap) left = rect.right + gap;
+  let top = rect.top + rect.height / 2 - ph / 2;
+  top = Math.max(gap, Math.min(top, window.innerHeight - ph - gap));
+  el.style.left = `${left}px`;
+  el.style.top = `${top}px`;
+}
+
+// Show a small floating model preview when hovering an encounter, so users can
+// match a boss name to its appearance without opening the full modal.
+function attachEncounterPreview(item, name, npcId) {
+  item.addEventListener('mouseenter', () => {
+    const el = getEncounterPreview();
+    const img = el.querySelector('img');
+    el.querySelector('.encounter-preview-name').textContent = name;
+    img.onload = () => {
+      positionEncounterPreview(el, item);
+      el.classList.add('visible');
+    };
+    img.onerror = () => { el.classList.remove('visible'); };
+    img.src = `assets/npc-models/${npcId}.jpg`;
+  });
+  item.addEventListener('mouseleave', () => {
+    if (encounterPreviewEl) encounterPreviewEl.classList.remove('visible');
+  });
+}
+
+// ═══════════════════════════════════════
 //  ENCOUNTER LIST
 // ═══════════════════════════════════════
 function renderEncounterList(dungeon) {
@@ -910,6 +959,7 @@ function renderEncounterList(dungeon) {
         bossItem.className = 'encounter-item encounter-event-boss has-model';
         bossItem.innerHTML = `<span class="encounter-skull">☠</span><span class="encounter-name">${boss.name}</span>`;
         bossItem.addEventListener('click', () => openEncounterModal(boss.name, boss.npcId));
+        attachEncounterPreview(bossItem, boss.name, boss.npcId);
         bossGroup.appendChild(bossItem);
       });
 
@@ -925,6 +975,7 @@ function renderEncounterList(dungeon) {
     item.innerHTML = nameHtml;
     if (entry.npcId) {
       item.addEventListener('click', () => openEncounterModal(entry.name, entry.npcId));
+      attachEncounterPreview(item, entry.name, entry.npcId);
     }
     list.appendChild(item);
   });

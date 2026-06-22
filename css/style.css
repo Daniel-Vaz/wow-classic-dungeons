@@ -2902,6 +2902,42 @@ button.guides-box-link {
   font-style: italic;
 }
 
+/* ── ENCOUNTER HOVER PREVIEW ── */
+.encounter-preview {
+  position: fixed;
+  z-index: 1200;
+  width: 200px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px) scale(0.96);
+  transition: opacity 0.14s ease, transform 0.14s ease;
+  border: 1px solid var(--border-gold);
+  border-radius: 4px;
+  background: #06060a;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+.encounter-preview.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.encounter-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.encounter-preview-name {
+  padding: 5px 8px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--gold-light);
+  text-align: center;
+  border-top: 1px solid var(--border);
+  background: rgba(200,168,75,0.05);
+}
+
 /* ── LOADING SCREEN LIGHTBOX ── */
 .ls-lightbox {
   display: none;
