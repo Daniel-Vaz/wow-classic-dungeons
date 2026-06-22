@@ -1032,7 +1032,12 @@ function attachEncounterPreview(item, name, npcId) {
     img.src = `assets/npc-models/${npcId}.jpg`;
   });
   item.addEventListener('mouseleave', () => {
-    if (encounterPreviewEl) encounterPreviewEl.classList.remove('visible');
+    if (encounterPreviewEl) {
+      encounterPreviewEl.classList.remove('visible');
+      const img = encounterPreviewEl.querySelector('img');
+      img.onload = null;
+      img.src = '';
+    }
   });
 }
 
