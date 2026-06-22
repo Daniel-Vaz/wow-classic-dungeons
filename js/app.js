@@ -874,27 +874,20 @@ function renderSidebar(dungeon) {
 // ═══════════════════════════════════════
 //  ENCOUNTER FACE AVATAR
 // ═══════════════════════════════════════
-// Keep in sync with .encounter-avatar width/height in style.css.
-const ENCOUNTER_AVATAR_PX = 28;
-const NPC_MODEL_W = 960, NPC_MODEL_H = 653;
-
-// Circular face crop for an encounter. NPC_FOCAL[npcId] = [cx, cy, r] is the
-// head circle (normalized to the model render); we scale the full image so that
-// circle fills the avatar and center it via background-position. Falls back to
-// the skull glyph when there's no model or focal data.
+// Circular face crop for an encounter. All faces live in ONE sprite atlas
+// (assets/npc-faces.webp, built by scraper/detect_heads.py); we show one by
+// offsetting background-position into the grid. This makes the whole encounter
+// list cost a single image request/decode total (Firefox choked on one request
+// per avatar). NPC_FACE.index is the source of truth for which NPCs have a
+// face; otherwise fall back to the skull glyph.
 function encounterIconHtml(npcId, fallbackIcon) {
-  const f = (npcId != null && typeof NPC_FOCAL !== 'undefined') ? NPC_FOCAL[String(npcId)] : null;
-  if (!f) return `<span class="encounter-skull">${fallbackIcon}</span>`;
-  const D = ENCOUNTER_AVATAR_PX;
-  const [cx, cy, r] = f;
-  const bgW = D / (2 * r);                 // scaled full-image width so head ø = D
-  const bgH = bgW * (NPC_MODEL_H / NPC_MODEL_W);
-  const posX = D / 2 - cx * bgW;
-  const posY = D / 2 - cy * bgH;
-  return `<span class="encounter-avatar" style="` +
-    `background-image:url('assets/npc-models/${npcId}.jpg');` +
-    `background-size:${bgW.toFixed(1)}px ${bgH.toFixed(1)}px;` +
-    `background-position:${posX.toFixed(1)}px ${posY.toFixed(1)}px"></span>`;
+  const idx = (npcId != null && typeof NPC_FACE !== 'undefined') ? NPC_FACE.index[String(npcId)] : undefined;
+  if (idx == null) return `<span class="encounter-skull">${fallbackIcon}</span>`;
+  const cell = NPC_FACE.cell;
+  const x = (idx % NPC_FACE.cols) * cell;
+  const y = Math.floor(idx / NPC_FACE.cols) * cell;
+  return `<span class="encounter-avatar" ` +
+    `style="background-position:-${x}px -${y}px;background-size:${NPC_FACE.cols * cell}px auto"></span>`;
 }
 
 // ═══════════════════════════════════════

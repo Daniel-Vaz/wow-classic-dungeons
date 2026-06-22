@@ -2838,9 +2838,9 @@ button.guides-box-link {
   opacity: 1;
   color: var(--gold-dim);
 }
-/* Circular face crop of the model, in place of the skull glyph. Background
-   size/position are set inline from NPC_FOCAL (see encounterIconHtml).
-   Keep width/height in sync with ENCOUNTER_AVATAR_PX in app.js. */
+/* Circular face crop of the model, in place of the skull glyph. The image is a
+   single shared sprite atlas; the cell is selected via background-position set
+   inline (see encounterIconHtml). Keep 28px in sync with NPC_FACE.cell. */
 .encounter-avatar {
   width: 28px;
   height: 28px;
@@ -2848,6 +2848,7 @@ button.guides-box-link {
   border-radius: 50%;
   background-color: #06060a;
   background-repeat: no-repeat;
+  background-image: url('../assets/npc-faces.webp');
   border: 1px solid var(--border-gold);
   transition: border-color 0.15s, box-shadow 0.15s;
 }
