@@ -872,6 +872,32 @@ function renderSidebar(dungeon) {
 }
 
 // ═══════════════════════════════════════
+//  ENCOUNTER FACE AVATAR
+// ═══════════════════════════════════════
+// Keep in sync with .encounter-avatar width/height in style.css.
+const ENCOUNTER_AVATAR_PX = 28;
+const NPC_MODEL_W = 960, NPC_MODEL_H = 653;
+
+// Circular face crop for an encounter. NPC_FOCAL[npcId] = [cx, cy, r] is the
+// head circle (normalized to the model render); we scale the full image so that
+// circle fills the avatar and center it via background-position. Falls back to
+// the skull glyph when there's no model or focal data.
+function encounterIconHtml(npcId, fallbackIcon) {
+  const f = (npcId != null && typeof NPC_FOCAL !== 'undefined') ? NPC_FOCAL[String(npcId)] : null;
+  if (!f) return `<span class="encounter-skull">${fallbackIcon}</span>`;
+  const D = ENCOUNTER_AVATAR_PX;
+  const [cx, cy, r] = f;
+  const bgW = D / (2 * r);                 // scaled full-image width so head ø = D
+  const bgH = bgW * (NPC_MODEL_H / NPC_MODEL_W);
+  const posX = D / 2 - cx * bgW;
+  const posY = D / 2 - cy * bgH;
+  return `<span class="encounter-avatar" style="` +
+    `background-image:url('assets/npc-models/${npcId}.jpg');` +
+    `background-size:${bgW.toFixed(1)}px ${bgH.toFixed(1)}px;` +
+    `background-position:${posX.toFixed(1)}px ${posY.toFixed(1)}px"></span>`;
+}
+
+// ═══════════════════════════════════════
 //  ENCOUNTER HOVER PREVIEW
 // ═══════════════════════════════════════
 let encounterPreviewEl = null;
@@ -957,7 +983,7 @@ function renderEncounterList(dungeon) {
       (entry.bosses || []).forEach(boss => {
         const bossItem = document.createElement('div');
         bossItem.className = 'encounter-item encounter-event-boss has-model';
-        bossItem.innerHTML = `<span class="encounter-skull">☠</span><span class="encounter-name">${boss.name}</span>`;
+        bossItem.innerHTML = `${encounterIconHtml(boss.npcId, '☠')}<span class="encounter-name">${boss.name}</span>`;
         bossItem.addEventListener('click', () => openEncounterModal(boss.name, boss.npcId));
         attachEncounterPreview(bossItem, boss.name, boss.npcId);
         bossGroup.appendChild(bossItem);
@@ -969,7 +995,7 @@ function renderEncounterList(dungeon) {
     }
     const rareBadge = entry.rare ? '<span class="encounter-rare-badge">Rare</span>' : '';
     const icon = entry.rare ? '✧' : (entry.npcId ? '☠' : '⚔');
-    const nameHtml = `<span class="encounter-skull">${icon}</span><span class="encounter-name">${entry.name}</span>${rareBadge}`;
+    const nameHtml = `${encounterIconHtml(entry.npcId, icon)}<span class="encounter-name">${entry.name}</span>${rareBadge}`;
     const item = document.createElement('div');
     item.className = 'encounter-item' + (entry.rare ? ' encounter-rare' : '') + (entry.npcId ? ' has-model' : '');
     item.innerHTML = nameHtml;

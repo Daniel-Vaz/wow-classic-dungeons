@@ -2838,6 +2838,23 @@ button.guides-box-link {
   opacity: 1;
   color: var(--gold-dim);
 }
+/* Circular face crop of the model, in place of the skull glyph. Background
+   size/position are set inline from NPC_FOCAL (see encounterIconHtml).
+   Keep width/height in sync with ENCOUNTER_AVATAR_PX in app.js. */
+.encounter-avatar {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #06060a;
+  background-repeat: no-repeat;
+  border: 1px solid var(--border-gold);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.encounter-item:hover .encounter-avatar {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(200, 168, 75, 0.15);
+}
 .encounter-name { flex: 1; }
 .encounter-rare .encounter-name { color: var(--text-dim); }
 .encounter-rare .encounter-skull { color: var(--gold-dim); }
