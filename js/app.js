@@ -122,6 +122,68 @@ function renderGiverList(givers) {
 }
 
 // ═══════════════════════════════════════
+//  URL / DEEPLINK HELPERS
+// ═══════════════════════════════════════
+function updateUrl() {
+  const params = new URLSearchParams();
+  params.set('dungeon', currentDungeonId);
+  if (classFilter) params.set('class', classFilter.toLowerCase());
+  if (factionFilter) params.set('faction', factionFilter.toLowerCase());
+  history.replaceState(null, '', '?' + params.toString());
+}
+
+function readUrlParams() {
+  const params = new URLSearchParams(location.search);
+  const dungeon = params.get('dungeon');
+  if (dungeon && DUNGEONS.some(d => d.id === dungeon)) currentDungeonId = dungeon;
+  const cls = params.get('class');
+  if (cls) {
+    const normalized = cls.charAt(0).toUpperCase() + cls.slice(1).toLowerCase();
+    const validClasses = ['Warrior', 'Paladin', 'Hunter', 'Rogue', 'Priest', 'Shaman', 'Mage', 'Warlock', 'Druid'];
+    if (validClasses.includes(normalized)) classFilter = normalized;
+  }
+  const faction = params.get('faction');
+  if (faction) {
+    const normalized = faction.charAt(0).toUpperCase() + faction.slice(1).toLowerCase();
+    if (normalized === 'Alliance' || normalized === 'Horde') factionFilter = normalized;
+  }
+}
+
+function syncClassOptionsToFaction() {
+  let reset = false;
+  document.querySelectorAll('.class-filter-option[data-faction]').forEach(opt => {
+    const incompatible = factionFilter && opt.dataset.faction !== factionFilter;
+    opt.hidden = incompatible;
+    if (incompatible && opt.dataset.class === classFilter) reset = true;
+  });
+  if (reset) {
+    classFilter = null;
+    document.querySelectorAll('.class-filter-option').forEach(o => o.classList.remove('active'));
+    const allOpt = document.querySelector('.class-filter-option[data-class="all"]');
+    if (allOpt) allOpt.classList.add('active');
+    document.getElementById('classFilterSelected').textContent = 'All Classes';
+  }
+}
+
+function syncFiltersToUI() {
+  document.querySelectorAll('.faction-btn').forEach(b => {
+    const f = b.dataset.faction;
+    b.classList.toggle('active', factionFilter === null ? f === 'all' : factionFilter === f);
+  });
+  document.querySelectorAll('.class-filter-option').forEach(o => {
+    o.classList.toggle('active', classFilter === null ? o.dataset.class === 'all' : o.dataset.class === classFilter);
+  });
+  const selectedEl = document.getElementById('classFilterSelected');
+  if (classFilter) {
+    const slug = classFilter.toLowerCase();
+    selectedEl.innerHTML = `<img class="class-icon" src="assets/icons/classicon_${slug}.jpg" alt="">${classFilter}`;
+  } else {
+    selectedEl.textContent = 'All Classes';
+  }
+  syncClassOptionsToFaction();
+}
+
+// ═══════════════════════════════════════
 //  INIT
 // ═══════════════════════════════════════
 function initScrollLogo() {
@@ -173,10 +235,12 @@ function initDungeonDock() {
 }
 
 function init() {
+  readUrlParams();
   buildDungeonTabs();
   buildDungeonFilterPanel();
   updateTabCompletionBadges();
   bindControls();
+  syncFiltersToUI();
   initSidebarCollapse();
   initMapModal();
   initLoadingScreenLightbox();
@@ -186,7 +250,7 @@ function init() {
   initDungeonDock();
   initControlsHeightObserver();
   initLogoCinematic();
-  selectDungeon('rfc');
+  selectDungeon(currentDungeonId);
 }
 
 // ═══════════════════════════════════════
@@ -502,6 +566,7 @@ function selectDungeon(id) {
   renderDungeonHeader(dungeon);
   renderSidebar(dungeon);
   renderQuests();
+  updateUrl();
 }
 
 // ═══════════════════════════════════════
@@ -2556,25 +2621,6 @@ function bindControls() {
     renderQuests();
   });
 
-  // Some classes are faction-restricted (Paladin = Alliance, Shaman = Horde).
-  // Hide the incompatible class options when a faction is selected, and reset
-  // the class filter if the currently selected class no longer fits.
-  function syncClassOptionsToFaction() {
-    let reset = false;
-    document.querySelectorAll('.class-filter-option[data-faction]').forEach(opt => {
-      const incompatible = factionFilter && opt.dataset.faction !== factionFilter;
-      opt.hidden = incompatible;
-      if (incompatible && opt.dataset.class === classFilter) reset = true;
-    });
-    if (reset) {
-      classFilter = null;
-      document.querySelectorAll('.class-filter-option').forEach(o => o.classList.remove('active'));
-      const allOpt = document.querySelector('.class-filter-option[data-class="all"]');
-      if (allOpt) allOpt.classList.add('active');
-      document.getElementById('classFilterSelected').textContent = 'All Classes';
-    }
-  }
-
   document.getElementById('factionGroup').addEventListener('click', e => {
     const btn = e.target.closest('.faction-btn');
     if (!btn) return;
@@ -2587,6 +2633,7 @@ function bindControls() {
     const cur = DUNGEONS.find(d => d.id === currentDungeonId);
     if (cur) renderDungeonHeader(cur);
     renderQuests();
+    updateUrl();
   });
 
   const classFilterEl = document.getElementById('classFilter');
@@ -2618,6 +2665,7 @@ function bindControls() {
     const cur = DUNGEONS.find(d => d.id === currentDungeonId);
     if (cur) renderDungeonHeader(cur);
     renderQuests();
+    updateUrl();
   });
 
   document.addEventListener('click', e => {
