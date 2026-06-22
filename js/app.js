@@ -1,6 +1,7 @@
 // ═══════════════════════════════════════
 //  STATE
 // ═══════════════════════════════════════
+const PREFS_KEY = 'wow_prefs';
 let currentDungeonId = 'rfc';
 let currentFilter = 'all';
 let hasGearOnly = false;
@@ -184,6 +185,35 @@ function syncFiltersToUI() {
 }
 
 // ═══════════════════════════════════════
+//  PREFERENCES
+// ═══════════════════════════════════════
+function loadPrefs() {
+  try {
+    const prefs = JSON.parse(localStorage.getItem(PREFS_KEY) || 'null');
+    if (!prefs) return;
+    if (prefs.view === 'list' || prefs.view === 'grid') currentView = prefs.view;
+    if (['all', 'completed', 'incomplete'].includes(prefs.filter)) currentFilter = prefs.filter;
+    if (typeof prefs.hasGearOnly === 'boolean') hasGearOnly = prefs.hasGearOnly;
+  } catch (_) {}
+}
+
+function savePrefs() {
+  localStorage.setItem(PREFS_KEY, JSON.stringify({ view: currentView, filter: currentFilter, hasGearOnly }));
+}
+
+function syncPrefsToUI() {
+  document.getElementById('gridViewBtn').classList.toggle('active', currentView === 'grid');
+  document.getElementById('listViewBtn').classList.toggle('active', currentView === 'list');
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    if (btn.dataset.filter === 'has-gear') {
+      btn.classList.toggle('active', hasGearOnly);
+    } else {
+      btn.classList.toggle('active', btn.dataset.filter === currentFilter);
+    }
+  });
+}
+
+// ═══════════════════════════════════════
 //  INIT
 // ═══════════════════════════════════════
 function initScrollLogo() {
@@ -235,12 +265,14 @@ function initDungeonDock() {
 }
 
 function init() {
+  loadPrefs();
   readUrlParams();
   buildDungeonTabs();
   buildDungeonFilterPanel();
   updateTabCompletionBadges();
   bindControls();
   syncFiltersToUI();
+  syncPrefsToUI();
   initSidebarCollapse();
   initMapModal();
   initLoadingScreenLightbox();
@@ -2619,6 +2651,7 @@ function bindControls() {
       btn.classList.add('active');
     }
     renderQuests();
+    savePrefs();
   });
 
   document.getElementById('factionGroup').addEventListener('click', e => {
@@ -2705,6 +2738,7 @@ function bindControls() {
     document.getElementById('gridViewBtn').classList.add('active');
     document.getElementById('listViewBtn').classList.remove('active');
     renderQuests();
+    savePrefs();
   });
 
   document.getElementById('listViewBtn').addEventListener('click', () => {
@@ -2712,6 +2746,7 @@ function bindControls() {
     document.getElementById('listViewBtn').classList.add('active');
     document.getElementById('gridViewBtn').classList.remove('active');
     renderQuests();
+    savePrefs();
   });
 }
 
