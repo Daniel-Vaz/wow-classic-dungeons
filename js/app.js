@@ -2374,7 +2374,7 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
   const classBadgeHtml = quest.requiredClasses && quest.requiredClasses.length > 0
     ? quest.requiredClasses.map(cls => {
         const slug = cls.toLowerCase();
-        return `<div class="class-badge class-${slug}"><img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_${slug}.jpg" alt="${cls}">${cls}</div>`;
+        return `<div class="class-badge class-${slug}"><img class="class-icon" src="assets/icons/classicon_${slug}.jpg" alt="${cls}">${cls}</div>`;
       }).join('')
     : '';
 
@@ -2611,7 +2611,7 @@ function bindControls() {
     const selectedEl = document.getElementById('classFilterSelected');
     if (classFilter) {
       const slug = classFilter.toLowerCase();
-      selectedEl.innerHTML = `<img class="class-icon" src="https://wow.zamimg.com/images/wow/icons/small/classicon_${slug}.jpg" alt="">${classFilter}`;
+      selectedEl.innerHTML = `<img class="class-icon" src="assets/icons/classicon_${slug}.jpg" alt="">${classFilter}`;
     } else {
       selectedEl.textContent = 'All Classes';
     }
