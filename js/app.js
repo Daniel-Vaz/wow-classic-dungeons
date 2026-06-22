@@ -2420,7 +2420,7 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
 
   card.innerHTML = `
     <div class="quest-card-header">
-      <div class="quest-checkbox">${isComplete ? '✓' : ''}</div>
+      <div class="quest-checkbox" data-key="${key}" title="${isComplete ? 'Mark incomplete' : 'Mark complete'}">${isComplete ? '✓' : ''}</div>
       <div class="quest-name">
         ${quest.questLink
           ? `<a href="${quest.questLink}" target="_blank" rel="noopener noreferrer" class="quest-name-link">${quest.name}</a>`
@@ -2452,26 +2452,33 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
   // Toggle expand in list view
   card.addEventListener('click', e => {
     if (e.target.classList.contains('complete-btn')) return;
+    if (e.target.classList.contains('quest-checkbox')) return;
     if (e.target.tagName === 'A') return;
     if (currentView === 'list') card.classList.toggle('expanded');
+  });
+
+  function toggleQuestComplete() {
+    const wasCompleted = !!completed[key];
+    completed[key] = !wasCompleted;
+    if (!completed[key]) delete completed[key];
+    applyChainCascade(quest, dungeon, cascadeCtx, wasCompleted);
+    localStorage.setItem('wow_completed', JSON.stringify(completed));
+    renderDungeonHeader(DUNGEONS.find(d => d.id === currentDungeonId));
+    renderQuests();
+  }
+
+  // Checkbox click
+  const checkbox = card.querySelector('.quest-checkbox');
+  checkbox.addEventListener('click', e => {
+    e.stopPropagation();
+    toggleQuestComplete();
   });
 
   // Complete button
   const btn = card.querySelector('.complete-btn');
   btn.addEventListener('click', e => {
     e.stopPropagation();
-    const wasCompleted = !!completed[key];
-    completed[key] = !wasCompleted;
-    if (!completed[key]) delete completed[key];
-
-    // Cascade across the whole chain's prerequisite graph: completing a quest
-    // marks every prerequisite leading to it (across all series, gates and
-    // parallel branches); un-completing it clears everything that depended on it.
-    applyChainCascade(quest, dungeon, cascadeCtx, wasCompleted);
-
-    localStorage.setItem('wow_completed', JSON.stringify(completed));
-    renderDungeonHeader(DUNGEONS.find(d => d.id === currentDungeonId));
-    renderQuests();
+    toggleQuestComplete();
   });
 
   return card;

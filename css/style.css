@@ -447,6 +447,24 @@ body.scrolled .search-row .controls-logo {
   padding: 24px 20px;
 }
 
+.site-footer {
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 0.8rem;
+  color: #8a8a8a;
+  border-top: 1px solid #2a2a2a;
+  margin-top: 32px;
+}
+
+.site-footer a {
+  color: #c8a84b;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
 /* ── DUNGEON HEADER ── */
 .dungeon-header {
   display: flex;
@@ -694,10 +712,20 @@ body.scrolled .search-row .controls-logo {
   font-size: 0.65rem;
   color: var(--gold);
   transition: all 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+.quest-checkbox:hover {
+  border-color: var(--gold);
+  background: rgba(200,168,75,0.12);
 }
 .quest-card.completed .quest-checkbox {
   background: var(--gold-dim);
   border-color: var(--gold);
+}
+.quest-card.completed .quest-checkbox:hover {
+  background: rgba(200,168,75,0.2);
+  border-color: var(--gold-light);
 }
 .quest-name {
   font-family: 'Cinzel', serif;
@@ -826,23 +854,31 @@ body.scrolled .search-row .controls-logo {
   font-family: 'Cinzel', serif;
   font-size: 0.65rem;
   letter-spacing: 0.06em;
-  padding: 4px 10px;
-  background: transparent;
-  border: 1px solid var(--border-gold);
+  padding: 4px 12px;
+  background: rgba(200,168,75,0.1);
+  border: 1px solid var(--gold-dim);
   border-radius: 2px;
-  color: var(--text-dim);
+  color: var(--gold);
   cursor: pointer;
   transition: all 0.2s;
   margin-left: auto;
+  font-weight: 600;
 }
 .complete-btn:hover {
-  border-color: var(--gold);
+  border-color: var(--gold-light);
   color: var(--gold-light);
-  background: rgba(200,168,75,0.08);
+  background: rgba(200,168,75,0.2);
+  box-shadow: 0 0 6px rgba(200,168,75,0.2);
 }
 .quest-card.completed .complete-btn {
+  background: rgba(200,168,75,0.06);
+  border-color: var(--border-gold);
+  color: var(--text-dim);
+}
+.quest-card.completed .complete-btn:hover {
   border-color: var(--gold-dim);
-  color: var(--gold-dim);
+  color: var(--gold);
+  background: rgba(200,168,75,0.12);
 }
 
 /* ── QUEST NAME AS WOWHEAD LINK ── */
