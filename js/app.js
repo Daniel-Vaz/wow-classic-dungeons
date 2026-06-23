@@ -101,16 +101,58 @@ function buildLocationLink(name) {
   return `<span class="location-link" data-location="${name}" title="View map">${name}</span>`;
 }
 
+// Resolve a predefined-pin entry (curated MAP_PINS or generated QUEST_PINS) for
+// a location, by location name or its zone ID — mirrors renderMapPins's lookup.
+function resolveSystemPinEntry(source, location) {
+  const zoneId = ZONE_IDS[location];
+  return source[location] || (zoneId && source[zoneId]) || null;
+}
+
+// Find the predefined pin (and its map level) matching a giver name in a zone.
+// Returns { pin, levelIndex } or null. Used to decide whether a quest-giver
+// name should act as a map link, and where to focus when it is clicked.
+function questPinFor(location, label) {
+  if (!location || !label) return null;
+  const want = label.trim().toLowerCase();
+  const sources = [typeof QUEST_PINS !== 'undefined' ? QUEST_PINS : null, MAP_PINS];
+  for (const source of sources) {
+    if (!source) continue;
+    const entry = resolveSystemPinEntry(source, location);
+    if (!entry) continue;
+    const levels = Array.isArray(entry[0]) ? entry : [entry];
+    for (let lvl = 0; lvl < levels.length; lvl++) {
+      const hit = (levels[lvl] || []).find(p => (p.label || '').trim().toLowerCase() === want);
+      if (hit) return { pin: hit, levelIndex: lvl };
+    }
+  }
+  return null;
+}
+
+// Render a quest-giver name. When the giver (an NPC or object) has a predefined
+// map pin, the name becomes a clickable map link that opens the map popout and
+// focuses that pin; its Wowhead URL is surfaced inside the popout. Otherwise it
+// falls back to a plain Wowhead anchor.
+function buildGiverNameHtml(name, link, type, loc) {
+  if (!name) return '';
+  const isMappable = (type === 'npc' || type === 'object');
+  if (isMappable && questPinFor(loc, name)) {
+    const cls = type === 'object' ? 'npc-link object-link map-npc-link' : 'npc-link map-npc-link';
+    return `<span class="${cls}" data-location="${escapeHtml(loc)}" data-pin-label="${escapeHtml(name)}"`
+      + ` title="Show on map">${escapeHtml(name)}</span>`;
+  }
+  const cls = type === 'object' ? 'object-link' : 'npc-link';
+  return link
+    ? `<a href="${link}" target="_blank" rel="noopener noreferrer" class="${cls}">${escapeHtml(name)}</a>`
+    : escapeHtml(name);
+}
+
 // Render a list of quest givers (start or turn-in NPCs/objects). Used when a
 // quest has more than one giver, e.g. a class quest offered by every city's
 // trainer. Each giver may carry a faction so it can be tagged Alliance/Horde,
 // and its own location so each giver shows where to find it.
 function renderGiverList(givers) {
   return `<span class="npc-multi">${givers.map(g => {
-    const cls = g.type === 'object' ? 'object-link' : 'npc-link';
-    const inner = g.link
-      ? `<a href="${g.link}" target="_blank" rel="noopener noreferrer" class="${cls}">${g.name}</a>`
-      : g.name;
+    const inner = buildGiverNameHtml(g.name, g.link, g.type, g.loc);
     let mark = '';
     if (g.faction === 'Alliance') {
       mark = '<span class="faction-dot faction-alliance" title="Alliance only"></span>';
@@ -2482,11 +2524,11 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
   if (startIsMulti) {
     startNpcHtml = renderGiverList(quest.startNpcs);
   } else if (quest.startNpcLink) {
-    startNpcHtml = `<a href="${quest.startNpcLink}" target="_blank" rel="noopener noreferrer" class="npc-link">${quest.startNpc}</a>`;
+    startNpcHtml = buildGiverNameHtml(quest.startNpc, quest.startNpcLink, 'npc', quest.startLoc);
   } else if (quest.startNpc) {
     startNpcHtml = quest.startNpc;
   } else if (quest.startObjectLink) {
-    startNpcHtml = `<a href="${quest.startObjectLink}" target="_blank" rel="noopener noreferrer" class="object-link">${quest.startObject}</a>`;
+    startNpcHtml = buildGiverNameHtml(quest.startObject, quest.startObjectLink, 'object', quest.startLoc);
   } else if (quest.startObject) {
     startNpcHtml = quest.startObject;
   } else if (quest.startItemLink) {
@@ -2503,11 +2545,11 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
   if (endIsMulti) {
     endNpcHtml = renderGiverList(quest.endNpcs);
   } else if (quest.endNpcLink) {
-    endNpcHtml = `<a href="${quest.endNpcLink}" target="_blank" rel="noopener noreferrer" class="npc-link">${quest.endNpc}</a>`;
+    endNpcHtml = buildGiverNameHtml(quest.endNpc, quest.endNpcLink, 'npc', quest.endLoc);
   } else if (quest.endNpc) {
     endNpcHtml = quest.endNpc;
   } else if (quest.endObjectLink) {
-    endNpcHtml = `<a href="${quest.endObjectLink}" target="_blank" rel="noopener noreferrer" class="object-link">${quest.endObject}</a>`;
+    endNpcHtml = buildGiverNameHtml(quest.endObject, quest.endObjectLink, 'object', quest.endLoc);
   } else {
     endNpcHtml = quest.endObject || '—';
   }
@@ -2767,6 +2809,8 @@ let mapCurrentLocation = null;
 let mapCurrentLevelIndex = 0;
 let mapUserPins = [];
 let mapEditingPinId = null;
+let mapPendingFocus = null; // { label } — pin to centre on once the map image loads
+let mapPinListExpanded = new Set(); // pin-list section types the user has expanded (collapsed by default)
 let mapMouseDownX = 0, mapMouseDownY = 0, mapWasDragged = false;
 let pinPanelManualState = null; // null = follow screen size; true/false = user's explicit choice this session
 let resizeDebounceTimer = null;
@@ -2806,6 +2850,7 @@ function loadMapImage(src) {
     img.classList.remove('loading');
     resetMapView();
     renderMapPins();
+    applyPendingMapFocus();
   };
   img.onerror = () => {
     img.style.display = 'none';
@@ -2814,12 +2859,47 @@ function loadMapImage(src) {
   img.src = src;
 }
 
-function openMapModal(locationName) {
+// Centre the map on a pin and play the highlight/label animation. Shared by the
+// pin-list navigation and the quest-giver "show on map" links.
+function focusMapPin(pin) {
+  const vp = document.getElementById('mapModalViewport');
+  if (!vp || !mapNaturalW) return;
+  // Zoom in a touch from the fit scale so the focused pin reads clearly.
+  mapScale = Math.min(Math.max(mapScale * 2.5, mapScale), 3);
+  mapX = vp.clientWidth  / 2 - (pin.x / 100) * mapNaturalW * mapScale;
+  mapY = vp.clientHeight / 2 - (pin.y / 100) * mapNaturalH * mapScale;
+  applyMapTransform();
+
+  const pinEl = document.querySelector(`.map-pin[data-x="${pin.x}"][data-y="${pin.y}"]`);
+  if (pinEl) {
+    pinEl.classList.remove('pin-highlight');
+    void pinEl.offsetWidth; // reflow to restart the animation
+    pinEl.classList.add('pin-highlight');
+    pinEl.addEventListener('animationend', () => pinEl.classList.remove('pin-highlight'), { once: true });
+    clearActivePinLabels();
+    pinEl.classList.add('label-active');
+  }
+}
+
+// Once the map image has loaded and pins are rendered, centre on any pin the
+// modal was opened to focus (set by openMapModal via a quest-giver link).
+function applyPendingMapFocus() {
+  if (!mapPendingFocus) return;
+  const found = questPinFor(mapCurrentLocation, mapPendingFocus.label);
+  mapPendingFocus = null;
+  if (found && found.levelIndex === mapCurrentLevelIndex) focusMapPin(found.pin);
+}
+
+// Open the map popout for a location. Pass `focus` ({ label, levelIndex }) to
+// centre on a specific quest-giver pin once the map loads.
+function openMapModal(locationName, focus = null) {
   const zoneId = ZONE_IDS[locationName];
   if (!zoneId) return;
 
+  const initialLevel = focus && focus.levelIndex ? focus.levelIndex : 0;
   mapCurrentLocation = locationName;
-  mapCurrentLevelIndex = 0;
+  mapCurrentLevelIndex = initialLevel;
+  mapPendingFocus = focus ? { label: focus.label } : null;
   closePinEditDialog();
   applyPinListDefault();
 
@@ -2835,7 +2915,7 @@ function openMapModal(locationName) {
   if (levels) {
     levels.forEach((level, i) => {
       const btn = document.createElement('button');
-      btn.className = 'map-level-btn' + (i === 0 ? ' active' : '');
+      btn.className = 'map-level-btn' + (i === initialLevel ? ' active' : '');
       btn.textContent = level.label;
       btn.addEventListener('click', () => {
         levelNav.querySelectorAll('.map-level-btn').forEach(b => b.classList.remove('active'));
@@ -2854,7 +2934,7 @@ function openMapModal(locationName) {
   document.getElementById('mapModal').classList.add('open');
 
   loadMapUserPins();
-  const firstSrc = levels ? levels[0].src : `assets/maps/${zoneId}.jpg`;
+  const firstSrc = levels ? (levels[initialLevel] || levels[0]).src : `assets/maps/${zoneId}.jpg`;
   loadMapImage(firstSrc);
 }
 
@@ -3023,6 +3103,17 @@ function initMapModal() {
     if (link) openMapModal(link.dataset.location);
   });
 
+  // Quest-giver name → open the map focused on that NPC/object's pin
+  document.addEventListener('click', e => {
+    const link = e.target.closest('.map-npc-link');
+    if (!link) return;
+    e.preventDefault();
+    const loc = link.dataset.location;
+    const label = link.dataset.pinLabel;
+    const found = questPinFor(loc, label);
+    openMapModal(loc, { label, levelIndex: found ? found.levelIndex : 0 });
+  });
+
   // Instance map button in dungeon header
   document.addEventListener('click', e => {
     const btn = e.target.closest('.map-instance-btn');
@@ -3074,20 +3165,36 @@ function renderMapPins() {
   if (!container) return;
   container.innerHTML = '';
 
-  // System/predefined pins from MAP_PINS constant
+  // System/predefined pins: hand-curated MAP_PINS plus the auto-generated
+  // QUEST_PINS (quest giver locations scraped from the Questie database).
   const zoneId = ZONE_IDS[mapCurrentLocation];
-  let systemEntry = MAP_PINS[mapCurrentLocation] || (zoneId && MAP_PINS[zoneId]) || null;
-  let systemPins = [];
-  if (systemEntry) {
-    systemPins = Array.isArray(systemEntry[0]) ? (systemEntry[mapCurrentLevelIndex] || []) : systemEntry;
-    systemPins.forEach(pin => renderSinglePin(container, pin, 'system'));
-  }
+  const resolvePinEntry = source => {
+    const entry = source[mapCurrentLocation] || (zoneId && source[zoneId]) || null;
+    if (!entry) return [];
+    return Array.isArray(entry[0]) ? (entry[mapCurrentLevelIndex] || []) : entry;
+  };
+  const systemPins = [
+    ...resolvePinEntry(MAP_PINS),
+    ...(typeof QUEST_PINS !== 'undefined' ? resolvePinEntry(QUEST_PINS) : []),
+  ];
+  systemPins.forEach(pin => renderSinglePin(container, pin, 'system'));
 
   // User pins
   mapUserPins.forEach(pin => renderSinglePin(container, pin, 'user'));
 
   renderPinList(systemPins, mapUserPins);
 }
+
+// Pin-list sections, grouped by pin type. Order + display labels:
+const PIN_SECTION_META = {
+  boss:   'Bosses',
+  quest:  'Quest Givers',
+  npc:    'NPCs',
+  point:  'Points of Interest',
+  system: 'Map Pins',
+  user:   'My Pins',
+};
+const PIN_SECTION_ORDER = ['boss', 'quest', 'npc', 'point', 'system', 'user'];
 
 function renderPinList(systemPins, userPins) {
   const list = document.getElementById('mapPinList');
@@ -3099,23 +3206,57 @@ function renderPinList(systemPins, userPins) {
     return;
   }
 
-  if (systemPins.length > 0) {
-    const sectionLabel = document.createElement('div');
-    sectionLabel.className = 'map-pin-list-section-label';
-    sectionLabel.textContent = 'Map Pins';
-    list.appendChild(sectionLabel);
-    systemPins.forEach(pin => list.appendChild(buildPinListItem(pin, 'system')));
-  }
+  // Bucket pins into sections keyed by type (user pins are their own section).
+  const groups = new Map();
+  const push = (key, pin, itemType) => {
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push({ pin, itemType });
+  };
+  systemPins.forEach(pin => push(pin.type || 'system', pin, 'system'));
+  userPins.forEach(pin => push('user', pin, 'user'));
 
-  if (userPins.length > 0) {
-    if (systemPins.length > 0) {
-      const sectionLabel = document.createElement('div');
-      sectionLabel.className = 'map-pin-list-section-label';
-      sectionLabel.textContent = 'My Pins';
-      list.appendChild(sectionLabel);
-    }
-    userPins.forEach(pin => list.appendChild(buildPinListItem(pin, 'user')));
-  }
+  // Known types first (in PIN_SECTION_ORDER), any unknown types after.
+  const rank = key => {
+    const i = PIN_SECTION_ORDER.indexOf(key);
+    return i === -1 ? PIN_SECTION_ORDER.length : i;
+  };
+  [...groups.keys()]
+    .sort((a, b) => rank(a) - rank(b))
+    .forEach(key => list.appendChild(buildPinListSection(key, groups.get(key))));
+}
+
+// A collapsible section of pins of a single type. Collapsed by default; the
+// user's expand/collapse choice persists across re-renders via mapPinListExpanded.
+function buildPinListSection(sectionType, entries) {
+  const expanded = mapPinListExpanded.has(sectionType);
+
+  const section = document.createElement('div');
+  section.className = 'pin-list-section' + (expanded ? ' expanded' : '');
+  section.dataset.section = sectionType;
+
+  const header = document.createElement('button');
+  header.className = 'pin-list-section-header';
+  header.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  header.innerHTML =
+    `<span class="pin-list-section-chevron">›</span>`
+    + `<span class="pin-list-icon pin-list-icon--${sectionType}"></span>`
+    + `<span class="pin-list-section-title">${PIN_SECTION_META[sectionType] || sectionType}</span>`
+    + `<span class="pin-list-section-count">${entries.length}</span>`;
+
+  const body = document.createElement('div');
+  body.className = 'pin-list-section-body';
+  entries.forEach(({ pin, itemType }) => body.appendChild(buildPinListItem(pin, itemType)));
+
+  header.addEventListener('click', () => {
+    const nowExpanded = section.classList.toggle('expanded');
+    header.setAttribute('aria-expanded', nowExpanded ? 'true' : 'false');
+    if (nowExpanded) mapPinListExpanded.add(sectionType);
+    else mapPinListExpanded.delete(sectionType);
+  });
+
+  section.appendChild(header);
+  section.appendChild(body);
+  return section;
 }
 
 function buildPinListItem(pin, type) {
@@ -3130,9 +3271,23 @@ function buildPinListItem(pin, type) {
   const info = document.createElement('div');
   info.className = 'pin-list-info';
 
-  const nameEl = document.createElement('div');
-  nameEl.className = 'pin-list-name';
-  nameEl.textContent = pin.label || `${pin.x.toFixed(1)}, ${pin.y.toFixed(1)}`;
+  // The name is a Wowhead link when the pin carries a URL (scraped givers).
+  // Clicking the row focuses the pin; clicking the name opens Wowhead instead.
+  let nameEl;
+  if (pin.url && pin.label) {
+    nameEl = document.createElement('a');
+    nameEl.className = 'pin-list-name pin-list-name-link';
+    nameEl.href = pin.url;
+    nameEl.target = '_blank';
+    nameEl.rel = 'noopener noreferrer';
+    nameEl.title = 'View on Wowhead';
+    nameEl.textContent = pin.label;
+    nameEl.addEventListener('click', e => e.stopPropagation());
+  } else {
+    nameEl = document.createElement('div');
+    nameEl.className = 'pin-list-name';
+    nameEl.textContent = pin.label || `${pin.x.toFixed(1)}, ${pin.y.toFixed(1)}`;
+  }
 
   const coordEl = document.createElement('div');
   coordEl.className = 'pin-list-coords';
@@ -3172,7 +3327,7 @@ function navigateToPin(pin, type) {
   const pinEl = document.querySelector(
     type === 'user'
       ? `.map-pin[data-pin-id="${pin.id}"]`
-      : `.map-pin--system[data-x="${pin.x}"]`
+      : `.map-pin[data-x="${pin.x}"][data-y="${pin.y}"]`
   );
   if (pinEl) {
     pinEl.classList.remove('pin-highlight');
@@ -3199,14 +3354,24 @@ function renderSinglePin(container, pin, type) {
   if (type === 'user') el.dataset.pinId = pin.id;
 
   const coordStr = `${pin.x.toFixed(1)}, ${pin.y.toFixed(1)}`;
-  const tooltipInner = pin.label
-    ? `<strong>${pin.label}</strong><span>${coordStr}</span>`
-    : `<span>${coordStr}</span>`;
+  // When a pin carries a Wowhead URL (scraped quest givers), make the name in
+  // the pop-out a working link; otherwise show it as plain bold text.
+  let labelHtml = '';
+  if (pin.label) {
+    labelHtml = pin.url
+      ? `<a class="map-pin-tooltip-link" href="${escapeHtml(pin.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(pin.label)}</a>`
+      : `<strong>${escapeHtml(pin.label)}</strong>`;
+  }
+  const tooltipInner = labelHtml + `<span>${coordStr}</span>`;
 
   el.innerHTML = `
     <div class="map-pin-marker"></div>
     <div class="map-pin-tooltip">${tooltipInner}</div>
   `;
+
+  // Clicking the Wowhead link should open it without collapsing the pop-out.
+  const tooltipLink = el.querySelector('.map-pin-tooltip-link');
+  if (tooltipLink) tooltipLink.addEventListener('click', e => e.stopPropagation());
 
   el.addEventListener('click', e => {
     e.stopPropagation();

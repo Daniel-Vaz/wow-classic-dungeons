@@ -903,6 +903,21 @@ body.scrolled .search-row .controls-logo {
   text-decoration-color: var(--gold-dim);
 }
 
+/* Quest-giver names that double as map links (a pin exists for them). */
+.map-npc-link {
+  cursor: pointer;
+}
+.map-npc-link::after {
+  content: '📍';
+  font-size: 0.78em;
+  margin-left: 3px;
+  opacity: 0.55;
+  vertical-align: baseline;
+}
+.map-npc-link:hover::after {
+  opacity: 1;
+}
+
 /* ── MULTIPLE QUEST GIVERS ── */
 /* Some quests (e.g. class quests) are offered by several NPCs across cities;
    each giver is shown on its own line with its faction tag and location. */
@@ -3647,15 +3662,70 @@ button.guides-box-link {
   scrollbar-width: thin;
   scrollbar-color: var(--border-gold) transparent;
 }
-.map-pin-list-section-label {
+/* ── COLLAPSIBLE PIN-LIST SECTIONS (grouped by pin type) ── */
+.pin-list-section {
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.pin-list-section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 7px 12px;
   font-family: 'Cinzel', serif;
-  font-size: 0.58rem;
-  letter-spacing: 0.1em;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-dim);
-  padding: 6px 12px 4px;
+  transition: background 0.15s, color 0.15s;
+}
+.pin-list-section-header:hover {
+  background: rgba(200, 168, 75, 0.06);
+  color: var(--text-main);
+}
+.pin-list-section-chevron {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  line-height: 1;
+  transition: transform 0.18s ease;
   opacity: 0.7;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.pin-list-section.expanded .pin-list-section-chevron {
+  transform: rotate(90deg);
+}
+.pin-list-section-header .pin-list-icon {
+  flex-shrink: 0;
+}
+.pin-list-section-title {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pin-list-section-count {
+  flex-shrink: 0;
+  font-size: 0.58rem;
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.06);
+  border-radius: 8px;
+  padding: 1px 7px;
+  min-width: 18px;
+  text-align: center;
+}
+.pin-list-section-body {
+  display: none;
+}
+.pin-list-section.expanded .pin-list-section-body {
+  display: block;
+}
+/* Items inside a section are indented slightly and lose their own divider. */
+.pin-list-section-body .pin-list-item {
+  padding-left: 22px;
+  border-bottom: none;
 }
 .pin-list-item {
   display: flex;
@@ -3724,6 +3794,16 @@ button.guides-box-link {
   font-size: 0.58rem;
   color: var(--text-dim);
   letter-spacing: 0.04em;
+}
+.pin-list-name-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pin-list-name-link:hover {
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-decoration-color: var(--gold-dim);
 }
 .pin-list-delete {
   background: none;
@@ -3804,6 +3884,12 @@ button.guides-box-link {
   cursor: pointer;
   z-index: 10;
 }
+/* Raise the whole pin (its own stacking context) when its tooltip is showing,
+   so the pop-out sits in front of neighbouring pin markers instead of behind. */
+.map-pin:hover,
+.map-pin.label-active {
+  z-index: 30;
+}
 /* Expanded hit area */
 .map-pin::before {
   content: '';
@@ -3853,10 +3939,19 @@ button.guides-box-link {
   pointer-events: none;
   box-shadow: 0 4px 16px rgba(0,0,0,0.8);
 }
-.map-pin-tooltip strong {
+.map-pin-tooltip strong,
+.map-pin-tooltip-link {
   color: var(--gold-light);
   display: block;
   margin-bottom: 2px;
+}
+.map-pin-tooltip-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.map-pin-tooltip-link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--gold-dim);
 }
 .map-pin-tooltip span {
   color: var(--text-dim);
@@ -3865,6 +3960,11 @@ button.guides-box-link {
 .map-pin:hover .map-pin-tooltip,
 .map-pin.label-active .map-pin-tooltip {
   display: block;
+}
+/* Once a pin is clicked open, let the pop-out receive clicks so its
+   Wowhead link is reachable. */
+.map-pin.label-active .map-pin-tooltip {
+  pointer-events: auto;
 }
 
 /* Pin type colours */
