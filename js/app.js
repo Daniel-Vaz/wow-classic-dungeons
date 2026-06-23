@@ -3400,6 +3400,7 @@ function openEncounterModal(name, npcId) {
   const noImg  = document.getElementById('encounterNoImage');
 
   document.getElementById('encounterModalTitle').textContent = name;
+  document.getElementById('encounterModalId').textContent = `ID ${npcId}`;
   document.getElementById('encounterModalWowheadLink').href =
     `https://www.wowhead.com/classic/npc=${npcId}`;
 
@@ -3417,10 +3418,86 @@ function openEncounterModal(name, npcId) {
   };
   img.src = `assets/npc-models/${npcId}.jpg`;
 
+  renderEncounterInfo(npcId);
   renderEncounterLoot(npcId);
 
   modal.setAttribute('aria-hidden', 'false');
   modal.classList.add('open');
+}
+
+// Spell school → accent colour, matching the in-game school tints.
+const ABILITY_SCHOOL_COLORS = {
+  Physical: '#c79c6e', Holy: '#f5e9a0', Fire: '#ff7038', Nature: '#4dd34d',
+  Frost: '#6fc6ff', Shadow: '#9a7fd0', Arcane: '#e07fff',
+};
+
+// Render the level / classification / health / mana stat bar plus the abilities
+// list. Data comes from ENCOUNTER_INFO (js/encounter-data.js), keyed by npcId.
+function renderEncounterInfo(npcId) {
+  const statbar = document.getElementById('encounterStatbar');
+  const abilSection = document.getElementById('encounterAbilities');
+  const abilList = document.getElementById('encounterAbilitiesList');
+
+  const info = (typeof ENCOUNTER_INFO !== 'undefined' && ENCOUNTER_INFO[npcId]) || null;
+
+  // ── Stat bar ──
+  if (!info) {
+    statbar.innerHTML = '';
+    statbar.classList.remove('visible');
+  } else {
+    const chips = [];
+    if (info.level) {
+      const meta = [info.classification, info.type].filter(Boolean).join(' ');
+      chips.push(`
+        <div class="encounter-stat encounter-stat-level">
+          <span class="encounter-stat-label">Level</span>
+          <span class="encounter-stat-value">${info.level}</span>
+          ${meta ? `<span class="encounter-stat-sub">${meta}</span>` : ''}
+        </div>`);
+    }
+    if (info.health != null) {
+      chips.push(`
+        <div class="encounter-stat encounter-stat-health">
+          <span class="encounter-stat-label">Health</span>
+          <span class="encounter-stat-value">${info.health.toLocaleString()}</span>
+        </div>`);
+    }
+    if (info.mana != null) {
+      chips.push(`
+        <div class="encounter-stat encounter-stat-mana">
+          <span class="encounter-stat-label">Mana</span>
+          <span class="encounter-stat-value">${info.mana.toLocaleString()}</span>
+        </div>`);
+    }
+    statbar.innerHTML = chips.join('');
+    statbar.classList.toggle('visible', chips.length > 0);
+  }
+
+  // ── Abilities ──
+  const abilities = (info && info.abilities) || [];
+  if (abilities.length === 0) {
+    abilSection.classList.remove('visible');
+    abilList.innerHTML = '';
+    return;
+  }
+
+  abilList.innerHTML = abilities.map(a => {
+    const color = ABILITY_SCHOOL_COLORS[a.school] || 'var(--gold-light)';
+    const schoolTag = a.school
+      ? `<span class="encounter-ability-school" style="color:${color}">${a.school}</span>`
+      : '';
+    return `
+    <a href="${a.url}" target="_blank" rel="noopener noreferrer"
+       class="encounter-ability" style="--school-color:${color}"
+       data-wh-icon-size="medium">
+      <span class="encounter-ability-name">${a.name}</span>
+      ${schoolTag}
+    </a>`;
+  }).join('');
+
+  abilSection.classList.add('visible');
+
+  if (typeof $WowheadPower !== 'undefined') $WowheadPower.refreshLinks();
 }
 
 function renderEncounterLoot(npcId) {

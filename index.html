@@ -145,13 +145,23 @@
   <div class="encounter-modal-backdrop"></div>
   <div class="encounter-modal-panel" role="dialog" aria-labelledby="encounterModalTitle">
     <div class="encounter-modal-header">
-      <span class="encounter-modal-title" id="encounterModalTitle"></span>
+      <div class="encounter-modal-titlewrap">
+        <span class="encounter-modal-title" id="encounterModalTitle"></span>
+        <span class="encounter-id-badge" id="encounterModalId"></span>
+      </div>
       <a id="encounterModalWowheadLink" href="#" target="_blank" rel="noopener noreferrer" class="map-wowhead-link"><img src="assets/icons/wowhead.png" class="map-wowhead-logo" alt="Wowhead"> View on Wowhead ↗</a>
       <button class="map-modal-close" id="encounterModalClose" aria-label="Close">✕</button>
     </div>
-    <div class="encounter-modal-body">
-      <img id="encounterModalImg" src="" alt="" class="encounter-modal-img">
-      <div class="encounter-no-image" id="encounterNoImage">Model image not available</div>
+    <div class="encounter-modal-stage">
+      <div class="encounter-modal-body">
+        <img id="encounterModalImg" src="" alt="" class="encounter-modal-img">
+        <div class="encounter-no-image" id="encounterNoImage">Model image not available</div>
+        <div class="encounter-statbar" id="encounterStatbar"></div>
+      </div>
+      <div class="encounter-abilities" id="encounterAbilities">
+        <div class="encounter-section-header"><span>Abilities</span></div>
+        <div class="encounter-abilities-list" id="encounterAbilitiesList"></div>
+      </div>
     </div>
     <div class="encounter-model-credit">
       <img src="assets/icons/wowhead.png" class="encounter-model-credit-logo" alt="Wowhead"> 3D model imagery courtesy of <a href="https://www.wowhead.com/classic" target="_blank" rel="noopener noreferrer">Wowhead</a> - Many thanks to their team for this fantastic resource!
@@ -244,6 +254,7 @@
 <script src="js/data.js"></script>
 <script src="js/constants.js"></script>
 <script src="js/loot-data.js"></script>
+<script src="js/encounter-data.js"></script>
 <script src="js/npc-focal.js"></script>
 <script src="js/app.js"></script>
 <script>var whTooltips = {colorLinks: false, iconizeLinks: true, renameLinks: false, hide: {sendmail: true, sellprice: false}};</script>

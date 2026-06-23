@@ -3052,7 +3052,7 @@ button.guides-box-link {
 .encounter-modal-panel {
   position: relative;
   z-index: 1;
-  width: min(860px, 92vw);
+  width: min(1040px, 94vw);
   max-height: 90vh;
   background: var(--bg-panel);
   border: 1px solid var(--border-gold);
@@ -3080,15 +3080,41 @@ button.guides-box-link {
   background: rgba(200, 168, 75, 0.04);
   flex-shrink: 0;
 }
+.encounter-modal-titlewrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
 .encounter-modal-title {
   font-family: 'Cinzel', serif;
   font-size: 0.9rem;
   letter-spacing: 0.08em;
   color: var(--gold-light);
-  flex: 1;
+}
+.encounter-id-badge {
+  flex-shrink: 0;
+  font-family: 'Cinzel', serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  color: var(--gold-dim);
+  background: rgba(200, 168, 75, 0.08);
+  border: 1px solid var(--border-gold);
+  border-radius: 10px;
+  padding: 2px 9px;
+  white-space: nowrap;
+}
+.encounter-modal-stage {
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0;
+  min-height: 0;
 }
 .encounter-modal-body {
   position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
   background: #06060a;
   min-height: 480px;
   display: flex;
@@ -3114,6 +3140,168 @@ button.guides-box-link {
 .encounter-no-image.visible { display: flex; }
 .encounter-modal.open .encounter-modal-panel {
   animation: mapFadeIn 0.18s ease both;
+}
+
+/* ── ENCOUNTER STAT BAR (overlaid on the model) ── */
+.encounter-statbar {
+  display: none;
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  z-index: 2;
+  gap: 10px;
+  padding: 12px 16px 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(0deg, rgba(6, 6, 10, 0.92) 12%, rgba(6, 6, 10, 0.55) 60%, transparent);
+  pointer-events: none;
+}
+.encounter-statbar.visible { display: flex; }
+.encounter-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 86px;
+  padding: 7px 16px 8px;
+  border: 1px solid var(--border-gold);
+  border-radius: 5px;
+  background: linear-gradient(160deg, rgba(20, 18, 12, 0.92), rgba(8, 7, 5, 0.92));
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.encounter-stat-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+}
+.encounter-stat-value {
+  font-family: 'Cinzel', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--gold-light);
+  text-shadow: 0 0 12px rgba(200, 168, 75, 0.4);
+}
+.encounter-stat-sub {
+  margin-top: 1px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.02em;
+  color: var(--text-dim);
+}
+.encounter-stat-health .encounter-stat-value {
+  color: #5fd35f;
+  text-shadow: 0 0 12px rgba(95, 211, 95, 0.45);
+}
+.encounter-stat-mana .encounter-stat-value {
+  color: #5aa6ff;
+  text-shadow: 0 0 12px rgba(90, 166, 255, 0.45);
+}
+
+/* ── ENCOUNTER SECTION HEADER (shared) ── */
+.encounter-section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  text-shadow: 0 0 10px rgba(200, 168, 75, 0.4);
+}
+.encounter-section-header::before,
+.encounter-section-header::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+}
+.encounter-section-header::before { background: linear-gradient(90deg, transparent, var(--gold-dim)); }
+.encounter-section-header::after  { background: linear-gradient(90deg, var(--gold-dim), transparent); }
+
+/* ── ENCOUNTER ABILITIES (right-side panel) ── */
+.encounter-abilities {
+  display: none;
+  flex: 0 0 288px;
+  min-width: 0;
+  flex-direction: column;
+  padding: 16px 18px 18px;
+  border-left: 1px solid var(--border-gold);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(200, 168, 75, 0.06) 0%, transparent 55%),
+    #0b0a07;
+  overflow-y: auto;
+}
+.encounter-abilities.visible { display: flex; }
+.encounter-abilities .encounter-section-header { flex-shrink: 0; }
+.encounter-abilities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.encounter-ability {
+  --school-color: var(--gold-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px 8px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--school-color);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.3));
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.encounter-ability:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--school-color) 70%, transparent);
+  box-shadow: 0 0 14px -2px var(--school-color), 0 4px 12px rgba(0, 0, 0, 0.55);
+}
+.encounter-ability .iconmedium {
+  flex-shrink: 0;
+  border-radius: 2px;
+  outline: 1px solid rgba(0, 0, 0, 0.6);
+  outline-offset: 1px;
+}
+.encounter-ability-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 0.92rem;
+  color: var(--text-bright);
+  transition: color 0.2s ease;
+}
+.encounter-ability:hover .encounter-ability-name {
+  color: #fff;
+}
+.encounter-ability-school {
+  flex-shrink: 0;
+  font-family: 'Cinzel', serif;
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* Narrow screens: stack the abilities panel under the model instead of beside it. */
+@media (max-width: 720px) {
+  .encounter-modal-stage { flex-direction: column; }
+  .encounter-abilities {
+    flex: 0 0 auto;
+    max-height: 240px;
+    border-left: none;
+    border-top: 1px solid var(--border-gold);
+  }
+  .encounter-abilities-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }
 
 /* ── ENCOUNTER MODEL CREDIT ── */
