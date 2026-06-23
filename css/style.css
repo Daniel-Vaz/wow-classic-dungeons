@@ -4,8 +4,6 @@
   --gold: #c8a84b;
   --gold-light: #f0d080;
   --gold-dim: #7a6228;
-  --red: #8b1a1a;
-  --red-bright: #cc2222;
   --bg-dark: #0a0805;
   --bg-mid: #12100c;
   --bg-panel: #1a1610;
@@ -374,14 +372,6 @@ body.scrolled .search-row .controls-logo {
   border-color: var(--gold);
   color: var(--gold);
 }
-.quest-count {
-  font-family: 'Cinzel', serif;
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  white-space: nowrap;
-}
-.quest-count span { color: var(--gold); font-weight: 600; }
-
 /* ── DUNGEON TABS ── */
 .dungeon-tabs {
   display: flex;
@@ -840,15 +830,6 @@ body.scrolled .search-row .controls-logo {
 .coin-icon.coin-copper {
   background: radial-gradient(circle at 35% 30%, #f5c890 0%, #cd7f32 45%, #7a3b10 100%);
   box-shadow: 0 0 3px 1px rgba(205,127,50,0.2), inset 0 1px 0 rgba(255,220,160,0.4);
-}
-.reward-pill {
-  font-family: 'Cinzel', serif;
-  font-size: 0.7rem;
-  color: var(--green-uncommon);
-  background: rgba(30,255,0,0.06);
-  border: 1px solid rgba(30,255,0,0.2);
-  border-radius: 2px;
-  padding: 2px 8px;
 }
 .complete-btn {
   font-family: 'Cinzel', serif;
@@ -1804,27 +1785,6 @@ button.guides-box-link {
   }
 }
 
-/* ── WOWHEAD LINK BUTTON ── */
-.wowhead-link-btn {
-  font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
-  letter-spacing: 0.06em;
-  padding: 4px 10px;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  color: #4da6ff;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.2s;
-  cursor: pointer;
-}
-.wowhead-link-btn:hover {
-  border-color: #4da6ff;
-  color: #7fbfff;
-  background: rgba(77,166,255,0.08);
-}
-
 /* LIST VIEW OVERRIDES */
 .list-view .quest-card {
   border-radius: 3px;
@@ -1893,41 +1853,6 @@ button.guides-box-link {
   align-self: stretch;
 }
 
-/* ── TOOLTIP ── */
-.tooltip-wrap { position: relative; display: inline-block; }
-.tooltip {
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  background: #1a1a0f;
-  border: 1px solid var(--gold-dim);
-  border-radius: 3px;
-  padding: 8px 12px;
-  font-size: 0.78rem;
-  color: var(--text-main);
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.15s;
-  z-index: 200;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.7);
-}
-.tooltip-wrap:hover .tooltip { opacity: 1; }
-
-/* ── NO QUESTS ── */
-.no-dungeon-quests {
-  text-align: center;
-  padding: 48px 20px;
-  color: var(--text-dim);
-  font-family: 'Cinzel', serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  background: var(--bg-panel);
-}
-
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-dark); }
@@ -1991,22 +1916,6 @@ button.guides-box-link {
   color: var(--gold-light);
   border-color: var(--gold-dim);
   background: rgba(200,168,75,0.07);
-}
-/* Dungeon-quest prereq: was picked up by the guide page but is actually a prereq */
-.prechain-step.is-dungeon {
-  color: var(--gold-dim);
-  border-color: rgba(200,168,75,0.4);
-  background: rgba(200,168,75,0.05);
-}
-.prechain-step.is-dungeon::before {
-  content: '⚔ ';
-  font-size: 0.65rem;
-  opacity: 0.7;
-}
-.prechain-step.is-dungeon:hover {
-  color: var(--gold-light);
-  border-color: var(--gold);
-  background: rgba(200,168,75,0.1);
 }
 /* Post-chain steps have a slightly different hue */
 .prechain-step.postchain-step {
@@ -3742,7 +3651,6 @@ button.guides-box-link {
 }
 .pin-list-item:last-child { border-bottom: none; }
 .pin-list-item:hover { background: rgba(200, 168, 75, 0.06); }
-.pin-list-item.is-active { background: rgba(200, 168, 75, 0.1); }
 .pin-list-icon {
   width: 10px;
   height: 10px;
