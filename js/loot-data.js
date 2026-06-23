@@ -2151,197 +2151,197 @@ const ENCOUNTER_LOOT = {
   ],
   "5712": [
     {
-      "id": 10783,
-      "name": "Atal'ai Spaulders",
-      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10784,
-      "name": "Atal'ai Breastplate",
-      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10787,
-      "name": "Atal'ai Gloves",
-      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10788,
-      "name": "Atal'ai Girdle",
-      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 10785,
-      "name": "Atal'ai Leggings",
-      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 10786,
-      "name": "Atal'ai Boots",
-      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 20606,
-      "name": "Amber Voodoo Feather",
-      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
-      "quality": 1,
-      "dropChance": null
-    },
-    {
       "id": 20607,
       "name": "Blue Voodoo Feather",
       "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 23.95
     },
     {
       "id": 20608,
       "name": "Green Voodoo Feather",
       "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 22.43
+    },
+    {
+      "id": 20606,
+      "name": "Amber Voodoo Feather",
+      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
+      "quality": 1,
+      "dropChance": 19.99
+    },
+    {
+      "id": 10788,
+      "name": "Atal'ai Girdle",
+      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
+      "quality": 2,
+      "dropChance": 10.14
+    },
+    {
+      "id": 10786,
+      "name": "Atal'ai Boots",
+      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
+      "quality": 2,
+      "dropChance": 8.26
+    },
+    {
+      "id": 10787,
+      "name": "Atal'ai Gloves",
+      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
+      "quality": 3,
+      "dropChance": 6.98
+    },
+    {
+      "id": 10785,
+      "name": "Atal'ai Leggings",
+      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
+      "quality": 2,
+      "dropChance": 5.74
+    },
+    {
+      "id": 10783,
+      "name": "Atal'ai Spaulders",
+      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
+      "quality": 3,
+      "dropChance": 5.02
+    },
+    {
+      "id": 10784,
+      "name": "Atal'ai Breastplate",
+      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
+      "quality": 3,
+      "dropChance": 2.6
     }
   ],
   "5714": [
     {
-      "id": 10783,
-      "name": "Atal'ai Spaulders",
-      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10784,
-      "name": "Atal'ai Breastplate",
-      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10787,
-      "name": "Atal'ai Gloves",
-      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10788,
-      "name": "Atal'ai Girdle",
-      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 10785,
-      "name": "Atal'ai Leggings",
-      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 10786,
-      "name": "Atal'ai Boots",
-      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 20606,
-      "name": "Amber Voodoo Feather",
-      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
-      "quality": 1,
-      "dropChance": null
-    },
-    {
       "id": 20607,
       "name": "Blue Voodoo Feather",
       "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 23.95
     },
     {
       "id": 20608,
       "name": "Green Voodoo Feather",
       "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 22.43
+    },
+    {
+      "id": 20606,
+      "name": "Amber Voodoo Feather",
+      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
+      "quality": 1,
+      "dropChance": 19.99
+    },
+    {
+      "id": 10788,
+      "name": "Atal'ai Girdle",
+      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
+      "quality": 2,
+      "dropChance": 10.14
+    },
+    {
+      "id": 10786,
+      "name": "Atal'ai Boots",
+      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
+      "quality": 2,
+      "dropChance": 8.26
+    },
+    {
+      "id": 10787,
+      "name": "Atal'ai Gloves",
+      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
+      "quality": 3,
+      "dropChance": 6.98
+    },
+    {
+      "id": 10785,
+      "name": "Atal'ai Leggings",
+      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
+      "quality": 2,
+      "dropChance": 5.74
+    },
+    {
+      "id": 10783,
+      "name": "Atal'ai Spaulders",
+      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
+      "quality": 3,
+      "dropChance": 5.02
+    },
+    {
+      "id": 10784,
+      "name": "Atal'ai Breastplate",
+      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
+      "quality": 3,
+      "dropChance": 2.6
     }
   ],
   "5715": [
     {
-      "id": 10783,
-      "name": "Atal'ai Spaulders",
-      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10784,
-      "name": "Atal'ai Breastplate",
-      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10787,
-      "name": "Atal'ai Gloves",
-      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10788,
-      "name": "Atal'ai Girdle",
-      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 10785,
-      "name": "Atal'ai Leggings",
-      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 10786,
-      "name": "Atal'ai Boots",
-      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 20606,
-      "name": "Amber Voodoo Feather",
-      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
-      "quality": 1,
-      "dropChance": null
-    },
-    {
       "id": 20607,
       "name": "Blue Voodoo Feather",
       "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 23.95
     },
     {
       "id": 20608,
       "name": "Green Voodoo Feather",
       "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 22.43
+    },
+    {
+      "id": 20606,
+      "name": "Amber Voodoo Feather",
+      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
+      "quality": 1,
+      "dropChance": 19.99
+    },
+    {
+      "id": 10788,
+      "name": "Atal'ai Girdle",
+      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
+      "quality": 2,
+      "dropChance": 10.14
+    },
+    {
+      "id": 10786,
+      "name": "Atal'ai Boots",
+      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
+      "quality": 2,
+      "dropChance": 8.26
+    },
+    {
+      "id": 10787,
+      "name": "Atal'ai Gloves",
+      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
+      "quality": 3,
+      "dropChance": 6.98
+    },
+    {
+      "id": 10785,
+      "name": "Atal'ai Leggings",
+      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
+      "quality": 2,
+      "dropChance": 5.74
+    },
+    {
+      "id": 10783,
+      "name": "Atal'ai Spaulders",
+      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
+      "quality": 3,
+      "dropChance": 5.02
+    },
+    {
+      "id": 10784,
+      "name": "Atal'ai Breastplate",
+      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
+      "quality": 3,
+      "dropChance": 2.6
     }
   ],
   "5716": [
@@ -2411,67 +2411,67 @@ const ENCOUNTER_LOOT = {
   ],
   "5717": [
     {
-      "id": 10783,
-      "name": "Atal'ai Spaulders",
-      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10784,
-      "name": "Atal'ai Breastplate",
-      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10787,
-      "name": "Atal'ai Gloves",
-      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 10788,
-      "name": "Atal'ai Girdle",
-      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 10785,
-      "name": "Atal'ai Leggings",
-      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 10786,
-      "name": "Atal'ai Boots",
-      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 20606,
-      "name": "Amber Voodoo Feather",
-      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
-      "quality": 1,
-      "dropChance": null
-    },
-    {
       "id": 20607,
       "name": "Blue Voodoo Feather",
       "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 23.95
     },
     {
       "id": 20608,
       "name": "Green Voodoo Feather",
       "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 22.43
+    },
+    {
+      "id": 20606,
+      "name": "Amber Voodoo Feather",
+      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
+      "quality": 1,
+      "dropChance": 19.99
+    },
+    {
+      "id": 10788,
+      "name": "Atal'ai Girdle",
+      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
+      "quality": 2,
+      "dropChance": 10.14
+    },
+    {
+      "id": 10786,
+      "name": "Atal'ai Boots",
+      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
+      "quality": 2,
+      "dropChance": 8.26
+    },
+    {
+      "id": 10787,
+      "name": "Atal'ai Gloves",
+      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
+      "quality": 3,
+      "dropChance": 6.98
+    },
+    {
+      "id": 10785,
+      "name": "Atal'ai Leggings",
+      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
+      "quality": 2,
+      "dropChance": 5.74
+    },
+    {
+      "id": 10783,
+      "name": "Atal'ai Spaulders",
+      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
+      "quality": 3,
+      "dropChance": 5.02
+    },
+    {
+      "id": 10784,
+      "name": "Atal'ai Breastplate",
+      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
+      "quality": 3,
+      "dropChance": 2.6
     }
   ],
   "5721": [
@@ -3168,6 +3168,13 @@ const ENCOUNTER_LOOT = {
       "dropChance": 83.46
     },
     {
+      "id": 11923,
+      "name": "The Hammer of Grace",
+      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
+      "quality": 3,
+      "dropChance": 36.19
+    },
+    {
       "id": 22256,
       "name": "Mana Shaping Handwraps",
       "url": "https://www.wowhead.com/classic/item=22256/mana-shaping-handwraps",
@@ -3192,13 +3199,6 @@ const ENCOUNTER_LOOT = {
       "id": 22254,
       "name": "Wand of Eternal Light",
       "url": "https://www.wowhead.com/classic/item=22254/wand-of-eternal-light",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11923,
-      "name": "The Hammer of Grace",
-      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
       "dropChance": null
     },
@@ -3244,7 +3244,14 @@ const ENCOUNTER_LOOT = {
       "name": "Dark Keeper Key",
       "url": "https://www.wowhead.com/classic/item=11197/dark-keeper-key",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 83.46
+    },
+    {
+      "id": 11923,
+      "name": "The Hammer of Grace",
+      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
+      "quality": 3,
+      "dropChance": 36.19
     },
     {
       "id": 22256,
@@ -3271,13 +3278,6 @@ const ENCOUNTER_LOOT = {
       "id": 22254,
       "name": "Wand of Eternal Light",
       "url": "https://www.wowhead.com/classic/item=22254/wand-of-eternal-light",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11923,
-      "name": "The Hammer of Grace",
-      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
       "dropChance": null
     },
@@ -3323,7 +3323,14 @@ const ENCOUNTER_LOOT = {
       "name": "Dark Keeper Key",
       "url": "https://www.wowhead.com/classic/item=11197/dark-keeper-key",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 83.46
+    },
+    {
+      "id": 11923,
+      "name": "The Hammer of Grace",
+      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
+      "quality": 3,
+      "dropChance": 36.19
     },
     {
       "id": 22256,
@@ -3350,13 +3357,6 @@ const ENCOUNTER_LOOT = {
       "id": 22254,
       "name": "Wand of Eternal Light",
       "url": "https://www.wowhead.com/classic/item=22254/wand-of-eternal-light",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11923,
-      "name": "The Hammer of Grace",
-      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
       "dropChance": null
     },
@@ -3402,7 +3402,14 @@ const ENCOUNTER_LOOT = {
       "name": "Dark Keeper Key",
       "url": "https://www.wowhead.com/classic/item=11197/dark-keeper-key",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 83.46
+    },
+    {
+      "id": 11923,
+      "name": "The Hammer of Grace",
+      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
+      "quality": 3,
+      "dropChance": 36.19
     },
     {
       "id": 22256,
@@ -3429,13 +3436,6 @@ const ENCOUNTER_LOOT = {
       "id": 22254,
       "name": "Wand of Eternal Light",
       "url": "https://www.wowhead.com/classic/item=22254/wand-of-eternal-light",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11923,
-      "name": "The Hammer of Grace",
-      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
       "dropChance": null
     },
@@ -3481,7 +3481,14 @@ const ENCOUNTER_LOOT = {
       "name": "Dark Keeper Key",
       "url": "https://www.wowhead.com/classic/item=11197/dark-keeper-key",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 83.46
+    },
+    {
+      "id": 11923,
+      "name": "The Hammer of Grace",
+      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
+      "quality": 3,
+      "dropChance": 36.19
     },
     {
       "id": 22256,
@@ -3508,13 +3515,6 @@ const ENCOUNTER_LOOT = {
       "id": 22254,
       "name": "Wand of Eternal Light",
       "url": "https://www.wowhead.com/classic/item=22254/wand-of-eternal-light",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11923,
-      "name": "The Hammer of Grace",
-      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
       "dropChance": null
     },
@@ -3560,7 +3560,14 @@ const ENCOUNTER_LOOT = {
       "name": "Dark Keeper Key",
       "url": "https://www.wowhead.com/classic/item=11197/dark-keeper-key",
       "quality": 1,
-      "dropChance": null
+      "dropChance": 83.46
+    },
+    {
+      "id": 11923,
+      "name": "The Hammer of Grace",
+      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
+      "quality": 3,
+      "dropChance": 36.19
     },
     {
       "id": 22256,
@@ -3587,13 +3594,6 @@ const ENCOUNTER_LOOT = {
       "id": 22254,
       "name": "Wand of Eternal Light",
       "url": "https://www.wowhead.com/classic/item=22254/wand-of-eternal-light",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11923,
-      "name": "The Hammer of Grace",
-      "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
       "dropChance": null
     },
@@ -3836,6 +3836,13 @@ const ENCOUNTER_LOOT = {
       "dropChance": 28.81
     },
     {
+      "id": 11841,
+      "name": "Senior Designer's Pantaloons",
+      "url": "https://www.wowhead.com/classic/item=11841/senior-designer-s-pantaloons",
+      "quality": 3,
+      "dropChance": 23.38
+    },
+    {
       "id": 11821,
       "name": "Warstrife Leggings",
       "url": "https://www.wowhead.com/classic/item=11821/warstrife-leggings",
@@ -3855,13 +3862,6 @@ const ENCOUNTER_LOOT = {
       "url": "https://www.wowhead.com/classic/item=11810/force-of-will",
       "quality": 3,
       "dropChance": 5.59
-    },
-    {
-      "id": 11841,
-      "name": "Senior Designer's Pantaloons",
-      "url": "https://www.wowhead.com/classic/item=11841/senior-designer-s-pantaloons",
-      "quality": 3,
-      "dropChance": null
     }
   ],
   "8983": [
@@ -4040,87 +4040,101 @@ const ENCOUNTER_LOOT = {
   ],
   "9499": [
     {
-      "id": 11735,
-      "name": "Ragefury Eyepatch",
-      "url": "https://www.wowhead.com/classic/item=11735/ragefury-eyepatch",
+      "id": 12793,
+      "name": "Mixologist's Tunic",
+      "url": "https://www.wowhead.com/classic/item=12793/mixologist-s-tunic",
       "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 18043,
-      "name": "Coal Miner Boots",
-      "url": "https://www.wowhead.com/classic/item=18043/coal-miner-boots",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 22275,
-      "name": "Firemoss Boots",
-      "url": "https://www.wowhead.com/classic/item=22275/firemoss-boots",
-      "quality": 3,
-      "dropChance": null
+      "dropChance": 29.53
     },
     {
       "id": 18044,
       "name": "Hurley's Tankard",
       "url": "https://www.wowhead.com/classic/item=18044/hurley-s-tankard",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 23.91
     },
     {
-      "id": 18592,
-      "name": "Plans: Sulfuron Hammer",
-      "url": "https://www.wowhead.com/classic/item=18592/plans-sulfuron-hammer",
-      "quality": 4,
-      "dropChance": null
-    },
-    {
-      "id": 11612,
-      "name": "Plans: Dark Iron Plate",
-      "url": "https://www.wowhead.com/classic/item=11612/plans-dark-iron-plate",
+      "id": 22275,
+      "name": "Firemoss Boots",
+      "url": "https://www.wowhead.com/classic/item=22275/firemoss-boots",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 23.03
     },
     {
-      "id": 2662,
-      "name": "Ribbly's Quiver",
-      "url": "https://www.wowhead.com/classic/item=2662/ribbly-s-quiver",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 2663,
-      "name": "Ribbly's Bandolier",
-      "url": "https://www.wowhead.com/classic/item=2663/ribbly-s-bandolier",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 11742,
-      "name": "Wayfarer's Knapsack",
-      "url": "https://www.wowhead.com/classic/item=11742/wayfarer-s-knapsack",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 12793,
-      "name": "Mixologist's Tunic",
-      "url": "https://www.wowhead.com/classic/item=12793/mixologist-s-tunic",
+      "id": 18043,
+      "name": "Coal Miner Boots",
+      "url": "https://www.wowhead.com/classic/item=18043/coal-miner-boots",
       "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 12791,
-      "name": "Barman Shanker",
-      "url": "https://www.wowhead.com/classic/item=12791/barman-shanker",
-      "quality": 3,
-      "dropChance": null
+      "dropChance": 20.41
     },
     {
       "id": 18653,
       "name": "Schematic: Goblin Jumper Cables XL",
       "url": "https://www.wowhead.com/classic/item=18653/schematic-goblin-jumper-cables-xl",
       "quality": 2,
+      "dropChance": 16.94
+    },
+    {
+      "id": 11742,
+      "name": "Wayfarer's Knapsack",
+      "url": "https://www.wowhead.com/classic/item=11742/wayfarer-s-knapsack",
+      "quality": 2,
+      "dropChance": 13.75
+    },
+    {
+      "id": 11612,
+      "name": "Plans: Dark Iron Plate",
+      "url": "https://www.wowhead.com/classic/item=11612/plans-dark-iron-plate",
+      "quality": 3,
+      "dropChance": 12.39
+    },
+    {
+      "id": 12791,
+      "name": "Barman Shanker",
+      "url": "https://www.wowhead.com/classic/item=12791/barman-shanker",
+      "quality": 3,
+      "dropChance": 10.24
+    },
+    {
+      "id": 2663,
+      "name": "Ribbly's Bandolier",
+      "url": "https://www.wowhead.com/classic/item=2663/ribbly-s-bandolier",
+      "quality": 2,
+      "dropChance": 9.03
+    },
+    {
+      "id": 2662,
+      "name": "Ribbly's Quiver",
+      "url": "https://www.wowhead.com/classic/item=2662/ribbly-s-quiver",
+      "quality": 2,
+      "dropChance": 8.54
+    },
+    {
+      "id": 11735,
+      "name": "Ragefury Eyepatch",
+      "url": "https://www.wowhead.com/classic/item=11735/ragefury-eyepatch",
+      "quality": 3,
+      "dropChance": 7.58
+    },
+    {
+      "id": 11325,
+      "name": "Dark Iron Ale Mug",
+      "url": "https://www.wowhead.com/classic/item=11325/dark-iron-ale-mug",
+      "quality": 1,
+      "dropChance": 1.6
+    },
+    {
+      "id": 11602,
+      "name": "Grim Guzzler Key",
+      "url": "https://www.wowhead.com/classic/item=11602/grim-guzzler-key",
+      "quality": 1,
+      "dropChance": 0.16
+    },
+    {
+      "id": 18592,
+      "name": "Plans: Sulfuron Hammer",
+      "url": "https://www.wowhead.com/classic/item=18592/plans-sulfuron-hammer",
+      "quality": 4,
       "dropChance": null
     },
     {
@@ -4134,107 +4148,107 @@ const ENCOUNTER_LOOT = {
       "id": 15759,
       "name": "Pattern: Black Dragonscale Breastplate",
       "url": "https://www.wowhead.com/classic/item=15759/pattern-black-dragonscale-breastplate",
-      "quality": 1,
-      "dropChance": null
-    },
-    {
-      "id": 11325,
-      "name": "Dark Iron Ale Mug",
-      "url": "https://www.wowhead.com/classic/item=11325/dark-iron-ale-mug",
-      "quality": 1,
-      "dropChance": null
-    },
-    {
-      "id": 11602,
-      "name": "Grim Guzzler Key",
-      "url": "https://www.wowhead.com/classic/item=11602/grim-guzzler-key",
       "quality": 1,
       "dropChance": null
     }
   ],
   "9543": [
     {
-      "id": 11735,
-      "name": "Ragefury Eyepatch",
-      "url": "https://www.wowhead.com/classic/item=11735/ragefury-eyepatch",
+      "id": 12793,
+      "name": "Mixologist's Tunic",
+      "url": "https://www.wowhead.com/classic/item=12793/mixologist-s-tunic",
       "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 18043,
-      "name": "Coal Miner Boots",
-      "url": "https://www.wowhead.com/classic/item=18043/coal-miner-boots",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 22275,
-      "name": "Firemoss Boots",
-      "url": "https://www.wowhead.com/classic/item=22275/firemoss-boots",
-      "quality": 3,
-      "dropChance": null
+      "dropChance": 29.53
     },
     {
       "id": 18044,
       "name": "Hurley's Tankard",
       "url": "https://www.wowhead.com/classic/item=18044/hurley-s-tankard",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 23.91
     },
     {
-      "id": 18592,
-      "name": "Plans: Sulfuron Hammer",
-      "url": "https://www.wowhead.com/classic/item=18592/plans-sulfuron-hammer",
-      "quality": 4,
-      "dropChance": null
-    },
-    {
-      "id": 11612,
-      "name": "Plans: Dark Iron Plate",
-      "url": "https://www.wowhead.com/classic/item=11612/plans-dark-iron-plate",
+      "id": 22275,
+      "name": "Firemoss Boots",
+      "url": "https://www.wowhead.com/classic/item=22275/firemoss-boots",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 23.03
     },
     {
-      "id": 2662,
-      "name": "Ribbly's Quiver",
-      "url": "https://www.wowhead.com/classic/item=2662/ribbly-s-quiver",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 2663,
-      "name": "Ribbly's Bandolier",
-      "url": "https://www.wowhead.com/classic/item=2663/ribbly-s-bandolier",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 11742,
-      "name": "Wayfarer's Knapsack",
-      "url": "https://www.wowhead.com/classic/item=11742/wayfarer-s-knapsack",
-      "quality": 2,
-      "dropChance": null
-    },
-    {
-      "id": 12793,
-      "name": "Mixologist's Tunic",
-      "url": "https://www.wowhead.com/classic/item=12793/mixologist-s-tunic",
+      "id": 18043,
+      "name": "Coal Miner Boots",
+      "url": "https://www.wowhead.com/classic/item=18043/coal-miner-boots",
       "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 12791,
-      "name": "Barman Shanker",
-      "url": "https://www.wowhead.com/classic/item=12791/barman-shanker",
-      "quality": 3,
-      "dropChance": null
+      "dropChance": 20.41
     },
     {
       "id": 18653,
       "name": "Schematic: Goblin Jumper Cables XL",
       "url": "https://www.wowhead.com/classic/item=18653/schematic-goblin-jumper-cables-xl",
       "quality": 2,
+      "dropChance": 16.94
+    },
+    {
+      "id": 11742,
+      "name": "Wayfarer's Knapsack",
+      "url": "https://www.wowhead.com/classic/item=11742/wayfarer-s-knapsack",
+      "quality": 2,
+      "dropChance": 13.75
+    },
+    {
+      "id": 11612,
+      "name": "Plans: Dark Iron Plate",
+      "url": "https://www.wowhead.com/classic/item=11612/plans-dark-iron-plate",
+      "quality": 3,
+      "dropChance": 12.39
+    },
+    {
+      "id": 12791,
+      "name": "Barman Shanker",
+      "url": "https://www.wowhead.com/classic/item=12791/barman-shanker",
+      "quality": 3,
+      "dropChance": 10.24
+    },
+    {
+      "id": 2663,
+      "name": "Ribbly's Bandolier",
+      "url": "https://www.wowhead.com/classic/item=2663/ribbly-s-bandolier",
+      "quality": 2,
+      "dropChance": 9.03
+    },
+    {
+      "id": 2662,
+      "name": "Ribbly's Quiver",
+      "url": "https://www.wowhead.com/classic/item=2662/ribbly-s-quiver",
+      "quality": 2,
+      "dropChance": 8.54
+    },
+    {
+      "id": 11735,
+      "name": "Ragefury Eyepatch",
+      "url": "https://www.wowhead.com/classic/item=11735/ragefury-eyepatch",
+      "quality": 3,
+      "dropChance": 7.58
+    },
+    {
+      "id": 11325,
+      "name": "Dark Iron Ale Mug",
+      "url": "https://www.wowhead.com/classic/item=11325/dark-iron-ale-mug",
+      "quality": 1,
+      "dropChance": 1.6
+    },
+    {
+      "id": 11602,
+      "name": "Grim Guzzler Key",
+      "url": "https://www.wowhead.com/classic/item=11602/grim-guzzler-key",
+      "quality": 1,
+      "dropChance": 0.16
+    },
+    {
+      "id": 18592,
+      "name": "Plans: Sulfuron Hammer",
+      "url": "https://www.wowhead.com/classic/item=18592/plans-sulfuron-hammer",
+      "quality": 4,
       "dropChance": null
     },
     {
@@ -4248,20 +4262,6 @@ const ENCOUNTER_LOOT = {
       "id": 15759,
       "name": "Pattern: Black Dragonscale Breastplate",
       "url": "https://www.wowhead.com/classic/item=15759/pattern-black-dragonscale-breastplate",
-      "quality": 1,
-      "dropChance": null
-    },
-    {
-      "id": 11325,
-      "name": "Dark Iron Ale Mug",
-      "url": "https://www.wowhead.com/classic/item=11325/dark-iron-ale-mug",
-      "quality": 1,
-      "dropChance": null
-    },
-    {
-      "id": 11602,
-      "name": "Grim Guzzler Key",
-      "url": "https://www.wowhead.com/classic/item=11602/grim-guzzler-key",
       "quality": 1,
       "dropChance": null
     }
@@ -4296,18 +4296,18 @@ const ENCOUNTER_LOOT = {
       "dropChance": 8.74
     },
     {
+      "id": 23320,
+      "name": "Tablet of Flame Shock VI",
+      "url": "https://www.wowhead.com/classic/item=23320/tablet-of-flame-shock-vi",
+      "quality": 3,
+      "dropChance": 1.1
+    },
+    {
       "id": 11808,
       "name": "Circle of Flame",
       "url": "https://www.wowhead.com/classic/item=11808/circle-of-flame",
       "quality": 4,
       "dropChance": 0.28
-    },
-    {
-      "id": 23320,
-      "name": "Tablet of Flame Shock VI",
-      "url": "https://www.wowhead.com/classic/item=23320/tablet-of-flame-shock-vi",
-      "quality": 3,
-      "dropChance": null
     }
   ],
   "8923": [
@@ -4400,350 +4400,350 @@ const ENCOUNTER_LOOT = {
   ],
   "9035": [
     {
-      "id": 11925,
-      "name": "Ghostshroud",
-      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11926,
-      "name": "Deathdealer Breastplate",
-      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
       "id": 11929,
       "name": "Haunting Specter Leggings",
       "url": "https://www.wowhead.com/classic/item=11929/haunting-specter-leggings",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 50.0
     },
     {
       "id": 11927,
       "name": "Legplates of the Eternal Guardian",
       "url": "https://www.wowhead.com/classic/item=11927/legplates-of-the-eternal-guardian",
       "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11920,
-      "name": "Wraith Scythe",
-      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
-      "quality": 3,
-      "dropChance": null
+      "dropChance": 46.7
     },
     {
       "id": 11923,
       "name": "The Hammer of Grace",
       "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 36.19
+    },
+    {
+      "id": 11926,
+      "name": "Deathdealer Breastplate",
+      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
+      "quality": 3,
+      "dropChance": 26.7
+    },
+    {
+      "id": 11925,
+      "name": "Ghostshroud",
+      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
+      "quality": 3,
+      "dropChance": 25.0
+    },
+    {
+      "id": 11920,
+      "name": "Wraith Scythe",
+      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
+      "quality": 3,
+      "dropChance": 25.0
     },
     {
       "id": 11922,
       "name": "Blood-etched Blade",
       "url": "https://www.wowhead.com/classic/item=11922/blood-etched-blade",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     },
     {
       "id": 11921,
       "name": "Impervious Giant",
       "url": "https://www.wowhead.com/classic/item=11921/impervious-giant",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     }
   ],
   "9036": [
     {
-      "id": 11925,
-      "name": "Ghostshroud",
-      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11926,
-      "name": "Deathdealer Breastplate",
-      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
       "id": 11929,
       "name": "Haunting Specter Leggings",
       "url": "https://www.wowhead.com/classic/item=11929/haunting-specter-leggings",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 50.0
     },
     {
       "id": 11927,
       "name": "Legplates of the Eternal Guardian",
       "url": "https://www.wowhead.com/classic/item=11927/legplates-of-the-eternal-guardian",
       "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11920,
-      "name": "Wraith Scythe",
-      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
-      "quality": 3,
-      "dropChance": null
+      "dropChance": 46.7
     },
     {
       "id": 11923,
       "name": "The Hammer of Grace",
       "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 36.19
+    },
+    {
+      "id": 11926,
+      "name": "Deathdealer Breastplate",
+      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
+      "quality": 3,
+      "dropChance": 26.7
+    },
+    {
+      "id": 11925,
+      "name": "Ghostshroud",
+      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
+      "quality": 3,
+      "dropChance": 25.0
+    },
+    {
+      "id": 11920,
+      "name": "Wraith Scythe",
+      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
+      "quality": 3,
+      "dropChance": 25.0
     },
     {
       "id": 11922,
       "name": "Blood-etched Blade",
       "url": "https://www.wowhead.com/classic/item=11922/blood-etched-blade",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     },
     {
       "id": 11921,
       "name": "Impervious Giant",
       "url": "https://www.wowhead.com/classic/item=11921/impervious-giant",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     }
   ],
   "9037": [
     {
-      "id": 11925,
-      "name": "Ghostshroud",
-      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11926,
-      "name": "Deathdealer Breastplate",
-      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
       "id": 11929,
       "name": "Haunting Specter Leggings",
       "url": "https://www.wowhead.com/classic/item=11929/haunting-specter-leggings",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 50.0
     },
     {
       "id": 11927,
       "name": "Legplates of the Eternal Guardian",
       "url": "https://www.wowhead.com/classic/item=11927/legplates-of-the-eternal-guardian",
       "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11920,
-      "name": "Wraith Scythe",
-      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
-      "quality": 3,
-      "dropChance": null
+      "dropChance": 46.7
     },
     {
       "id": 11923,
       "name": "The Hammer of Grace",
       "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 36.19
+    },
+    {
+      "id": 11926,
+      "name": "Deathdealer Breastplate",
+      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
+      "quality": 3,
+      "dropChance": 26.7
+    },
+    {
+      "id": 11925,
+      "name": "Ghostshroud",
+      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
+      "quality": 3,
+      "dropChance": 25.0
+    },
+    {
+      "id": 11920,
+      "name": "Wraith Scythe",
+      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
+      "quality": 3,
+      "dropChance": 25.0
     },
     {
       "id": 11922,
       "name": "Blood-etched Blade",
       "url": "https://www.wowhead.com/classic/item=11922/blood-etched-blade",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     },
     {
       "id": 11921,
       "name": "Impervious Giant",
       "url": "https://www.wowhead.com/classic/item=11921/impervious-giant",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     }
   ],
   "9038": [
     {
-      "id": 11925,
-      "name": "Ghostshroud",
-      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11926,
-      "name": "Deathdealer Breastplate",
-      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
       "id": 11929,
       "name": "Haunting Specter Leggings",
       "url": "https://www.wowhead.com/classic/item=11929/haunting-specter-leggings",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 50.0
     },
     {
       "id": 11927,
       "name": "Legplates of the Eternal Guardian",
       "url": "https://www.wowhead.com/classic/item=11927/legplates-of-the-eternal-guardian",
       "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11920,
-      "name": "Wraith Scythe",
-      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
-      "quality": 3,
-      "dropChance": null
+      "dropChance": 46.7
     },
     {
       "id": 11923,
       "name": "The Hammer of Grace",
       "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 36.19
+    },
+    {
+      "id": 11926,
+      "name": "Deathdealer Breastplate",
+      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
+      "quality": 3,
+      "dropChance": 26.7
+    },
+    {
+      "id": 11925,
+      "name": "Ghostshroud",
+      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
+      "quality": 3,
+      "dropChance": 25.0
+    },
+    {
+      "id": 11920,
+      "name": "Wraith Scythe",
+      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
+      "quality": 3,
+      "dropChance": 25.0
     },
     {
       "id": 11922,
       "name": "Blood-etched Blade",
       "url": "https://www.wowhead.com/classic/item=11922/blood-etched-blade",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     },
     {
       "id": 11921,
       "name": "Impervious Giant",
       "url": "https://www.wowhead.com/classic/item=11921/impervious-giant",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     }
   ],
   "9039": [
     {
-      "id": 11925,
-      "name": "Ghostshroud",
-      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11926,
-      "name": "Deathdealer Breastplate",
-      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
       "id": 11929,
       "name": "Haunting Specter Leggings",
       "url": "https://www.wowhead.com/classic/item=11929/haunting-specter-leggings",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 50.0
     },
     {
       "id": 11927,
       "name": "Legplates of the Eternal Guardian",
       "url": "https://www.wowhead.com/classic/item=11927/legplates-of-the-eternal-guardian",
       "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11920,
-      "name": "Wraith Scythe",
-      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
-      "quality": 3,
-      "dropChance": null
+      "dropChance": 46.7
     },
     {
       "id": 11923,
       "name": "The Hammer of Grace",
       "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 36.19
+    },
+    {
+      "id": 11926,
+      "name": "Deathdealer Breastplate",
+      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
+      "quality": 3,
+      "dropChance": 26.7
+    },
+    {
+      "id": 11925,
+      "name": "Ghostshroud",
+      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
+      "quality": 3,
+      "dropChance": 25.0
+    },
+    {
+      "id": 11920,
+      "name": "Wraith Scythe",
+      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
+      "quality": 3,
+      "dropChance": 25.0
     },
     {
       "id": 11922,
       "name": "Blood-etched Blade",
       "url": "https://www.wowhead.com/classic/item=11922/blood-etched-blade",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     },
     {
       "id": 11921,
       "name": "Impervious Giant",
       "url": "https://www.wowhead.com/classic/item=11921/impervious-giant",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     }
   ],
   "9040": [
     {
-      "id": 11925,
-      "name": "Ghostshroud",
-      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11926,
-      "name": "Deathdealer Breastplate",
-      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
-      "quality": 3,
-      "dropChance": null
-    },
-    {
       "id": 11929,
       "name": "Haunting Specter Leggings",
       "url": "https://www.wowhead.com/classic/item=11929/haunting-specter-leggings",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 50.0
     },
     {
       "id": 11927,
       "name": "Legplates of the Eternal Guardian",
       "url": "https://www.wowhead.com/classic/item=11927/legplates-of-the-eternal-guardian",
       "quality": 3,
-      "dropChance": null
-    },
-    {
-      "id": 11920,
-      "name": "Wraith Scythe",
-      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
-      "quality": 3,
-      "dropChance": null
+      "dropChance": 46.7
     },
     {
       "id": 11923,
       "name": "The Hammer of Grace",
       "url": "https://www.wowhead.com/classic/item=11923/the-hammer-of-grace",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 36.19
+    },
+    {
+      "id": 11926,
+      "name": "Deathdealer Breastplate",
+      "url": "https://www.wowhead.com/classic/item=11926/deathdealer-breastplate",
+      "quality": 3,
+      "dropChance": 26.7
+    },
+    {
+      "id": 11925,
+      "name": "Ghostshroud",
+      "url": "https://www.wowhead.com/classic/item=11925/ghostshroud",
+      "quality": 3,
+      "dropChance": 25.0
+    },
+    {
+      "id": 11920,
+      "name": "Wraith Scythe",
+      "url": "https://www.wowhead.com/classic/item=11920/wraith-scythe",
+      "quality": 3,
+      "dropChance": 25.0
     },
     {
       "id": 11922,
       "name": "Blood-etched Blade",
       "url": "https://www.wowhead.com/classic/item=11922/blood-etched-blade",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     },
     {
       "id": 11921,
       "name": "Impervious Giant",
       "url": "https://www.wowhead.com/classic/item=11921/impervious-giant",
       "quality": 3,
-      "dropChance": null
+      "dropChance": 25.0
     }
   ],
   "9938": [
