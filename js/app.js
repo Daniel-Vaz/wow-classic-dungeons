@@ -128,21 +128,121 @@ function questPinFor(location, label) {
   return null;
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+//  QUEST ↔ NPC CROSS-REFERENCE
+//  Map pins are scraped quest-giver locations keyed only by a Wowhead URL, so on
+//  their own they don't reveal *which* quests an NPC serves — and one NPC can be
+//  a giver for quests across several dungeons. We build a reverse index from the
+//  entity id embedded in each giver link (npc=/object=/item=) to the quests that
+//  use it, so a pin can list its associated quests grouped by dungeon.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Extract a stable "type:id" key (e.g. "npc:3216") from a Wowhead giver/pin URL.
+function entityKeyFromUrl(url) {
+  if (!url) return null;
+  const m = url.match(/(npc|object|item)=(\d+)/);
+  return m ? `${m[1]}:${m[2]}` : null;
+}
+
+// Collect the giver links of a quest as { key, role } pairs. Prefers the
+// multi-giver arrays (startNpcs/endNpcs) when present, else the single fields.
+function questGiverKeys(q) {
+  const out = [];
+  const add = (url, role) => {
+    const key = entityKeyFromUrl(url);
+    if (key) out.push({ key, role });
+  };
+  if (Array.isArray(q.startNpcs) && q.startNpcs.length) {
+    q.startNpcs.forEach(n => add(n.link, 'start'));
+  } else {
+    add(q.startNpcLink || q.startObjectLink || q.startItemLink, 'start');
+  }
+  if (Array.isArray(q.endNpcs) && q.endNpcs.length) {
+    q.endNpcs.forEach(n => add(n.link, 'turnin'));
+  } else {
+    add(q.endNpcLink || q.endObjectLink, 'turnin');
+  }
+  return out;
+}
+
+// Reverse index: "type:id" → [{ dungeonId, dungeonName, dungeonAbbr, questName,
+// questId, questLink, roles[] }]. Built lazily on first use (DUNGEONS is global).
+let _questNpcIndex = null;
+function questNpcIndex() {
+  if (_questNpcIndex) return _questNpcIndex;
+  const idx = {};
+  if (typeof DUNGEONS !== 'undefined') {
+    DUNGEONS.forEach(d => {
+      // getCountableQuests yields exactly the quests that surface as their own
+      // card — top-level quests plus the preChain "requires" alternatives (e.g.
+      // a class quest's city-specific giver variants) that aren't in d.quests
+      // directly. Iterating d.quests alone would miss those nested givers.
+      getCountableQuests(d).forEach(q => {
+        // Merge roles per entity so an NPC that both starts and turns in the
+        // same quest yields a single entry tagged with both roles.
+        const rolesByKey = {};
+        questGiverKeys(q).forEach(({ key, role }) => {
+          (rolesByKey[key] = rolesByKey[key] || new Set()).add(role);
+        });
+        Object.entries(rolesByKey).forEach(([key, roles]) => {
+          (idx[key] = idx[key] || []).push({
+            dungeonId: d.id,
+            dungeonName: d.name,
+            dungeonAbbr: d.abbr,
+            questName: q.name,
+            questId: q.id,
+            questLink: q.questLink,
+            roles: [...roles],
+          });
+        });
+      });
+    });
+  }
+  _questNpcIndex = idx;
+  return idx;
+}
+
+// Quests associated with a map pin (via its Wowhead URL), grouped by dungeon.
+// Returns [] when the pin has no matching giver. Each group:
+// { dungeonId, dungeonName, dungeonAbbr, quests: [entry, ...] }.
+function pinQuestGroups(pin) {
+  const key = pin && entityKeyFromUrl(pin.url);
+  const entries = key ? (questNpcIndex()[key] || []) : [];
+  if (!entries.length) return [];
+  const groups = new Map();
+  entries.forEach(e => {
+    if (!groups.has(e.dungeonId)) {
+      groups.set(e.dungeonId, {
+        dungeonId: e.dungeonId,
+        dungeonName: e.dungeonName,
+        dungeonAbbr: e.dungeonAbbr,
+        quests: [],
+      });
+    }
+    groups.get(e.dungeonId).quests.push(e);
+  });
+  return [...groups.values()];
+}
+
 // Render a quest-giver name. When the giver (an NPC or object) has a predefined
 // map pin, the name becomes a clickable map link that opens the map popout and
 // focuses that pin; its Wowhead URL is surfaced inside the popout. Otherwise it
 // falls back to a plain Wowhead anchor.
 function buildGiverNameHtml(name, link, type, loc) {
   if (!name) return '';
+  // NPCs carry a data-npc-id so hovering the name shows a floating model preview
+  // (assets/npc-models/{npcId}.jpg) — see the delegated handler in init().
+  const npcMatch = (type === 'npc' && link) ? link.match(/npc=(\d+)/) : null;
+  const npcAttr = npcMatch ? ` data-npc-id="${npcMatch[1]}"` : '';
   const isMappable = (type === 'npc' || type === 'object');
   if (isMappable && questPinFor(loc, name)) {
     const cls = type === 'object' ? 'npc-link object-link map-npc-link' : 'npc-link map-npc-link';
-    return `<span class="${cls}" data-location="${escapeHtml(loc)}" data-pin-label="${escapeHtml(name)}"`
+    return `<span class="${cls}" data-location="${escapeHtml(loc)}" data-pin-label="${escapeHtml(name)}"${npcAttr}`
       + ` title="Show on map">${escapeHtml(name)}</span>`;
   }
   const cls = type === 'object' ? 'object-link' : 'npc-link';
   return link
-    ? `<a href="${link}" target="_blank" rel="noopener noreferrer" class="${cls}">${escapeHtml(name)}</a>`
+    ? `<a href="${link}" target="_blank" rel="noopener noreferrer" class="${cls}"${npcAttr}>${escapeHtml(name)}</a>`
     : escapeHtml(name);
 }
 
@@ -1059,28 +1159,34 @@ function positionEncounterPreview(el, anchor) {
   el.style.top = `${top}px`;
 }
 
+// Show/hide the floating model preview anchored to `anchor`, loading
+// assets/npc-models/{npcId}.jpg. Shared by the encounter list (per-element
+// listeners) and quest-card NPC names (delegated hover) so both look identical.
+function showNpcModelPreview(anchor, name, npcId) {
+  const el = getEncounterPreview();
+  const img = el.querySelector('img');
+  el.querySelector('.encounter-preview-name').textContent = name;
+  img.onload = () => {
+    positionEncounterPreview(el, anchor);
+    el.classList.add('visible');
+  };
+  img.onerror = () => { el.classList.remove('visible'); };
+  img.src = `assets/npc-models/${npcId}.jpg`;
+}
+
+function hideNpcModelPreview() {
+  if (!encounterPreviewEl) return;
+  encounterPreviewEl.classList.remove('visible');
+  const img = encounterPreviewEl.querySelector('img');
+  img.onload = null;
+  img.src = '';
+}
+
 // Show a small floating model preview when hovering an encounter, so users can
 // match a boss name to its appearance without opening the full modal.
 function attachEncounterPreview(item, name, npcId) {
-  item.addEventListener('mouseenter', () => {
-    const el = getEncounterPreview();
-    const img = el.querySelector('img');
-    el.querySelector('.encounter-preview-name').textContent = name;
-    img.onload = () => {
-      positionEncounterPreview(el, item);
-      el.classList.add('visible');
-    };
-    img.onerror = () => { el.classList.remove('visible'); };
-    img.src = `assets/npc-models/${npcId}.jpg`;
-  });
-  item.addEventListener('mouseleave', () => {
-    if (encounterPreviewEl) {
-      encounterPreviewEl.classList.remove('visible');
-      const img = encounterPreviewEl.querySelector('img');
-      img.onload = null;
-      img.src = '';
-    }
-  });
+  item.addEventListener('mouseenter', () => showNpcModelPreview(item, name, npcId));
+  item.addEventListener('mouseleave', hideNpcModelPreview);
 }
 
 // ═══════════════════════════════════════
@@ -2453,6 +2559,11 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
   const chainClass = quest.chainId !== null ? ' chain-quest' : '';
   card.className = 'quest-card' + chainClass + (isComplete ? ' completed' : '');
 
+  // Tag the card so map-pin quest links can scroll to / highlight it after
+  // navigating to this dungeon (id disambiguates same-named series quests).
+  card.dataset.questName = quest.name;
+  if (quest.id != null) card.dataset.questId = quest.id;
+
   if (quest.chainId !== null) {
     card.dataset.chainId = quest.chainId;
   }
@@ -2878,7 +2989,11 @@ function focusMapPin(pin) {
     pinEl.addEventListener('animationend', () => pinEl.classList.remove('pin-highlight'), { once: true });
     clearActivePinLabels();
     pinEl.classList.add('label-active');
+    loadPinThumb(pinEl);
   }
+
+  // Mirror the focus in the side list (e.g. opened from a quest-card NPC link).
+  revealPinInList(pin, pin.id ? 'user' : 'system');
 }
 
 // Once the map image has loaded and pins are rendered, centre on any pin the
@@ -2940,6 +3055,56 @@ function openMapModal(locationName, focus = null) {
 
 function clearActivePinLabels() {
   document.querySelectorAll('.map-pin.label-active').forEach(p => p.classList.remove('label-active'));
+  clearPinListActive();
+}
+
+function clearPinListActive() {
+  document.querySelectorAll('.pin-list-item--active')
+    .forEach(el => el.classList.remove('pin-list-item--active'));
+}
+
+// Mirror a map-pin click in the side list: expand the panel (if collapsed) and
+// the pin's section, then highlight + scroll its row into view so the user can
+// see which list entry the clicked map pin corresponds to.
+function revealPinInList(pin, type) {
+  const list = document.getElementById('mapPinList');
+  if (!list) return;
+
+  const item = type === 'user'
+    ? list.querySelector(`.pin-list-item[data-pin-id="${pin.id}"]`)
+    : list.querySelector(`.pin-list-item[data-x="${pin.x}"][data-y="${pin.y}"]`);
+  if (!item) return;
+
+  // Expand the collapsed side panel so the highlighted row is actually visible.
+  const panel = document.getElementById('mapPinListPanel');
+  if (panel && panel.classList.contains('collapsed')) {
+    pinPanelManualState = false;
+    setPinListCollapsed(false);
+    // The panel's width transition (0.22s) shrinks the viewport, so re-centre on
+    // this pin afterwards at the current zoom — a full resetMapView would refit
+    // the whole map and undo a quest-card link's focus.
+    clearTimeout(resizeDebounceTimer);
+    resizeDebounceTimer = setTimeout(() => {
+      const vp = document.getElementById('mapModalViewport');
+      if (!vp || !mapNaturalW) return;
+      mapX = vp.clientWidth  / 2 - (pin.x / 100) * mapNaturalW * mapScale;
+      mapY = vp.clientHeight / 2 - (pin.y / 100) * mapNaturalH * mapScale;
+      applyMapTransform();
+    }, 240);
+  }
+
+  // Expand the section (e.g. "Quest Givers") that contains the row.
+  const section = item.closest('.pin-list-section');
+  if (section && !section.classList.contains('expanded')) {
+    section.classList.add('expanded');
+    const header = section.querySelector('.pin-list-section-header');
+    if (header) header.setAttribute('aria-expanded', 'true');
+    if (section.dataset.section) mapPinListExpanded.add(section.dataset.section);
+  }
+
+  clearPinListActive();
+  item.classList.add('pin-list-item--active');
+  item.scrollIntoView({ block: 'nearest' });
 }
 
 function closeMapModal() {
@@ -3103,6 +3268,25 @@ function initMapModal() {
     if (link) openMapModal(link.dataset.location);
   });
 
+  // Quest-card NPC name → floating model preview on hover. Delegated because
+  // quest cards rebuild dynamically; mirrors the encounter-list hover preview.
+  let npcPreviewAnchor = null;
+  document.addEventListener('mouseover', e => {
+    const link = e.target.closest('[data-npc-id]');
+    if (!link || link === npcPreviewAnchor) return;
+    npcPreviewAnchor = link;
+    const name = link.dataset.pinLabel || link.textContent.trim();
+    showNpcModelPreview(link, name, link.dataset.npcId);
+  });
+  document.addEventListener('mouseout', e => {
+    const link = e.target.closest('[data-npc-id]');
+    if (!link || link !== npcPreviewAnchor) return;
+    // Ignore moves that stay inside the same anchor.
+    if (e.relatedTarget && link.contains(e.relatedTarget)) return;
+    npcPreviewAnchor = null;
+    hideNpcModelPreview();
+  });
+
   // Quest-giver name → open the map focused on that NPC/object's pin
   document.addEventListener('click', e => {
     const link = e.target.closest('.map-npc-link');
@@ -3263,6 +3447,8 @@ function buildPinListItem(pin, type) {
   const pinType = pin.type || type;
   const item = document.createElement('div');
   item.className = 'pin-list-item';
+  item.dataset.x = pin.x;
+  item.dataset.y = pin.y;
   if (type === 'user') item.dataset.pinId = pin.id;
 
   const iconEl = document.createElement('div');
@@ -3295,6 +3481,20 @@ function buildPinListItem(pin, type) {
 
   info.appendChild(nameEl);
   if (pin.label) info.appendChild(coordEl);
+
+  // Quests this giver serves (grouped by dungeon). System/quest pins only.
+  const questGroups = type === 'user' ? [] : pinQuestGroups(pin);
+  if (questGroups.length) {
+    const total = questGroups.reduce((n, g) => n + g.quests.length, 0);
+    const toggle = document.createElement('button');
+    toggle.className = 'pin-quest-toggle';
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.innerHTML =
+      `<span class="pin-quest-toggle-chevron">›</span>`
+      + `<span>${total} quest${total === 1 ? '' : 's'}</span>`;
+    info.appendChild(toggle);
+  }
+
   item.appendChild(iconEl);
   item.appendChild(info);
 
@@ -3314,7 +3514,62 @@ function buildPinListItem(pin, type) {
   }
 
   item.addEventListener('click', () => navigateToPin(pin, type));
-  return item;
+
+  if (!questGroups.length) return item;
+
+  // Wrap the row with an expandable panel listing the associated quests so the
+  // user can see — and jump to — the quest/dungeon each pin belongs to.
+  const wrapper = document.createElement('div');
+  wrapper.className = 'pin-list-entry';
+  wrapper.appendChild(item);
+  wrapper.appendChild(buildPinQuestPanel(questGroups));
+
+  const toggle = info.querySelector('.pin-quest-toggle');
+  toggle.addEventListener('click', e => {
+    e.stopPropagation();
+    const open = wrapper.classList.toggle('quests-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  return wrapper;
+}
+
+const PIN_QUEST_ROLE_LABEL = { start: 'Start', turnin: 'Turn-in' };
+
+// Build the collapsible panel that lists a pin's quests grouped by dungeon.
+// Each quest jumps to its dungeon page and highlights the matching card.
+function buildPinQuestPanel(groups) {
+  const panel = document.createElement('div');
+  panel.className = 'pin-list-quests';
+
+  groups.forEach(group => {
+    const groupEl = document.createElement('div');
+    groupEl.className = 'pin-quest-group';
+
+    const head = document.createElement('div');
+    head.className = 'pin-quest-dungeon';
+    head.innerHTML = `<span class="pin-quest-dungeon-icon">⚔</span>`
+      + `<span class="pin-quest-dungeon-name">${escapeHtml(group.dungeonName)}</span>`;
+    groupEl.appendChild(head);
+
+    group.quests.forEach(q => {
+      const link = document.createElement('button');
+      link.className = 'pin-quest-link';
+      link.title = `Open “${q.questName}” in ${group.dungeonName}`;
+      const roleTags = q.roles
+        .map(r => `<span class="pin-quest-role pin-quest-role--${r}">${PIN_QUEST_ROLE_LABEL[r] || r}</span>`)
+        .join('');
+      link.innerHTML = `${roleTags}<span class="pin-quest-name">${escapeHtml(q.questName)}</span>`;
+      link.addEventListener('click', e => {
+        e.stopPropagation();
+        navigateToQuestFromMap(group.dungeonId, q.questName, q.questId);
+      });
+      groupEl.appendChild(link);
+    });
+
+    panel.appendChild(groupEl);
+  });
+
+  return panel;
 }
 
 function navigateToPin(pin, type) {
@@ -3336,10 +3591,94 @@ function navigateToPin(pin, type) {
     pinEl.addEventListener('animationend', () => pinEl.classList.remove('pin-highlight'), { once: true });
     clearActivePinLabels();
     pinEl.classList.add('label-active');
+    loadPinThumb(pinEl);
+  }
+
+  // Keep the clicked list row highlighted so map and list selection stay in sync.
+  const listItem = type === 'user'
+    ? document.querySelector(`#mapPinList .pin-list-item[data-pin-id="${pin.id}"]`)
+    : document.querySelector(`#mapPinList .pin-list-item[data-x="${pin.x}"][data-y="${pin.y}"]`);
+  if (listItem) {
+    clearPinListActive();
+    listItem.classList.add('pin-list-item--active');
   }
 
   // Open edit dialog for user pins
   if (type === 'user') openPinEditDialog(pin.id);
+}
+
+// Jump from a map-pin quest link to the quest's dungeon and focus its card.
+// Clears the incidental view filters that could hide the target (search, the
+// completed/incomplete filter, has-gear, the per-dungeon quest filter, the
+// location filter) so the card is guaranteed to render; faction/class identity
+// filters are left intact.
+function navigateToQuestFromMap(dungeonId, questName, questId) {
+  closeMapModal();
+
+  if (searchQuery) {
+    searchQuery = '';
+    const si = document.getElementById('searchInput');
+    if (si) si.value = '';
+    const sc = document.getElementById('searchClear');
+    if (sc) sc.hidden = true;
+  }
+  if (currentFilter !== 'all') {
+    currentFilter = 'all';
+    document.querySelectorAll('.filter-btn:not([data-filter="has-gear"])')
+      .forEach(b => b.classList.toggle('active', b.dataset.filter === 'all'));
+    savePrefs();
+  }
+  if (hasGearOnly) {
+    hasGearOnly = false;
+    const gb = document.querySelector('.filter-btn[data-filter="has-gear"]');
+    if (gb) gb.classList.remove('active');
+    savePrefs();
+  }
+
+  // selectDungeon resets dungeonQuestFilter + locationFilter and re-renders.
+  if (dungeonId === currentDungeonId) {
+    dungeonQuestFilter = null;
+    locationFilter = null;
+    updateDungeonFilterTrigger();
+    renderQuests();
+  } else {
+    selectDungeon(dungeonId);
+  }
+
+  // Wait a frame so the freshly rendered cards have layout before scrolling.
+  requestAnimationFrame(() => focusQuestCard(questName, questId));
+}
+
+// Scroll a quest card into view and pulse it. Prefers an exact quest-id match
+// (same-named series quests) and falls back to the quest name.
+function focusQuestCard(questName, questId) {
+  const cards = [...document.querySelectorAll('.quest-card')];
+  let card = questId != null
+    ? cards.find(c => c.dataset.questId === String(questId))
+    : null;
+  if (!card) card = cards.find(c => c.dataset.questName === questName);
+  if (!card) return;
+  card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  card.classList.remove('quest-card-focus');
+  void card.offsetWidth; // reflow to restart the animation
+  card.classList.add('quest-card-focus');
+  card.addEventListener('animationend',
+    () => card.classList.remove('quest-card-focus'), { once: true });
+}
+
+// Lazy-load a pin's NPC model thumbnail (assets/npc-models/{npcId}.jpg) the
+// first time the pin is shown — on hover, tap, or programmatic focus. Drops the
+// <img> if the NPC has no captured model so the pop-out falls back to name only.
+function loadPinThumb(pinEl) {
+  if (!pinEl || pinEl.dataset.thumbLoaded) return;
+  const npcId = pinEl.dataset.npcModel;
+  if (!npcId) return;
+  const thumb = pinEl.querySelector('.map-pin-thumb');
+  if (!thumb) return;
+  pinEl.dataset.thumbLoaded = '1';
+  thumb.onload  = () => { thumb.hidden = false; };
+  thumb.onerror = () => { thumb.remove(); };
+  thumb.src = `assets/npc-models/${npcId}.jpg`;
 }
 
 function renderSinglePin(container, pin, type) {
@@ -3364,20 +3703,37 @@ function renderSinglePin(container, pin, type) {
   }
   const tooltipInner = labelHtml + `<span>${coordStr}</span>`;
 
+  // Quest-giver pins link to a Wowhead NPC; show a thumbnail of its 3D model
+  // (assets/npc-models/{npcId}.jpg, captured by scrape_quest_npc_models.py).
+  const npcMatch = pin.url ? pin.url.match(/npc=(\d+)/) : null;
+  const npcId = npcMatch ? npcMatch[1] : null;
+  const thumbHtml = npcId ? '<img class="map-pin-thumb" alt="" hidden>' : '';
+  if (npcId) el.dataset.npcModel = npcId;
+
   el.innerHTML = `
     <div class="map-pin-marker"></div>
-    <div class="map-pin-tooltip">${tooltipInner}</div>
+    <div class="map-pin-tooltip">${thumbHtml}${tooltipInner}</div>
   `;
 
   // Clicking the Wowhead link should open it without collapsing the pop-out.
   const tooltipLink = el.querySelector('.map-pin-tooltip-link');
   if (tooltipLink) tooltipLink.addEventListener('click', e => e.stopPropagation());
 
+  // Lazy-load the model thumbnail on first hover/open so opening a map doesn't
+  // fire a request for every pin at once. (loadPinThumb is also called when a
+  // pin is focused programmatically — quest-card link, pin list — so the image
+  // shows immediately without needing a second hover/click.)
+  if (npcId) el.addEventListener('mouseenter', () => loadPinThumb(el));
+
   el.addEventListener('click', e => {
     e.stopPropagation();
+    loadPinThumb(el); // touch devices have no hover — load on tap
     const wasActive = el.classList.contains('label-active');
     clearActivePinLabels();
-    if (!wasActive) el.classList.add('label-active');
+    if (!wasActive) {
+      el.classList.add('label-active');
+      revealPinInList(pin, type); // highlight the matching row in the side list
+    }
     if (type === 'user') openPinEditDialog(pin.id);
   });
 
