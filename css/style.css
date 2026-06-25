@@ -3022,22 +3022,25 @@ button.guides-box-link {
   font-family: 'Cinzel', serif;
   font-size: 0.58rem;
   letter-spacing: 0.08em;
-  color: var(--gold-dim);
-  background: rgba(200, 168, 75, 0.08);
-  border: 1px solid var(--border-gold);
+  color: var(--gold);
+  background: rgba(200, 168, 75, 0.18);
+  border: 1px solid rgba(200, 168, 75, 0.5);
   border-radius: 10px;
   padding: 2px 9px;
   white-space: nowrap;
 }
 .encounter-modal-stage {
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
   flex-shrink: 0;
   min-height: 0;
 }
 .encounter-modal-body {
   position: relative;
-  flex: 1 1 auto;
+  /* basis 0 (not auto) so the image doesn't claim its intrinsic width and
+     bump the abilities column onto a wrapped row — keeps them side by side. */
+  flex: 1 1 0;
   min-width: 0;
   background: #06060a;
   min-height: 480px;
@@ -3218,7 +3221,11 @@ button.guides-box-link {
 /* Narrow screens: stack the abilities panel under the model instead of beside it. */
 @media (max-width: 720px) {
   .encounter-modal-stage { flex-direction: column; }
+  /* Stacked order: model image → Wowhead credit → abilities. */
+  .encounter-modal-body { order: 0; }
+  .encounter-model-credit { order: 1; flex: 0 0 auto; }
   .encounter-abilities {
+    order: 2;
     flex: 0 0 auto;
     max-height: 240px;
     border-left: none;
@@ -3249,7 +3256,8 @@ button.guides-box-link {
 
 /* ── ENCOUNTER MODEL CREDIT ── */
 .encounter-model-credit {
-  flex-shrink: 0;
+  flex: 0 0 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3947,6 +3955,15 @@ button.guides-box-link {
 .map-pin:hover,
 .map-pin.label-active {
   z-index: 30;
+}
+/* Dim non-selected pins when one is active so the selection is obvious. */
+.map-pin-container:has(.map-pin.label-active) .map-pin:not(.label-active) {
+  opacity: 0.35;
+  transition: opacity 0.2s;
+}
+.map-pin-container:has(.map-pin.label-active) .map-pin.label-active {
+  opacity: 1;
+  transition: opacity 0.2s;
 }
 /* Expanded hit area */
 .map-pin::before {

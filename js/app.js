@@ -3075,9 +3075,13 @@ function revealPinInList(pin, type) {
     : list.querySelector(`.pin-list-item[data-x="${pin.x}"][data-y="${pin.y}"]`);
   if (!item) return;
 
+  // On mobile the map fills the screen — don't auto-expand the side panel or
+  // its sections; just highlight the item so it's ready if the user opens them.
+  const isMobile = window.matchMedia('(max-width: 720px)').matches;
+
   // Expand the collapsed side panel so the highlighted row is actually visible.
   const panel = document.getElementById('mapPinListPanel');
-  if (panel && panel.classList.contains('collapsed')) {
+  if (!isMobile && panel && panel.classList.contains('collapsed')) {
     pinPanelManualState = false;
     setPinListCollapsed(false);
     // The panel's width transition (0.22s) shrinks the viewport, so re-centre on
@@ -3095,7 +3099,7 @@ function revealPinInList(pin, type) {
 
   // Expand the section (e.g. "Quest Givers") that contains the row.
   const section = item.closest('.pin-list-section');
-  if (section && !section.classList.contains('expanded')) {
+  if (!isMobile && section && !section.classList.contains('expanded')) {
     section.classList.add('expanded');
     const header = section.querySelector('.pin-list-section-header');
     if (header) header.setAttribute('aria-expanded', 'true');
@@ -3270,8 +3274,14 @@ function initMapModal() {
 
   // Quest-card NPC name → floating model preview on hover. Delegated because
   // quest cards rebuild dynamically; mirrors the encounter-list hover preview.
+  // On mobile Chrome, tapping fires a synthetic mouseover before the click,
+  // which would open the floating preview on top of the correct map pin tooltip.
+  // We suppress mouseover events that occur within 500ms of a real touch.
   let npcPreviewAnchor = null;
+  let lastTouchTime = 0;
+  document.addEventListener('touchstart', () => { lastTouchTime = Date.now(); }, { passive: true });
   document.addEventListener('mouseover', e => {
+    if (Date.now() - lastTouchTime < 500) return;
     const link = e.target.closest('[data-npc-id]');
     if (!link || link === npcPreviewAnchor) return;
     npcPreviewAnchor = link;
@@ -3279,6 +3289,7 @@ function initMapModal() {
     showNpcModelPreview(link, name, link.dataset.npcId);
   });
   document.addEventListener('mouseout', e => {
+    if (Date.now() - lastTouchTime < 500) return;
     const link = e.target.closest('[data-npc-id]');
     if (!link || link !== npcPreviewAnchor) return;
     // Ignore moves that stay inside the same anchor.
