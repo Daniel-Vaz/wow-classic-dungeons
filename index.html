@@ -173,6 +173,39 @@
   </div>
 </div>
 
+<!-- Quest Detail Modal -->
+<div id="questModal" class="quest-modal" aria-hidden="true">
+  <div class="quest-modal-backdrop"></div>
+  <div class="quest-modal-panel" role="dialog" aria-labelledby="questModalTitle">
+    <div class="quest-modal-header">
+      <div class="quest-modal-titlewrap">
+        <span class="quest-modal-title" id="questModalTitle"></span>
+        <div class="quest-modal-badges" id="questModalBadges"></div>
+      </div>
+      <a id="questModalWowheadLink" href="#" target="_blank" rel="noopener noreferrer" class="map-wowhead-link"><img src="assets/icons/wowhead.png" class="map-wowhead-logo" alt="Wowhead"> View on Wowhead ↗</a>
+      <button class="map-modal-close" id="questModalClose" aria-label="Close">✕</button>
+    </div>
+    <div class="quest-modal-body" id="questModalBody"></div>
+    <div class="quest-modal-nav" id="questModalNav" hidden>
+      <button class="quest-modal-nav-btn prev" id="questModalPrev" type="button">
+        <span class="qm-nav-arrow">‹</span>
+        <span class="qm-nav-text">
+          <span class="qm-nav-label">Previous</span>
+          <span class="qm-nav-name"></span>
+        </span>
+      </button>
+      <span class="quest-modal-nav-pos" id="questModalNavPos"></span>
+      <button class="quest-modal-nav-btn next" id="questModalNext" type="button">
+        <span class="qm-nav-text">
+          <span class="qm-nav-label">Next</span>
+          <span class="qm-nav-name"></span>
+        </span>
+        <span class="qm-nav-arrow">›</span>
+      </button>
+    </div>
+  </div>
+</div>
+
 <!-- Loading Screen Lightbox -->
 <div id="loadingScreenLightbox" class="ls-lightbox" aria-hidden="true">
   <div class="ls-lightbox-backdrop"></div>

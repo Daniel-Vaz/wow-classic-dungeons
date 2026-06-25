@@ -866,6 +866,7 @@ body.scrolled .search-row .controls-logo {
 .quest-name-link {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 .quest-name-link:hover {
   color: var(--gold-light);
@@ -4395,4 +4396,334 @@ body.scrolled .controls-logo.cinematic-returning {
   .carve-letter,
   .cinematic-subtitle.carving,
   .cinematic-subtitle .shine-band::before { animation: none !important; transition: none !important; }
+}
+
+/* ════════════════════════════════════════════════════════
+   QUEST DETAIL MODAL
+   ════════════════════════════════════════════════════════ */
+.quest-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.quest-modal.open { display: flex; }
+.quest-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(5px);
+}
+.quest-modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(880px, 94vw);
+  max-height: 90vh;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-gold);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(200, 168, 75, 0.1) inset;
+  overflow: hidden;
+}
+.quest-modal-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  pointer-events: none;
+  z-index: 2;
+}
+.quest-modal.open .quest-modal-panel {
+  animation: mapFadeIn 0.18s ease both;
+}
+
+/* ── Header ── */
+.quest-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-gold);
+  background: rgba(200, 168, 75, 0.04);
+  flex-shrink: 0;
+}
+.quest-modal-titlewrap {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  min-width: 0;
+}
+.quest-modal-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--gold-light);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+.quest-modal-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ── Body / layout ── */
+.quest-modal-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 18px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-gold) transparent;
+}
+.quest-modal-body::-webkit-scrollbar { width: 6px; height: 6px; }
+.quest-modal-body::-webkit-scrollbar-track { background: var(--bg-dark); }
+.quest-modal-body::-webkit-scrollbar-thumb { background: var(--border-gold); border-radius: 3px; }
+.quest-modal-body::-webkit-scrollbar-thumb:hover { background: var(--gold-dim); }
+.quest-modal-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+.quest-modal-main,
+.quest-modal-side {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+/* ── Sections ── */
+.quest-modal-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 12px 14px;
+}
+.quest-modal-section-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 9px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--border);
+}
+.quest-modal-section-title .qm-ico {
+  font-size: 0.85rem;
+  filter: saturate(0.85);
+}
+
+/* ── Objective ── */
+.qm-objective-text {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-bright);
+}
+
+/* ── Quest flavor text ── */
+.qm-description-text {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--text-main);
+  font-style: italic;
+  border-left: 2px solid var(--border-gold);
+  padding-left: 12px;
+}
+
+/* ── Inline entity links (objective + quest text) ──
+   wowhead injects bare <a> entity/zone links here; give them a polished gold
+   accent with a dotted underline that brightens on hover, while preserving the
+   item-quality colours wowhead tags onto item links. */
+.qm-objective-text a,
+.qm-description-text a {
+  color: var(--gold-light);
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--gold-dim);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.qm-objective-text a:hover,
+.qm-description-text a:hover {
+  color: var(--text-bright);
+  border-bottom-color: var(--gold);
+}
+.qm-objective-text a.q1,  .qm-description-text a.q1 { color: var(--white-common); }
+.qm-objective-text a.q2,  .qm-description-text a.q2 { color: var(--green-uncommon); border-bottom-color: rgba(30, 255, 0, 0.35); }
+.qm-objective-text a.q3,  .qm-description-text a.q3 { color: var(--blue-rare);      border-bottom-color: rgba(74, 144, 217, 0.4); }
+.qm-objective-text a.q4,  .qm-description-text a.q4 { color: var(--purple-epic);    border-bottom-color: rgba(163, 53, 238, 0.4); }
+.qm-objective-text a.q5,  .qm-description-text a.q5 { color: var(--orange-legendary); border-bottom-color: rgba(255, 128, 0, 0.4); }
+
+/* ── Locations / givers ── */
+.qm-giver-row {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+.qm-giver-row + .qm-giver-row { border-top: 1px dashed var(--border); }
+.qm-giver-label {
+  flex-shrink: 0;
+  width: 92px;
+  color: var(--text-dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-top: 2px;
+}
+.qm-giver-value { flex: 1; min-width: 0; color: var(--text-main); }
+
+/* ── Quick facts ── */
+.qm-facts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.qm-fact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.82rem;
+}
+.qm-fact-key { color: var(--text-dim); letter-spacing: 0.03em; }
+.qm-fact-val { color: var(--text-bright); font-weight: 600; text-align: right; }
+.qm-yes { color: var(--green-uncommon); }
+.qm-no  { color: var(--text-dim); }
+
+/* ── Rewards ── */
+.qm-reward-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.qm-reward-group + .qm-reward-group { margin-top: 10px; }
+.qm-reward-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 5px;
+}
+.qm-reward-items {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.qm-reward-items .item-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  line-height: 1.3;
+}
+/* Larger wowhead reward icons (data-wh-icon-size="medium") sit flush to the
+   left; give the name a little breathing room and vertically centre it. */
+.qm-reward-item .iconmedium,
+.qm-reward-item ins,
+.qm-reward-item .icontinyl,
+.qm-reward-item .iconsmall {
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+/* ── Chain navigation footer ── */
+/* A class selector's `display: flex` would otherwise override the [hidden]
+   attribute's UA `display: none`, leaving an empty footer on standalone quests. */
+.quest-modal-nav[hidden] { display: none; }
+.quest-modal-nav {
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--border-gold);
+  background: rgba(200, 168, 75, 0.04);
+}
+.quest-modal-nav-btn {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+}
+.quest-modal-nav-btn.next { justify-content: flex-end; text-align: right; }
+.quest-modal-nav-btn:hover:not(:disabled) {
+  border-color: var(--border-gold);
+  background: rgba(200, 168, 75, 0.08);
+}
+.quest-modal-nav-btn:active:not(:disabled) { transform: translateY(1px); }
+.quest-modal-nav-btn:disabled { opacity: 0.32; cursor: default; }
+.qm-nav-arrow {
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--gold);
+}
+.qm-nav-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+.qm-nav-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.qm-nav-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.82rem;
+  color: var(--gold-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.quest-modal-nav-pos {
+  flex-shrink: 0;
+  align-self: center;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+/* ── Responsive ── */
+@media (max-width: 680px) {
+  .quest-modal-panel { width: 96vw; max-height: 92vh; }
+  .quest-modal-body { padding: 14px; }
+  .quest-modal-grid { grid-template-columns: 1fr; gap: 14px; }
+  .quest-modal-header { flex-wrap: wrap; gap: 8px 12px; padding: 10px 14px; }
+  .quest-modal-header .map-wowhead-link { order: 3; }
+  .quest-modal-title { font-size: 0.95rem; }
+  .qm-giver-label { width: 76px; }
+  .quest-modal-nav { gap: 6px; padding: 8px 10px; }
+  .quest-modal-nav-btn { padding: 7px 9px; gap: 6px; }
+  .quest-modal-nav-pos { display: none; }
+  .qm-nav-name { font-size: 0.74rem; }
 }

@@ -419,6 +419,7 @@ function init() {
   initMapModal();
   initLoadingScreenLightbox();
   initEncounterModal();
+  initQuestModal();
   initVideoModal();
   initScrollLogo();
   initDungeonDock();
@@ -2677,9 +2678,7 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
     <div class="quest-card-header">
       <div class="quest-checkbox" data-key="${key}" title="${isComplete ? 'Mark incomplete' : 'Mark complete'}">${isComplete ? '✓' : ''}</div>
       <div class="quest-name">
-        ${quest.questLink
-          ? `<a href="${quest.questLink}" target="_blank" rel="noopener noreferrer" class="quest-name-link">${quest.name}</a>`
-          : quest.name}
+        <span class="quest-name-link" role="button" tabindex="0" title="View quest details">${escapeHtml(quest.name)}</span>
       </div>
       <div class="quest-badges">
         ${chainBadgeHtml}${classBadgeHtml}${factionBadgeHtml}${levelText ? `<div class="quest-level-badge">${levelText}</div>` : ''}
@@ -2704,10 +2703,24 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
     </div>
   `;
 
+  // Clicking the quest name opens the detail popout (instead of leaving to Wowhead).
+  const nameEl = card.querySelector('.quest-name-link');
+  if (nameEl) {
+    const openModal = e => {
+      e.stopPropagation();
+      openQuestModal(quest, dungeon, card);
+    };
+    nameEl.addEventListener('click', openModal);
+    nameEl.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(e); }
+    });
+  }
+
   // Toggle expand in list view
   card.addEventListener('click', e => {
     if (e.target.classList.contains('complete-btn')) return;
     if (e.target.classList.contains('quest-checkbox')) return;
+    if (e.target.classList.contains('quest-name-link')) return;
     if (e.target.tagName === 'A') return;
     if (currentView === 'list') card.classList.toggle('expanded');
   });
@@ -4071,6 +4084,291 @@ function initEncounterModal() {
   document.addEventListener('keydown', e => {
     const modal = document.getElementById('encounterModal');
     if (e.key === 'Escape' && modal.classList.contains('open')) closeEncounterModal();
+  });
+}
+
+// ═══════════════════════════════════════
+//  QUEST DETAIL MODAL
+// ═══════════════════════════════════════
+
+// An item-reward link with a wowhead tooltip icon (data-wh-icon-size lets the
+// wowhead power script render the item icon + hover tooltip inside the popout).
+function questModalItemLink(item) {
+  const qClass = `q${Math.min(item.quality || 1, 5)}`;
+  if (item.url) {
+    return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" class="item-link qm-reward-item ${qClass}" data-wh-icon-size="medium">${escapeHtml(item.name)}</a>`;
+  }
+  return `<span class="item-link qm-reward-item ${qClass}">${escapeHtml(item.name)}</span>`;
+}
+
+// Start / turn-in giver HTML for the popout — mirrors the quest-card logic so an
+// NPC, object, or quest-starting item all resolve to the right link (and map
+// link when the giver has a known pin). Returns '' when no giver is recorded.
+function questModalGiverHtml(quest, role) {
+  if (Array.isArray(quest[role + 'Npcs']) && quest[role + 'Npcs'].length > 1) {
+    return renderGiverList(quest[role + 'Npcs']);
+  }
+  const npc = quest[role + 'Npc'], npcLink = quest[role + 'NpcLink'];
+  const obj = quest[role + 'Object'], objLink = quest[role + 'ObjectLink'];
+  const loc = quest[role + 'Loc'];
+  if (npcLink) return buildGiverNameHtml(npc, npcLink, 'npc', loc);
+  if (npc) return escapeHtml(npc);
+  if (objLink) return buildGiverNameHtml(obj, objLink, 'object', loc);
+  if (obj) return escapeHtml(obj);
+  if (role === 'start' && quest.startItemLink) {
+    return `<a href="${quest.startItemLink}" target="_blank" rel="noopener noreferrer" class="item-link q1" data-wh-icon-size="tiny">${escapeHtml(quest.startItem)}</a>`;
+  }
+  if (role === 'start' && quest.startItem) return escapeHtml(quest.startItem);
+  return '';
+}
+
+// Header badges: dungeon objective, series part, faction, class, level.
+function buildQuestModalBadges(quest, dungeon) {
+  const out = [];
+  if (dungeon && dungeon.schema === 2 && quest.isDungeon) {
+    out.push(`<div class="chain-badge dungeon-badge">DUNGEON</div>`);
+  }
+  if (quest.series && quest.series.total > 1) {
+    out.push(`<div class="chain-badge series-badge">PART ${quest.series.index}/${quest.series.total}</div>`);
+  }
+  if (quest.requiredClasses && quest.requiredClasses.length > 0) {
+    quest.requiredClasses.forEach(cls => {
+      const slug = cls.toLowerCase();
+      out.push(`<div class="class-badge class-${slug}"><img class="class-icon" src="assets/icons/classicon_${slug}.jpg" alt="${cls}">${cls}</div>`);
+    });
+  }
+  if (quest.faction && quest.faction !== 'Both') {
+    out.push(`<div class="faction-badge faction-${quest.faction.toLowerCase()}">${quest.faction}</div>`);
+  }
+  return out.join('');
+}
+
+function buildQuestModalBody(quest, dungeon) {
+  // ── Objective + quest flavor text (links already point at wowhead) ──
+  const objectiveHtml = quest.objective
+    ? `<div class="quest-modal-section qm-objective">
+         <div class="quest-modal-section-title"><span class="qm-ico">🎯</span> Objective</div>
+         <div class="qm-objective-text">${quest.objective}</div>
+       </div>`
+    : '';
+
+  const descriptionHtml = quest.description
+    ? `<div class="quest-modal-section qm-description">
+         <div class="quest-modal-section-title"><span class="qm-ico">📜</span> Quest Text</div>
+         <div class="qm-description-text">${quest.description}</div>
+       </div>`
+    : '';
+
+  // ── Start / turn-in givers ──
+  const startHtml = questModalGiverHtml(quest, 'start');
+  const endHtml   = questModalGiverHtml(quest, 'end');
+  const startMulti = Array.isArray(quest.startNpcs) && quest.startNpcs.length > 1;
+  const endMulti   = Array.isArray(quest.endNpcs) && quest.endNpcs.length > 1;
+  const startEntity = quest.startNpc || quest.startObject || quest.startItem || '';
+  const endEntity   = quest.endNpc || quest.endObject || '';
+
+  const giverRow = (label, html, loc, multi) => {
+    if (!html) return '';
+    const locHtml = (!multi && loc) ? ` <span class="location">— ${buildLocationLink(loc)}</span>` : '';
+    return `<div class="qm-giver-row">
+        <span class="qm-giver-label">${label}</span>
+        <span class="qm-giver-value">${html}${locHtml}</span>
+      </div>`;
+  };
+  let giverRows;
+  if (endEntity && endEntity === startEntity) {
+    giverRows = giverRow('Start &amp; Turn in', startHtml, quest.startLoc, startMulti);
+  } else {
+    giverRows = giverRow('Start', startHtml, quest.startLoc, startMulti)
+              + giverRow('Turn in', endHtml, quest.endLoc, endMulti);
+  }
+  const giversHtml = giverRows
+    ? `<div class="quest-modal-section qm-givers">
+         <div class="quest-modal-section-title"><span class="qm-ico">📍</span> Locations</div>
+         ${giverRows}
+       </div>`
+    : '';
+
+  // ── Quick facts ──
+  const facts = [];
+  if (quest.minLevel) facts.push(['Required Level', String(quest.minLevel)]);
+  if (quest.levels)   facts.push(['Recommended Level', String(quest.levels)]);
+  if (quest.faction && quest.faction !== 'Both') facts.push(['Faction', quest.faction]);
+  facts.push(['Shareable', quest.shareable
+    ? '<span class="qm-yes">✓ Yes</span>'
+    : '<span class="qm-no">✕ No</span>']);
+  const factsHtml = `<div class="quest-modal-section qm-facts">
+       <div class="quest-modal-section-title"><span class="qm-ico">📖</span> Quick Facts</div>
+       <div class="qm-facts-grid">
+         ${facts.map(([k, v]) => `<div class="qm-fact"><span class="qm-fact-key">${k}</span><span class="qm-fact-val">${v}</span></div>`).join('')}
+       </div>
+     </div>`;
+
+  // ── Rewards (XP, money, gear, choice) ──
+  const rewardItems = quest.rewards.length > 0 ? quest.rewards : quest.legacyItems;
+  const pills = [];
+  if (quest.xp) pills.push(`<div class="xp-pill">⭐ ${quest.xp.toLocaleString()} XP</div>`);
+  if (quest.money) pills.push(`<div class="money-pill"><span class="coin-icon coin-${moneyTier(quest.money)}"></span>${formatMoney(quest.money)}</div>`);
+  const pillsHtml = pills.length ? `<div class="qm-reward-pills">${pills.join('')}</div>` : '';
+
+  const itemsHtml = rewardItems.length
+    ? `<div class="qm-reward-group">
+         <div class="qm-reward-label">You will receive</div>
+         <div class="qm-reward-items">${rewardItems.map(questModalItemLink).join('')}</div>
+       </div>`
+    : '';
+  const choiceHtml = quest.rewardChoices.length
+    ? `<div class="qm-reward-group">
+         <div class="qm-reward-label">Choose one</div>
+         <div class="qm-reward-items">${quest.rewardChoices.map(questModalItemLink).join('')}</div>
+       </div>`
+    : '';
+  const rewardsHtml = (pillsHtml || itemsHtml || choiceHtml)
+    ? `<div class="quest-modal-section qm-rewards">
+         <div class="quest-modal-section-title"><span class="qm-ico">🎁</span> Rewards</div>
+         ${pillsHtml}${itemsHtml}${choiceHtml}
+       </div>`
+    : '';
+
+  return `
+    <div class="quest-modal-grid">
+      <div class="quest-modal-main">
+        ${objectiveHtml}
+        ${descriptionHtml}
+        ${giversHtml}
+      </div>
+      <aside class="quest-modal-side">
+        ${factsHtml}
+        ${rewardsHtml}
+      </aside>
+    </div>`;
+}
+
+// ── Chain navigation ──
+// The chain a quest belongs to is whatever scrape_quests.py declared and the
+// renderer drew into one ".quest-chain-group" box: a series, a tree, a flow, or a
+// gated quest, INCLUDING its preChain prerequisite cards and any cross-series
+// quests merged in (absorbedBy). Rather than re-deriving that structure, we read
+// the chain straight off the rendered group so navigation always matches exactly
+// what the user sees — prerequisites → series → forks, in display order. A
+// standalone quest renders as a bare card with no group, so it gets no prev/next.
+
+// Per-dungeon id → full quest lookup (dungeon quests + their preChain prerequisite
+// cards + alsoUnlocks forks) so an id read off a chain card resolves to full data.
+function dungeonQuestIndex(dungeon) {
+  if (dungeon.__questIndex) return dungeon.__questIndex;
+  const index = new Map();
+  const add = q => { if (q && q.id != null && q.name && !index.has(q.id)) index.set(q.id, normalizeQuest(q)); };
+  dungeon.quests.forEach(q => {
+    add(q);
+    (q.preChain || []).forEach(e => { if (e.or) e.or.forEach(add); else add(e); });
+    (q.alsoUnlocks || []).forEach(add);
+  });
+  dungeon.__questIndex = index;
+  return index;
+}
+
+// Ordered chain sequence for the quest: the full-data cards inside the rendered
+// chain-group box containing it, in display order. Returns [quest] when the quest
+// isn't in a chain group (standalone) so the popout shows no navigation.
+function buildQuestChainSequence(quest, dungeon, originCard) {
+  const card = originCard
+    || document.querySelector(`.quest-card[data-quest-id="${quest.id}"]`);
+  const group = card && card.closest('.quest-chain-group');
+  if (!group) return [normalizeQuest(quest)];
+
+  const index = dungeonQuestIndex(dungeon);
+  const seq = [];
+  const seen = new Set();
+  group.querySelectorAll('.quest-card[data-quest-id]').forEach(c => {
+    const id = Number(c.dataset.questId);
+    if (seen.has(id)) return;
+    seen.add(id);
+    const q = index.get(id) || (id === quest.id ? normalizeQuest(quest) : null);
+    if (q) seq.push(q);
+  });
+  return seq.length ? seq : [normalizeQuest(quest)];
+}
+
+// Live state for the open popout so prev/next can step through a stable sequence.
+let questModalState = { seq: [], index: 0, dungeon: null };
+
+function openQuestModal(rawQuest, dungeon, originCard) {
+  const quest = normalizeQuest(rawQuest);
+  const seq = buildQuestChainSequence(quest, dungeon, originCard);
+  let index = seq.findIndex(q => q.id === quest.id);
+  if (index < 0) { seq.unshift(quest); index = 0; }
+  questModalState = { seq, index, dungeon };
+
+  renderQuestModalAt(index);
+
+  const modal = document.getElementById('questModal');
+  modal.setAttribute('aria-hidden', 'false');
+  modal.classList.add('open');
+}
+
+// Render the popout for the sequence entry at `index` (title, badges, body, and
+// the prev/next chain navigation footer).
+function renderQuestModalAt(index) {
+  const { seq, dungeon } = questModalState;
+  questModalState.index = index;
+  const quest = seq[index];
+
+  document.getElementById('questModalTitle').textContent = quest.name;
+  document.getElementById('questModalBadges').innerHTML = buildQuestModalBadges(quest, dungeon);
+
+  const wh = document.getElementById('questModalWowheadLink');
+  if (quest.questLink) { wh.href = quest.questLink; wh.style.display = ''; }
+  else { wh.style.display = 'none'; }
+
+  document.getElementById('questModalBody').innerHTML = buildQuestModalBody(quest, dungeon);
+
+  // ── Chain navigation footer ──
+  const nav = document.getElementById('questModalNav');
+  if (seq.length <= 1) {
+    nav.hidden = true;
+  } else {
+    nav.hidden = false;
+    const prev = seq[index - 1] || null;
+    const next = seq[index + 1] || null;
+    const prevBtn = document.getElementById('questModalPrev');
+    const nextBtn = document.getElementById('questModalNext');
+    prevBtn.disabled = !prev;
+    nextBtn.disabled = !next;
+    prevBtn.querySelector('.qm-nav-name').textContent = prev ? prev.name : '';
+    nextBtn.querySelector('.qm-nav-name').textContent = next ? next.name : '';
+    document.getElementById('questModalNavPos').textContent = `${index + 1} / ${seq.length}`;
+  }
+
+  // Reset scroll to the top so each quest starts from its objective.
+  document.getElementById('questModalBody').scrollTop = 0;
+
+  if (typeof $WowheadPower !== 'undefined') $WowheadPower.refreshLinks();
+}
+
+function navigateQuestModal(delta) {
+  const i = questModalState.index + delta;
+  if (i < 0 || i >= questModalState.seq.length) return;
+  renderQuestModalAt(i);
+}
+
+function closeQuestModal() {
+  const modal = document.getElementById('questModal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+}
+
+function initQuestModal() {
+  document.getElementById('questModalClose').addEventListener('click', closeQuestModal);
+  document.querySelector('.quest-modal-backdrop').addEventListener('click', closeQuestModal);
+  document.getElementById('questModalPrev').addEventListener('click', () => navigateQuestModal(-1));
+  document.getElementById('questModalNext').addEventListener('click', () => navigateQuestModal(1));
+  document.addEventListener('keydown', e => {
+    const modal = document.getElementById('questModal');
+    if (!modal.classList.contains('open')) return;
+    if (e.key === 'Escape') closeQuestModal();
+    else if (e.key === 'ArrowLeft') navigateQuestModal(-1);
+    else if (e.key === 'ArrowRight') navigateQuestModal(1);
   });
 }
 
