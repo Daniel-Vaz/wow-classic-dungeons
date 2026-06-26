@@ -273,11 +273,15 @@ body.scrolled .search-row .controls-logo {
 }
 .search-icon {
   position: absolute;
-  left: 12px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--gold-dim);
   pointer-events: none;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  opacity: 0.7;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.9)) drop-shadow(0 0 5px rgba(200,168,75,0.3));
 }
 .search-input {
   width: 100%;
@@ -797,6 +801,9 @@ body.scrolled .search-row .controls-logo {
   border-radius: 2px;
   padding: 2px 8px;
   letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 .money-pill {
   font-family: 'Cinzel', serif;
@@ -806,6 +813,16 @@ body.scrolled .search-row .controls-logo {
   border-radius: 2px;
   padding: 2px 8px;
   letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.money-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.9)) drop-shadow(0 0 5px rgba(200,168,75,0.3));
 }
 .money-gold   { color: #ffd100; }
 .money-silver { color: #c0c0c0; }
@@ -890,11 +907,15 @@ body.scrolled .search-row .controls-logo {
   cursor: pointer;
 }
 .map-npc-link::after {
-  content: '📍';
-  font-size: 0.78em;
-  margin-left: 3px;
+  content: '';
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  background: url('../assets/icons/locations.png') center / contain no-repeat;
+  margin-left: 4px;
   opacity: 0.55;
-  vertical-align: baseline;
+  vertical-align: middle;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.9)) drop-shadow(0 0 5px rgba(200,168,75,0.3));
 }
 .map-npc-link:hover::after {
   opacity: 1;
@@ -941,6 +962,13 @@ body.scrolled .search-row .controls-logo {
   font-weight: 600;
 }
 .item-link:hover { opacity: 0.8; text-decoration: underline; }
+.item-qty {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-left: 4px;
+  opacity: 0.85;
+}
 .item-link.q0 { color: #9d9d9d; }
 .item-link.q1 { color: var(--white-common); }
 .item-link.q2 { color: var(--green-uncommon); }
@@ -1284,6 +1312,15 @@ body.scrolled .search-row .controls-logo {
   padding: 1px 6px;
   white-space: nowrap;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.faction-badge-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .faction-badge.faction-horde  { color: #cc4444; border: 1px solid rgba(204,68,68,0.35); background: rgba(204,68,68,0.08); }
 .faction-badge.faction-alliance { color: #4488cc; border: 1px solid rgba(68,136,204,0.35); background: rgba(68,136,204,0.08); }
@@ -1556,10 +1593,11 @@ body.scrolled .search-row .controls-logo {
   gap: 4px;
 }
 .guides-box-wowhead-logo {
-  width: 12px;
-  height: 12px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
   vertical-align: middle;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.9)) drop-shadow(0 0 5px rgba(200,168,75,0.3));
 }
 .guides-box-links {
   display: flex;
@@ -1577,9 +1615,12 @@ body.scrolled .search-row .controls-logo {
   text-decoration: none;
   border: 1px solid rgba(77,166,255,0.3);
   border-radius: 2px;
-  padding: 2px 8px;
+  padding: 4px 8px;
   transition: all 0.2s;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 .guides-box-link:hover {
   color: #7fbfff;
@@ -1610,10 +1651,11 @@ button.guides-box-link {
   background: rgba(77,184,122,0.1);
 }
 .guides-box-youtube-logo {
-  width: 13px;
-  height: 13px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
   vertical-align: middle;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.9)) drop-shadow(0 0 5px rgba(200,168,75,0.3));
 }
 .video-guides-box .guides-box-link {
   color: #ff4d4d;
@@ -1657,6 +1699,9 @@ button.guides-box-link {
   text-transform: uppercase;
   color: var(--gold);
   opacity: 0.85;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 .dqf-count {
   font-size: 0.58rem;
@@ -1808,7 +1853,7 @@ button.guides-box-link {
   color: var(--text-dim);
   grid-column: 1/-1;
 }
-.empty-state-icon { font-size: 3rem; margin-bottom: 12px; opacity: 0.4; }
+.empty-state-icon { margin-bottom: 12px; display: flex; justify-content: center; }
 .empty-state-text {
   font-family: 'Cinzel', serif;
   font-size: 0.85rem;
@@ -1848,6 +1893,13 @@ button.guides-box-link {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+img.stat-ico {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.9)) drop-shadow(0 0 5px rgba(200,168,75,0.3));
+}
+.stats-bar img.stat-ico { width: 40px; height: 40px; }
 .stat-divider {
   width: 1px;
   background: var(--border);
@@ -2026,14 +2078,15 @@ button.guides-box-link {
     cursor: pointer;
     user-select: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 7px;
   }
   .sidebar-section:has(#locationList) .sidebar-title::after {
     content: '▼';
     font-size: 0.55rem;
     opacity: 0.5;
     transition: transform 0.2s;
+    margin-left: auto;
   }
   .sidebar-section:has(#locationList).expanded .sidebar-title::after {
     transform: rotate(180deg);
@@ -2118,6 +2171,9 @@ button.guides-box-link {
   border-bottom: 1px solid var(--border);
   background: rgba(200,168,75,0.04);
   text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 .sidebar-item {
   padding: 8px 14px;
@@ -2228,6 +2284,7 @@ button.guides-box-link {
 .dungeon-card-stats .stat-num { font-size: 1rem; }
 .dungeon-card-stats .stat-num--money { font-size: 0.8rem; }
 .dungeon-card-stats .stat-label { font-size: 0.55rem; }
+.dungeon-card-stats img.stat-ico { width: 36px; height: 36px; }
 
 /* Guides — one collapsible panel folding the Wowhead + video links together */
 .dungeon-card-guides {
@@ -2320,14 +2377,15 @@ button.guides-box-link {
     cursor: pointer;
     user-select: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 7px;
   }
   .sidebar-title::after {
     content: '▼';
     font-size: 0.55rem;
     opacity: 0.5;
     transition: transform 0.2s;
+    margin-left: auto;
   }
   .sidebar-section.expanded .sidebar-title::after {
     transform: rotate(180deg);
@@ -3834,7 +3892,7 @@ button.guides-box-link {
   text-transform: uppercase;
   color: var(--text-dim);
 }
-.pin-quest-dungeon-icon { opacity: 0.7; font-size: 0.62rem; }
+.pin-quest-dungeon-icon { opacity: 0.7; width: 14px; height: 14px; object-fit: contain; vertical-align: middle; flex-shrink: 0; }
 .pin-quest-dungeon-name {
   white-space: nowrap;
   overflow: hidden;
@@ -3929,9 +3987,14 @@ button.guides-box-link {
   user-select: none;
 }
 .map-coords-display::before {
-  content: '📍 ';
-  font-size: 0.6rem;
+  content: '';
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  background: url('../assets/icons/locations.png') center / contain no-repeat;
+  margin-right: 4px;
   opacity: 0.7;
+  vertical-align: middle;
 }
 
 /* ── MAP PIN CONTAINER ── */
@@ -4527,6 +4590,38 @@ body.scrolled .controls-logo.cinematic-returning {
   font-size: 0.85rem;
   filter: saturate(0.85);
 }
+img.qm-ico {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  vertical-align: middle;
+  filter: saturate(0.85) drop-shadow(0 1px 3px rgba(0,0,0,0.9)) drop-shadow(0 0 5px rgba(200,168,75,0.3));
+  flex-shrink: 0;
+}
+img.sidebar-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+img.section-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.9)) drop-shadow(0 0 5px rgba(200,168,75,0.3));
+}
+img.encounter-skull-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+.encounter-item:hover img.encounter-skull-icon { opacity: 1; }
 
 /* ── Objective ── */
 .qm-objective-text {
@@ -4602,6 +4697,19 @@ body.scrolled .controls-logo.cinematic-returning {
   font-size: 0.82rem;
   font-weight: 500;
 }
+.qm-req-npc-thumb {
+  flex-shrink: 0;
+  width: 44px;
+  height: 50px;
+  border-radius: 3px;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid var(--border-gold);
+  background: #060608;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.qm-req-npc-thumb:hover { border-color: var(--gold-light); }
 
 /* ── Locations / givers ── */
 .qm-giver-row {
@@ -4621,7 +4729,65 @@ body.scrolled .controls-logo.cinematic-returning {
   text-transform: uppercase;
   padding-top: 2px;
 }
-.qm-giver-value { flex: 1; min-width: 0; color: var(--text-main); }
+.qm-giver-value { flex: 1; min-width: 0; color: var(--text-main); display: flex; flex-direction: column; gap: 0; }
+.qm-giver-name { line-height: 1.45; }
+
+/* ── Quest modal giver previews (NPC image + mini-map, side by side) ── */
+.qm-giver-previews {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+/* ── Quest modal inline NPC image ── */
+.qm-npc-preview {
+  flex-shrink: 0;
+  width: 110px;
+  height: 120px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border-gold);
+  background: #060608;
+}
+.qm-npc-preview-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ── Quest modal mini-map ── */
+.qm-mini-map {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid var(--border-gold);
+  background: #0a0c10;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.qm-mini-map:hover { border-color: var(--gold-light, #f5c842); }
+.qm-mini-map-img {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+.qm-mini-map-pin {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--gold-light, #f5c842);
+  border: 2px solid rgba(0,0,0,0.75);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  box-shadow: 0 0 0 2px rgba(245,200,66,0.45), 0 0 6px rgba(245,200,66,0.6);
+}
 
 /* ── Quick facts ── */
 .qm-facts-grid {
@@ -4637,7 +4803,7 @@ body.scrolled .controls-logo.cinematic-returning {
   font-size: 0.82rem;
 }
 .qm-fact-key { color: var(--text-dim); letter-spacing: 0.03em; }
-.qm-fact-val { color: var(--text-bright); font-weight: 600; text-align: right; }
+.qm-fact-val { color: var(--text-bright); font-weight: 600; text-align: right; display: inline-flex; align-items: center; justify-content: flex-end; gap: 4px; }
 .qm-yes { color: var(--green-uncommon); }
 .qm-no  { color: var(--text-dim); }
 
@@ -4659,23 +4825,76 @@ body.scrolled .controls-logo.cinematic-returning {
 .qm-reward-items {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 6px;
 }
-.qm-reward-items .item-link {
+/* Each loot entry as a quality-tinted card */
+.qm-loot-row {
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.3));
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.qm-loot-row:hover { transform: translateY(-1px); }
+.qm-loot-row .item-link {
   display: inline-flex;
   align-items: center;
-  width: fit-content;
-  max-width: 100%;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   line-height: 1.3;
 }
-/* Larger wowhead reward icons (data-wh-icon-size="medium") sit flush to the
-   left; give the name a little breathing room and vertically centre it. */
+.qm-loot-row .item-qty {
+  flex-shrink: 0;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-left: 8px;
+  opacity: 0.9;
+}
+/* Quality-tinted card frames */
+.qm-loot-row.q1 { border-color: rgba(255,255,255,0.22); background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(0,0,0,0.3)); }
+.qm-loot-row.q1:hover { border-color: rgba(255,255,255,0.55); box-shadow: 0 0 14px rgba(255,255,255,0.15), 0 4px 12px rgba(0,0,0,0.55); }
+.qm-loot-row.q2 { border-color: rgba(30,255,0,0.3); background: linear-gradient(135deg, rgba(30,255,0,0.09), rgba(0,0,0,0.3)); }
+.qm-loot-row.q2:hover { border-color: rgba(30,255,0,0.7); box-shadow: 0 0 16px rgba(30,255,0,0.3), 0 4px 12px rgba(0,0,0,0.55); }
+.qm-loot-row.q3 { border-color: rgba(74,144,217,0.4); background: linear-gradient(135deg, rgba(74,144,217,0.1), rgba(0,0,0,0.3)); }
+.qm-loot-row.q3:hover { border-color: rgba(74,144,217,0.8); box-shadow: 0 0 16px rgba(74,144,217,0.35), 0 4px 12px rgba(0,0,0,0.55); }
+.qm-loot-row.q4 { border-color: rgba(163,53,238,0.45); background: linear-gradient(135deg, rgba(163,53,238,0.12), rgba(0,0,0,0.3)); }
+.qm-loot-row.q4:hover { border-color: rgba(163,53,238,0.85); box-shadow: 0 0 18px rgba(163,53,238,0.4), 0 4px 12px rgba(0,0,0,0.55); }
+.qm-loot-row.q5 { border-color: rgba(255,128,0,0.5); background: linear-gradient(135deg, rgba(255,128,0,0.14), rgba(0,0,0,0.3)); }
+.qm-loot-row.q5:hover { border-color: rgba(255,128,0,0.9); box-shadow: 0 0 20px rgba(255,128,0,0.45), 0 4px 12px rgba(0,0,0,0.55); }
+/* "OR" separator between choice items */
+.qm-choice-or {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  color: var(--gold-dim);
+  margin: 1px 0;
+}
+.qm-choice-or::before,
+.qm-choice-or::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim));
+}
+.qm-choice-or::after { background: linear-gradient(90deg, var(--gold-dim), transparent); }
+/* Wowhead icons inside reward cards */
 .qm-reward-item .iconmedium,
 .qm-reward-item ins,
 .qm-reward-item .icontinyl,
 .qm-reward-item .iconsmall {
   margin-right: 7px;
   vertical-align: middle;
+  flex-shrink: 0;
 }
 
 /* ── Chain navigation footer ── */

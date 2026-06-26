@@ -783,7 +783,7 @@ function renderDungeonHeader(dungeon) {
   const mapName = DUNGEON_MAP_NAME[dungeon.id];
   const mapBoxHtml = mapName
     ? `<div class="guides-box map-instance-box">
-        <div class="guides-box-label">🗺 Instance Map</div>
+        <div class="guides-box-label"><img class="section-icon" src="assets/icons/maps.png" alt=""> Instance Map</div>
         <div class="guides-box-links">
           <button class="guides-box-link map-instance-btn" data-map-name="${mapName}">View Map</button>
         </div>
@@ -793,10 +793,10 @@ function renderDungeonHeader(dungeon) {
   const wowheadBoxHtml = (dungeon.guideUrl || strategyEntries.length > 0)
     ? (() => {
         const questLinkHtml = dungeon.guideUrl
-          ? `<a href="${dungeon.guideUrl}" target="_blank" rel="noopener noreferrer" class="guides-box-link">📖 Quest Guide</a>`
+          ? `<a href="${dungeon.guideUrl}" target="_blank" rel="noopener noreferrer" class="guides-box-link"><img class="section-icon" src="assets/icons/guides.png" alt=""> Quest Guide</a>`
           : '';
         const strategyLinksHtml = strategyEntries
-          .map(e => `<a href="${e.url}" target="_blank" rel="noopener noreferrer" class="guides-box-link">🎯 ${e.label}</a>`)
+          .map(e => `<a href="${e.url}" target="_blank" rel="noopener noreferrer" class="guides-box-link"><img class="section-icon" src="assets/icons/objectives.png" alt=""> ${e.label}</a>`)
           .join('');
         return `<div class="guides-box">
           <div class="guides-box-label"><img src="assets/icons/wowhead.png" class="guides-box-wowhead-logo" alt="Wowhead"> Wowhead Guides</div>
@@ -808,7 +808,7 @@ function renderDungeonHeader(dungeon) {
   const videoEntries = VIDEO_GUIDES[dungeon.id] || [];
   const videoBoxHtml = videoEntries.length > 0
     ? `<div class="guides-box video-guides-box">
-        <div class="guides-box-label"><img src="assets/icons/youtube.svg" class="guides-box-youtube-logo" alt="YouTube"> Video Guides</div>
+        <div class="guides-box-label"><img src="assets/icons/youtube.png" class="guides-box-youtube-logo" alt="YouTube"> Video Guides</div>
         <div class="guides-box-links">${videoEntries
           .map(v => `<button class="guides-box-link video-guide-btn" data-youtube-id="${v.youtubeId}" data-video-title="${dungeon.name}${videoEntries.length > 1 ? ' – ' + v.label : ''}">▶ ${v.label}</button>`)
           .join('')}</div>
@@ -867,7 +867,7 @@ function renderDungeonCardCompact(dungeon) {
   // with a small circular instance-map button overlaid in the corner.
   const mapName = DUNGEON_MAP_NAME[dungeon.id];
   const mapOrbHtml = mapName
-    ? `<button class="map-instance-btn dungeon-card-map-orb" data-map-name="${mapName}" title="View instance map" aria-label="View instance map">🗺</button>`
+    ? `<button class="map-instance-btn dungeon-card-map-orb" data-map-name="${mapName}" title="View instance map" aria-label="View instance map"><img class="section-icon" src="assets/icons/maps.png" alt="Map"></button>`
     : '';
   const mediaInner = dungeon.loadingScreen
     ? `<img src="${dungeon.loadingScreen}" alt="${escapeHtml(dungeon.name)} loading screen" class="dungeon-loading-screen dungeon-card-img">`
@@ -893,10 +893,10 @@ function renderDungeonCardCompact(dungeon) {
   // Rewards info: compact 2-col stat grid (XP / money / gear rewards).
   const rewardsHtml = `
     <div class="dungeon-card-stats">
-      <div class="stat-item"><div class="stat-num" style="color:#84d4a0">${totalXP.toLocaleString()}</div><div class="stat-label">Total XP</div></div>
-      <div class="stat-item"><div class="stat-num stat-num--money">${formatMoney(totalMoney)}</div><div class="stat-label">Money</div></div>
-      <div class="stat-item"><div class="stat-num" style="color:#c8a0d4">${withGear}</div><div class="stat-label">Gear Rewards</div></div>
-      <div class="stat-item"><div class="stat-num">${quests.length}</div><div class="stat-label">Quests</div></div>
+      <div class="stat-item"><img class="stat-ico" src="assets/icons/experience.png" alt=""><div class="stat-num" style="color:#84d4a0">${totalXP.toLocaleString()}</div><div class="stat-label">Total XP</div></div>
+      <div class="stat-item"><img class="stat-ico" src="assets/icons/money.png" alt=""><div class="stat-num stat-num--money">${formatMoney(totalMoney)}</div><div class="stat-label">Money</div></div>
+      <div class="stat-item"><img class="stat-ico" src="assets/icons/rewards.png" alt=""><div class="stat-num" style="color:#c8a0d4">${withGear}</div><div class="stat-label">Gear Rewards</div></div>
+      <div class="stat-item"><img class="stat-ico" src="assets/icons/quest_info.png" alt=""><div class="stat-num">${quests.length}</div><div class="stat-label">Quests</div></div>
     </div>`;
 
   // Guides: Wowhead quest/strategy links + video buttons collapsed into one panel.
@@ -904,10 +904,10 @@ function renderDungeonCardCompact(dungeon) {
   const videoEntries = VIDEO_GUIDES[dungeon.id] || [];
   const guideLinks = [];
   if (dungeon.guideUrl) {
-    guideLinks.push(`<a href="${dungeon.guideUrl}" target="_blank" rel="noopener noreferrer" class="guides-box-link">📖 Quest Guide</a>`);
+    guideLinks.push(`<a href="${dungeon.guideUrl}" target="_blank" rel="noopener noreferrer" class="guides-box-link"><img class="section-icon" src="assets/icons/guides.png" alt=""> Quest Guide</a>`);
   }
   strategyEntries.forEach(e => {
-    guideLinks.push(`<a href="${e.url}" target="_blank" rel="noopener noreferrer" class="guides-box-link">🎯 ${escapeHtml(e.label)}</a>`);
+    guideLinks.push(`<a href="${e.url}" target="_blank" rel="noopener noreferrer" class="guides-box-link"><img class="section-icon" src="assets/icons/objectives.png" alt=""> ${escapeHtml(e.label)}</a>`);
   });
   videoEntries.forEach(v => {
     const title = `${dungeon.name}${videoEntries.length > 1 ? ' – ' + v.label : ''}`;
@@ -916,7 +916,7 @@ function renderDungeonCardCompact(dungeon) {
   const guidesHtml = guideLinks.length
     ? `<div class="dungeon-card-guides">
         <button class="dcg-toggle" type="button" aria-expanded="false">
-          <span class="dcg-label">📖 Guides</span>
+          <span class="dcg-label"><img class="section-icon" src="assets/icons/guides.png" alt=""> Guides</span>
           <span class="dqf-count">${guideLinks.length}</span>
           <span class="dqf-chevron" aria-hidden="true">▾</span>
         </button>
@@ -1004,7 +1004,7 @@ function renderDungeonQuestFiltersInto(el, dungeon, quests) {
 
   el.innerHTML = `
     <button class="dqf-toggle" type="button" aria-expanded="${open}">
-      <span class="dqf-toggle-label">🗝️ Main Dungeon Quests</span>
+      <span class="dqf-toggle-label"><img class="section-icon" src="assets/icons/key.png" alt=""> Main Dungeon Quests</span>
       <span class="dqf-count">${dungeonQuests.length}</span>
       <span class="dqf-chevron" aria-hidden="true">▾</span>
     </button>
@@ -1064,21 +1064,25 @@ function renderStatsBar(dungeon) {
 
   document.getElementById('statsBar').innerHTML = `
     <div class="stat-item">
+      <img class="stat-ico" src="assets/icons/quest_info.png" alt="">
       <div class="stat-num">${quests.length}</div>
       <div class="stat-label">Total Quests</div>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
+      <img class="stat-ico" src="assets/icons/experience.png" alt="">
       <div class="stat-num" style="color:#84d4a0">${totalXP.toLocaleString()}</div>
       <div class="stat-label">Total XP</div>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
+      <img class="stat-ico" src="assets/icons/money.png" alt="">
       <div class="stat-num stat-num--money">${formatMoney(totalMoney)}</div>
       <div class="stat-label">Total Money</div>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
+      <img class="stat-ico" src="assets/icons/rewards.png" alt="">
       <div class="stat-num" style="color:#c8a0d4">${withGear}</div>
       <div class="stat-label">Gear Rewards</div>
     </div>
@@ -1122,7 +1126,7 @@ function renderSidebar(dungeon) {
 // face; otherwise fall back to the skull glyph.
 function encounterIconHtml(npcId, fallbackIcon) {
   const idx = (npcId != null && typeof NPC_FACE !== 'undefined') ? NPC_FACE.index[String(npcId)] : undefined;
-  if (idx == null) return `<span class="encounter-skull">${fallbackIcon}</span>`;
+  if (idx == null) return fallbackIcon;
   const cell = NPC_FACE.cell;
   const x = (idx % NPC_FACE.cols) * cell;
   const y = Math.floor(idx / NPC_FACE.cols) * cell;
@@ -1218,7 +1222,7 @@ function renderEncounterList(dungeon) {
 
       const label = document.createElement('div');
       label.className = 'encounter-item encounter-event-header';
-      label.innerHTML = `<span class="encounter-skull">⚔</span><span class="encounter-name">${entry.name}</span><span class="encounter-event-badge">Event</span>`;
+      label.innerHTML = `<img class="encounter-skull-icon" src="assets/icons/rare_encounters.png" alt=""><span class="encounter-name">${entry.name}</span><span class="encounter-event-badge">Event</span>`;
       wrapper.appendChild(label);
 
       const bossGroup = document.createElement('div');
@@ -1227,7 +1231,7 @@ function renderEncounterList(dungeon) {
       (entry.bosses || []).forEach(boss => {
         const bossItem = document.createElement('div');
         bossItem.className = 'encounter-item encounter-event-boss has-model';
-        bossItem.innerHTML = `${encounterIconHtml(boss.npcId, '☠')}<span class="encounter-name">${boss.name}</span>`;
+        bossItem.innerHTML = `${encounterIconHtml(boss.npcId, '<img class="encounter-skull-icon" src="assets/icons/encounters.png" alt="">')}<span class="encounter-name">${boss.name}</span>`;
         bossItem.addEventListener('click', () => openEncounterModal(boss.name, boss.npcId));
         attachEncounterPreview(bossItem, boss.name, boss.npcId);
         bossGroup.appendChild(bossItem);
@@ -1238,7 +1242,9 @@ function renderEncounterList(dungeon) {
       return;
     }
     const rareBadge = entry.rare ? '<span class="encounter-rare-badge">Rare</span>' : '';
-    const icon = entry.rare ? '✧' : (entry.npcId ? '☠' : '⚔');
+    const icon = entry.rare
+      ? '<img class="encounter-skull-icon" src="assets/icons/rare_encounters.png" alt="">'
+      : '<img class="encounter-skull-icon" src="assets/icons/encounters.png" alt="">';
     const nameHtml = `${encounterIconHtml(entry.npcId, icon)}<span class="encounter-name">${entry.name}</span>${rareBadge}`;
     const item = document.createElement('div');
     item.className = 'encounter-item' + (entry.rare ? ' encounter-rare' : '') + (entry.npcId ? ' has-model' : '');
@@ -1338,7 +1344,7 @@ function renderQuests() {
       : 'Adjust your search or filters';
     container.innerHTML = `
       <div class="empty-state">
-        <div class="empty-state-icon">📜</div>
+        <div class="empty-state-icon"><img src="assets/icons/quest_info.png" alt="" style="width:48px;height:48px;object-fit:contain;opacity:0.4;"></div>
         <div class="empty-state-text">NO QUESTS FOUND</div>
         <div style="margin-top:8px;font-size:0.78rem;color:var(--text-dim)">${emptyMsg}</div>
       </div>`;
@@ -2616,7 +2622,7 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
   // ---- Faction badge (always shown when quest has a specific faction) ----
   const showFaction = quest.faction && quest.faction !== 'Both';
   const factionBadgeHtml = showFaction
-    ? `<div class="faction-badge faction-${quest.faction.toLowerCase()}">${quest.faction}</div>`
+    ? `<div class="faction-badge faction-${quest.faction.toLowerCase()}"><img class="faction-badge-icon" src="assets/icons/${quest.faction.toLowerCase()}.png" alt="">${quest.faction}</div>`
     : '';
 
   // ---- Class restriction badge ----
@@ -2696,8 +2702,8 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
     </div>
     <div class="quest-card-footer">
       <div class="footer-pills">
-        ${quest.xp ? `<div class="xp-pill">⭐ ${quest.xp.toLocaleString()} XP</div>` : ''}
-        ${quest.money ? `<div class="money-pill"><span class="coin-icon coin-${moneyTier(quest.money)}"></span>${formatMoney(quest.money)}</div>` : ''}
+        ${quest.xp ? `<div class="xp-pill"><img class="section-icon" src="assets/icons/experience.png" alt=""> ${quest.xp.toLocaleString()} XP</div>` : ''}
+        ${quest.money ? `<div class="money-pill"><img class="money-icon" src="assets/icons/money.png" alt="">${formatMoney(quest.money)}</div>` : ''}
       </div>
       <button class="complete-btn" data-key="${key}">${isComplete ? '↩ Undo' : '✓ Complete'}</button>
     </div>
@@ -2757,10 +2763,11 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
 // ═══════════════════════════════════════
 function buildItemLink(item) {
   const qClass = `q${Math.min(item.quality || 1, 5)}`;
+  const qty = (item.quantity || 1) > 1 ? ` <span class="item-qty">x${item.quantity}</span>` : '';
   if (item.url) {
-    return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" class="item-link ${qClass}">${item.name}</a>`;
+    return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" class="item-link ${qClass}">${item.name}</a>${qty}`;
   }
-  return `<span class="item-link ${qClass}">${item.name}</span>`;
+  return `<span class="item-link ${qClass}">${item.name}</span>${qty}`;
 }
 
 // ═══════════════════════════════════════
@@ -3318,6 +3325,7 @@ function initMapModal() {
     if (Date.now() - lastTouchTime < 500) return;
     const link = e.target.closest('[data-npc-id]');
     if (!link || link === npcPreviewAnchor) return;
+    if (link.closest('.qm-givers')) return;
     npcPreviewAnchor = link;
     const name = link.dataset.pinLabel || link.textContent.trim();
     showNpcModelPreview(link, name, link.dataset.npcId);
@@ -3592,7 +3600,7 @@ function buildPinQuestPanel(groups) {
 
     const head = document.createElement('div');
     head.className = 'pin-quest-dungeon';
-    head.innerHTML = `<span class="pin-quest-dungeon-icon">⚔</span>`
+    head.innerHTML = `<img class="pin-quest-dungeon-icon" src="assets/icons/encounters.png" alt="">`
       + `<span class="pin-quest-dungeon-name">${escapeHtml(group.dungeonName)}</span>`;
     groupEl.appendChild(head);
 
@@ -3942,10 +3950,12 @@ function initLoadingScreenLightbox() {
 
   document.addEventListener('click', e => {
     const screen = e.target.closest('.dungeon-loading-screen');
-    if (!screen) return;
+    const npcThumb = e.target.closest('.qm-req-npc-thumb');
+    const source = screen || npcThumb;
+    if (!source) return;
     const img = document.getElementById('loadingScreenLightboxImg');
-    img.src = screen.src;
-    img.alt = screen.alt;
+    img.src = source.src;
+    img.alt = source.alt;
     lightbox.setAttribute('aria-hidden', 'false');
     lightbox.classList.add('open');
   });
@@ -4116,10 +4126,11 @@ function initEncounterModal() {
 // wowhead power script render the item icon + hover tooltip inside the popout).
 function questModalItemLink(item) {
   const qClass = `q${Math.min(item.quality || 1, 5)}`;
-  if (item.url) {
-    return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" class="item-link qm-reward-item ${qClass}" data-wh-icon-size="medium">${escapeHtml(item.name)}</a>`;
-  }
-  return `<span class="item-link qm-reward-item ${qClass}">${escapeHtml(item.name)}</span>`;
+  const inner = item.url
+    ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer" class="item-link qm-reward-item ${qClass}" data-wh-icon-size="medium">${escapeHtml(item.name)}</a>`
+    : `<span class="item-link qm-reward-item ${qClass}">${escapeHtml(item.name)}</span>`;
+  const qty = (item.quantity || 1) > 1 ? `<span class="item-qty">x${item.quantity}</span>` : '';
+  return `<div class="qm-loot-row ${qClass}">${inner}${qty}</div>`;
 }
 
 // Start / turn-in giver HTML for the popout — mirrors the quest-card logic so an
@@ -4143,6 +4154,53 @@ function questModalGiverHtml(quest, role) {
   return '';
 }
 
+// Extract { npcId, name, loc } for a giver role — used to render inline
+// NPC image and mini-map in the quest modal locations section.
+function questModalGiverInfo(quest, role) {
+  const npcs = quest[role + 'Npcs'];
+  if (Array.isArray(npcs) && npcs.length > 0) {
+    const g = npcs[0];
+    const m = g.link && g.link.match(/npc=(\d+)/);
+    return { npcId: m ? m[1] : null, name: g.name, loc: g.loc };
+  }
+  const npcLink = quest[role + 'NpcLink'];
+  const npc = quest[role + 'Npc'];
+  const loc = quest[role + 'Loc'];
+  if (npcLink) {
+    const m = npcLink.match(/npc=(\d+)/);
+    return { npcId: m ? m[1] : null, name: npc, loc };
+  }
+  return { npcId: null, name: npc || null, loc };
+}
+
+// Build a small map thumbnail zoomed on a single pin. The image is scaled 3×
+// and translated so the pin lands at the center of the container.
+function buildMiniMapHtml(location, pinName) {
+  if (!location || !pinName) return '';
+  const zoneId = ZONE_IDS[location];
+  if (!zoneId) return '';
+  const pinResult = questPinFor(location, pinName);
+  if (!pinResult) return '';
+  const pin = pinResult.pin;
+  const levels = MULTI_LEVEL_MAPS[location] || MULTI_LEVEL_MAPS[zoneId];
+  const mapSrc = levels
+    ? ((levels[pinResult.levelIndex] || levels[0]).src)
+    : `assets/maps/${zoneId}.jpg`;
+  const scale = 2.2;
+  const minOff = -((scale - 1) * 100); // image can slide at most this far (e.g. -120%)
+  const rawLeft = 50 - scale * pin.x;
+  const rawTop  = 50 - scale * pin.y;
+  const imgLeft = Math.min(0, Math.max(minOff, rawLeft));
+  const imgTop  = Math.min(0, Math.max(minOff, rawTop));
+  // Pin marker position within the container (may not be perfectly centered when clamped)
+  const pinX = imgLeft + scale * pin.x;
+  const pinY = imgTop  + scale * pin.y;
+  return `<div class="qm-mini-map map-npc-link" data-location="${escapeHtml(location)}" data-pin-label="${escapeHtml(pinName)}" title="Show on map">`
+    + `<img class="qm-mini-map-img" src="${mapSrc}" alt="" style="left:${imgLeft.toFixed(1)}%;top:${imgTop.toFixed(1)}%;width:${scale*100}%;height:${scale*100}%" draggable="false">`
+    + `<div class="qm-mini-map-pin" style="left:${pinX.toFixed(1)}%;top:${pinY.toFixed(1)}%"></div>`
+    + `</div>`;
+}
+
 // Header badges: dungeon objective, series part, faction, class, level.
 function buildQuestModalBadges(quest, dungeon) {
   const out = [];
@@ -4158,9 +4216,6 @@ function buildQuestModalBadges(quest, dungeon) {
       out.push(`<div class="class-badge class-${slug}"><img class="class-icon" src="assets/icons/classicon_${slug}.jpg" alt="${cls}">${cls}</div>`);
     });
   }
-  if (quest.faction && quest.faction !== 'Both') {
-    out.push(`<div class="faction-badge faction-${quest.faction.toLowerCase()}">${quest.faction}</div>`);
-  }
   return out.join('');
 }
 
@@ -4173,14 +4228,14 @@ function buildQuestModalBody(quest, dungeon) {
   // ── Objective + quest flavor text (links already point at wowhead) ──
   const objectiveHtml = quest.objective
     ? `<div class="quest-modal-section qm-objective">
-         <div class="quest-modal-section-title"><span class="qm-ico">🎯</span> Objective</div>
+         <div class="quest-modal-section-title"><img class="qm-ico" src="assets/icons/objectives.png" alt=""> Objective</div>
          <div class="qm-objective-text">${normalizeQuestText(quest.objective)}</div>
        </div>`
     : '';
 
   const descriptionHtml = quest.description
     ? `<div class="quest-modal-section qm-description">
-         <div class="quest-modal-section-title"><span class="qm-ico">📜</span> Quest Text</div>
+         <div class="quest-modal-section-title"><img class="qm-ico" src="assets/icons/quest_info.png" alt=""> Quest Text</div>
          <div class="qm-description-text">${normalizeQuestText(quest.description)}</div>
        </div>`
     : '';
@@ -4189,13 +4244,16 @@ function buildQuestModalBody(quest, dungeon) {
   const reqs = quest.requirements;
   const requirementsHtml = (Array.isArray(reqs) && reqs.length)
     ? `<div class="quest-modal-section qm-requirements">
-         <div class="quest-modal-section-title"><span class="qm-ico">⚔️</span> Requirements</div>
+         <div class="quest-modal-section-title"><img class="qm-ico" src="assets/icons/requirements.png" alt=""> Requirements</div>
          <div class="qm-req-list">
            ${reqs.map(req => {
              const qClass = req.type === 'item' ? ` q${Math.min(req.quality || 1, 5)}` : '';
              const qty = req.quantity > 1 ? `<span class="qm-req-qty"> ×${req.quantity}</span>` : '';
+             const npcThumb = req.type === 'npc'
+               ? `<img class="qm-req-npc-thumb" src="assets/npc-models/${req.id}.jpg" alt="" onerror="this.hidden=true">`
+               : '';
              return `<div class="qm-req-entry">
-               <a href="${req.url}" target="_blank" rel="noopener noreferrer" class="qm-req-link${qClass}" data-wh-icon-size="medium">${escapeHtml(req.name)}</a>${qty}
+               ${npcThumb}<a href="${req.url}" target="_blank" rel="noopener noreferrer" class="qm-req-link${qClass}" data-wh-icon-size="medium">${escapeHtml(req.name)}</a>${qty}
              </div>`;
            }).join('')}
          </div>
@@ -4209,25 +4267,43 @@ function buildQuestModalBody(quest, dungeon) {
   const endMulti   = Array.isArray(quest.endNpcs) && quest.endNpcs.length > 1;
   const startEntity = quest.startNpc || quest.startObject || quest.startItem || '';
   const endEntity   = quest.endNpc || quest.endObject || '';
+  const startInfo = questModalGiverInfo(quest, 'start');
+  const endInfo   = questModalGiverInfo(quest, 'end');
 
-  const giverRow = (label, html, loc, multi) => {
+  const giverRow = (label, html, loc, multi, info) => {
     if (!html) return '';
     const locHtml = (!multi && loc) ? ` <span class="location">— ${buildLocationLink(loc)}</span>` : '';
+    let npcImgHtml = '';
+    let miniMapHtml = '';
+    if (!multi && info) {
+      if (info.npcId) {
+        npcImgHtml = `<div class="qm-npc-preview"><img class="qm-npc-preview-img" src="assets/npc-models/${info.npcId}.jpg" alt="" onerror="this.closest('.qm-npc-preview').hidden=true"></div>`;
+      }
+      if (info.name && info.loc) {
+        miniMapHtml = buildMiniMapHtml(info.loc, info.name);
+      }
+    }
+    const previewsHtml = (npcImgHtml || miniMapHtml)
+      ? `<div class="qm-giver-previews">${npcImgHtml}${miniMapHtml}</div>`
+      : '';
     return `<div class="qm-giver-row">
         <span class="qm-giver-label">${label}</span>
-        <span class="qm-giver-value">${html}${locHtml}</span>
+        <div class="qm-giver-value">
+          <div class="qm-giver-name">${html}${locHtml}</div>
+          ${previewsHtml}
+        </div>
       </div>`;
   };
   let giverRows;
   if (endEntity && endEntity === startEntity) {
-    giverRows = giverRow('Start &amp; Turn in', startHtml, quest.startLoc, startMulti);
+    giverRows = giverRow('Start &amp; Turn in', startHtml, quest.startLoc, startMulti, startInfo);
   } else {
-    giverRows = giverRow('Start', startHtml, quest.startLoc, startMulti)
-              + giverRow('Turn in', endHtml, quest.endLoc, endMulti);
+    giverRows = giverRow('Start', startHtml, quest.startLoc, startMulti, startInfo)
+              + giverRow('Turn in', endHtml, quest.endLoc, endMulti, endInfo);
   }
   const giversHtml = giverRows
     ? `<div class="quest-modal-section qm-givers">
-         <div class="quest-modal-section-title"><span class="qm-ico">📍</span> Locations</div>
+         <div class="quest-modal-section-title"><img class="qm-ico" src="assets/icons/locations.png" alt=""> Locations</div>
          ${giverRows}
        </div>`
     : '';
@@ -4236,12 +4312,12 @@ function buildQuestModalBody(quest, dungeon) {
   const facts = [];
   if (quest.minLevel) facts.push(['Required Level', String(quest.minLevel)]);
   if (quest.levels)   facts.push(['Recommended Level', String(quest.levels)]);
-  if (quest.faction && quest.faction !== 'Both') facts.push(['Faction', quest.faction]);
+  if (quest.faction && quest.faction !== 'Both') facts.push(['Faction', `<div class="faction-badge faction-${quest.faction.toLowerCase()}"><img class="faction-badge-icon" src="assets/icons/${quest.faction.toLowerCase()}.png" alt="">${quest.faction}</div>`]);
   facts.push(['Shareable', quest.shareable
     ? '<span class="qm-yes">✓ Yes</span>'
     : '<span class="qm-no">✕ No</span>']);
   const factsHtml = `<div class="quest-modal-section qm-facts">
-       <div class="quest-modal-section-title"><span class="qm-ico">📖</span> Quick Facts</div>
+       <div class="quest-modal-section-title"><img class="qm-ico" src="assets/icons/guides.png" alt=""> Quick Facts</div>
        <div class="qm-facts-grid">
          ${facts.map(([k, v]) => `<div class="qm-fact"><span class="qm-fact-key">${k}</span><span class="qm-fact-val">${v}</span></div>`).join('')}
        </div>
@@ -4250,8 +4326,8 @@ function buildQuestModalBody(quest, dungeon) {
   // ── Rewards (XP, money, gear, choice) ──
   const rewardItems = quest.rewards.length > 0 ? quest.rewards : quest.legacyItems;
   const pills = [];
-  if (quest.xp) pills.push(`<div class="xp-pill">⭐ ${quest.xp.toLocaleString()} XP</div>`);
-  if (quest.money) pills.push(`<div class="money-pill"><span class="coin-icon coin-${moneyTier(quest.money)}"></span>${formatMoney(quest.money)}</div>`);
+  if (quest.xp) pills.push(`<div class="xp-pill"><img class="section-icon" src="assets/icons/experience.png" alt=""> ${quest.xp.toLocaleString()} XP</div>`);
+  if (quest.money) pills.push(`<div class="money-pill"><img class="money-icon" src="assets/icons/money.png" alt="">${formatMoney(quest.money)}</div>`);
   const pillsHtml = pills.length ? `<div class="qm-reward-pills">${pills.join('')}</div>` : '';
 
   const itemsHtml = rewardItems.length
@@ -4263,12 +4339,12 @@ function buildQuestModalBody(quest, dungeon) {
   const choiceHtml = quest.rewardChoices.length
     ? `<div class="qm-reward-group">
          <div class="qm-reward-label">Choose one</div>
-         <div class="qm-reward-items">${quest.rewardChoices.map(questModalItemLink).join('')}</div>
+         <div class="qm-reward-items qm-reward-choice">${quest.rewardChoices.map(questModalItemLink).join('<div class="qm-choice-or">OR</div>')}</div>
        </div>`
     : '';
   const rewardsHtml = (pillsHtml || itemsHtml || choiceHtml)
     ? `<div class="quest-modal-section qm-rewards">
-         <div class="quest-modal-section-title"><span class="qm-ico">🎁</span> Rewards</div>
+         <div class="quest-modal-section-title"><img class="qm-ico" src="assets/icons/rewards.png" alt=""> Rewards</div>
          ${pillsHtml}${itemsHtml}${choiceHtml}
        </div>`
     : '';
@@ -4278,8 +4354,8 @@ function buildQuestModalBody(quest, dungeon) {
       <div class="quest-modal-main">
         ${objectiveHtml}
         ${requirementsHtml}
-        ${descriptionHtml}
         ${giversHtml}
+        ${descriptionHtml}
       </div>
       <aside class="quest-modal-side">
         ${factsHtml}

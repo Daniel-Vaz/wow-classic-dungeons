@@ -200,13 +200,15 @@ const DUNGEONS = [
             "id": 15452,
             "name": "Featherbead Bracers",
             "url": "https://www.wowhead.com/classic/item=15452/featherbead-bracers",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 15453,
             "name": "Savannah Bracers",
             "url": "https://www.wowhead.com/classic/item=15453/savannah-bracers",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -368,19 +370,22 @@ const DUNGEONS = [
             "id": 15449,
             "name": "Ghastly Trousers",
             "url": "https://www.wowhead.com/classic/item=15449/ghastly-trousers",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 15450,
             "name": "Dredgemire Leggings",
             "url": "https://www.wowhead.com/classic/item=15450/dredgemire-leggings",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 15451,
             "name": "Gargoyle Leggings",
             "url": "https://www.wowhead.com/classic/item=15451/gargoyle-leggings",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -712,13 +717,15 @@ const DUNGEONS = [
             "id": 6480,
             "name": "Slick Deviate Leggings",
             "url": "https://www.wowhead.com/classic/item=6480/slick-deviate-leggings",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 918,
             "name": "Deviate Hide Pack",
             "url": "https://www.wowhead.com/classic/item=918/deviate-hide-pack",
-            "quality": 1
+            "quality": 1,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -881,19 +888,22 @@ const DUNGEONS = [
             "id": 6476,
             "name": "Pattern: Deviate Scale Belt",
             "url": "https://www.wowhead.com/classic/item=6476/pattern-deviate-scale-belt",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 8071,
             "name": "Sizzle Stick",
             "url": "https://www.wowhead.com/classic/item=8071/sizzle-stick",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 6481,
             "name": "Dagmire Gauntlets",
             "url": "https://www.wowhead.com/classic/item=6481/dagmire-gauntlets",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -967,7 +977,8 @@ const DUNGEONS = [
             "id": 10919,
             "name": "Apothecary Gloves",
             "url": "https://www.wowhead.com/classic/item=10919/apothecary-gloves",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -1105,13 +1116,15 @@ const DUNGEONS = [
                 "id": 5342,
                 "name": "Raptor Punch",
                 "url": "https://www.wowhead.com/classic/item=5342/raptor-punch",
-                "quality": 1
+                "quality": 1,
+                "quantity": 5
               },
               {
                 "id": 5343,
                 "name": "Barkeeper's Cloak",
                 "url": "https://www.wowhead.com/classic/item=5343/barkeeper-s-cloak",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [],
@@ -1217,13 +1230,15 @@ const DUNGEONS = [
             "id": 6505,
             "name": "Crescent Staff",
             "url": "https://www.wowhead.com/classic/item=6505/crescent-staff",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 6504,
             "name": "Wingblade",
             "url": "https://www.wowhead.com/classic/item=6504/wingblade",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -1793,13 +1808,15 @@ const DUNGEONS = [
             "id": 2037,
             "name": "Tunneler's Boots",
             "url": "https://www.wowhead.com/classic/item=2037/tunneler-s-boots",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 2036,
             "name": "Dusty Mining Gloves",
             "url": "https://www.wowhead.com/classic/item=2036/dusty-mining-gloves",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -1873,7 +1890,8 @@ const DUNGEONS = [
             "id": 1893,
             "name": "Miner's Revenge",
             "url": "https://www.wowhead.com/classic/item=1893/miner-s-revenge",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -1949,13 +1967,15 @@ const DUNGEONS = [
             "id": 7606,
             "name": "Polar Gauntlets",
             "url": "https://www.wowhead.com/classic/item=7606/polar-gauntlets",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 7607,
             "name": "Sable Wand",
             "url": "https://www.wowhead.com/classic/item=7607/sable-wand",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -2100,19 +2120,22 @@ const DUNGEONS = [
             "id": 6087,
             "name": "Chausses of Westfall",
             "url": "https://www.wowhead.com/classic/item=6087/chausses-of-westfall",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 2041,
             "name": "Tunic of Westfall",
             "url": "https://www.wowhead.com/classic/item=2041/tunic-of-westfall",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 2042,
             "name": "Staff of Westfall",
             "url": "https://www.wowhead.com/classic/item=2042/staff-of-westfall",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -2592,19 +2615,22 @@ const DUNGEONS = [
                 "id": 2074,
                 "name": "Solid Shortblade",
                 "url": "https://www.wowhead.com/classic/item=2074/solid-shortblade",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 2089,
                 "name": "Scrimshaw Dagger",
                 "url": "https://www.wowhead.com/classic/item=2089/scrimshaw-dagger",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 6094,
                 "name": "Piercing Axe",
                 "url": "https://www.wowhead.com/classic/item=6094/piercing-axe",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -2822,19 +2848,22 @@ const DUNGEONS = [
             "id": 2074,
             "name": "Solid Shortblade",
             "url": "https://www.wowhead.com/classic/item=2074/solid-shortblade",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 2089,
             "name": "Scrimshaw Dagger",
             "url": "https://www.wowhead.com/classic/item=2089/scrimshaw-dagger",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 6094,
             "name": "Piercing Axe",
             "url": "https://www.wowhead.com/classic/item=6094/piercing-axe",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -3184,7 +3213,8 @@ const DUNGEONS = [
                 "id": 9607,
                 "name": "Bastion of Stormwind",
                 "url": "https://www.wowhead.com/classic/item=9607/bastion-of-stormwind",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [],
@@ -3371,13 +3401,15 @@ const DUNGEONS = [
             "id": 6335,
             "name": "Grizzled Boots",
             "url": "https://www.wowhead.com/classic/item=6335/grizzled-boots",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 4534,
             "name": "Steel-clasped Bracers",
             "url": "https://www.wowhead.com/classic/item=4534/steel-clasped-bracers",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -3442,7 +3474,8 @@ const DUNGEONS = [
             "id": 3324,
             "name": "Ghostly Mantle",
             "url": "https://www.wowhead.com/classic/item=3324/ghostly-mantle",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -3517,7 +3550,8 @@ const DUNGEONS = [
             "id": 6414,
             "name": "Seal of Sylvanas",
             "url": "https://www.wowhead.com/classic/item=6414/seal-of-sylvanas",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -3868,7 +3902,8 @@ const DUNGEONS = [
                 "id": 9607,
                 "name": "Bastion of Stormwind",
                 "url": "https://www.wowhead.com/classic/item=9607/bastion-of-stormwind",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [],
@@ -4118,13 +4153,15 @@ const DUNGEONS = [
             "id": 6998,
             "name": "Nimbus Boots",
             "url": "https://www.wowhead.com/classic/item=6998/nimbus-boots",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 7000,
             "name": "Heartwood Girdle",
             "url": "https://www.wowhead.com/classic/item=7000/heartwood-girdle",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -4338,13 +4375,15 @@ const DUNGEONS = [
             "id": 7003,
             "name": "Beetle Clasps",
             "url": "https://www.wowhead.com/classic/item=7003/beetle-clasps",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 7004,
             "name": "Prelacy Cape",
             "url": "https://www.wowhead.com/classic/item=7004/prelacy-cape",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -4488,13 +4527,15 @@ const DUNGEONS = [
             "id": 17694,
             "name": "Band of the Fist",
             "url": "https://www.wowhead.com/classic/item=17694/band-of-the-fist",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17695,
             "name": "Chestnut Mantle",
             "url": "https://www.wowhead.com/classic/item=17695/chestnut-mantle",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -4699,13 +4740,15 @@ const DUNGEONS = [
             "id": 7001,
             "name": "Gravestone Scepter",
             "url": "https://www.wowhead.com/classic/item=7001/gravestone-scepter",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 7002,
             "name": "Arctic Buckler",
             "url": "https://www.wowhead.com/classic/item=7002/arctic-buckler",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -4785,13 +4828,15 @@ const DUNGEONS = [
             "id": 7001,
             "name": "Gravestone Scepter",
             "url": "https://www.wowhead.com/classic/item=7001/gravestone-scepter",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 7002,
             "name": "Arctic Buckler",
             "url": "https://www.wowhead.com/classic/item=7002/arctic-buckler",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -4849,13 +4894,15 @@ const DUNGEONS = [
             "id": 16886,
             "name": "Outlaw Sabre",
             "url": "https://www.wowhead.com/classic/item=16886/outlaw-sabre",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 16887,
             "name": "Witch's Finger",
             "url": "https://www.wowhead.com/classic/item=16887/witch-s-finger",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -4929,7 +4976,8 @@ const DUNGEONS = [
             "id": 6743,
             "name": "Sustaining Ring",
             "url": "https://www.wowhead.com/classic/item=6743/sustaining-ring",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -5100,13 +5148,15 @@ const DUNGEONS = [
             "id": 3400,
             "name": "Lucine Longsword",
             "url": "https://www.wowhead.com/classic/item=3400/lucine-longsword",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 1317,
             "name": "Hardened Root Staff",
             "url": "https://www.wowhead.com/classic/item=1317/hardened-root-staff",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -5249,13 +5299,15 @@ const DUNGEONS = [
             "id": 2033,
             "name": "Ambassador's Boots",
             "url": "https://www.wowhead.com/classic/item=2033/ambassador-s-boots",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 2906,
             "name": "Darkshire Mail Leggings",
             "url": "https://www.wowhead.com/classic/item=2906/darkshire-mail-leggings",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -5585,13 +5637,15 @@ const DUNGEONS = [
             "id": 3562,
             "name": "Belt of Vindication",
             "url": "https://www.wowhead.com/classic/item=3562/belt-of-vindication",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 1264,
             "name": "Headbasher",
             "url": "https://www.wowhead.com/classic/item=1264/headbasher",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -5760,13 +5814,15 @@ const DUNGEONS = [
             "id": 9535,
             "name": "Fire-welded Bracers",
             "url": "https://www.wowhead.com/classic/item=9535/fire-welded-bracers",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 9536,
             "name": "Fairywing Mantle",
             "url": "https://www.wowhead.com/classic/item=9536/fairywing-mantle",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -6255,13 +6311,15 @@ const DUNGEONS = [
             "id": 9608,
             "name": "Shoni's Disarming Tool",
             "url": "https://www.wowhead.com/classic/item=9608/shoni-s-disarming-tool",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 9609,
             "name": "Shilly Mitts",
             "url": "https://www.wowhead.com/classic/item=9609/shilly-mitts",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -6537,13 +6595,15 @@ const DUNGEONS = [
             "id": 9605,
             "name": "Repairman's Cape",
             "url": "https://www.wowhead.com/classic/item=9605/repairman-s-cape",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 9604,
             "name": "Mechanic's Pipehammer",
             "url": "https://www.wowhead.com/classic/item=9604/mechanic-s-pipehammer",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -6752,19 +6812,22 @@ const DUNGEONS = [
             "id": 9623,
             "name": "Civinad Robes",
             "url": "https://www.wowhead.com/classic/item=9623/civinad-robes",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 9624,
             "name": "Triprunner Dungarees",
             "url": "https://www.wowhead.com/classic/item=9624/triprunner-dungarees",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 9625,
             "name": "Dual Reinforced Leggings",
             "url": "https://www.wowhead.com/classic/item=9625/dual-reinforced-leggings",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -6847,19 +6910,22 @@ const DUNGEONS = [
             "id": 9623,
             "name": "Civinad Robes",
             "url": "https://www.wowhead.com/classic/item=9623/civinad-robes",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 9624,
             "name": "Triprunner Dungarees",
             "url": "https://www.wowhead.com/classic/item=9624/triprunner-dungarees",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 9625,
             "name": "Dual Reinforced Leggings",
             "url": "https://www.wowhead.com/classic/item=9625/dual-reinforced-leggings",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -7272,19 +7338,22 @@ const DUNGEONS = [
                 "id": 9623,
                 "name": "Civinad Robes",
                 "url": "https://www.wowhead.com/classic/item=9623/civinad-robes",
-                "quality": 3
+                "quality": 3,
+                "quantity": 1
               },
               {
                 "id": 9624,
                 "name": "Triprunner Dungarees",
                 "url": "https://www.wowhead.com/classic/item=9624/triprunner-dungarees",
-                "quality": 3
+                "quality": 3,
+                "quantity": 1
               },
               {
                 "id": 9625,
                 "name": "Dual Reinforced Leggings",
                 "url": "https://www.wowhead.com/classic/item=9625/dual-reinforced-leggings",
-                "quality": 3
+                "quality": 3,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -7421,7 +7490,8 @@ const DUNGEONS = [
             "id": 6755,
             "name": "A Small Container of Gems",
             "url": "https://www.wowhead.com/classic/item=6755/a-small-container-of-gems",
-            "quality": 1
+            "quality": 1,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -7497,19 +7567,22 @@ const DUNGEONS = [
             "id": 4197,
             "name": "Berylline Pads",
             "url": "https://www.wowhead.com/classic/item=4197/berylline-pads",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 6742,
             "name": "Stonefist Girdle",
             "url": "https://www.wowhead.com/classic/item=6742/stonefist-girdle",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 6725,
             "name": "Marbled Buckler",
             "url": "https://www.wowhead.com/classic/item=6725/marbled-buckler",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -7669,7 +7742,8 @@ const DUNGEONS = [
             "id": 3041,
             "name": "\"Mage-Eye\" Blunderbuss",
             "url": "https://www.wowhead.com/classic/item=3041/mage-eye-blunderbuss",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [
@@ -7677,19 +7751,22 @@ const DUNGEONS = [
             "id": 4197,
             "name": "Berylline Pads",
             "url": "https://www.wowhead.com/classic/item=4197/berylline-pads",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 6742,
             "name": "Stonefist Girdle",
             "url": "https://www.wowhead.com/classic/item=6742/stonefist-girdle",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 6725,
             "name": "Marbled Buckler",
             "url": "https://www.wowhead.com/classic/item=6725/marbled-buckler",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -7817,19 +7894,22 @@ const DUNGEONS = [
             "id": 6748,
             "name": "Monkey Ring",
             "url": "https://www.wowhead.com/classic/item=6748/monkey-ring",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 6750,
             "name": "Snake Hoop",
             "url": "https://www.wowhead.com/classic/item=6750/snake-hoop",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 6749,
             "name": "Tiger Band",
             "url": "https://www.wowhead.com/classic/item=6749/tiger-band",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -7904,13 +7984,15 @@ const DUNGEONS = [
             "id": 6751,
             "name": "Mourning Shawl",
             "url": "https://www.wowhead.com/classic/item=6751/mourning-shawl",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 6752,
             "name": "Lancer Boots",
             "url": "https://www.wowhead.com/classic/item=6752/lancer-boots",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -8067,7 +8149,8 @@ const DUNGEONS = [
             "id": 7746,
             "name": "Explorers' League Commendation",
             "url": "https://www.wowhead.com/classic/item=7746/explorers-league-commendation",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -8163,25 +8246,29 @@ const DUNGEONS = [
             "id": 6829,
             "name": "Sword of Serenity",
             "url": "https://www.wowhead.com/classic/item=6829/sword-of-serenity",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 6830,
             "name": "Bonebiter",
             "url": "https://www.wowhead.com/classic/item=6830/bonebiter",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 6831,
             "name": "Black Menace",
             "url": "https://www.wowhead.com/classic/item=6831/black-menace",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 11262,
             "name": "Orb of Lorica",
             "url": "https://www.wowhead.com/classic/item=11262/orb-of-lorica",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -8456,7 +8543,8 @@ const DUNGEONS = [
             "id": 7751,
             "name": "Vorrel's Boots",
             "url": "https://www.wowhead.com/classic/item=7751/vorrel-s-boots",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [
@@ -8464,13 +8552,15 @@ const DUNGEONS = [
             "id": 7750,
             "name": "Mantle of Woe",
             "url": "https://www.wowhead.com/classic/item=7750/mantle-of-woe",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 4643,
             "name": "Grimsteel Cape",
             "url": "https://www.wowhead.com/classic/item=4643/grimsteel-cape",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -8545,19 +8635,22 @@ const DUNGEONS = [
             "id": 7747,
             "name": "Vile Protector",
             "url": "https://www.wowhead.com/classic/item=7747/vile-protector",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17508,
             "name": "Forcestone Buckler",
             "url": "https://www.wowhead.com/classic/item=17508/forcestone-buckler",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 7749,
             "name": "Omega Orb",
             "url": "https://www.wowhead.com/classic/item=7749/omega-orb",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -8799,19 +8892,22 @@ const DUNGEONS = [
             "id": 6802,
             "name": "Sword of Omen",
             "url": "https://www.wowhead.com/classic/item=6802/sword-of-omen",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 6803,
             "name": "Prophetic Cane",
             "url": "https://www.wowhead.com/classic/item=6803/prophetic-cane",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 10711,
             "name": "Dragon's Blood Necklace",
             "url": "https://www.wowhead.com/classic/item=10711/dragon-s-blood-necklace",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -9887,13 +9983,15 @@ const DUNGEONS = [
             "id": 10823,
             "name": "Vanquisher's Sword",
             "url": "https://www.wowhead.com/classic/item=10823/vanquisher-s-sword",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 10824,
             "name": "Amberglow Talisman",
             "url": "https://www.wowhead.com/classic/item=10824/amberglow-talisman",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -9968,13 +10066,15 @@ const DUNGEONS = [
             "id": 10823,
             "name": "Vanquisher's Sword",
             "url": "https://www.wowhead.com/classic/item=10823/vanquisher-s-sword",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 10824,
             "name": "Amberglow Talisman",
             "url": "https://www.wowhead.com/classic/item=10824/amberglow-talisman",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -10040,7 +10140,8 @@ const DUNGEONS = [
             "id": 10710,
             "name": "Dragonclaw Ring",
             "url": "https://www.wowhead.com/classic/item=10710/dragonclaw-ring",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -10121,19 +10222,22 @@ const DUNGEONS = [
             "id": 17039,
             "name": "Skullbreaker",
             "url": "https://www.wowhead.com/classic/item=17039/skullbreaker",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17042,
             "name": "Nail Spitter",
             "url": "https://www.wowhead.com/classic/item=17042/nail-spitter",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17043,
             "name": "Zealot's Robe",
             "url": "https://www.wowhead.com/classic/item=17043/zealot-s-robe",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -10347,7 +10451,8 @@ const DUNGEONS = [
             "id": 4746,
             "name": "Doomsayer's Robe",
             "url": "https://www.wowhead.com/classic/item=4746/doomsayer-s-robe",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -10510,19 +10615,22 @@ const DUNGEONS = [
             "id": 9522,
             "name": "Energized Stone Circle",
             "url": "https://www.wowhead.com/classic/item=9522/energized-stone-circle",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 10358,
             "name": "Duracin Bracers",
             "url": "https://www.wowhead.com/classic/item=10358/duracin-bracers",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 10359,
             "name": "Everlast Boots",
             "url": "https://www.wowhead.com/classic/item=10359/everlast-boots",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -10732,7 +10840,8 @@ const DUNGEONS = [
             "id": 4980,
             "name": "Prospector Gloves",
             "url": "https://www.wowhead.com/classic/item=4980/prospector-gloves",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -10857,19 +10966,22 @@ const DUNGEONS = [
                 "id": 4982,
                 "name": "Ripped Prospector Belt",
                 "url": "https://www.wowhead.com/classic/item=4982/ripped-prospector-belt",
-                "quality": 0
+                "quality": 0,
+                "quantity": 1
               },
               {
                 "id": 1529,
                 "name": "Jade",
                 "url": "https://www.wowhead.com/classic/item=1529/jade",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 2776,
                 "name": "Gold Ore",
                 "url": "https://www.wowhead.com/classic/item=2776/gold-ore",
-                "quality": 2
+                "quality": 2,
+                "quantity": 2
               }
             ],
             "rewardChoices": [],
@@ -10955,7 +11067,8 @@ const DUNGEONS = [
                 "id": 4983,
                 "name": "Rock Pulverizer",
                 "url": "https://www.wowhead.com/classic/item=4983/rock-pulverizer",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [],
@@ -11265,13 +11378,15 @@ const DUNGEONS = [
             "id": 9626,
             "name": "Dwarven Charge",
             "url": "https://www.wowhead.com/classic/item=9626/dwarven-charge",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 9627,
             "name": "Explorer's League Lodestar",
             "url": "https://www.wowhead.com/classic/item=9627/explorer-s-league-lodestar",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -11415,7 +11530,8 @@ const DUNGEONS = [
             "id": 6723,
             "name": "Medal of Courage",
             "url": "https://www.wowhead.com/classic/item=6723/medal-of-courage",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -11949,7 +12065,8 @@ const DUNGEONS = [
                 "id": 4987,
                 "name": "Dwarf Captain's Sword",
                 "url": "https://www.wowhead.com/classic/item=4987/dwarf-captain-s-sword",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [],
@@ -12413,7 +12530,8 @@ const DUNGEONS = [
             "id": 9030,
             "name": "Restorative Potion",
             "url": "https://www.wowhead.com/classic/item=9030/restorative-potion",
-            "quality": 1
+            "quality": 1,
+            "quantity": 5
           }
         ],
         "rewardChoices": [],
@@ -12652,7 +12770,8 @@ const DUNGEONS = [
             "id": 9030,
             "name": "Restorative Potion",
             "url": "https://www.wowhead.com/classic/item=9030/restorative-potion",
-            "quality": 1
+            "quality": 1,
+            "quantity": 5
           }
         ],
         "rewardChoices": [],
@@ -12826,7 +12945,8 @@ const DUNGEONS = [
             "id": 7888,
             "name": "Jarkal's Enhancing Necklace",
             "url": "https://www.wowhead.com/classic/item=7888/jarkal-s-enhancing-necklace",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -14057,13 +14177,15 @@ const DUNGEONS = [
                 "id": 6729,
                 "name": "Fizzle's Zippy Lighter",
                 "url": "https://www.wowhead.com/classic/item=6729/fizzle-s-zippy-lighter",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 6732,
                 "name": "Gnomish Mechanic's Gloves",
                 "url": "https://www.wowhead.com/classic/item=6732/gnomish-mechanic-s-gloves",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -14502,13 +14624,15 @@ const DUNGEONS = [
             "id": 9527,
             "name": "Spellshifter Rod",
             "url": "https://www.wowhead.com/classic/item=9527/spellshifter-rod",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 9531,
             "name": "Gemshale Pauldrons",
             "url": "https://www.wowhead.com/classic/item=9531/gemshale-pauldrons",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -14675,13 +14799,15 @@ const DUNGEONS = [
             "id": 9533,
             "name": "Masons Fraternity Ring",
             "url": "https://www.wowhead.com/classic/item=9533/masons-fraternity-ring",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 9534,
             "name": "Engineer's Guild Headpiece",
             "url": "https://www.wowhead.com/classic/item=9534/engineer-s-guild-headpiece",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -14755,7 +14881,8 @@ const DUNGEONS = [
             "id": 11122,
             "name": "Carrot on a Stick",
             "url": "https://www.wowhead.com/classic/item=11122/carrot-on-a-stick",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -15800,7 +15927,7 @@ const DUNGEONS = [
         "faction": "Both",
         "xp": 5450,
         "money": 14000,
-        "objective": "",
+        "objective": "Read <a href=\"https://www.wowhead.com/classic/item=17781/the-pariahs-instructions\" rel=\"noopener noreferrer\" target=\"_blank\">the Pariah's Instructions</a>. Afterwards, obtain the <a href=\"https://www.wowhead.com/classic/item=17758/amulet-of-union\" rel=\"noopener noreferrer\" target=\"_blank\">Amulet of Union</a> from <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a> and return it to the <a href=\"https://www.wowhead.com/classic/npc=13717/centaur-pariah\" rel=\"noopener noreferrer\" target=\"_blank\">Centaur Pariah</a> in southern Desolace.",
         "description": "Though exiled as a heretic, my beliefs still ring true--that alone drives me onward. But for my destiny to be complete, I need the aid of an outsider... one not of any centaur tribe.<br><br>The task requires someone to enter the holy halls of <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a>--a tomb my people protect, and only the most devout are ever allowed to enter.<br><br>If you agree to aid me, then you need only nod. I will pass you a parchment with my instructions on it. Read it over and consider my words.",
         "shareable": false,
         "requirements": [
@@ -15826,7 +15953,8 @@ const DUNGEONS = [
             "id": 17774,
             "name": "Mark of the Chosen",
             "url": "https://www.wowhead.com/classic/item=17774/mark-of-the-chosen",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -15902,25 +16030,29 @@ const DUNGEONS = [
             "id": 17775,
             "name": "Acumen Robes",
             "url": "https://www.wowhead.com/classic/item=17775/acumen-robes",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17776,
             "name": "Sprightring Helm",
             "url": "https://www.wowhead.com/classic/item=17776/sprightring-helm",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17777,
             "name": "Relentless Chain",
             "url": "https://www.wowhead.com/classic/item=17777/relentless-chain",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17779,
             "name": "Hulkstone Pauldrons",
             "url": "https://www.wowhead.com/classic/item=17779/hulkstone-pauldrons",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -16071,13 +16203,15 @@ const DUNGEONS = [
             "id": 17772,
             "name": "Zealous Shadowshard Pendant",
             "url": "https://www.wowhead.com/classic/item=17772/zealous-shadowshard-pendant",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17773,
             "name": "Prodigious Shadowshard Pendant",
             "url": "https://www.wowhead.com/classic/item=17773/prodigious-shadowshard-pendant",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -16159,19 +16293,22 @@ const DUNGEONS = [
             "id": 17768,
             "name": "Woodseed Hoop",
             "url": "https://www.wowhead.com/classic/item=17768/woodseed-hoop",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17778,
             "name": "Sagebrush Girdle",
             "url": "https://www.wowhead.com/classic/item=17778/sagebrush-girdle",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17770,
             "name": "Branchclaw Gauntlets",
             "url": "https://www.wowhead.com/classic/item=17770/branchclaw-gauntlets",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -16245,19 +16382,22 @@ const DUNGEONS = [
             "id": 17705,
             "name": "Thrash Blade",
             "url": "https://www.wowhead.com/classic/item=17705/thrash-blade",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 17743,
             "name": "Resurgence Rod",
             "url": "https://www.wowhead.com/classic/item=17743/resurgence-rod",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 17753,
             "name": "Verdant Keeper's Aim",
             "url": "https://www.wowhead.com/classic/item=17753/verdant-keeper-s-aim",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -16332,13 +16472,15 @@ const DUNGEONS = [
             "id": 17772,
             "name": "Zealous Shadowshard Pendant",
             "url": "https://www.wowhead.com/classic/item=17772/zealous-shadowshard-pendant",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17773,
             "name": "Prodigious Shadowshard Pendant",
             "url": "https://www.wowhead.com/classic/item=17773/prodigious-shadowshard-pendant",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -16420,19 +16562,22 @@ const DUNGEONS = [
             "id": 17768,
             "name": "Woodseed Hoop",
             "url": "https://www.wowhead.com/classic/item=17768/woodseed-hoop",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17778,
             "name": "Sagebrush Girdle",
             "url": "https://www.wowhead.com/classic/item=17778/sagebrush-girdle",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 17770,
             "name": "Branchclaw Gauntlets",
             "url": "https://www.wowhead.com/classic/item=17770/branchclaw-gauntlets",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -16506,19 +16651,22 @@ const DUNGEONS = [
             "id": 17705,
             "name": "Thrash Blade",
             "url": "https://www.wowhead.com/classic/item=17705/thrash-blade",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 17743,
             "name": "Resurgence Rod",
             "url": "https://www.wowhead.com/classic/item=17743/resurgence-rod",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 17753,
             "name": "Verdant Keeper's Aim",
             "url": "https://www.wowhead.com/classic/item=17753/verdant-keeper-s-aim",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -16583,7 +16731,8 @@ const DUNGEONS = [
             "id": 17191,
             "name": "Scepter of Celebras",
             "url": "https://www.wowhead.com/classic/item=17191/scepter-of-celebras",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -16732,13 +16881,15 @@ const DUNGEONS = [
             "id": 11123,
             "name": "Rainstrider Leggings",
             "url": "https://www.wowhead.com/classic/item=11123/rainstrider-leggings",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 11124,
             "name": "Helm of Exile",
             "url": "https://www.wowhead.com/classic/item=11124/helm-of-exile",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -16821,19 +16972,22 @@ const DUNGEONS = [
             "id": 10749,
             "name": "Avenguard Helm",
             "url": "https://www.wowhead.com/classic/item=10749/avenguard-helm",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 10750,
             "name": "Lifeforce Dirk",
             "url": "https://www.wowhead.com/classic/item=10750/lifeforce-dirk",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 10751,
             "name": "Gemburst Circlet",
             "url": "https://www.wowhead.com/classic/item=10751/gemburst-circlet",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -17445,7 +17599,8 @@ const DUNGEONS = [
                 "id": 10773,
                 "name": "Hakkari Urn",
                 "url": "https://www.wowhead.com/classic/item=10773/hakkari-urn",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [],
@@ -17513,7 +17668,8 @@ const DUNGEONS = [
             "id": 10773,
             "name": "Hakkari Urn",
             "url": "https://www.wowhead.com/classic/item=10773/hakkari-urn",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -17588,7 +17744,8 @@ const DUNGEONS = [
             "id": 1490,
             "name": "Guardian Talisman",
             "url": "https://www.wowhead.com/classic/item=1490/guardian-talisman",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -18308,7 +18465,8 @@ const DUNGEONS = [
             "id": 1490,
             "name": "Guardian Talisman",
             "url": "https://www.wowhead.com/classic/item=1490/guardian-talisman",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -18817,7 +18975,8 @@ const DUNGEONS = [
             "id": 10455,
             "name": "Chained Essence of Eranikus",
             "url": "https://www.wowhead.com/classic/item=10455/chained-essence-of-eranikus",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -18921,19 +19080,22 @@ const DUNGEONS = [
             "id": 22274,
             "name": "Grizzled Pelt",
             "url": "https://www.wowhead.com/classic/item=22274/grizzled-pelt",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 22272,
             "name": "Forest's Embrace",
             "url": "https://www.wowhead.com/classic/item=22272/forest-s-embrace",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 22458,
             "name": "Moonshadow Stave",
             "url": "https://www.wowhead.com/classic/item=22458/moonshadow-stave",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [
@@ -19099,7 +19261,8 @@ const DUNGEONS = [
                 "id": 13446,
                 "name": "Major Healing Potion",
                 "url": "https://www.wowhead.com/classic/item=13446/major-healing-potion",
-                "quality": 1
+                "quality": 1,
+                "quantity": 2
               }
             ],
             "rewardChoices": [],
@@ -19259,19 +19422,22 @@ const DUNGEONS = [
             "id": 20083,
             "name": "Hunting Spear",
             "url": "https://www.wowhead.com/classic/item=20083/hunting-spear",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 19991,
             "name": "Devilsaur Eye",
             "url": "https://www.wowhead.com/classic/item=19991/devilsaur-eye",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 19992,
             "name": "Devilsaur Tooth",
             "url": "https://www.wowhead.com/classic/item=19992/devilsaur-tooth",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [
@@ -19598,19 +19764,22 @@ const DUNGEONS = [
             "id": 20035,
             "name": "Glacial Spike",
             "url": "https://www.wowhead.com/classic/item=20035/glacial-spike",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20037,
             "name": "Arcane Crystal Pendant",
             "url": "https://www.wowhead.com/classic/item=20037/arcane-crystal-pendant",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20036,
             "name": "Fire Ruby",
             "url": "https://www.wowhead.com/classic/item=20036/fire-ruby",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [
@@ -19953,7 +20122,8 @@ const DUNGEONS = [
             "id": 20620,
             "name": "Holy Mightstone",
             "url": "https://www.wowhead.com/classic/item=20620/holy-mightstone",
-            "quality": 1
+            "quality": 1,
+            "quantity": 1
           }
         ],
         "rewardChoices": [
@@ -19961,19 +20131,22 @@ const DUNGEONS = [
             "id": 20504,
             "name": "Lightforged Blade",
             "url": "https://www.wowhead.com/classic/item=20504/lightforged-blade",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20512,
             "name": "Sanctified Orb",
             "url": "https://www.wowhead.com/classic/item=20512/sanctified-orb",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20505,
             "name": "Chivalrous Signet",
             "url": "https://www.wowhead.com/classic/item=20505/chivalrous-signet",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [
@@ -20276,19 +20449,22 @@ const DUNGEONS = [
             "id": 19990,
             "name": "Blessed Prayer Beads",
             "url": "https://www.wowhead.com/classic/item=19990/blessed-prayer-beads",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20082,
             "name": "Woestave",
             "url": "https://www.wowhead.com/classic/item=20082/woestave",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20006,
             "name": "Circle of Hope",
             "url": "https://www.wowhead.com/classic/item=20006/circle-of-hope",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [
@@ -20601,19 +20777,22 @@ const DUNGEONS = [
             "id": 19984,
             "name": "Ebon Mask",
             "url": "https://www.wowhead.com/classic/item=19984/ebon-mask",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20255,
             "name": "Whisperwalk Boots",
             "url": "https://www.wowhead.com/classic/item=20255/whisperwalk-boots",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 19982,
             "name": "Duskbat Drape",
             "url": "https://www.wowhead.com/classic/item=19982/duskbat-drape",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [
@@ -20956,19 +21135,22 @@ const DUNGEONS = [
             "id": 20369,
             "name": "Azurite Fists",
             "url": "https://www.wowhead.com/classic/item=20369/azurite-fists",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20503,
             "name": "Enamored Water Spirit",
             "url": "https://www.wowhead.com/classic/item=20503/enamored-water-spirit",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20556,
             "name": "Wildstaff",
             "url": "https://www.wowhead.com/classic/item=20556/wildstaff",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [
@@ -21349,19 +21531,22 @@ const DUNGEONS = [
             "id": 20536,
             "name": "Soul Harvester",
             "url": "https://www.wowhead.com/classic/item=20536/soul-harvester",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20534,
             "name": "Abyss Shard",
             "url": "https://www.wowhead.com/classic/item=20534/abyss-shard",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20530,
             "name": "Robes of Servitude",
             "url": "https://www.wowhead.com/classic/item=20530/robes-of-servitude",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [
@@ -21718,19 +21903,22 @@ const DUNGEONS = [
             "id": 20521,
             "name": "Fury Visor",
             "url": "https://www.wowhead.com/classic/item=20521/fury-visor",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20130,
             "name": "Diamond Flask",
             "url": "https://www.wowhead.com/classic/item=20130/diamond-flask",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 20517,
             "name": "Razorsteel Shoulders",
             "url": "https://www.wowhead.com/classic/item=20517/razorsteel-shoulders",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [
@@ -22083,19 +22271,22 @@ const DUNGEONS = [
             "id": 11865,
             "name": "Rancor Boots",
             "url": "https://www.wowhead.com/classic/item=11865/rancor-boots",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 11963,
             "name": "Penance Spaulders",
             "url": "https://www.wowhead.com/classic/item=11963/penance-spaulders",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12049,
             "name": "Splintsteel Armor",
             "url": "https://www.wowhead.com/classic/item=12049/splintsteel-armor",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -22375,7 +22566,8 @@ const DUNGEONS = [
             "id": 11883,
             "name": "A Dingy Fanny Pack",
             "url": "https://www.wowhead.com/classic/item=11883/a-dingy-fanny-pack",
-            "quality": 1
+            "quality": 1,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -22450,7 +22642,8 @@ const DUNGEONS = [
             "id": 12003,
             "name": "Dark Dwarven Lager",
             "url": "https://www.wowhead.com/classic/item=12003/dark-dwarven-lager",
-            "quality": 1
+            "quality": 1,
+            "quantity": 10
           }
         ],
         "rewardChoices": [
@@ -22458,13 +22651,15 @@ const DUNGEONS = [
             "id": 11964,
             "name": "Swiftstrike Cudgel",
             "url": "https://www.wowhead.com/classic/item=11964/swiftstrike-cudgel",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12000,
             "name": "Limb Cleaver",
             "url": "https://www.wowhead.com/classic/item=12000/limb-cleaver",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -22689,7 +22884,8 @@ const DUNGEONS = [
             "id": 12038,
             "name": "Lagrave's Seal",
             "url": "https://www.wowhead.com/classic/item=12038/lagrave-s-seal",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -22764,13 +22960,15 @@ const DUNGEONS = [
             "id": 3928,
             "name": "Superior Healing Potion",
             "url": "https://www.wowhead.com/classic/item=3928/superior-healing-potion",
-            "quality": 1
+            "quality": 1,
+            "quantity": 5
           },
           {
             "id": 6149,
             "name": "Greater Mana Potion",
             "url": "https://www.wowhead.com/classic/item=6149/greater-mana-potion",
-            "quality": 1
+            "quality": 1,
+            "quantity": 5
           }
         ],
         "rewardChoices": [
@@ -22778,13 +22976,15 @@ const DUNGEONS = [
             "id": 11964,
             "name": "Swiftstrike Cudgel",
             "url": "https://www.wowhead.com/classic/item=11964/swiftstrike-cudgel",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12000,
             "name": "Limb Cleaver",
             "url": "https://www.wowhead.com/classic/item=12000/limb-cleaver",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -22935,7 +23135,8 @@ const DUNGEONS = [
             "id": 11000,
             "name": "Shadowforge Key",
             "url": "https://www.wowhead.com/classic/item=11000/shadowforge-key",
-            "quality": 1
+            "quality": 1,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -23076,7 +23277,7 @@ const DUNGEONS = [
         "faction": "Both",
         "xp": 6200,
         "money": 26500,
-        "objective": "",
+        "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and slay Bael'Gar.<br><br>You only know that the giant resides inside <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>. Remember to use the <a href=\"https://www.wowhead.com/classic/item=11231/altered-black-dragonflight-molt\" rel=\"noopener noreferrer\" target=\"_blank\">Altered Black Dragonflight Molt</a> on Bael'Gar's remains to capture the Fiery Essence.<br><br>Return the <a href=\"https://www.wowhead.com/classic/item=11230/encased-fiery-essence\" rel=\"noopener noreferrer\" target=\"_blank\">Encased Fiery Essence</a> to <a href=\"https://www.wowhead.com/classic/npc=9459/cyrus-therepentous\" rel=\"noopener noreferrer\" target=\"_blank\">Cyrus Therepentous</a>.",
         "description": "I wish to taste the searing flames of the mountain of fire. To let the molten fires of Blackrock cascade across my being. That essence, that searing heat, it is what I crave.<br><br>Bael'Gar resides in the Depths of Blackrock: A being of pure flame, born of the fires of Ragnaros. Slay Bael'Gar and from his smoldering remains bring for me a piece of his inner fire.<br><br>Use the molt on his remains to safely extract the inner flame.<br><br>Succeed and be rewarded.",
         "shareable": false,
         "requirements": [
@@ -23095,19 +23296,22 @@ const DUNGEONS = [
             "id": 12066,
             "name": "Shaleskin Cape",
             "url": "https://www.wowhead.com/classic/item=12066/shaleskin-cape",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12082,
             "name": "Wyrmhide Spaulders",
             "url": "https://www.wowhead.com/classic/item=12082/wyrmhide-spaulders",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12083,
             "name": "Valconian Sash",
             "url": "https://www.wowhead.com/classic/item=12083/valconian-sash",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -23323,25 +23527,29 @@ const DUNGEONS = [
             "id": 12113,
             "name": "Sunborne Cape",
             "url": "https://www.wowhead.com/classic/item=12113/sunborne-cape",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12114,
             "name": "Nightfall Gloves",
             "url": "https://www.wowhead.com/classic/item=12114/nightfall-gloves",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12112,
             "name": "Crypt Demon Bracers",
             "url": "https://www.wowhead.com/classic/item=12112/crypt-demon-bracers",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12115,
             "name": "Stalwart Clutch",
             "url": "https://www.wowhead.com/classic/item=12115/stalwart-clutch",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -23610,7 +23818,8 @@ const DUNGEONS = [
                 "id": 12102,
                 "name": "Ring of the Aristocrat",
                 "url": "https://www.wowhead.com/classic/item=12102/ring-of-the-aristocrat",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [],
@@ -23821,7 +24030,8 @@ const DUNGEONS = [
                 "id": 12102,
                 "name": "Ring of the Aristocrat",
                 "url": "https://www.wowhead.com/classic/item=12102/ring-of-the-aristocrat",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [],
@@ -24285,25 +24495,29 @@ const DUNGEONS = [
             "id": 12109,
             "name": "Azure Moon Amice",
             "url": "https://www.wowhead.com/classic/item=12109/azure-moon-amice",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12110,
             "name": "Raincaster Drape",
             "url": "https://www.wowhead.com/classic/item=12110/raincaster-drape",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12108,
             "name": "Basaltscale Armor",
             "url": "https://www.wowhead.com/classic/item=12108/basaltscale-armor",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12111,
             "name": "Lavaplate Gauntlets",
             "url": "https://www.wowhead.com/classic/item=12111/lavaplate-gauntlets",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -24519,7 +24733,8 @@ const DUNGEONS = [
             "id": 12059,
             "name": "Conqueror's Medallion",
             "url": "https://www.wowhead.com/classic/item=12059/conqueror-s-medallion",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -24930,13 +25145,15 @@ const DUNGEONS = [
             "id": 11962,
             "name": "Manacle Cuffs",
             "url": "https://www.wowhead.com/classic/item=11962/manacle-cuffs",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 11866,
             "name": "Nagmara's Whipping Belt",
             "url": "https://www.wowhead.com/classic/item=11866/nagmara-s-whipping-belt",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -25002,19 +25219,22 @@ const DUNGEONS = [
             "id": 12018,
             "name": "Conservator Helm",
             "url": "https://www.wowhead.com/classic/item=12018/conservator-helm",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12021,
             "name": "Shieldplate Sabatons",
             "url": "https://www.wowhead.com/classic/item=12021/shieldplate-sabatons",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12041,
             "name": "Windshear Leggings",
             "url": "https://www.wowhead.com/classic/item=12041/windshear-leggings",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -26214,19 +26434,22 @@ const DUNGEONS = [
                 "id": 12018,
                 "name": "Conservator Helm",
                 "url": "https://www.wowhead.com/classic/item=12018/conservator-helm",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 12021,
                 "name": "Shieldplate Sabatons",
                 "url": "https://www.wowhead.com/classic/item=12021/shieldplate-sabatons",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 12041,
                 "name": "Windshear Leggings",
                 "url": "https://www.wowhead.com/classic/item=12041/windshear-leggings",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -26921,19 +27144,22 @@ const DUNGEONS = [
                 "id": 12018,
                 "name": "Conservator Helm",
                 "url": "https://www.wowhead.com/classic/item=12018/conservator-helm",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 12021,
                 "name": "Shieldplate Sabatons",
                 "url": "https://www.wowhead.com/classic/item=12021/shieldplate-sabatons",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 12041,
                 "name": "Windshear Leggings",
                 "url": "https://www.wowhead.com/classic/item=12041/windshear-leggings",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -27015,7 +27241,8 @@ const DUNGEONS = [
             "id": 12065,
             "name": "Ward of the Elements",
             "url": "https://www.wowhead.com/classic/item=12065/ward-of-the-elements",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [
@@ -27023,13 +27250,15 @@ const DUNGEONS = [
             "id": 12061,
             "name": "Blade of Reckoning",
             "url": "https://www.wowhead.com/classic/item=12061/blade-of-reckoning",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12062,
             "name": "Skilled Fighting Blade",
             "url": "https://www.wowhead.com/classic/item=12062/skilled-fighting-blade",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -27631,19 +27860,22 @@ const DUNGEONS = [
                 "id": 12018,
                 "name": "Conservator Helm",
                 "url": "https://www.wowhead.com/classic/item=12018/conservator-helm",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 12021,
                 "name": "Shieldplate Sabatons",
                 "url": "https://www.wowhead.com/classic/item=12021/shieldplate-sabatons",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 12041,
                 "name": "Windshear Leggings",
                 "url": "https://www.wowhead.com/classic/item=12041/windshear-leggings",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -27910,7 +28142,7 @@ const DUNGEONS = [
         "faction": "Alliance",
         "xp": 9650,
         "money": 26500,
-        "objective": "",
+        "objective": "Return to Ironforge and speak with <a href=\"https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard\" rel=\"noopener noreferrer\" target=\"_blank\">King Magni Bronzebeard</a>.",
         "description": "Thaurissan was a great and honorable dwarf. You ruined my life and the life of my unborn child!<br><br>Return to Ironforge and tell my father that the heir to the Kingdom of Ironforge will be a Dark Iron dwarf.<br><br>Whether he approves or not, it shall be.",
         "shareable": true,
         "requirements": [],
@@ -27920,13 +28152,15 @@ const DUNGEONS = [
             "id": 12548,
             "name": "Magni's Will",
             "url": "https://www.wowhead.com/classic/item=12548/magni-s-will",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 12543,
             "name": "Songstone of Ironforge",
             "url": "https://www.wowhead.com/classic/item=12543/songstone-of-ironforge",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -28058,7 +28292,8 @@ const DUNGEONS = [
                 "id": 12102,
                 "name": "Ring of the Aristocrat",
                 "url": "https://www.wowhead.com/classic/item=12102/ring-of-the-aristocrat",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [],
@@ -28425,25 +28660,29 @@ const DUNGEONS = [
             "id": 12113,
             "name": "Sunborne Cape",
             "url": "https://www.wowhead.com/classic/item=12113/sunborne-cape",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12114,
             "name": "Nightfall Gloves",
             "url": "https://www.wowhead.com/classic/item=12114/nightfall-gloves",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12112,
             "name": "Crypt Demon Bracers",
             "url": "https://www.wowhead.com/classic/item=12112/crypt-demon-bracers",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 12115,
             "name": "Stalwart Clutch",
             "url": "https://www.wowhead.com/classic/item=12115/stalwart-clutch",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -28833,7 +29072,7 @@ const DUNGEONS = [
         "faction": "Horde",
         "xp": 9950,
         "money": 27000,
-        "objective": "",
+        "objective": "Return to <a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a>!",
         "description": "You have slain my husband! My child will be born into this world without a father.<br><br>I assure you, this child will be the next ruler of the kingdom of Ironforge. You and your kind shall be hunted down until the end of days for this wrongful act.<br><br>Leave me be. I am certain your warchief will be eager to hear the results of his meddling.",
         "shareable": true,
         "requirements": [],
@@ -28843,13 +29082,15 @@ const DUNGEONS = [
             "id": 12544,
             "name": "Thrall's Resolve",
             "url": "https://www.wowhead.com/classic/item=12544/thrall-s-resolve",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 12545,
             "name": "Eye of Orgrimmar",
             "url": "https://www.wowhead.com/classic/item=12545/eye-of-orgrimmar",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -28944,13 +29185,15 @@ const DUNGEONS = [
             "id": 18411,
             "name": "Spry Boots",
             "url": "https://www.wowhead.com/classic/item=18411/spry-boots",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 18410,
             "name": "Sprinter's Sword",
             "url": "https://www.wowhead.com/classic/item=18410/sprinter-s-sword",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -29024,7 +29267,8 @@ const DUNGEONS = [
             "id": 18491,
             "name": "Lorespinner",
             "url": "https://www.wowhead.com/classic/item=18491/lorespinner",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -29183,7 +29427,8 @@ const DUNGEONS = [
             "id": 18491,
             "name": "Lorespinner",
             "url": "https://www.wowhead.com/classic/item=18491/lorespinner",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -29388,19 +29633,22 @@ const DUNGEONS = [
             "id": 18420,
             "name": "Bonecrusher",
             "url": "https://www.wowhead.com/classic/item=18420/bonecrusher",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 18421,
             "name": "Backwood Helm",
             "url": "https://www.wowhead.com/classic/item=18421/backwood-helm",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 18424,
             "name": "Sedge Boots",
             "url": "https://www.wowhead.com/classic/item=18424/sedge-boots",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -29564,13 +29812,15 @@ const DUNGEONS = [
             "id": 18535,
             "name": "Milli's Shield",
             "url": "https://www.wowhead.com/classic/item=18535/milli-s-shield",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 18536,
             "name": "Milli's Lexicon",
             "url": "https://www.wowhead.com/classic/item=18536/milli-s-lexicon",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -29747,7 +29997,8 @@ const DUNGEONS = [
             "id": 18258,
             "name": "Gordok Ogre Suit",
             "url": "https://www.wowhead.com/classic/item=18258/gordok-ogre-suit",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -29914,25 +30165,29 @@ const DUNGEONS = [
             "id": 18366,
             "name": "Gordok's Handguards",
             "url": "https://www.wowhead.com/classic/item=18366/gordok-s-handguards",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 18367,
             "name": "Gordok's Gauntlets",
             "url": "https://www.wowhead.com/classic/item=18367/gordok-s-gauntlets",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 18368,
             "name": "Gordok's Gloves",
             "url": "https://www.wowhead.com/classic/item=18368/gordok-s-gloves",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 18369,
             "name": "Gordok's Handwraps",
             "url": "https://www.wowhead.com/classic/item=18369/gordok-s-handwraps",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -29997,13 +30252,15 @@ const DUNGEONS = [
             "id": 18269,
             "name": "Gordok Green Grog",
             "url": "https://www.wowhead.com/classic/item=18269/gordok-green-grog",
-            "quality": 2
+            "quality": 2,
+            "quantity": 5
           },
           {
             "id": 18284,
             "name": "Kreeg's Stout Beatdown",
             "url": "https://www.wowhead.com/classic/item=18284/kreeg-s-stout-beatdown",
-            "quality": 2
+            "quality": 2,
+            "quantity": 5
           }
         ],
         "rewardChoices": [],
@@ -30155,25 +30412,29 @@ const DUNGEONS = [
             "id": 18366,
             "name": "Gordok's Handguards",
             "url": "https://www.wowhead.com/classic/item=18366/gordok-s-handguards",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 18367,
             "name": "Gordok's Gauntlets",
             "url": "https://www.wowhead.com/classic/item=18367/gordok-s-gauntlets",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 18368,
             "name": "Gordok's Gloves",
             "url": "https://www.wowhead.com/classic/item=18368/gordok-s-gloves",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 18369,
             "name": "Gordok's Handwraps",
             "url": "https://www.wowhead.com/classic/item=18369/gordok-s-handwraps",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -30230,7 +30491,8 @@ const DUNGEONS = [
             "id": 18469,
             "name": "Royal Seal of Eldre'Thalas",
             "url": "https://www.wowhead.com/classic/item=18469/royal-seal-of-eldre-thalas",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -30306,13 +30568,15 @@ const DUNGEONS = [
             "id": 18411,
             "name": "Spry Boots",
             "url": "https://www.wowhead.com/classic/item=18411/spry-boots",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 18410,
             "name": "Sprinter's Sword",
             "url": "https://www.wowhead.com/classic/item=18410/sprinter-s-sword",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -30369,7 +30633,8 @@ const DUNGEONS = [
             "id": 18473,
             "name": "Royal Seal of Eldre'Thalas",
             "url": "https://www.wowhead.com/classic/item=18473/royal-seal-of-eldre-thalas",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -30427,7 +30692,8 @@ const DUNGEONS = [
             "id": 18465,
             "name": "Royal Seal of Eldre'Thalas",
             "url": "https://www.wowhead.com/classic/item=18465/royal-seal-of-eldre-thalas",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -30485,7 +30751,8 @@ const DUNGEONS = [
             "id": 18468,
             "name": "Royal Seal of Eldre'Thalas",
             "url": "https://www.wowhead.com/classic/item=18468/royal-seal-of-eldre-thalas",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -30543,7 +30810,8 @@ const DUNGEONS = [
             "id": 18467,
             "name": "Royal Seal of Eldre'Thalas",
             "url": "https://www.wowhead.com/classic/item=18467/royal-seal-of-eldre-thalas",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -30601,7 +30869,8 @@ const DUNGEONS = [
             "id": 18472,
             "name": "Royal Seal of Eldre'Thalas",
             "url": "https://www.wowhead.com/classic/item=18472/royal-seal-of-eldre-thalas",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -30659,7 +30928,8 @@ const DUNGEONS = [
             "id": 18471,
             "name": "Royal Seal of Eldre'Thalas",
             "url": "https://www.wowhead.com/classic/item=18471/royal-seal-of-eldre-thalas",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -30717,7 +30987,8 @@ const DUNGEONS = [
             "id": 18470,
             "name": "Royal Seal of Eldre'Thalas",
             "url": "https://www.wowhead.com/classic/item=18470/royal-seal-of-eldre-thalas",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -30960,7 +31231,8 @@ const DUNGEONS = [
             "id": 18348,
             "name": "Quel'Serrar",
             "url": "https://www.wowhead.com/classic/item=18348/quel-serrar",
-            "quality": 4
+            "quality": 4,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -31079,7 +31351,8 @@ const DUNGEONS = [
             "id": 18466,
             "name": "Royal Seal of Eldre'Thalas",
             "url": "https://www.wowhead.com/classic/item=18466/royal-seal-of-eldre-thalas",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -31306,7 +31579,8 @@ const DUNGEONS = [
             "id": 18330,
             "name": "Arcanum of Focus",
             "url": "https://www.wowhead.com/classic/item=18330/arcanum-of-focus",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -31406,7 +31680,8 @@ const DUNGEONS = [
             "id": 18331,
             "name": "Arcanum of Protection",
             "url": "https://www.wowhead.com/classic/item=18331/arcanum-of-protection",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -31506,7 +31781,8 @@ const DUNGEONS = [
             "id": 18329,
             "name": "Arcanum of Rapidity",
             "url": "https://www.wowhead.com/classic/item=18329/arcanum-of-rapidity",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -31656,7 +31932,8 @@ const DUNGEONS = [
             "id": 12529,
             "name": "Smolderweb Carrier",
             "url": "https://www.wowhead.com/classic/item=12529/smolderweb-carrier",
-            "quality": 1
+            "quality": 1,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -31731,7 +32008,8 @@ const DUNGEONS = [
             "id": 12264,
             "name": "Worg Carrier",
             "url": "https://www.wowhead.com/classic/item=12264/worg-carrier",
-            "quality": 1
+            "quality": 1,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -31806,19 +32084,22 @@ const DUNGEONS = [
             "id": 15824,
             "name": "Astoria Robes",
             "url": "https://www.wowhead.com/classic/item=15824/astoria-robes",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 15825,
             "name": "Traphook Jerkin",
             "url": "https://www.wowhead.com/classic/item=15825/traphook-jerkin",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 15827,
             "name": "Jadescale Breastplate",
             "url": "https://www.wowhead.com/classic/item=15827/jadescale-breastplate",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -31892,19 +32173,22 @@ const DUNGEONS = [
             "id": 15824,
             "name": "Astoria Robes",
             "url": "https://www.wowhead.com/classic/item=15824/astoria-robes",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 15825,
             "name": "Traphook Jerkin",
             "url": "https://www.wowhead.com/classic/item=15825/traphook-jerkin",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 15827,
             "name": "Jadescale Breastplate",
             "url": "https://www.wowhead.com/classic/item=15827/jadescale-breastplate",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -32284,19 +32568,22 @@ const DUNGEONS = [
                 "id": 10749,
                 "name": "Avenguard Helm",
                 "url": "https://www.wowhead.com/classic/item=10749/avenguard-helm",
-                "quality": 3
+                "quality": 3,
+                "quantity": 1
               },
               {
                 "id": 10750,
                 "name": "Lifeforce Dirk",
                 "url": "https://www.wowhead.com/classic/item=10750/lifeforce-dirk",
-                "quality": 3
+                "quality": 3,
+                "quantity": 1
               },
               {
                 "id": 10751,
                 "name": "Gemburst Circlet",
                 "url": "https://www.wowhead.com/classic/item=10751/gemburst-circlet",
-                "quality": 3
+                "quality": 3,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -32478,7 +32765,7 @@ const DUNGEONS = [
         "faction": "Alliance",
         "xp": 8300,
         "money": 18000,
-        "objective": "",
+        "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and destroy <a href=\"https://www.wowhead.com/classic/npc=9237/war-master-voone\" rel=\"noopener noreferrer\" target=\"_blank\">War Master Voone</a>, <a href=\"https://www.wowhead.com/classic/npc=9196/highlord-omokk\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Omokk</a>, and <a href=\"https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak\" rel=\"noopener noreferrer\" target=\"_blank\">Overlord Wyrmthalak</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> when the job is done.",
         "description": "This information fills in the gaps to our otherwise impeccable intelligence of <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a>.<br><br>The attack must be decisive.<br><br>First their war master, the troll Voone, must be destroyed. Without his battle plans, the Blackrock orcs will be thrown into chaos.<br><br>You must then take out the ogre Highlord, Omokk. The cowardly ogres of Blackrock are powerless without his leadership.<br><br>Lastly, the overlord of the citadel: Wyrmthalak. With Wyrmthalak dead, their central command unit is without a conduit.",
         "shareable": true,
         "requirements": [
@@ -32510,31 +32797,36 @@ const DUNGEONS = [
             "id": 13958,
             "name": "Wyrmthalak's Shackles",
             "url": "https://www.wowhead.com/classic/item=13958/wyrmthalak-s-shackles",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13959,
             "name": "Omokk's Girth Restrainer",
             "url": "https://www.wowhead.com/classic/item=13959/omokk-s-girth-restrainer",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13961,
             "name": "Halycon's Muzzle",
             "url": "https://www.wowhead.com/classic/item=13961/halycon-s-muzzle",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13962,
             "name": "Vosh'gajin's Strand",
             "url": "https://www.wowhead.com/classic/item=13962/vosh-gajin-s-strand",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13963,
             "name": "Voone's Vice Grips",
             "url": "https://www.wowhead.com/classic/item=13963/voone-s-vice-grips",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -33084,7 +33376,8 @@ const DUNGEONS = [
             "id": 15873,
             "name": "Ragged John's Neverending Cup",
             "url": "https://www.wowhead.com/classic/item=15873/ragged-john-s-neverending-cup",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -33159,7 +33452,8 @@ const DUNGEONS = [
             "id": 15867,
             "name": "Prismcharm",
             "url": "https://www.wowhead.com/classic/item=15867/prismcharm",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -33314,7 +33608,8 @@ const DUNGEONS = [
             "id": 12821,
             "name": "Plans: Dawn's Edge",
             "url": "https://www.wowhead.com/classic/item=12821/plans-dawn-s-edge",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -33363,7 +33658,7 @@ const DUNGEONS = [
         "faction": "Horde",
         "xp": 8300,
         "money": 18000,
-        "objective": "",
+        "objective": "Slay <a href=\"https://www.wowhead.com/classic/npc=9196/highlord-omokk\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Omokk</a>, <a href=\"https://www.wowhead.com/classic/npc=9237/war-master-voone\" rel=\"noopener noreferrer\" target=\"_blank\">War Master Voone</a>, and <a href=\"https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak\" rel=\"noopener noreferrer\" target=\"_blank\">Overlord Wyrmthalak</a>. Recover <a href=\"https://www.wowhead.com/classic/item=12562/important-blackrock-documents\" rel=\"noopener noreferrer\" target=\"_blank\">Important Blackrock Documents</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a> in Kargath when the mission has been accomplished.",
         "description": "By order of <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a>, the following inhabitants of <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> must be destroyed:<br><br>The rotund menace, <a href=\"https://www.wowhead.com/classic/npc=9196/highlord-omokk\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Omokk</a>.<br><br>The cruel and ruthless troll, <a href=\"https://www.wowhead.com/classic/npc=9237/war-master-voone\" rel=\"noopener noreferrer\" target=\"_blank\">War Master Voone</a>.<br><br><a href=\"https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak\" rel=\"noopener noreferrer\" target=\"_blank\">Overlord Wyrmthalak</a>, taskmaster of the lesser city.<br><br>You will also be required to return any important documents that you may find.<br><br>Succeed and be honored.<br><br>Fail and be forgotten.",
         "shareable": false,
         "requirements": [
@@ -33403,31 +33698,36 @@ const DUNGEONS = [
             "id": 13958,
             "name": "Wyrmthalak's Shackles",
             "url": "https://www.wowhead.com/classic/item=13958/wyrmthalak-s-shackles",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13959,
             "name": "Omokk's Girth Restrainer",
             "url": "https://www.wowhead.com/classic/item=13959/omokk-s-girth-restrainer",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13961,
             "name": "Halycon's Muzzle",
             "url": "https://www.wowhead.com/classic/item=13961/halycon-s-muzzle",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13962,
             "name": "Vosh'gajin's Strand",
             "url": "https://www.wowhead.com/classic/item=13962/vosh-gajin-s-strand",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13963,
             "name": "Voone's Vice Grips",
             "url": "https://www.wowhead.com/classic/item=13963/voone-s-vice-grips",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -33919,7 +34219,7 @@ const DUNGEONS = [
         "faction": "Both",
         "xp": 8300,
         "money": 49800,
-        "objective": "",
+        "objective": "Return to the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> with the <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">Blood of Innocents</a>. Find the porch and place the <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">Blood of Innocents</a> in the brazier. Kirtonos will come to feast upon your soul.<br><br>Fight valiantly, do not give an inch! Destroy Kirtonos and return to <a href=\"https://www.wowhead.com/classic/npc=11216/eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Eva Sarkhoff</a>.",
         "description": "This is it.<br><br>The <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">blood of innocents</a>. The purest blood, used to appease Krastinov's master.<br><br>It is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.<br><br>Take the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.<br><br>Should you succeed, you will earn more than just our gratitude.",
         "shareable": false,
         "requirements": [
@@ -33936,7 +34236,8 @@ const DUNGEONS = [
             "id": 13544,
             "name": "Spectral Essence",
             "url": "https://www.wowhead.com/classic/item=13544/spectral-essence",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [
@@ -33944,13 +34245,15 @@ const DUNGEONS = [
             "id": 15805,
             "name": "Penelope's Rose",
             "url": "https://www.wowhead.com/classic/item=15805/penelope-s-rose",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 15806,
             "name": "Mirah's Song",
             "url": "https://www.wowhead.com/classic/item=15806/mirah-s-song",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -34011,7 +34314,7 @@ const DUNGEONS = [
         "faction": "Both",
         "xp": 9950,
         "money": 59700,
-        "objective": "",
+        "objective": "Find Ras Frostwhisper in the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a>. When you have found him, use the <a href=\"https://www.wowhead.com/classic/item=13752/soulbound-keepsake\" rel=\"noopener noreferrer\" target=\"_blank\">Soulbound Keepsake</a> on his undead visage. Should you succeed in reverting him to a mortal, strike him down and recover the <a href=\"https://www.wowhead.com/classic/item=13626/human-head-of-ras-frostwhisper\" rel=\"noopener noreferrer\" target=\"_blank\">Human Head of Ras Frostwhisper</a>. Take the head back to <a href=\"https://www.wowhead.com/classic/npc=11286/magistrate-marduke\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Marduke</a>.",
         "description": "There is but one task remaining. Confront the lich, Ras Frostwhisper, in his lair.<br><br>Use the power of the keepsake against the beast - be unrelenting in your actions! Weather the blows that the flailing beast will surely bring down upon you. Do not give in to the pain!<br><br>When the ritual is complete, Ras will be mortal once more. It is at that point that he must be slain. Strike him down and take his human head.",
         "shareable": false,
         "requirements": [
@@ -34029,7 +34332,8 @@ const DUNGEONS = [
             "id": 14002,
             "name": "Darrowshire Strongguard",
             "url": "https://www.wowhead.com/classic/item=14002/darrowshire-strongguard",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [
@@ -34037,19 +34341,22 @@ const DUNGEONS = [
             "id": 13982,
             "name": "Warblade of Caer Darrow",
             "url": "https://www.wowhead.com/classic/item=13982/warblade-of-caer-darrow",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13986,
             "name": "Crown of Caer Darrow",
             "url": "https://www.wowhead.com/classic/item=13986/crown-of-caer-darrow",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13984,
             "name": "Darrowspike",
             "url": "https://www.wowhead.com/classic/item=13984/darrowspike",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -34261,7 +34568,7 @@ const DUNGEONS = [
             "faction": "Both",
             "xp": 8300,
             "money": 49800,
-            "objective": "",
+            "objective": "Return to the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> with the <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">Blood of Innocents</a>. Find the porch and place the <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">Blood of Innocents</a> in the brazier. Kirtonos will come to feast upon your soul.<br><br>Fight valiantly, do not give an inch! Destroy Kirtonos and return to <a href=\"https://www.wowhead.com/classic/npc=11216/eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Eva Sarkhoff</a>.",
             "description": "This is it.<br><br>The <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">blood of innocents</a>. The purest blood, used to appease Krastinov's master.<br><br>It is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.<br><br>Take the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.<br><br>Should you succeed, you will earn more than just our gratitude.",
             "shareable": false,
             "requirements": [
@@ -34278,7 +34585,8 @@ const DUNGEONS = [
                 "id": 13544,
                 "name": "Spectral Essence",
                 "url": "https://www.wowhead.com/classic/item=13544/spectral-essence",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [
@@ -34286,13 +34594,15 @@ const DUNGEONS = [
                 "id": 15805,
                 "name": "Penelope's Rose",
                 "url": "https://www.wowhead.com/classic/item=15805/penelope-s-rose",
-                "quality": 3
+                "quality": 3,
+                "quantity": 1
               },
               {
                 "id": 15806,
                 "name": "Mirah's Song",
                 "url": "https://www.wowhead.com/classic/item=15806/mirah-s-song",
-                "quality": 3
+                "quality": 3,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -35794,7 +36104,8 @@ const DUNGEONS = [
             "id": 20134,
             "name": "Skyfury Helm",
             "url": "https://www.wowhead.com/classic/item=20134/skyfury-helm",
-            "quality": 4
+            "quality": 4,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -35960,13 +36271,15 @@ const DUNGEONS = [
             "id": 15853,
             "name": "Windreaper",
             "url": "https://www.wowhead.com/classic/item=15853/windreaper",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 15854,
             "name": "Dancing Sliver",
             "url": "https://www.wowhead.com/classic/item=15854/dancing-sliver",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -36237,13 +36550,15 @@ const DUNGEONS = [
                 "id": 15862,
                 "name": "Blitzcleaver",
                 "url": "https://www.wowhead.com/classic/item=15862/blitzcleaver",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 15863,
                 "name": "Grave Scepter",
                 "url": "https://www.wowhead.com/classic/item=15863/grave-scepter",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -36383,7 +36698,8 @@ const DUNGEONS = [
                 "id": 12144,
                 "name": "Eggscilloscope",
                 "url": "https://www.wowhead.com/classic/item=12144/eggscilloscope",
-                "quality": 1
+                "quality": 1,
+                "quantity": 1
               }
             ],
             "rewardChoices": [],
@@ -37531,7 +37847,8 @@ const DUNGEONS = [
             "id": 13171,
             "name": "Smokey's Lighter",
             "url": "https://www.wowhead.com/classic/item=13171/smokey-s-lighter",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -37735,7 +38052,7 @@ const DUNGEONS = [
         "faction": "Both",
         "xp": 6600,
         "money": 18000,
-        "objective": "",
+        "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a>, in the north. Search the supply crates that litter the city and recover 5 <a href=\"https://www.wowhead.com/classic/item=13180/stratholme-holy-water\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme Holy Water</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered\" rel=\"noopener noreferrer\" target=\"_blank\">Leonid Barthalomew the Revered</a> when you have collected enough of the blessed fluid.",
         "description": "I look at my undeath as a malady. An illness that merely requires treatment; however, it is also a great blessing for the Argent Dawn. What better vessel to smite the heathens of the Scourge than through the undead?<br><br>I am revered by my colleagues because of the sacrifices I have made, but the accolades mean nothing to me.<br><br>If you are interested in assisting the Argent Dawn, then a job I can offer.<br><br>Venture to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and recover our surplus of holy water. Search the supply crates.",
         "shareable": true,
         "requirements": [
@@ -37753,13 +38070,15 @@ const DUNGEONS = [
             "id": 3928,
             "name": "Superior Healing Potion",
             "url": "https://www.wowhead.com/classic/item=3928/superior-healing-potion",
-            "quality": 1
+            "quality": 1,
+            "quantity": 5
           },
           {
             "id": 6149,
             "name": "Greater Mana Potion",
             "url": "https://www.wowhead.com/classic/item=6149/greater-mana-potion",
-            "quality": 1
+            "quality": 1,
+            "quantity": 5
           }
         ],
         "rewardChoices": [
@@ -37767,13 +38086,15 @@ const DUNGEONS = [
             "id": 13216,
             "name": "Crown of the Penitent",
             "url": "https://www.wowhead.com/classic/item=13216/crown-of-the-penitent",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 13217,
             "name": "Band of the Penitent",
             "url": "https://www.wowhead.com/classic/item=13217/band-of-the-penitent",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -37846,7 +38167,8 @@ const DUNGEONS = [
             "id": 13315,
             "name": "Testament of Hope",
             "url": "https://www.wowhead.com/classic/item=13315/testament-of-hope",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -38496,7 +38818,7 @@ const DUNGEONS = [
             "faction": "Both",
             "xp": 8300,
             "money": 49800,
-            "objective": "",
+            "objective": "Return to the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> with the <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">Blood of Innocents</a>. Find the porch and place the <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">Blood of Innocents</a> in the brazier. Kirtonos will come to feast upon your soul.<br><br>Fight valiantly, do not give an inch! Destroy Kirtonos and return to <a href=\"https://www.wowhead.com/classic/npc=11216/eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Eva Sarkhoff</a>.",
             "description": "This is it.<br><br>The <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">blood of innocents</a>. The purest blood, used to appease Krastinov's master.<br><br>It is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.<br><br>Take the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.<br><br>Should you succeed, you will earn more than just our gratitude.",
             "shareable": false,
             "requirements": [
@@ -38513,7 +38835,8 @@ const DUNGEONS = [
                 "id": 13544,
                 "name": "Spectral Essence",
                 "url": "https://www.wowhead.com/classic/item=13544/spectral-essence",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [
@@ -38521,13 +38844,15 @@ const DUNGEONS = [
                 "id": 15805,
                 "name": "Penelope's Rose",
                 "url": "https://www.wowhead.com/classic/item=15805/penelope-s-rose",
-                "quality": 3
+                "quality": 3,
+                "quantity": 1
               },
               {
                 "id": 15806,
                 "name": "Mirah's Song",
                 "url": "https://www.wowhead.com/classic/item=15806/mirah-s-song",
-                "quality": 3
+                "quality": 3,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -38795,13 +39120,15 @@ const DUNGEONS = [
             "id": 18022,
             "name": "Royal Seal of Alexis",
             "url": "https://www.wowhead.com/classic/item=18022/royal-seal-of-alexis",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 17001,
             "name": "Elemental Circle",
             "url": "https://www.wowhead.com/classic/item=17001/elemental-circle",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -38960,13 +39287,15 @@ const DUNGEONS = [
                 "id": 16994,
                 "name": "Duskwing Gloves",
                 "url": "https://www.wowhead.com/classic/item=16994/duskwing-gloves",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 16995,
                 "name": "Duskwing Mantle",
                 "url": "https://www.wowhead.com/classic/item=16995/duskwing-mantle",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -39117,13 +39446,15 @@ const DUNGEONS = [
             "id": 17044,
             "name": "Will of the Martyr",
             "url": "https://www.wowhead.com/classic/item=17044/will-of-the-martyr",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 17045,
             "name": "Blood of the Martyr",
             "url": "https://www.wowhead.com/classic/item=17045/blood-of-the-martyr",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -39203,13 +39534,15 @@ const DUNGEONS = [
             "id": 13209,
             "name": "Seal of the Dawn",
             "url": "https://www.wowhead.com/classic/item=13209/seal-of-the-dawn",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 19812,
             "name": "Rune of the Dawn",
             "url": "https://www.wowhead.com/classic/item=19812/rune-of-the-dawn",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -40181,13 +40514,15 @@ const DUNGEONS = [
             "id": 15861,
             "name": "Swiftfoot Treads",
             "url": "https://www.wowhead.com/classic/item=15861/swiftfoot-treads",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           },
           {
             "id": 15860,
             "name": "Blinkstrike Armguards",
             "url": "https://www.wowhead.com/classic/item=15860/blinkstrike-armguards",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -40313,7 +40648,7 @@ const DUNGEONS = [
         "faction": "Alliance",
         "xp": 9950,
         "money": 27000,
-        "objective": "",
+        "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and destroy <a href=\"https://www.wowhead.com/classic/npc=10363/general-drakkisath\" rel=\"noopener noreferrer\" target=\"_blank\">General Drakkisath</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> when the job is done.",
         "description": "We battle against these beasts on two fronts: From our capital of Stormwind we fight them from the inside out and here, in the Burning Steppes, we take the battle to their doorstep. We must be vigilant. None should be spared our wrath as none of our own were spared when they struck at our homes and families.<br><br>Find this <a href=\"https://www.wowhead.com/classic/npc=10363/general-drakkisath\" rel=\"noopener noreferrer\" target=\"_blank\">General Drakkisath</a> and destroy him!<br><br>The task certainly will not be a simple one, but the rewards shall be extravagant.",
         "shareable": true,
         "requirements": [
@@ -40331,19 +40666,22 @@ const DUNGEONS = [
             "id": 13966,
             "name": "Mark of Tyranny",
             "url": "https://www.wowhead.com/classic/item=13966/mark-of-tyranny",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13968,
             "name": "Eye of the Beast",
             "url": "https://www.wowhead.com/classic/item=13968/eye-of-the-beast",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13965,
             "name": "Blackhand's Breadth",
             "url": "https://www.wowhead.com/classic/item=13965/blackhand-s-breadth",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -40487,19 +40825,22 @@ const DUNGEONS = [
             "id": 12696,
             "name": "Plans: Demon Forged Breastplate",
             "url": "https://www.wowhead.com/classic/item=12696/plans-demon-forged-breastplate",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 9224,
             "name": "Elixir of Demonslaying",
             "url": "https://www.wowhead.com/classic/item=9224/elixir-of-demonslaying",
-            "quality": 1
+            "quality": 1,
+            "quantity": 5
           },
           {
             "id": 12849,
             "name": "Demon Kissed Sack",
             "url": "https://www.wowhead.com/classic/item=12849/demon-kissed-sack",
-            "quality": 2
+            "quality": 2,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -40640,7 +40981,8 @@ const DUNGEONS = [
             "id": 16309,
             "name": "Drakefire Amulet",
             "url": "https://www.wowhead.com/classic/item=16309/drakefire-amulet",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -41243,19 +41585,22 @@ const DUNGEONS = [
                 "id": 12018,
                 "name": "Conservator Helm",
                 "url": "https://www.wowhead.com/classic/item=12018/conservator-helm",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 12021,
                 "name": "Shieldplate Sabatons",
                 "url": "https://www.wowhead.com/classic/item=12021/shieldplate-sabatons",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 12041,
                 "name": "Windshear Leggings",
                 "url": "https://www.wowhead.com/classic/item=12041/windshear-leggings",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -41468,7 +41813,8 @@ const DUNGEONS = [
                 "id": 12065,
                 "name": "Ward of the Elements",
                 "url": "https://www.wowhead.com/classic/item=12065/ward-of-the-elements",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "rewardChoices": [
@@ -41476,13 +41822,15 @@ const DUNGEONS = [
                 "id": 12061,
                 "name": "Blade of Reckoning",
                 "url": "https://www.wowhead.com/classic/item=12061/blade-of-reckoning",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 12062,
                 "name": "Skilled Fighting Blade",
                 "url": "https://www.wowhead.com/classic/item=12062/skilled-fighting-blade",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
@@ -41750,7 +42098,7 @@ const DUNGEONS = [
         "faction": "Horde",
         "xp": 8300,
         "money": 18000,
-        "objective": "",
+        "objective": "Slay <a href=\"https://www.wowhead.com/classic/npc=9196/highlord-omokk\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Omokk</a>, <a href=\"https://www.wowhead.com/classic/npc=9237/war-master-voone\" rel=\"noopener noreferrer\" target=\"_blank\">War Master Voone</a>, and <a href=\"https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak\" rel=\"noopener noreferrer\" target=\"_blank\">Overlord Wyrmthalak</a>. Recover <a href=\"https://www.wowhead.com/classic/item=12562/important-blackrock-documents\" rel=\"noopener noreferrer\" target=\"_blank\">Important Blackrock Documents</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a> in Kargath when the mission has been accomplished.",
         "description": "By order of <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a>, the following inhabitants of <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> must be destroyed:<br><br>The rotund menace, <a href=\"https://www.wowhead.com/classic/npc=9196/highlord-omokk\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Omokk</a>.<br><br>The cruel and ruthless troll, <a href=\"https://www.wowhead.com/classic/npc=9237/war-master-voone\" rel=\"noopener noreferrer\" target=\"_blank\">War Master Voone</a>.<br><br><a href=\"https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak\" rel=\"noopener noreferrer\" target=\"_blank\">Overlord Wyrmthalak</a>, taskmaster of the lesser city.<br><br>You will also be required to return any important documents that you may find.<br><br>Succeed and be honored.<br><br>Fail and be forgotten.",
         "shareable": false,
         "requirements": [
@@ -41790,31 +42138,36 @@ const DUNGEONS = [
             "id": 13958,
             "name": "Wyrmthalak's Shackles",
             "url": "https://www.wowhead.com/classic/item=13958/wyrmthalak-s-shackles",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13959,
             "name": "Omokk's Girth Restrainer",
             "url": "https://www.wowhead.com/classic/item=13959/omokk-s-girth-restrainer",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13961,
             "name": "Halycon's Muzzle",
             "url": "https://www.wowhead.com/classic/item=13961/halycon-s-muzzle",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13962,
             "name": "Vosh'gajin's Strand",
             "url": "https://www.wowhead.com/classic/item=13962/vosh-gajin-s-strand",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13963,
             "name": "Voone's Vice Grips",
             "url": "https://www.wowhead.com/classic/item=13963/voone-s-vice-grips",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -41941,7 +42294,7 @@ const DUNGEONS = [
         "faction": "Horde",
         "xp": 9950,
         "money": 27000,
-        "objective": "",
+        "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and slay Warchief Rend Blackhand. Take his head and return to Orgrimmar.",
         "description": "Rend dares make such grand claims because of the protection he is afforded by the black flight.<br><br>You, will find a way to pass through the Halls of Ascension. You will then find 'Warchief' Rend Blackhand and you will destroy him - FOR THE HORDE!<br><br>&lt;<a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a> slams a fist down upon his throne.&gt;<br><br>The next time you return to my chambers, you will hold his head high in triumph and then you shall present it to your Warchief. Do this and be honored as a hero of the Horde.",
         "shareable": true,
         "requirements": [
@@ -41960,19 +42313,22 @@ const DUNGEONS = [
             "id": 13966,
             "name": "Mark of Tyranny",
             "url": "https://www.wowhead.com/classic/item=13966/mark-of-tyranny",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13968,
             "name": "Eye of the Beast",
             "url": "https://www.wowhead.com/classic/item=13968/eye-of-the-beast",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           },
           {
             "id": 13965,
             "name": "Blackhand's Breadth",
             "url": "https://www.wowhead.com/classic/item=13965/blackhand-s-breadth",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "requiredClasses": [],
@@ -42741,7 +43097,8 @@ const DUNGEONS = [
             "id": 16309,
             "name": "Drakefire Amulet",
             "url": "https://www.wowhead.com/classic/item=16309/drakefire-amulet",
-            "quality": 3
+            "quality": 3,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -42991,7 +43348,8 @@ const DUNGEONS = [
             "id": 12144,
             "name": "Eggscilloscope",
             "url": "https://www.wowhead.com/classic/item=12144/eggscilloscope",
-            "quality": 1
+            "quality": 1,
+            "quantity": 1
           }
         ],
         "rewardChoices": [],
@@ -43263,13 +43621,15 @@ const DUNGEONS = [
                 "id": 15862,
                 "name": "Blitzcleaver",
                 "url": "https://www.wowhead.com/classic/item=15862/blitzcleaver",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               },
               {
                 "id": 15863,
                 "name": "Grave Scepter",
                 "url": "https://www.wowhead.com/classic/item=15863/grave-scepter",
-                "quality": 2
+                "quality": 2,
+                "quantity": 1
               }
             ],
             "requiredClasses": [],
