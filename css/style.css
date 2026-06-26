@@ -3045,7 +3045,13 @@ img.stat-ico {
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(200, 168, 75, 0.1) inset;
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-gold) transparent;
 }
+.encounter-modal-panel::-webkit-scrollbar { width: 6px; }
+.encounter-modal-panel::-webkit-scrollbar-track { background: var(--bg-dark); }
+.encounter-modal-panel::-webkit-scrollbar-thumb { background: var(--border-gold); border-radius: 3px; }
+.encounter-modal-panel::-webkit-scrollbar-thumb:hover { background: var(--gold-dim); }
 .encounter-modal-panel::before {
   content: '';
   position: absolute;
@@ -3223,6 +3229,10 @@ img.stat-ico {
   scrollbar-width: thin;
   scrollbar-color: var(--border-gold) transparent;
 }
+.encounter-abilities::-webkit-scrollbar { width: 6px; }
+.encounter-abilities::-webkit-scrollbar-track { background: var(--bg-dark); }
+.encounter-abilities::-webkit-scrollbar-thumb { background: var(--border-gold); border-radius: 3px; }
+.encounter-abilities::-webkit-scrollbar-thumb:hover { background: var(--gold-dim); }
 .encounter-abilities.visible { display: flex; }
 .encounter-abilities .encounter-section-header { flex-shrink: 0; }
 .encounter-abilities-list {
@@ -3364,6 +3374,10 @@ img.stat-ico {
   scrollbar-width: thin;
   scrollbar-color: var(--border-gold) transparent;
 }
+.encounter-loot::-webkit-scrollbar { width: 6px; }
+.encounter-loot::-webkit-scrollbar-track { background: var(--bg-dark); }
+.encounter-loot::-webkit-scrollbar-thumb { background: var(--border-gold); border-radius: 3px; }
+.encounter-loot::-webkit-scrollbar-thumb:hover { background: var(--gold-dim); }
 .encounter-loot.visible {
   display: block;
 }
@@ -5002,4 +5016,463 @@ img.encounter-skull-icon {
   .quest-modal-nav-btn { padding: 7px 9px; gap: 6px; }
   .quest-modal-nav-pos { display: none; }
   .qm-nav-name { font-size: 0.74rem; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   DUNGEON KEY CARD  (pinned above the quest list)
+   ═══════════════════════════════════════════════════════════ */
+.dungeon-key-card {
+  --q-color: var(--gold);
+  --q-glow: rgba(200, 168, 75, 0.45);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  background:
+    linear-gradient(135deg, rgba(0,0,0,0.25), rgba(0,0,0,0.5)),
+    linear-gradient(180deg, var(--bg-panel), var(--bg-card));
+  border: 1px solid var(--border-gold);
+  border-left: 3px solid var(--q-color);
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+}
+#quest-container.grid-view > .dungeon-key-card { grid-column: 1 / -1; }
+
+.dungeon-key-card.q1 { --q-color: #e8e8e8; --q-glow: rgba(255,255,255,0.35); }
+.dungeon-key-card.q2 { --q-color: var(--green-uncommon); --q-glow: rgba(30,255,0,0.4); }
+.dungeon-key-card.q3 { --q-color: var(--blue-rare); --q-glow: rgba(74,144,217,0.45); }
+.dungeon-key-card.q4 { --q-color: var(--purple-epic); --q-glow: rgba(163,53,238,0.45); }
+.dungeon-key-card.q5 { --q-color: var(--orange-legendary); --q-glow: rgba(255,128,0,0.45); }
+
+.dungeon-key-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--q-color);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.55), 0 0 0 1px var(--q-glow) inset;
+}
+.dungeon-key-card:focus-visible { outline: 2px solid var(--q-color); outline-offset: 2px; }
+
+/* gold sheen strip along the top edge */
+.dungeon-key-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--q-color), transparent);
+  opacity: 0.7;
+}
+/* soft radial glow behind the icon */
+.dungeon-key-card-glow {
+  position: absolute;
+  left: -40px; top: 50%;
+  width: 220px; height: 220px;
+  transform: translateY(-50%);
+  background: radial-gradient(circle, var(--q-glow) 0%, transparent 62%);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.dungeon-key-card-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 54px; height: 54px;
+  border: 1px solid var(--q-color);
+  border-radius: 5px;
+  padding: 2px;
+  background: rgba(0,0,0,0.45);
+  box-shadow: 0 0 14px var(--q-glow);
+}
+.dungeon-key-card-icon img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  display: block;
+}
+.dungeon-key-card-main { flex: 1; min-width: 0; position: relative; }
+.dungeon-key-card-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.85;
+  margin-bottom: 3px;
+}
+.dkc-eyebrow-ico { width: 12px; height: 12px; object-fit: contain; }
+.dungeon-key-card-name {
+  font-family: 'Cinzel', serif;
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--q-color);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+  line-height: 1.2;
+}
+.dungeon-key-card-tagline {
+  margin-top: 4px;
+  font-size: 0.86rem;
+  color: var(--text-main);
+  line-height: 1.4;
+}
+.dungeon-key-card-tagline .key-link { font-weight: 600; }
+.dungeon-key-card-cta {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  text-align: right;
+}
+.dkc-method {
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+.dkc-open {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--q-color);
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+}
+.dungeon-key-card:hover .dkc-open { transform: translateX(3px); }
+
+/* ═══════════════════════════════════════════════════════════
+   DUNGEON KEY MODAL
+   ═══════════════════════════════════════════════════════════ */
+.key-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.key-modal.open { display: flex; }
+.key-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(5px);
+}
+.key-modal-panel {
+  --q-color: var(--gold);
+  --q-glow: rgba(200, 168, 75, 0.4);
+  position: relative;
+  z-index: 1;
+  width: min(720px, 94vw);
+  max-height: 90vh;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-gold);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(200, 168, 75, 0.1) inset;
+  overflow: hidden;
+  animation: mapFadeIn 0.18s ease both;
+}
+.key-modal-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--q-color), transparent);
+  pointer-events: none;
+  z-index: 3;
+}
+.key-modal-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  z-index: 4;
+  background: rgba(0,0,0,0.4);
+}
+
+/* ── Hero band ── */
+.key-modal-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 24px 18px;
+  border-bottom: 1px solid var(--border-gold);
+  background:
+    radial-gradient(ellipse 70% 120% at 12% 50%, var(--q-glow) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,0.25), rgba(200,168,75,0.03));
+  flex-shrink: 0;
+}
+.key-modal-icon-wrap {
+  flex-shrink: 0;
+  width: 72px; height: 72px;
+  border: 2px solid var(--q-color);
+  border-radius: 7px;
+  padding: 3px;
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 0 22px var(--q-glow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.key-modal-icon-wrap:hover { transform: scale(1.04); box-shadow: 0 0 30px var(--q-glow); }
+.key-modal-icon { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; display: block; }
+.key-modal-hero-text { flex: 1; min-width: 0; }
+.key-modal-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 5px;
+}
+.key-modal-eyebrow-ico { width: 13px; height: 13px; object-fit: contain; }
+.key-modal-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  color: var(--q-color);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+.key-modal-tagline {
+  margin-top: 7px;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--text-main);
+}
+.key-modal-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.key-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.key-chip-method { color: var(--text-main); background: rgba(0,0,0,0.3); }
+
+/* Neutralise the tiny icon Wowhead's tooltip script injects directly onto the
+   hero icon link (it sets an inline background-image + a left-pad class). We
+   keep the rich hover tooltip but render our own large icon. */
+.key-modal-icon-wrap[data-wh-icon-added] { background-image: none !important; padding-left: 3px !important; }
+
+/* quality class on the panel drives the whole hero accent
+   (icon frame, glow, title, chip border) via the --q-* custom props */
+.key-modal-panel.q1 { --q-color: #f0f0f0; --q-glow: rgba(255,255,255,0.28); }
+.key-modal-panel.q2 { --q-color: var(--green-uncommon); --q-glow: rgba(30,255,0,0.32); }
+.key-modal-panel.q3 { --q-color: var(--blue-rare); --q-glow: rgba(74,144,217,0.4); }
+.key-modal-panel.q4 { --q-color: var(--purple-epic); --q-glow: rgba(163,53,238,0.4); }
+.key-modal-panel.q5 { --q-color: var(--orange-legendary); --q-glow: rgba(255,128,0,0.4); }
+
+/* ── Body ── */
+.key-modal-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-gold) transparent;
+}
+.key-modal-body::-webkit-scrollbar { width: 6px; }
+.key-modal-body::-webkit-scrollbar-track { background: var(--bg-dark); }
+.key-modal-body::-webkit-scrollbar-thumb { background: var(--border-gold); border-radius: 3px; }
+
+.key-section { }
+.key-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.key-section-ico { width: 18px; height: 18px; object-fit: contain; }
+
+/* unlocks list */
+.key-unlock-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.key-unlock-list li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--text-main);
+}
+.key-unlock-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0; top: 1px;
+  color: var(--gold);
+  font-size: 0.85rem;
+}
+
+/* source line */
+.key-source {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+  padding: 9px 12px;
+  border-left: 2px solid var(--border-gold);
+  background: rgba(0,0,0,0.2);
+  border-radius: 0 3px 3px 0;
+}
+
+/* steps timeline */
+.key-step-list {
+  list-style: none;
+  counter-reset: keystep;
+  display: flex;
+  flex-direction: column;
+}
+.key-step {
+  counter-increment: keystep;
+  position: relative;
+  display: flex;
+  gap: 14px;
+  padding-bottom: 18px;
+}
+.key-step:last-child { padding-bottom: 0; }
+/* numbered marker */
+.key-step::before {
+  content: counter(keystep);
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--bg-card), var(--bg-dark));
+  border: 1px solid var(--gold-dim);
+  color: var(--gold-light);
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(200,168,75,0.15);
+}
+/* connecting line between markers */
+.key-step::after {
+  content: '';
+  position: absolute;
+  left: 13px; top: 28px; bottom: -2px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--border-gold), transparent);
+}
+.key-step:last-child::after { display: none; }
+.key-step-content { padding-top: 3px; }
+.key-step-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 3px;
+}
+.key-step-text {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--text-main);
+}
+.key-or {
+  font-family: 'Cinzel', serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+/* rogue shortcut callout */
+.key-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.25);
+}
+.key-callout-rogue {
+  border-color: rgba(255, 245, 105, 0.35);
+  background: linear-gradient(135deg, rgba(255, 245, 105, 0.06), rgba(0,0,0,0.3));
+}
+.key-callout-ico {
+  flex-shrink: 0;
+  width: 32px; height: 32px;
+  border-radius: 4px;
+  border: 1px solid var(--border-gold);
+}
+.key-callout-text {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--text-main);
+}
+.key-callout-text strong { color: #fff569; }
+
+/* entity links inside key text (npc / object / zone / quest) */
+.key-link {
+  color: var(--gold-light);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(200,168,75,0.4);
+  transition: color 0.15s, border-color 0.15s;
+}
+.key-link:hover { color: var(--text-bright); border-bottom-color: var(--gold); }
+.key-link.q1 { color: var(--white-common); border-bottom-color: rgba(255,255,255,0.3); }
+.key-link.q2 { color: var(--green-uncommon); border-bottom-color: rgba(30,255,0,0.35); }
+.key-link.q3 { color: var(--blue-rare); border-bottom-color: rgba(74,144,217,0.4); }
+.key-link.q4 { color: var(--purple-epic); border-bottom-color: rgba(163,53,238,0.4); }
+.key-link.q5 { color: var(--orange-legendary); border-bottom-color: rgba(255,128,0,0.4); }
+.key-link-quest { color: #ffd100; border-bottom-color: rgba(255,209,0,0.35); }
+.key-link-quest:hover { color: #ffe680; }
+.key-link-zone { color: #6fb3e0; border-bottom-color: rgba(111,179,224,0.35); }
+.key-link-zone:hover { color: #a0d2f0; }
+
+@media (max-width: 600px) {
+  .dungeon-key-card { flex-wrap: wrap; gap: 12px; padding: 12px 14px; }
+  .dungeon-key-card-cta {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .key-modal-hero { flex-direction: column; text-align: center; align-items: center; padding: 20px 18px 16px; }
+  .key-modal-chips { justify-content: center; }
+  .key-modal-title { font-size: 1.3rem; }
+  .key-modal-body { padding: 16px; }
 }

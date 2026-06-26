@@ -206,6 +206,26 @@
   </div>
 </div>
 
+<!-- Dungeon Key Detail Modal -->
+<div id="keyModal" class="key-modal" aria-hidden="true">
+  <div class="key-modal-backdrop"></div>
+  <div class="key-modal-panel" role="dialog" aria-labelledby="keyModalTitle">
+    <button class="map-modal-close key-modal-close" id="keyModalClose" aria-label="Close">✕</button>
+    <div class="key-modal-hero">
+      <a id="keyModalIconLink" href="#" target="_blank" rel="noopener noreferrer" class="key-modal-icon-wrap">
+        <img id="keyModalIcon" class="key-modal-icon" src="" alt="">
+      </a>
+      <div class="key-modal-hero-text">
+        <div class="key-modal-eyebrow"><img src="assets/icons/key.png" class="key-modal-eyebrow-ico" alt=""> Dungeon Key</div>
+        <h2 class="key-modal-title" id="keyModalTitle"></h2>
+        <div class="key-modal-tagline" id="keyModalTagline"></div>
+        <div class="key-modal-chips" id="keyModalChips"></div>
+      </div>
+    </div>
+    <div class="key-modal-body" id="keyModalBody"></div>
+  </div>
+</div>
+
 <!-- Loading Screen Lightbox -->
 <div id="loadingScreenLightbox" class="ls-lightbox" aria-hidden="true">
   <div class="ls-lightbox-backdrop"></div>
@@ -286,6 +306,7 @@
 
 <script src="js/data.js"></script>
 <script src="js/constants.js"></script>
+<script src="js/key-items.js"></script>
 <script src="js/quest-pins.js"></script>
 <script src="js/loot-data.js"></script>
 <script src="js/encounter-data.js"></script>

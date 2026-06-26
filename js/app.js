@@ -420,6 +420,7 @@ function init() {
   initLoadingScreenLightbox();
   initEncounterModal();
   initQuestModal();
+  initKeyModal();
   initVideoModal();
   initScrollLogo();
   initDungeonDock();
@@ -1348,6 +1349,8 @@ function renderQuests() {
         <div class="empty-state-text">NO QUESTS FOUND</div>
         <div style="margin-top:8px;font-size:0.78rem;color:var(--text-dim)">${emptyMsg}</div>
       </div>`;
+    prependDungeonKeyCard(dungeon, container);
+    if (typeof $WowheadPower !== 'undefined') $WowheadPower.refreshLinks();
     return;
   }
 
@@ -1356,6 +1359,7 @@ function renderQuests() {
   // grouping below (which only legacy dungeons rely on).
   if (dungeon.schema === 2) {
     renderConfigGroups(dungeon, quests, container);
+    prependDungeonKeyCard(dungeon, container);
     if (typeof $WowheadPower !== 'undefined') $WowheadPower.refreshLinks();
     return;
   }
@@ -1393,6 +1397,7 @@ function renderQuests() {
     container.appendChild(buildQuestCard(quest, dungeon, null, null));
   });
 
+  prependDungeonKeyCard(dungeon, container);
   if (typeof $WowheadPower !== 'undefined') $WowheadPower.refreshLinks();
 }
 
@@ -4489,6 +4494,177 @@ function initQuestModal() {
     if (e.key === 'Escape') closeQuestModal();
     else if (e.key === 'ArrowLeft') navigateQuestModal(-1);
     else if (e.key === 'ArrowRight') navigateQuestModal(1);
+  });
+}
+
+// ═══════════════════════════════════════
+//  DUNGEON KEY CARD + MODAL
+// ═══════════════════════════════════════
+// Special "key" items (see js/key-items.js) get a highlighted card pinned above
+// the regular quest cards, and a fully bespoke pop-out guide on click.
+
+// Replace {item=ID}/{npc=ID}/{object=ID}/{zone=ID}/{quest=ID} tokens with
+// Wowhead tooltip links (resolved through KEY_ENTITIES).
+function linkifyKeyText(text) {
+  return String(text).replace(/\{(item|npc|object|zone|quest)=(\d+)\}/g, (m, type, id) => {
+    const ent = KEY_ENTITIES[`${type}=${id}`];
+    const name = ent ? ent.name : m;
+    const url = `https://www.wowhead.com/classic/${type}=${id}${ent && ent.slug ? '/' + ent.slug : ''}`;
+    if (type === 'item') {
+      const q = `q${Math.min((ent && ent.quality) || 1, 5)}`;
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="item-link key-link ${q}" data-wh-icon-size="tiny">${escapeHtml(name)}</a>`;
+    }
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="key-link key-link-${type}">${escapeHtml(name)}</a>`;
+  });
+}
+
+function keyItemIconUrl(icon) {
+  return `https://wow.zamimg.com/images/wow/icons/large/${icon}.jpg`;
+}
+
+function buildDungeonKeyCard(keyId) {
+  const key = DUNGEON_KEYS[keyId];
+  if (!key) return '';
+  const item = key.item;
+  const q = `q${Math.min(item.quality || 1, 5)}`;
+  const method = KEY_METHODS[key.method] || { label: 'Special Item' };
+  return `
+    <div class="dungeon-key-card ${q}" role="button" tabindex="0" data-dungeon-key="${keyId}" title="View key guide">
+      <div class="dungeon-key-card-glow"></div>
+      <div class="dungeon-key-card-icon"><img src="${keyItemIconUrl(item.icon)}" alt="" loading="lazy"></div>
+      <div class="dungeon-key-card-main">
+        <div class="dungeon-key-card-eyebrow"><img src="assets/icons/key.png" class="dkc-eyebrow-ico" alt=""> Dungeon Key</div>
+        <div class="dungeon-key-card-name ${q}">${escapeHtml(item.name)}</div>
+        <div class="dungeon-key-card-tagline">${linkifyKeyText(key.tagline)}</div>
+      </div>
+      <div class="dungeon-key-card-cta">
+        <span class="dkc-method">${method.label}</span>
+        <span class="dkc-open">View guide ›</span>
+      </div>
+    </div>`;
+}
+
+// Ids of the keys to surface on a dungeon: its own primary key (if any) plus any
+// cross-referenced keys (e.g. The Scarlet Key also opens a Stratholme door).
+function dungeonKeyIds(dungeonId) {
+  const ids = [];
+  if (DUNGEON_KEYS[dungeonId]) ids.push(dungeonId);
+  (DUNGEON_EXTRA_KEYS[dungeonId] || []).forEach(id => {
+    if (DUNGEON_KEYS[id] && !ids.includes(id)) ids.push(id);
+  });
+  return ids;
+}
+
+// Pin the key card(s) to the top of the quest container. Hidden while the view
+// is narrowed to a single chain/location, or filtered out by an active search
+// that doesn't match the key item's name.
+function prependDungeonKeyCard(dungeon, container) {
+  if (dungeonQuestFilter || locationFilter) return;
+  let ids = dungeonKeyIds(dungeon.id);
+  if (searchQuery) {
+    const sq = searchQuery.toLowerCase();
+    ids = ids.filter(id => DUNGEON_KEYS[id].item.name.toLowerCase().includes(sq));
+  }
+  if (!ids.length) return;
+
+  container.insertAdjacentHTML('afterbegin', ids.map(buildDungeonKeyCard).join(''));
+  container.querySelectorAll('.dungeon-key-card').forEach(cardEl => {
+    const id = cardEl.dataset.dungeonKey;
+    const open = () => openKeyModal(id);
+    cardEl.addEventListener('click', e => { if (e.target.tagName !== 'A') open(); });
+    cardEl.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+    });
+  });
+}
+
+function buildKeyModalBody(key) {
+  const unlocksHtml = (key.unlocks && key.unlocks.length)
+    ? `<div class="key-section key-unlocks">
+         <div class="key-section-title"><img class="key-section-ico" src="assets/icons/maps.png" alt=""> What it unlocks</div>
+         <ul class="key-unlock-list">
+           ${key.unlocks.map(u => `<li>${linkifyKeyText(u)}</li>`).join('')}
+         </ul>
+       </div>`
+    : '';
+
+  const sourceHtml = key.source
+    ? `<div class="key-source">${linkifyKeyText(key.source)}</div>`
+    : '';
+
+  const stepsHtml = (key.steps && key.steps.length)
+    ? `<div class="key-section key-steps">
+         <div class="key-section-title"><img class="key-section-ico" src="assets/icons/objectives.png" alt=""> How to get it</div>
+         ${sourceHtml}
+         <ol class="key-step-list">
+           ${key.steps.map(s => `
+             <li class="key-step">
+               <div class="key-step-content">
+                 ${s.title ? `<div class="key-step-title">${linkifyKeyText(s.title)}</div>` : ''}
+                 <div class="key-step-text">${linkifyKeyText(s.text)}</div>
+               </div>
+             </li>`).join('')}
+         </ol>
+       </div>`
+    : '';
+
+  const rogueHtml = key.rogueNote
+    ? `<div class="key-callout key-callout-rogue">
+         <img class="key-callout-ico" src="assets/icons/classicon_rogue.jpg" alt="Rogue">
+         <div class="key-callout-text"><strong>Rogue shortcut —</strong> ${linkifyKeyText(key.rogueNote)}</div>
+       </div>`
+    : '';
+
+  return unlocksHtml + stepsHtml + rogueHtml;
+}
+
+function openKeyModal(dungeonId) {
+  const key = DUNGEON_KEYS[dungeonId];
+  if (!key) return;
+  const item = key.item;
+  const q = `q${Math.min(item.quality || 1, 5)}`;
+  const url = `https://www.wowhead.com/classic/item=${item.id}/${item.slug}`;
+  const method = KEY_METHODS[key.method] || { label: 'Special Item' };
+
+  document.getElementById('keyModalIcon').src = keyItemIconUrl(item.icon);
+  const iconLink = document.getElementById('keyModalIconLink');
+  iconLink.href = url;
+  iconLink.className = `key-modal-icon-wrap ${q}`;
+
+  const titleEl = document.getElementById('keyModalTitle');
+  titleEl.textContent = item.name;
+  titleEl.className = 'key-modal-title';
+
+  document.getElementById('keyModalTagline').innerHTML = linkifyKeyText(key.tagline);
+
+  document.getElementById('keyModalChips').innerHTML =
+    `<span class="key-chip key-chip-method">${method.label}</span>`;
+
+  document.getElementById('keyModalBody').innerHTML = buildKeyModalBody(key);
+
+  const panel = document.querySelector('.key-modal-panel');
+  panel.className = `key-modal-panel ${q}`;
+
+  const modal = document.getElementById('keyModal');
+  modal.setAttribute('aria-hidden', 'false');
+  modal.classList.add('open');
+  document.getElementById('keyModalBody').scrollTop = 0;
+
+  if (typeof $WowheadPower !== 'undefined') $WowheadPower.refreshLinks();
+}
+
+function closeKeyModal() {
+  const modal = document.getElementById('keyModal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+}
+
+function initKeyModal() {
+  document.getElementById('keyModalClose').addEventListener('click', closeKeyModal);
+  document.querySelector('.key-modal-backdrop').addEventListener('click', closeKeyModal);
+  document.addEventListener('keydown', e => {
+    const modal = document.getElementById('keyModal');
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeKeyModal();
   });
 }
 
