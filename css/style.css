@@ -3097,9 +3097,10 @@ img.stat-ico {
 }
 .encounter-modal-body {
   position: relative;
-  /* basis 0 (not auto) so the image doesn't claim its intrinsic width and
-     bump the abilities column onto a wrapped row — keeps them side by side. */
-  flex: 1 1 0;
+  /* basis 1px (not 0) so that body + credit (flex: 0 0 100%) sums to >100%
+     and the credit always wraps to its own row even when abilities are hidden.
+     Not auto, so the image doesn't claim its intrinsic width. */
+  flex: 1 1 1px;
   min-width: 0;
   background: #06060a;
   min-height: 480px;
