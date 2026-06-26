@@ -3216,8 +3216,8 @@ function initMapModal() {
     placeUserPin(coords.x, coords.y);
   });
 
-  // Touch drag
-  let lastTouchX = 0, lastTouchY = 0;
+  // Touch drag + pinch-to-zoom
+  let lastTouchX = 0, lastTouchY = 0, lastPinchDist = 0;
   vp.addEventListener('touchstart', e => {
     if (e.touches.length === 1) {
       lastTouchX = e.touches[0].clientX;
@@ -3225,6 +3225,10 @@ function initMapModal() {
       mapMouseDownX = lastTouchX;
       mapMouseDownY = lastTouchY;
       mapWasDragged = false;
+    } else if (e.touches.length === 2) {
+      const dx = e.touches[1].clientX - e.touches[0].clientX;
+      const dy = e.touches[1].clientY - e.touches[0].clientY;
+      lastPinchDist = Math.hypot(dx, dy);
     }
   }, { passive: true });
   vp.addEventListener('touchmove', e => {
@@ -3239,6 +3243,23 @@ function initMapModal() {
         mapWasDragged = true;
       }
       applyMapTransform();
+      e.preventDefault();
+    } else if (e.touches.length === 2) {
+      const dx = e.touches[1].clientX - e.touches[0].clientX;
+      const dy = e.touches[1].clientY - e.touches[0].clientY;
+      const dist = Math.hypot(dx, dy);
+      if (lastPinchDist > 0) {
+        const factor = dist / lastPinchDist;
+        const midX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        const midY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+        const newScale = Math.max(0.15, Math.min(6, mapScale * factor));
+        mapX = midX - (midX - mapX) * (newScale / mapScale);
+        mapY = midY - (midY - mapY) * (newScale / mapScale);
+        mapScale = newScale;
+        applyMapTransform();
+      }
+      lastPinchDist = dist;
+      mapWasDragged = true;
       e.preventDefault();
     }
   }, { passive: false });
