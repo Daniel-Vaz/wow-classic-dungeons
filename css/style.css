@@ -4718,8 +4718,30 @@ body.scrolled .controls-logo.cinematic-returning {
   .quest-modal-panel { width: 96vw; max-height: 92vh; }
   .quest-modal-body { padding: 14px; }
   .quest-modal-grid { grid-template-columns: 1fr; gap: 14px; }
-  .quest-modal-header { flex-wrap: wrap; gap: 8px 12px; padding: 10px 14px; }
-  .quest-modal-header .map-wowhead-link { order: 3; }
+
+  /* Grid layout: [title+badges | close] on row 1, [wowhead link] full-width on row 2 */
+  .quest-modal-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px 10px;
+    padding: 10px 14px;
+    align-items: start;
+  }
+  .quest-modal-titlewrap {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .quest-modal-header .map-modal-close {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+  }
+  .quest-modal-header .map-wowhead-link {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: fit-content;
+  }
+
   .quest-modal-title { font-size: 0.95rem; }
   .qm-giver-label { width: 76px; }
   .quest-modal-nav { gap: 6px; padding: 8px 10px; }
