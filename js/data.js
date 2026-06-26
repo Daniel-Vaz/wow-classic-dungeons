@@ -61,6 +61,16 @@ const DUNGEONS = [
         "objective": "Enter <a href=\"https://www.wowhead.com/classic/zone=2437/ragefire-chasm\" rel=\"noopener noreferrer\" target=\"_blank\">Ragefire Chasm</a> and slay Taragaman the Hungerer, then bring his heart back to <a href=\"https://www.wowhead.com/classic/npc=3216/neeru-fireblade\" rel=\"noopener noreferrer\" target=\"_blank\">Neeru Fireblade</a> in Orgrimmar.",
         "description": "The primary task set upon me by our great Warchief is to root out the creatures responsible for infesting our lord's great city with demonic influence. The Burning Blade is one threat, but there are others; the Searing Blade for instance, who make their home in <a href=\"https://www.wowhead.com/classic/zone=2437/ragefire-chasm\" rel=\"noopener noreferrer\" target=\"_blank\">Ragefire Chasm</a>, secretly attempting to subvert innocent members of the Horde.<br><br>If they are to be stopped, then their leader must be slain--a Felguard named Taragaman the Hungerer.<br><br>Kill him, and his heart will appease Thrall, of this I'm sure.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 14540,
+            "name": "Taragaman the Hungerer's Heart",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=14540/taragaman-the-hungerers-heart",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -119,6 +129,7 @@ const DUNGEONS = [
         "objective": "Search <a href=\"https://www.wowhead.com/classic/zone=2437/ragefire-chasm\" rel=\"noopener noreferrer\" target=\"_blank\">Ragefire Chasm</a> for <a href=\"https://www.wowhead.com/classic/npc=11834/maur-grimtotem\" rel=\"noopener noreferrer\" target=\"_blank\">Maur Grimtotem</a>'s corpse and search it for any items of interest.",
         "description": "The troggs are not the only thing that interested Magatha in <a href=\"https://www.wowhead.com/classic/zone=2437/ragefire-chasm\" rel=\"noopener noreferrer\" target=\"_blank\">Ragefire Chasm</a>. She has heard word that one of her servants, a <a href=\"https://www.wowhead.com/classic/npc=11834/maur-grimtotem\" rel=\"noopener noreferrer\" target=\"_blank\">Maur Grimtotem</a>, found something peculiar while in the Chasm, but he never made it out to show her what. She'd like Maur's body found--if it still exists--and any signs of what he found while attempting to speak to the troggs.<br><br>Return to Magatha any items of interest, and I'm sure she would be very generous in her reward.<br><br>Again, seek the Chasm in the darkest areas of Orgrimmar.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -182,6 +193,7 @@ const DUNGEONS = [
         "objective": "Take the <a href=\"https://www.wowhead.com/classic/item=14381/grimtotem-satchel\" rel=\"noopener noreferrer\" target=\"_blank\">Grimtotem Satchel</a> to <a href=\"https://www.wowhead.com/classic/npc=11833/rahauro\" rel=\"noopener noreferrer\" target=\"_blank\">Rahauro</a> in Thunder Bluff.",
         "description": "You find a satchel under the body of the tauren. It is still gripped tightly in his arms as though he was trying to protect it while being attacked by the troggs.<br><br>Removing the satchel from his vice-like grip, you stow it with your own equipment and prepare to make your way out of the tunnels and back to <a href=\"https://www.wowhead.com/classic/npc=11833/rahauro\" rel=\"noopener noreferrer\" target=\"_blank\">Rahauro</a> in Thunder Bluff.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [
           {
@@ -258,6 +270,22 @@ const DUNGEONS = [
         "objective": "Search Orgrimmar for <a href=\"https://www.wowhead.com/classic/zone=2437/ragefire-chasm\" rel=\"noopener noreferrer\" target=\"_blank\">Ragefire Chasm</a>, then kill 8 <a href=\"https://www.wowhead.com/classic/npc=11318/ragefire-trogg\" rel=\"noopener noreferrer\" target=\"_blank\">Ragefire Troggs</a> and 8 <a href=\"https://www.wowhead.com/classic/npc=11319/ragefire-shaman\" rel=\"noopener noreferrer\" target=\"_blank\">Ragefire Shaman</a> before returning to <a href=\"https://www.wowhead.com/classic/npc=11833/rahauro\" rel=\"noopener noreferrer\" target=\"_blank\">Rahauro</a> in Thunder Bluff.",
         "description": "Beneath the city of Orgrimmar, stout creatures known as troggs started coming to the surface from deep below the lava filled tunnels. In her ever-benevolence, Magatha sought to make peace with the creatures, but they turned on her diplomats, killing them. She will not allow such treatment of the tauren people and now consider the creatures a threat to all of the Horde.<br><br>She asks that you put an end to this trogg threat before it overwhelms the Horde from below. Find <a href=\"https://www.wowhead.com/classic/zone=2437/ragefire-chasm\" rel=\"noopener noreferrer\" target=\"_blank\">Ragefire Chasm</a> and destroy them all.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 11318,
+            "name": "Ragefire Trogg",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/npc=11318/ragefire-trogg"
+          },
+          {
+            "type": "npc",
+            "id": 11319,
+            "name": "Ragefire Shaman",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/npc=11319/ragefire-shaman"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -316,6 +344,24 @@ const DUNGEONS = [
         "objective": "Bring the books <a href=\"https://www.wowhead.com/classic/item=14395/spells-of-shadow\" rel=\"noopener noreferrer\" target=\"_blank\">Spells of Shadow</a> and <a href=\"https://www.wowhead.com/classic/item=14396/incantations-from-the-nether\" rel=\"noopener noreferrer\" target=\"_blank\">Incantations from the Nether</a> to <a href=\"https://www.wowhead.com/classic/npc=2425/varimathras\" rel=\"noopener noreferrer\" target=\"_blank\">Varimathras</a> in Undercity.",
         "description": "Many denizens of the Legion bestow gifts on their followers as you may well know. Some of these gifts the Dark Lady feels would be better off in her hands than in the hands of those with... lesser vision.<br><br>A sect of the Shadow Council hidden in caverns below Orgrimmar known as the Searing Blade are a prime example. The Lady tells me that members of the Searing Blade have come into the possession of two powerful spell books--she would like to \"borrow\" these books from them. You will get them for her.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 14395,
+            "name": "Spells of Shadow",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=14395/spells-of-shadow",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 14396,
+            "name": "Incantations from the Nether",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=14396/incantations-from-the-nether",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -393,6 +439,22 @@ const DUNGEONS = [
         "objective": "Kill <a href=\"https://www.wowhead.com/classic/npc=11519/bazzalan\" rel=\"noopener noreferrer\" target=\"_blank\">Bazzalan</a> and <a href=\"https://www.wowhead.com/classic/npc=11518/jergosh-the-invoker\" rel=\"noopener noreferrer\" target=\"_blank\">Jergosh the Invoker</a> before returning to <a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a> in Orgrimmar.",
         "description": "Hmm, leaders of the Searing Blade... this concerns me most. If they are the ones of value to Neeru, then those are who we must target first. This satyr... <a href=\"https://www.wowhead.com/classic/npc=11519/bazzalan\" rel=\"noopener noreferrer\" target=\"_blank\">Bazzalan</a>, and the other Neeru mentioned--what was he, a warlock?--must be slain.<br><br>Return to the Cleft of Shadow and enter <a href=\"https://www.wowhead.com/classic/zone=2437/ragefire-chasm\" rel=\"noopener noreferrer\" target=\"_blank\">Ragefire Chasm</a>. Find these two leaders of the Searing Blade, and kill them. But be careful not to let Neeru know it was you who did this. You must retain your identity as one of his in arms.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 11519,
+            "name": "Bazzalan",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=11519/bazzalan"
+          },
+          {
+            "type": "npc",
+            "id": 11518,
+            "name": "Jergosh the Invoker",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=11518/jergosh-the-invoker"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -446,6 +508,16 @@ const DUNGEONS = [
             "objective": "Bring a <a href=\"https://www.wowhead.com/classic/item=14544/lieutenants-insignia\" rel=\"noopener noreferrer\" target=\"_blank\">Lieutenant's Insignia</a> to <a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a> in <a href=\"https://www.wowhead.com/classic/zone=1637/orgrimmar\" rel=\"noopener noreferrer\" target=\"_blank\">Orgrimmar</a>.",
             "description": "One thing I will not tolerate are traitors in our midst. But I would be a fool to play my hand so early--it would not sufficiently cut the corruption out of our lands and only cause the infection to grow worse.<br><br>But you, a young adventurer, could go places my agents could not... could learn the truth... could find the true head of the beast.<br><br>If you are brave enough, then enter Skull Rock to the east of <a href=\"https://www.wowhead.com/classic/zone=1637/orgrimmar\" rel=\"noopener noreferrer\" target=\"_blank\">Orgrimmar</a>, find a <a href=\"https://www.wowhead.com/classic/item=14544/lieutenants-insignia\" rel=\"noopener noreferrer\" target=\"_blank\">lieutenant's insignia</a> off one of the Burning Blade there, and return to me.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 14544,
+                "name": "Lieutenant's Insignia",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=14544/lieutenants-insignia",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -504,6 +576,7 @@ const DUNGEONS = [
             "objective": "Take the <a href=\"https://www.wowhead.com/classic/item=14544/lieutenants-insignia\" rel=\"noopener noreferrer\" target=\"_blank\">Lieutenant's Insignia</a> to Neeru Fireblade and speak to him. Gauge if he believes you are a member of the Burning Blade and then return to <a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a> in <a href=\"https://www.wowhead.com/classic/zone=1637/orgrimmar\" rel=\"noopener noreferrer\" target=\"_blank\">Orgrimmar</a>.",
             "description": "Now let us see if this insignia you found is worth the effort.<br><br>There is a warlock within the city who believes he has my trust. He does not know that I realize where his true loyalties lie. He is in fact the leader of the Burning Blade. But do not rush off to do battle with him; he has a purpose, and we shall use him against our enemies.<br><br>Take this insignia to him in the Cleft of Shadow here in <a href=\"https://www.wowhead.com/classic/zone=1637/orgrimmar\" rel=\"noopener noreferrer\" target=\"_blank\">Orgrimmar</a>, speak to him and see if he believes you are one of his own, then return to me here.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -623,6 +696,16 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=5767/nalpak\" rel=\"noopener noreferrer\" target=\"_blank\">Nalpak</a> in the <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a> wants 20 <a href=\"https://www.wowhead.com/classic/item=6443/deviate-hide\" rel=\"noopener noreferrer\" target=\"_blank\">Deviate Hides</a>.",
         "description": "As Naralex descended deeper into his nightmare, a strange breed of beasts arose from beneath the Barrens into the <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a>.<br><br>These deviate creatures have strange, otherworldly properties. While evil in nature, it is my opinion that some good can come from their existence here in Kalimdor. I believe their hides will be of particular use in the ways of leatherworking.<br><br>If you feel up to the task, venture into the caves below and retrieve some <a href=\"https://www.wowhead.com/classic/item=6443/deviate-hide\" rel=\"noopener noreferrer\" target=\"_blank\">deviate hides</a>.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6443,
+            "name": "Deviate Hide",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/item=6443/deviate-hide",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -694,6 +777,16 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=3665/crane-operator-bigglefuzz\" rel=\"noopener noreferrer\" target=\"_blank\">Crane Operator Bigglefuzz</a> in Ratchet wants you to retrieve the bottle of <a href=\"https://www.wowhead.com/classic/item=5334/99-year-old-port\" rel=\"noopener noreferrer\" target=\"_blank\">99-Year-Old Port</a> from Mad Magglish who is hiding in the <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a>.",
         "description": "Oops!<br><br>Had a little mishap, as you can see! The morning cargo shipment from Booty Bay was huge. Huge I say! Never seen so many crates. Well, I was trying to expedite things so I started unloading a bit more than I could handle. That's when everything came tumbling down.<br><br>Before I knew what was going on, I saw that menace, Mad Magglish, go running off with a bottle of <a href=\"https://www.wowhead.com/classic/item=5334/99-year-old-port\" rel=\"noopener noreferrer\" target=\"_blank\">99-year-old port</a>. Chased him all the way to <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a>. No way I was going in there.<br><br>Maybe you're brave enough to find him?",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5334,
+            "name": "99-Year-Old Port",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5334/99-year-old-port",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -752,6 +845,36 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=5768/ebru\" rel=\"noopener noreferrer\" target=\"_blank\">Ebru</a> in the <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a> wants you to kill 7 <a href=\"https://www.wowhead.com/classic/npc=3636/deviate-ravager\" rel=\"noopener noreferrer\" target=\"_blank\">Deviate Ravagers</a>, 7 <a href=\"https://www.wowhead.com/classic/npc=5755/deviate-viper\" rel=\"noopener noreferrer\" target=\"_blank\">Deviate Vipers</a>, 7 <a href=\"https://www.wowhead.com/classic/npc=5761/deviate-shambler\" rel=\"noopener noreferrer\" target=\"_blank\">Deviate Shamblers</a> and 7 <a href=\"https://www.wowhead.com/classic/npc=5056/deviate-dreadfang\" rel=\"noopener noreferrer\" target=\"_blank\">Deviate Dreadfangs</a>.",
         "description": "Naralex had a noble goal.<br><br>Our great leader aspired to enter the Emerald Dream and help regrow these harsh lands back into the lush forest it once was. But something went terribly wrong.<br><br>Naralex's dream turned into a nightmare and corrupt creatures began to inhabit the caverns.<br><br>While some Disciples of Naralex seek to awake our master, my concern is with ridding these caves of the evil beasts.<br><br>Brave the caverns, and eradicate the deviate spawn.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 3636,
+            "name": "Deviate Ravager",
+            "quantity": 7,
+            "url": "https://www.wowhead.com/classic/npc=3636/deviate-ravager"
+          },
+          {
+            "type": "npc",
+            "id": 5755,
+            "name": "Deviate Viper",
+            "quantity": 7,
+            "url": "https://www.wowhead.com/classic/npc=5755/deviate-viper"
+          },
+          {
+            "type": "npc",
+            "id": 5761,
+            "name": "Deviate Shambler",
+            "quantity": 7,
+            "url": "https://www.wowhead.com/classic/npc=5761/deviate-shambler"
+          },
+          {
+            "type": "npc",
+            "id": 5056,
+            "name": "Deviate Dreadfang",
+            "quantity": 7,
+            "url": "https://www.wowhead.com/classic/npc=5056/deviate-dreadfang"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -829,6 +952,16 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=3419/apothecary-zamah\" rel=\"noopener noreferrer\" target=\"_blank\">Apothecary Zamah</a> in Thunder Bluff wants you to collect 10 <a href=\"https://www.wowhead.com/classic/item=5339/serpentbloom\" rel=\"noopener noreferrer\" target=\"_blank\">Serpentbloom</a>.",
         "description": "The Royal Apothecary Society, based in the great Undercity of Lordaeron, has sent me here for a very specific service. Perhaps you wish to aid me, and in turn The Dark Lady in our efforts to advance the Forsaken.<br><br>Recently I studied a rare specimen of flora named <a href=\"https://www.wowhead.com/classic/item=5339/serpentbloom\" rel=\"noopener noreferrer\" target=\"_blank\">Serpentbloom</a>. I believe in greater quantities this herb has great potential.<br><br>Unfortunately <a href=\"https://www.wowhead.com/classic/item=5339/serpentbloom\" rel=\"noopener noreferrer\" target=\"_blank\">Serpentbloom</a> can only be found in the darkest recesses of the <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a>, a dangerous cave system located in the Barrens.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5339,
+            "name": "Serpentbloom",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=5339/serpentbloom",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 10919,
@@ -894,6 +1027,16 @@ const DUNGEONS = [
         "objective": "Bring 6 portions of <a href=\"https://www.wowhead.com/classic/item=6464/wailing-essence\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Essence</a> to <a href=\"https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix\" rel=\"noopener noreferrer\" target=\"_blank\">Mebok Mizzyrix</a> in Ratchet.",
         "description": "Ok, so the raptor horns didn't work so well. But that's all right -- no one got rich on their first try! And besides, I think I found something that'll work even better in my smart drinks!<br><br>There is a substance called <a href=\"https://www.wowhead.com/classic/item=6464/wailing-essence\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Essence</a>, and I think it is the cause of the strange plants and animals in the Barrens. Get me some and I'll try it in my drink!<br><br>I heard the essence gathers in ectoplasmic creatures in the <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a> to the west. Hunt those creatures and gather the essence.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6464,
+            "name": "Wailing Essence",
+            "quantity": 6,
+            "url": "https://www.wowhead.com/classic/item=6464/wailing-essence",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -947,6 +1090,16 @@ const DUNGEONS = [
             "objective": "Gather 5 <a href=\"https://www.wowhead.com/classic/item=5055/intact-raptor-horn\" rel=\"noopener noreferrer\" target=\"_blank\">Intact Raptor Horns</a> from Sunscale Scytheclaws, and bring them to <a href=\"https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix\" rel=\"noopener noreferrer\" target=\"_blank\">Mebok Mizzyrix</a> in Ratchet.",
             "description": "The raptors of <a href=\"https://www.wowhead.com/classic/zone=17/the-barrens\" rel=\"noopener noreferrer\" target=\"_blank\">the Barrens</a> are smarter than raptors in other lands. And I think all that smarts is hiding in their horns! If so, then I could grind their horns into powder and use it to make \"smart drinks.\" I could sell them for a fortune!!!<br><br>And you can help me. Find me <a href=\"https://www.wowhead.com/classic/item=5055/intact-raptor-horn\" rel=\"noopener noreferrer\" target=\"_blank\">intact raptor horns</a> from sunscale scytheclaws. They roam in the southern Barrens, and in the northern Barrens near the border of Ashenvale Forest.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 5055,
+                "name": "Intact Raptor Horn",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/item=5055/intact-raptor-horn",
+                "quality": 1
+              }
+            ],
             "rewards": [
               {
                 "id": 5342,
@@ -1024,6 +1177,40 @@ const DUNGEONS = [
         "objective": "Bring the Gems of Cobrahn, Anacondra, Pythas and Serpentis to <a href=\"https://www.wowhead.com/classic/npc=5770/nara-wildmane\" rel=\"noopener noreferrer\" target=\"_blank\">Nara Wildmane</a> in Thunder Bluff.",
         "description": "The druids in the <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a>, the Druids of the Fang, are an aberration. They were part of an order of noble druids whose plan was to heal the Barrens, but now seek to remake that land to match their own, twisted dreams.<br><br>The Druids of the Fang have four leaders, and each possesses a dream gem. Even now their faces haunt me! Defeat the leaders and bring me their gems, and the Barrens may again know peace.<br><br>Go. You will find them lurking deep within the <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a>.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9738,
+            "name": "Gem of Cobrahn",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9738/gem-of-cobrahn",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 9739,
+            "name": "Gem of Anacondra",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9739/gem-of-anacondra",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 9740,
+            "name": "Gem of Pythas",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9740/gem-of-pythas",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 9741,
+            "name": "Gem of Serpentis",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9741/gem-of-serpentis",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -1090,6 +1277,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=3448/tonga-runetotem\" rel=\"noopener noreferrer\" target=\"_blank\">Tonga Runetotem</a> at the Crossroads.",
             "description": "The druids of Thunder Bluff sense a strange power leaking into <a href=\"https://www.wowhead.com/classic/zone=17/the-barrens\" rel=\"noopener noreferrer\" target=\"_blank\">the Barrens</a>, east of Mulgore.<br><br><a href=\"https://www.wowhead.com/classic/npc=3448/tonga-runetotem\" rel=\"noopener noreferrer\" target=\"_blank\">Tonga Runetotem</a> was sent to discover the source of this power, but we fear he will need aid.<br><br>Travel to <a href=\"https://www.wowhead.com/classic/zone=17/the-barrens\" rel=\"noopener noreferrer\" target=\"_blank\">the Barrens</a> and speak with Tonga. He will be at the Crossroads. To reach there, take the road east out of Bloodhoof village. Enter <a href=\"https://www.wowhead.com/classic/zone=17/the-barrens\" rel=\"noopener noreferrer\" target=\"_blank\">the Barrens</a>, then turn north when the road forks. Continue north and you will find the Crossroads.<br><br>And do not leave the road, for <a href=\"https://www.wowhead.com/classic/zone=17/the-barrens\" rel=\"noopener noreferrer\" target=\"_blank\">the Barrens</a> is a harsh land.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -1153,6 +1341,7 @@ const DUNGEONS = [
             "objective": "Report back to <a href=\"https://www.wowhead.com/classic/npc=3448/tonga-runetotem\" rel=\"noopener noreferrer\" target=\"_blank\">Tonga Runetotem</a> with your findings.",
             "description": "Long ago, <a href=\"https://www.wowhead.com/classic/zone=17/the-barrens\" rel=\"noopener noreferrer\" target=\"_blank\">the Barrens</a> was a lush place, teeming with life. But war and cataclysm raged across the land, scorching it and leaving a dry husk. Such is the way of things, and it saddens my heart.<br><br>But within the past few years, new oases have formed in <a href=\"https://www.wowhead.com/classic/zone=17/the-barrens\" rel=\"noopener noreferrer\" target=\"_blank\">the Barrens</a>, and life stirs. And deep down, we druids sense a power leaking its way to the surface.<br><br>We must find its source. Travel to the Forgotten Pools, northwest of the Crossroads. Search its waters for a source of power, then return here.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -1216,6 +1405,15 @@ const DUNGEONS = [
             "objective": "Return to Tonga at The Crossroads, after investigating the Stagnant Oasis.",
             "description": "Like the one you found at the Forgotten Pools, there may be fissures at the other oases in <a href=\"https://www.wowhead.com/classic/zone=17/the-barrens\" rel=\"noopener noreferrer\" target=\"_blank\">the Barrens</a>. If so, then perhaps the fissures are the oases' source of life.<br><br>We must test this.<br><br>Here, take these seeds. They are dead and infertile, but take them to the Stagnant Oasis to the southeast. If there is a fissure there, then place the seeds within it...and observe.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "object",
+                "id": 3737,
+                "name": "Test the Dried Seeds",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/object=3737/test-the-dried-seeds"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -1279,6 +1477,16 @@ const DUNGEONS = [
             "objective": "Bring 8 <a href=\"https://www.wowhead.com/classic/item=5098/altered-snapjaw-shell\" rel=\"noopener noreferrer\" target=\"_blank\">Altered Snapjaw Shells</a> to <a href=\"https://www.wowhead.com/classic/npc=3448/tonga-runetotem\" rel=\"noopener noreferrer\" target=\"_blank\">Tonga Runetotem</a> at the Crossroads.",
             "description": "Your findings are incredible. These oases hold properties that must come from an outside source. Or perhaps an inside one.<br><br>I want to know how these fissures are affecting the beasts who drink from the oases' water.<br><br>Hunt oasis snapjaws at the Lushwater and Stagnant Oases. Bring me their shells so I may examine them.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 5098,
+                "name": "Altered Snapjaw Shell",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/item=5098/altered-snapjaw-shell",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -1342,6 +1550,7 @@ const DUNGEONS = [
             "objective": "Speak with Hamuul Runetotem",
             "description": "The shells you brought me have a taint, one I have never before seen. I am certain the water of the Oases is the cause, and I can sense the confusion they cause this land. It is as if the land dreams and cannot awake.<br><br>The <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a> must be the source of the taint. But before you go there, speak with Hamuul Runetotem, the elder druid. I sent word to him of the happenings in the Barrens. He is wise, and can offer you counsel.<br><br>You will find him in Thunder Bluff, on the Elder Rise.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -1411,6 +1620,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=5770/nara-wildmane\" rel=\"noopener noreferrer\" target=\"_blank\">Nara Wildmane</a>.",
             "description": "I entered the land of dreams, and dreamed of a cult of druids who dwell in the <a href=\"https://www.wowhead.com/classic/zone=718/wailing-caverns\" rel=\"noopener noreferrer\" target=\"_blank\">Wailing Caverns</a>. I saw that their goals were once noble, but they have lost their way. They are now servants of the taint seeping through the Barrens.<br><br>I am old and my strength fails. I could not long dwell in that dreaming place and know little more of the tainted druids. But Nara is young and her spirit is fierce. She remained in the dreaming when I fled.<br><br>Speak with Nara. She is in the tent, over yonder.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -1477,6 +1687,7 @@ const DUNGEONS = [
         "objective": "Travel to Ratchet to find someone that can tell you more about the <a href=\"https://www.wowhead.com/classic/item=10441/glowing-shard\" rel=\"noopener noreferrer\" target=\"_blank\">glowing shard</a>.<br><br>Then, deliver the shard as you are directed.",
         "description": "The shard is a brilliant green, and although solid, what looks like smoke swirls just below the surface. You can't help staring into the depths of the crystal; at the same time, you know there is something very disturbing about it.<br><br>Maybe you should see if anyone in Ratchet can tell you more about this strange shard.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -1566,6 +1777,16 @@ const DUNGEONS = [
         "objective": "Retrieve 4 <a href=\"https://www.wowhead.com/classic/item=1894/miners-union-card\" rel=\"noopener noreferrer\" target=\"_blank\">Miners' Union Cards</a> and return them to <a href=\"https://www.wowhead.com/classic/npc=656/wilder-thistlenettle\" rel=\"noopener noreferrer\" target=\"_blank\">Wilder Thistlenettle</a> in Stormwind.",
         "description": "Many of my friends perished that horrible day when the mine tunnel caved in. If your adventures happen to bring you into that wing of the mine in Moonbrook, please keep an eye out for any sign which might identify them. If you come across any of their <a href=\"https://www.wowhead.com/classic/item=1894/miners-union-card\" rel=\"noopener noreferrer\" target=\"_blank\">Miners' Union Cards</a>, bring them back to me and I'll make sure their families get some resolution from this horrible accident.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 1894,
+            "name": "Miners' Union Card",
+            "quantity": 4,
+            "url": "https://www.wowhead.com/classic/item=1894/miners-union-card",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -1637,6 +1858,16 @@ const DUNGEONS = [
         "objective": "Bring Foreman Thistlenettle's Explorers' League Badge to <a href=\"https://www.wowhead.com/classic/npc=656/wilder-thistlenettle\" rel=\"noopener noreferrer\" target=\"_blank\">Wilder Thistlenettle</a> in Stormwind.",
         "description": "We were deep in a vast mine in Westfall, hidden beneath a barn in Moonbrook. No clue where these stinkin' thieving types came from. Anyway, the mine tunnel collapsed on us. I got out but the others... well... the others haven't been heard from.<br><br>You look like you might have better luck in there. If you could look for my brother, I'd be thankful. He always carried his Explorers' League Badge. If you can't find him, that badge would at least give me some peace of mind.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 1875,
+            "name": "Thistlenettle's Badge",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=1875/thistlenettles-badge",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 1893,
@@ -1702,6 +1933,16 @@ const DUNGEONS = [
         "objective": "Retrieve the <a href=\"https://www.wowhead.com/classic/item=7365/gnoam-sprecklesprocket\" rel=\"noopener noreferrer\" target=\"_blank\">Gnoam Sprecklesprocket</a> from <a href=\"https://www.wowhead.com/classic/zone=1581/the-deadmines\" rel=\"noopener noreferrer\" target=\"_blank\">the Deadmines</a> and return it to <a href=\"https://www.wowhead.com/classic/npc=6579/shoni-the-shilent\" rel=\"noopener noreferrer\" target=\"_blank\">Shoni the Shilent</a> in Stormwind.",
         "description": "Gnomeregan has fallen under the control of those dastardly troggs! The situation is grave but perhaps you can help.<br><br>Deep in <a href=\"https://www.wowhead.com/classic/zone=1581/the-deadmines\" rel=\"noopener noreferrer\" target=\"_blank\">the Deadmines</a> is a functional goblin shredder. Find that shredder and bring back the intact power supply. With the shredder's power supply, we can give our gyrodrillmatic excavationators the power they need to break through the rocky underground borders of Gnomeregan, opening the way for a gnomish assault!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 7365,
+            "name": "Gnoam Sprecklesprocket",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=7365/gnoam-sprecklesprocket",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -1768,6 +2009,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6579/shoni-the-shilent\" rel=\"noopener noreferrer\" target=\"_blank\">Shoni the Shilent</a> in Stormwind.",
             "description": "Perhaps... Perhaps you can help us in the battle for Gnomeregan.<br><br>In Stormwind you will find the commander of our underground assault crew, <a href=\"https://www.wowhead.com/classic/npc=6579/shoni-the-shilent\" rel=\"noopener noreferrer\" target=\"_blank\">Shoni the Shilent</a>. Shoni needs assistance with her gyrodrillmatic excavationators.<br><br>You will probably find her amongst the dwarves in Stormwind.<br><br>Good luck.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -1842,6 +2084,16 @@ const DUNGEONS = [
         "objective": "Kill Edwin VanCleef and bring his head to <a href=\"https://www.wowhead.com/classic/npc=234/gryan-stoutmantle\" rel=\"noopener noreferrer\" target=\"_blank\">Gryan Stoutmantle</a>.",
         "description": "There is but one task left for you to complete. Edwin VanCleef must be assassinated. While it saddens me to condemn any man to a death sentence, it is for the greater good of the people of Westfall that VanCleef is laid to rest once and for all. Bring me the villain's head once the deed is done.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 3637,
+            "name": "Head of VanCleef",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=3637/head-of-vancleef",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -1914,6 +2166,7 @@ const DUNGEONS = [
             "objective": "<a href=\"https://www.wowhead.com/classic/npc=234/gryan-stoutmantle\" rel=\"noopener noreferrer\" target=\"_blank\">Gryan Stoutmantle</a> wants you to talk to Wiley in Lakeshire.",
             "description": "The band of wretches responsible for driving the good people of <a href=\"https://www.wowhead.com/classic/zone=40/westfall\" rel=\"noopener noreferrer\" target=\"_blank\">Westfall</a> from the land call themselves The Defias Brotherhood. I need you to infiltrate this clan of thugs. We need to know who heads up the cartel and where they are hiding out. In Lakeshire, in the inn, there is a rogue by the name of Wiley who owes me a favor.<br><br>Travel to Lakeshire in the Redridge Mountains, east of Elwynn, and find out what you can.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -1977,6 +2230,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=1327/wileys-note\" rel=\"noopener noreferrer\" target=\"_blank\">Wiley's Note</a> to <a href=\"https://www.wowhead.com/classic/npc=234/gryan-stoutmantle\" rel=\"noopener noreferrer\" target=\"_blank\">Gryan Stoutmantle</a> in <a href=\"https://www.wowhead.com/classic/zone=40/westfall\" rel=\"noopener noreferrer\" target=\"_blank\">Westfall</a>.",
             "description": "What I am about to tell you could cost me my life. The Defias gang is up to something big. Last I heard they were working in conjunction with various gnolls, kobolds and even goblins.<br><br>Take this note to Stoutmantle. It explains as much as I know on the subject.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -2040,6 +2294,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=1327/wileys-note\" rel=\"noopener noreferrer\" target=\"_blank\">Wiley's Note</a> to Mathias Shaw in Stormwind.",
             "description": "I wonder what Wiley meant when he mentioned the Stonemasons. Perhaps that was a slip of tongue. Could the Defias gang be related to the Stonemasons? Only one man would know for sure: Mathias Shaw, head of SI:7. Show him <a href=\"https://www.wowhead.com/classic/item=1327/wileys-note\" rel=\"noopener noreferrer\" target=\"_blank\">Wiley's Note</a> and see if he has anything to add to this growing mystery. If you have trouble finding Shaw, check the Barracks in Old Town.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -2103,6 +2358,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=1353/shaws-report\" rel=\"noopener noreferrer\" target=\"_blank\">Shaw's report</a> to <a href=\"https://www.wowhead.com/classic/npc=234/gryan-stoutmantle\" rel=\"noopener noreferrer\" target=\"_blank\">Gryan Stoutmantle</a> in <a href=\"https://www.wowhead.com/classic/zone=40/westfall\" rel=\"noopener noreferrer\" target=\"_blank\">Westfall</a>.",
             "description": "The Stonemasons' Guild was run by a man named Edwin VanCleef. VanCleef was responsible for rebuilding Stormwind after the orcs razed it in the First War. Apparently, VanCleef and his men were unhappy with their treatment by the King after the reconstruction was complete. That just might explain a thing or two.<br><br>I have written a more detailed account for your Master in <a href=\"https://www.wowhead.com/classic/zone=40/westfall\" rel=\"noopener noreferrer\" target=\"_blank\">Westfall</a>. Take this to him at once!",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -2166,6 +2422,16 @@ const DUNGEONS = [
             "objective": "Track down the Defias Messenger in <a href=\"https://www.wowhead.com/classic/zone=40/westfall\" rel=\"noopener noreferrer\" target=\"_blank\">Westfall</a> and bring his message to Stoutmantle.",
             "description": "We need to discover the location of the Defias hideout., my scout reports that a Defias Messenger has been seen on the roads between Moonbrook, the Gold Coast Quarry and the Jangolode Mine. I want you to capture him. If he resists, kill him and bring me whatever he is carrying.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 1381,
+                "name": "A Mysterious Message",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=1381/a-mysterious-message",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -2229,6 +2495,7 @@ const DUNGEONS = [
             "objective": "Escort <a href=\"https://www.wowhead.com/classic/npc=467/the-defias-traitor\" rel=\"noopener noreferrer\" target=\"_blank\">the Defias Traitor</a> to the secret hideout of the Defias Brotherhood. Once <a href=\"https://www.wowhead.com/classic/npc=467/the-defias-traitor\" rel=\"noopener noreferrer\" target=\"_blank\">the Defias Traitor</a> shows you where VanCleef and his men are hiding out, return to <a href=\"https://www.wowhead.com/classic/npc=234/gryan-stoutmantle\" rel=\"noopener noreferrer\" target=\"_blank\">Gryan Stoutmantle</a> with the information.",
             "description": "So Stoutmantle sends a scrawny like you to protect me? Guess you'll have to do. Better bring some friends too.<br><br>You know the deal, right? You watch my back and I'll take you to the Defias hideout. But you better be close by my side. The Defias gang wants my head now. If they see me with you, they'll try to kill me.<br><br>Let me know when you and any friends you can round up are ready to go.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -2309,6 +2576,16 @@ const DUNGEONS = [
             "objective": "<a href=\"https://www.wowhead.com/classic/npc=820/scout-riell\" rel=\"noopener noreferrer\" target=\"_blank\">Scout Riell</a> at the Sentinel Hill Tower wants you to bring her 10 <a href=\"https://www.wowhead.com/classic/item=915/red-silk-bandana\" rel=\"noopener noreferrer\" target=\"_blank\">Red Silk Bandanas</a>.",
             "description": "It's no secret that the trademark of the Defias Gang is their Red Bandanas. But we've learned that the material from which these bandanas are made signifies the member's rank.<br><br>That being said, I want you to eliminate as many high ranking Defias members as you can. The highest ranking members will undoubtedly be found in VanCleef's secret hideout. When you're done bring me 10 <a href=\"https://www.wowhead.com/classic/item=915/red-silk-bandana\" rel=\"noopener noreferrer\" target=\"_blank\">Red Silk Bandanas</a> as proof of their deaths and I will reward you. Good luck.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 915,
+                "name": "Red Silk Bandana",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/item=915/red-silk-bandana",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [
               {
@@ -2380,6 +2657,7 @@ const DUNGEONS = [
         "objective": "Deliver the Letter to the City Architect to <a href=\"https://www.wowhead.com/classic/npc=1646/baros-alexston\" rel=\"noopener noreferrer\" target=\"_blank\">Baros Alexston</a> in Stormwind.",
         "description": "Searching Edwin VanCleef's person, you discover, among other things, <a href=\"https://www.wowhead.com/classic/item=2874/an-unsent-letter\" rel=\"noopener noreferrer\" target=\"_blank\">an unsent letter</a>. It is addressed to <a href=\"https://www.wowhead.com/classic/npc=1646/baros-alexston\" rel=\"noopener noreferrer\" target=\"_blank\">Baros Alexston</a>, the City Architect of Stormwind, City Hall, Cathedral Square.<br><br>It appears to be recently written and sealed.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -2528,6 +2806,16 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=820/scout-riell\" rel=\"noopener noreferrer\" target=\"_blank\">Scout Riell</a> at the Sentinel Hill Tower wants you to bring her 10 <a href=\"https://www.wowhead.com/classic/item=915/red-silk-bandana\" rel=\"noopener noreferrer\" target=\"_blank\">Red Silk Bandanas</a>.",
         "description": "It's no secret that the trademark of the Defias Gang is their Red Bandanas. But we've learned that the material from which these bandanas are made signifies the member's rank.<br><br>That being said, I want you to eliminate as many high ranking Defias members as you can. The highest ranking members will undoubtedly be found in VanCleef's secret hideout. When you're done bring me 10 <a href=\"https://www.wowhead.com/classic/item=915/red-silk-bandana\" rel=\"noopener noreferrer\" target=\"_blank\">Red Silk Bandanas</a> as proof of their deaths and I will reward you. Good luck.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 915,
+            "name": "Red Silk Bandana",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=915/red-silk-bandana",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -2605,6 +2893,40 @@ const DUNGEONS = [
         "objective": "Using <a href=\"https://www.wowhead.com/classic/item=6996/jordans-weapon-notes\" rel=\"noopener noreferrer\" target=\"_blank\">Jordan's Weapon Notes</a>, find some <a href=\"https://www.wowhead.com/classic/item=6994/whitestone-oak-lumber\" rel=\"noopener noreferrer\" target=\"_blank\">Whitestone Oak Lumber</a>, Bailor's Refined Ore Shipment, <a href=\"https://www.wowhead.com/classic/item=6895/jordans-smithing-hammer\" rel=\"noopener noreferrer\" target=\"_blank\">Jordan's Smithing Hammer</a>, and a Kor Gem, and return them to <a href=\"https://www.wowhead.com/classic/npc=6181/jordan-stilwell\" rel=\"noopener noreferrer\" target=\"_blank\">Jordan Stilwell</a> in Ironforge.",
         "description": "I'd like to reward you if you'd be willing to accept such a thing? Don't misunderstand me, my generosity is dependent on how much help you can be, but I see us both benefiting greatly from such an alliance.<br><br>I will craft for you a weapon worthy of what you've accomplished, a symbol of paladinhood and the Light, but you must gather the items I need to craft it. I've already started taking notes on the items, it just requires someone brave and skilled enough to recover them. What do you say?",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6994,
+            "name": "Whitestone Oak Lumber",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6994/whitestone-oak-lumber",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 6993,
+            "name": "Jordan's Refined Ore Shipment",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6993/jordans-refined-ore-shipment",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 6895,
+            "name": "Jordan's Smithing Hammer",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6895/jordans-smithing-hammer",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 7083,
+            "name": "Purified Kor Gem",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=7083/purified-kor-gem",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -2652,6 +2974,7 @@ const DUNGEONS = [
             "objective": "Speak to <a href=\"https://www.wowhead.com/classic/npc=6171/duthorian-rall\" rel=\"noopener noreferrer\" target=\"_blank\">Duthorian Rall</a> in Stormwind.",
             "description": "Valor, and all the virtues that go along with it, are like rare minerals: you must cherish them when you find them because of their value, but you must also take time to harvest them... refine them. When mixed together properly, a strong alloy is formed, sometimes unbreakable by even the most powerful blows.<br><br>This strength, your faith, your bravery, must be tested. You must learn to never lose faith and realize that with the power of the Light, you can overcome things that most others cannot.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -2717,6 +3040,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=6182/daphne-stilwell\" rel=\"noopener noreferrer\" target=\"_blank\">Daphne Stilwell</a> in Westfall.",
             "description": "Good! Your lack of hesitation is a sure sign that you are prepared and eager to test yourself. So be it.<br><br>At the very ends of Westfall's Longshore, a small house overlooks the ocean. There, a couple lives, the Stilwells. Jordan is an incredible smith, and he's gone to Ironforge to meet with the dwarves for a while. But this has left Daphne, his wife, alone and unprotected.<br><br>Reports suggest that the Defias have all but taken over the area, Daphne may need some protection from the villains. Go there.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -2782,6 +3106,7 @@ const DUNGEONS = [
             "objective": "Defend <a href=\"https://www.wowhead.com/classic/npc=6182/daphne-stilwell\" rel=\"noopener noreferrer\" target=\"_blank\">Daphne Stilwell</a> from the Defias attack.<br><br>Neither of your spirits must be released from their mortal coils if you wish to succeed.<br><br>After you are successful, speak to <a href=\"https://www.wowhead.com/classic/npc=6182/daphne-stilwell\" rel=\"noopener noreferrer\" target=\"_blank\">Daphne Stilwell</a> again.",
             "description": "Now, they'll be coming again soon, I'd wager, so get yourself ready.<br><br>I've got myself a gun in the house. I'll grab it and be ready to help you out, but for the most part, you're on your own.<br><br>I've no idea how many they'll send, but I'm sure it'll be more than the few they sent earlier.<br><br>Ask the Light for whatever blessings you can because... did you hear that? I think they're coming.<br><br>We make our stand near the house!",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -2853,6 +3178,7 @@ const DUNGEONS = [
             "objective": "Speak to <a href=\"https://www.wowhead.com/classic/npc=6171/duthorian-rall\" rel=\"noopener noreferrer\" target=\"_blank\">Duthorian Rall</a> in Stormwind.",
             "description": "Please, return to Duthorian and let him know that I'm safe for now. I have you and the Church to thank for that.<br><br>He'll send word to Ironforge to let my Jordan know that he has nothing to fear.<br><br>Oh, how I miss my husband. I can't wait till he returns.",
             "shareable": true,
+            "requirements": [],
             "rewards": [
               {
                 "id": 9607,
@@ -2925,6 +3251,7 @@ const DUNGEONS = [
             "objective": "Speak to <a href=\"https://www.wowhead.com/classic/npc=6181/jordan-stilwell\" rel=\"noopener noreferrer\" target=\"_blank\">Jordan Stilwell</a> in Ironforge",
             "description": "Actually, I have no doubt that Jordan himself would like to thank you, and seeing as I need a messenger to send word that his wife is safe, I think you'd be a perfect choice.<br><br>Jordan was to be a paladin of the Light before his dedication to his father's craft took him on another path--he's intimately familiar with our way of life and is considered among our most faithful.<br><br>He should still be in Ironforge--he likes to work outside the gates during the day, something about the cool mountain air.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -3028,6 +3355,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=6283/the-book-of-ur\" rel=\"noopener noreferrer\" target=\"_blank\">the Book of Ur</a> to <a href=\"https://www.wowhead.com/classic/npc=2934/keeper-beldugur\" rel=\"noopener noreferrer\" target=\"_blank\">Keeper Bel'dugur</a> at the Apothecarium in the Undercity.",
         "description": "<a href=\"https://www.wowhead.com/classic/zone=209/shadowfang-keep\" rel=\"noopener noreferrer\" target=\"_blank\">Shadowfang Keep</a> holds a book, <a href=\"https://www.wowhead.com/classic/item=6283/the-book-of-ur\" rel=\"noopener noreferrer\" target=\"_blank\">the Book of Ur</a>, which would be much prized in my collection. Ur was a great mage of Dalaran before the coming of the Scourge, his studies in other worlds are of much value to... certain parties among the Forsaken.<br><br>Enter <a href=\"https://www.wowhead.com/classic/zone=209/shadowfang-keep\" rel=\"noopener noreferrer\" target=\"_blank\">Shadowfang Keep</a> and find the book. Bring it to me, and I will report your service to our Dark Lady...",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6283,
+            "name": "The Book of Ur",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6283/the-book-of-ur",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -3099,6 +3436,7 @@ const DUNGEONS = [
         "objective": "Find the Deathstalker Adamant and <a href=\"https://www.wowhead.com/classic/npc=4444/deathstalker-vincent\" rel=\"noopener noreferrer\" target=\"_blank\">Deathstalker Vincent</a>.",
         "description": "In preparation for an assault on Shadowfang, two deathstalkers were sent to the keep to gather intelligence. It has been many days and they have not returned, but we must receive their report if we're to have any hope of a successful attack!<br><br>So here is your task. Go to <a href=\"https://www.wowhead.com/classic/zone=209/shadowfang-keep\" rel=\"noopener noreferrer\" target=\"_blank\">Shadowfang Keep</a> to the south and find the Deathstalkers Adamant and Vincent. Find them, and if they require aid then give it.<br><br>This mission is as dangerous as is it critical. Do not fail.",
         "shareable": true,
+        "requirements": [],
         "rewards": [
           {
             "id": 3324,
@@ -3164,6 +3502,16 @@ const DUNGEONS = [
         "objective": "Kill Arugal and bring his head to <a href=\"https://www.wowhead.com/classic/npc=1938/dalar-dawnweaver\" rel=\"noopener noreferrer\" target=\"_blank\">Dalar Dawnweaver</a> at the Sepulcher.",
         "description": "Arugal still resides in <a href=\"https://www.wowhead.com/classic/zone=209/shadowfang-keep\" rel=\"noopener noreferrer\" target=\"_blank\">Shadowfang Keep</a>. We cannot claim Silverpine as a strategic stronghold for the Dark Lady until Arugal is slain.<br><br>I shall see to it that his magic is eradicated. But I leave it in your hands to see that Arugal meets the death he so deserves.<br><br>Travel to <a href=\"https://www.wowhead.com/classic/zone=209/shadowfang-keep\" rel=\"noopener noreferrer\" target=\"_blank\">Shadowfang Keep</a> and put an end to Arugal's foul spells once and for all. Bring to me the vile wizard's head!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5442,
+            "name": "Head of Arugal",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5442/head-of-arugal",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 6414,
@@ -3229,6 +3577,40 @@ const DUNGEONS = [
         "objective": "Using <a href=\"https://www.wowhead.com/classic/item=6996/jordans-weapon-notes\" rel=\"noopener noreferrer\" target=\"_blank\">Jordan's Weapon Notes</a>, find some <a href=\"https://www.wowhead.com/classic/item=6994/whitestone-oak-lumber\" rel=\"noopener noreferrer\" target=\"_blank\">Whitestone Oak Lumber</a>, Bailor's Refined Ore Shipment, <a href=\"https://www.wowhead.com/classic/item=6895/jordans-smithing-hammer\" rel=\"noopener noreferrer\" target=\"_blank\">Jordan's Smithing Hammer</a>, and a Kor Gem, and return them to <a href=\"https://www.wowhead.com/classic/npc=6181/jordan-stilwell\" rel=\"noopener noreferrer\" target=\"_blank\">Jordan Stilwell</a> in Ironforge.",
         "description": "I'd like to reward you if you'd be willing to accept such a thing? Don't misunderstand me, my generosity is dependent on how much help you can be, but I see us both benefiting greatly from such an alliance.<br><br>I will craft for you a weapon worthy of what you've accomplished, a symbol of paladinhood and the Light, but you must gather the items I need to craft it. I've already started taking notes on the items, it just requires someone brave and skilled enough to recover them. What do you say?",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6994,
+            "name": "Whitestone Oak Lumber",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6994/whitestone-oak-lumber",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 6993,
+            "name": "Jordan's Refined Ore Shipment",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6993/jordans-refined-ore-shipment",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 6895,
+            "name": "Jordan's Smithing Hammer",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6895/jordans-smithing-hammer",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 7083,
+            "name": "Purified Kor Gem",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=7083/purified-kor-gem",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -3276,6 +3658,7 @@ const DUNGEONS = [
             "objective": "Speak to <a href=\"https://www.wowhead.com/classic/npc=6171/duthorian-rall\" rel=\"noopener noreferrer\" target=\"_blank\">Duthorian Rall</a> in Stormwind.",
             "description": "Valor, and all the virtues that go along with it, are like rare minerals: you must cherish them when you find them because of their value, but you must also take time to harvest them... refine them. When mixed together properly, a strong alloy is formed, sometimes unbreakable by even the most powerful blows.<br><br>This strength, your faith, your bravery, must be tested. You must learn to never lose faith and realize that with the power of the Light, you can overcome things that most others cannot.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -3341,6 +3724,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=6182/daphne-stilwell\" rel=\"noopener noreferrer\" target=\"_blank\">Daphne Stilwell</a> in Westfall.",
             "description": "Good! Your lack of hesitation is a sure sign that you are prepared and eager to test yourself. So be it.<br><br>At the very ends of Westfall's Longshore, a small house overlooks the ocean. There, a couple lives, the Stilwells. Jordan is an incredible smith, and he's gone to Ironforge to meet with the dwarves for a while. But this has left Daphne, his wife, alone and unprotected.<br><br>Reports suggest that the Defias have all but taken over the area, Daphne may need some protection from the villains. Go there.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -3406,6 +3790,7 @@ const DUNGEONS = [
             "objective": "Defend <a href=\"https://www.wowhead.com/classic/npc=6182/daphne-stilwell\" rel=\"noopener noreferrer\" target=\"_blank\">Daphne Stilwell</a> from the Defias attack.<br><br>Neither of your spirits must be released from their mortal coils if you wish to succeed.<br><br>After you are successful, speak to <a href=\"https://www.wowhead.com/classic/npc=6182/daphne-stilwell\" rel=\"noopener noreferrer\" target=\"_blank\">Daphne Stilwell</a> again.",
             "description": "Now, they'll be coming again soon, I'd wager, so get yourself ready.<br><br>I've got myself a gun in the house. I'll grab it and be ready to help you out, but for the most part, you're on your own.<br><br>I've no idea how many they'll send, but I'm sure it'll be more than the few they sent earlier.<br><br>Ask the Light for whatever blessings you can because... did you hear that? I think they're coming.<br><br>We make our stand near the house!",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -3477,6 +3862,7 @@ const DUNGEONS = [
             "objective": "Speak to <a href=\"https://www.wowhead.com/classic/npc=6171/duthorian-rall\" rel=\"noopener noreferrer\" target=\"_blank\">Duthorian Rall</a> in Stormwind.",
             "description": "Please, return to Duthorian and let him know that I'm safe for now. I have you and the Church to thank for that.<br><br>He'll send word to Ironforge to let my Jordan know that he has nothing to fear.<br><br>Oh, how I miss my husband. I can't wait till he returns.",
             "shareable": true,
+            "requirements": [],
             "rewards": [
               {
                 "id": 9607,
@@ -3549,6 +3935,7 @@ const DUNGEONS = [
             "objective": "Speak to <a href=\"https://www.wowhead.com/classic/npc=6181/jordan-stilwell\" rel=\"noopener noreferrer\" target=\"_blank\">Jordan Stilwell</a> in Ironforge",
             "description": "Actually, I have no doubt that Jordan himself would like to thank you, and seeing as I need a messenger to send word that his wife is safe, I think you'd be a perfect choice.<br><br>Jordan was to be a paladin of the Light before his dedication to his father's craft took him on another path--he's intimately familiar with our way of life and is considered among our most faithful.<br><br>He should still be in Ironforge--he likes to work outside the gates during the day, something about the cool mountain air.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -3652,6 +4039,7 @@ const DUNGEONS = [
         "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=4787/argent-guard-thaelrid\" rel=\"noopener noreferrer\" target=\"_blank\">Argent Guard Thaelrid</a> in <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a>.",
         "description": "Many rumors circulate these days about the union of the Twilight's Hammer and the naga in <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a> on the coasts of Ashenvale.<br><br>My role here with the Argent Dawn is to collect as much information as I can, so we know when and where help is needed.<br><br>It has been weeks now since I sent a scout to check on the activity at <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a>. <a href=\"https://www.wowhead.com/classic/npc=4787/argent-guard-thaelrid\" rel=\"noopener noreferrer\" target=\"_blank\">Argent Guard Thaelrid</a> has not yet reported back.<br><br>My other scouts are preoccupied with pressing matters.<br><br>Seek out and aid Thaelrid for me.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -3715,6 +4103,16 @@ const DUNGEONS = [
         "objective": "Bring 10 <a href=\"https://www.wowhead.com/classic/item=5879/twilight-pendant\" rel=\"noopener noreferrer\" target=\"_blank\">Twilight Pendants</a> to <a href=\"https://www.wowhead.com/classic/npc=4784/argent-guard-manados\" rel=\"noopener noreferrer\" target=\"_blank\">Argent Guard Manados</a> in Darnassus.",
         "description": "Empowered by the ancient rites of the chaotic Old Gods the members of the Twilight's Hammer strive to bring about the return of their dark patrons and spread death and terror across the world.<br><br>We believe that the Twilight's Hammer has allied with the naga and are amassing in <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a> on the coast of Ashenvale.<br><br>Whatever evil plan brews in the depths of the old temple must be thwarted.<br><br>Wage war on the Hammer and bring back proof of your deeds. Your efforts will be rewarded handsomely.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5879,
+            "name": "Twilight Pendant",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=5879/twilight-pendant",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 6998,
@@ -3786,6 +4184,16 @@ const DUNGEONS = [
         "objective": "Bring 20 <a href=\"https://www.wowhead.com/classic/item=16784/sapphire-of-akumai\" rel=\"noopener noreferrer\" target=\"_blank\">Sapphires of Aku'Mai</a> to <a href=\"https://www.wowhead.com/classic/npc=12736/jeneu-sancrea\" rel=\"noopener noreferrer\" target=\"_blank\">Je'neu Sancrea</a> in Ashenvale.",
         "description": "Within the beginning tunnels of <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a>, large sapphire clusters can be found along the cave walls. Recently it was noted that the naga were harvesting the crystals. Until it can be discerned why, I sense we should stop the naga from succeeding. The crystals have great elemental power and if used inappropriately, could make for a powerful arcane component.<br><br>Will you help me? <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a> can be found along Zoram Strand to the north of our outpost.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 16784,
+            "name": "Sapphire of Aku'Mai",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/item=16784/sapphire-of-akumai",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -3839,6 +4247,7 @@ const DUNGEONS = [
             "objective": "Speak to <a href=\"https://www.wowhead.com/classic/npc=12736/jeneu-sancrea\" rel=\"noopener noreferrer\" target=\"_blank\">Je'neu Sancrea</a> in Ashenvale.",
             "description": "<a href=\"https://www.wowhead.com/classic/npc=12736/jeneu-sancrea\" rel=\"noopener noreferrer\" target=\"_blank\">Je'neu Sancrea</a> is in need of aid. He is at the Zoram'gar Outpost in Ashenvale. The Night elf forest is to the north of the Stonetalon mountains. You can reach it by traveling through Windshear Crag or by heading north through Barrens. Zoram Strand is far to the west of the forest. Be careful. There are forces there that will not take to your presence kindly.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -3913,6 +4322,16 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=8997/gershala-nightwhisper\" rel=\"noopener noreferrer\" target=\"_blank\">Gershala Nightwhisper</a> in Auberdine wants 8 Corrupt Brain stems.",
         "description": "Foolish blood elves toil with demonic magic. Have they not witnessed what happened with the naga and with the satyrs of Kalimdor?<br><br>I fear that the blood elves will meet a similar deformation. Azeroth cannot afford to give birth to another vile race of monsters.<br><br>I wish to study the brain stems of the satyr and naga so that I might deduce what fate the elves are headed toward. In <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a>, on the coast of Ashenvale, you will find both satyr and naga.<br><br>'Tis a long journey.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5952,
+            "name": "Corrupted Brain Stem",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/item=5952/corrupted-brain-stem",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -3979,6 +4398,7 @@ const DUNGEONS = [
             "objective": "Travel to <a href=\"https://www.wowhead.com/classic/npc=8997/gershala-nightwhisper\" rel=\"noopener noreferrer\" target=\"_blank\">Gershala Nightwhisper</a> in Auberdine.",
             "description": "Stormwind -- such a bustling hub of activity.<br><br>I have traveled from afar to seek help. Often it is heard that brave adventurers roam these city streets.<br><br>My brother, Gershala, requires assistance in Darkshore. He resides in the seaside town of Auberdine.<br><br>The journey is a long and epic one. It is for this reason that I ask the help of a seasoned such as yourself.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -4053,6 +4473,15 @@ const DUNGEONS = [
         "objective": "Kill <a href=\"https://www.wowhead.com/classic/npc=12902/lorgus-jett\" rel=\"noopener noreferrer\" target=\"_blank\">Lorgus Jett</a> in <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a> and then return to <a href=\"https://www.wowhead.com/classic/npc=12736/jeneu-sancrea\" rel=\"noopener noreferrer\" target=\"_blank\">Je'neu Sancrea</a> in Ashenvale.",
         "description": "This Twilight's Hammer follower cannot be allowed to complete his plan. The Twilight's Hammer do not understand the spirits of nature. They believe in the Old Gods--creatures of chaos and destruction that were long ago defeated. This Lorgus cannot be allowed to succeed. You must stop him. I cannot do it myself--I am too weak.<br><br>Go into <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a>, find him, and kill him. Return to me here at Zoram'gar when it's done.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 12902,
+            "name": "Lorgus Jett",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=12902/lorgus-jett"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -4111,6 +4540,7 @@ const DUNGEONS = [
             "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=16790/damp-note\" rel=\"noopener noreferrer\" target=\"_blank\">Damp Note</a> to <a href=\"https://www.wowhead.com/classic/npc=12736/jeneu-sancrea\" rel=\"noopener noreferrer\" target=\"_blank\">Je'neu Sancrea</a> in Ashenvale.",
             "description": "Some poor handwriting is scrawled on the crumpled up note:<br><br>\"Yes, tell all the priestesses to bring the crystals to me. The water elemental spirits are strong within them and they will aid our aquamancers greatly in their own summonings.<br><br>By controlling the power within the crystals, we will appease Aku'Mai. One day we will have enough power to bring Aku'Mai back to us and the world will return to its greatest era! An era of rule by the Old Gods!\"",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -4185,6 +4615,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=16762/fathom-core\" rel=\"noopener noreferrer\" target=\"_blank\">Fathom Core</a> to <a href=\"https://www.wowhead.com/classic/npc=12736/jeneu-sancrea\" rel=\"noopener noreferrer\" target=\"_blank\">Je'neu Sancrea</a> at Zoram'gar Outpost, Ashenvale.",
         "description": "The Twilight's Hammer has moved into the Moonshrine Ruins of <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a>. Their presence can only serve to coerce the elements into working against us. If left unchecked, this region will be theirs for good.<br><br>, go into Blackfathom and find the ruin's fathom stone; it should be somewhere close in the water. In it is a <a href=\"https://www.wowhead.com/classic/item=16762/fathom-core\" rel=\"noopener noreferrer\" target=\"_blank\">fathom core</a> - a device that when properly read it will relate a history of all elemental activity. If I have it, I and the Earthen Ring can maybe do something to stop them!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 16762,
+            "name": "Fathom Core",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=16762/fathom-core",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -4243,6 +4683,16 @@ const DUNGEONS = [
         "objective": "Bring the head of Twilight Lord Kelris to <a href=\"https://www.wowhead.com/classic/npc=4783/dawnwatcher-selgorm\" rel=\"noopener noreferrer\" target=\"_blank\">Dawnwatcher Selgorm</a> in Darnassus.",
         "description": "Strength has left me. Your help is needed!<br><br>Long ago this site was a great temple of Elune. But misfortune led to ruin when the corruption of an Old God seeped up from beneath the earth and tainted the sacred Moon Well.<br><br>Aku'Mai, servant of the Old God, rose from the waters.<br><br>The Twilight's Hammer cultists have allied with the naga to occupy these grounds. The cultists, led by Kelris, sacrifice innocents to Aku'Mai for power.<br><br>Slay Kelris and bring his head to Selgorm in Darnassus, please.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5881,
+            "name": "Head of Kelris",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5881/head-of-kelris",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -4319,6 +4769,16 @@ const DUNGEONS = [
         "objective": "Bring the head of Twilight Lord Kelris to <a href=\"https://www.wowhead.com/classic/npc=9087/bashana-runetotem\" rel=\"noopener noreferrer\" target=\"_blank\">Bashana Runetotem</a> in Thunder Bluff.",
         "description": "Strength has left me. Your help is needed!<br><br>Long ago this site was a great temple of Elune. But misfortune led to ruin when the corruption of an Old God seeped up from beneath the earth and tainted the sacred Moon Well.<br><br>Aku'Mai, servant of the Old God, rose from the waters.<br><br>The Twilight's Hammer cultists have allied with the naga to occupy these grounds. The cultists, led by Kelris, sacrifice innocents to Aku'Mai for power.<br><br>Slay Kelris and bring his head to Bashana in Thunder Bluff, please.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5881,
+            "name": "Head of Kelris",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5881/head-of-kelris",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -4382,6 +4842,7 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=16782/strange-water-globe\" rel=\"noopener noreferrer\" target=\"_blank\">Strange Water Globe</a> to <a href=\"https://www.wowhead.com/classic/npc=12736/jeneu-sancrea\" rel=\"noopener noreferrer\" target=\"_blank\">Je'neu Sancrea</a> at Zoram'gar Outpost, <a href=\"https://www.wowhead.com/classic/zone=331/ashenvale\" rel=\"noopener noreferrer\" target=\"_blank\">Ashenvale</a>.",
         "description": "The defeated water elemental has left behind a <a href=\"https://www.wowhead.com/classic/item=16782/strange-water-globe\" rel=\"noopener noreferrer\" target=\"_blank\">strange water globe</a>. You surmise that the object somehow fed the beast energy. Inside the globe, a putrid-looking form of water sloshes about. The globe itself seems impervious to any sort of physical force.<br><br>If anyone can make any sense of this item, it would be <a href=\"https://www.wowhead.com/classic/npc=12736/jeneu-sancrea\" rel=\"noopener noreferrer\" target=\"_blank\">Je'neu Sancrea</a> of the Earthen Ring. He is located at the Horde's Zoram'gar Outpost in <a href=\"https://www.wowhead.com/classic/zone=331/ashenvale\" rel=\"noopener noreferrer\" target=\"_blank\">Ashenvale</a>.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [
           {
@@ -4453,6 +4914,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=5359/lorgalis-manuscript\" rel=\"noopener noreferrer\" target=\"_blank\">Lorgalis Manuscript</a> to <a href=\"https://www.wowhead.com/classic/npc=2786/gerrig-bonegrip\" rel=\"noopener noreferrer\" target=\"_blank\">Gerrig Bonegrip</a> in the Forlorn Cavern in Ironforge.",
         "description": "As you might know, I collect lore. Old lore. Powerful lore. Lore that opens doorways, and lore that can awaken Those Who Sleep.<br><br>There are rumors of an old piece of lore, the <a href=\"https://www.wowhead.com/classic/item=5359/lorgalis-manuscript\" rel=\"noopener noreferrer\" target=\"_blank\">Lorgalis Manuscript</a>, at the bottom of <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a> in Ashenvale. That place is the old dwelling of long-dead elves. Elves who held great knowledge before their city fell to ruin.<br><br>Search <a href=\"https://www.wowhead.com/classic/zone=719/blackfathom-deeps\" rel=\"noopener noreferrer\" target=\"_blank\">Blackfathom Deeps</a> for the manuscript. Do this, and I will not forget it. Not even after... the end days.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5359,
+            "name": "Lorgalis Manuscript",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5359/lorgalis-manuscript",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 6743,
@@ -4532,6 +5003,29 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=1719/warden-thelwater\" rel=\"noopener noreferrer\" target=\"_blank\">Warden Thelwater</a> of Stormwind wants you to kill 10 <a href=\"https://www.wowhead.com/classic/npc=1706/defias-prisoner\" rel=\"noopener noreferrer\" target=\"_blank\">Defias Prisoners</a>, 8 <a href=\"https://www.wowhead.com/classic/npc=1711/defias-convict\" rel=\"noopener noreferrer\" target=\"_blank\">Defias Convicts</a>, and 8 <a href=\"https://www.wowhead.com/classic/npc=1715/defias-insurgent\" rel=\"noopener noreferrer\" target=\"_blank\">Defias Insurgents</a> in <a href=\"https://www.wowhead.com/classic/zone=717/the-stockade\" rel=\"noopener noreferrer\" target=\"_blank\">The Stockade</a>.",
         "description": "The uprising must be quelled! I need your assistance. If word gets out that the prison is overrun I will lose my job! This is a case of foul play if I've ever seen one. But what's important now is forcing these prisoners into submission for the safety of Stormwind.<br><br>The punishment for insurgency is death. Kill some of these deviants! That ought to get things under control.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 1706,
+            "name": "Defias Prisoner",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/npc=1706/defias-prisoner"
+          },
+          {
+            "type": "npc",
+            "id": 1711,
+            "name": "Defias Convict",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/npc=1711/defias-convict"
+          },
+          {
+            "type": "npc",
+            "id": 1715,
+            "name": "Defias Insurgent",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/npc=1715/defias-insurgent"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -4590,6 +5084,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=3630/head-of-targorr\" rel=\"noopener noreferrer\" target=\"_blank\">head of Targorr</a> the Dread to <a href=\"https://www.wowhead.com/classic/npc=859/guard-berton\" rel=\"noopener noreferrer\" target=\"_blank\">Guard Berton</a> in Lakeshire.",
         "description": "Targorr the Dread served under Gath'Ilzogg as supreme Executioner. His methods were ruthless, even by filthy orc standards. Men who fought bravely to defend the Kingdom were tortured on his whim. Now he is being held in the Stormwind Stockade, sentenced to die. Yet something is amiss. One of the bureaucratic nobles put a hold on his execution. I am sure foul play is in the works.<br><br>Put an end to Targorr the Dread. Travel to <a href=\"https://www.wowhead.com/classic/zone=717/the-stockade\" rel=\"noopener noreferrer\" target=\"_blank\">The Stockade</a> and behead him before trickery is upon us.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 3630,
+            "name": "Head of Targorr",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=3630/head-of-targorr",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -4661,6 +5165,16 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=1721/nikova-raskol\" rel=\"noopener noreferrer\" target=\"_blank\">Nikova Raskol</a> of Stormwind wants you to collect 10 <a href=\"https://www.wowhead.com/classic/item=2909/red-wool-bandana\" rel=\"noopener noreferrer\" target=\"_blank\">Red Wool Bandanas</a>.",
         "description": "Bitterness flows through my veins like a cold river. My grandson, Mac, was such a good boy. A mere 14 years old. When the army was sent off to the front, Mac took up arms to defend the city. He was a guard in <a href=\"https://www.wowhead.com/classic/zone=717/the-stockade\" rel=\"noopener noreferrer\" target=\"_blank\">The Stockade</a>, where the Defias gang is locked up. Mac reprimanded some of the prisoners for tearing their wool blankets to make scarves, a symbol of their gang. For that Mac was stabbed in the back.<br><br>I want revenge. Bring me 10 of their precious Wool Bandanas. They are the color of blood.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 2909,
+            "name": "Red Wool Bandana",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=2909/red-wool-bandana",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -4719,6 +5233,16 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=270/councilman-millstipe\" rel=\"noopener noreferrer\" target=\"_blank\">Councilman Millstipe</a> of Darkshire wants you to bring him the <a href=\"https://www.wowhead.com/classic/item=3628/hand-of-dextren-ward\" rel=\"noopener noreferrer\" target=\"_blank\">hand of Dextren Ward</a>.",
         "description": "As if the neglect for the residents of Duskwood was not bad enough, now the House of Nobles spits in the eye of the Darkshire Council with their decision to imprison Dextren Ward in Stormwind rather than behead the villain as per Lord Ebonlocke's sentence.<br><br>Ward was caught selling bodies from the cemetery to Morbent Fel, a crime punishable by death. Yet Stormwind claims Ward as their prisoner.<br><br>Assassinate Ward in The Stormwind Stockade - bring me his hand - and I shall reward you.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 3628,
+            "name": "Hand of Dextren Ward",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=3628/hand-of-dextren-ward",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -4790,6 +5314,16 @@ const DUNGEONS = [
         "objective": "Kill Bazil Thredd and bring his head back to <a href=\"https://www.wowhead.com/classic/npc=1719/warden-thelwater\" rel=\"noopener noreferrer\" target=\"_blank\">Warden Thelwater</a> at <a href=\"https://www.wowhead.com/classic/zone=717/the-stockade\" rel=\"noopener noreferrer\" target=\"_blank\">the Stockade</a>.",
         "description": "Let's get one thing straight: I don't trust you. But, with the situation as it is, you probably won't make a difference.<br><br>So here's how it's going to be: go down there and have your talk with Thredd. If you're really on our side, then kill him and bring me his head when the job's done. And if it turns out you're on his side, and don't come out... when we find you, you'll die along with the rest of the maggots.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 2926,
+            "name": "Head of Bazil Thredd",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=2926/head-of-bazil-thredd",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -4835,6 +5369,7 @@ const DUNGEONS = [
             "objective": "Deliver the Letter to the City Architect to <a href=\"https://www.wowhead.com/classic/npc=1646/baros-alexston\" rel=\"noopener noreferrer\" target=\"_blank\">Baros Alexston</a> in Stormwind.",
             "description": "Searching Edwin VanCleef's person, you discover, among other things, <a href=\"https://www.wowhead.com/classic/item=2874/an-unsent-letter\" rel=\"noopener noreferrer\" target=\"_blank\">an unsent letter</a>. It is addressed to <a href=\"https://www.wowhead.com/classic/npc=1646/baros-alexston\" rel=\"noopener noreferrer\" target=\"_blank\">Baros Alexston</a>, the City Architect of Stormwind, City Hall, Cathedral Square.<br><br>It appears to be recently written and sealed.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -4898,6 +5433,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1719/warden-thelwater\" rel=\"noopener noreferrer\" target=\"_blank\">Warden Thelwater</a> in the Stockade.",
             "description": "VanCleef and I were members of the Stonemasons Guild. Our main project was to rebuild Stormwind after the War.<br><br>When we had finished our duties, we were cheated. The nobles refused to pay us for our work. Some of the more senior of the Stonemasons were offered governmental jobs, but VanCleef refused it out of loyalty to all the Stonemasons. He led a riot and left the city, swearing revenge.<br><br>His lieutenant, Bazil Thredd, might know more about VanCleef's plans. He's being held prisoner in the Stockade.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -5033,6 +5569,16 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=1074/motley-garmason\" rel=\"noopener noreferrer\" target=\"_blank\">Motley Garmason</a> wants Kam Deepfury's head brought to him at Dun Modr.",
         "description": "You have proven your loyalty to King Magni. And your hatred for the Dark Iron scum is as great as my own.<br><br>There is a task I wish to complete myself but I am bound by honor to stay with Longbraid. But Roggo has gathered intelligence that proves Kam Deepfury was a conspirator in the attack on the Thandol Span. It was by Deepfury's planning that Longbraid lost his kin.<br><br>Deepfury is being held for political reasons in the Stormwind Stockade. I want him dead. For Longbraid! Bring me his head!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 3640,
+            "name": "Head of Deepfury",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=3640/head-of-deepfury",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -5099,6 +5645,36 @@ const DUNGEONS = [
             "objective": "<a href=\"https://www.wowhead.com/classic/npc=1074/motley-garmason\" rel=\"noopener noreferrer\" target=\"_blank\">Motley Garmason</a> at Dun Modr wants you to kill 15 <a href=\"https://www.wowhead.com/classic/npc=1051/dark-iron-dwarf\" rel=\"noopener noreferrer\" target=\"_blank\">Dark Iron Dwarves</a>, 5 <a href=\"https://www.wowhead.com/classic/npc=1053/dark-iron-tunneler\" rel=\"noopener noreferrer\" target=\"_blank\">Dark Iron Tunnelers</a>, 5 <a href=\"https://www.wowhead.com/classic/npc=1052/dark-iron-saboteur\" rel=\"noopener noreferrer\" target=\"_blank\">Dark Iron Saboteurs</a> and 5 <a href=\"https://www.wowhead.com/classic/npc=1054/dark-iron-demolitionist\" rel=\"noopener noreferrer\" target=\"_blank\">Dark Iron Demolitionists</a>.",
             "description": "War rages both home and abroad. While mighty Dwarven soldiers give their lives in far off territories in the name of the Alliance, our own lands fall prey to the evil deeds of the <a href=\"https://www.wowhead.com/classic/npc=1051/dark-iron-dwarf\" rel=\"noopener noreferrer\" target=\"_blank\">Dark Iron Dwarves</a>. They laid waste to the Thandol Span. Dun Modr fell soon after.<br><br>We need you to gather force and push the front back. If you can kill 15 <a href=\"https://www.wowhead.com/classic/npc=1051/dark-iron-dwarf\" rel=\"noopener noreferrer\" target=\"_blank\">Dark Iron Dwarves</a>, 5 Tunnelers, 5 Saboteurs and 5 Demolitionists, the reserve might arrive in time to finish the drive.<br><br>Now make haste!",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 1051,
+                "name": "Dark Iron Dwarf",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/npc=1051/dark-iron-dwarf"
+              },
+              {
+                "type": "npc",
+                "id": 1053,
+                "name": "Dark Iron Tunneler",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/npc=1053/dark-iron-tunneler"
+              },
+              {
+                "type": "npc",
+                "id": 1052,
+                "name": "Dark Iron Saboteur",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/npc=1052/dark-iron-saboteur"
+              },
+              {
+                "type": "npc",
+                "id": 1054,
+                "name": "Dark Iron Demolitionist",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/npc=1054/dark-iron-demolitionist"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -5177,6 +5753,7 @@ const DUNGEONS = [
         "objective": "Escort <a href=\"https://www.wowhead.com/classic/npc=7850/kernobee\" rel=\"noopener noreferrer\" target=\"_blank\">Kernobee</a> to the Clockwerk Run exit and then report to <a href=\"https://www.wowhead.com/classic/npc=7853/scooty\" rel=\"noopener noreferrer\" target=\"_blank\">Scooty</a> in Booty Bay.",
         "description": "&lt;<a href=\"https://www.wowhead.com/classic/npc=7850/kernobee\" rel=\"noopener noreferrer\" target=\"_blank\">Kernobee</a> groans.&gt; Wha.. What happened?<br><br>The last thing I remember is being captured by a group of dark iron dwarves, beaten to within an inch of my life and then thrown in here with these filthy troggs.<br><br>Get me out of here!<br><br>Here's the plan: Lead me to the exit; if we make it out alive, you go to Booty Bay and let <a href=\"https://www.wowhead.com/classic/npc=7853/scooty\" rel=\"noopener noreferrer\" target=\"_blank\">Scooty</a> know that I went to Ratchet to warn Tinkerwiz of the dark iron's involvement in the making of that super rig.<br><br>Let's get going!",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [
           {
@@ -5248,6 +5825,16 @@ const DUNGEONS = [
         "objective": "Insert a Grime-Encrusted Item into <a href=\"https://www.wowhead.com/classic/object=142487/the-sparklematic-5200\" rel=\"noopener noreferrer\" target=\"_blank\">the Sparklematic 5200</a>, and be sure to have three silver coins to start the machine.",
         "description": "This contraption stands out amongst the gnomes holding out against the madness outside the room. A small plaque on the device reads \"<a href=\"https://www.wowhead.com/classic/object=142487/the-sparklematic-5200\" rel=\"noopener noreferrer\" target=\"_blank\">The Sparklematic 5200</a>\", followed by some text:<br><br>\"Grime and residue ruining your sparklies? <a href=\"https://www.wowhead.com/classic/object=142487/the-sparklematic-5200\" rel=\"noopener noreferrer\" target=\"_blank\">The Sparklematic 5200</a> puts the shine back in shine-tastic! Insert the item you wish to clean and deposit three silver coins in the coin slot. Give <a href=\"https://www.wowhead.com/classic/object=142487/the-sparklematic-5200\" rel=\"noopener noreferrer\" target=\"_blank\">The Sparklematic 5200</a> a moment for operation, and voila! Your valuables will emerge clean and shiny!\"",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9308,
+            "name": "Grime-Encrusted Object",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9308/grime-encrusted-object",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -5326,6 +5913,7 @@ const DUNGEONS = [
         "objective": "Figure out a way to remove the grime from the <a href=\"https://www.wowhead.com/classic/item=9326/grime-encrusted-ring\" rel=\"noopener noreferrer\" target=\"_blank\">Grime-Encrusted Ring</a>.",
         "description": "You have uncovered what appears to be a ring from the corpse of one of the Dark Iron dwarves. It is difficult to tell what kind of ring it is, however; dirt and hardened residue cake the item completely, making wearing it impossible. You think you can make out the slight luster of precious metal and maybe even the glint of a gem under the residue.<br><br>If you are going to make use of this ring, you are going to need to find something to get the hardened residue off of it.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -5449,6 +6037,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=9277/techbots-memory-core\" rel=\"noopener noreferrer\" target=\"_blank\">Techbot's Memory Core</a> to <a href=\"https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkmaster Overspark</a> in Ironforge.",
         "description": "When our beloved city <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> fell, a rogue spark must have jolted my poor creation, Techbot. It once aided me and my associates with its countless gizmos and limitless store of information, but its positronic brain has polarized. Now it's negatronic... and Techbot's behaviors are reversed. It roams <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> in a frenzy!<br><br>But perhaps it can be salvaged. Perhaps, if you can retrieve <a href=\"https://www.wowhead.com/classic/item=9277/techbots-memory-core\" rel=\"noopener noreferrer\" target=\"_blank\">Techbot's memory core</a> and bring it to me, I can discover the cause of the polarization and fix my poor Techbot.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9277,
+            "name": "Techbot's Memory Core",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9277/techbots-memory-core",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -5502,6 +6100,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkmaster Overspark</a> in Ironforge.",
             "description": "<a href=\"https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkmaster Overspark</a> is very upset with the fate of his mechanical creation, Techbot. I remember Techbot as a kind and helpful tool for the gnomes, but Overspark tells me it's malfunctioned.<br><br>Very sad. But with luck perhaps he can be fixed!<br><br>Speak with <a href=\"https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkmaster Overspark</a>, in Tinker Town in Ironforge. He would welcome your help.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -5565,6 +6164,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkmaster Overspark</a> in Ironforge.",
             "description": "<a href=\"https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkmaster Overspark</a> is very upset with the fate of his mechanical creation, Techbot. I remember Techbot as a kind and helpful tool for the gnomes, but Overspark tells me it's malfunctioned.<br><br>Very sad. But with luck perhaps he can be fixed!<br><br>Speak with <a href=\"https://www.wowhead.com/classic/npc=7944/tinkmaster-overspark\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkmaster Overspark</a>, in Tinker Town in Ironforge. He would welcome your help.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -5639,6 +6239,16 @@ const DUNGEONS = [
         "objective": "Bring twenty-four <a href=\"https://www.wowhead.com/classic/item=9309/robo-mechanical-guts\" rel=\"noopener noreferrer\" target=\"_blank\">Robo-mechanical Guts</a> to Shoni in Stormwind.",
         "description": "It's terrible. We are not going to have enough parts to get our fleet of gyrodrillmatic excavationators to Dun Morogh.<br><br>What we need are spare parts. What better place to get the spare parts for our vehicles than <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a>? I hear that bots and mechs roam around that place like cattle on an open range.<br><br>What I need you to do is go to <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> and tear apart those robots. Bring me back their robot guts. Two dozen should be sufficient.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9309,
+            "name": "Robo-mechanical Guts",
+            "quantity": 24,
+            "url": "https://www.wowhead.com/classic/item=9309/robo-mechanical-guts",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -5710,6 +6320,16 @@ const DUNGEONS = [
         "objective": "Bring 12 <a href=\"https://www.wowhead.com/classic/item=9278/essential-artificial\" rel=\"noopener noreferrer\" target=\"_blank\">Essential Artificials</a> to <a href=\"https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan\" rel=\"noopener noreferrer\" target=\"_blank\">Klockmort Spannerspan</a> in Ironforge.",
         "description": "A nigh-universal mechanical component--the <a href=\"https://www.wowhead.com/classic/item=9278/essential-artificial\" rel=\"noopener noreferrer\" target=\"_blank\">essential artificial</a>--was of great use to the tinkers and smiths of <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a>. But during the frantic exodus from our city, no one remembered to take any of these devices with them! And I need a large supply of them for work I will soon undertake.<br><br>Please, go into <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> and get me some <a href=\"https://www.wowhead.com/classic/item=9278/essential-artificial\" rel=\"noopener noreferrer\" target=\"_blank\">essential artificials</a>. You'll find them in the deeper areas of our city, held in containers called artificial extrapolators.<br><br>Thank you, and please hurry!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9278,
+            "name": "Essential Artificial",
+            "quantity": 12,
+            "url": "https://www.wowhead.com/classic/item=9278/essential-artificial",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -5763,6 +6383,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan\" rel=\"noopener noreferrer\" target=\"_blank\">Klockmort Spannerspan</a> in Ironforge.",
             "description": "A gnome friend, <a href=\"https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan\" rel=\"noopener noreferrer\" target=\"_blank\">Klockmort Spannerspan</a>, sent word to me from Ironforge. He tells me he needs help on a dangerous, but essential, mission into <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a>, the once great gnome city now contaminated and filled with mad gnomes and their devices.<br><br>I must stay here, but my heart aches to help my friend. If you can go in my stead, then I would be much indebted to you.<br><br>You may find Klockmort in Tinkertown, in Ironforge.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -5826,6 +6447,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan\" rel=\"noopener noreferrer\" target=\"_blank\">Klockmort Spannerspan</a> in Ironforge.",
             "description": "A gnome friend, <a href=\"https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan\" rel=\"noopener noreferrer\" target=\"_blank\">Klockmort Spannerspan</a>, sent word to me from Ironforge. He tells me he needs help on a dangerous, but essential, mission into <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a>, the once great gnome city now contaminated and filled with mad gnomes and their devices.<br><br>I must stay here, but my heart aches to help my friend. If you can go in my stead, then I would be much indebted to you.<br><br>You may find Klockmort in Tinkertown, in Ironforge.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -5900,6 +6522,16 @@ const DUNGEONS = [
         "objective": "Bring a <a href=\"https://www.wowhead.com/classic/item=9316/prismatic-punch-card\" rel=\"noopener noreferrer\" target=\"_blank\">Prismatic Punch Card</a> to <a href=\"https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe\" rel=\"noopener noreferrer\" target=\"_blank\">Master Mechanic Castpipe</a> in Ironforge.",
         "description": "When we fled <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a>, we left so much data behind! Vitally important data!<br><br>I need the data on a <a href=\"https://www.wowhead.com/classic/item=9316/prismatic-punch-card\" rel=\"noopener noreferrer\" target=\"_blank\">prismatic punch card</a>, from a Matrix Punchograph 3005-D high security terminal, deep in <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a>. You must access the terminal, but to do that you first need clearance... and to get that you must access lower security terminals-- models -A, -B and -C. And to do THAT you need security punch cards, starting with white... and we left all the punch cards in the city.<br><br>It's a catastrophe! Can you help?",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9316,
+            "name": "Prismatic Punch Card",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9316/prismatic-punch-card",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 9605,
@@ -5966,6 +6598,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe\" rel=\"noopener noreferrer\" target=\"_blank\">Master Mechanic Castpipe</a> in Ironforge.",
             "description": "<a href=\"https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe\" rel=\"noopener noreferrer\" target=\"_blank\">Master Mechanic Castpipe</a> in Ironforge has need of adventurers! He's organizing bands to reenter <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> on a data retrieval mission of top security and importance.<br><br>Castpipe might not be a member of the Enlightened Assembly of Arcanology, Alchemy and Engineering Sciences like I am, but he's still a smart gnome so if he thinks it's important, then by my calculations there's an eighty-four percent probability that it really is important!<br><br>Those are good odds!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -6029,6 +6662,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe\" rel=\"noopener noreferrer\" target=\"_blank\">Master Mechanic Castpipe</a> in Ironforge.",
             "description": "<a href=\"https://www.wowhead.com/classic/npc=7950/master-mechanic-castpipe\" rel=\"noopener noreferrer\" target=\"_blank\">Master Mechanic Castpipe</a> in Ironforge has need of adventurers! He's organizing bands to reenter <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> on a data retrieval mission of top security and importance.<br><br>Castpipe might not be a member of the Enlightened Assembly of Arcanology, Alchemy and Engineering Sciences like I am, but he's still a smart gnome so if he thinks it's important, then by my calculations there's an eighty-four percent probability that it really is important!<br><br>Those are good odds!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -6103,6 +6737,15 @@ const DUNGEONS = [
         "objective": "Venture to <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> and kill <a href=\"https://www.wowhead.com/classic/npc=7800/mekgineer-thermaplugg\" rel=\"noopener noreferrer\" target=\"_blank\">Mekgineer Thermaplugg</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=7937/high-tinker-mekkatorque\" rel=\"noopener noreferrer\" target=\"_blank\">High Tinker Mekkatorque</a> when the task is complete.",
         "description": "I trusted Thermaplugg. Never did I expect that he would betray me and the entire gnomish people. And for what? Power? Wealth? All things that he would have had in time. Now we have been displaced from our home and that madman is in charge. The king of nothing....<br><br>We will retake <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a>. We will not stop until the city is back in our control. If you wish to join in our fight, a simple task I ask of you: Kill the betrayer. Destroy <a href=\"https://www.wowhead.com/classic/npc=7800/mekgineer-thermaplugg\" rel=\"noopener noreferrer\" target=\"_blank\">Mekgineer Thermaplugg</a>.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 7800,
+            "name": "Mekgineer Thermaplugg",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=7800/mekgineer-thermaplugg"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -6180,6 +6823,24 @@ const DUNGEONS = [
         "objective": "Retrieve the <a href=\"https://www.wowhead.com/classic/item=9153/rig-blueprints\" rel=\"noopener noreferrer\" target=\"_blank\">Rig Blueprints</a> and <a href=\"https://www.wowhead.com/classic/item=9299/thermapluggs-safe-combination\" rel=\"noopener noreferrer\" target=\"_blank\">Thermaplugg's Safe Combination</a> from <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> and bring them to <a href=\"https://www.wowhead.com/classic/npc=3412/nogg\" rel=\"noopener noreferrer\" target=\"_blank\">Nogg</a> in Orgrimmar.",
         "description": "Gnome technology - two years ago its most common use was as a punch line. Times certainly have changed. Now they've got a new rig built that's better than all our shredder models combined. I need the blueprints!<br><br>Unfortunately, the plans are locked away in a safe near Mekgineer Thermaplugg. To make matters worse, the combination to the safe is only known by Mekgineer Thermaplugg.<br><br>Do whatever you have to do to get that combination. Then crack open that safe and bring back those blueprints!",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9153,
+            "name": "Rig Blueprints",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9153/rig-blueprints",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 9299,
+            "name": "Thermaplugg's Safe Combination",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9299/thermapluggs-safe-combination",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -6257,6 +6918,16 @@ const DUNGEONS = [
         "objective": "Use the <a href=\"https://www.wowhead.com/classic/item=9283/empty-leaden-collection-phial\" rel=\"noopener noreferrer\" target=\"_blank\">Empty Leaden Collection Phial</a> on Irradiated Invaders or Irradiated Pillagers to collect radioactive fallout. Once it is full, take it back to <a href=\"https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt\" rel=\"noopener noreferrer\" target=\"_blank\">Ozzie Togglevolt</a> in Kharanos.",
         "description": "Since the accident, all Gnoarn thinks about or talks about is cleansing <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> of the trogg infestation and finding a cure for the sickness that plagues it.<br><br>Luckily, Razzle and I are close to some kind of cure - either that or the recipe for a really powerful rum. We won't know until we test! Naturally, in order to test our theory, we're going to need a few things; namely, fallout from the irradiated troggs in <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a>. Fill up this phial with the green glow and bring it back!",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9284,
+            "name": "Full Leaden Collection Phial",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9284/full-leaden-collection-phial",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -6310,6 +6981,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt\" rel=\"noopener noreferrer\" target=\"_blank\">Ozzie Togglevolt</a> in Kharanos.",
             "description": "You don't think I was always bald, do you? No! It was the radiation leak in <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> that caused this tragic hair loss. Before that day, I had the only gnomefro in all of Azeroth.<br><br>&lt;<a href=\"https://www.wowhead.com/classic/npc=6569/gnoarn\" rel=\"noopener noreferrer\" target=\"_blank\">Gnoarn</a> shakes his fist in the air.&gt;<br><br>Damn those damned dirty troggs - damn them all!!<br><br>Perhaps it's not too late. We may still be able to save it - the city I mean! Speak to <a href=\"https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt\" rel=\"noopener noreferrer\" target=\"_blank\">Ozzie Togglevolt</a> in Kharanos. He and his partner Razzle are working on a solution.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -6384,6 +7056,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> and bring back <a href=\"https://www.wowhead.com/classic/item=9365/high-potency-radioactive-fallout\" rel=\"noopener noreferrer\" target=\"_blank\">High Potency Radioactive Fallout</a>. Be warned, the fallout is unstable and will collapse rather quickly.<br><br>Ozzie will also require your <a href=\"https://www.wowhead.com/classic/item=9364/heavy-leaden-collection-phial\" rel=\"noopener noreferrer\" target=\"_blank\">Heavy Leaden Collection Phial</a> when the task is complete.",
         "description": "Not only was your sample insufficient in quantity, it was also impure.<br><br>What we require is more green glow. The troggs are obviously not irradiated sufficiently to fulfill our needs. You will have to go into <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> and bring back some radioactive fallout, straight from the tap. I am speaking of the irradiated slimes, lurkers and horrors. Be warned, the containment of this type of fallout is difficult. You may need to make several attempts with the phial until a suitable sampling is recovered.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9365,
+            "name": "High Potency Radioactive Fallout",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9365/high-potency-radioactive-fallout",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -6437,6 +7119,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt\" rel=\"noopener noreferrer\" target=\"_blank\">Ozzie Togglevolt</a> in Kharanos.",
             "description": "You don't think I was always bald, do you? No! It was the radiation leak in <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> that caused this tragic hair loss. Before that day, I had the only gnomefro in all of Azeroth.<br><br>&lt;<a href=\"https://www.wowhead.com/classic/npc=6569/gnoarn\" rel=\"noopener noreferrer\" target=\"_blank\">Gnoarn</a> shakes his fist in the air.&gt;<br><br>Damn those damned dirty troggs - damn them all!!<br><br>Perhaps it's not too late. We may still be able to save it - the city I mean! Speak to <a href=\"https://www.wowhead.com/classic/npc=1268/ozzie-togglevolt\" rel=\"noopener noreferrer\" target=\"_blank\">Ozzie Togglevolt</a> in Kharanos. He and his partner Razzle are working on a solution.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -6511,6 +7194,7 @@ const DUNGEONS = [
         "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=7853/scooty\" rel=\"noopener noreferrer\" target=\"_blank\">Scooty</a> in Booty Bay.",
         "description": "As soon as we got word from Kernobee about the new gnomish rig, <a href=\"https://www.wowhead.com/classic/npc=7853/scooty\" rel=\"noopener noreferrer\" target=\"_blank\">Scooty</a> and I began work on the Transpolyporter 6000: The fastest and most reliable way to <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a>.<br><br>It's finally ready for passengers to board. If you want to give it a try, go to Booty Bay and talk with <a href=\"https://www.wowhead.com/classic/npc=7853/scooty\" rel=\"noopener noreferrer\" target=\"_blank\">Scooty</a> at the wind rider roost. To get to Booty Bay, take the boat from Ratchet.<br><br>Of course, you could always try and make the run to <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> through the dwarf infested mountains of Dun Morogh!",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -6564,6 +7248,24 @@ const DUNGEONS = [
             "objective": "Retrieve the <a href=\"https://www.wowhead.com/classic/item=9153/rig-blueprints\" rel=\"noopener noreferrer\" target=\"_blank\">Rig Blueprints</a> and <a href=\"https://www.wowhead.com/classic/item=9299/thermapluggs-safe-combination\" rel=\"noopener noreferrer\" target=\"_blank\">Thermaplugg's Safe Combination</a> from <a href=\"https://www.wowhead.com/classic/zone=721/gnomeregan\" rel=\"noopener noreferrer\" target=\"_blank\">Gnomeregan</a> and bring them to <a href=\"https://www.wowhead.com/classic/npc=3412/nogg\" rel=\"noopener noreferrer\" target=\"_blank\">Nogg</a> in Orgrimmar.",
             "description": "Gnome technology - two years ago its most common use was as a punch line. Times certainly have changed. Now they've got a new rig built that's better than all our shredder models combined. I need the blueprints!<br><br>Unfortunately, the plans are locked away in a safe near Mekgineer Thermaplugg. To make matters worse, the combination to the safe is only known by Mekgineer Thermaplugg.<br><br>Do whatever you have to do to get that combination. Then crack open that safe and bring back those blueprints!",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 9153,
+                "name": "Rig Blueprints",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=9153/rig-blueprints",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 9299,
+                "name": "Thermaplugg's Safe Combination",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=9299/thermapluggs-safe-combination",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [
               {
@@ -6680,6 +7382,40 @@ const DUNGEONS = [
         "objective": "Grab a <a href=\"https://www.wowhead.com/classic/item=5880/crate-with-holes\" rel=\"noopener noreferrer\" target=\"_blank\">Crate with Holes</a>.<br>Grab a <a href=\"https://www.wowhead.com/classic/item=6684/snufflenose-command-stick\" rel=\"noopener noreferrer\" target=\"_blank\">Snufflenose Command Stick</a>.<br>Grab and read the <a href=\"https://www.wowhead.com/classic/item=5897/snufflenose-owners-manual\" rel=\"noopener noreferrer\" target=\"_blank\">Snufflenose Owner's Manual</a>.<br><br>In <a href=\"https://www.wowhead.com/classic/zone=491/razorfen-kraul\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Kraul</a>, use the <a href=\"https://www.wowhead.com/classic/item=5880/crate-with-holes\" rel=\"noopener noreferrer\" target=\"_blank\">Crate with Holes</a> to summon a Snufflenose Gopher, and use the Command Stick on the gopher to make it search for Tubers.<br><br>Bring 6 <a href=\"https://www.wowhead.com/classic/item=5876/blueleaf-tuber\" rel=\"noopener noreferrer\" target=\"_blank\">Blueleaf Tubers</a>, the <a href=\"https://www.wowhead.com/classic/item=6684/snufflenose-command-stick\" rel=\"noopener noreferrer\" target=\"_blank\">Snufflenose Command Stick</a> and the <a href=\"https://www.wowhead.com/classic/item=5880/crate-with-holes\" rel=\"noopener noreferrer\" target=\"_blank\">Crate with Holes</a> to <a href=\"https://www.wowhead.com/classic/npc=3446/mebok-mizzyrix\" rel=\"noopener noreferrer\" target=\"_blank\">Mebok Mizzyrix</a> in Ratchet.",
         "description": "<a href=\"https://www.wowhead.com/classic/item=5876/blueleaf-tuber\" rel=\"noopener noreferrer\" target=\"_blank\">Blueleaf tubers</a> are a delicacy around the world! But they're rare, very rare. The only place to find them is here in the Barrens, deep in the earth, in <a href=\"https://www.wowhead.com/classic/zone=491/razorfen-kraul\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Kraul</a>.<br><br>And even then, they're impossible to find unless you know just where to look! That's why I've trained these snufflenose gophers to find them for me. They have great noses and can smell a tuber from fifty paces away.<br><br>It won't be easy, but if you get me some tubers I'll pay you handsomely.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5876,
+            "name": "Blueleaf Tuber",
+            "quantity": 6,
+            "url": "https://www.wowhead.com/classic/item=5876/blueleaf-tuber",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 5880,
+            "name": "Crate With Holes",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5880/crate-with-holes",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 5897,
+            "name": "Snufflenose Owner's Manual",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5897/snufflenose-owners-manual",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 6684,
+            "name": "Snufflenose Command Stick",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6684/snufflenose-command-stick",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 6755,
@@ -6745,6 +7481,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=5793/razorflanks-heart\" rel=\"noopener noreferrer\" target=\"_blank\">Razorflank's Heart</a> to <a href=\"https://www.wowhead.com/classic/npc=4451/auld-stonespire\" rel=\"noopener noreferrer\" target=\"_blank\">Auld Stonespire</a> in Thunder Bluff.",
         "description": "Cairne is a noble leader for uniting our people here on Thunder Bluff.<br><br>But I cannot forgive those who drove us from our ancestral lands as easily as some. My people inhabited the southern Barrens for decades. The land was holy to us. But we were driven off by numerous foes.<br><br>A vengeful fate awaits the crone, Charlga Razorflank, who musters a foul army from within <a href=\"https://www.wowhead.com/classic/zone=491/razorfen-kraul\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Kraul</a>.<br><br>Bring me <a href=\"https://www.wowhead.com/classic/item=5793/razorflanks-heart\" rel=\"noopener noreferrer\" target=\"_blank\">Razorflank's heart</a> and I can die in peace.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5793,
+            "name": "Razorflank's Heart",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5793/razorflanks-heart",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -6822,6 +7568,16 @@ const DUNGEONS = [
         "objective": "Bring 1 pile of <a href=\"https://www.wowhead.com/classic/item=5801/kraul-guano\" rel=\"noopener noreferrer\" target=\"_blank\">Kraul Guano</a> to <a href=\"https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell\" rel=\"noopener noreferrer\" target=\"_blank\">Master Apothecary Faranell</a> in the Undercity.",
         "description": "As you can see, we're up to some very.... interesting experiments at the Royal Apothecary Society.<br><br>As the Master here, it is my job to oversee the most ambitious of our alchemical attempts. So much work and so little time!<br><br>You look well traveled for a. Perhaps you can aid me.<br><br>I'm in need of a rare substance. It's foul material; it comes from a rare species of bats only found in the muck-hole known as <a href=\"https://www.wowhead.com/classic/zone=491/razorfen-kraul\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Kraul</a>. Bring to me the guano from the Kraul Bats so we can begin our work...",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5801,
+            "name": "Kraul Guano",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5801/kraul-guano",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -6898,6 +7654,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=5792/razorflanks-medallion\" rel=\"noopener noreferrer\" target=\"_blank\">Razorflank's Medallion</a> to <a href=\"https://www.wowhead.com/classic/npc=4048/falfindel-waywarder\" rel=\"noopener noreferrer\" target=\"_blank\">Falfindel Waywarder</a> in Thalanaar.",
         "description": "Poor Heralath! And this dwarf... Lonebrow. What a brave soul he was.<br><br>We must not let their valiance go for naught. This crone... Charlga Razorflank... must be stopped.<br><br>Surely, infiltrating the Kraul will be perilous. There isn't time to send word to Darnassus., assemble a party to slay the crone.<br><br>Bring me <a href=\"https://www.wowhead.com/classic/item=5792/razorflanks-medallion\" rel=\"noopener noreferrer\" target=\"_blank\">Razorflank's Medallion</a> as proof of demise.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5792,
+            "name": "Razorflank's Medallion",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5792/razorflanks-medallion",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 3041,
@@ -6969,6 +7735,7 @@ const DUNGEONS = [
             "objective": "Read Henrig <a href=\"https://www.wowhead.com/classic/item=5790/lonebrows-journal\" rel=\"noopener noreferrer\" target=\"_blank\">Lonebrow's Journal</a>.",
             "description": "You slowly open the weathered journal of Henrig Lonebrow....",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -7043,6 +7810,7 @@ const DUNGEONS = [
         "objective": "Escort <a href=\"https://www.wowhead.com/classic/npc=4508/willix-the-importer\" rel=\"noopener noreferrer\" target=\"_blank\">Willix the Importer</a> out of <a href=\"https://www.wowhead.com/classic/zone=491/razorfen-kraul\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Kraul</a>.",
         "description": "At last, help has arrived!<br><br>You have no clue how long I've been held prisoner here. I can't remember the last time I saw the outside of this place.<br><br>You see, I am an entrepreneur. Always out for a copper, as they say. I caught wind that Mebok Mizzyrix was paying well for Redleaf Tuber from this here pig pen. I figured it would be an easy in, easy out kind of affair. As you can see, I was a bit wrong!<br><br>Anyway, if you'd be so kind as to help me get out of here, I'll make it worth your while.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [
           {
@@ -7120,6 +7888,16 @@ const DUNGEONS = [
         "objective": "Find and return <a href=\"https://www.wowhead.com/classic/item=5825/treshalas-pendant\" rel=\"noopener noreferrer\" target=\"_blank\">Treshala's Pendant</a> to <a href=\"https://www.wowhead.com/classic/npc=4521/treshala-fallowbrook\" rel=\"noopener noreferrer\" target=\"_blank\">Treshala Fallowbrook</a> in Darnassus.",
         "description": "I have not long to live... so... so... weak.<br><br>...the b-b-brave dwarf, Lonebrow, has been sent to w-w-warn Falfindel...<br><br>But before I... d-d-die...<br><br>...my wife, Treshala... her pendant of bonding to me... stolen... by one of the f-f-foul aggressors...<br><br>Find it p-p-please... and return it to Treshala in Darnassus...<br><br>...along with w-w-word of my lonely... death.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5825,
+            "name": "Treshala's Pendant",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5825/treshalas-pendant",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -7183,6 +7961,7 @@ const DUNGEONS = [
         "objective": "Take the <a href=\"https://www.wowhead.com/classic/item=17008/small-scroll\" rel=\"noopener noreferrer\" target=\"_blank\">Small Scroll</a> to <a href=\"https://www.wowhead.com/classic/npc=2425/varimathras\" rel=\"noopener noreferrer\" target=\"_blank\">Varimathras</a> in the Undercity.",
         "description": "My Lady,<br><br>You know very well what it is we are offering. The opportunity for you to take the Barrens and the lands beyond is a great one. We simply want your aid in return. By aid we mean nothing more than your giving us the freedom to take action in the area.<br><br>Please, allow us to discuss this further. We have great power and are willing to share with those wise enough to join us. I will remain outside <a href=\"https://www.wowhead.com/classic/zone=722/razorfen-downs\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Downs</a> for the time being.<br><br>Best Regards,<br>Ambassador Malcin",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -7273,6 +8052,16 @@ const DUNGEONS = [
         "objective": "Retrieve <a href=\"https://www.wowhead.com/classic/item=5536/mythology-of-the-titans\" rel=\"noopener noreferrer\" target=\"_blank\">Mythology of the Titans</a> from the Monastery and bring it to <a href=\"https://www.wowhead.com/classic/npc=3979/librarian-mae-paledust\" rel=\"noopener noreferrer\" target=\"_blank\">Librarian Mae Paledust</a> in Ironforge.",
         "description": "The future is inevitable! We hurl ourselves towards it like falling raindrops to the Great Sea.<br><br>But perhaps, by studying the past, we can know what to expect and be better prepared for the unknown.<br><br>Before dire troubles fell upon Lordaeron, there was a bastion of knowledge tucked away in the Tirisfal Glades. It is rumored that a book called <a href=\"https://www.wowhead.com/classic/item=5536/mythology-of-the-titans\" rel=\"noopener noreferrer\" target=\"_blank\">Mythology of the Titans</a> was housed in the library of the old Monastery.<br><br>Bring it to me and perhaps together we can unlock the secrets of the past!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5536,
+            "name": "Mythology of the Titans",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5536/mythology-of-the-titans",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 7746,
@@ -7338,6 +8127,36 @@ const DUNGEONS = [
         "objective": "Kill <a href=\"https://www.wowhead.com/classic/npc=3977/high-inquisitor-whitemane\" rel=\"noopener noreferrer\" target=\"_blank\">High Inquisitor Whitemane</a>, <a href=\"https://www.wowhead.com/classic/npc=3976/scarlet-commander-mograine\" rel=\"noopener noreferrer\" target=\"_blank\">Scarlet Commander Mograine</a>, <a href=\"https://www.wowhead.com/classic/npc=3975/herod\" rel=\"noopener noreferrer\" target=\"_blank\">Herod</a>, the Scarlet Champion and <a href=\"https://www.wowhead.com/classic/npc=3974/houndmaster-loksey\" rel=\"noopener noreferrer\" target=\"_blank\">Houndmaster Loksey</a> and then report back to <a href=\"https://www.wowhead.com/classic/npc=3980/raleigh-the-devout\" rel=\"noopener noreferrer\" target=\"_blank\">Raleigh the Devout</a> in Southshore.",
         "description": "I once served the Scarlet Crusade with honor, loyalty and pride. I believed their cause to be a noble one: to rid Azeroth of the undead.<br><br>But as I spent time at the Monastery in Tirisfal Glades I realized that their grasp on reality was slipping. They now think everyone is plagued who doesn't wear the tabard of the Crusade. Innocent men and women were tortured because they were supposedly plagued.<br><br>The Scarlet Crusade must be crushed in the name of the Light. You, must destroy the deranged regime.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 3977,
+            "name": "High Inquisitor Whitemane",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=3977/high-inquisitor-whitemane"
+          },
+          {
+            "type": "npc",
+            "id": 3976,
+            "name": "Scarlet Commander Mograine",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=3976/scarlet-commander-mograine"
+          },
+          {
+            "type": "npc",
+            "id": 3975,
+            "name": "Herod",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=3975/herod"
+          },
+          {
+            "type": "npc",
+            "id": 3974,
+            "name": "Houndmaster Loksey",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=3974/houndmaster-loksey"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -7416,6 +8235,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1182/brother-anton\" rel=\"noopener noreferrer\" target=\"_blank\">Brother Anton</a> in <a href=\"https://www.wowhead.com/classic/zone=405/desolace\" rel=\"noopener noreferrer\" target=\"_blank\">Desolace</a>.",
             "description": "My brother in arms, <a href=\"https://www.wowhead.com/classic/npc=1182/brother-anton\" rel=\"noopener noreferrer\" target=\"_blank\">Brother Anton</a>, heard rumors of an undead infestation in distant Kalimdor, in a land known as <a href=\"https://www.wowhead.com/classic/zone=405/desolace\" rel=\"noopener noreferrer\" target=\"_blank\">Desolace</a>. Anton immediately booked passage to that place, to seek and destroy the undead menace!<br><br>He is looking for those with the bravery and resolve to aid him. If your heart is true, then speak with Anton. He is in <a href=\"https://www.wowhead.com/classic/zone=405/desolace\" rel=\"noopener noreferrer\" target=\"_blank\">Desolace</a>, in the Alliance town of Nijel's Point.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -7479,6 +8299,15 @@ const DUNGEONS = [
             "objective": "Destroy 30 <a href=\"https://www.wowhead.com/classic/npc=11561/undead-ravager\" rel=\"noopener noreferrer\" target=\"_blank\">Undead Ravagers</a>, then return to <a href=\"https://www.wowhead.com/classic/npc=1182/brother-anton\" rel=\"noopener noreferrer\" target=\"_blank\">Brother Anton</a> at Nijel's Point.",
             "description": "I will be frank. We are at war with the Scourge. It is an evil that corrupts our people and infects our land. It must be stopped before it overwhelms us and drags our world into shadow. We of the Scarlet Crusade have sworn to fight the Scourge with body and soul.<br><br>If you are with us, then gather your courage and prove your allegiance--destroy the <a href=\"https://www.wowhead.com/classic/npc=11561/undead-ravager\" rel=\"noopener noreferrer\" target=\"_blank\">undead ravagers</a> of <a href=\"https://www.wowhead.com/classic/zone=405/desolace\" rel=\"noopener noreferrer\" target=\"_blank\">Desolace</a>, in the Valley of Bones to the south.<br><br>Do this, and the Crusade will embrace you.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 11561,
+                "name": "Undead Ravager",
+                "quantity": 30,
+                "url": "https://www.wowhead.com/classic/npc=11561/undead-ravager"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -7542,6 +8371,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/npc=1182/brother-anton\" rel=\"noopener noreferrer\" target=\"_blank\">Brother Anton</a>'s <a href=\"https://www.wowhead.com/classic/item=5539/letter-of-commendation\" rel=\"noopener noreferrer\" target=\"_blank\">Letter of Commendation</a> to <a href=\"https://www.wowhead.com/classic/npc=3980/raleigh-the-devout\" rel=\"noopener noreferrer\" target=\"_blank\">Raleigh the Devout</a> in Southshore.",
             "description": "We of the Scarlet Crusade lay claim to strongholds from Hearthglen to Tirisfal Glades. We are quite proud of our bastions of cleansing throughout Lordaeron.<br><br>You have proven yourself against the undead in <a href=\"https://www.wowhead.com/classic/zone=405/desolace\" rel=\"noopener noreferrer\" target=\"_blank\">Desolace</a>. But the true threat of the plague lies in Lordaeron.<br><br>Travel to the town of Southshore, in the Eastern Kingdoms. Seek out a crusader named <a href=\"https://www.wowhead.com/classic/npc=3980/raleigh-the-devout\" rel=\"noopener noreferrer\" target=\"_blank\">Raleigh the Devout</a>. Give him this <a href=\"https://www.wowhead.com/classic/item=5539/letter-of-commendation\" rel=\"noopener noreferrer\" target=\"_blank\">letter of commendation</a> bearing my seal and he will escort you to a place of honor in our Scarlet Monastery.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -7611,6 +8441,16 @@ const DUNGEONS = [
         "objective": "Return <a href=\"https://www.wowhead.com/classic/npc=3981/vorrel-sengutz\" rel=\"noopener noreferrer\" target=\"_blank\">Vorrel Sengutz</a>'s wedding ring to <a href=\"https://www.wowhead.com/classic/npc=3982/monika-sengutz\" rel=\"noopener noreferrer\" target=\"_blank\">Monika Sengutz</a> in Tarren Mill.",
         "description": "Even though my will is free, I can serve the Dark Lady no more. I feel my time on Azeroth has come to an end. My life force is shattered.<br><br>Interrogator Vishas did this to me! Tortured me for weeks! Took my wedding ring and gave it to his wife. The bastard!<br><br>Revenge... I want revenge!<br><br>The pompous fool bragged about his precious wife, Nancy, who lived along Lake Lordamere. Track the wench down, slay her and return my wedding ring to my wife, Monika in Tarren Mill.<br><br>Heed my last wishes....",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5538,
+            "name": "Vorrel's Wedding Ring",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5538/vorrels-wedding-ring",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 7751,
@@ -7689,6 +8529,16 @@ const DUNGEONS = [
         "objective": "Retrieve the <a href=\"https://www.wowhead.com/classic/item=5535/compendium-of-the-fallen\" rel=\"noopener noreferrer\" target=\"_blank\">Compendium of the Fallen</a> from the Monastery in Tirisfal Glades and return to <a href=\"https://www.wowhead.com/classic/npc=3978/sage-truthseeker\" rel=\"noopener noreferrer\" target=\"_blank\">Sage Truthseeker</a> in Thunder Bluff.",
         "description": "The Earthen Ring had pure intentions towards our plagued brethren. But who is to know the motivations of those whispering in the ears of the Elder Council?<br><br>The Forsaken whom we have allied with have a history wrought with deceit. Too hasty was our pact. Perhaps Cairne would have been wise to heed the warnings from Orgrimmar.<br><br>Deep within the <a href=\"https://www.wowhead.com/classic/zone=796/scarlet-monastery\" rel=\"noopener noreferrer\" target=\"_blank\">Scarlet Monastery</a> lies the <a href=\"https://www.wowhead.com/classic/item=5535/compendium-of-the-fallen\" rel=\"noopener noreferrer\" target=\"_blank\">Compendium of the Fallen</a>, guarded by crazed human zealots. Their method is forged from insanity but their research might prove useful.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5535,
+            "name": "Compendium of the Fallen",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5535/compendium-of-the-fallen",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -7766,6 +8616,16 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell\" rel=\"noopener noreferrer\" target=\"_blank\">Master Apothecary Faranell</a> in the Undercity wants 20 <a href=\"https://www.wowhead.com/classic/item=5805/heart-of-zeal\" rel=\"noopener noreferrer\" target=\"_blank\">Hearts of Zeal</a>.",
         "description": "Why do I need a rare type of guano, you might ask. Well, for this experiment I want to see what effect two diametrically opposed chemical substances can have on each other, especially when both are combined with an ever-toxic agent to ensure the most... ghastly results.<br><br>In the northeastern peaks of Tirisfal Glades lies the <a href=\"https://www.wowhead.com/classic/zone=796/scarlet-monastery\" rel=\"noopener noreferrer\" target=\"_blank\">Scarlet Monastery</a>. There the crazed disciples of the Scarlet Crusade congregate. Slay them and bring me their zealous hearts.<br><br>Our concoction will be most wicked!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5805,
+            "name": "Heart of Zeal",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/item=5805/heart-of-zeal",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -7819,6 +8679,16 @@ const DUNGEONS = [
             "objective": "Bring 1 pile of <a href=\"https://www.wowhead.com/classic/item=5801/kraul-guano\" rel=\"noopener noreferrer\" target=\"_blank\">Kraul Guano</a> to <a href=\"https://www.wowhead.com/classic/npc=2055/master-apothecary-faranell\" rel=\"noopener noreferrer\" target=\"_blank\">Master Apothecary Faranell</a> in the Undercity.",
             "description": "As you can see, we're up to some very.... interesting experiments at the Royal Apothecary Society.<br><br>As the Master here, it is my job to oversee the most ambitious of our alchemical attempts. So much work and so little time!<br><br>You look well traveled for a. Perhaps you can aid me.<br><br>I'm in need of a rare substance. It's foul material; it comes from a rare species of bats only found in the muck-hole known as <a href=\"https://www.wowhead.com/classic/zone=491/razorfen-kraul\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Kraul</a>. Bring to me the guano from the Kraul Bats so we can begin our work...",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 5801,
+                "name": "Kraul Guano",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=5801/kraul-guano",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -7893,6 +8763,36 @@ const DUNGEONS = [
         "objective": "Kill <a href=\"https://www.wowhead.com/classic/npc=3977/high-inquisitor-whitemane\" rel=\"noopener noreferrer\" target=\"_blank\">High Inquisitor Whitemane</a>, <a href=\"https://www.wowhead.com/classic/npc=3976/scarlet-commander-mograine\" rel=\"noopener noreferrer\" target=\"_blank\">Scarlet Commander Mograine</a>, <a href=\"https://www.wowhead.com/classic/npc=3975/herod\" rel=\"noopener noreferrer\" target=\"_blank\">Herod</a>, the Scarlet Champion and <a href=\"https://www.wowhead.com/classic/npc=3974/houndmaster-loksey\" rel=\"noopener noreferrer\" target=\"_blank\">Houndmaster Loksey</a> and then report back to <a href=\"https://www.wowhead.com/classic/npc=2425/varimathras\" rel=\"noopener noreferrer\" target=\"_blank\">Varimathras</a> in the Undercity.",
         "description": "Whilst the Dark Lady tends to the pressing issue of the Lich King's advance to the north, I am seeing to it that matters closer to home are being taken care of accordingly.<br><br>No doubt, the human pests who call themselves the Scarlet Crusade are proving to be the sharpest thorn in our side domestically. Tirisfal Glades is literally crawling with the little red ants.<br><br>Travel to the Monastery, and lay waste to <a href=\"https://www.wowhead.com/classic/npc=3977/high-inquisitor-whitemane\" rel=\"noopener noreferrer\" target=\"_blank\">High Inquisitor Whitemane</a> and her top lieutenants.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 3977,
+            "name": "High Inquisitor Whitemane",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=3977/high-inquisitor-whitemane"
+          },
+          {
+            "type": "npc",
+            "id": 3976,
+            "name": "Scarlet Commander Mograine",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=3976/scarlet-commander-mograine"
+          },
+          {
+            "type": "npc",
+            "id": 3975,
+            "name": "Herod",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=3975/herod"
+          },
+          {
+            "type": "npc",
+            "id": 3974,
+            "name": "Houndmaster Loksey",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=3974/houndmaster-loksey"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -7970,6 +8870,16 @@ const DUNGEONS = [
         "objective": "Find The <a href=\"https://www.wowhead.com/classic/item=5861/beginnings-of-the-undead-threat\" rel=\"noopener noreferrer\" target=\"_blank\">Beginnings of the Undead Threat</a>, and return it to <a href=\"https://www.wowhead.com/classic/npc=4488/parqual-fintallas\" rel=\"noopener noreferrer\" target=\"_blank\">Parqual Fintallas</a> in Undercity.",
         "description": "I will tell you what you must seek, and I will even ask you my question, but not because you wish to prove yourself. Knowledge is far more important than strength. Even as others seem to pass you by in ability, your knowledge of the world will be more valuable.<br><br>Go to the Monastery in the north of Tirisfal Glades. In the library there, a book called <a href=\"https://www.wowhead.com/classic/item=5861/beginnings-of-the-undead-threat\" rel=\"noopener noreferrer\" target=\"_blank\">Beginnings of the Undead Threat</a> resides. It was used by the now-corrupt paladins there to train them to fight my kind.<br><br>Bring it to me.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5861,
+            "name": "Beginnings of the Undead Threat",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5861/beginnings-of-the-undead-threat",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -8023,6 +8933,7 @@ const DUNGEONS = [
             "objective": "If you have faith, leap from the planks overlooking <a href=\"https://www.wowhead.com/classic/zone=400/thousand-needles\" rel=\"noopener noreferrer\" target=\"_blank\">Thousand Needles</a>.",
             "description": "So, you have sought me out, or perhaps destiny brings you to me? No matter. You are here now, and so your journey will begin anew.<br><br>Many facets make up a being: the spirit, the body, the mind. Some of these can be measured by a culture's traditions. Others we can only hope exist within ourselves. If you agree, I shall test some of the facets within you.<br><br>If you pass, then you shall become stronger. If you fail, then you will realize the vastness of the Nether.<br><br>The first is a Test of Faith.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -8086,6 +8997,24 @@ const DUNGEONS = [
             "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=5843/grenkas-claw\" rel=\"noopener noreferrer\" target=\"_blank\">Grenka's Claw</a> to <a href=\"https://www.wowhead.com/classic/npc=2986/dorn-plainstalker\" rel=\"noopener noreferrer\" target=\"_blank\">Dorn Plainstalker</a> in <a href=\"https://www.wowhead.com/classic/zone=400/thousand-needles\" rel=\"noopener noreferrer\" target=\"_blank\">Thousand Needles</a>.",
             "description": "I'm pleased to see your courage remains steadfast in light of what you've already done. Since your faith is intact, the time has come to test your body.<br><br>First is a test of endurance. Go with friends to the Roguefeather Den west of Freewind Post. Make your way to the depths of their lair and destroy their foodstuffs. By then you should have provoked their fury, and if you are able to survive long enough, Grenka Bloodscreech herself will come for you--kill her and bring me her claw to complete your test.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 5843,
+                "name": "Grenka's Claw",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=5843/grenkas-claw",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 5845,
+                "name": "Flank of Meat",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=5845/flank-of-meat",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -8149,6 +9078,16 @@ const DUNGEONS = [
             "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=5844/fragments-of-rokalim\" rel=\"noopener noreferrer\" target=\"_blank\">Fragments of Rok'Alim</a> to <a href=\"https://www.wowhead.com/classic/npc=2986/dorn-plainstalker\" rel=\"noopener noreferrer\" target=\"_blank\">Dorn Plainstalker</a> in <a href=\"https://www.wowhead.com/classic/zone=400/thousand-needles\" rel=\"noopener noreferrer\" target=\"_blank\">Thousand Needles</a>.",
             "description": "During the time of the Old Gods, elementals inhabited much of this world. They worshipped the Old Gods, and the Gods, through their power, kept the elementals bound to this world. When the Old Gods were banished, the elementals faded from our world and now only return at the bidding of powerful mages.<br><br>There are exceptions though. Some elementals were powerful enough to remain here on their own. One such elemental is Rok'Alim.<br><br>To test your strength, find Rok'Alim in <a href=\"https://www.wowhead.com/classic/zone=400/thousand-needles\" rel=\"noopener noreferrer\" target=\"_blank\">Thousand Needles</a> and slay him.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 5844,
+                "name": "Fragments of Rok'Alim",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=5844/fragments-of-rokalim",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -8212,6 +9151,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=4489/braug-dimspirit\" rel=\"noopener noreferrer\" target=\"_blank\">Braug Dimspirit</a> near the entrance to Talondeep Path in Stonetalon Mountains.",
             "description": "Your time with me is just about finished. I am knowledgeable, but the Test of Lore is not mine to give. There are lessons to be learned and places to visit that others claim domain over.<br><br>If you are prepared, then seek out <a href=\"https://www.wowhead.com/classic/npc=4489/braug-dimspirit\" rel=\"noopener noreferrer\" target=\"_blank\">Braug Dimspirit</a>--he is a shaman of great wisdom. He will test you further, so heed his words.<br><br>When you are ready, find the tunnel that connects the Stonetalon Mountains with Ashenvale: Braug dwells near there. And be careful, the night elves may wish to impede your test.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -8275,6 +9215,16 @@ const DUNGEONS = [
             "objective": "Find the <a href=\"https://www.wowhead.com/classic/item=5860/legacy-of-the-aspects\" rel=\"noopener noreferrer\" target=\"_blank\">Legacy of the Aspects</a> and return it to <a href=\"https://www.wowhead.com/classic/npc=4489/braug-dimspirit\" rel=\"noopener noreferrer\" target=\"_blank\">Braug Dimspirit</a> near the entrance to Talondeep Path in Stonetalon Mountains.",
             "description": "You have passed Dorn's tests, and now you seek to pass your next trial. Very good. But up until now, your challenges have been childish. It is easy to test your body--your mind is another matter completely.<br><br>I shall explain it simply: find the book I name, study it, and answer my question about its contents.<br><br>What book, you must be asking? The <a href=\"https://www.wowhead.com/classic/item=5860/legacy-of-the-aspects\" rel=\"noopener noreferrer\" target=\"_blank\">Legacy of the Aspects</a>. It can be found at the bottom of Dor'danil in southern Ashenvale, protected by the dead druids and their slayers.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 5860,
+                "name": "Legacy of the Aspects",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=5860/legacy-of-the-aspects",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -8338,6 +9288,7 @@ const DUNGEONS = [
             "objective": "Answer <a href=\"https://www.wowhead.com/classic/npc=4489/braug-dimspirit\" rel=\"noopener noreferrer\" target=\"_blank\">Braug Dimspirit</a>'s question successfully and then speak to him again. He will remain in Stonetalon Mountains when you are ready.",
             "description": "You have brought me the book, and now it is time for your question. Are you ready?<br><br>Time is not an issue, so do not feel pressured. You may take as long as you like to answer.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -8401,6 +9352,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=4488/parqual-fintallas\" rel=\"noopener noreferrer\" target=\"_blank\">Parqual Fintallas</a> in Undercity.",
             "description": "Well done. You have passed the first portion of the Test of Lore, but there is still another question to be answered. But that question is not mine to ask.<br><br>Seek out <a href=\"https://www.wowhead.com/classic/npc=4488/parqual-fintallas\" rel=\"noopener noreferrer\" target=\"_blank\">Parqual Fintallas</a> in Lordaeron City. He was a great historian for the humans before the Plague overtook him. Now he continues to seek enlightenment, but of a different nature.<br><br>He will have another requirement of you before he asks you anything, but you have done masterfully thus far--I'm sure you will overcome his obstacle.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -8500,6 +9452,16 @@ const DUNGEONS = [
         "objective": "Bring the book <a href=\"https://www.wowhead.com/classic/item=7274/rituals-of-power\" rel=\"noopener noreferrer\" target=\"_blank\">Rituals of Power</a> to <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a> in Dustwallow Marsh.",
         "description": "Hm... now that I think about it, I don't have my book! You see, I had some gambling debts and to pay them off I sold the last copy of <a href=\"https://www.wowhead.com/classic/item=7274/rituals-of-power\" rel=\"noopener noreferrer\" target=\"_blank\">Rituals of Power</a> to a member of the clergy....<br><br>A member of the Scarlet Brotherhood. He must have taken it to their library in the Scarlet Monastery in Tirisfal Glades!<br><br>If you want that book, then you'll have to go to the monastery to find it. And sorry about all the trouble. I'm not myself these days...",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 7274,
+            "name": "Rituals of Power",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=7274/rituals-of-power",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -8583,6 +9545,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a>.",
             "description": "Now it is time for you to earn your mage's wand. To begin this quest, speak with the human hermit <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a> in Dustwallow Marsh. You will find her shack deep in the marsh, west of Theramore.<br><br>Speak with her, for her knowledge is vast. You will find <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a>'s cottage west of Theramore, and just north of the Stonemaul Ruins.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -8643,6 +9606,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6548/magus-tirth\" rel=\"noopener noreferrer\" target=\"_blank\">Magus Tirth</a> in the Shimmering Flats.",
             "description": "To make your wand, there are key passages in a certain book that I must read. The book is called Rituals of Power, written by the <a href=\"https://www.wowhead.com/classic/npc=6548/magus-tirth\" rel=\"noopener noreferrer\" target=\"_blank\">Magus Tirth</a>.<br><br>I do not have a copy of his book, and none of the world's great libraries possess it. So you must speak with Tirth and gain it from him.<br><br>Good luck. Tirth used to be a great mage and scholar, but now he spends his time at the gnome and goblin races in the Shimmering Flats, drinking and gambling.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -8714,6 +9678,7 @@ const DUNGEONS = [
             "objective": "Find the phrase to Tirth's strongbox, then return to Tirth.",
             "description": "I can help you with the book, but first you have to help me!<br><br>The tome you seek is in my magically locked strongbox. To open it a special phrase must be uttered, and I can't remember the phrase! Normally my assistant helps me remember these things but he's nowhere to be found.<br><br>If you want my book, then find my apprentice! Ask around the race track--if you're lucky then someone has seen him. Either drag him back here, or at least get my magic phrase from him so we can open my box!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -8827,6 +9792,29 @@ const DUNGEONS = [
         "objective": "Kill 8 <a href=\"https://www.wowhead.com/classic/npc=7873/razorfen-battleguard\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Battleguard</a>, 8 <a href=\"https://www.wowhead.com/classic/npc=7874/razorfen-thornweaver\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Thornweavers</a>, and 8 <a href=\"https://www.wowhead.com/classic/npc=7872/deaths-head-cultist\" rel=\"noopener noreferrer\" target=\"_blank\">Death's Head Cultists</a> and return to <a href=\"https://www.wowhead.com/classic/npc=12866/myriam-moonsinger\" rel=\"noopener noreferrer\" target=\"_blank\">Myriam Moonsinger</a> near the entrance to <a href=\"https://www.wowhead.com/classic/zone=722/razorfen-downs\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Downs</a>.",
         "description": "The Forsaken do not pass on their... illness... from what I have seen. This diplomat seems to be granting undeath to would-be followers. I am beginning to think he is one of the Scourge.<br><br>For now, my concern is not with him though, it's with the growing ranks around him. They creep from the shadows daily, almost begging him for more power.<br><br>I'm not powerful enough to fight them on my own. What do you say? Are you up for some hunting?",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 7873,
+            "name": "Razorfen Battleguard",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/npc=7873/razorfen-battleguard"
+          },
+          {
+            "type": "npc",
+            "id": 7874,
+            "name": "Razorfen Thornweaver",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/npc=7874/razorfen-thornweaver"
+          },
+          {
+            "type": "npc",
+            "id": 7872,
+            "name": "Death's Head Cultist",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/npc=7872/deaths-head-cultist"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -8885,6 +9873,15 @@ const DUNGEONS = [
         "objective": "Archbishop Bendictus wants you to slay <a href=\"https://www.wowhead.com/classic/npc=7358/amnennar-the-coldbringer\" rel=\"noopener noreferrer\" target=\"_blank\">Amnennar the Coldbringer</a> in <a href=\"https://www.wowhead.com/classic/zone=722/razorfen-downs\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Downs</a>.",
         "description": "The Scourge is a persistent threat to the Alliance, a fact I am sure you know quite well. Recently, we have come across some very peculiar findings.<br><br>In the Barrens lies a horrid tangle of briars called <a href=\"https://www.wowhead.com/classic/zone=722/razorfen-downs\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Downs</a>. While once it was the home of simple quilboar, now it has become apparent that a pact was made with the Scourge, creating creatures far worse... They are now ruled by the lich, <a href=\"https://www.wowhead.com/classic/npc=7358/amnennar-the-coldbringer\" rel=\"noopener noreferrer\" target=\"_blank\">Amnennar the Coldbringer</a>.<br><br>Align yourself with the Light; put an end to this evil union.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 7358,
+            "name": "Amnennar the Coldbringer",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=7358/amnennar-the-coldbringer"
+          }
+        ],
         "rewards": [
           {
             "id": 10823,
@@ -8956,6 +9953,16 @@ const DUNGEONS = [
         "objective": "<a href=\"https://www.wowhead.com/classic/npc=2308/andrew-brownell\" rel=\"noopener noreferrer\" target=\"_blank\">Andrew Brownell</a> wants you to kill Amnennar the Coldbringer and return his skull.",
         "description": "In the Barrens lies a horrid mess of tangled vines called <a href=\"https://www.wowhead.com/classic/zone=722/razorfen-downs\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Downs</a>. While our first observations of this place revealed little threat, our recent findings are much more serious...<br><br>The quilboar of <a href=\"https://www.wowhead.com/classic/zone=722/razorfen-downs\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Downs</a> have aligned themselves with the Scourge. A Lich named Amnennar the Coldbringer rules them now, using the power of his massive consciousness to control their every move.<br><br>Amnennar has a direct telepathic link to Ner'zhul; we must sever this bond. An end must come to the Coldbringer.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 10420,
+            "name": "Skull of the Coldbringer",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=10420/skull-of-the-coldbringer",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 10823,
@@ -9027,6 +10034,7 @@ const DUNGEONS = [
         "objective": "Escort <a href=\"https://www.wowhead.com/classic/npc=8516/belnistrasz\" rel=\"noopener noreferrer\" target=\"_blank\">Belnistrasz</a> to the Quilboar's idol in <a href=\"https://www.wowhead.com/classic/zone=722/razorfen-downs\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Downs</a>.<br><br>Protect <a href=\"https://www.wowhead.com/classic/npc=8516/belnistrasz\" rel=\"noopener noreferrer\" target=\"_blank\">Belnistrasz</a> while he performs the ritual to shut down the idol.",
         "description": "Near the entrance is an idol that functions as a macabre oven for the Quilboar; the beasts... they literally consume their abductees from the Barrens. I can shut down the idol and bind them from using it again, but I need your aid in doing so. My plan: escort me to the idol. Once we arrive, I'll commence the ritual. I'll barely be able to communicate with you, let alone defend myself. Protect me while I shut down the idol. If they take me down, then it's all over for us.<br><br>Are you with me?!",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 10710,
@@ -9097,6 +10105,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=17009/ambassador-malcins-head\" rel=\"noopener noreferrer\" target=\"_blank\">Ambassador Malcin's Head</a> to <a href=\"https://www.wowhead.com/classic/npc=2425/varimathras\" rel=\"noopener noreferrer\" target=\"_blank\">Varimathras</a> in the Undercity.",
         "description": "Malcin claims he is outside <a href=\"https://www.wowhead.com/classic/zone=722/razorfen-downs\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Downs</a>. This ambassador must be slain--his mission a failure in the eyes of the Lich King.<br><br>His presence there does explain much of what we've discovered about the area--some of the quilboar have grown frightfully powerful while showing signs of the Plague in their own way. Truly that must be a sign of some sort of deal they've struck.<br><br>Find Malcin and slay him. Return to me after the deed is done.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 17009,
+            "name": "Ambassador Malcin's Head",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=17009/ambassador-malcins-head",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -9161,6 +10179,7 @@ const DUNGEONS = [
             "objective": "Take the <a href=\"https://www.wowhead.com/classic/item=17008/small-scroll\" rel=\"noopener noreferrer\" target=\"_blank\">Small Scroll</a> to <a href=\"https://www.wowhead.com/classic/npc=2425/varimathras\" rel=\"noopener noreferrer\" target=\"_blank\">Varimathras</a> in the Undercity.",
             "description": "My Lady,<br><br>You know very well what it is we are offering. The opportunity for you to take the Barrens and the lands beyond is a great one. We simply want your aid in return. By aid we mean nothing more than your giving us the freedom to take action in the area.<br><br>Please, allow us to discuss this further. We have great power and are willing to share with those wise enough to join us. I will remain outside <a href=\"https://www.wowhead.com/classic/zone=722/razorfen-downs\" rel=\"noopener noreferrer\" target=\"_blank\">Razorfen Downs</a> for the time being.<br><br>Best Regards,<br>Ambassador Malcin",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -9235,6 +10254,7 @@ const DUNGEONS = [
         "objective": "If you agree to aid <a href=\"https://www.wowhead.com/classic/npc=8516/belnistrasz\" rel=\"noopener noreferrer\" target=\"_blank\">Belnistrasz</a>, speak with him again and hand the Oathstone he gave you back to him.",
         "description": "Outstanding! My name is <a href=\"https://www.wowhead.com/classic/npc=8516/belnistrasz\" rel=\"noopener noreferrer\" target=\"_blank\">Belnistrasz</a>, and I thank you for rescuing me. I had given myself up for dead... or worse, as a meal for these Scourge-infested vermin. Yes - I said Scourge all right; they've brokered some sort of deal with the Quilboar here, and this nightmare is a result.<br><br>Listen... rather than just flee, I want to make a difference for all of our sakes. Would you be up to helping me out to that end? It's probably dangerous, but you seem to be the type not to worry about that too much.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -9312,6 +10332,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=4631/tablet-of-ryuneh\" rel=\"noopener noreferrer\" target=\"_blank\">Tablet of Ryun'eh</a> to <a href=\"https://www.wowhead.com/classic/npc=2785/theldurin-the-lost\" rel=\"noopener noreferrer\" target=\"_blank\">Theldurin the Lost</a>.",
         "description": "Oh my! Oh my! There is a doom approaching. Mark me! A doom!<br><br>No, I cannot speak of it...cannot utter their names or they may hear me! But if we learn, yes, if we learn more of them...then maybe we can learn how to foil them!<br><br>Maybe.<br><br>Go into <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>. No! I said it! You must find...find the tablet of...Ryun'eh. Yes, find it! And don't make me speak that name again!<br><br>It is deep in that place, in an ancient chest. That's where it hides...in a chest crafted before the works of any dwarf.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 4631,
+            "name": "Tablet of Ryun'eh",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=4631/tablet-of-ryuneh",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 4746,
@@ -9456,6 +10486,24 @@ const DUNGEONS = [
         "objective": "Bring 8 <a href=\"https://www.wowhead.com/classic/item=8009/dentrium-power-stone\" rel=\"noopener noreferrer\" target=\"_blank\">Dentrium Power Stones</a> and 8 <a href=\"https://www.wowhead.com/classic/item=8052/analleum-power-stone\" rel=\"noopener noreferrer\" target=\"_blank\">An'Alleum Power Stones</a> to <a href=\"https://www.wowhead.com/classic/npc=2817/rigglefuzz\" rel=\"noopener noreferrer\" target=\"_blank\">Rigglefuzz</a> in the Badlands.",
         "description": "A while ago, I had an incident with the Shadowforge Dwarves. They brought me to Angor Fortress to study two types of strange stones from <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>. I discovered that the stones were sustained, stable power sources if treated correctly. It's amazing the things one can find in that old dig site!<br><br>Anyway, after I told them the secret of the stones they kicked me out of Angor Fortress and began digging for more in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>.<br><br>I want those stones for myself! Bring me both types and I'll pay you plenty!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 8009,
+            "name": "Dentrium Power Stone",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/item=8009/dentrium-power-stone",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 8052,
+            "name": "An'Alleum Power Stone",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/item=8052/analleum-power-stone",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -9533,6 +10581,16 @@ const DUNGEONS = [
         "objective": "Get <a href=\"https://www.wowhead.com/classic/npc=6294/krom-stoutarm\" rel=\"noopener noreferrer\" target=\"_blank\">Krom Stoutarm</a>'s treasured possession from his chest in the North Common Hall of <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>, and bring it to him in Ironforge.",
         "description": "I had myself a fine job as a digger at the <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> excavation site in the Badlands... that is until those blasted troggs showed up. I escaped with my hide barely intact, and nothing else. In the chaos, I left my most treasured possession. It's safe from the troggs in my chest, sure, but it's right in the thick of 'em.<br><br>I'd be in your debt, both in honor and coin, if you could fetch it for me! A chest with my name on it is at the end of the North Common Hall. That's the one you need to get in.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 8027,
+            "name": "Krom Stoutarm's Treasure",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=8027/krom-stoutarms-treasure",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -9591,6 +10649,16 @@ const DUNGEONS = [
         "objective": "Get <a href=\"https://www.wowhead.com/classic/npc=5651/patrick-garrett\" rel=\"noopener noreferrer\" target=\"_blank\">Patrick Garrett</a>'s family treasure from their family chest in the South Common Hall of <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>, and bring it to him in the Undercity.",
         "description": "Sweeping the bat pens with this broom is not befitting a Garrett! I've earned a little coin from this accursed job, and I'm willing to spend it on you to better my station.<br><br>The Garrett family weapon of choice is locked away in our chest in the South Common Hall of <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> from when we Garretts toiled there as diggers. Without it, I will be stuck here forever - literally - sweeping up after these infernal bats.<br><br>Reclaim my family's treasure and bring it to me! Help me restore my birthright!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 8026,
+            "name": "Garrett Family Treasure",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=8026/garrett-family-treasure",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -9649,6 +10717,16 @@ const DUNGEONS = [
         "objective": "Bring 4 <a href=\"https://www.wowhead.com/classic/item=4610/carved-stone-urn\" rel=\"noopener noreferrer\" target=\"_blank\">Carved Stone Urns</a> to <a href=\"https://www.wowhead.com/classic/npc=1344/prospector-ironband\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Ironband</a> in Loch Modan.",
         "description": "The last report I received from Agmond is troubling, more so now that he's dead! He mentioned that his diggers uncovered \"ancient urns\" at the dig site outside <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>. I fear that the urns he found at that site incited the troggs, just as did the idols I found here.<br><br>I need you to get those urns for our studies. Go to the <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> site, gather the urns, then return to me.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 4610,
+            "name": "Carved Stone Urn",
+            "quantity": 4,
+            "url": "https://www.wowhead.com/classic/item=4610/carved-stone-urn",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 4980,
@@ -9709,6 +10787,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1344/prospector-ironband\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Ironband</a> at Ironband's Excavation Site in Loch Modan.",
             "description": ". I received reports from <a href=\"https://www.wowhead.com/classic/npc=1344/prospector-ironband\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Ironband</a> at his excavation site in Loch Modan--he needs some legwork done concerning another of our excavations.<br><br>I don't have more details than that, but if you want to stretch your legs then go speak with Ironband.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -9772,6 +10851,7 @@ const DUNGEONS = [
             "objective": "Find Agmond.",
             "description": "Prospector Agmond was in charge of our excavation sites in the <a href=\"https://www.wowhead.com/classic/zone=3/badlands\" rel=\"noopener noreferrer\" target=\"_blank\">Badlands</a>, to the southwest. I say \"was\" because...well, I haven't heard from him in weeks. I need you to find Agmond so I can get his report.<br><br>Last I heard Agmond was at the southernmost dig site in the <a href=\"https://www.wowhead.com/classic/zone=3/badlands\" rel=\"noopener noreferrer\" target=\"_blank\">Badlands</a>--a tiny operation past the Angor Fortress. I'd start your search for him there.",
             "shareable": true,
+            "requirements": [],
             "rewards": [
               {
                 "id": 4982,
@@ -9854,6 +10934,22 @@ const DUNGEONS = [
             "objective": "Slay Agmond's killer, <a href=\"https://www.wowhead.com/classic/npc=2945/murdaloc\" rel=\"noopener noreferrer\" target=\"_blank\">Murdaloc</a>.<br><br>Slay 12 <a href=\"https://www.wowhead.com/classic/npc=2893/stonevault-bonesnapper\" rel=\"noopener noreferrer\" target=\"_blank\">Stonevault Bonesnappers</a>.<br><br>Report to <a href=\"https://www.wowhead.com/classic/npc=1344/prospector-ironband\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Ironband</a> in Loch Modan.",
             "description": "Agmond's tracks lead from the west. It is easy to tell from the bloody smears across rock and sand that the dwarf crawled some distance.<br><br>And here he died.<br><br>Upon close inspection, the word \"<a href=\"https://www.wowhead.com/classic/npc=2945/murdaloc\" rel=\"noopener noreferrer\" target=\"_blank\">Murdaloc</a>\" is roughly scrawled in a patch of <a href=\"https://www.wowhead.com/classic/zone=3/badlands\" rel=\"noopener noreferrer\" target=\"_blank\">Badlands</a> sandstone.<br><br>Scrawled next to Agmond's dead hand.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 2945,
+                "name": "Murdaloc",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=2945/murdaloc"
+              },
+              {
+                "type": "npc",
+                "id": 2893,
+                "name": "Stonevault Bonesnapper",
+                "quantity": 12,
+                "url": "https://www.wowhead.com/classic/npc=2893/stonevault-bonesnapper"
+              }
+            ],
             "rewards": [
               {
                 "id": 4983,
@@ -9935,6 +11031,16 @@ const DUNGEONS = [
         "objective": "Find <a href=\"https://www.wowhead.com/classic/item=4635/hammertoes-amulet\" rel=\"noopener noreferrer\" target=\"_blank\">Hammertoe's Amulet</a> and return it to him in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>.",
         "description": "Ye're brave...... to come into <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> fer me.<br><br>If ye're really here to help... ol' Hammertoe, then...... you'll need to find... me amulet.<br><br>Deepshadow's got it... Magregan Deepshadow. He's 'round here... in the ruins fer sure. That amulet'll lead 'em...... right to the scrolls if he ain't stopped. It's up to you. Please... get that amulet.<br><br>The scrolls will surely help the Dark Irons create even more powerful golems. I just know it. I can feel it in me bones.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 4635,
+            "name": "Hammertoe's Amulet",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=4635/hammertoes-amulet",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -9988,6 +11094,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=2910/prospector-ryedol\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Ryedol</a> and let him know Hammertoe Grez is alive.",
             "description": "\"Ryedol,<br>They're taking me to Uldaman. Send help.<br>-Hammertoe\"",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10051,6 +11158,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=2909/hammertoe-grez\" rel=\"noopener noreferrer\" target=\"_blank\">Hammertoe Grez</a> in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>.",
             "description": "can ye find him? Can you find Hammertoe in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>?<br><br>If those dirty Shadowforge are holdin' him hostage to figure out what he knows about the titan excavations, then all of Ironforge could be in huge trouble.<br><br>For a long time now those Dark Irons have been lookin' for magics to make more powerful golems. Hammertoe was doin' the same, of course, but only to stop them.<br><br>They're probably keepin' him alive until they learn what he knows.Ye've got to hurry if you're gonna save him!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10150,6 +11258,7 @@ const DUNGEONS = [
         "objective": "Read <a href=\"https://www.wowhead.com/classic/npc=6906/baelog\" rel=\"noopener noreferrer\" target=\"_blank\">Baelog</a>'s Journal, explore the hidden chamber, then report to <a href=\"https://www.wowhead.com/classic/npc=1356/prospector-stormpike\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Stormpike</a>.",
         "description": "Now for the task at hand.<br><br>There is a secret chamber, the Chamber of Khaz'mul, that must be explored. The problem is that the chamber's behind a huge, locked door! It's a lucky thing I know how to open it.<br><br>I've described everything in my journal, here on the table. My band and I are stuck here for now... so you, must find the chamber of Khaz'mul for us!<br><br>Read my journal, explore the chamber, then report to <a href=\"https://www.wowhead.com/classic/npc=1356/prospector-stormpike\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Stormpike</a> at the Explorers' League in Ironforge.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [
           {
@@ -10216,6 +11325,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=6906/baelog\" rel=\"noopener noreferrer\" target=\"_blank\">Baelog</a> in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>.",
             "description": "The dig site at <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> wasn't always overrun. We Ironforge dwarves used to control the area, but... that was before the troggs came. They came so fast and in such numbers that not even dwarven might could stop them!<br><br>In fact, their attack was so sudden that I fear some of our people may be trapped behind enemy lines.<br><br>My friend <a href=\"https://www.wowhead.com/classic/npc=6906/baelog\" rel=\"noopener noreferrer\" target=\"_blank\">Baelog</a> led a small band of dwarves deep within the site just before the troggs showed up. If he and his company live, then I want you to find them.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10290,6 +11400,16 @@ const DUNGEONS = [
         "objective": "Find the <a href=\"https://www.wowhead.com/classic/item=5824/tablet-of-will\" rel=\"noopener noreferrer\" target=\"_blank\">Tablet of Will</a>, and return them to <a href=\"https://www.wowhead.com/classic/npc=2918/advisor-belgrum\" rel=\"noopener noreferrer\" target=\"_blank\">Advisor Belgrum</a> in Ironforge.",
         "description": "We've slowed the Shadowforge clan by cutting them off from Blackrock Spire, but Hammertoe's quest is still unfulfilled. His death must not be in vain. He dreamt of finding the <a href=\"https://www.wowhead.com/classic/item=5824/tablet-of-will\" rel=\"noopener noreferrer\" target=\"_blank\">Tablet of Will</a>: a stone shard inscribed with magic by the titans themselves to help imbue their creations with life--making them have a will of their own, or so the legends say.<br><br>We must still recover the Tablet before the Shadowforge clan finds it.<br><br>Return to <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>, find the tablet, and return here immediately.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5824,
+            "name": "Tablet of Will",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=5824/tablet-of-will",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 6723,
@@ -10350,6 +11470,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=2910/prospector-ryedol\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Ryedol</a> and let him know Hammertoe Grez is alive.",
             "description": "\"Ryedol,<br>They're taking me to Uldaman. Send help.<br>-Hammertoe\"",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10413,6 +11534,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=2909/hammertoe-grez\" rel=\"noopener noreferrer\" target=\"_blank\">Hammertoe Grez</a> in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>.",
             "description": "can ye find him? Can you find Hammertoe in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>?<br><br>If those dirty Shadowforge are holdin' him hostage to figure out what he knows about the titan excavations, then all of Ironforge could be in huge trouble.<br><br>For a long time now those Dark Irons have been lookin' for magics to make more powerful golems. Hammertoe was doin' the same, of course, but only to stop them.<br><br>They're probably keepin' him alive until they learn what he knows.Ye've got to hurry if you're gonna save him!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10476,6 +11598,16 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/item=4635/hammertoes-amulet\" rel=\"noopener noreferrer\" target=\"_blank\">Hammertoe's Amulet</a> and return it to him in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>.",
             "description": "Ye're brave...... to come into <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> fer me.<br><br>If ye're really here to help... ol' Hammertoe, then...... you'll need to find... me amulet.<br><br>Deepshadow's got it... Magregan Deepshadow. He's 'round here... in the ruins fer sure. That amulet'll lead 'em...... right to the scrolls if he ain't stopped. It's up to you. Please... get that amulet.<br><br>The scrolls will surely help the Dark Irons create even more powerful golems. I just know it. I can feel it in me bones.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 4635,
+                "name": "Hammertoe's Amulet",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=4635/hammertoes-amulet",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10540,6 +11672,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=4635/hammertoes-amulet\" rel=\"noopener noreferrer\" target=\"_blank\">Hammertoe's Amulet</a> to <a href=\"https://www.wowhead.com/classic/npc=2910/prospector-ryedol\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Ryedol</a> in the <a href=\"https://www.wowhead.com/classic/zone=3/badlands\" rel=\"noopener noreferrer\" target=\"_blank\">Badlands</a>.",
             "description": "Find Ryedol. Bring 'im me amulet. He'll... figure out what to do. He knows I was seeking the origins of our people, and he...... knows it was also my mission to stop the Shadowforge clan. They must not be allowed to find the scrolls...",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10603,6 +11736,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=4635/hammertoes-amulet\" rel=\"noopener noreferrer\" target=\"_blank\">Hammertoe's Amulet</a> to <a href=\"https://www.wowhead.com/classic/npc=2916/historian-karnik\" rel=\"noopener noreferrer\" target=\"_blank\">Historian Karnik</a> in Ironforge.",
             "description": "Okay, okay... who would know what to do?<br><br><a href=\"https://www.wowhead.com/classic/npc=2916/historian-karnik\" rel=\"noopener noreferrer\" target=\"_blank\">Historian Karnik</a>! That's it!<br><br>He's in Ironforge. He'll be able to help. He and Hammertoe were workin' together to find the lost artifacts in Uldaman.<br><br>Guess the Shadowforge found out the two of them knew more than they were lettin' on.<br><br>Tell Karnik what's happened to Hammertoe and give him the amulet--he'll tell you what needs to be done next.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10666,6 +11800,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=2918/advisor-belgrum\" rel=\"noopener noreferrer\" target=\"_blank\">Advisor Belgrum</a> and give him his note.",
             "description": "run and find <a href=\"https://www.wowhead.com/classic/npc=2918/advisor-belgrum\" rel=\"noopener noreferrer\" target=\"_blank\">Advisor Belgrum</a> as quickly as you can. Tell him what you've witnessed and ask him how he wants us to proceed. This note will explain more to him.<br><br>In the meantime, I will take the time to speak to Hammertoe's spirit. Maybe he knows something that will help us put a stop to those Shadowforge cretins' activities in the <a href=\"https://www.wowhead.com/classic/zone=3/badlands\" rel=\"noopener noreferrer\" target=\"_blank\">Badlands</a>. We can only pray.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10735,6 +11870,7 @@ const DUNGEONS = [
             "objective": "Speak to <a href=\"https://www.wowhead.com/classic/npc=2916/historian-karnik\" rel=\"noopener noreferrer\" target=\"_blank\">Historian Karnik</a>.",
             "description": "&lt;<a href=\"https://www.wowhead.com/classic/npc=2918/advisor-belgrum\" rel=\"noopener noreferrer\" target=\"_blank\">Advisor Belgrum</a> reaches the end of the note, and his eyes widen for a moment.&gt;<br><br>Och, these are evil tidings.<br><br>, please return to <a href=\"https://www.wowhead.com/classic/npc=2916/historian-karnik\" rel=\"noopener noreferrer\" target=\"_blank\">Historian Karnik</a> and tell him on the king's authority to act on this information swiftly and decisively. He must halt the Shadowforge's activities in the <a href=\"https://www.wowhead.com/classic/zone=3/badlands\" rel=\"noopener noreferrer\" target=\"_blank\">Badlands</a>.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10798,6 +11934,16 @@ const DUNGEONS = [
             "objective": "Kill Ambassador Infernus in Angor Fortress and bring proof of his death to <a href=\"https://www.wowhead.com/classic/npc=2918/advisor-belgrum\" rel=\"noopener noreferrer\" target=\"_blank\">Advisor Belgrum</a> in Ironforge.",
             "description": "Ambassador Infernus was sent to Angor Fortress by Ragnaros himself to mind the Shadowforge seeking lost artifacts in Uldaman.<br><br>It has already meant tremendous casualties for our people, but it has obviously grown worse. I hesitate to guess how many artifacts they would be able to find and use against Ironforge.<br><br>Our goal is simple. Return to the <a href=\"https://www.wowhead.com/classic/zone=3/badlands\" rel=\"noopener noreferrer\" target=\"_blank\">Badlands</a> and destroy Ambassador Infernus. Once the threat is eliminated, return to <a href=\"https://www.wowhead.com/classic/npc=2918/advisor-belgrum\" rel=\"noopener noreferrer\" target=\"_blank\">Advisor Belgrum</a> with proof of your victory.<br><br>It is in your hands now.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 4621,
+                "name": "Ambassador Infernus' Bracer",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=4621/ambassador-infernus-bracer",
+                "quality": 1
+              }
+            ],
             "rewards": [
               {
                 "id": 4987,
@@ -10874,6 +12020,16 @@ const DUNGEONS = [
         "objective": "Obtain a power source from the most powerful construct you can find in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>, and deliver it to <a href=\"https://www.wowhead.com/classic/npc=6826/talvash-del-kissel\" rel=\"noopener noreferrer\" target=\"_blank\">Talvash del Kissel</a> in Ironforge.",
         "description": "You are going to need to find some \"oomph\" for the necklace, and <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> is probably the best place for it, actually. I guess there are a lot of constructs running around in there, yeah? Well, take out the biggest, baddest construct in that place and grab its power source! I am pretty sure I can fuse that source into the necklace.<br><br>Without that power source, fixing the necklace will be impossible. Come back to me here to Ironforge when you have it, and we'll get it all fixed up for you!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 7672,
+            "name": "Shattered Necklace Power Source",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=7672/shattered-necklace-power-source",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -10919,6 +12075,7 @@ const DUNGEONS = [
             "objective": "Search for the original creator of the <a href=\"https://www.wowhead.com/classic/item=7666/shattered-necklace\" rel=\"noopener noreferrer\" target=\"_blank\">shattered necklace</a> to learn of its potential value.",
             "description": "You have found a tarnished necklace, though the tarnish belies intricate and magical craftsmanship. The necklace has been shattered, as its setting appears to be missing three gems. On the underside of the necklace is the faint imprint of the city seal for Ironforge. Below the seal are three tiny, engraved letters: \"TdK\".<br><br>If there is anything to be gleaned from the necklace, you will need to learn about its origins. Perhaps the seal and the initials are a start...",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -10982,6 +12139,16 @@ const DUNGEONS = [
             "objective": "Bring five <a href=\"https://www.wowhead.com/classic/item=2842/silver-bar\" rel=\"noopener noreferrer\" target=\"_blank\">silver bars</a> to <a href=\"https://www.wowhead.com/classic/npc=6826/talvash-del-kissel\" rel=\"noopener noreferrer\" target=\"_blank\">Talvash del Kissel</a> in Ironforge.",
             "description": "I am a jeweler of great renown here in Ironforge! Well, former renown anyway... I have fallen onto hard times due to the chicanery of a competitor! A bad reputation in this business spells financial disaster. As a result, I find myself without a copper to my good-though-currently-sullied name.<br><br>I want you to get me five <a href=\"https://www.wowhead.com/classic/item=2842/silver-bar\" rel=\"noopener noreferrer\" target=\"_blank\">silver bars</a> to finish an order I received - the first in what seems like an eternity.<br><br>You get me those five <a href=\"https://www.wowhead.com/classic/item=2842/silver-bar\" rel=\"noopener noreferrer\" target=\"_blank\">silver bars</a>, and I'll answer your questions on the necklace.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 2842,
+                "name": "Silver Bar",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/item=2842/silver-bar",
+                "quality": 2
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11045,6 +12212,16 @@ const DUNGEONS = [
             "objective": "Search for clues as to the current disposition of Talvash's necklace within <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>. The slain paladin he mentioned was the person who has it last.",
             "description": "A competitor of mine started a rumor that my necklace cursed the paladin. Needless to say, no one wants to buy cursed items from a jeweler.<br><br>, I'll make you a deal - find the gems and I'll reassemble the necklace, so long as you'll advertise that I do NOT make cursed items!<br><br>Try looking for clues in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>; maybe see if the paladin's body is down there, since he's the one who we know had it last! When you find the gems you should use this; it'll allow you to contact me here in Ironforge.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 7667,
+                "name": "Talvash's Phial of Scrying",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7667/talvashs-phial-of-scrying",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11108,6 +12285,32 @@ const DUNGEONS = [
             "objective": "Find the ruby, sapphire, and topaz that are scattered throughout <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>. Once acquired, contact Talvash del Kissel remotely by using the Phial of Scrying he previously gave you.<br><br>From the journal, you know...<br>* The ruby has been stashed in a barricaded Shadowforge area.<br>* The topaz has been hidden in an urn in one of the Trogg areas, near some Alliance dwarves.<br><br>* The sapphire has been claimed by Grimlok, the trogg leader.",
             "description": "The paladin's journal has provided perhaps the only clues that <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> will yield as to the location of the necklace's gems. If the paladin's scribing remains accurate, then the Shadowforge dwarves and the troggs that vie for control of the dig site will need to be dealt with.<br><br>Armed with this knowledge, the search for the gems begins in earnest. When all the gems have been acquired, Talvash in Ironforge should be notified via the Phial of Scrying as per his instructions.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 7669,
+                "name": "Shattered Necklace Ruby",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7669/shattered-necklace-ruby",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 7670,
+                "name": "Shattered Necklace Sapphire",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7670/shattered-necklace-sapphire",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 7671,
+                "name": "Shattered Necklace Topaz",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7671/shattered-necklace-topaz",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11195,6 +12398,16 @@ const DUNGEONS = [
         "objective": "Bring 12 <a href=\"https://www.wowhead.com/classic/item=8047/magenta-fungus-cap\" rel=\"noopener noreferrer\" target=\"_blank\">Magenta Fungus Caps</a> to <a href=\"https://www.wowhead.com/classic/npc=1470/ghak-healtouch\" rel=\"noopener noreferrer\" target=\"_blank\">Ghak Healtouch</a> in Thelsamar.",
         "description": "I've heard about a newly discovered plant called the <a href=\"https://www.wowhead.com/classic/item=8047/magenta-fungus-cap\" rel=\"noopener noreferrer\" target=\"_blank\">magenta fungus caps</a>. They grow in clusters, deep in the <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> dig site; they may be elsewhere, but for now that's the only place I know they're at. I want to study their potential use in alchemy, and that's where you come in.<br><br>Find the magenta cap clusters and bring me a dozen caps. Be warned, the clusters may spew out poison spores if jostled.<br><br>Do this for me, and I'll whip up a batch of one of my famous restorative elixirs for you!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 8047,
+            "name": "Magenta Fungus Cap",
+            "quantity": 12,
+            "url": "https://www.wowhead.com/classic/item=8047/magenta-fungus-cap",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 9030,
@@ -11255,6 +12468,32 @@ const DUNGEONS = [
             "objective": "Acquire the reagents <a href=\"https://www.wowhead.com/classic/npc=1470/ghak-healtouch\" rel=\"noopener noreferrer\" target=\"_blank\">Ghak Healtouch</a> needs from the Badlands, then return to him in Thelsamar.",
             "description": "I would make use of your services. I am an alchemist of some note, and I seek your aid in acquiring some reagents found out in the Badlands.<br><br>I need the following items to replenish my stocks: five <a href=\"https://www.wowhead.com/classic/item=7847/buzzard-gizzard\" rel=\"noopener noreferrer\" target=\"_blank\">buzzard gizzards</a>, ten <a href=\"https://www.wowhead.com/classic/item=7846/crag-coyote-fang\" rel=\"noopener noreferrer\" target=\"_blank\">crag coyote fangs</a>, and five <a href=\"https://www.wowhead.com/classic/item=7848/rock-elemental-shard\" rel=\"noopener noreferrer\" target=\"_blank\">rock elemental shards</a>. Obviously, you can get them off of the beasties themselves; if you're not the fighting type, then find friends who are.<br><br>Acquire these items for me, you'll get some coin out of the deal.<br><br>Well, what say ye?",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 7847,
+                "name": "Buzzard Gizzard",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/item=7847/buzzard-gizzard",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 7846,
+                "name": "Crag Coyote Fang",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/item=7846/crag-coyote-fang",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 7848,
+                "name": "Rock Elemental Shard",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/item=7848/rock-elemental-shard",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11329,6 +12568,16 @@ const DUNGEONS = [
             "objective": "Use the empty thaumaturgy vessels on scorched guardian dragons found in the Badlands. Once you have them filled, bring them to <a href=\"https://www.wowhead.com/classic/npc=1470/ghak-healtouch\" rel=\"noopener noreferrer\" target=\"_blank\">Ghak Healtouch</a> in Thelsamar.",
             "description": "You have been most helpful to me. I would like to reward you with the very recipe for the brew I gave you earlier, but I must ask of you a favor that is quite dangerous.<br><br>This lockbox contains three empty thaumaturgy vessels; they are imbued with an attunement aura that will drain the blood of a scorched guardian dragon. Using one on the beast will anger it greatly, so be careful. Once you have all three filled, bring them to me.<br><br>Do this, and the recipe will be yours.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 7867,
+                "name": "Vessel of Dragon's Blood",
+                "quantity": 3,
+                "url": "https://www.wowhead.com/classic/item=7867/vessel-of-dragons-blood",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11388,6 +12637,16 @@ const DUNGEONS = [
         "objective": "Bring 12 <a href=\"https://www.wowhead.com/classic/item=8047/magenta-fungus-cap\" rel=\"noopener noreferrer\" target=\"_blank\">Magenta Fungus Caps</a> to <a href=\"https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld\" rel=\"noopener noreferrer\" target=\"_blank\">Jarkal Mossmeld</a> in Kargath.",
         "description": "I've heard about a newly discovered plant called the <a href=\"https://www.wowhead.com/classic/item=8047/magenta-fungus-cap\" rel=\"noopener noreferrer\" target=\"_blank\">magenta fungus caps</a>. They grow in clusters, deep in the <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> dig site; they may be elsewhere, but for now that's the only place I know they're at. I want to study their potential use in alchemy, and that's where you come in.<br><br>Find the magenta cap clusters and bring me a dozen caps. Be warned, the clusters may spew out poison spores if jostled.<br><br>Do this for me, and I'll whip up a batch of one of my famous restorative elixirs for you!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 8047,
+            "name": "Magenta Fungus Cap",
+            "quantity": 12,
+            "url": "https://www.wowhead.com/classic/item=8047/magenta-fungus-cap",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 9030,
@@ -11448,6 +12707,32 @@ const DUNGEONS = [
             "objective": "Bring 5 <a href=\"https://www.wowhead.com/classic/item=7847/buzzard-gizzard\" rel=\"noopener noreferrer\" target=\"_blank\">Buzzard Gizzards</a>, 10 <a href=\"https://www.wowhead.com/classic/item=7846/crag-coyote-fang\" rel=\"noopener noreferrer\" target=\"_blank\">Crag Coyote Fangs</a>, and 5 <a href=\"https://www.wowhead.com/classic/item=7848/rock-elemental-shard\" rel=\"noopener noreferrer\" target=\"_blank\">Rock Elemental Shards</a> to <a href=\"https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld\" rel=\"noopener noreferrer\" target=\"_blank\">Jarkal Mossmeld</a> in Kargath, <a href=\"https://www.wowhead.com/classic/zone=3/badlands\" rel=\"noopener noreferrer\" target=\"_blank\">Badlands</a>.",
             "description": "I could use your aid if you're up for it. I am an alchemist of some note, and I seek your aid in acquiring some reagents found out in the <a href=\"https://www.wowhead.com/classic/zone=3/badlands\" rel=\"noopener noreferrer\" target=\"_blank\">Badlands</a>.<br><br>I need the following items to replenish my stocks: five <a href=\"https://www.wowhead.com/classic/item=7847/buzzard-gizzard\" rel=\"noopener noreferrer\" target=\"_blank\">buzzard gizzards</a>, ten <a href=\"https://www.wowhead.com/classic/item=7846/crag-coyote-fang\" rel=\"noopener noreferrer\" target=\"_blank\">crag coyote fangs</a>, and five <a href=\"https://www.wowhead.com/classic/item=7848/rock-elemental-shard\" rel=\"noopener noreferrer\" target=\"_blank\">rock elemental shards</a>. Obviously, you can get them off of the beasties themselves; if you're not the fighting type, then find friends who are.<br><br>Acquire these items for me, you'll get some coin out of the deal. Watcha wanna do?",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 7847,
+                "name": "Buzzard Gizzard",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/item=7847/buzzard-gizzard",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 7846,
+                "name": "Crag Coyote Fang",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/item=7846/crag-coyote-fang",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 7848,
+                "name": "Rock Elemental Shard",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/item=7848/rock-elemental-shard",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11535,6 +12820,7 @@ const DUNGEONS = [
         "objective": "Visit <a href=\"https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld\" rel=\"noopener noreferrer\" target=\"_blank\">Jarkal Mossmeld</a> in Kargath to see if he was successful.",
         "description": "As Dran and Malton Droffers begin to squabble over their new salvage, half of the deal is now complete. A trip to the Badlands is now in order to finish things up, as <a href=\"https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld\" rel=\"noopener noreferrer\" target=\"_blank\">Jarkal Mossmeld</a> in Kargath might have a special reward waiting for you there.",
         "shareable": true,
+        "requirements": [],
         "rewards": [
           {
             "id": 7888,
@@ -11595,6 +12881,16 @@ const DUNGEONS = [
             "objective": "Look for a valuable necklace within the <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> dig site and bring it back to <a href=\"https://www.wowhead.com/classic/npc=6986/dran-droffers\" rel=\"noopener noreferrer\" target=\"_blank\">Dran Droffers</a> in Orgrimmar. The necklace may be damaged.",
             "description": "We've got work for you, that is if you've got the guts to do it!<br><br>Deep in the Badlands is the <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> dig site. We've heard a tale about some idiot paladin who died there recently. Why we even care is that he had a very valuable necklace on him. It's supposedly got three large gems: a ruby, a sapphire, and a topaz.<br><br>The shot: we want it, and we're payin' TOP SILVER to get it. It may be damaged, but that's neither here nor there; we'll fix whatever scratches are on it.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 7666,
+                "name": "Shattered Necklace",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7666/shattered-necklace",
+                "quality": 2
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11658,6 +12954,7 @@ const DUNGEONS = [
             "objective": "Find a clue as to the gems' whereabouts in the depths of <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>.",
             "description": "As sure as Malton is a dummy, those gems are still in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> somewhere. You're going to have to go back there and look for them.<br><br>Like I said before, if the information we have is correct then there's a ruby, a sapphire, and a topaz that go with the necklace. Find them and put them in the necklace.<br><br>As to where the gems are, who knows? Maybe you'll get lucky and find the corpse of the Paladin. If he's not been stripped clean already, then maybe he's got them on him still.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11721,6 +13018,16 @@ const DUNGEONS = [
             "objective": "Find someone who can translate the paladin's journal. The closest location that might have someone is Kargath, in the Badlands.",
             "description": "At an impasse of sorts, you know that you will need the book translated into a language you can understand. There certainly are a number of people in the world who could do it; the closest location that might have someone who could, however, is the Kargath outpost in the Badlands. Perhaps that is a good place to start.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 7886,
+                "name": "Untranslated Journal",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7886/untranslated-journal",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11784,6 +13091,7 @@ const DUNGEONS = [
             "objective": "Let Jarkal borrow the necklace. In exchange, he will translate the journal for you.",
             "description": "Droffers and Son Salvage aren't smart enough to restore the magic in the necklace, but I am. All I want to do is study the necklace so I can learn to make them myself. To do that, I will need your necklace. Let me borrow it, and in exchange for the time I get to study it I will translate the journal for you. While you are searching for the gems, I should have enough time to learn what I need to.<br><br>It's a simple deal, and no one else will be the wiser. Whatcha wanna do?",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11847,6 +13155,40 @@ const DUNGEONS = [
             "objective": "Recover all three gems and a power source for the necklace from <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>, and then bring them to <a href=\"https://www.wowhead.com/classic/npc=6868/jarkal-mossmeld\" rel=\"noopener noreferrer\" target=\"_blank\">Jarkal Mossmeld</a> in Kargath. Jarkal believes a power source might be found on the strongest construct present in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a>.<br><br>From the journal, you know...<br>* The ruby has been stashed in a barricaded Shadowforge area.<br>* The topaz has been hidden in an urn in one of the Trogg areas, near some Alliance dwarves.<br>* The sapphire has been claimed by Grimlok, the trogg leader.",
             "description": "Here is the journal, translated for you to read on your own. The crux of it says dwarves hid the ruby, the troggs hid the topaz, and a trogg named Grimlok has the sapphire.<br><br>Look - you're going to need a power source to make the necklace work again. Dran Droffers doesn't know this. To find one, here's what I'd do: go as deep as you can in <a href=\"https://www.wowhead.com/classic/zone=1337/uldaman\" rel=\"noopener noreferrer\" target=\"_blank\">Uldaman</a> and kill whatever construct there is the strongest. No doubt whatever that is would have it.<br><br>When you have everything collected, come back here!",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 7669,
+                "name": "Shattered Necklace Ruby",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7669/shattered-necklace-ruby",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 7670,
+                "name": "Shattered Necklace Sapphire",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7670/shattered-necklace-sapphire",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 7671,
+                "name": "Shattered Necklace Topaz",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7671/shattered-necklace-topaz",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 7672,
+                "name": "Shattered Necklace Power Source",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7672/shattered-necklace-power-source",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11911,6 +13253,7 @@ const DUNGEONS = [
             "objective": "Deliver the <a href=\"https://www.wowhead.com/classic/item=7887/necklace-and-gem-salvage\" rel=\"noopener noreferrer\" target=\"_blank\">Necklace and Gem Salvage</a> to <a href=\"https://www.wowhead.com/classic/npc=6986/dran-droffers\" rel=\"noopener noreferrer\" target=\"_blank\">Dran Droffers</a> in Orgrimmar.",
             "description": "Any necklace setting and gem will work, so long as they are the same material. This power source, however, is what will bring the magic back to the necklace... I hope.<br><br>I'll gladly supply the gems needed for your version of the necklace, so long as the power source actually works.<br><br>Head to Orgrimmar and keep your end of the bargain with Droffers and Son Salvage. Just keep your mouth shut about our deal, and when you get back I might have a wonderful surprise for you.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -11991,6 +13334,16 @@ const DUNGEONS = [
         "objective": "Retrieve an <a href=\"https://www.wowhead.com/classic/item=8053/obsidian-power-source\" rel=\"noopener noreferrer\" target=\"_blank\">Obsidian Power Source</a> and bring it to <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a> in Dustwallow Marsh.",
         "description": "Now that the demon has been removed, we must gain a power source. Unfortunately, the best power sources are usually the oldest and the hardest to get. It's neat how fate likes to take a bite out of you sometimes, isn't it?<br><br>So you're going to need to go to Uldaman and defeat the obsidian sentinel there. He's big, he's tough, and his power source packs a punch!<br><br>I wish you the best of luck. And if you don't get lucky then, well... it was nice knowing you.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 8053,
+            "name": "Obsidian Power Source",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=8053/obsidian-power-source",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -12074,6 +13427,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a>.",
             "description": "It is time, for you to speak with <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a>... the hermit of Dustwallow Marsh. She will instruct you on the creation of a powerful mage's implement.<br><br><a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a>'s shack lies deep in Dustwallow Marsh, west of Theramore.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -12139,6 +13493,16 @@ const DUNGEONS = [
             "objective": "Bring an <a href=\"https://www.wowhead.com/classic/item=7291/infernal-orb\" rel=\"noopener noreferrer\" target=\"_blank\">Infernal Orb</a> to <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a> in Dustwallow Marsh.",
             "description": "The first step is to acquire an orb with power. The warlocks of the Burning Blade have nice, high quality orbs... it's too bad they've bound demons into them! But we can fix that, yes we can.<br><br>Go to Desolace and snatch an <a href=\"https://www.wowhead.com/classic/item=7291/infernal-orb\" rel=\"noopener noreferrer\" target=\"_blank\">infernal orb</a> from a Burning Blade summoner. You'll find summoners at the Mannoroc Coven.<br><br>When you have the orb, return to me.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 7291,
+                "name": "Infernal Orb",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7291/infernal-orb",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -12204,6 +13568,15 @@ const DUNGEONS = [
             "objective": "Kill the <a href=\"https://www.wowhead.com/classic/npc=6549/demon-of-the-orb\" rel=\"noopener noreferrer\" target=\"_blank\">Demon of the Orb</a>, then speak with <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a>.",
             "description": "Now that we have a summoner's orb, we must exorcise the demon within it. I can do that. That's the easy part.<br><br>You're the one who has the hard job. You're the one who has to kill the demon once it's out.<br><br>And you'll have to be quick. If you take too long then he'll jump back in the orb and we'll have to start over!<br><br>So get yourself ready. Prepare your strongest spells and keep your potions handy, and go get a friend if you have one. Because this isn't going to be pretty.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 6549,
+                "name": "Demon of the Orb",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=6549/demon-of-the-orb"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -12303,6 +13676,7 @@ const DUNGEONS = [
         "objective": "Speak with stone watcher and learn what ancient lore it keeps. Once you have learned what lore it has to offer, activate <a href=\"https://www.wowhead.com/classic/object=131474/the-discs-of-norgannon\" rel=\"noopener noreferrer\" target=\"_blank\">the Discs of Norgannon</a>.",
         "description": "The centerpieces of this treasure chamber are four huge platinum discs, each adorned with numerous sigils of an unknown origin. Touching them makes your hand tingle. Just after touching the discs, the visage of a large stone watcher springs forth.<br><br>\"Salutations. I am a keeper of knowledge. The Creators' synthesis of the Earthen has been chronicled and stored here for this world in <a href=\"https://www.wowhead.com/classic/object=131474/the-discs-of-norgannon\" rel=\"noopener noreferrer\" target=\"_blank\">the Discs of Norgannon</a>.\"<br><br>You have uncovered a wealth of previously undiscovered worldly lore!",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -12476,6 +13850,16 @@ const DUNGEONS = [
         "objective": "",
         "description": "",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 5833,
+            "name": "Indurium Ore",
+            "quantity": 4,
+            "url": "https://www.wowhead.com/classic/item=5833/indurium-ore",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -12529,6 +13913,7 @@ const DUNGEONS = [
             "objective": "Bring Fizzle's Letter to <a href=\"https://www.wowhead.com/classic/npc=4618/martek-the-exiled\" rel=\"noopener noreferrer\" target=\"_blank\">Martek the Exiled</a> in the Badlands.",
             "description": "I'm developing a new engine that'll make the car go so fast! Fast enough to fly, I know it! I just need to make pistons that can handle very very heavy stress. All my trials have failed because I can't make pistons hard enough!<br><br>But there is someone who might know how.<br><br>His name is <a href=\"https://www.wowhead.com/classic/npc=4618/martek-the-exiled\" rel=\"noopener noreferrer\" target=\"_blank\">Martek the Exiled</a>. He is a great smith and knows more about metal than anyone. Take him this letter, I know he can help!<br><br>But he's far far away -- in Azeroth, in the Badlands, in a camp, with a goblin!<br><br>Find him!",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -12592,6 +13977,16 @@ const DUNGEONS = [
             "objective": "Bring 10 <a href=\"https://www.wowhead.com/classic/item=5797/indurium-flake\" rel=\"noopener noreferrer\" target=\"_blank\">Indurium Flakes</a> to <a href=\"https://www.wowhead.com/classic/npc=4618/martek-the-exiled\" rel=\"noopener noreferrer\" target=\"_blank\">Martek the Exiled</a> in the Badlands.",
             "description": "I'm not out here just to stay away from people. There is a wealth of metal in the Badlands, if you have the guts to get it.<br><br>The metal's called indurium and as luck would have it, it is rumored to possess high resistance to heat and stress. It might work for Fizzle's car.<br><br>But let's make sure. Get me samples of indurium and I'll test its properties.<br><br>True indurium ore lies deep in Uldaman, but the Stonevault troggs of the Badlands sometimes have flakes of it on them. Bring me those flakes.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 5797,
+                "name": "Indurium Flake",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/item=5797/indurium-flake",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -12655,6 +14050,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=4454/fizzle-brassbolts\" rel=\"noopener noreferrer\" target=\"_blank\">Fizzle Brassbolts</a> in the Shimmering Flats.",
             "description": "Indurium has an amazing resistance to heat! I'm sure it will work for Fizzle's pistons. But he'll need true indurium ore, not just the flakes.<br><br>To get the ore, it must be mined from deep within Uldaman, on the northern borders of the Badlands. That is the true source of indurium.<br><br>Send <a href=\"https://www.wowhead.com/classic/npc=4454/fizzle-brassbolts\" rel=\"noopener noreferrer\" target=\"_blank\">Fizzle Brassbolts</a> my regards, and tell him what I told you.<br><br>Safe travels. And it won't surprise me if we meet again -- once Fizzle learns of indurium he'll probably send you to Uldaman to acquire it!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [
               {
@@ -12732,6 +14128,7 @@ const DUNGEONS = [
             "objective": "Have Zamek create a diversion, then steal Rizzle's plans for <a href=\"https://www.wowhead.com/classic/npc=4630/pozzik\" rel=\"noopener noreferrer\" target=\"_blank\">Pozzik</a> on the Shimmering Flats.",
             "description": "The Brassbolts brothers have discovered a new building material, that's the only explanation that makes sense. Their cars have been operating faster than before, but their designs, and all the other data we've gathered from their runs is identical.<br><br>What we do know, is that Rizzle Brassbolts has been focused on the plans for this new discovery almost constantly.<br><br>Zamek can create a diversion for you, so that you can steal those plans from them.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -12801,6 +14198,16 @@ const DUNGEONS = [
             "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=5866/sample-of-indurium-ore\" rel=\"noopener noreferrer\" target=\"_blank\">Sample of Indurium Ore</a> to <a href=\"https://www.wowhead.com/classic/npc=4630/pozzik\" rel=\"noopener noreferrer\" target=\"_blank\">Pozzik</a> on the Shimmering Flats.",
             "description": "Rizzle's schematics describe the process of the refinement of indurium ore. From his scrawls, it is apparent that indurium ore is being obtained from the dwarven excavation site of Uldaman in the Badlands.<br><br>Much of the other notes relate to the heat resistant properties.<br><br>Used as a paperweight for the plans is a hunk of what appears to be unrefined indurium ore.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 5866,
+                "name": "Sample of Indurium Ore",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=5866/sample-of-indurium-ore",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -12884,6 +14291,16 @@ const DUNGEONS = [
         "objective": "Bring 20 Vials of <a href=\"https://www.wowhead.com/classic/item=9523/troll-temper\" rel=\"noopener noreferrer\" target=\"_blank\">Troll Temper</a> to <a href=\"https://www.wowhead.com/classic/npc=7804/trenton-lighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Trenton Lighthammer</a> in Gadgetzan.",
         "description": "The Sandfury trolls of <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a> make a tempering agent from sandstones, and I can use that to temper the goods I craft, yes I can! It is highly prized by connoisseurs, so if you bring me a good supply of the temper, then I'll reward you well.<br><br><a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a> is northwest of Gadgetzan. Good luck.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9523,
+            "name": "Troll Temper",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/item=9523/troll-temper",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -12942,6 +14359,16 @@ const DUNGEONS = [
         "objective": "Bring 5 <a href=\"https://www.wowhead.com/classic/item=9238/uncracked-scarab-shell\" rel=\"noopener noreferrer\" target=\"_blank\">Uncracked Scarab Shells</a> to <a href=\"https://www.wowhead.com/classic/npc=7876/tranrek\" rel=\"noopener noreferrer\" target=\"_blank\">Tran'rek</a> in Gadgetzan.",
         "description": "The scarabs of Tanaris have very hard shells! Hard enough to use as a building material for lots of things. So many things!<br><br>In fact, those shells are so useful... the scarabs were hunted all to near extinction!<br><br>I know where there are more scarabs, and if you promise to bring me their shells then I'll tell you where they are. Promise?<br><br>Ok, the scarabs have a colony in <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a>. I guess the trolls don't hunt them for their shells.<br><br>But you can! Go to <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a> and get me uncracked shells!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9238,
+            "name": "Uncracked Scarab Shell",
+            "quantity": 5,
+            "url": "https://www.wowhead.com/classic/item=9238/uncracked-scarab-shell",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -12995,6 +14422,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=7876/tranrek\" rel=\"noopener noreferrer\" target=\"_blank\">Tran'rek</a> in Gadgetzan.",
             "description": "My cousin <a href=\"https://www.wowhead.com/classic/npc=7876/tranrek\" rel=\"noopener noreferrer\" target=\"_blank\">Tran'rek</a> is in a tight spot. He promised me a load of scarab shells weeks ago and he hasn't delivered. He's my cousin, so I'd hate to have to send someone to Gadgetzan to break something on him.<br><br>Can you speak to <a href=\"https://www.wowhead.com/classic/npc=7876/tranrek\" rel=\"noopener noreferrer\" target=\"_blank\">Tran'rek</a> for me? Let him know he needs to get that delivery together before I do something rash?<br><br>Gadgetzan is in northern Tanaris, in Kalimdor.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -13059,6 +14487,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=9234/tiara-of-the-deep\" rel=\"noopener noreferrer\" target=\"_blank\">Tiara of the Deep</a> to <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a> in Dustwallow Marsh.",
         "description": "Long ago I possessed a beautiful piece of jewelry, the <a href=\"https://www.wowhead.com/classic/item=9234/tiara-of-the-deep\" rel=\"noopener noreferrer\" target=\"_blank\">Tiara of the Deep</a>. And not only was it pretty--it held great power for those with the knowledge to use it.<br><br>So when word of the tiara reached the Hydromancer Velratha, she had to have it. She sent agents to my home and they stole it while I was away. The thieves!<br><br>I want my tiara back! Go to <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a>, the troll city in Tanaris, find Velratha and wrench the tiara from her. Return it to me and you'll earn my favor.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9234,
+            "name": "Tiara of the Deep",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9234/tiara-of-the-deep",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 9527,
@@ -13146,6 +14584,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a> in Dustwallow Marsh.",
             "description": "Rumor is that <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a>, a mage colleague who lives deep in Dustwallow Marsh, has a bone to pick with a certain sand troll in <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a>. If you speak with <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a> she can tell you more.<br><br>And bring some friends with you. If <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a> has you go to <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a> then you're not going to want to go alone.<br><br>You will find <a href=\"https://www.wowhead.com/classic/npc=6546/tabetha\" rel=\"noopener noreferrer\" target=\"_blank\">Tabetha</a>'s cottage west of Theramore, and just north of the Stonemaul Ruin.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -13220,6 +14659,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=8548/divino-matic-rod\" rel=\"noopener noreferrer\" target=\"_blank\">Divino-matic Rod</a> to <a href=\"https://www.wowhead.com/classic/npc=7407/chief-engineer-bilgewhizzle\" rel=\"noopener noreferrer\" target=\"_blank\">Chief Engineer Bilgewhizzle</a> in Gadgetzan.",
         "description": "Sergeant Bly stole from me! He said he'd only borrow it, but he stole my cherished <a href=\"https://www.wowhead.com/classic/item=8548/divino-matic-rod\" rel=\"noopener noreferrer\" target=\"_blank\">divino-matic rod</a>!! Without that rod how will I know where to dig new water holes??<br><br>Find Bly and bring me my rod! I heard he led his band of ill-reputed adventurers to go treasure hunting in <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a> to the west. I bet you'll find him there.<br><br>Let's hope the trolls took care of him, because if you have to fight him for the rod then you're in for a serious fight.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 8548,
+            "name": "Divino-matic Rod",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=8548/divino-matic-rod",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -13291,6 +14740,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=8707/gahzrillas-electrified-scale\" rel=\"noopener noreferrer\" target=\"_blank\">Gahz'rilla's Electrified Scale</a> to <a href=\"https://www.wowhead.com/classic/npc=4453/wizzle-brassbolts\" rel=\"noopener noreferrer\" target=\"_blank\">Wizzle Brassbolts</a> in the Shimmering Flats.",
         "description": "Deep in <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a>, the sand troll city in Tanaris, there is a sacred pool. From that pool the trolls summon a huge beast! Gahz'rilla! He's so fierce that even his scales crackle with energy. It's that energy I want to harness for my car!<br><br>Bring me the electrified scale of Gahz'rilla!<br><br>But the summoning of Gahz'rilla is a well-kept secret of the trolls. To face him, you must first wrest the secret from them.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 8707,
+            "name": "Gahz'rilla's Electrified Scale",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=8707/gahzrillas-electrified-scale",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 11122,
@@ -13351,6 +14810,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=4453/wizzle-brassbolts\" rel=\"noopener noreferrer\" target=\"_blank\">Wizzle Brassbolts</a> in the Shimmering Flats.",
             "description": "Have you met the Brassbolts brothers? They're over in the Shimmering Flats, in Kalimdor, racing their rocket car against the goblins. They usually win which is no surprise--the goblin car blows up so much it barely ever crosses the finish line!<br><br>But even then, the Brassbolts brothers are always looking for new ways to make their car go faster, and Wizzle told me he needs a very rare component for his next experiment.<br><br>He probably needs help getting that part. Speak to him and find out.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -13415,6 +14875,24 @@ const DUNGEONS = [
         "objective": "Bring the First and <a href=\"https://www.wowhead.com/classic/item=10661/second-mosharu-tablet\" rel=\"noopener noreferrer\" target=\"_blank\">Second Mosh'aru Tablets</a> to <a href=\"https://www.wowhead.com/classic/npc=8579/yehkinya\" rel=\"noopener noreferrer\" target=\"_blank\">Yeh'kinya</a> in Tanaris.",
         "description": "The ancient prophecy of Mosh'aru speaks of a way to contain the god Hakkar's essence. It was written on two tablets and taken to the troll city of <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a>, west of Gadgetzan.<br><br>Bring me the Mosh'aru tablets!<br><br>The first tablet is held by the long-dead troll Theka the Martyr. It is said his persecutors were cursed into scarabs and now scuttle about his shrine.<br><br>The second tablet is held by the hydromancer Velratha, near the sacred pool of Gahz'rilla.<br><br>When you have the tablets, bring them to me.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 10660,
+            "name": "First Mosh'aru Tablet",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=10660/first-mosharu-tablet",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 10661,
+            "name": "Second Mosh'aru Tablet",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=10661/second-mosharu-tablet",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -13468,6 +14946,15 @@ const DUNGEONS = [
             "objective": "Capture the spirits of 3 screechers in Feralas, then return to <a href=\"https://www.wowhead.com/classic/npc=8579/yehkinya\" rel=\"noopener noreferrer\" target=\"_blank\">Yeh'kinya</a> in Steamwheedle Port.",
             "description": "I seek the spirits of the vale screechers of Feralas. They are the cousins of an old, old god, and their spirits are linked to him.<br><br>Take this bramble wand and go to Feralas. Find and defeat vale screechers in southern and central Feralas, then wave my bramble over their fallen bodies. This will coax their spirit to reveal itself. Touch the spirit and collect its essence.<br><br>Return to me with my bramble and with the collected essence, and I will tell you more of the old god of which I spoke.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 8612,
+                "name": "Screecher Spirits Collected",
+                "quantity": 3,
+                "url": "https://www.wowhead.com/classic/npc=8612/screecher-spirits-collected"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -13609,6 +15096,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=9471/nekrums-medallion\" rel=\"noopener noreferrer\" target=\"_blank\">Nekrum's Medallion</a> to <a href=\"https://www.wowhead.com/classic/npc=8022/thadius-grimshade\" rel=\"noopener noreferrer\" target=\"_blank\">Thadius Grimshade</a> in the Blasted Lands.",
         "description": "I'll find out where your gryphon is, but first you have to do something for me. There's a troll in <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a>, Nekrum Gutchewer, who possesses a medallion I would very much like to study. Bring me that Medallion and I'll use my powers to find Sharpbeak.<br><br><a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a> is across the ocean to the west, in the desert of Tanaris.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9471,
+            "name": "Nekrum's Medallion",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=9471/nekrums-medallion",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -13662,6 +15159,29 @@ const DUNGEONS = [
             "objective": "Check the cages at the two Witherbark villages, then return to Gryphon Master Talonaxe.",
             "description": "The son of our mightiest gryphon is gone! Swiftwing's heir, Sharpbeak, was lost while hunting with his parents a few days ago, and we believe it was the trolls who took him.<br><br>You must aid us! Search the cages in the two Witherbark troll villages to see if Sharpbeak is there.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "object",
+                "id": 144066,
+                "name": "Check First Cage",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/object=144066/check-first-cage"
+              },
+              {
+                "type": "object",
+                "id": 144067,
+                "name": "Check Second Cage",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/object=144067/check-second-cage"
+              },
+              {
+                "type": "object",
+                "id": 144068,
+                "name": "Check Third Cage",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/object=144068/check-third-cage"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -13725,6 +15245,7 @@ const DUNGEONS = [
             "objective": "Check the top of the Altar of Zul, then return to <a href=\"https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe\" rel=\"noopener noreferrer\" target=\"_blank\">Gryphon Master Talonaxe</a>.",
             "description": "Sharpbeak was not with the Witherbark trolls. Perhaps the Vilebranch trolls took him. Go to the Altar of Zul on the western edge of Vilebranch territory and search for the gryphon child.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -13788,6 +15309,7 @@ const DUNGEONS = [
             "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=9468/sharpbeaks-feather\" rel=\"noopener noreferrer\" target=\"_blank\">Sharpbeak's Feather</a> to <a href=\"https://www.wowhead.com/classic/npc=8022/thadius-grimshade\" rel=\"noopener noreferrer\" target=\"_blank\">Thadius Grimshade</a> in the Blasted Lands.",
             "description": "Take this feather to <a href=\"https://www.wowhead.com/classic/npc=8022/thadius-grimshade\" rel=\"noopener noreferrer\" target=\"_blank\">Thadius Grimshade</a>, the diviner. He left Aerie Peak years ago to pursue darker knowledge, but in his heart he is still a Wildhammer!<br><br>And perhaps his talents can help us find Sharpbeak.<br><br>This feather was taken from the nest where the gryphon child sleeps. If you give it to Thadius then, with luck, he can use his divining magics to find Sharpbeak.<br><br>Good luck. You will find Thadius in the Blasted Lands, in the mage tower of Nethergarde Keep.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -13899,6 +15421,7 @@ const DUNGEONS = [
         "objective": "Read from the Tablet of Theka to learn the name of the Witherbark spider god, then return to <a href=\"https://www.wowhead.com/classic/npc=3188/master-gadrin\" rel=\"noopener noreferrer\" target=\"_blank\">Master Gadrin</a>.",
         "description": "The Witherbarks worship a spider god, and from her they collect their most potent venom. So if you want the venom, then you must summon their god!<br><br>To do that, you must know her true name, and that name is on a tablet buried in Tanaris, in the troll city of <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a>, in a tomb guarded by Theka the Martyr.<br><br>Defeat Theka and find and read his tablet to discover the spider god's name. When you know it, return to me.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -14029,6 +15552,7 @@ const DUNGEONS = [
             "objective": "Bring a <a href=\"https://www.wowhead.com/classic/item=9321/venom-bottle\" rel=\"noopener noreferrer\" target=\"_blank\">Venom Bottle</a> to an apothecary in Tarren Mill.",
             "description": "These bottles hold a vile, green venom.<br><br>Considering the number of bottles in this village, the Witherbarks must deem it very important. Perhaps an apothecary in nearby Tarren Mill would like a sample.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -14092,6 +15616,16 @@ const DUNGEONS = [
             "objective": "Bring an <a href=\"https://www.wowhead.com/classic/item=9322/undamaged-venom-sac\" rel=\"noopener noreferrer\" target=\"_blank\">Undamaged Venom Sac</a> to <a href=\"https://www.wowhead.com/classic/npc=2216/apothecary-lydon\" rel=\"noopener noreferrer\" target=\"_blank\">Apothecary Lydon</a> in Tarren Mill.",
             "description": "I must have a fresh sample of the venom you brought me. The spiders from which it was gathered must dwell in <a href=\"https://www.wowhead.com/classic/zone=47/the-hinterlands\" rel=\"noopener noreferrer\" target=\"_blank\">the Hinterlands</a> -- hunt them until you find an <a href=\"https://www.wowhead.com/classic/item=9322/undamaged-venom-sac\" rel=\"noopener noreferrer\" target=\"_blank\">undamaged venom sac</a> and bring it to me. You will find many spiders near the troll city of Shadra'Alor.<br><br>Do not tarry, for the venom sac must be fresh when you deliver it.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 9322,
+                "name": "Undamaged Venom Sac",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=9322/undamaged-venom-sac",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -14155,6 +15689,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=3188/master-gadrin\" rel=\"noopener noreferrer\" target=\"_blank\">Master Gadrin</a> in Sen'jin Village.",
             "description": "The venom from the broodguards wasn't as potent as the venom you brought originally. It must have come from a different spider.<br><br>I want a fresh sample of that venom. To find out where it came from, you must consult with a troll who knows the Witherbark well--<a href=\"https://www.wowhead.com/classic/npc=3188/master-gadrin\" rel=\"noopener noreferrer\" target=\"_blank\">Master Gadrin</a> in Sen'jin Village. Travel to Durotar and speak with Gadrin. With luck, he'll know where the Witherbarks get their venom.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -14268,6 +15803,24 @@ const DUNGEONS = [
         "objective": "",
         "description": "Though exiled as a heretic, my beliefs still ring true--that alone drives me onward. But for my destiny to be complete, I need the aid of an outsider... one not of any centaur tribe.<br><br>The task requires someone to enter the holy halls of <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a>--a tomb my people protect, and only the most devout are ever allowed to enter.<br><br>If you agree to aid me, then you need only nod. I will pass you a parchment with my instructions on it. Read it over and consider my words.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 17758,
+            "name": "Amulet of Union",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=17758/amulet-of-union",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 17757,
+            "name": "Amulet of Spirits",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=17757/amulet-of-spirits",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 17774,
@@ -14333,6 +15886,16 @@ const DUNGEONS = [
         "objective": "Collect 25 <a href=\"https://www.wowhead.com/classic/item=17684/theradric-crystal-carving\" rel=\"noopener noreferrer\" target=\"_blank\">Theradric Crystal Carvings</a> for <a href=\"https://www.wowhead.com/classic/npc=13656/willow\" rel=\"noopener noreferrer\" target=\"_blank\">Willow</a> in Desolace.",
         "description": "The crystal caverns of Terramok lie to the west, deep within <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a>... It is an ancient place with much history. And I am looking to get my hands on some of it. Relics of the old gods lie hidden behind the giant doors.<br><br>If you are willing to brave the twisted evils found in <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a>, I believe I can make it worth your time. Collect the <a href=\"https://www.wowhead.com/classic/item=17684/theradric-crystal-carving\" rel=\"noopener noreferrer\" target=\"_blank\">theradric crystal carvings</a> you find, and return them to me.<br><br>Once I get the carvings, I will be able to... study them. These powers have been too long at rest...",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 17684,
+            "name": "Theradric Crystal Carving",
+            "quantity": 25,
+            "url": "https://www.wowhead.com/classic/item=17684/theradric-crystal-carving",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -14416,6 +15979,24 @@ const DUNGEONS = [
         "objective": "Recover the two parts of the Scepter of Celebras: the <a href=\"https://www.wowhead.com/classic/item=17702/celebrian-rod\" rel=\"noopener noreferrer\" target=\"_blank\">Celebrian Rod</a> and the <a href=\"https://www.wowhead.com/classic/item=17703/celebrian-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">Celebrian Diamond</a>.<br><br>Find a way to speak with Celebras.",
         "description": "A dark satyr called Lord Vyletongue spread his evil through these twisting caves, poisoning the minds of all inside. He still resides beyond the purple crystals.<br><br>Vyletongue also created a living symbol of his corruption called Noxxion that dwells beyond the orange crystals. Together, they have stolen the two parts of my brother's scepter. Celebras, my brother... he wanders blindly inside, cursed by corruption.<br><br>You must help him! Find the pieces, and speak to my brother... somehow.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 17703,
+            "name": "Celebrian Diamond",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=17703/celebrian-diamond",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 17702,
+            "name": "Celebrian Rod",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=17702/celebrian-rod",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -14474,6 +16055,16 @@ const DUNGEONS = [
         "objective": "Collect 10 <a href=\"https://www.wowhead.com/classic/item=17756/shadowshard-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">Shadowshard Fragments</a> from <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a> and return them to <a href=\"https://www.wowhead.com/classic/npc=4967/archmage-tervosh\" rel=\"noopener noreferrer\" target=\"_blank\">Archmage Tervosh</a> in Theramore on the coast of Dustwallow Marsh.",
         "description": "I've recently begun testing various crystals and their arcane properties. Lady Proudmoore has given me leave to ask travelers heading into Desolace to seek out a place called <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a>. Within the ruined temple are great elementals composed of purplish stones I've named shadowshards.<br><br>If you decide to head that direction and find some of the crystals, I would be very thankful. I could even fashion you a trinket from them if you so desired.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 17756,
+            "name": "Shadowshard Fragment",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=17756/shadowshard-fragment",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -14545,6 +16136,23 @@ const DUNGEONS = [
         "objective": "Fill the <a href=\"https://www.wowhead.com/classic/item=17693/coated-cerulean-vial\" rel=\"noopener noreferrer\" target=\"_blank\">Coated Cerulean Vial</a> at the orange crystal pool in <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a>.<br><br>Use the <a href=\"https://www.wowhead.com/classic/item=17696/filled-cerulean-vial\" rel=\"noopener noreferrer\" target=\"_blank\">Filled Cerulean Vial</a> on the Vylestem Vines to force the corrupted <a href=\"https://www.wowhead.com/classic/npc=13696/noxxious-scion\" rel=\"noopener noreferrer\" target=\"_blank\">Noxxious Scion</a> to emerge.<br><br>Heal 8 plants by killing these <a href=\"https://www.wowhead.com/classic/npc=13696/noxxious-scion\" rel=\"noopener noreferrer\" target=\"_blank\">Noxxious Scion</a>, then return to <a href=\"https://www.wowhead.com/classic/npc=11715/talendria\" rel=\"noopener noreferrer\" target=\"_blank\">Talendria</a> in Nijel's Point.",
         "description": "A satyr known as Vyletongue has corrupted the caverns of <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a>, stunting the growth of many of the plants inside.<br><br>Take this vial. Fill it at the corrupted orange pool found inside the caverns; the coating inside the vial will counter the toxins, turning it into a healing agent.<br><br>Find the Vylestem vines inside the orange caverns, and use the purified liquid on them. The corruption will be purged from the plant, but do know that Vyletongue will still control it. He may use it against you...",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 13696,
+            "name": "Vylestem Vines healed",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/npc=13696/vylestem-vines-healed"
+          },
+          {
+            "type": "item",
+            "id": 17696,
+            "name": "Filled Cerulean Vial",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=17696/filled-cerulean-vial",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -14622,6 +16230,15 @@ const DUNGEONS = [
         "objective": "Slay <a href=\"https://www.wowhead.com/classic/npc=12201/princess-theradras\" rel=\"noopener noreferrer\" target=\"_blank\">Princess Theradras</a> and return to <a href=\"https://www.wowhead.com/classic/npc=13698/keeper-marandis\" rel=\"noopener noreferrer\" target=\"_blank\">Keeper Marandis</a> at Nijel's Point in Desolace.",
         "description": "In the depths of <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a> lives a creature of chaos and evil. <a href=\"https://www.wowhead.com/classic/npc=12201/princess-theradras\" rel=\"noopener noreferrer\" target=\"_blank\">Princess Theradras</a> is an elemental force of earth related somehow to the Old Gods. Ages ago, she was sought out by Zaetar, first son of Cenarius. The offspring of their... relationship are the creatures known as centaur. Ever-thankful creatures, the centaur killed Zaetar, and now Theradras keeps his remains. My quest here is to find those powerful enough to slay Theradras so we may recover Zaetar's remains before returning to Stonetalon.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 12201,
+            "name": "Princess Theradras",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=12201/princess-theradras"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -14699,6 +16316,16 @@ const DUNGEONS = [
         "objective": "Collect 10 <a href=\"https://www.wowhead.com/classic/item=17756/shadowshard-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">Shadowshard Fragments</a> from <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a> and return them to <a href=\"https://www.wowhead.com/classic/npc=7311/uthelnay\" rel=\"noopener noreferrer\" target=\"_blank\">Uthel'nay</a> in Orgrimmar.",
         "description": "Strong magics be found in the centaur holy place... the holy place of <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a>. The Desolace tribes of centaur protect that place wit' their lives, but they canna stop us from takin' what we need.<br><br>You, you head to this <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a> place and find the rock creatures made of shadowshard. You bring me the purple crystals, and <a href=\"https://www.wowhead.com/classic/npc=7311/uthelnay\" rel=\"noopener noreferrer\" target=\"_blank\">Uthel'nay</a> make you somethin' for your time.<br><br>The place be dangerous, so maybe you be bringing some friends.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 17756,
+            "name": "Shadowshard Fragment",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=17756/shadowshard-fragment",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -14770,6 +16397,23 @@ const DUNGEONS = [
         "objective": "Fill the <a href=\"https://www.wowhead.com/classic/item=17693/coated-cerulean-vial\" rel=\"noopener noreferrer\" target=\"_blank\">Coated Cerulean Vial</a> at the orange crystal pool in <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a>.<br><br>Use the <a href=\"https://www.wowhead.com/classic/item=17696/filled-cerulean-vial\" rel=\"noopener noreferrer\" target=\"_blank\">Filled Cerulean Vial</a> on the Vylestem Vines to force the corrupted <a href=\"https://www.wowhead.com/classic/npc=13696/noxxious-scion\" rel=\"noopener noreferrer\" target=\"_blank\">Noxxious Scion</a> to emerge.<br><br>Heal 8 plants by killing these <a href=\"https://www.wowhead.com/classic/npc=13696/noxxious-scion\" rel=\"noopener noreferrer\" target=\"_blank\">Noxxious Scion</a>, then return to <a href=\"https://www.wowhead.com/classic/npc=11823/vark-battlescar\" rel=\"noopener noreferrer\" target=\"_blank\">Vark Battlescar</a> in Shadowprey Village.",
         "description": "A satyr known as Vyletongue has corrupted the caverns of <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a>, stunting the growth of many of the plants inside.<br><br>Take this vial. Fill it at the orange crystal pool found inside the caverns; the coating inside the vial will counter the toxins, turning it into a healing agent.<br><br>Find the Vylestem vines inside the orange caverns, and use the purified liquid on them. The corruption will be purged from the plant, but do know that Vyletongue will still control it. He may use it against you...",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 13696,
+            "name": "Vylestem Vines healed",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/npc=13696/vylestem-vines-healed"
+          },
+          {
+            "type": "item",
+            "id": 17696,
+            "name": "Filled Cerulean Vial",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=17696/filled-cerulean-vial",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -14847,6 +16491,15 @@ const DUNGEONS = [
         "objective": "Slay <a href=\"https://www.wowhead.com/classic/npc=12201/princess-theradras\" rel=\"noopener noreferrer\" target=\"_blank\">Princess Theradras</a> and return to <a href=\"https://www.wowhead.com/classic/npc=13699/selendra\" rel=\"noopener noreferrer\" target=\"_blank\">Selendra</a> near Shadowprey Village in Desolace.",
         "description": "Deep in <a href=\"https://www.wowhead.com/classic/zone=2100/maraudon\" rel=\"noopener noreferrer\" target=\"_blank\">Maraudon</a> lives an evil creature of chaos--<a href=\"https://www.wowhead.com/classic/npc=12201/princess-theradras\" rel=\"noopener noreferrer\" target=\"_blank\">Princess Theradras</a> is an elemental force of earth related to the Old Gods. Ages ago, she and Zaetar, first son of Cenarius, began a relationship. The offspring of their time together became known to the people of Kalimdor as centaur. Ever-thankful creatures, the centaur killed Zaetar, and now hold Zaetar's remains. My quest here is to find those powerful enough to slay Theradras so we may recover Zaetar's remains before returning to Stonetalon.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 12201,
+            "name": "Princess Theradras",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=12201/princess-theradras"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -14924,6 +16577,7 @@ const DUNGEONS = [
         "objective": "Assist <a href=\"https://www.wowhead.com/classic/npc=13716/celebras-the-redeemed\" rel=\"noopener noreferrer\" target=\"_blank\">Celebras the Redeemed</a> while he creates the <a href=\"https://www.wowhead.com/classic/item=17191/scepter-of-celebras\" rel=\"noopener noreferrer\" target=\"_blank\">Scepter of Celebras</a>.<br><br>Speak with him when the ritual is complete.",
         "description": "My scepter was once a source of hope for me. Its power allowed me the freedom to travel quickly through these caverns. I had hoped to bring peace to the spirit of my uncle... It is a task that I now pass to you.<br><br>For the two parts to once again become one, I will need your assistance in performing the ritual. Please follow me, and listen to my instructions while I channel the energy required to reunite the rod with the diamond.<br><br>Together, we shall create the <a href=\"https://www.wowhead.com/classic/item=17191/scepter-of-celebras\" rel=\"noopener noreferrer\" target=\"_blank\">Scepter of Celebras</a> once again!",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 17191,
@@ -14989,6 +16643,7 @@ const DUNGEONS = [
         "objective": "Seek out Remulos in Moonglade and give him the <a href=\"https://www.wowhead.com/classic/item=17760/seed-of-life\" rel=\"noopener noreferrer\" target=\"_blank\">Seed of Life</a>.",
         "description": "The misbegotten centaur--my sons and daughters--have need of their father.<br><br>Look around you--this place rings of hope and all that my father Cenarius preaches. It sprung from me! And I cannot take that away from them... not even for their crimes against me.<br><br>But there is one thing I would ask of you to ease my brother's mind. Take this... it is the first seed that fell from the life my remains nourished. Tell him my spirit remains here, and that I live on. I am sure he will understand.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -15061,6 +16716,16 @@ const DUNGEONS = [
         "objective": "The <a href=\"https://www.wowhead.com/classic/npc=5598/atalai-exile\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai Exile</a> in The Hinterlands wants the <a href=\"https://www.wowhead.com/classic/item=6212/head-of-jammalan\" rel=\"noopener noreferrer\" target=\"_blank\">Head of Jammal'an</a>.",
         "description": "My Witherbark companions don't take kindly to strangers around their home.<br><br>Me? I don't have a home anymore. I was exiled from my people, the great Atal'ai tribe of the Swamp of Sorrows.<br><br>Our spiritual leader, Jammal'an, had what he called a prophecy. He believes the summoning of the god, Hakkar will bring the Atal'ai immortality.<br><br>But I urged caution. What if the prophecy was nothing more than manipulation?<br><br>I want revenge for my exile. Bring me Jammal'an's head. Maybe then my people will be free.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6212,
+            "name": "Head of Jammal'an",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6212/head-of-jammalan",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -15132,6 +16797,24 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=10662/filled-egg-of-hakkar\" rel=\"noopener noreferrer\" target=\"_blank\">Filled Egg of Hakkar</a> to <a href=\"https://www.wowhead.com/classic/npc=8579/yehkinya\" rel=\"noopener noreferrer\" target=\"_blank\">Yeh'kinya</a> in Tanaris.",
         "description": "Now it is time to capture the essence of the avatar of Hakkar.<br><br>Take the <a href=\"https://www.wowhead.com/classic/item=10465/egg-of-hakkar\" rel=\"noopener noreferrer\" target=\"_blank\">Egg of Hakkar</a> to the Sanctum of the Fallen God in the Sunken Temple in Azeroth. Invoke the egg's power to stir the dead god.<br><br>He will send his minions against you. Defeat his bloodrinkers and take their Hakkari blood, then use the blood to dowse the eternal flames that hold Hakkar's spirit. When all the flames go out, the avatar of Hakkar will enter our world.<br><br>Defeat him, and place his essence within the <a href=\"https://www.wowhead.com/classic/item=10465/egg-of-hakkar\" rel=\"noopener noreferrer\" target=\"_blank\">Egg of Hakkar</a>.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 10662,
+            "name": "Filled Egg of Hakkar",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=10662/filled-egg-of-hakkar",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 10663,
+            "name": "Essence of Hakkar",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=10663/essence-of-hakkar",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -15204,6 +16887,15 @@ const DUNGEONS = [
             "objective": "Capture the spirits of 3 screechers in Feralas, then return to <a href=\"https://www.wowhead.com/classic/npc=8579/yehkinya\" rel=\"noopener noreferrer\" target=\"_blank\">Yeh'kinya</a> in Steamwheedle Port.",
             "description": "I seek the spirits of the vale screechers of Feralas. They are the cousins of an old, old god, and their spirits are linked to him.<br><br>Take this bramble wand and go to Feralas. Find and defeat vale screechers in southern and central Feralas, then wave my bramble over their fallen bodies. This will coax their spirit to reveal itself. Touch the spirit and collect its essence.<br><br>Return to me with my bramble and with the collected essence, and I will tell you more of the old god of which I spoke.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 8612,
+                "name": "Screecher Spirits Collected",
+                "quantity": 3,
+                "url": "https://www.wowhead.com/classic/npc=8612/screecher-spirits-collected"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -15267,6 +16959,24 @@ const DUNGEONS = [
             "objective": "Bring the First and <a href=\"https://www.wowhead.com/classic/item=10661/second-mosharu-tablet\" rel=\"noopener noreferrer\" target=\"_blank\">Second Mosh'aru Tablets</a> to <a href=\"https://www.wowhead.com/classic/npc=8579/yehkinya\" rel=\"noopener noreferrer\" target=\"_blank\">Yeh'kinya</a> in Tanaris.",
             "description": "The ancient prophecy of Mosh'aru speaks of a way to contain the god Hakkar's essence. It was written on two tablets and taken to the troll city of <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a>, west of Gadgetzan.<br><br>Bring me the Mosh'aru tablets!<br><br>The first tablet is held by the long-dead troll Theka the Martyr. It is said his persecutors were cursed into scarabs and now scuttle about his shrine.<br><br>The second tablet is held by the hydromancer Velratha, near the sacred pool of Gahz'rilla.<br><br>When you have the tablets, bring them to me.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 10660,
+                "name": "First Mosh'aru Tablet",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=10660/first-mosharu-tablet",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 10661,
+                "name": "Second Mosh'aru Tablet",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=10661/second-mosharu-tablet",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -15330,6 +17040,16 @@ const DUNGEONS = [
             "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=12402/ancient-egg\" rel=\"noopener noreferrer\" target=\"_blank\">Ancient Egg</a> to <a href=\"https://www.wowhead.com/classic/npc=8579/yehkinya\" rel=\"noopener noreferrer\" target=\"_blank\">Yeh'kinya</a> in Tanaris.",
             "description": "The Prophecy of Mosh'aru speaks of an <a href=\"https://www.wowhead.com/classic/item=12402/ancient-egg\" rel=\"noopener noreferrer\" target=\"_blank\">ancient egg</a>. It is a relic of a time when trolls ruled vast empires, and it has the power to hold the essence of Hakkar. It may be the only way to keep our world safe from his evil.<br><br>Bring me the <a href=\"https://www.wowhead.com/classic/item=12402/ancient-egg\" rel=\"noopener noreferrer\" target=\"_blank\">ancient egg</a>. It is said to lay hidden deep within Jintha'Alor in <a href=\"https://www.wowhead.com/classic/zone=47/the-hinterlands\" rel=\"noopener noreferrer\" target=\"_blank\">the Hinterlands</a>, in a cave behind the amphitheater at the top of the city.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12402,
+                "name": "Ancient Egg",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=12402/ancient-egg",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -15449,6 +17169,7 @@ const DUNGEONS = [
         "objective": "Find the <a href=\"https://www.wowhead.com/classic/object=148836/altar-of-hakkar\" rel=\"noopener noreferrer\" target=\"_blank\">Altar of Hakkar</a> in the Sunken Temple in Swamp of Sorrows.",
         "description": "Inside the temple, I found a circular room with six balconies, each one with a serpent statue on the edge. Curious, I pushed one of them to see what would happen, and it was a trap! I nearly fell to my death from the explosion. Laying there on the ledge, I looked down and noticed that there was another statue at the base of the room; an altar of sorts... Hakkar, I think it was called.<br><br>I think that this altar is the secret -- you must bring this token to the altar in the Sunken Temple.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -15504,6 +17225,7 @@ const DUNGEONS = [
                 "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker\" rel=\"noopener noreferrer\" target=\"_blank\">Marvon Rivetseeker</a> in Tanaris.",
                 "description": "I have heard of a place that lies deep below the surface of the earth -- banished there by powers greater than I have ever seen.<br><br>If you wish to learn more of this place; the Sunken Temple, seek out a goblin named <a href=\"https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker\" rel=\"noopener noreferrer\" target=\"_blank\">Marvon Rivetseeker</a>. Much like Troyas and I, he has studied many ancient areas of the world. He was last known to have left his home in Ratchet to study the troll ruins in Tanaris.<br><br>Good luck finding him; he hasn't been heard from in some time.",
                 "shareable": true,
+                "requirements": [],
                 "rewards": [],
                 "rewardChoices": [],
                 "requiredClasses": [],
@@ -15562,6 +17284,7 @@ const DUNGEONS = [
                 "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker\" rel=\"noopener noreferrer\" target=\"_blank\">Marvon Rivetseeker</a> in Tanaris.",
                 "description": "There are restless spirits in this world. There are spirits that have been tainted by their isolation, bound to an ancient evil...<br><br>I have heard of a place that lies deep below the surface of the earth -- banished there by powers greater than I have ever seen.<br><br>If you wish to learn more of this place; the Sunken Temple, seek out a goblin named <a href=\"https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker\" rel=\"noopener noreferrer\" target=\"_blank\">Marvon Rivetseeker</a>. He has studied many ancient areas of the world, and was last known to have left his home in Ratchet to study the troll ruins in Tanaris.",
                 "shareable": true,
+                "requirements": [],
                 "rewards": [],
                 "rewardChoices": [],
                 "requiredClasses": [],
@@ -15623,6 +17346,16 @@ const DUNGEONS = [
             "objective": "Retrieve the <a href=\"https://www.wowhead.com/classic/item=10556/stone-circle\" rel=\"noopener noreferrer\" target=\"_blank\">Stone Circle</a> from <a href=\"https://www.wowhead.com/classic/npc=7771/marvon-rivetseeker\" rel=\"noopener noreferrer\" target=\"_blank\">Marvon Rivetseeker</a>'s workshop in Ratchet.",
             "description": "I once entered the foreboding chambers of the Sunken Temple. The evil in that place penetrates all that enter; I barely managed to find my way out, wading through the ooze that now covers the floors. All I can remember is stumbling through a large circular room, filled with serpent statues...<br><br>Recently, I discovered a round stone that appeared to have the same serpent symbol imprinted on it. I had it packed up and shipped to my workshop in Ratchet. Retrieve it, and I might be able to tell you more.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 10556,
+                "name": "Stone Circle",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=10556/stone-circle",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -15706,6 +17439,7 @@ const DUNGEONS = [
             "objective": "Travel into the Sunken Temple and discover the secret hidden in the circle of statues.",
             "description": "My memories are cloudy, but I will tell you what I can. The circle of statues in the Sunken Temple, while dangerous, I believe that they hold the secret to unlock an even greater treasure.<br><br>From the main altar, I was able to activate a series of lights. I think that if you can uncover what these lights mean, you might be able to unlock whatever secrets are hiding in this room.<br><br>I warn you though. Great evil lies in the temple. It's likely that anything valuable will be fervently guarded...",
             "shareable": true,
+            "requirements": [],
             "rewards": [
               {
                 "id": 10773,
@@ -15773,6 +17507,7 @@ const DUNGEONS = [
         "objective": "Travel into the Sunken Temple and discover the secret hidden in the circle of statues.",
         "description": "My memories are cloudy, but I will tell you what I can. The circle of statues in the Sunken Temple, while dangerous, I believe that they hold the secret to unlock an even greater treasure.<br><br>From the main altar, I was able to activate a series of lights. I think that if you can uncover what these lights mean, you might be able to unlock whatever secrets are hiding in this room.<br><br>I warn you though. Great evil lies in the temple. It's likely that anything valuable will be fervently guarded...",
         "shareable": true,
+        "requirements": [],
         "rewards": [
           {
             "id": 10773,
@@ -15838,6 +17573,16 @@ const DUNGEONS = [
         "objective": "Gather 10 <a href=\"https://www.wowhead.com/classic/item=6288/atalai-tablet\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai Tablets</a> for <a href=\"https://www.wowhead.com/classic/npc=5384/brohann-caskbelly\" rel=\"noopener noreferrer\" target=\"_blank\">Brohann Caskbelly</a> in Stormwind.",
         "description": "According to legend, <a href=\"https://www.wowhead.com/classic/zone=1477/the-temple-of-atalhakkar\" rel=\"noopener noreferrer\" target=\"_blank\">The Temple of Atal'Hakkar</a> is a holy shrine dedicated to the ancient god, Hakkar the Soulflayer. Maintained by a vicious tribe of trolls named the Atal'ai, the temple is rumored to be impenetrable.<br><br>Now sunk beneath the Pool of Tears, retrieving artifacts from the temple is even more difficult. But that's what I need you to do.<br><br>Aid me by gathering the intact <a href=\"https://www.wowhead.com/classic/item=6288/atalai-tablet\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai Tablets</a>. Bring them to me and I will return to the Explorers' Guild a hero. Together we will share the glory.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6288,
+            "name": "Atal'ai Tablet",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=6288/atalai-tablet",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 1490,
@@ -15898,6 +17643,7 @@ const DUNGEONS = [
             "objective": "<a href=\"https://www.wowhead.com/classic/npc=5384/brohann-caskbelly\" rel=\"noopener noreferrer\" target=\"_blank\">Brohann Caskbelly</a> in Stormwind wants you to search for the Temple of Atal'Hakkar.",
             "description": "There was a time when I was young and full of vigor like you.<br><br>But now I'm old and unable to explore the world like I once did. Ah, the things I saw!<br><br>But there was one mystery that eluded me. For my final quest, the Explorers' League sent me in search of The Temple of Atal'Hakkar. It was rumored to be located in the Swamp of Sorrows.<br><br>Because of my frail state, I traveled the skies by gryphon in search of it but never found it.<br><br>Help an old dwarf out? Perhaps you will have better luck on foot.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -15961,6 +17707,7 @@ const DUNGEONS = [
             "objective": "Speak with High Thane <a href=\"https://www.wowhead.com/classic/npc=5635/falstad-wildhammer\" rel=\"noopener noreferrer\" target=\"_blank\">Falstad Wildhammer</a> at Aerie Peak in the Hinterlands.",
             "description": "As I mentioned earlier, I attempted to scout the temple on my own from the air. Well, I wasn't exactly alone.<br><br>I traveled to the renowned gryphon aviary at Aerie Peak in The Hinterlands. There I enlisted the aid of one of their finest pilots. The pilot fell off his mount, down into the swamp...<br><br>In my old age the poor fellow's name eludes me. The master of the aviary would remember, no doubt.<br><br>Journey there and seek out <a href=\"https://www.wowhead.com/classic/npc=5635/falstad-wildhammer\" rel=\"noopener noreferrer\" target=\"_blank\">Falstad Wildhammer</a>.<br><br>We need to find out what happened to that pilot.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16024,6 +17771,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe\" rel=\"noopener noreferrer\" target=\"_blank\">Gryphon Master Talonaxe</a> inside the Aerie Peak Aviary.",
             "description": "So you're a glorified errand for some old Explorers' League geezer, eh?<br><br>Well you listen to me. I don't know who your old buddy was flying around with down in Azeroth. Do I look like <a href=\"https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe\" rel=\"noopener noreferrer\" target=\"_blank\">Gryphon Master Talonaxe</a> to you? Do I?<br><br>If you're so interested in the flight assignments why don't you ask the gryphon master? If I catch you idling around here for much longer, I'm going to put you to some real work.<br><br>Now get a move on.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16087,6 +17835,7 @@ const DUNGEONS = [
             "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger\" rel=\"noopener noreferrer\" target=\"_blank\">Rhapsody Shindigger</a> in <a href=\"https://www.wowhead.com/classic/zone=47/the-hinterlands\" rel=\"noopener noreferrer\" target=\"_blank\">The Hinterlands</a>.",
             "description": "Rhapsody took quite a liking to the booze. Now don't get me wrong -- all of us dwarves up here at the aviary love a good ale when the time is right.<br><br>But ol' Shindigger took to the liquor like a gryphon takes to the skies. And a damned shame it was, too. No one could fly like Rhapsody.<br><br>First sign of trouble was when he came stumbling back from that mission with your buddy, Brohann. All went down hill quickly after that. Had to let him go.<br><br>Last I heard, he's set up a brew camp to the east of here...",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16150,6 +17899,32 @@ const DUNGEONS = [
             "objective": "<a href=\"https://www.wowhead.com/classic/npc=5634/rhapsody-shindigger\" rel=\"noopener noreferrer\" target=\"_blank\">Rhapsody Shindigger</a> in <a href=\"https://www.wowhead.com/classic/zone=47/the-hinterlands\" rel=\"noopener noreferrer\" target=\"_blank\">The Hinterlands</a> wants you to bring him 3 <a href=\"https://www.wowhead.com/classic/item=6257/roc-gizzard\" rel=\"noopener noreferrer\" target=\"_blank\">Roc Gizzards</a>, 3 <a href=\"https://www.wowhead.com/classic/item=6259/groddoc-liver\" rel=\"noopener noreferrer\" target=\"_blank\">Groddoc Livers</a> and 3 <a href=\"https://www.wowhead.com/classic/item=6258/ironfur-liver\" rel=\"noopener noreferrer\" target=\"_blank\">Ironfur Livers</a>.",
             "description": "Hiccup!<br><br>So that crazy fool Brohann sent ya? My we had quite an adventure...Hiccup!<br><br>If ya want me to tell ya what happened down in the swamp, I'm gonna need me something stiff to drink. It wasn't a pretty scene, ya see. Hiccup!<br><br>Tell ya what... bring me what I need to whip up a Kalimdor Kocktail and I'll tell ya all about it.<br><br>Gonna need some <a href=\"https://www.wowhead.com/classic/item=6257/roc-gizzard\" rel=\"noopener noreferrer\" target=\"_blank\">Roc gizzards</a> from Tanaris... and let's see... some Groddoc and <a href=\"https://www.wowhead.com/classic/item=6258/ironfur-liver\" rel=\"noopener noreferrer\" target=\"_blank\">Ironfur livers</a> from Feralas...<br><br>A nice stiff Kalimdor Kocktail... that'll get me talking!",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 6257,
+                "name": "Roc Gizzard",
+                "quantity": 3,
+                "url": "https://www.wowhead.com/classic/item=6257/roc-gizzard",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 6258,
+                "name": "Ironfur Liver",
+                "quantity": 3,
+                "url": "https://www.wowhead.com/classic/item=6258/ironfur-liver",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 6259,
+                "name": "Groddoc Liver",
+                "quantity": 3,
+                "url": "https://www.wowhead.com/classic/item=6259/groddoc-liver",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16213,6 +17988,7 @@ const DUNGEONS = [
             "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=6287/atalai-tablet-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai Tablet Fragment</a> to <a href=\"https://www.wowhead.com/classic/npc=5384/brohann-caskbelly\" rel=\"noopener noreferrer\" target=\"_blank\">Brohann Caskbelly</a> in Stormwind.",
             "description": "Before the flight, I drank me a whole keg of stout. Hiccup!<br><br>And what a flight it was. Zipping around with Brohann following me. Didn't see no temple though. Hiccup!<br><br>Well, didn't see no temple till I got a little too tipsy and fell off my mount. I plunged right into the water and was sucked down. Found myself surrounded by a bunch of creepy trolls. Sure swam out of there fast! Even made off with this troll souvenir. Here, take it to Brohann and let him know his temple is down there, indeed. Hiccup!",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16293,6 +18069,16 @@ const DUNGEONS = [
         "objective": "Collect 5 samples of <a href=\"https://www.wowhead.com/classic/item=11318/atalai-haze\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai Haze</a>, then return to <a href=\"https://www.wowhead.com/classic/npc=9119/muigin\" rel=\"noopener noreferrer\" target=\"_blank\">Muigin</a> in <a href=\"https://www.wowhead.com/classic/zone=490/ungoro-crater\" rel=\"noopener noreferrer\" target=\"_blank\">Un'Goro Crater</a>.",
         "description": "To tell you the truth, I've never seen any plants like this in my travels. Perhaps I should take a trip to this crater...<br><br>At any rate, I think I know just the thing <a href=\"https://www.wowhead.com/classic/npc=9119/muigin\" rel=\"noopener noreferrer\" target=\"_blank\">Muigin</a>'s looking for -- <a href=\"https://www.wowhead.com/classic/item=11318/atalai-haze\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai haze</a>. It's horrid stuff, hard to collect, but it's just what he needs to control the little monsters.<br><br>You'll need to visit the temple of Atal'Hakkar in the Swamp of Sorrows. The <a href=\"https://www.wowhead.com/classic/item=11318/atalai-haze\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai haze</a> can be collected from the deep lurkers, murk worms, or oozes found there. Good luck!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11318,
+            "name": "Atal'ai Haze",
+            "quantity": 5,
+            "url": "https://www.wowhead.com/classic/item=11318/atalai-haze",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -16346,6 +18132,16 @@ const DUNGEONS = [
             "objective": "Collect 15 <a href=\"https://www.wowhead.com/classic/item=11316/bloodpetal\" rel=\"noopener noreferrer\" target=\"_blank\">Bloodpetals</a> and return to <a href=\"https://www.wowhead.com/classic/npc=9119/muigin\" rel=\"noopener noreferrer\" target=\"_blank\">Muigin</a>.",
             "description": "See Larion over there? It's HIS fault we're here!<br><br>I told him we were going the wrong way, but would he listen? And would you believe that he's the one that won't speak to me? Well, until he changes his mind, let's have a bit of fun with him.<br><br>Have you noticed the strange plant-like creatures around here? They're nothing but trouble, really, but I think if trained properly, I could get them to obey commands.<br><br>First thing though, I'll need some samples to study. Do you think you could collect some?",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 11316,
+                "name": "Bloodpetal",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/item=11316/bloodpetal",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16409,6 +18205,7 @@ const DUNGEONS = [
             "objective": "Take a <a href=\"https://www.wowhead.com/classic/item=11316/bloodpetal\" rel=\"noopener noreferrer\" target=\"_blank\">Bloodpetal</a> to <a href=\"https://www.wowhead.com/classic/npc=7775/gregan-brewspewer\" rel=\"noopener noreferrer\" target=\"_blank\">Gregan Brewspewer</a> in Feralas.",
             "description": "I'm not quite sure what to make of this. The plants... they seem to have some minimal intelligence.<br><br>I'm no expert, though. But, I do know someone that is!<br><br>Head to northern Feralas, and look for a buddy of mine named <a href=\"https://www.wowhead.com/classic/npc=7775/gregan-brewspewer\" rel=\"noopener noreferrer\" target=\"_blank\">Gregan Brewspewer</a>. He's an expert on this sort of thing.<br><br>I'm sure Gregan can help us out here. You'll find him out in the wilderness; he's not the type to live in a big city.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16496,6 +18293,16 @@ const DUNGEONS = [
         "objective": "Collect 20 <a href=\"https://www.wowhead.com/classic/item=6181/fetish-of-hakkar\" rel=\"noopener noreferrer\" target=\"_blank\">Fetishes of Hakkar</a> and bring them to <a href=\"https://www.wowhead.com/classic/npc=1443/felzerul\" rel=\"noopener noreferrer\" target=\"_blank\">Fel'Zerul</a> in Stonard.",
         "description": "So he spoke of Jammal'an's prophecy?<br><br>The Atal'ai spiritual leader believes once Hakkar returns to Azeroth from the Nether, the god will grant the Atal'ai tribe immortality.<br><br>Foolish trickery to bring about a premature doomsday if you ask me.<br><br>But you say the exile spoke of enchanted fetishes? This concerns me greatly. If these are in fact the key to the Atal'ai ritual which caused this mess, we must understand their intrinsic powers.<br><br>Venture into the Temple, and seize the fetishes!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6181,
+            "name": "Fetish of Hakkar",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/item=6181/fetish-of-hakkar",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 1490,
@@ -16556,6 +18363,16 @@ const DUNGEONS = [
             "objective": "<a href=\"https://www.wowhead.com/classic/npc=1443/felzerul\" rel=\"noopener noreferrer\" target=\"_blank\">Fel'zerul</a> in Stonard wants you to gather 10 <a href=\"https://www.wowhead.com/classic/item=6175/atalai-artifact\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai Artifacts</a>.",
             "description": "The Warchief sent us to investigate strange happenings at The Temple of Atal'Hakkar.<br><br>The Atal'ai trolls are a tribe of dark casters, known for practicing forbidden magic. You can imagine how astonished we were when we arrived here to discover the temple had been sunk.<br><br>The green dragons now guard the site, claiming to be protectors of Azeroth.<br><br>We need to discover what happened. Explore around the Pool of Tears and gather <a href=\"https://www.wowhead.com/classic/item=6175/atalai-artifact\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai artifacts</a>. From those I can begin to piece together this puzzle.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 6175,
+                "name": "Atal'ai Artifact",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/item=6175/atalai-artifact",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16619,6 +18436,7 @@ const DUNGEONS = [
             "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=6193/bundle-of-atalai-artifacts\" rel=\"noopener noreferrer\" target=\"_blank\">Bundle of Atal'ai Artifacts</a> to the <a href=\"https://www.wowhead.com/classic/npc=5598/atalai-exile\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai Exile</a> in the Hinterlands.",
             "description": "While you were braving the dangers of the Pool of Tears, one of my scouts returned with a scroll written in blood on dried flesh. It seems to be a judicial sentence against a priest of the Atal'ai tribe.<br><br>This priest was sentenced to a fate worse than death amongst the Atal'ai.<br><br>He was exiled to live far north in the Hinterlands, with the Witherbark trolls.<br><br>I will bundle these artifacts. You are to seek out the exile and discover their true use. Return to me once your journey is complete.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16682,6 +18500,7 @@ const DUNGEONS = [
             "objective": "Return to <a href=\"https://www.wowhead.com/classic/npc=1443/felzerul\" rel=\"noopener noreferrer\" target=\"_blank\">Fel'Zerul</a> in Stonard.",
             "description": "Jammal'an the Prophet sentenced me to exile from The Temple of Atal'Hakkar. I once felt the high priest was a worthy leader.<br><br>His unyielding faith in his prophecy will bring about the destruction of the Atal'ai. If it hasn't already.<br><br>When I expressed my concerns, I was labeled an infidel and ousted from the temple.<br><br>Those artifacts you brought to me are harmless. But if Jammal'an has found the proper fetish enchantment for the summoning ritual, the world lies in great peril....",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16756,6 +18575,16 @@ const DUNGEONS = [
         "objective": "Deliver the <a href=\"https://www.wowhead.com/classic/item=11319/unloaded-zapper\" rel=\"noopener noreferrer\" target=\"_blank\">Unloaded Zapper</a> and 5 samples of <a href=\"https://www.wowhead.com/classic/item=11318/atalai-haze\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai Haze</a> to <a href=\"https://www.wowhead.com/classic/npc=9118/larion\" rel=\"noopener noreferrer\" target=\"_blank\">Larion</a> in Marshal's Refuge.",
         "description": "You're in luck! I've been working on some of my own experiments while Marvon's been gone, and one of them is a short range bug zapper. With just a few adjustments, it should be great for ridding yourself of those Bloodpetal pests.<br><br>I can let you have one of my zapper prototypes, but you'll still need to collect the fuel. You can get the necessary <a href=\"https://www.wowhead.com/classic/item=11318/atalai-haze\" rel=\"noopener noreferrer\" target=\"_blank\">Atal'ai haze</a> that the zapper needs in the temple of Atal'Hakkar. The deep lurkers, murk worms, or oozes are the ones you'll need to get it from.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11318,
+            "name": "Atal'ai Haze",
+            "quantity": 5,
+            "url": "https://www.wowhead.com/classic/item=11318/atalai-haze",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -16809,6 +18638,36 @@ const DUNGEONS = [
             "objective": "Hunt 5 <a href=\"https://www.wowhead.com/classic/npc=6509/bloodpetal-lasher\" rel=\"noopener noreferrer\" target=\"_blank\">Bloodpetal Lashers</a>, 5 <a href=\"https://www.wowhead.com/classic/npc=6511/bloodpetal-thresher\" rel=\"noopener noreferrer\" target=\"_blank\">Bloodpetal Threshers</a>, 5 <a href=\"https://www.wowhead.com/classic/npc=6510/bloodpetal-flayer\" rel=\"noopener noreferrer\" target=\"_blank\">Bloodpetal Flayers</a> and 5 <a href=\"https://www.wowhead.com/classic/npc=6512/bloodpetal-trapper\" rel=\"noopener noreferrer\" target=\"_blank\">Bloodpetal Trappers</a> for <a href=\"https://www.wowhead.com/classic/npc=9118/larion\" rel=\"noopener noreferrer\" target=\"_blank\">Larion</a> at Marshal's Refuge.",
             "description": "See Muigin over there? It's HIS fault we're lost!<br><br>I'm the one that knew the way, but he insisted he knew a shortcut, and we ended up here!<br><br>To make matters worse, now he keeps sending his crazy plant pests to annoy me. I'm so angry that I'm not planning on talking to him any time soon, but these pests are too much to handle.<br><br>Why don't we try to limit his supply, first thing. Go out and hunt some Bloodpetals, then return to me.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 6509,
+                "name": "Bloodpetal Lasher",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/npc=6509/bloodpetal-lasher"
+              },
+              {
+                "type": "npc",
+                "id": 6512,
+                "name": "Bloodpetal Trapper",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/npc=6512/bloodpetal-trapper"
+              },
+              {
+                "type": "npc",
+                "id": 6510,
+                "name": "Bloodpetal Flayer",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/npc=6510/bloodpetal-flayer"
+              },
+              {
+                "type": "npc",
+                "id": 6511,
+                "name": "Bloodpetal Thresher",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/npc=6511/bloodpetal-thresher"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16872,6 +18731,7 @@ const DUNGEONS = [
             "objective": "Travel to Marvon Rivetseeker's workshop in Ratchet.",
             "description": "I managed to spy on what Muigin was doing, and he's actually growing the darn things over there!<br><br>I think the only solution here is to... no, not go talk to him... What are you thinking? The solution is to fight back!<br><br>We'll need the help of my friend, Marvon, who has a workshop in Ratchet. I'm sure he'll be able to create some sort of gadget that will help us.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -16951,6 +18811,7 @@ const DUNGEONS = [
         "objective": "Place the <a href=\"https://www.wowhead.com/classic/item=10454/essence-of-eranikus\" rel=\"noopener noreferrer\" target=\"_blank\">Essence of Eranikus</a> in the <a href=\"https://www.wowhead.com/classic/object=148512/essence-font\" rel=\"noopener noreferrer\" target=\"_blank\">Essence Font</a> located in this lair in the Sunken Temple.",
         "description": "As you touch the gem, a deep voice resonates in your mind.<br><br>\"Mortal, heed this plea. I am Eranikus of the Green Dragonflight, keeper of this accursed temple. My charge to ensure that the trolls never again bring forth their abomination of a god has for now ended in failure. As I imbue this gem with part of my essence, I sense my grip on the Dream twisting into chaos. Please - place this gem into the <a href=\"https://www.wowhead.com/classic/object=148512/essence-font\" rel=\"noopener noreferrer\" target=\"_blank\">essence font</a> in my lair, and let our magic there purge the taint from my psyche so that I may rest.\"",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 10455,
@@ -17044,6 +18905,16 @@ const DUNGEONS = [
         "objective": "Retrieve a <a href=\"https://www.wowhead.com/classic/item=22444/putrid-vine\" rel=\"noopener noreferrer\" target=\"_blank\">Putrid Vine</a> from the guardian at the bottom of the Sunken Temple and return to <a href=\"https://www.wowhead.com/classic/npc=9619/torwa-pathfinder\" rel=\"noopener noreferrer\" target=\"_blank\">Torwa Pathfinder</a>.",
         "description": "It is as I feared -- the toxin is simply too weak for such a powerful creature.<br><br>If we are to create a toxin of high enough potency, you must venture to the bottom of the Temple of Atal'Hakkar, unlock the secrets of the altar and recover a <a href=\"https://www.wowhead.com/classic/item=22444/putrid-vine\" rel=\"noopener noreferrer\" target=\"_blank\">putrid vine</a> from the guardian there. The temple is dangerous, and it would behoove you to bring friends.<br><br>Return to me when this is done.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 22444,
+            "name": "Putrid Vine",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=22444/putrid-vine",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -17139,6 +19010,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=9619/torwa-pathfinder\" rel=\"noopener noreferrer\" target=\"_blank\">Torwa Pathfinder</a> in Un'Goro Crater.",
             "description": "A hunter by the name of <a href=\"https://www.wowhead.com/classic/npc=9619/torwa-pathfinder\" rel=\"noopener noreferrer\" target=\"_blank\">Torwa Pathfinder</a> has requested the help of a druid. He said only we would possess the necessary skills and respect for nature to help him.<br><br>There is a road that connects the Un'Goro Crater and the desert of Tanaris. As that road enters the crater, you will find Torwa close by.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -17204,6 +19076,24 @@ const DUNGEONS = [
             "objective": "Collect 8 <a href=\"https://www.wowhead.com/classic/item=22434/bloodcap\" rel=\"noopener noreferrer\" target=\"_blank\">Bloodcap</a> and 8 <a href=\"https://www.wowhead.com/classic/item=22435/gorishi-sting\" rel=\"noopener noreferrer\" target=\"_blank\">Gorishi Stings</a>, and return to <a href=\"https://www.wowhead.com/classic/npc=9619/torwa-pathfinder\" rel=\"noopener noreferrer\" target=\"_blank\">Torwa Pathfinder</a> in Un'Goro Crater.",
             "description": "I would ask you to help me create a toxin of sorts, to pacify a great creature living here in the crater. It is not deadly, and only the keen eyes of a can hope to collect the ingredients.<br><br>You can find the <a href=\"https://www.wowhead.com/classic/item=22434/bloodcap\" rel=\"noopener noreferrer\" target=\"_blank\">bloodcap</a> mushrooms growing within the bloodpetal sprouts all across the crater. <a href=\"https://www.wowhead.com/classic/item=22435/gorishi-sting\" rel=\"noopener noreferrer\" target=\"_blank\">Gorishi stings</a> are from the giant flying wasps inside and around the Slithering Scar, located in the southern part of the crater.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 22435,
+                "name": "Gorishi Sting",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/item=22435/gorishi-sting",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 22434,
+                "name": "Bloodcap",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/item=22434/bloodcap",
+                "quality": 1
+              }
+            ],
             "rewards": [
               {
                 "id": 13446,
@@ -17276,6 +19166,7 @@ const DUNGEONS = [
             "objective": "Stab a Devilsaur with the <a href=\"https://www.wowhead.com/classic/item=22432/devilsaur-barb\" rel=\"noopener noreferrer\" target=\"_blank\">Devilsaur Barb</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9619/torwa-pathfinder\" rel=\"noopener noreferrer\" target=\"_blank\">Torwa Pathfinder</a> in Un'Goro Crater when you have completed this task.",
             "description": "The toxin you helped me create is for a special purpose. The great devilsaurs of the crater make it dangerous to hunt and difficult for me to survive. Even if I possessed the necessary strength, killing a devilsaur simply allows another to move into its territory.<br><br>Take this poisoned barb and stab it deep into a living devilsaur. The toxin should pacify the creature, though I do not know how quickly...",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -17352,6 +19243,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=20019/tooth-of-morphaz\" rel=\"noopener noreferrer\" target=\"_blank\">Tooth of Morphaz</a> to <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> in Azshara. <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> resides atop the cliffs northeast the Ruins of Eldarath.",
         "description": "Now I set you on a dangerous hunt to slay the green drake, Morphaz, and bring his tooth to me. Morphaz dwells deep in Temple of Atal'Hakkar, the entrance to which lies in Swamp of Sorrows.<br><br>If you wish to defeat him, you must not go alone. This drake is an enemy of many -- seek others who wish to destroy him.<br><br>The drake's tooth represents the power a hunter will find in the company of others. Bring it to me and you will have learned much.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 20019,
+            "name": "Tooth of Morphaz",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=20019/tooth-of-morphaz",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -17454,6 +19355,7 @@ const DUNGEONS = [
             "objective": "Speak to <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> in Azshara.",
             "description": "<a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> of Azshara has sent out a call for seasoned hunters such as yourself. He is a furbolg hunter who has left his tribe to aid the Cenarion Circle. His teachings are meant to enrich the wisdom of others who share his craft, and guide them toward maintaining a balance. You would do well to speak with him.<br><br><a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> resides atop the cliffs of Azshara, northeast from the Ruins of Eldarath.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -17519,6 +19421,16 @@ const DUNGEONS = [
             "objective": "Bring a pair of <a href=\"https://www.wowhead.com/classic/item=20017/perfect-courser-antler\" rel=\"noopener noreferrer\" target=\"_blank\">Perfect Courser Antlers</a> to <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> in Azshara. <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> resides atop the cliffs northeast of the Ruins of Eldarath.",
             "description": "The courser wears the mightiest antlers in the known lands. Such antlers are used to defend the courser, goring an attacker and often damaging the points. Perfect, natural antlers are the sign of an animal spirit with supreme confidence.<br><br>To hold such antlers will bestow the same confidence in you.<br><br>Hunt the mosshoof courser, find the perfect antlers and bring them to me.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 20017,
+                "name": "Perfect Courser Antler",
+                "quantity": 2,
+                "url": "https://www.wowhead.com/classic/item=20017/perfect-courser-antler",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -17584,6 +19496,16 @@ const DUNGEONS = [
             "objective": "Bring 6 <a href=\"https://www.wowhead.com/classic/item=20087/wavethrasher-scales\" rel=\"noopener noreferrer\" target=\"_blank\">Wavethrasher Scales</a> to <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> in Azshara. <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> resides atop the cliffs northeast the Ruins of Eldarath.",
             "description": "The wavethrasher is an amphibious beast living only here in Azshara. They are powerful and resilient.<br><br>The tough, reflective scales from a wavethrasher mirror the strength of the hunter.<br><br>Track and hunt wavethrashers along the coast of Azshara, and bring me their scales.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 20087,
+                "name": "Wavethrasher Scales",
+                "quantity": 6,
+                "url": "https://www.wowhead.com/classic/item=20087/wavethrasher-scales",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -17660,6 +19582,16 @@ const DUNGEONS = [
         "objective": "Retrieve the <a href=\"https://www.wowhead.com/classic/item=20085/arcane-shard\" rel=\"noopener noreferrer\" target=\"_blank\">Arcane Shard</a> from Morphaz and return to <a href=\"https://www.wowhead.com/classic/npc=8379/archmage-xylem\" rel=\"noopener noreferrer\" target=\"_blank\">Archmage Xylem</a>.",
         "description": "There is a green drake deep in the sunken temple of Atal'Hakkar by the name of Morphaz.<br><br>Years ago, he overwhelmed me in a bold ambush and consumed my apprentice whole. While the loss of an apprentice is not unknown to me, this particular one carried an <a href=\"https://www.wowhead.com/classic/item=20085/arcane-shard\" rel=\"noopener noreferrer\" target=\"_blank\">arcane shard</a> of unsurpassed size and quality.<br><br>You must gather powerful allies and delve into the temple. Destroy Morphaz and recover the <a href=\"https://www.wowhead.com/classic/item=20085/arcane-shard\" rel=\"noopener noreferrer\" target=\"_blank\">arcane shard</a> from his ageless stomach.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 20085,
+            "name": "Arcane Shard",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=20085/arcane-shard",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -17762,6 +19694,7 @@ const DUNGEONS = [
             "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=8395/sanath-lim-yo\" rel=\"noopener noreferrer\" target=\"_blank\">Sanath Lim-yo</a> and gain passage to see Archmage Xylem.",
             "description": "Archmage Xylem has been asking around lately... for someone of your experience.<br><br>If you wish to seek him out, you can find him in Azshara. His tower is built high atop the cliffs, and the only way up is a teleport spell invoked by his arrogant servant, <a href=\"https://www.wowhead.com/classic/npc=8395/sanath-lim-yo\" rel=\"noopener noreferrer\" target=\"_blank\">Sanath Lim-yo</a>.<br><br>Sanath makes camp below his master's tower. To find him, travel to where Azshara's main road forks at the entrance to the Ruins of Eldarath. From that spot, head directly north until you reach the cliffs.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -17822,6 +19755,16 @@ const DUNGEONS = [
             "objective": "Bring 10 <a href=\"https://www.wowhead.com/classic/item=20028/glittering-dust\" rel=\"noopener noreferrer\" target=\"_blank\">Glittering Dust</a> to <a href=\"https://www.wowhead.com/classic/npc=8379/archmage-xylem\" rel=\"noopener noreferrer\" target=\"_blank\">Archmage Xylem</a>.",
             "description": "The blood elves in Azshara have developed a method for pulverizing the magical items they acquire. This <a href=\"https://www.wowhead.com/classic/item=20028/glittering-dust\" rel=\"noopener noreferrer\" target=\"_blank\">glittering dust</a> they produce differs from the components normally acquired by a disenchantment spell.<br><br>When I sent my apprentice to trade for the dust, he was killed without hesitation. For that, they must pay.<br><br>The time for talk is over. Find the blood elves along the cliffs of Azshara and use more \"persuasive\" methods to acquire their <a href=\"https://www.wowhead.com/classic/item=20028/glittering-dust\" rel=\"noopener noreferrer\" target=\"_blank\">glittering dust</a>.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 20028,
+                "name": "Glittering Dust",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/item=20028/glittering-dust",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -17893,6 +19836,16 @@ const DUNGEONS = [
             "objective": "Collect 6 <a href=\"https://www.wowhead.com/classic/item=20029/enchanted-coral\" rel=\"noopener noreferrer\" target=\"_blank\">Enchanted Coral</a> and return them to <a href=\"https://www.wowhead.com/classic/npc=8379/archmage-xylem\" rel=\"noopener noreferrer\" target=\"_blank\">Archmage Xylem</a>.",
             "description": "Take a look around you. The ruins and beaches are overrun with spitelash. Recently, the wretched creatures have learned to recognize the rare components indigenous to Azshara.<br><br>Specifically, I speak of <a href=\"https://www.wowhead.com/classic/item=20029/enchanted-coral\" rel=\"noopener noreferrer\" target=\"_blank\">enchanted coral</a> -- they are drawn to it by reasons unknown to me. Now there is little coral left in the bay, and it is vital to my research. I need you to separate some <a href=\"https://www.wowhead.com/classic/item=20029/enchanted-coral\" rel=\"noopener noreferrer\" target=\"_blank\">enchanted coral</a> from the spitelash sirens and bring it to me.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 20029,
+                "name": "Enchanted Coral",
+                "quantity": 6,
+                "url": "https://www.wowhead.com/classic/item=20029/enchanted-coral",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -17969,6 +19922,32 @@ const DUNGEONS = [
         "objective": "Bring the voodoo feathers to Ashlam Valorfist.",
         "description": "Now we must combine the inert scourgestones and create a weapon to shatter the ranks of undead. This is no trivial task. Only the trolls of the sunken temple carry the kind of rare magic able to turn the evil of something against itself.<br><br>In the temple, the trolls are known as Gasher, Mijan, Zolo, Hukku, Zul'lor, and Loro. Do not feel remorse for their corrupt souls... they are not without evil.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 20606,
+            "name": "Amber Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 20607,
+            "name": "Blue Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 20608,
+            "name": "Green Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 20620,
@@ -18057,6 +20036,7 @@ const DUNGEONS = [
             "objective": "Speak to <a href=\"https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Ashlam Valorfist</a> at Chillwind Point.",
             "description": "<a href=\"https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Ashlam Valorfist</a> has sent out a call for a paladin of your purity and valor. You can find him at Chillwind Point in the southern part of the Western Plaguelands. Seek him and aid in his cause for the Light!",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -18122,6 +20102,16 @@ const DUNGEONS = [
             "objective": "Collect 20 <a href=\"https://www.wowhead.com/classic/item=12840/minions-scourgestone\" rel=\"noopener noreferrer\" target=\"_blank\">Minion's Scourgestones</a> and bring them to <a href=\"https://www.wowhead.com/classic/npc=1854/high-priest-theldanis\" rel=\"noopener noreferrer\" target=\"_blank\">High Priest Thel'danis</a> in the Western Plaguelands.",
             "description": "Greetings. Crusaders like you are a welcome sight in these desolate reaches.<br><br>Your holy strength is needed to help fight the endless undead here. We need you to collect a large number of scourgestones and bring them to <a href=\"https://www.wowhead.com/classic/npc=1854/high-priest-theldanis\" rel=\"noopener noreferrer\" target=\"_blank\">High Priest Thel'danis</a>. The high priest can be found guarding Uther's Tomb in Sorrow Hill, not far from here.<br><br>Only one with an Argent Dawn Commission can hope to find scourgestones, so speak to Officer Pureheart if you haven't already.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12840,
+                "name": "Minion's Scourgestone",
+                "quantity": 20,
+                "url": "https://www.wowhead.com/classic/item=12840/minions-scourgestone",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -18187,6 +20177,7 @@ const DUNGEONS = [
             "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=20612/inert-scourgestone\" rel=\"noopener noreferrer\" target=\"_blank\">Inert Scourgestone</a> to Commander Ashlan Valorfist in Chillwind Point.",
             "description": "The evil has been purged from the stones.<br><br>I am aware of Commander Ashlam's plans, and he will require only a single inert stone. Bring it to him so we may bathe the Scourge in righteous fire.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -18269,6 +20260,16 @@ const DUNGEONS = [
         "objective": "Kill Morphaz in the sunken temple of Atal'Hakkar, and return his blood to <a href=\"https://www.wowhead.com/classic/npc=10922/greta-mosshoof\" rel=\"noopener noreferrer\" target=\"_blank\">Greta Mosshoof</a> in Felwood. The entrance to the sunken temple can be found in the Swamp of Sorrows.",
         "description": "Now the last part, the second cure.<br><br>The green drake Morphaz is known to be immune to all forms of poison and disease -- many druids died to bring us this information. There is no doubt his blood is potent for our needs.<br><br>A courier from the Cenarion Circle will take the parts you have already collected while you gather the last. Summon your allies and seek out the drake's lair in the sunken temple of Atal'Hakkar. Bring his blood to <a href=\"https://www.wowhead.com/classic/npc=10922/greta-mosshoof\" rel=\"noopener noreferrer\" target=\"_blank\">Greta Mosshoof</a> in Felwood.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 20025,
+            "name": "Blood of Morphaz",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=20025/blood-of-morphaz",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -18357,6 +20358,7 @@ const DUNGEONS = [
             "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> in Azshara.",
             "description": "It is the way of the divine to help those in need. The how is insignificant -- only the why matters.<br><br>The Cenarion Circle has such a need. Speak with <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> to lend aid to their plight. He resides atop the cliffs to the northeast of the Ruins of Eldarath in Azshara.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -18422,6 +20424,16 @@ const DUNGEONS = [
             "objective": "Acquire 4 <a href=\"https://www.wowhead.com/classic/item=20027/healthy-courser-gland\" rel=\"noopener noreferrer\" target=\"_blank\">Healthy Courser Glands</a> and bring them to <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> in Azshara. <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> resides atop the cliffs northeast the Ruins of Eldarath.",
             "description": "The mosshoof coursers of Azshara are magnificent animals who once lived in Felwood. They naturally resist disease and poison, and were unaffected by the corruption there. In their ancestral wisdom, they simply chose to leave that sickened place.<br><br>It saddens my heart, but I must ask you to hunt these mighty beasts for me. Gather four courser glands as the first ingredient for a restorative salve -- a salve we will use to heal Felwood.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 20027,
+                "name": "Healthy Courser Gland",
+                "quantity": 4,
+                "url": "https://www.wowhead.com/classic/item=20027/healthy-courser-gland",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -18487,6 +20499,16 @@ const DUNGEONS = [
             "objective": "Acquire an <a href=\"https://www.wowhead.com/classic/item=7972/ichor-of-undeath\" rel=\"noopener noreferrer\" target=\"_blank\">Ichor of Undeath</a> for <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> in Azshara. <a href=\"https://www.wowhead.com/classic/npc=8405/ogtinc\" rel=\"noopener noreferrer\" target=\"_blank\">Ogtinc</a> resides atop the cliffs northeast the Ruins of Eldarath.",
             "description": "For this restorative salve, you must use a simple formula: one part poison, two parts cure. You have acquired one cure, now you must gather the poison.<br><br>Powerful undead, such as the lingering highborne who wander the Ruins of Eldarath, are sometimes so infused with evil that it coalesces into a sickly greenish goo. To the living, this substance is known as <a href=\"https://www.wowhead.com/classic/item=7972/ichor-of-undeath\" rel=\"noopener noreferrer\" target=\"_blank\">ichor of undeath</a>.<br><br>Due to the potency of this vile element, I require only a single ichor.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 7972,
+                "name": "Ichor of Undeath",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=7972/ichor-of-undeath",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -18563,6 +20585,16 @@ const DUNGEONS = [
         "objective": "Return the <a href=\"https://www.wowhead.com/classic/item=20022/azure-key\" rel=\"noopener noreferrer\" target=\"_blank\">Azure Key</a> to <a href=\"https://www.wowhead.com/classic/npc=6768/lord-jorach-ravenholdt\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Jorach Ravenholdt</a>.",
         "description": "It will take some time to decipher the fragments and remove the enchantment. When I am complete, I'll deliver the bag to Lord Ravenholdt personally.<br><br>There is still the matter of the key, said to be held by a green drake known as Morphaz. The drake has made its home deep in the Temple of Atal'Hakkar, the entrance to which lies in the Swamp of Sorrows.<br><br>Gather your friends and venture to his lair. Lord Ravenholdt will await your return with the key.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 20022,
+            "name": "Azure Key",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=20022/azure-key",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -18665,6 +20697,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6768/lord-jorach-ravenholdt\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Jorach Ravenholdt</a> in Ravenholdt Manor.",
             "description": "<a href=\"https://www.wowhead.com/classic/npc=6768/lord-jorach-ravenholdt\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Jorach Ravenholdt</a> has requested your presence. The matter is secret, and I cannot say any more.<br><br>Ravenholdt Manor is located in the Hillsbrad Foothills -- look for a path in the mountains northwest of Durnhold Keep.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -18730,6 +20763,16 @@ const DUNGEONS = [
             "objective": "Retrieve the <a href=\"https://www.wowhead.com/classic/item=19775/sealed-azure-bag\" rel=\"noopener noreferrer\" target=\"_blank\">Sealed Azure Bag</a> from the Timbermaw Shaman in Azshara. Then take the bag to <a href=\"https://www.wowhead.com/classic/npc=8379/archmage-xylem\" rel=\"noopener noreferrer\" target=\"_blank\">Archmage Xylem</a>, also found in Azshara.",
             "description": "First things first. What I've lost is a small blue bag, the contents of which are a private matter.<br><br>Don't bother going after the thieves, because they are already dead. What we do know is the fools couldn't get the bag open. so they sold it to some timbermaw shaman in Azshara as a holy relic. Clever.<br><br>I need you to travel to Azshara and retrieve it from the shaman through subtlety... or force. Better luck with the first method, I'd wager. Once acquired, take it to <a href=\"https://www.wowhead.com/classic/npc=8379/archmage-xylem\" rel=\"noopener noreferrer\" target=\"_blank\">Archmage Xylem</a>.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 19775,
+                "name": "Sealed Azure Bag",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=19775/sealed-azure-bag",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -18795,6 +20838,16 @@ const DUNGEONS = [
             "objective": "Bring 10 <a href=\"https://www.wowhead.com/classic/item=20023/encoded-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">Encoded Fragments</a> to <a href=\"https://www.wowhead.com/classic/npc=8379/archmage-xylem\" rel=\"noopener noreferrer\" target=\"_blank\">Archmage Xylem</a> in Azshara.",
             "description": "Lord Ravenholdt has asked a favor of us both. He wishes to remove the enchantment from this bag.<br><br>Unfortunately, some of my books on the subject of dispelling were taken recently, only to be destroyed by savages. The remains of my books are still valuable to me.<br><br>If you can bring me enough of the <a href=\"https://www.wowhead.com/classic/item=20023/encoded-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">encoded fragments</a>, I can piece them back together. Your best chance is to kill forest oozes, since they have a tendency to pick up just about anything. You'll find them in northeast Azshara.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 20023,
+                "name": "Encoded Fragment",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/item=20023/encoded-fragment",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -18871,6 +20924,32 @@ const DUNGEONS = [
         "objective": "Bring the voodoo feathers to <a href=\"https://www.wowhead.com/classic/npc=6176/bathrah-the-windwatcher\" rel=\"noopener noreferrer\" target=\"_blank\">Bath'rah the Windwatcher</a>.",
         "description": "The spirit totem just isn't enough. We be needin' some voodoo magic to make it work jus' right.<br><br>The trolls in the sunken temple have feathers strong with voodoo magics. Go there and kill Gasher, Mijan, Zolo, Hukku, Zul'lor, and Loro. Then we have magic enough for a real spirit totem.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 20606,
+            "name": "Amber Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 20607,
+            "name": "Blue Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 20608,
+            "name": "Green Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -18954,6 +21033,40 @@ const DUNGEONS = [
                 "objective": "Collect a sample of air, fire, earth and water for <a href=\"https://www.wowhead.com/classic/npc=6176/bathrah-the-windwatcher\" rel=\"noopener noreferrer\" target=\"_blank\">Bath'rah the Windwatcher</a>.",
                 "description": "<a href=\"https://www.wowhead.com/classic/npc=6176/bathrah-the-windwatcher\" rel=\"noopener noreferrer\" target=\"_blank\">Bath'rah the Windwatcher</a> has sent out a summons for a shaman of your wisdom. He requests you bring a sample of each of the elements to show you are ready.<br><br>To find Bath'rah, go to the river east of Tarren Mill. Follow the river north until you come across the ruins where Bath'rah resides.",
                 "shareable": false,
+                "requirements": [
+                  {
+                    "type": "item",
+                    "id": 7069,
+                    "name": "Elemental Air",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=7069/elemental-air",
+                    "quality": 1
+                  },
+                  {
+                    "type": "item",
+                    "id": 7068,
+                    "name": "Elemental Fire",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=7068/elemental-fire",
+                    "quality": 1
+                  },
+                  {
+                    "type": "item",
+                    "id": 7067,
+                    "name": "Elemental Earth",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=7067/elemental-earth",
+                    "quality": 1
+                  },
+                  {
+                    "type": "item",
+                    "id": 7070,
+                    "name": "Elemental Water",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=7070/elemental-water",
+                    "quality": 1
+                  }
+                ],
                 "rewards": [],
                 "rewardChoices": [],
                 "requiredClasses": [
@@ -19014,6 +21127,40 @@ const DUNGEONS = [
                 "objective": "Bring the elements earth, air, fire and water to <a href=\"https://www.wowhead.com/classic/npc=6176/bathrah-the-windwatcher\" rel=\"noopener noreferrer\" target=\"_blank\">Bath'rah the Windwatcher</a>.",
                 "description": "Welcome, mon. You bring me the elements and then we do the talkin'.",
                 "shareable": true,
+                "requirements": [
+                  {
+                    "type": "item",
+                    "id": 7069,
+                    "name": "Elemental Air",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=7069/elemental-air",
+                    "quality": 1
+                  },
+                  {
+                    "type": "item",
+                    "id": 7067,
+                    "name": "Elemental Earth",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=7067/elemental-earth",
+                    "quality": 1
+                  },
+                  {
+                    "type": "item",
+                    "id": 7068,
+                    "name": "Elemental Fire",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=7068/elemental-fire",
+                    "quality": 1
+                  },
+                  {
+                    "type": "item",
+                    "id": 7070,
+                    "name": "Elemental Water",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=7070/elemental-water",
+                    "quality": 1
+                  }
+                ],
                 "rewards": [],
                 "rewardChoices": [],
                 "requiredClasses": [
@@ -19077,6 +21224,24 @@ const DUNGEONS = [
             "objective": "Bring the pieces for the spirit totem to <a href=\"https://www.wowhead.com/classic/npc=6176/bathrah-the-windwatcher\" rel=\"noopener noreferrer\" target=\"_blank\">Bath'rah the Windwatcher</a>.",
             "description": "The elemental spirits of this place don't be likin' me any more.<br><br>You know about the totems more than any, and I be needin' a spirit totem to protect me. We already got the elements, now we need somethin' more with more nature. More primal.<br><br>In the Western Plaguelands you can kill bears for claws and spiders for their eyes. The carrion birds eat everything, so they might have either one.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 20610,
+                "name": "Bloodshot Spider Eye",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/item=20610/bloodshot-spider-eye",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 20611,
+                "name": "Thick Black Claw",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/item=20611/thick-black-claw",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -19152,6 +21317,32 @@ const DUNGEONS = [
         "objective": "Bring a total of 6 Voodoo Feathers from the trolls in sunken temple.",
         "description": "My pet is almost done. Now I just need something to stuff it with.<br><br>Only the voodoo feathers from the trolls in the sunken temple will do. They go by the names Gasher, Mijan, Zolo, Hukku, Zul'lor, and Loro. Kill them. Kill them all.<br><br>This is no trivial task, so I'll make it worth your while by giving you something of Niby's -- he probably doesn't need it anyhow.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 20606,
+            "name": "Amber Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 20607,
+            "name": "Blue Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 20608,
+            "name": "Green Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -19249,6 +21440,16 @@ const DUNGEONS = [
                 "objective": "Bring a piece of <a href=\"https://www.wowhead.com/classic/item=14256/felcloth\" rel=\"noopener noreferrer\" target=\"_blank\">felcloth</a> to <a href=\"https://www.wowhead.com/classic/npc=14470/impsy\" rel=\"noopener noreferrer\" target=\"_blank\">Impsy</a> in Felwood.",
                 "description": "an imp in Felwood by the name of <a href=\"https://www.wowhead.com/classic/npc=14470/impsy\" rel=\"noopener noreferrer\" target=\"_blank\">Impsy</a> has requested your presence. It is somewhat strange, as he has asked that you bring a piece of <a href=\"https://www.wowhead.com/classic/item=14256/felcloth\" rel=\"noopener noreferrer\" target=\"_blank\">felcloth</a> as a sign of good faith. Considering the power you already wield as a warlock, I can only assume you know the satyrs of Felwood carry this <a href=\"https://www.wowhead.com/classic/item=14256/felcloth\" rel=\"noopener noreferrer\" target=\"_blank\">felcloth</a>.<br><br>You can find <a href=\"https://www.wowhead.com/classic/npc=14470/impsy\" rel=\"noopener noreferrer\" target=\"_blank\">Impsy</a> just north of the Bloodvenom Falls, which I've heard is quite lovely this time of year.",
                 "shareable": false,
+                "requirements": [
+                  {
+                    "type": "item",
+                    "id": 14256,
+                    "name": "Felcloth",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=14256/felcloth",
+                    "quality": 1
+                  }
+                ],
                 "rewards": [],
                 "rewardChoices": [],
                 "requiredClasses": [
@@ -19309,6 +21510,16 @@ const DUNGEONS = [
                 "objective": "Bring a piece of <a href=\"https://www.wowhead.com/classic/item=14256/felcloth\" rel=\"noopener noreferrer\" target=\"_blank\">felcloth</a> to <a href=\"https://www.wowhead.com/classic/npc=14470/impsy\" rel=\"noopener noreferrer\" target=\"_blank\">Impsy</a> in Felwood.",
                 "description": "Maybe this sounds strange coming from an imp, but I'd like a pet of my own. I really would. It's just not fair that Niby gets me and I get nothing!<br><br>In fact, it doesn't even need to be a living pet. I'd need something to start making it with, like some <a href=\"https://www.wowhead.com/classic/item=14256/felcloth\" rel=\"noopener noreferrer\" target=\"_blank\">felcloth</a>. The satyrs here in Felwood sometimes have <a href=\"https://www.wowhead.com/classic/item=14256/felcloth\" rel=\"noopener noreferrer\" target=\"_blank\">felcloth</a>, so you'd just have to kill enough of them until you find some. That doesn't sound so bad, does it?",
                 "shareable": false,
+                "requirements": [
+                  {
+                    "type": "item",
+                    "id": 14256,
+                    "name": "Felcloth",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=14256/felcloth",
+                    "quality": 1
+                  }
+                ],
                 "rewards": [],
                 "rewardChoices": [],
                 "requiredClasses": [
@@ -19372,6 +21583,24 @@ const DUNGEONS = [
             "objective": "Bring 10 <a href=\"https://www.wowhead.com/classic/item=20613/rotting-wood\" rel=\"noopener noreferrer\" target=\"_blank\">Rotting Wood</a> and 4 <a href=\"https://www.wowhead.com/classic/item=20614/bloodvenom-essence\" rel=\"noopener noreferrer\" target=\"_blank\">Bloodvenom Essence</a> to <a href=\"https://www.wowhead.com/classic/npc=14470/impsy\" rel=\"noopener noreferrer\" target=\"_blank\">Impsy</a> in Felwood.",
             "description": "Now that I have my felcloth, I can really begin making *my* pet.<br><br>It's going to need some eyes though. Perhaps you could rip some <a href=\"https://www.wowhead.com/classic/item=20613/rotting-wood\" rel=\"noopener noreferrer\" target=\"_blank\">rotting wood</a> from the irontree folk for me, so I can carve out some lovely eyes. They're up north in the Irontree Woods.<br><br>I'll also need some <a href=\"https://www.wowhead.com/classic/item=20614/bloodvenom-essence\" rel=\"noopener noreferrer\" target=\"_blank\">bloodvenom essence</a> to give it that new demon smell. The tainted oozes carry the essence, and they hang out right here near Niby and me.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 20613,
+                "name": "Rotting Wood",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/item=20613/rotting-wood",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 20614,
+                "name": "Bloodvenom Essence",
+                "quantity": 4,
+                "url": "https://www.wowhead.com/classic/item=20614/bloodvenom-essence",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -19457,6 +21686,32 @@ const DUNGEONS = [
         "objective": "Bring the Voodoo Feathers from the trolls in the Sunken Temple to the <a href=\"https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde\" rel=\"noopener noreferrer\" target=\"_blank\">Fallen Hero of the Horde</a>.",
         "description": "Your honor has brought some peace to me. It is only right that I offer you something in return.<br><br>My weapons and armor were splendid in life, and yet they are of no use to me now. They would be better served in your possession.<br><br>Travel to the sunken temple and destroy the troll guardians Gasher, Mijan, Zolo, Hukku, Zul'lor, and Loro. They carry magic feathers that can reform my physical body long enough to grant you a reward.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 20606,
+            "name": "Amber Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 20607,
+            "name": "Blue Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 20608,
+            "name": "Green Voodoo Feather",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -19559,6 +21814,7 @@ const DUNGEONS = [
             "objective": "Speak with the <a href=\"https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde\" rel=\"noopener noreferrer\" target=\"_blank\">Fallen Hero of the Horde</a> at the entrance to the Blasted Lands.",
             "description": "In the Blasted Lands, there is a troubled spirit who was once a great hero of the horde. A warrior's honor does not die with the body, and it would serve you well to speak with him.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -19624,6 +21880,15 @@ const DUNGEONS = [
             "objective": "Kill 7 <a href=\"https://www.wowhead.com/classic/npc=5993/helboar\" rel=\"noopener noreferrer\" target=\"_blank\">Helboar</a> in the Blasted Lands and return to the <a href=\"https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde\" rel=\"noopener noreferrer\" target=\"_blank\">Fallen Hero of the Horde</a>.",
             "description": "You are a, no doubt. I would ask an honorable task of you, but I must test your strength.<br><br>It is said that Rexxar would measure the sharpness of his blades by killing a <a href=\"https://www.wowhead.com/classic/npc=5993/helboar\" rel=\"noopener noreferrer\" target=\"_blank\">helboar</a> with a single, swift strike. Now I will measure your strength by killing them.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 5993,
+                "name": "Helboar",
+                "quantity": 7,
+                "url": "https://www.wowhead.com/classic/npc=5993/helboar"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -19689,6 +21954,29 @@ const DUNGEONS = [
             "objective": "Slaughter the Shadowsworn in the Blasted Lands and return to the <a href=\"https://www.wowhead.com/classic/npc=7572/fallen-hero-of-the-horde\" rel=\"noopener noreferrer\" target=\"_blank\">Fallen Hero of the Horde</a>.",
             "description": "The continued presence of the shadowsworn in the Blasted Lands bring great pain to me. Their dark rituals and spells cause agony unlike any I felt while alive.<br><br>Through you I can deliver my own message of pain. Go forth and deliver my wrath.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 6006,
+                "name": "Shadowsworn Adept",
+                "quantity": 20,
+                "url": "https://www.wowhead.com/classic/npc=6006/shadowsworn-adept"
+              },
+              {
+                "type": "npc",
+                "id": 6004,
+                "name": "Shadowsworn Cultist",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=6004/shadowsworn-cultist"
+              },
+              {
+                "type": "npc",
+                "id": 6005,
+                "name": "Shadowsworn Thug",
+                "quantity": 20,
+                "url": "https://www.wowhead.com/classic/npc=6005/shadowsworn-thug"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -19779,6 +22067,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=11313/ribblys-head\" rel=\"noopener noreferrer\" target=\"_blank\">Ribbly's Head</a> to <a href=\"https://www.wowhead.com/classic/npc=9544/yuka-screwspigot\" rel=\"noopener noreferrer\" target=\"_blank\">Yuka Screwspigot</a> in the Burning Steppes.",
         "description": "My brother Ribbly has always been a drain to his family, taking our money and wasting it on one scheme after another.<br><br>Well, his last scheme must have been his worst, because Baron Revilgaz of Booty Bay just put a price on poor <a href=\"https://www.wowhead.com/classic/item=11313/ribblys-head\" rel=\"noopener noreferrer\" target=\"_blank\">Ribbly's head</a>. I can't tell you how happy this makes the Screwspigots! Our little Ribbly's finally worth something!<br><br>But now he's hiding out, deep in <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>. Please, find him and bring him to me!<br><br>Or, if he won't come, then that's ok... just bring me his head.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11313,
+            "name": "Ribbly's Head",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=11313/ribblys-head",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -19851,6 +22149,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=9544/yuka-screwspigot\" rel=\"noopener noreferrer\" target=\"_blank\">Yuka Screwspigot</a> in the Burning Steppes.",
             "description": "Although my little brother Ribbly has been worthless his whole life, I think, finally, he has some value! But... we might need your help to capitalize on Ribbly's newfound worth.<br><br>My sister Yuka has been looking for him for weeks, and tracked him to the Burning Steppes. She sent word to me, asking for some hired hands.<br><br>So, what do you say? Want to help? If so, then speak with my sister. You'll find her holed up in Flame Crest, a cave northwest of Dreadmaul Rock.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -19925,6 +22224,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=11309/the-heart-of-the-mountain\" rel=\"noopener noreferrer\" target=\"_blank\">the Heart of the Mountain</a> to <a href=\"https://www.wowhead.com/classic/npc=9536/maxwort-uberglint\" rel=\"noopener noreferrer\" target=\"_blank\">Maxwort Uberglint</a> in the Burning Steppes.",
         "description": "For years I have sought a certain gem. It is called <a href=\"https://www.wowhead.com/classic/item=11309/the-heart-of-the-mountain\" rel=\"noopener noreferrer\" target=\"_blank\">the Heart of the Mountain</a> and it's the size of your fist! The Dark Iron dwarves have it locked in their vault and, try as I may, they won't let me purchase it.<br><br>So I must resort to force.<br><br>Fight your way to the Lower Vault of <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>, breach its secret safe and gain the Heart. To do that, you must defeat Watchman Doomgrip, and he won't appear until you've opened every relic coffer in the vault!<br><br>Good luck.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11309,
+            "name": "The Heart of the Mountain",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=11309/the-heart-of-the-mountain",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -19983,6 +22292,16 @@ const DUNGEONS = [
         "objective": "Venture to the <a href=\"https://www.wowhead.com/classic/zone=2717/molten-core\" rel=\"noopener noreferrer\" target=\"_blank\">Molten Core</a> entry portal in Blackrock Depths and recover a <a href=\"https://www.wowhead.com/classic/item=18412/core-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">Core Fragment</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=14387/lothos-riftwaker\" rel=\"noopener noreferrer\" target=\"_blank\">Lothos Riftwaker</a> in Blackrock Mountain when you have recovered the <a href=\"https://www.wowhead.com/classic/item=18412/core-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">Core Fragment</a>.",
         "description": "Rifts stir, tear, and collapse all around us. Not two paces from where I stand is a tear leading through the depths of Blackrock Mountain, into the maw of the Firelord.<br><br>Surprised? Pity... The mortal races cannot comprehend that which they cannot see, touch, or feel.<br><br>I assure you, the portal is there and access is possible.<br><br>I've piqued your interest? Attunement is simple. Venture into Blackrock Depths and retrieve a <a href=\"https://www.wowhead.com/classic/item=18412/core-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">core fragment</a>. Return it to me and I shall attune your essence with the portal.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18412,
+            "name": "Core Fragment",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18412/core-fragment",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -20041,6 +22360,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and recover 20 <a href=\"https://www.wowhead.com/classic/item=11468/dark-iron-fanny-pack\" rel=\"noopener noreferrer\" target=\"_blank\">Dark Iron Fanny Packs</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9177/oralius\" rel=\"noopener noreferrer\" target=\"_blank\">Oralius</a> when you have completed this task. You assume that the Dark Iron dwarves inside <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> carry these 'fanny pack' contraptions.",
         "description": "Captain Winky tells me that the Dark Irons in the Depths got all the good stuff. Ain't that right, Winky?<br><br>&lt;<a href=\"https://www.wowhead.com/classic/npc=9177/oralius\" rel=\"noopener noreferrer\" target=\"_blank\">Oralius</a> does his best impersonation of a pirate.&gt;<br><br>ARRR MATEY! IT BE RIGHT!<br><br>See what I'm saying? You need to get in there and bring me back some samples of the good stuff.<br><br>Get in there and shake your moneymaker!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11468,
+            "name": "Dark Iron Fanny Pack",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/item=11468/dark-iron-fanny-pack",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 11883,
@@ -20106,6 +22435,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=11312/lost-thunderbrew-recipe\" rel=\"noopener noreferrer\" target=\"_blank\">Lost Thunderbrew Recipe</a> to <a href=\"https://www.wowhead.com/classic/npc=1267/ragnar-thunderbrew\" rel=\"noopener noreferrer\" target=\"_blank\">Ragnar Thunderbrew</a> in Kharanos.",
         "description": "The Dark Iron dwarves, led by the villain Hurley Blackbreath, stole one of the Thunderbrew's best recipes, Thunderbrew Lager. The villains! They don't deserve such a fine brew!<br><br>, I have a tough task for you. Go to the <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> in the Burning Steppes, destroy any kegs of Thunderbrew Lager you find, and bring back our recipe for Thunderbrew Lager!<br><br>Please, get that recipe back, even if you have to turn <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> upside down to do it!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11312,
+            "name": "Lost Thunderbrew Recipe",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=11312/lost-thunderbrew-recipe",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 12003,
@@ -20179,6 +22518,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1267/ragnar-thunderbrew\" rel=\"noopener noreferrer\" target=\"_blank\">Ragnar Thunderbrew</a>.",
             "description": "Ho. I heard that <a href=\"https://www.wowhead.com/classic/npc=1267/ragnar-thunderbrew\" rel=\"noopener noreferrer\" target=\"_blank\">Ragnar Thunderbrew</a> is steaming mad about someone stealing his ale. He's looking for stalwart adventurers, and willing to pay plenty.<br><br>Talk to Ragnar if you're interested. He's at the Thunderbrew Distillery in Kharanos, in Dun Morogh.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -20253,6 +22593,29 @@ const DUNGEONS = [
         "objective": "Venture to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and destroy the vile aggressors!<br><br><a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a> wants you to kill 15 Anvilrage Guardsmen, 10 <a href=\"https://www.wowhead.com/classic/npc=8890/anvilrage-warden\" rel=\"noopener noreferrer\" target=\"_blank\">Anvilrage Wardens</a> and 5 Anvilrage Footmen. Return to him once your task is complete.",
         "description": "By order of <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a>, commander of the Kargath Expeditionary Force:<br><br>Any and all of General Angerforge's forces within <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> must be annihilated.<br><br>Angerforge's men are ruthless killers, responsible for the mass murder of the 109th division of the Kargath Expeditionary Force. Heroes are warned to exercise extreme caution when confronting these brutes.<br><br>Any person who destroys the first line of General Angerforge's forces in <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> shall receive a tribute.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 8891,
+            "name": "Anvilrage Guardsman",
+            "quantity": 15,
+            "url": "https://www.wowhead.com/classic/npc=8891/anvilrage-guardsman"
+          },
+          {
+            "type": "npc",
+            "id": 8890,
+            "name": "Anvilrage Warden",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/npc=8890/anvilrage-warden"
+          },
+          {
+            "type": "npc",
+            "id": 8892,
+            "name": "Anvilrage Footman",
+            "quantity": 5,
+            "url": "https://www.wowhead.com/classic/npc=8892/anvilrage-footman"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -20311,6 +22674,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and recover 10 <a href=\"https://www.wowhead.com/classic/item=11129/essence-of-the-elements\" rel=\"noopener noreferrer\" target=\"_blank\">Essence of the Elements</a>. Your first inclination is to search the golems and golem makers. You remember Vivian Lagrave also muttering something about elementals.",
         "description": "There is work to be had for those venturing into the depths.<br><br>The Dark Irons have mastered creation of extremely powerful golems.<br><br>Initial reports from our spies indicate that the dwarves use a unique power source to give their creations incomparable killing power.<br><br>Just imagine what we could do with our abominations if we could get our hands on this <a href=\"https://www.wowhead.com/classic/item=11129/essence-of-the-elements\" rel=\"noopener noreferrer\" target=\"_blank\">essence of the elements</a>! Turn that city upside down if you must, but do not return until you have found the essence! Payment will be worth the risk.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11129,
+            "name": "Essence of the Elements",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=11129/essence-of-the-elements",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 12038,
@@ -20376,6 +22749,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=11312/lost-thunderbrew-recipe\" rel=\"noopener noreferrer\" target=\"_blank\">Lost Thunderbrew Recipe</a> to Vivian Lagrave in Kargath.",
         "description": "It is rumored that the Dark Iron Hurley Blackbreath has stolen a recipe for ale. This ale, Thunderbrew Lager, is said to infuse its imbiber with great strength and courage. We wish to study the drink. Perhaps, we will find other applications for its virtues... applications more in line with Forsaken objectives.<br><br>Delve into <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>, find Hurley, take from him the recipe for Thunderbrew lager and bring it to me.<br><br>And to find him, you may have to entice him by threatening his precious ale.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11312,
+            "name": "Lost Thunderbrew Recipe",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=11312/lost-thunderbrew-recipe",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 3928,
@@ -20455,6 +22838,7 @@ const DUNGEONS = [
             "objective": "Speak with Shadowmaster Vivian Lagrave in Kargath.",
             "description": "Shadowmaster Vivian Lagrave is in need of your services. She is in the Badlands, in the orcish outpost of Kargath, pursuing rumors of a certain brew made by the Dark Iron dwarves of <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>.<br><br>Speak with Vivian. She awaits you.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -20536,6 +22920,16 @@ const DUNGEONS = [
         "objective": "Slay Fineous Darkvire and recover the great hammer, <a href=\"https://www.wowhead.com/classic/item=10999/ironfel\" rel=\"noopener noreferrer\" target=\"_blank\">Ironfel</a>. Take <a href=\"https://www.wowhead.com/classic/item=10999/ironfel\" rel=\"noopener noreferrer\" target=\"_blank\">Ironfel</a> to the Shrine of Thaurissan and place it on the statue of <a href=\"https://www.wowhead.com/search?q=Franclorn+Forgewright\" rel=\"noopener noreferrer\" target=\"_blank\">Franclorn Forgewright</a>.",
         "description": "You will find Fineous Darkvire beyond the Ring of Law, in the Hall of Crafting. Kill the miserable cur and recover <a href=\"https://www.wowhead.com/classic/item=10999/ironfel\" rel=\"noopener noreferrer\" target=\"_blank\">Ironfel</a>.<br><br>Take <a href=\"https://www.wowhead.com/classic/item=10999/ironfel\" rel=\"noopener noreferrer\" target=\"_blank\">Ironfel</a> to the Shrine of Thaurissan and place the hammer in its rightful place: In the hands of the statue erected in my honor.<br><br>When this is done, the compartment in which I stored the master key will open. More importantly, <a href=\"https://www.wowhead.com/classic/item=10999/ironfel\" rel=\"noopener noreferrer\" target=\"_blank\">Ironfel</a> will remain forever in my grasp. Should they make an attempt to remove the hammer; both the statue and hammer will shatter, lost forever.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 10999,
+            "name": "Ironfel",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=10999/ironfel",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 11000,
@@ -20610,6 +23004,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/search?q=Franclorn+Forgewright\" rel=\"noopener noreferrer\" target=\"_blank\">Franclorn Forgewright</a> if you are interested in obtaining a key to the city major.",
             "description": "Greetings. I am <a href=\"https://www.wowhead.com/search?q=Franclorn+Forgewright\" rel=\"noopener noreferrer\" target=\"_blank\">Franclorn Forgewright</a>. Yes, the <a href=\"https://www.wowhead.com/search?q=Franclorn+Forgewright\" rel=\"noopener noreferrer\" target=\"_blank\">Franclorn Forgewright</a> responsible for the stonewrought method of architecture. You have undoubtedly passed through or stood upon one of my creations in your adventures across our war torn world.<br><br>You are probably wondering why I am here and what it is that I want from you - both valid questions.<br><br>I need your assistance, of course. In exchange for your assistance, I shall grant you the key to the depths of my accursed city.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -20684,6 +23079,16 @@ const DUNGEONS = [
         "objective": "",
         "description": "I wish to taste the searing flames of the mountain of fire. To let the molten fires of Blackrock cascade across my being. That essence, that searing heat, it is what I crave.<br><br>Bael'Gar resides in the Depths of Blackrock: A being of pure flame, born of the fires of Ragnaros. Slay Bael'Gar and from his smoldering remains bring for me a piece of his inner fire.<br><br>Use the molt on his remains to safely extract the inner flame.<br><br>Succeed and be rewarded.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11230,
+            "name": "Encased Fiery Essence",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=11230/encased-fiery-essence",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -20758,6 +23163,16 @@ const DUNGEONS = [
                 "objective": "Show <a href=\"https://www.wowhead.com/classic/npc=9459/cyrus-therepentous\" rel=\"noopener noreferrer\" target=\"_blank\">Cyrus Therepentous</a> the <a href=\"https://www.wowhead.com/classic/item=10575/black-dragonflight-molt\" rel=\"noopener noreferrer\" target=\"_blank\">Black Dragonflight Molt</a> you received from Velarok Windblade.",
                 "description": "The flight is aware of your work in the Searing Gorge.<br><br>Show it to me. The molt, imbecile.",
                 "shareable": true,
+                "requirements": [
+                  {
+                    "type": "item",
+                    "id": 10575,
+                    "name": "Black Dragonflight Molt",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=10575/black-dragonflight-molt",
+                    "quality": 1
+                  }
+                ],
                 "rewards": [],
                 "rewardChoices": [],
                 "requiredClasses": [],
@@ -20816,6 +23231,16 @@ const DUNGEONS = [
                 "objective": "Show <a href=\"https://www.wowhead.com/classic/npc=9459/cyrus-therepentous\" rel=\"noopener noreferrer\" target=\"_blank\">Cyrus Therepentous</a> proof of your worth.<br><br>You have a feeling that Cyrus already knows that you are unworthy.",
                 "description": "You seek out the Flight? Present to me proof of your worth, mortal.",
                 "shareable": true,
+                "requirements": [
+                  {
+                    "type": "item",
+                    "id": 10575,
+                    "name": "Black Dragonflight Molt",
+                    "quantity": 1,
+                    "url": "https://www.wowhead.com/classic/item=10575/black-dragonflight-molt",
+                    "quality": 1
+                  }
+                ],
                 "rewards": [],
                 "rewardChoices": [],
                 "requiredClasses": [],
@@ -20881,8 +23306,17 @@ const DUNGEONS = [
         "xp": 5800,
         "money": 8500,
         "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=9017/lord-incendius\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Incendius</a> in <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and destroy him!",
-        "description": "Are you sure Pyron said 'Incendius' when he died?<br><br><br><br><a href=\"https://www.wowhead.com/classic/npc=9017/lord-incendius\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Incendius</a> is purported to be a minion of Ragnaros! Oh dear, oh dear... whatever will we do?<br><br>Do you think you can handle another mission? I don't have anybody else to send!<br><br>We will never get a team in if Incendius continues to raise Pyron from the ashes.<br><br>You'll have to find and destroy <a href=\"https://www.wowhead.com/classic/npc=9017/lord-incendius\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Incendius</a>!",
+        "description": "Are you sure Pyron said 'Incendius' when he died?<br><br><a href=\"https://www.wowhead.com/classic/npc=9017/lord-incendius\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Incendius</a> is purported to be a minion of Ragnaros! Oh dear, oh dear... whatever will we do?<br><br>Do you think you can handle another mission? I don't have anybody else to send!<br><br>We will never get a team in if Incendius continues to raise Pyron from the ashes.<br><br>You'll have to find and destroy <a href=\"https://www.wowhead.com/classic/npc=9017/lord-incendius\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Incendius</a>!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 9017,
+            "name": "Lord Incendius",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9017/lord-incendius"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -20959,8 +23393,17 @@ const DUNGEONS = [
             "xp": 5100,
             "money": 15500,
             "objective": "Slay <a href=\"https://www.wowhead.com/classic/npc=9026/overmaster-pyron\" rel=\"noopener noreferrer\" target=\"_blank\">Overmaster Pyron</a> and return to <a href=\"https://www.wowhead.com/classic/npc=9561/jalinda-sprig\" rel=\"noopener noreferrer\" target=\"_blank\">Jalinda Sprig</a>.<br><br>You recall Jalinda talking about Pyron guarding the quarry. Perhaps you should search there?",
-            "description": "The last five of my mages that went snooping around in <a href=\"https://www.wowhead.com/classic/zone=25/blackrock-mountain\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Mountain</a> came back extra crispy with a permanent orange gnomefro - or worse.<br><br><br><br>One nasty bugger in particular, <a href=\"https://www.wowhead.com/classic/npc=9026/overmaster-pyron\" rel=\"noopener noreferrer\" target=\"_blank\">Overmaster Pyron</a>, seems to be causing quite a bit of trouble. We need that elemental terminated so that our expedition crew can make its way into Blackrock Depths!<br><br>He guards the entrance at the Blackrock Quarry.",
+            "description": "The last five of my mages that went snooping around in <a href=\"https://www.wowhead.com/classic/zone=25/blackrock-mountain\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Mountain</a> came back extra crispy with a permanent orange gnomefro - or worse.<br><br>One nasty bugger in particular, <a href=\"https://www.wowhead.com/classic/npc=9026/overmaster-pyron\" rel=\"noopener noreferrer\" target=\"_blank\">Overmaster Pyron</a>, seems to be causing quite a bit of trouble. We need that elemental terminated so that our expedition crew can make its way into Blackrock Depths!<br><br>He guards the entrance at the Blackrock Quarry.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 9026,
+                "name": "Overmaster Pyron",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=9026/overmaster-pyron"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -21033,8 +23476,9 @@ const DUNGEONS = [
         "xp": 6400,
         "money": 38400,
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and find <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a>.<br><br>The King mentioned that Kharan was being held prisoner there - perhaps you should try looking for a prison.",
-        "description": "You have been to the smoldering ruins of Thaurissan? Did you happen to run into a pitiful lout named <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a>? The dwarf that was supposedly watching over my baby girl!<br><br><br><br>And now she's gone!<br><br>I have had my men turn the Steppes upside down. The only clue they have as to the whereabouts of my daughter is that she may be inside the Depths. For all I know, she could be dead!<br><br>Kharan is supposedly being held prisoner there... find him! I want answers!",
+        "description": "You have been to the smoldering ruins of Thaurissan? Did you happen to run into a pitiful lout named <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a>? The dwarf that was supposedly watching over my baby girl!<br><br>And now she's gone!<br><br>I have had my men turn the Steppes upside down. The only clue they have as to the whereabouts of my daughter is that she may be inside the Depths. For all I know, she could be dead!<br><br>Kharan is supposedly being held prisoner there... find him! I want answers!",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -21088,6 +23532,7 @@ const DUNGEONS = [
             "objective": "Listen to <a href=\"https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus\" rel=\"noopener noreferrer\" target=\"_blank\">Royal Historian Archesonus</a> recant the history of Thaurissan.",
             "description": "Would you like to hear a brief history of the Dark Iron dwarves?",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -21151,6 +23596,15 @@ const DUNGEONS = [
             "objective": "Venture to the Ruins of Thaurissan in the Burning Steppes and recover information from the <a href=\"https://www.wowhead.com/classic/object=153556/thaurissan-relic\" rel=\"noopener noreferrer\" target=\"_blank\">Thaurissan Relics</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus\" rel=\"noopener noreferrer\" target=\"_blank\">Royal Historian Archesonus</a> when you have recovered the information.",
             "description": "Venture to the smoldering ruins of Thaurissan in the Burning Steppes and gather as much information as possible.<br><br>It is said that mysterious relics litter the ruins. Perhaps you should start your search there. Beware the Thaurissan guardians: Assassins that guard the ruins, keeping whatever secrets may still be buried there protected.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "object",
+                "id": 153556,
+                "name": "Information Recovered",
+                "quantity": 12,
+                "url": "https://www.wowhead.com/classic/object=153556/information-recovered"
+              }
+            ],
             "rewards": [
               {
                 "id": 12102,
@@ -21227,6 +23681,15 @@ const DUNGEONS = [
         "objective": "Return to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and rescue <a href=\"https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard\" rel=\"noopener noreferrer\" target=\"_blank\">Princess Moira Bronzebeard</a> from the evil clutches of <a href=\"https://www.wowhead.com/classic/npc=9019/emperor-dagran-thaurissan\" rel=\"noopener noreferrer\" target=\"_blank\">Emperor Dagran Thaurissan</a>.",
         "description": "It would seem as if my old adversary, Dagran Thaurissan, has me and the kingdom of Ironforge at his mercy.<br><br>You may be my last hope. You must rescue my dear daughter, Moira!<br><br>There is only one way to make sure that the spell Thaurissan has cast on Moira is broken: Kill him.<br><br>And, do not harm her! Remember, she is being controlled by Thaurissan! The things she may do or say are a result of Thaurissan's evil spell!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 9019,
+            "name": "Emperor Dagran Thaurissan",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9019/emperor-dagran-thaurissan"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -21280,6 +23743,7 @@ const DUNGEONS = [
             "objective": "Listen to <a href=\"https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus\" rel=\"noopener noreferrer\" target=\"_blank\">Royal Historian Archesonus</a> recant the history of Thaurissan.",
             "description": "Would you like to hear a brief history of the Dark Iron dwarves?",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -21343,6 +23807,15 @@ const DUNGEONS = [
             "objective": "Venture to the Ruins of Thaurissan in the Burning Steppes and recover information from the <a href=\"https://www.wowhead.com/classic/object=153556/thaurissan-relic\" rel=\"noopener noreferrer\" target=\"_blank\">Thaurissan Relics</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus\" rel=\"noopener noreferrer\" target=\"_blank\">Royal Historian Archesonus</a> when you have recovered the information.",
             "description": "Venture to the smoldering ruins of Thaurissan in the Burning Steppes and gather as much information as possible.<br><br>It is said that mysterious relics litter the ruins. Perhaps you should start your search there. Beware the Thaurissan guardians: Assassins that guard the ruins, keeping whatever secrets may still be buried there protected.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "object",
+                "id": 153556,
+                "name": "Information Recovered",
+                "quantity": 12,
+                "url": "https://www.wowhead.com/classic/object=153556/information-recovered"
+              }
+            ],
             "rewards": [
               {
                 "id": 12102,
@@ -21411,8 +23884,9 @@ const DUNGEONS = [
             "xp": 6400,
             "money": 38400,
             "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and find <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a>.<br><br>The King mentioned that Kharan was being held prisoner there - perhaps you should try looking for a prison.",
-            "description": "You have been to the smoldering ruins of Thaurissan? Did you happen to run into a pitiful lout named <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a>? The dwarf that was supposedly watching over my baby girl!<br><br><br><br>And now she's gone!<br><br>I have had my men turn the Steppes upside down. The only clue they have as to the whereabouts of my daughter is that she may be inside the Depths. For all I know, she could be dead!<br><br>Kharan is supposedly being held prisoner there... find him! I want answers!",
+            "description": "You have been to the smoldering ruins of Thaurissan? Did you happen to run into a pitiful lout named <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a>? The dwarf that was supposedly watching over my baby girl!<br><br>And now she's gone!<br><br>I have had my men turn the Steppes upside down. The only clue they have as to the whereabouts of my daughter is that she may be inside the Depths. For all I know, she could be dead!<br><br>Kharan is supposedly being held prisoner there... find him! I want answers!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -21478,6 +23952,7 @@ const DUNGEONS = [
             "objective": "Listen as <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a> tells his story.",
             "description": "Please, hear me out before passing judgement!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -21547,6 +24022,7 @@ const DUNGEONS = [
             "objective": "Return to Ironforge and deliver the bad news to <a href=\"https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard\" rel=\"noopener noreferrer\" target=\"_blank\">King Magni Bronzebeard</a>.",
             "description": "You must take this information back to King Magni. He will know what to do!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -21621,6 +24097,29 @@ const DUNGEONS = [
         "objective": "Venture to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and destroy the vile aggressors!<br><br><a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a> wants you to kill 10 <a href=\"https://www.wowhead.com/classic/npc=8894/anvilrage-medic\" rel=\"noopener noreferrer\" target=\"_blank\">Anvilrage Medics</a>, 10 <a href=\"https://www.wowhead.com/classic/npc=8893/anvilrage-soldier\" rel=\"noopener noreferrer\" target=\"_blank\">Anvilrage Soldiers</a> and 10 <a href=\"https://www.wowhead.com/classic/npc=8895/anvilrage-officer\" rel=\"noopener noreferrer\" target=\"_blank\">Anvilrage Officers</a>. Return to him once your task is complete.",
         "description": "By order of <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a>, commander of the Kargath Expeditionary Force:<br><br>Head of the K.E.F. reconnaissance division, Grandmaster Lexlort, has returned with news of the whereabouts of high ranking Dark Iron officials. Through locked gate, near the heart of the city, they train their forces to snuff out our men. Travel to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and destroy them!<br><br>Completion of this mission will result in a tribute.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 8894,
+            "name": "Anvilrage Medic",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/npc=8894/anvilrage-medic"
+          },
+          {
+            "type": "npc",
+            "id": 8893,
+            "name": "Anvilrage Soldier",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/npc=8893/anvilrage-soldier"
+          },
+          {
+            "type": "npc",
+            "id": 8895,
+            "name": "Anvilrage Officer",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/npc=8895/anvilrage-officer"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -21674,6 +24173,29 @@ const DUNGEONS = [
             "objective": "Venture to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and destroy the vile aggressors!<br><br><a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a> wants you to kill 15 Anvilrage Guardsmen, 10 <a href=\"https://www.wowhead.com/classic/npc=8890/anvilrage-warden\" rel=\"noopener noreferrer\" target=\"_blank\">Anvilrage Wardens</a> and 5 Anvilrage Footmen. Return to him once your task is complete.",
             "description": "By order of <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a>, commander of the Kargath Expeditionary Force:<br><br>Any and all of General Angerforge's forces within <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> must be annihilated.<br><br>Angerforge's men are ruthless killers, responsible for the mass murder of the 109th division of the Kargath Expeditionary Force. Heroes are warned to exercise extreme caution when confronting these brutes.<br><br>Any person who destroys the first line of General Angerforge's forces in <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> shall receive a tribute.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 8891,
+                "name": "Anvilrage Guardsman",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/npc=8891/anvilrage-guardsman"
+              },
+              {
+                "type": "npc",
+                "id": 8890,
+                "name": "Anvilrage Warden",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=8890/anvilrage-warden"
+              },
+              {
+                "type": "npc",
+                "id": 8892,
+                "name": "Anvilrage Footman",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/npc=8892/anvilrage-footman"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -21739,6 +24261,24 @@ const DUNGEONS = [
         "objective": "Find and slay Golem Lord Argelmach. Return his head to Lotwil. You will also need to collect 10 <a href=\"https://www.wowhead.com/classic/item=11269/intact-elemental-core\" rel=\"noopener noreferrer\" target=\"_blank\">Intact Elemental Cores</a> from the Ragereaver Golems and Warbringer Constructs protecting Argelmach. You know this because you are psychic.",
         "description": "This can't be Argelmach! Argelmach was killed ten years ago. How can I be sure? I was the one who killed him.<br><br>He was a despicable dwarf, hell-bent on twisting my life's work to meet his diabolical needs. It seems that the wicked always find a way to escape justice.<br><br>If this is Argelmach's handiwork then he must be destroyed. I will need samplings of his latest creations. With the proper samples, I may be able to stop this uprising. The creations guard Argelmach in <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11268,
+            "name": "Head of Argelmach",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=11268/head-of-argelmach",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 11269,
+            "name": "Intact Elemental Core",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=11269/intact-elemental-core",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -21817,6 +24357,16 @@ const DUNGEONS = [
             "objective": "Venture to the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> and recover 10 <a href=\"https://www.wowhead.com/classic/item=11266/fractured-elemental-shard\" rel=\"noopener noreferrer\" target=\"_blank\">Fractured Elemental Shards</a> for <a href=\"https://www.wowhead.com/classic/npc=9079/hierophant-theodora-mulvadania\" rel=\"noopener noreferrer\" target=\"_blank\">Hierophant Theodora Mulvadania</a>.<br><br>You recall Theodora mentioning the golems and elementals of that region as being a source for these shards.",
             "description": "The machines made themselves known to us during our initial forays into the Searing Gorge. Upon further investigation we discovered that they were being imported from <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>, possibly Blackrock Depths. That is what we need you for.<br><br>Your first task is to venture to the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> and recover elemental shards from the rock automatons and lesser rock creations of the region. Once you have collected a sufficient amount, return to me and I shall determine their source of origin.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 11266,
+                "name": "Fractured Elemental Shard",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/item=11266/fractured-elemental-shard",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -21880,6 +24430,7 @@ const DUNGEONS = [
             "objective": "Take the <a href=\"https://www.wowhead.com/classic/item=11267/elemental-shard-sample\" rel=\"noopener noreferrer\" target=\"_blank\">Elemental Shard Sample</a> to <a href=\"https://www.wowhead.com/classic/npc=2921/lotwil-veriatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lotwil Veriatus</a>.<br><br>You recall Theodora saying that Lotwil was stationed in a camp to the east.",
             "description": "G.L.A.<br><br>Those are the 'initials' imprinted on the elemental shards. Below the initials are a rank marking of some sort. The machinations you destroyed in the Burning Steppes were of 'Rank IV.' I assume that this is a lowly rank.<br><br>Take this shard sample to <a href=\"https://www.wowhead.com/classic/npc=2921/lotwil-veriatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lotwil Veriatus</a> in the camp to the east. He is a scholar of some renown in the field of elemental sciences. He may be able to assist us in our search.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -21954,6 +24505,15 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and slay <a href=\"https://www.wowhead.com/classic/npc=9033/general-angerforge\" rel=\"noopener noreferrer\" target=\"_blank\">General Angerforge</a>! Return to <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a> when the task is complete.",
         "description": "You have done an exemplary job. It is now time to send you on your last mission.<br><br><a href=\"https://www.wowhead.com/classic/npc=9033/general-angerforge\" rel=\"noopener noreferrer\" target=\"_blank\">General Angerforge</a>, the Dark Iron responsible for coordinating the attacks on the 109th division of the K.E.F. and the mass slaughter of our forces must be brought to justice.<br><br>This will undoubtedly be your most grueling mission, but should you succeed, you will be richly rewarded.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 9033,
+            "name": "General Angerforge",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9033/general-angerforge"
+          }
+        ],
         "rewards": [
           {
             "id": 12059,
@@ -22014,6 +24574,29 @@ const DUNGEONS = [
             "objective": "Venture to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and destroy the vile aggressors!<br><br><a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a> wants you to kill 15 Anvilrage Guardsmen, 10 <a href=\"https://www.wowhead.com/classic/npc=8890/anvilrage-warden\" rel=\"noopener noreferrer\" target=\"_blank\">Anvilrage Wardens</a> and 5 Anvilrage Footmen. Return to him once your task is complete.",
             "description": "By order of <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a>, commander of the Kargath Expeditionary Force:<br><br>Any and all of General Angerforge's forces within <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> must be annihilated.<br><br>Angerforge's men are ruthless killers, responsible for the mass murder of the 109th division of the Kargath Expeditionary Force. Heroes are warned to exercise extreme caution when confronting these brutes.<br><br>Any person who destroys the first line of General Angerforge's forces in <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> shall receive a tribute.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 8891,
+                "name": "Anvilrage Guardsman",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/npc=8891/anvilrage-guardsman"
+              },
+              {
+                "type": "npc",
+                "id": 8890,
+                "name": "Anvilrage Warden",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=8890/anvilrage-warden"
+              },
+              {
+                "type": "npc",
+                "id": 8892,
+                "name": "Anvilrage Footman",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/npc=8892/anvilrage-footman"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22073,6 +24656,29 @@ const DUNGEONS = [
             "objective": "Venture to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and destroy the vile aggressors!<br><br><a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a> wants you to kill 10 <a href=\"https://www.wowhead.com/classic/npc=8894/anvilrage-medic\" rel=\"noopener noreferrer\" target=\"_blank\">Anvilrage Medics</a>, 10 <a href=\"https://www.wowhead.com/classic/npc=8893/anvilrage-soldier\" rel=\"noopener noreferrer\" target=\"_blank\">Anvilrage Soldiers</a> and 10 <a href=\"https://www.wowhead.com/classic/npc=8895/anvilrage-officer\" rel=\"noopener noreferrer\" target=\"_blank\">Anvilrage Officers</a>. Return to him once your task is complete.",
             "description": "By order of <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a>, commander of the Kargath Expeditionary Force:<br><br>Head of the K.E.F. reconnaissance division, Grandmaster Lexlort, has returned with news of the whereabouts of high ranking Dark Iron officials. Through locked gate, near the heart of the city, they train their forces to snuff out our men. Travel to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and destroy them!<br><br>Completion of this mission will result in a tribute.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 8894,
+                "name": "Anvilrage Medic",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=8894/anvilrage-medic"
+              },
+              {
+                "type": "npc",
+                "id": 8893,
+                "name": "Anvilrage Soldier",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=8893/anvilrage-soldier"
+              },
+              {
+                "type": "npc",
+                "id": 8895,
+                "name": "Anvilrage Officer",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=8895/anvilrage-officer"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22138,6 +24744,16 @@ const DUNGEONS = [
             "objective": "Travel to the Burning Steppes and find <a href=\"https://www.wowhead.com/classic/npc=9520/grark-lorkrub\" rel=\"noopener noreferrer\" target=\"_blank\">Grark Lorkrub</a>. You recall <a href=\"https://www.wowhead.com/classic/npc=9080/lexlort\" rel=\"noopener noreferrer\" target=\"_blank\">Lexlort</a> mentioning that he was last seen in a massive Blackrock fortress.<br><br>When you find <a href=\"https://www.wowhead.com/classic/npc=9520/grark-lorkrub\" rel=\"noopener noreferrer\" target=\"_blank\">Grark Lorkrub</a>, use the <a href=\"https://www.wowhead.com/classic/item=11286/thorium-shackles\" rel=\"noopener noreferrer\" target=\"_blank\">Thorium Shackles</a> to bind him and then lead him back through Blackrock Mountain to the Searing Gorge. <a href=\"https://www.wowhead.com/classic/npc=9080/lexlort\" rel=\"noopener noreferrer\" target=\"_blank\">Lexlort</a> will have his men waiting on the other side to take Grark into custody.",
             "description": "I tracked him across the Searing Gorge, through the mountain, and into the Burning Steppes. That traitor was caught red-handed giving the Blackrock orcs vital information about our day to day operations. I'm speaking of <a href=\"https://www.wowhead.com/classic/npc=9520/grark-lorkrub\" rel=\"noopener noreferrer\" target=\"_blank\">Grark Lorkrub</a>.<br><br>He now sits in the Burning Steppes, safely under their protection - or so he thinks.<br><br>Take these shackles. Find Grark, place the shackles on him and lead him through Blackrock Mountain. Do this and a tribute is yours.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 11286,
+                "name": "Thorium Shackles",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=11286/thorium-shackles",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22202,6 +24818,16 @@ const DUNGEONS = [
             "objective": "Escort your prisoner, <a href=\"https://www.wowhead.com/classic/npc=9520/grark-lorkrub\" rel=\"noopener noreferrer\" target=\"_blank\">Grark Lorkrub</a>, through Burning Steppes and through Blackrock Mountain to the Searing Gorge.<br><br>You recall <a href=\"https://www.wowhead.com/classic/npc=9080/lexlort\" rel=\"noopener noreferrer\" target=\"_blank\">Lexlort</a> mentioning that he would have his men waiting on the other side to take Grark into custody.<br><br>You will also be required to hand over your <a href=\"https://www.wowhead.com/classic/item=11286/thorium-shackles\" rel=\"noopener noreferrer\" target=\"_blank\">Thorium Shackles</a> to <a href=\"https://www.wowhead.com/classic/npc=9080/lexlort\" rel=\"noopener noreferrer\" target=\"_blank\">Lexlort</a>.",
             "description": "Do you truly believe that you will make it to your rendezvous point with me in custody? You actually expected to break into a heavily fortified Blackrock fortress to capture a prized asset of theirs without alerting anyone or anything to your presence?<br><br>You will be destroyed!",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 11286,
+                "name": "Thorium Shackles",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=11286/thorium-shackles",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22272,6 +24898,32 @@ const DUNGEONS = [
         "objective": "Bring 4 <a href=\"https://www.wowhead.com/classic/item=8846/gromsblood\" rel=\"noopener noreferrer\" target=\"_blank\">Gromsblood</a>, 10 <a href=\"https://www.wowhead.com/classic/item=11405/giant-silver-vein\" rel=\"noopener noreferrer\" target=\"_blank\">Giant Silver Veins</a> and <a href=\"https://www.wowhead.com/classic/item=11413/nagmaras-filled-vial\" rel=\"noopener noreferrer\" target=\"_blank\">Nagmara's Filled Vial</a> to <a href=\"https://www.wowhead.com/classic/npc=9500/mistress-nagmara\" rel=\"noopener noreferrer\" target=\"_blank\">Mistress Nagmara</a> in <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>.",
         "description": "Oh, the pains of love! My dear Private Rocknot is immune to my charms. I am spurned! It's maddening!<br><br>You must help me! We succubi know much of love, and I can make a potion to beat down the iron walls around Rocknot's heart. To make it, I need these items: the herb <a href=\"https://www.wowhead.com/classic/item=8846/gromsblood\" rel=\"noopener noreferrer\" target=\"_blank\">gromsblood</a>, <a href=\"https://www.wowhead.com/classic/item=11405/giant-silver-vein\" rel=\"noopener noreferrer\" target=\"_blank\">giant silver veins</a> from the cliff giants of Azshara, and water from the Golakka Springs Crater in Un'Goro. You can place the water in this vial.<br><br>Please, help a poor soul in her quest for happiness!",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 8846,
+            "name": "Gromsblood",
+            "quantity": 4,
+            "url": "https://www.wowhead.com/classic/item=8846/gromsblood",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 11405,
+            "name": "Giant Silver Vein",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=11405/giant-silver-vein",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 11413,
+            "name": "Nagmara's Filled Vial",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=11413/nagmaras-filled-vial",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -22343,6 +24995,7 @@ const DUNGEONS = [
         "objective": "Give <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> the bad news.",
         "description": "Bolvar is a fool. I was gathering his precious 'proof' so that I could shove it down his throat.<br><br>He is a blind buffoon. Proof stands two feet away from him and he does not see.<br><br>As for my data, it's lost. Gone. Unrecoverable.<br><br>Should I ever find Ironfoe and make it out of this labyrinth, my first stop will be Stormwind, to place my hammer in between that reptile's eyes.<br><br>Leave me.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [
           {
@@ -22415,6 +25068,36 @@ const DUNGEONS = [
             "objective": "Slay 15 <a href=\"https://www.wowhead.com/classic/npc=7047/black-broodling\" rel=\"noopener noreferrer\" target=\"_blank\">Black Broodlings</a>, 10 <a href=\"https://www.wowhead.com/classic/npc=7040/black-dragonspawn\" rel=\"noopener noreferrer\" target=\"_blank\">Black Dragonspawn</a>, 4 <a href=\"https://www.wowhead.com/classic/npc=7041/black-wyrmkin\" rel=\"noopener noreferrer\" target=\"_blank\">Black Wyrmkin</a> and 1 <a href=\"https://www.wowhead.com/classic/npc=7044/black-drake\" rel=\"noopener noreferrer\" target=\"_blank\">Black Drake</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9562/helendis-riverhorn\" rel=\"noopener noreferrer\" target=\"_blank\">Helendis Riverhorn</a> when the task is complete.",
             "description": "Life in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> is rife with conflict.<br><br>Just look at this place! We know very little of what happened to these buildings, but we do know that at one time, before the great explosion, this was all part of the Redridge mountain range.<br><br>Enough lamenting! We have a problem. You may have noticed the dragonkin below this ridge. We need assistance in pushing them back. Kill as many as you can and return to me. Succeed and perhaps we can talk of other things.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 7047,
+                "name": "Black Broodling",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/npc=7047/black-broodling"
+              },
+              {
+                "type": "npc",
+                "id": 7040,
+                "name": "Black Dragonspawn",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=7040/black-dragonspawn"
+              },
+              {
+                "type": "npc",
+                "id": 7044,
+                "name": "Black Drake",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=7044/black-drake"
+              },
+              {
+                "type": "npc",
+                "id": 7041,
+                "name": "Black Wyrmkin",
+                "quantity": 4,
+                "url": "https://www.wowhead.com/classic/npc=7041/black-wyrmkin"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22478,6 +25161,7 @@ const DUNGEONS = [
             "objective": "Travel to Lakeshire and deliver <a href=\"https://www.wowhead.com/classic/item=11366/helendis-riverhorns-letter\" rel=\"noopener noreferrer\" target=\"_blank\">Helendis Riverhorn's Letter</a> to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a>.",
             "description": "We had always assumed that the Blackrock orcs were a product of their savage upbringing. What we have found here, in their homeland, tells us another story.<br><br>Indeed, it is bloodlust and thirst for conflict that empowers them, but the black dragonflight are the beings whom control the orcs of Blackrock. We suspect that it is the black dragonflight that fuels them with rage and hostility.<br><br>Take this letter to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a>. He will know what must be done.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22541,6 +25225,7 @@ const DUNGEONS = [
             "objective": "Travel to Stormwind and deliver Solomon's Plea to <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a>.<br><br>Bolvar resides in Stormwind Keep.",
             "description": "This is grim news. To discover that our mortal enemies are merely pawns of a much greater threat is disheartening. There is no possible way that Lakeshire could survive an attack from both the Blackrock orcs and the black dragonflight. Should Lakeshire fall to this menace, Darkshire would fall next, and then what? Goldshire? Stormwind itself?<br><br>You must take this information to <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a> in Stormwind at once! If this does not merit the aid of Stormwind, nothing will and all is lost.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22604,6 +25289,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a> after speaking with Lady Katrana Prestor.",
             "description": "Solomon paints a dreary picture. Still, we cannot afford to send our thinly spread troops to the aid of Lakeshire on speculation. I will need proof of these claims before I can act.<br><br>Speak with Lady Prestor. She is a learned woman and knows much of dragons and dragonkin. She may be able to shed some light on this situation.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22667,6 +25353,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=11368/bolvars-decree\" rel=\"noopener noreferrer\" target=\"_blank\">Bolvar's Decree</a> to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> in Lakeshire.",
             "description": "I am going to empower you as an acting deputy of Stormwind.<br><br>Return to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> in Lakeshire and deliver this decree.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22730,6 +25417,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>.",
             "description": "&lt;<a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> sighs.&gt;<br><br>You must return to the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>. As a deputy of Stormwind, you will be required to report to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a>. Good luck.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22793,6 +25481,7 @@ const DUNGEONS = [
             "objective": "Speak with Ragged John to learn of Marshal Windsor's fate and return to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> when you have completed this task.<br><br>You recall <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> telling you to search for him in a cave to the north.",
             "description": "What? You thought you were the first? How many soldiers must we lose before Stormwind acts?<br><br>We had accumulated enormous amounts of intelligence pertaining to the Blackrock menace before we lost our commanding officer, Marshal Windsor. With Marshal Windsor went all of our precious information.<br><br>What we need is that documentation. Speak with Ragged John. He was with Windsor when they were attacked by a Blackrock raiding party. He was last seen in a cave to the north.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22854,8 +25543,9 @@ const DUNGEONS = [
             "xp": 5450,
             "money": 26100,
             "objective": "Travel to Blackrock Mountain in the northwest and enter <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>. Find out what became of <a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a>.<br><br>You recall Ragged John talking about Windsor being dragged off to a prison.",
-            "description": "So that good for nothing coward says that Windsor is alive, eh?<br><br>Suit up, deputy, you are going in to find him. If Windsor is alive, you are to bring him back. If he's dead, I want proof.<br><br><br><br>I bet you are getting tired of hearing that, aren't you?",
+            "description": "So that good for nothing coward says that Windsor is alive, eh?<br><br>Suit up, deputy, you are going in to find him. If Windsor is alive, you are to bring him back. If he's dead, I want proof.<br><br>I bet you are getting tired of hearing that, aren't you?",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -22922,6 +25612,7 @@ const DUNGEONS = [
         "objective": "You may have just stumbled on to something that <a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> would be interested in seeing. There may be hope, after all.",
         "description": "The note has stains covering its surface. The text is barely legible, but you make out the following:<br><br>...sweet irony...<br><br>...the fall of the broken Alliance...<br><br>...if it were not for General Angerforge's diligence, we may have never discovered the pattern to the encryption...<br><br>...Argelmach is almost done with the decryption of Windsor's notes.<br><br>Our lord will rise from the depths and crush any that remain...<br><br>-Emperor Dagran Thaurissan.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -22975,6 +25666,36 @@ const DUNGEONS = [
             "objective": "Slay 15 <a href=\"https://www.wowhead.com/classic/npc=7047/black-broodling\" rel=\"noopener noreferrer\" target=\"_blank\">Black Broodlings</a>, 10 <a href=\"https://www.wowhead.com/classic/npc=7040/black-dragonspawn\" rel=\"noopener noreferrer\" target=\"_blank\">Black Dragonspawn</a>, 4 <a href=\"https://www.wowhead.com/classic/npc=7041/black-wyrmkin\" rel=\"noopener noreferrer\" target=\"_blank\">Black Wyrmkin</a> and 1 <a href=\"https://www.wowhead.com/classic/npc=7044/black-drake\" rel=\"noopener noreferrer\" target=\"_blank\">Black Drake</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9562/helendis-riverhorn\" rel=\"noopener noreferrer\" target=\"_blank\">Helendis Riverhorn</a> when the task is complete.",
             "description": "Life in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> is rife with conflict.<br><br>Just look at this place! We know very little of what happened to these buildings, but we do know that at one time, before the great explosion, this was all part of the Redridge mountain range.<br><br>Enough lamenting! We have a problem. You may have noticed the dragonkin below this ridge. We need assistance in pushing them back. Kill as many as you can and return to me. Succeed and perhaps we can talk of other things.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 7047,
+                "name": "Black Broodling",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/npc=7047/black-broodling"
+              },
+              {
+                "type": "npc",
+                "id": 7040,
+                "name": "Black Dragonspawn",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=7040/black-dragonspawn"
+              },
+              {
+                "type": "npc",
+                "id": 7044,
+                "name": "Black Drake",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=7044/black-drake"
+              },
+              {
+                "type": "npc",
+                "id": 7041,
+                "name": "Black Wyrmkin",
+                "quantity": 4,
+                "url": "https://www.wowhead.com/classic/npc=7041/black-wyrmkin"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23038,6 +25759,7 @@ const DUNGEONS = [
             "objective": "Travel to Lakeshire and deliver <a href=\"https://www.wowhead.com/classic/item=11366/helendis-riverhorns-letter\" rel=\"noopener noreferrer\" target=\"_blank\">Helendis Riverhorn's Letter</a> to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a>.",
             "description": "We had always assumed that the Blackrock orcs were a product of their savage upbringing. What we have found here, in their homeland, tells us another story.<br><br>Indeed, it is bloodlust and thirst for conflict that empowers them, but the black dragonflight are the beings whom control the orcs of Blackrock. We suspect that it is the black dragonflight that fuels them with rage and hostility.<br><br>Take this letter to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a>. He will know what must be done.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23101,6 +25823,7 @@ const DUNGEONS = [
             "objective": "Travel to Stormwind and deliver Solomon's Plea to <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a>.<br><br>Bolvar resides in Stormwind Keep.",
             "description": "This is grim news. To discover that our mortal enemies are merely pawns of a much greater threat is disheartening. There is no possible way that Lakeshire could survive an attack from both the Blackrock orcs and the black dragonflight. Should Lakeshire fall to this menace, Darkshire would fall next, and then what? Goldshire? Stormwind itself?<br><br>You must take this information to <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a> in Stormwind at once! If this does not merit the aid of Stormwind, nothing will and all is lost.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23164,6 +25887,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a> after speaking with Lady Katrana Prestor.",
             "description": "Solomon paints a dreary picture. Still, we cannot afford to send our thinly spread troops to the aid of Lakeshire on speculation. I will need proof of these claims before I can act.<br><br>Speak with Lady Prestor. She is a learned woman and knows much of dragons and dragonkin. She may be able to shed some light on this situation.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23227,6 +25951,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=11368/bolvars-decree\" rel=\"noopener noreferrer\" target=\"_blank\">Bolvar's Decree</a> to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> in Lakeshire.",
             "description": "I am going to empower you as an acting deputy of Stormwind.<br><br>Return to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> in Lakeshire and deliver this decree.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23290,6 +26015,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>.",
             "description": "&lt;<a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> sighs.&gt;<br><br>You must return to the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>. As a deputy of Stormwind, you will be required to report to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a>. Good luck.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23353,6 +26079,7 @@ const DUNGEONS = [
             "objective": "Speak with Ragged John to learn of Marshal Windsor's fate and return to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> when you have completed this task.<br><br>You recall <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> telling you to search for him in a cave to the north.",
             "description": "What? You thought you were the first? How many soldiers must we lose before Stormwind acts?<br><br>We had accumulated enormous amounts of intelligence pertaining to the Blackrock menace before we lost our commanding officer, Marshal Windsor. With Marshal Windsor went all of our precious information.<br><br>What we need is that documentation. Speak with Ragged John. He was with Windsor when they were attacked by a Blackrock raiding party. He was last seen in a cave to the north.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23414,8 +26141,9 @@ const DUNGEONS = [
             "xp": 5450,
             "money": 26100,
             "objective": "Travel to Blackrock Mountain in the northwest and enter <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>. Find out what became of <a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a>.<br><br>You recall Ragged John talking about Windsor being dragged off to a prison.",
-            "description": "So that good for nothing coward says that Windsor is alive, eh?<br><br>Suit up, deputy, you are going in to find him. If Windsor is alive, you are to bring him back. If he's dead, I want proof.<br><br><br><br>I bet you are getting tired of hearing that, aren't you?",
+            "description": "So that good for nothing coward says that Windsor is alive, eh?<br><br>Suit up, deputy, you are going in to find him. If Windsor is alive, you are to bring him back. If he's dead, I want proof.<br><br>I bet you are getting tired of hearing that, aren't you?",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23479,6 +26207,7 @@ const DUNGEONS = [
             "objective": "Give <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> the bad news.",
             "description": "Bolvar is a fool. I was gathering his precious 'proof' so that I could shove it down his throat.<br><br>He is a blind buffoon. Proof stands two feet away from him and he does not see.<br><br>As for my data, it's lost. Gone. Unrecoverable.<br><br>Should I ever find Ironfoe and make it out of this labyrinth, my first stop will be Stormwind, to place my hammer in between that reptile's eyes.<br><br>Leave me.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [
               {
@@ -23573,6 +26302,24 @@ const DUNGEONS = [
         "objective": "Return <a href=\"https://www.wowhead.com/search?q=Marshal+Windsor%27s+Lost+Information\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor's Lost Information</a>.<br><br><a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> believes that the information is being held by Golem Lord Argelmach and General Angerforge.",
         "description": "&lt;<a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> shakes the note excitedly.&gt;<br><br>Do you realize what this means?<br><br>Perhaps all is not lost! From what I can ascertain, the information is being held by two Dark Iron dwarves: General Angerforge and the golem lord, Argelmach. I have a feeling that they won't just hand over the information if we ask nicely.<br><br>I hope you are ready to battle.<br><br>Venture forth and find these two villains! Destroy them and return my lost information.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 11464,
+            "name": "Marshal Windsor's Lost Information",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=11464/marshal-windsors-lost-information",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 11465,
+            "name": "Marshal Windsor's Lost Information",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=11465/marshal-windsors-lost-information",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -23626,6 +26373,36 @@ const DUNGEONS = [
             "objective": "Slay 15 <a href=\"https://www.wowhead.com/classic/npc=7047/black-broodling\" rel=\"noopener noreferrer\" target=\"_blank\">Black Broodlings</a>, 10 <a href=\"https://www.wowhead.com/classic/npc=7040/black-dragonspawn\" rel=\"noopener noreferrer\" target=\"_blank\">Black Dragonspawn</a>, 4 <a href=\"https://www.wowhead.com/classic/npc=7041/black-wyrmkin\" rel=\"noopener noreferrer\" target=\"_blank\">Black Wyrmkin</a> and 1 <a href=\"https://www.wowhead.com/classic/npc=7044/black-drake\" rel=\"noopener noreferrer\" target=\"_blank\">Black Drake</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9562/helendis-riverhorn\" rel=\"noopener noreferrer\" target=\"_blank\">Helendis Riverhorn</a> when the task is complete.",
             "description": "Life in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> is rife with conflict.<br><br>Just look at this place! We know very little of what happened to these buildings, but we do know that at one time, before the great explosion, this was all part of the Redridge mountain range.<br><br>Enough lamenting! We have a problem. You may have noticed the dragonkin below this ridge. We need assistance in pushing them back. Kill as many as you can and return to me. Succeed and perhaps we can talk of other things.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 7047,
+                "name": "Black Broodling",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/npc=7047/black-broodling"
+              },
+              {
+                "type": "npc",
+                "id": 7040,
+                "name": "Black Dragonspawn",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=7040/black-dragonspawn"
+              },
+              {
+                "type": "npc",
+                "id": 7044,
+                "name": "Black Drake",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=7044/black-drake"
+              },
+              {
+                "type": "npc",
+                "id": 7041,
+                "name": "Black Wyrmkin",
+                "quantity": 4,
+                "url": "https://www.wowhead.com/classic/npc=7041/black-wyrmkin"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23689,6 +26466,7 @@ const DUNGEONS = [
             "objective": "Travel to Lakeshire and deliver <a href=\"https://www.wowhead.com/classic/item=11366/helendis-riverhorns-letter\" rel=\"noopener noreferrer\" target=\"_blank\">Helendis Riverhorn's Letter</a> to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a>.",
             "description": "We had always assumed that the Blackrock orcs were a product of their savage upbringing. What we have found here, in their homeland, tells us another story.<br><br>Indeed, it is bloodlust and thirst for conflict that empowers them, but the black dragonflight are the beings whom control the orcs of Blackrock. We suspect that it is the black dragonflight that fuels them with rage and hostility.<br><br>Take this letter to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a>. He will know what must be done.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23752,6 +26530,7 @@ const DUNGEONS = [
             "objective": "Travel to Stormwind and deliver Solomon's Plea to <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a>.<br><br>Bolvar resides in Stormwind Keep.",
             "description": "This is grim news. To discover that our mortal enemies are merely pawns of a much greater threat is disheartening. There is no possible way that Lakeshire could survive an attack from both the Blackrock orcs and the black dragonflight. Should Lakeshire fall to this menace, Darkshire would fall next, and then what? Goldshire? Stormwind itself?<br><br>You must take this information to <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a> in Stormwind at once! If this does not merit the aid of Stormwind, nothing will and all is lost.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23815,6 +26594,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a> after speaking with Lady Katrana Prestor.",
             "description": "Solomon paints a dreary picture. Still, we cannot afford to send our thinly spread troops to the aid of Lakeshire on speculation. I will need proof of these claims before I can act.<br><br>Speak with Lady Prestor. She is a learned woman and knows much of dragons and dragonkin. She may be able to shed some light on this situation.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23878,6 +26658,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=11368/bolvars-decree\" rel=\"noopener noreferrer\" target=\"_blank\">Bolvar's Decree</a> to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> in Lakeshire.",
             "description": "I am going to empower you as an acting deputy of Stormwind.<br><br>Return to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> in Lakeshire and deliver this decree.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -23941,6 +26722,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>.",
             "description": "&lt;<a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> sighs.&gt;<br><br>You must return to the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>. As a deputy of Stormwind, you will be required to report to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a>. Good luck.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24004,6 +26786,7 @@ const DUNGEONS = [
             "objective": "Speak with Ragged John to learn of Marshal Windsor's fate and return to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> when you have completed this task.<br><br>You recall <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> telling you to search for him in a cave to the north.",
             "description": "What? You thought you were the first? How many soldiers must we lose before Stormwind acts?<br><br>We had accumulated enormous amounts of intelligence pertaining to the Blackrock menace before we lost our commanding officer, Marshal Windsor. With Marshal Windsor went all of our precious information.<br><br>What we need is that documentation. Speak with Ragged John. He was with Windsor when they were attacked by a Blackrock raiding party. He was last seen in a cave to the north.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24065,8 +26848,9 @@ const DUNGEONS = [
             "xp": 5450,
             "money": 26100,
             "objective": "Travel to Blackrock Mountain in the northwest and enter <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>. Find out what became of <a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a>.<br><br>You recall Ragged John talking about Windsor being dragged off to a prison.",
-            "description": "So that good for nothing coward says that Windsor is alive, eh?<br><br>Suit up, deputy, you are going in to find him. If Windsor is alive, you are to bring him back. If he's dead, I want proof.<br><br><br><br>I bet you are getting tired of hearing that, aren't you?",
+            "description": "So that good for nothing coward says that Windsor is alive, eh?<br><br>Suit up, deputy, you are going in to find him. If Windsor is alive, you are to bring him back. If he's dead, I want proof.<br><br>I bet you are getting tired of hearing that, aren't you?",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24130,6 +26914,7 @@ const DUNGEONS = [
             "objective": "Give <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> the bad news.",
             "description": "Bolvar is a fool. I was gathering his precious 'proof' so that I could shove it down his throat.<br><br>He is a blind buffoon. Proof stands two feet away from him and he does not see.<br><br>As for my data, it's lost. Gone. Unrecoverable.<br><br>Should I ever find Ironfoe and make it out of this labyrinth, my first stop will be Stormwind, to place my hammer in between that reptile's eyes.<br><br>Leave me.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [
               {
@@ -24224,6 +27009,7 @@ const DUNGEONS = [
         "objective": "Help <a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> get his gear back and free his friends. Return to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> if you succeed.",
         "description": "We need to get out of here. Help me get my gear back from the supply area and free my friends. If we make it out of here, you are to proceed to Morgan's Vigil and speak with <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a>. He will give you further instruction.",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 12065,
@@ -24297,6 +27083,36 @@ const DUNGEONS = [
             "objective": "Slay 15 <a href=\"https://www.wowhead.com/classic/npc=7047/black-broodling\" rel=\"noopener noreferrer\" target=\"_blank\">Black Broodlings</a>, 10 <a href=\"https://www.wowhead.com/classic/npc=7040/black-dragonspawn\" rel=\"noopener noreferrer\" target=\"_blank\">Black Dragonspawn</a>, 4 <a href=\"https://www.wowhead.com/classic/npc=7041/black-wyrmkin\" rel=\"noopener noreferrer\" target=\"_blank\">Black Wyrmkin</a> and 1 <a href=\"https://www.wowhead.com/classic/npc=7044/black-drake\" rel=\"noopener noreferrer\" target=\"_blank\">Black Drake</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9562/helendis-riverhorn\" rel=\"noopener noreferrer\" target=\"_blank\">Helendis Riverhorn</a> when the task is complete.",
             "description": "Life in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> is rife with conflict.<br><br>Just look at this place! We know very little of what happened to these buildings, but we do know that at one time, before the great explosion, this was all part of the Redridge mountain range.<br><br>Enough lamenting! We have a problem. You may have noticed the dragonkin below this ridge. We need assistance in pushing them back. Kill as many as you can and return to me. Succeed and perhaps we can talk of other things.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 7047,
+                "name": "Black Broodling",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/npc=7047/black-broodling"
+              },
+              {
+                "type": "npc",
+                "id": 7040,
+                "name": "Black Dragonspawn",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=7040/black-dragonspawn"
+              },
+              {
+                "type": "npc",
+                "id": 7044,
+                "name": "Black Drake",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=7044/black-drake"
+              },
+              {
+                "type": "npc",
+                "id": 7041,
+                "name": "Black Wyrmkin",
+                "quantity": 4,
+                "url": "https://www.wowhead.com/classic/npc=7041/black-wyrmkin"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24360,6 +27176,7 @@ const DUNGEONS = [
             "objective": "Travel to Lakeshire and deliver <a href=\"https://www.wowhead.com/classic/item=11366/helendis-riverhorns-letter\" rel=\"noopener noreferrer\" target=\"_blank\">Helendis Riverhorn's Letter</a> to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a>.",
             "description": "We had always assumed that the Blackrock orcs were a product of their savage upbringing. What we have found here, in their homeland, tells us another story.<br><br>Indeed, it is bloodlust and thirst for conflict that empowers them, but the black dragonflight are the beings whom control the orcs of Blackrock. We suspect that it is the black dragonflight that fuels them with rage and hostility.<br><br>Take this letter to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a>. He will know what must be done.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24423,6 +27240,7 @@ const DUNGEONS = [
             "objective": "Travel to Stormwind and deliver Solomon's Plea to <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a>.<br><br>Bolvar resides in Stormwind Keep.",
             "description": "This is grim news. To discover that our mortal enemies are merely pawns of a much greater threat is disheartening. There is no possible way that Lakeshire could survive an attack from both the Blackrock orcs and the black dragonflight. Should Lakeshire fall to this menace, Darkshire would fall next, and then what? Goldshire? Stormwind itself?<br><br>You must take this information to <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a> in Stormwind at once! If this does not merit the aid of Stormwind, nothing will and all is lost.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24486,6 +27304,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a> after speaking with Lady Katrana Prestor.",
             "description": "Solomon paints a dreary picture. Still, we cannot afford to send our thinly spread troops to the aid of Lakeshire on speculation. I will need proof of these claims before I can act.<br><br>Speak with Lady Prestor. She is a learned woman and knows much of dragons and dragonkin. She may be able to shed some light on this situation.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24549,6 +27368,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=11368/bolvars-decree\" rel=\"noopener noreferrer\" target=\"_blank\">Bolvar's Decree</a> to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> in Lakeshire.",
             "description": "I am going to empower you as an acting deputy of Stormwind.<br><br>Return to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> in Lakeshire and deliver this decree.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24612,6 +27432,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>.",
             "description": "&lt;<a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> sighs.&gt;<br><br>You must return to the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>. As a deputy of Stormwind, you will be required to report to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a>. Good luck.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24675,6 +27496,7 @@ const DUNGEONS = [
             "objective": "Speak with Ragged John to learn of Marshal Windsor's fate and return to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> when you have completed this task.<br><br>You recall <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> telling you to search for him in a cave to the north.",
             "description": "What? You thought you were the first? How many soldiers must we lose before Stormwind acts?<br><br>We had accumulated enormous amounts of intelligence pertaining to the Blackrock menace before we lost our commanding officer, Marshal Windsor. With Marshal Windsor went all of our precious information.<br><br>What we need is that documentation. Speak with Ragged John. He was with Windsor when they were attacked by a Blackrock raiding party. He was last seen in a cave to the north.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24736,8 +27558,9 @@ const DUNGEONS = [
             "xp": 5450,
             "money": 26100,
             "objective": "Travel to Blackrock Mountain in the northwest and enter <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>. Find out what became of <a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a>.<br><br>You recall Ragged John talking about Windsor being dragged off to a prison.",
-            "description": "So that good for nothing coward says that Windsor is alive, eh?<br><br>Suit up, deputy, you are going in to find him. If Windsor is alive, you are to bring him back. If he's dead, I want proof.<br><br><br><br>I bet you are getting tired of hearing that, aren't you?",
+            "description": "So that good for nothing coward says that Windsor is alive, eh?<br><br>Suit up, deputy, you are going in to find him. If Windsor is alive, you are to bring him back. If he's dead, I want proof.<br><br>I bet you are getting tired of hearing that, aren't you?",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24801,6 +27624,7 @@ const DUNGEONS = [
             "objective": "Give <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> the bad news.",
             "description": "Bolvar is a fool. I was gathering his precious 'proof' so that I could shove it down his throat.<br><br>He is a blind buffoon. Proof stands two feet away from him and he does not see.<br><br>As for my data, it's lost. Gone. Unrecoverable.<br><br>Should I ever find Ironfoe and make it out of this labyrinth, my first stop will be Stormwind, to place my hammer in between that reptile's eyes.<br><br>Leave me.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [
               {
@@ -24876,6 +27700,7 @@ const DUNGEONS = [
             "objective": "You may have just stumbled on to something that <a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> would be interested in seeing. There may be hope, after all.",
             "description": "The note has stains covering its surface. The text is barely legible, but you make out the following:<br><br>...sweet irony...<br><br>...the fall of the broken Alliance...<br><br>...if it were not for General Angerforge's diligence, we may have never discovered the pattern to the encryption...<br><br>...Argelmach is almost done with the decryption of Windsor's notes.<br><br>Our lord will rise from the depths and crush any that remain...<br><br>-Emperor Dagran Thaurissan.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -24946,6 +27771,24 @@ const DUNGEONS = [
             "objective": "Return <a href=\"https://www.wowhead.com/search?q=Marshal+Windsor%27s+Lost+Information\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor's Lost Information</a>.<br><br><a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> believes that the information is being held by Golem Lord Argelmach and General Angerforge.",
             "description": "&lt;<a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> shakes the note excitedly.&gt;<br><br>Do you realize what this means?<br><br>Perhaps all is not lost! From what I can ascertain, the information is being held by two Dark Iron dwarves: General Angerforge and the golem lord, Argelmach. I have a feeling that they won't just hand over the information if we ask nicely.<br><br>I hope you are ready to battle.<br><br>Venture forth and find these two villains! Destroy them and return my lost information.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 11464,
+                "name": "Marshal Windsor's Lost Information",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=11464/marshal-windsors-lost-information",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 11465,
+                "name": "Marshal Windsor's Lost Information",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=11465/marshal-windsors-lost-information",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -25068,8 +27911,9 @@ const DUNGEONS = [
         "xp": 9650,
         "money": 26500,
         "objective": "",
-        "description": "Thaurissan was a great and honorable dwarf. You ruined my life and the life of my unborn child!<br><br><br><br>Return to Ironforge and tell my father that the heir to the Kingdom of Ironforge will be a Dark Iron dwarf.<br><br>Whether he approves or not, it shall be.",
+        "description": "Thaurissan was a great and honorable dwarf. You ruined my life and the life of my unborn child!<br><br>Return to Ironforge and tell my father that the heir to the Kingdom of Ironforge will be a Dark Iron dwarf.<br><br>Whether he approves or not, it shall be.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [
           {
@@ -25136,6 +27980,7 @@ const DUNGEONS = [
             "objective": "Listen to <a href=\"https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus\" rel=\"noopener noreferrer\" target=\"_blank\">Royal Historian Archesonus</a> recant the history of Thaurissan.",
             "description": "Would you like to hear a brief history of the Dark Iron dwarves?",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -25199,6 +28044,15 @@ const DUNGEONS = [
             "objective": "Venture to the Ruins of Thaurissan in the Burning Steppes and recover information from the <a href=\"https://www.wowhead.com/classic/object=153556/thaurissan-relic\" rel=\"noopener noreferrer\" target=\"_blank\">Thaurissan Relics</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=8879/royal-historian-archesonus\" rel=\"noopener noreferrer\" target=\"_blank\">Royal Historian Archesonus</a> when you have recovered the information.",
             "description": "Venture to the smoldering ruins of Thaurissan in the Burning Steppes and gather as much information as possible.<br><br>It is said that mysterious relics litter the ruins. Perhaps you should start your search there. Beware the Thaurissan guardians: Assassins that guard the ruins, keeping whatever secrets may still be buried there protected.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "object",
+                "id": 153556,
+                "name": "Information Recovered",
+                "quantity": 12,
+                "url": "https://www.wowhead.com/classic/object=153556/information-recovered"
+              }
+            ],
             "rewards": [
               {
                 "id": 12102,
@@ -25267,8 +28121,9 @@ const DUNGEONS = [
             "xp": 6400,
             "money": 38400,
             "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and find <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a>.<br><br>The King mentioned that Kharan was being held prisoner there - perhaps you should try looking for a prison.",
-            "description": "You have been to the smoldering ruins of Thaurissan? Did you happen to run into a pitiful lout named <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a>? The dwarf that was supposedly watching over my baby girl!<br><br><br><br>And now she's gone!<br><br>I have had my men turn the Steppes upside down. The only clue they have as to the whereabouts of my daughter is that she may be inside the Depths. For all I know, she could be dead!<br><br>Kharan is supposedly being held prisoner there... find him! I want answers!",
+            "description": "You have been to the smoldering ruins of Thaurissan? Did you happen to run into a pitiful lout named <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a>? The dwarf that was supposedly watching over my baby girl!<br><br>And now she's gone!<br><br>I have had my men turn the Steppes upside down. The only clue they have as to the whereabouts of my daughter is that she may be inside the Depths. For all I know, she could be dead!<br><br>Kharan is supposedly being held prisoner there... find him! I want answers!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -25334,6 +28189,7 @@ const DUNGEONS = [
             "objective": "Listen as <a href=\"https://www.wowhead.com/classic/npc=9021/kharan-mighthammer\" rel=\"noopener noreferrer\" target=\"_blank\">Kharan Mighthammer</a> tells his story.",
             "description": "Please, hear me out before passing judgement!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -25403,6 +28259,7 @@ const DUNGEONS = [
             "objective": "Return to Ironforge and deliver the bad news to <a href=\"https://www.wowhead.com/classic/npc=2784/king-magni-bronzebeard\" rel=\"noopener noreferrer\" target=\"_blank\">King Magni Bronzebeard</a>.",
             "description": "You must take this information back to King Magni. He will know what to do!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -25477,6 +28334,15 @@ const DUNGEONS = [
         "objective": "Travel to the quarry in <a href=\"https://www.wowhead.com/classic/zone=25/blackrock-mountain\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Mountain</a> and slay <a href=\"https://www.wowhead.com/classic/npc=9026/overmaster-pyron\" rel=\"noopener noreferrer\" target=\"_blank\">Overmaster Pyron</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9084/thunderheart\" rel=\"noopener noreferrer\" target=\"_blank\">Thunderheart</a> when you have completed this assignment.",
         "description": "The elders have felt a disturbance amongst the elements. The Dark Iron dwarves have summoned a foul spirit into our world that threatens to plague our lands with an eternal draught. This disharmony of flame must be investigated.<br><br>Travel to <a href=\"https://www.wowhead.com/classic/zone=25/blackrock-mountain\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Mountain</a>, through the Chasm of Flame, into the quarry. It is there that you shall find this lord of fire: <a href=\"https://www.wowhead.com/classic/npc=9026/overmaster-pyron\" rel=\"noopener noreferrer\" target=\"_blank\">Overmaster Pyron</a>.<br><br>End the disruption and return to me.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 9026,
+            "name": "Overmaster Pyron",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9026/overmaster-pyron"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -25536,6 +28402,23 @@ const DUNGEONS = [
         "objective": "Enter <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a> and track down <a href=\"https://www.wowhead.com/classic/npc=9017/lord-incendius\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Incendius</a>. Slay him and return any source of information you may find to <a href=\"https://www.wowhead.com/classic/npc=9084/thunderheart\" rel=\"noopener noreferrer\" target=\"_blank\">Thunderheart</a>.",
         "description": "I can taste the foulness in the air that surrounds you. There is another, hidden in the depths of Blackrock, who does control this foulness.<br><br>The wind and earth cry his name: <a href=\"https://www.wowhead.com/classic/npc=9017/lord-incendius\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Incendius</a>... but someone... something... commands this being. He is merely an emissary.<br><br>Find him and discover where his master hides. Return to me when you have collected this information.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 9017,
+            "name": "Lord Incendius",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9017/lord-incendius"
+          },
+          {
+            "type": "item",
+            "id": 11126,
+            "name": "Tablet of Kurniya",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=11126/tablet-of-kurniya",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -25618,8 +28501,9 @@ const DUNGEONS = [
         "xp": 5100,
         "money": 12300,
         "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=9020/commander-gorshak\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Gor'shak</a> in <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>.<br><br>You recall that the crudely drawn picture of the orc included bars drawn over the portrait. Perhaps you should search for a prison of some sort.",
-        "description": "Poor Gargal... didn't even see it coming. WHAM! The arrow landed dead center on the top of his head. He was no genius before but now...<br><br><br><br>When we dislodged the arrow, we noticed a rolled up note attached to the shaft. On the note was a crudely drawn picture of an orc behind bars with the signature of <a href=\"https://www.wowhead.com/classic/npc=9020/commander-gorshak\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Gor'shak</a> attached.<br><br>If he's still alive in the Depths, you'll have to find him.<br><br>A trap you say? Well no kidding, numb hooves! That's why you're going!",
+        "description": "Poor Gargal... didn't even see it coming. WHAM! The arrow landed dead center on the top of his head. He was no genius before but now...<br><br>When we dislodged the arrow, we noticed a rolled up note attached to the shaft. On the note was a crudely drawn picture of an orc behind bars with the signature of <a href=\"https://www.wowhead.com/classic/npc=9020/commander-gorshak\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Gor'shak</a> attached.<br><br>If he's still alive in the Depths, you'll have to find him.<br><br>A trap you say? Well no kidding, numb hooves! That's why you're going!",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -25682,8 +28566,9 @@ const DUNGEONS = [
         "xp": 5450,
         "money": 26100,
         "objective": "Defend Gor'shak.",
-        "description": "I was sent here under the auspices of Thrall. Do you actually think these buffoons could capture me? I allowed myself to be captured so that I could gather intelligence.<br><br><br><br>The Princess of Ironforge has been kidnapped by Emperor Thaurissan. Princess Bronzebeard is in this very city! I bet old Magni's heart almost stopped when he heard that news.<br><br><br><br>Shhh! Do you hear that? Guards coming! DEFEND YOURSELF!",
+        "description": "I was sent here under the auspices of Thrall. Do you actually think these buffoons could capture me? I allowed myself to be captured so that I could gather intelligence.<br><br>The Princess of Ironforge has been kidnapped by Emperor Thaurissan. Princess Bronzebeard is in this very city! I bet old Magni's heart almost stopped when he heard that news.<br><br>Shhh! Do you hear that? Guards coming! DEFEND YOURSELF!",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -25748,6 +28633,7 @@ const DUNGEONS = [
         "objective": "Speak with Kharan Mighthammer and gather information about Princess Moira Bronzebeard's kidnapping. Take that information to <a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a> in Orgrimmar.<br><br>You recall Gor'shak mentioning that Kharan is being held in a cell nearby.",
         "description": "So far, my communication with the dwarf, Kharan, in the cell across the hall, has been limited. I have, however, managed to convince him that I, rather -we- mean him no harm.<br><br>Go speak with him and gather as much information about the Princess and her captors as possible. Take that information back to the Warchief.<br><br><a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a> does not want the Princess harmed, but instead, has some grand plan laid out, which includes her being safely returned to Ironforge. Kharan already knows all of this... Go!",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -25812,6 +28698,7 @@ const DUNGEONS = [
         "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a> if you are prepared to take on the mission he has planned.",
         "description": "You bring excellent information.<br><br>As Warchief, it is my duty to do what is best for the Horde. To ensure that the generations that come after us are not forced into a hopeless existence.<br><br>The opportunity to shape our future alliances has fallen into our collective laps. A move to help the dwarves could greatly strengthen our relationships in the Eastern Kingdoms. This, then, is why you must not fail!<br><br>Are you prepared?",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -25876,6 +28763,15 @@ const DUNGEONS = [
         "objective": "Slay <a href=\"https://www.wowhead.com/classic/npc=9019/emperor-dagran-thaurissan\" rel=\"noopener noreferrer\" target=\"_blank\">Emperor Dagran Thaurissan</a> and free <a href=\"https://www.wowhead.com/classic/npc=8929/princess-moira-bronzebeard\" rel=\"noopener noreferrer\" target=\"_blank\">Princess Moira Bronzebeard</a> from his evil spell.",
         "description": "This strike against the Dark Iron dwarves, if successful, will send a shockwave throughout their entire kingdom.<br><br>Princess Bronzebeard is under the control of Emperor Thaurissan. To free her, you must kill the Emperor. Be warned, your task is doubly dangerous, as Bronzebeard will attack you without question while under the control of the Emperor.<br><br>DO NOT HARM HER!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 9019,
+            "name": "Emperor Dagran Thaurissan",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9019/emperor-dagran-thaurissan"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -25938,8 +28834,9 @@ const DUNGEONS = [
         "xp": 9950,
         "money": 27000,
         "objective": "",
-        "description": "You have slain my husband! My child will be born into this world without a father.<br><br><br><br>I assure you, this child will be the next ruler of the kingdom of Ironforge. You and your kind shall be hunted down until the end of days for this wrongful act.<br><br><br><br>Leave me be. I am certain your warchief will be eager to hear the results of his meddling.",
+        "description": "You have slain my husband! My child will be born into this world without a father.<br><br>I assure you, this child will be the next ruler of the kingdom of Ironforge. You and your kind shall be hunted down until the end of days for this wrongful act.<br><br>Leave me be. I am certain your warchief will be eager to hear the results of his meddling.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [
           {
@@ -26031,6 +28928,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> and locate the Imp, Pusillin. Convince Pusillin to give you <a href=\"https://www.wowhead.com/classic/npc=14355/azjtordin\" rel=\"noopener noreferrer\" target=\"_blank\">Azj'Tordin</a>'s <a href=\"https://www.wowhead.com/classic/item=18261/book-of-incantations\" rel=\"noopener noreferrer\" target=\"_blank\">Book of Incantations</a> through any means necessary.<br><br>Return to <a href=\"https://www.wowhead.com/classic/npc=14355/azjtordin\" rel=\"noopener noreferrer\" target=\"_blank\">Azj'Tordin</a> at the Lariss Pavilion in Feralas should you recover the <a href=\"https://www.wowhead.com/classic/item=18261/book-of-incantations\" rel=\"noopener noreferrer\" target=\"_blank\">Book of Incantations</a>.",
         "description": "I had let my guard down for only one moment, stranger. In my haste to escape the grip of the fallen Prince, I was robbed. A most foul demon, the imp Pusillin, pilfered my <a href=\"https://www.wowhead.com/classic/item=18261/book-of-incantations\" rel=\"noopener noreferrer\" target=\"_blank\">book of incantations</a> and the key to the once great halls of Eldre'Thalas.<br><br>I no longer hold interest in the key, as I have exchanged my immortality for freedom, but I desperately need my <a href=\"https://www.wowhead.com/classic/item=18261/book-of-incantations\" rel=\"noopener noreferrer\" target=\"_blank\">book of incantations</a>.<br><br>Find the imp, Pusillin, and recover my book.<br><br>Search the Warpwood Quarter of <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> for Pusillin.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18261,
+            "name": "Book of Incantations",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18261/book-of-incantations",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -26102,6 +29009,16 @@ const DUNGEONS = [
         "objective": "Bring Lethtendris' Web to <a href=\"https://www.wowhead.com/classic/npc=7877/latronicus-moonspear\" rel=\"noopener noreferrer\" target=\"_blank\">Latronicus Moonspear</a> at the Feathermoon Stronghold in Feralas.",
         "description": "The mage Lethtendris, a vicious blood elf whose brutality is matched only by her twisted addiction to magic, has fled into <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a>. She has created a device, a web to ensnare the magical energies of that place and we fear that, if left unchecked, she will cause irreparable damage to our world!<br><br>Stop her. Find her and retrieve her web. She is likely near the satyrs in Warpwood Quarter of <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a>. Bring the web to me so that its power may be released safely back into the wilds...",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18426,
+            "name": "Lethtendris's Web",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18426/lethtendriss-web",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 18491,
@@ -26176,6 +29093,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=7877/latronicus-moonspear\" rel=\"noopener noreferrer\" target=\"_blank\">Latronicus Moonspear</a> at the Feathermoon Stronghold in Feralas.",
             "description": "! Your aid is needed in Feralas!<br><br>An outlaw mage, Lethtendris, has fled to the ancient elven ruins Eldre'thalas, now called <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a>. It is believed she has an item of dangerous magical energy which must be recovered.<br><br><a href=\"https://www.wowhead.com/classic/npc=7877/latronicus-moonspear\" rel=\"noopener noreferrer\" target=\"_blank\">Latronicus Moonspear</a> requests agents to enter <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> and retrieve the item from Lethtendris.<br><br>Serve the Alliance! Seek out Latronicus at the Feathermoon Stronghold in Feralas.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -26250,6 +29168,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=18426/lethtendriss-web\" rel=\"noopener noreferrer\" target=\"_blank\">Lethtendris's Web</a> to <a href=\"https://www.wowhead.com/classic/npc=7776/talo-thornhoof\" rel=\"noopener noreferrer\" target=\"_blank\">Talo Thornhoof</a> at Camp Mojache in Feralas.",
         "description": "The blood elf Lethtendris has overstepped her bounds. So eager was she to gather magical power that she defied her brethren and created a device of insidious design, a web meant to siphon the tainted magical energies of <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a>. Even now she gathers those energies and plans to release them against her enemies.<br><br>Lethtendris must be stopped. Find her within the Warpwood Quarter of <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a>, defeat her and bring her web to me so that it might be returned to more clear-headed blood elves for study.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18426,
+            "name": "Lethtendris's Web",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18426/lethtendriss-web",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 18491,
@@ -26324,6 +29252,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=7776/talo-thornhoof\" rel=\"noopener noreferrer\" target=\"_blank\">Talo Thornhoof</a> at Camp Mojache in Feralas.",
             "description": "<a href=\"https://www.wowhead.com/classic/npc=7776/talo-thornhoof\" rel=\"noopener noreferrer\" target=\"_blank\">Talo Thornhoof</a>, a Tauren elder in Feralas, sends a request for aid. He offered few details, but he did say that he needs agents for a matter both delicate... and dire.<br><br>Serve the Horde. Go to Camp Mojache in Feralas and speak with Talo.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -26396,8 +29325,18 @@ const DUNGEONS = [
         "xp": 6600,
         "money": 39600,
         "objective": "Travel to the Warpwood Quarter of <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> and slay the water elemental, Hydrospawn. Return to <a href=\"https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros\" rel=\"noopener noreferrer\" target=\"_blank\">Lorekeeper Lydros</a> in the Athenaeum with the <a href=\"https://www.wowhead.com/classic/item=18299/hydrospawn-essence\" rel=\"noopener noreferrer\" target=\"_blank\">Hydrospawn Essence</a>.",
-        "description": "A mage! How wonderous. I have not seen one of your kind for... oh what is it going on now? 500 years!<br><br>I have something that will quench your thirst, but first you must do a task for me.<br><br><br><br>There is an anomaly in Eldre'Thalas. A water elemental has taken residence in the east wing. His presence must be catalogued!<br><br>Venture to the Warpwood Quarter and extract a portion of the elemental essence of the Hydrospawn. Return it to me and I shall teach you a useful cantrip.",
+        "description": "A mage! How wonderous. I have not seen one of your kind for... oh what is it going on now? 500 years!<br><br>I have something that will quench your thirst, but first you must do a task for me.<br><br>There is an anomaly in Eldre'Thalas. A water elemental has taken residence in the east wing. His presence must be catalogued!<br><br>Venture to the Warpwood Quarter and extract a portion of the elemental essence of the Hydrospawn. Return it to me and I shall teach you a useful cantrip.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18299,
+            "name": "Hydrospawn Essence",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18299/hydrospawn-essence",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -26442,6 +29381,7 @@ const DUNGEONS = [
         "objective": "Return to the Athenaeum and find the Treasure of the Shen'dralar. Claim your reward!",
         "description": "In the library, Athenaeum, you will find an ancient chest hidden beneath the stairway. Take from it that which you desire.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [
           {
@@ -26514,6 +29454,22 @@ const DUNGEONS = [
             "objective": "You must destroy the guardians surrounding the 5 Pylons that power the Prison of <a href=\"https://www.wowhead.com/classic/npc=11496/immolthar\" rel=\"noopener noreferrer\" target=\"_blank\">Immol'thar</a>. Once the Pylons have powered down, the force field surrounding <a href=\"https://www.wowhead.com/classic/npc=11496/immolthar\" rel=\"noopener noreferrer\" target=\"_blank\">Immol'thar</a> will have dissipated.<br><br>Enter the Prison of <a href=\"https://www.wowhead.com/classic/npc=11496/immolthar\" rel=\"noopener noreferrer\" target=\"_blank\">Immol'thar</a> and eradicate the foul demon that stands at its heart. Finally, confront <a href=\"https://www.wowhead.com/classic/npc=11486/prince-tortheldrin\" rel=\"noopener noreferrer\" target=\"_blank\">Prince Tortheldrin</a> in Athenaeum.<br><br>Return to the <a href=\"https://www.wowhead.com/classic/npc=14358/shendralar-ancient\" rel=\"noopener noreferrer\" target=\"_blank\">Shen'dralar Ancient</a> in the courtyard should you complete this quest.",
             "description": "Have you heard enough? Are you a of action?<br><br>This madness must come to an end. The age of the immortals has long since passed. Destroy the guardians surrounding the pylons to lower the force field. When this is done, destroy <a href=\"https://www.wowhead.com/classic/npc=11496/immolthar\" rel=\"noopener noreferrer\" target=\"_blank\">Immol'thar</a>. With the Prince's power greatly reduced, attack and end him. Lay the spirits of this city to rest, adventurer.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 11496,
+                "name": "Immol'thar",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=11496/immolthar"
+              },
+              {
+                "type": "npc",
+                "id": 11486,
+                "name": "Prince Tortheldrin",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=11486/prince-tortheldrin"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -26584,6 +29540,24 @@ const DUNGEONS = [
         "objective": "Find the Felvine in Dire Maul and acquire a shard from it. Chances are you'll only be able to procure one with the demise of Alzzin the Wildshaper. Use the <a href=\"https://www.wowhead.com/classic/item=18539/reliquary-of-purity\" rel=\"noopener noreferrer\" target=\"_blank\">Reliquary of Purity</a> to securely seal the shard inside, and return it to <a href=\"https://www.wowhead.com/classic/npc=11801/rabine-saturna\" rel=\"noopener noreferrer\" target=\"_blank\">Rabine Saturna</a> in Nighthaven, <a href=\"https://www.wowhead.com/classic/zone=493/moonglade\" rel=\"noopener noreferrer\" target=\"_blank\">Moonglade</a>.",
         "description": "Your knowledge of Eldre'Thalas - Dire Maul - in Feralas will now come into play. In the eastern part of the ruined city is where Alzzin the Wildshaper has exerted his corrupt dominion. Go there with all due haste and brave whatever challenges await you.<br><br>The Fruit of Fertility, now corrupted as the Felvine, should be close to Alzzin. When he falls, capture whatever essence of the Felvine you can. Seal it in the Reliquary, and bring it to me.<br><br>Good luck, and Cenarion's speed.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18540,
+            "name": "Sealed Reliquary of Purity",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18540/sealed-reliquary-of-purity",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 18501,
+            "name": "Felvine Shard",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18501/felvine-shard",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -26650,6 +29624,16 @@ const DUNGEONS = [
             "objective": "Travel to Silithus and search for a <a href=\"https://www.wowhead.com/classic/item=22201/reliquary-of-purity\" rel=\"noopener noreferrer\" target=\"_blank\">Reliquary of Purity</a> within the ruins of Southwind Village. If you are able to find it, return with it to <a href=\"https://www.wowhead.com/classic/npc=11801/rabine-saturna\" rel=\"noopener noreferrer\" target=\"_blank\">Rabine Saturna</a> in Nighthaven, <a href=\"https://www.wowhead.com/classic/zone=493/moonglade\" rel=\"noopener noreferrer\" target=\"_blank\">Moonglade</a>.",
             "description": "The first step is to find a container capable of holding an extremely corruptible substance without the handler suffering ill effects. There is only one sort device I am aware of that could possibly contain something as vile as the Felvine: a <a href=\"https://www.wowhead.com/classic/item=22201/reliquary-of-purity\" rel=\"noopener noreferrer\" target=\"_blank\">Reliquary of Purity</a>.<br><br>Deep in the wasteland of Silithus is the remnants of the night elf village known as Southwind. I know one was there many, many years ago. If we are to succeed, I need you to scour those ruins in the hopes of reclaiming it.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 22201,
+                "name": "Reliquary of Purity",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=22201/reliquary-of-purity",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -26724,6 +29708,40 @@ const DUNGEONS = [
         "objective": "Bring 4 <a href=\"https://www.wowhead.com/classic/item=14048/bolt-of-runecloth\" rel=\"noopener noreferrer\" target=\"_blank\">Bolts of Runecloth</a>, 8 <a href=\"https://www.wowhead.com/classic/item=8170/rugged-leather\" rel=\"noopener noreferrer\" target=\"_blank\">Rugged Leather</a>, 2 <a href=\"https://www.wowhead.com/classic/item=14341/rune-thread\" rel=\"noopener noreferrer\" target=\"_blank\">Rune Threads</a>, and <a href=\"https://www.wowhead.com/classic/item=18240/ogre-tannin\" rel=\"noopener noreferrer\" target=\"_blank\">Ogre Tannin</a> to <a href=\"https://www.wowhead.com/classic/npc=14338/knot-thimblejack\" rel=\"noopener noreferrer\" target=\"_blank\">Knot Thimblejack</a>. He is currently chained inside the Gordok wing of <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a>.",
         "description": "If you're going to fight the king of this dump - and I think that's what you're bound to do - then you're going to need to get by Captain Kromcrush. Now, you can get by him by killing him, sure. You might actually want to leave him alive.<br><br>How, you ask? Since I've been here, I think I know how to make an ogre suit that will last just long enough to fool these bozos. The only problem is stability - ten minutes tops. Bring me what I need, and I'll make you one. I'm not going anywhere...",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 14048,
+            "name": "Bolt of Runecloth",
+            "quantity": 4,
+            "url": "https://www.wowhead.com/classic/item=14048/bolt-of-runecloth",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 8170,
+            "name": "Rugged Leather",
+            "quantity": 8,
+            "url": "https://www.wowhead.com/classic/item=8170/rugged-leather",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 14341,
+            "name": "Rune Thread",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=14341/rune-thread",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 18240,
+            "name": "Ogre Tannin",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18240/ogre-tannin",
+            "quality": 2
+          }
+        ],
         "rewards": [
           {
             "id": 18258,
@@ -26789,6 +29807,22 @@ const DUNGEONS = [
         "objective": "You must destroy the guardians surrounding the 5 Pylons that power the Prison of <a href=\"https://www.wowhead.com/classic/npc=11496/immolthar\" rel=\"noopener noreferrer\" target=\"_blank\">Immol'thar</a>. Once the Pylons have powered down, the force field surrounding <a href=\"https://www.wowhead.com/classic/npc=11496/immolthar\" rel=\"noopener noreferrer\" target=\"_blank\">Immol'thar</a> will have dissipated.<br><br>Enter the Prison of <a href=\"https://www.wowhead.com/classic/npc=11496/immolthar\" rel=\"noopener noreferrer\" target=\"_blank\">Immol'thar</a> and eradicate the foul demon that stands at its heart. Finally, confront <a href=\"https://www.wowhead.com/classic/npc=11486/prince-tortheldrin\" rel=\"noopener noreferrer\" target=\"_blank\">Prince Tortheldrin</a> in Athenaeum.<br><br>Return to the <a href=\"https://www.wowhead.com/classic/npc=14358/shendralar-ancient\" rel=\"noopener noreferrer\" target=\"_blank\">Shen'dralar Ancient</a> in the courtyard should you complete this quest.",
         "description": "Have you heard enough? Are you a of action?<br><br>This madness must come to an end. The age of the immortals has long since passed. Destroy the guardians surrounding the pylons to lower the force field. When this is done, destroy <a href=\"https://www.wowhead.com/classic/npc=11496/immolthar\" rel=\"noopener noreferrer\" target=\"_blank\">Immol'thar</a>. With the Prince's power greatly reduced, attack and end him. Lay the spirits of this city to rest, adventurer.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 11496,
+            "name": "Immol'thar",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=11496/immolthar"
+          },
+          {
+            "type": "npc",
+            "id": 11486,
+            "name": "Prince Tortheldrin",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=11486/prince-tortheldrin"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -26864,6 +29898,16 @@ const DUNGEONS = [
         "objective": "Find the <a href=\"https://www.wowhead.com/classic/item=18336/gauntlet-of-gordok-might\" rel=\"noopener noreferrer\" target=\"_blank\">Gauntlet of Gordok Might</a> and return it to <a href=\"https://www.wowhead.com/classic/npc=14325/captain-kromcrush\" rel=\"noopener noreferrer\" target=\"_blank\">Captain Kromcrush</a> in <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a>.<br><br>According to Kromcrush, the \"old timey story\" says that Tortheldrin - a \"creepy\" elf who called himself a prince - stole it from one of the Gordok kings.",
         "description": "Now you da king, so maybe you get prized Gordok artifact back from creepy elf who calls himself Prince! Da king before you failed, just like all da other kings since Tortheldrin - da creepy elf - stole it from old timey Gordok king!<br><br>Artifact is called da <a href=\"https://www.wowhead.com/classic/item=18336/gauntlet-of-gordok-might\" rel=\"noopener noreferrer\" target=\"_blank\">Gauntlet of Gordok Might</a>. Old timey stories say only da one true king da Gordok can get it back. Old timey story also say creepy elf is still around here - you find it and it will become mighty gauntlet you wear forever! Yar, I show you!",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18336,
+            "name": "Gauntlet of Gordok Might",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18336/gauntlet-of-gordok-might",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -26947,6 +29991,7 @@ const DUNGEONS = [
         "objective": "",
         "description": "",
         "shareable": true,
+        "requirements": [],
         "rewards": [
           {
             "id": 18269,
@@ -27018,6 +30063,24 @@ const DUNGEONS = [
         "objective": "",
         "description": "",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 15994,
+            "name": "Thorium Widget",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=15994/thorium-widget",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 3829,
+            "name": "Frost Oil",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=3829/frost-oil",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -27076,6 +30139,16 @@ const DUNGEONS = [
         "objective": "Find the <a href=\"https://www.wowhead.com/classic/item=18336/gauntlet-of-gordok-might\" rel=\"noopener noreferrer\" target=\"_blank\">Gauntlet of Gordok Might</a> and return it to <a href=\"https://www.wowhead.com/classic/npc=14325/captain-kromcrush\" rel=\"noopener noreferrer\" target=\"_blank\">Captain Kromcrush</a> in <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a>.<br><br>According to Kromcrush, the \"old timey story\" says that Tortheldrin - a \"creepy\" elf who called himself a prince - stole it from one of the Gordok kings.",
         "description": "Now you da king, so maybe you get prized Gordok artifact back from creepy elf who calls himself Prince! Da king before you failed, just like all da other kings since Tortheldrin - da creepy elf - stole it from old timey Gordok king!<br><br>Artifact is called da <a href=\"https://www.wowhead.com/classic/item=18336/gauntlet-of-gordok-might\" rel=\"noopener noreferrer\" target=\"_blank\">Gauntlet of Gordok Might</a>. Old timey stories say only da one true king da Gordok can get it back. Old timey story also say creepy elf is still around here - you find it and it will become mighty gauntlet you wear forever! Yar, I show you!",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18336,
+            "name": "Gauntlet of Gordok Might",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18336/gauntlet-of-gordok-might",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -27151,6 +30224,7 @@ const DUNGEONS = [
         "objective": "Return the book to its rightful owners.",
         "description": "The tome carries the mark of the Athenaeum.",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 18469,
@@ -27216,6 +30290,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> and locate the Imp, Pusillin. Convince Pusillin to give you <a href=\"https://www.wowhead.com/classic/npc=14355/azjtordin\" rel=\"noopener noreferrer\" target=\"_blank\">Azj'Tordin</a>'s <a href=\"https://www.wowhead.com/classic/item=18261/book-of-incantations\" rel=\"noopener noreferrer\" target=\"_blank\">Book of Incantations</a> through any means necessary.<br><br>Return to <a href=\"https://www.wowhead.com/classic/npc=14355/azjtordin\" rel=\"noopener noreferrer\" target=\"_blank\">Azj'Tordin</a> at the Lariss Pavilion in Feralas should you recover the <a href=\"https://www.wowhead.com/classic/item=18261/book-of-incantations\" rel=\"noopener noreferrer\" target=\"_blank\">Book of Incantations</a>.",
         "description": "I had let my guard down for only one moment, stranger. In my haste to escape the grip of the fallen Prince, I was robbed. A most foul demon, the imp Pusillin, pilfered my <a href=\"https://www.wowhead.com/classic/item=18261/book-of-incantations\" rel=\"noopener noreferrer\" target=\"_blank\">book of incantations</a> and the key to the once great halls of Eldre'Thalas.<br><br>I no longer hold interest in the key, as I have exchanged my immortality for freedom, but I desperately need my <a href=\"https://www.wowhead.com/classic/item=18261/book-of-incantations\" rel=\"noopener noreferrer\" target=\"_blank\">book of incantations</a>.<br><br>Find the imp, Pusillin, and recover my book.<br><br>Search the Warpwood Quarter of <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> for Pusillin.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18261,
+            "name": "Book of Incantations",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18261/book-of-incantations",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -27279,6 +30363,7 @@ const DUNGEONS = [
         "objective": "Return the book to its rightful owners.",
         "description": "The tome carries the mark of the Athenaeum.",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 18473,
@@ -27336,6 +30421,7 @@ const DUNGEONS = [
         "objective": "Return the book to its rightful owners.",
         "description": "The tome carries the mark of the Athenaeum.",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 18465,
@@ -27393,6 +30479,7 @@ const DUNGEONS = [
         "objective": "Return the book to its rightful owners.",
         "description": "The tome carries the mark of the Athenaeum.",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 18468,
@@ -27450,6 +30537,7 @@ const DUNGEONS = [
         "objective": "Return the book to its rightful owners.",
         "description": "The tome carries the mark of the Athenaeum.",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 18467,
@@ -27507,6 +30595,7 @@ const DUNGEONS = [
         "objective": "Return the book to its rightful owners.",
         "description": "The tome carries the mark of the Athenaeum.",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 18472,
@@ -27564,6 +30653,7 @@ const DUNGEONS = [
         "objective": "Return the book to its rightful owners.",
         "description": "The tome carries the mark of the Athenaeum.",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 18471,
@@ -27621,6 +30711,7 @@ const DUNGEONS = [
         "objective": "Return the book to its rightful owners.",
         "description": "The tome carries the mark of the Athenaeum.",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 18470,
@@ -27678,6 +30769,7 @@ const DUNGEONS = [
         "objective": "Return <a href=\"https://www.wowhead.com/classic/item=18401/nostros-compendium-of-dragon-slaying\" rel=\"noopener noreferrer\" target=\"_blank\">Nostro's Compendium of Dragon Slaying</a> to the Athenaeum.",
         "description": "You have uncovered something of great importance. This book is unlike any that you have seen.<br><br>It would appear as if someone or something has managed to shatter the seal of Athenaeum. The text within is garbled and barely legible.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -27728,6 +30820,7 @@ const DUNGEONS = [
         "objective": "Give the Dull and Flat Elven Blade to <a href=\"https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros\" rel=\"noopener noreferrer\" target=\"_blank\">Lorekeeper Lydros</a>.",
         "description": "If you wish to take on this task, present Lydros with the dull blade.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -27773,6 +30866,7 @@ const DUNGEONS = [
             "objective": "Return <a href=\"https://www.wowhead.com/classic/item=18401/nostros-compendium-of-dragon-slaying\" rel=\"noopener noreferrer\" target=\"_blank\">Nostro's Compendium of Dragon Slaying</a> to the Athenaeum.",
             "description": "You have uncovered something of great importance. This book is unlike any that you have seen.<br><br>It would appear as if someone or something has managed to shatter the seal of Athenaeum. The text within is garbled and barely legible.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -27843,6 +30937,24 @@ const DUNGEONS = [
         "objective": "You must get Onyxia to breathe fire on the <a href=\"https://www.wowhead.com/classic/item=18489/unfired-ancient-blade\" rel=\"noopener noreferrer\" target=\"_blank\">Unfired Ancient Blade</a>. Once this is done, pick up the now <a href=\"https://www.wowhead.com/classic/item=18488/heated-ancient-blade\" rel=\"noopener noreferrer\" target=\"_blank\">Heated Ancient Blade</a>. Be warned, a <a href=\"https://www.wowhead.com/classic/item=18488/heated-ancient-blade\" rel=\"noopener noreferrer\" target=\"_blank\">Heated Ancient Blade</a> will not remain heated forever - time is of the essence.<br><br>The last step before returning to me is to slay the beast and drive the <a href=\"https://www.wowhead.com/classic/item=18488/heated-ancient-blade\" rel=\"noopener noreferrer\" target=\"_blank\">Heated Ancient Blade</a> into her corpse.<br><br>Do this and <a href=\"https://www.wowhead.com/search?q=Quel%27Serrar\" rel=\"noopener noreferrer\" target=\"_blank\">Quel'Serrar</a> will be yours.",
         "description": "Take the <a href=\"https://www.wowhead.com/classic/item=18489/unfired-ancient-blade\" rel=\"noopener noreferrer\" target=\"_blank\">unfired ancient blade</a> to the lair of Onyxia and engage her in battle.<br><br>Some trickery must be utilized for the heating of the blade. While in combat, she will surely try to incinerate you with her fiery breath. You must plant the <a href=\"https://www.wowhead.com/classic/item=18489/unfired-ancient-blade\" rel=\"noopener noreferrer\" target=\"_blank\">unfired ancient blade</a> nearby and hope that the fiery breath heats the blade. If you live beyond this, pick up the now <a href=\"https://www.wowhead.com/classic/item=18488/heated-ancient-blade\" rel=\"noopener noreferrer\" target=\"_blank\">heated ancient blade</a> and finish off the dragon.<br><br>Plunge the <a href=\"https://www.wowhead.com/classic/item=18488/heated-ancient-blade\" rel=\"noopener noreferrer\" target=\"_blank\">heated ancient blade</a> into her smoldering corpse to fashion the <a href=\"https://www.wowhead.com/classic/item=18492/treated-ancient-blade\" rel=\"noopener noreferrer\" target=\"_blank\">treated ancient blade</a>.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18492,
+            "name": "Treated Ancient Blade",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18492/treated-ancient-blade",
+            "quality": 4
+          },
+          {
+            "type": "item",
+            "id": 18488,
+            "name": "Heated Ancient Blade",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18488/heated-ancient-blade",
+            "quality": 4
+          }
+        ],
         "rewards": [
           {
             "id": 18348,
@@ -27898,6 +31010,7 @@ const DUNGEONS = [
             "objective": "Return <a href=\"https://www.wowhead.com/classic/item=18401/nostros-compendium-of-dragon-slaying\" rel=\"noopener noreferrer\" target=\"_blank\">Nostro's Compendium of Dragon Slaying</a> to the Athenaeum.",
             "description": "You have uncovered something of great importance. This book is unlike any that you have seen.<br><br>It would appear as if someone or something has managed to shatter the seal of Athenaeum. The text within is garbled and barely legible.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -27960,6 +31073,7 @@ const DUNGEONS = [
         "objective": "Return the book to its rightful owners.",
         "description": "The tome carries the mark of the Athenaeum.",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 18466,
@@ -28025,6 +31139,16 @@ const DUNGEONS = [
         "objective": "",
         "description": "",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18250,
+            "name": "Gordok Shackle Key",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18250/gordok-shackle-key",
+            "quality": 2
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -28083,6 +31207,7 @@ const DUNGEONS = [
         "objective": "Search <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> for Telmius Dreamseeker. Report back to <a href=\"https://www.wowhead.com/classic/npc=14374/scholar-runethorn\" rel=\"noopener noreferrer\" target=\"_blank\">Scholar Runethorn</a> at Feathermoon with whatever information that you may find.",
         "description": "Several years ago, a lone elven master named Telmius Dreamseeker fled the devastation of his homeland with several ancient elven artifacts in tow.<br><br>Our search for this lost master lead us from the ruins of Quel'Thalas, through the Burning Steppes, across the great expanses of the sea, to Feralas.<br><br>We suspect that the elf sought sanctuary in the halls of Eldre'Thalas (what is now known as <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a>).<br><br>You must find him, adventurer. Whether alive or dead, the knowledge he carried must be recovered!",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -28142,6 +31267,40 @@ const DUNGEONS = [
         "objective": "Bring a <a href=\"https://www.wowhead.com/classic/item=18333/libram-of-focus\" rel=\"noopener noreferrer\" target=\"_blank\">Libram of Focus</a>, 1 <a href=\"https://www.wowhead.com/classic/item=18335/pristine-black-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">Pristine Black Diamond</a>, 4 <a href=\"https://www.wowhead.com/classic/item=14344/large-brilliant-shard\" rel=\"noopener noreferrer\" target=\"_blank\">Large Brilliant Shards</a>, and 2 <a href=\"https://www.wowhead.com/classic/item=12753/skin-of-shadow\" rel=\"noopener noreferrer\" target=\"_blank\">Skin of Shadow</a> to <a href=\"https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros\" rel=\"noopener noreferrer\" target=\"_blank\">Lorekeeper Lydros</a> in <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> to receive an <a href=\"https://www.wowhead.com/classic/item=18330/arcanum-of-focus\" rel=\"noopener noreferrer\" target=\"_blank\">Arcanum of Focus</a>.",
         "description": "This libram almost aroused interest in one of the younger Lorekeeper's familiars. Poor thing, it was only a few weeks old.<br><br>Those among you who are more magically inclined might find this item interesting.<br><br>The <a href=\"https://www.wowhead.com/classic/item=18333/libram-of-focus\" rel=\"noopener noreferrer\" target=\"_blank\">Libram of Focus</a> was lost in this wing. I can only assume one of the Highborne spirits holds it in their possession.<br><br>Bring the Libram along with some <a href=\"https://www.wowhead.com/classic/item=14344/large-brilliant-shard\" rel=\"noopener noreferrer\" target=\"_blank\">large brilliant shards</a>, <a href=\"https://www.wowhead.com/classic/item=12753/skin-of-shadow\" rel=\"noopener noreferrer\" target=\"_blank\">skin of shadow</a>, and a <a href=\"https://www.wowhead.com/classic/item=18335/pristine-black-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">pristine black diamond</a> and I shall conjure the Arcanum.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18333,
+            "name": "Libram of Focus",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18333/libram-of-focus",
+            "quality": 2
+          },
+          {
+            "type": "item",
+            "id": 18335,
+            "name": "Pristine Black Diamond",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18335/pristine-black-diamond",
+            "quality": 3
+          },
+          {
+            "type": "item",
+            "id": 14344,
+            "name": "Large Brilliant Shard",
+            "quantity": 4,
+            "url": "https://www.wowhead.com/classic/item=14344/large-brilliant-shard",
+            "quality": 3
+          },
+          {
+            "type": "item",
+            "id": 12753,
+            "name": "Skin of Shadow",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=12753/skin-of-shadow",
+            "quality": 2
+          }
+        ],
         "rewards": [
           {
             "id": 18330,
@@ -28208,6 +31367,40 @@ const DUNGEONS = [
         "objective": "Bring a <a href=\"https://www.wowhead.com/classic/item=18334/libram-of-protection\" rel=\"noopener noreferrer\" target=\"_blank\">Libram of Protection</a>, 1 <a href=\"https://www.wowhead.com/classic/item=18335/pristine-black-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">Pristine Black Diamond</a>, 2 <a href=\"https://www.wowhead.com/classic/item=14344/large-brilliant-shard\" rel=\"noopener noreferrer\" target=\"_blank\">Large Brilliant Shards</a>, and 1 <a href=\"https://www.wowhead.com/classic/item=12735/frayed-abomination-stitching\" rel=\"noopener noreferrer\" target=\"_blank\">Frayed Abomination Stitching</a> to <a href=\"https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros\" rel=\"noopener noreferrer\" target=\"_blank\">Lorekeeper Lydros</a> in <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> to receive an <a href=\"https://www.wowhead.com/classic/item=18331/arcanum-of-protection\" rel=\"noopener noreferrer\" target=\"_blank\">Arcanum of Protection</a>.",
         "description": "He wept like an infant at the loss of this libram. Mind you, I myself have wept over texts - there is no greater loss than that of knowledge and history - but to cry over this nearly useless jumbling of incantations? Preposterous! It left me to believe that the Prince was doing him a favor in flaying the flesh from his bones.<br><br>Bring the Libram along with a <a href=\"https://www.wowhead.com/classic/item=18335/pristine-black-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">pristine black diamond</a>, <a href=\"https://www.wowhead.com/classic/item=14344/large-brilliant-shard\" rel=\"noopener noreferrer\" target=\"_blank\">large brilliant shards</a>, and a <a href=\"https://www.wowhead.com/classic/item=12735/frayed-abomination-stitching\" rel=\"noopener noreferrer\" target=\"_blank\">frayed abomination stitching</a> and I shall recreate the Arcanum.<br><br>Oh, and check the north wing.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18334,
+            "name": "Libram of Protection",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18334/libram-of-protection",
+            "quality": 2
+          },
+          {
+            "type": "item",
+            "id": 18335,
+            "name": "Pristine Black Diamond",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18335/pristine-black-diamond",
+            "quality": 3
+          },
+          {
+            "type": "item",
+            "id": 14344,
+            "name": "Large Brilliant Shard",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=14344/large-brilliant-shard",
+            "quality": 3
+          },
+          {
+            "type": "item",
+            "id": 12735,
+            "name": "Frayed Abomination Stitching",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12735/frayed-abomination-stitching",
+            "quality": 2
+          }
+        ],
         "rewards": [
           {
             "id": 18331,
@@ -28274,6 +31467,40 @@ const DUNGEONS = [
         "objective": "Bring a <a href=\"https://www.wowhead.com/classic/item=18332/libram-of-rapidity\" rel=\"noopener noreferrer\" target=\"_blank\">Libram of Rapidity</a>, 1 <a href=\"https://www.wowhead.com/classic/item=18335/pristine-black-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">Pristine Black Diamond</a>, 2 <a href=\"https://www.wowhead.com/classic/item=14344/large-brilliant-shard\" rel=\"noopener noreferrer\" target=\"_blank\">Large Brilliant Shards</a>, and 2 <a href=\"https://www.wowhead.com/classic/item=12938/blood-of-heroes\" rel=\"noopener noreferrer\" target=\"_blank\">Blood of Heroes</a> to <a href=\"https://www.wowhead.com/classic/npc=14368/lorekeeper-lydros\" rel=\"noopener noreferrer\" target=\"_blank\">Lorekeeper Lydros</a> in <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> to receive an <a href=\"https://www.wowhead.com/classic/item=18329/arcanum-of-rapidity\" rel=\"noopener noreferrer\" target=\"_blank\">Arcanum of Rapidity</a>.",
         "description": "Master Dreamseeker lost the <a href=\"https://www.wowhead.com/classic/item=18332/libram-of-rapidity\" rel=\"noopener noreferrer\" target=\"_blank\">Libram of Rapidity</a> in the east wing. The Libram will allow for a minor haste cantrip to be placed upon your equipment. Parlor tricks, really...<br><br>Regardless, if you are interested, you will need to present the Libram along with some basic reagents.<br><br>Hrm... I believe it also requires <a href=\"https://www.wowhead.com/classic/item=12938/blood-of-heroes\" rel=\"noopener noreferrer\" target=\"_blank\">blood of heroes</a>, a <a href=\"https://www.wowhead.com/classic/item=18335/pristine-black-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">pristine black diamond</a>, and <a href=\"https://www.wowhead.com/classic/item=14344/large-brilliant-shard\" rel=\"noopener noreferrer\" target=\"_blank\">large brilliant shards</a>. I could be wrong!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18332,
+            "name": "Libram of Rapidity",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18332/libram-of-rapidity",
+            "quality": 2
+          },
+          {
+            "type": "item",
+            "id": 18335,
+            "name": "Pristine Black Diamond",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18335/pristine-black-diamond",
+            "quality": 3
+          },
+          {
+            "type": "item",
+            "id": 14344,
+            "name": "Large Brilliant Shard",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=14344/large-brilliant-shard",
+            "quality": 3
+          },
+          {
+            "type": "item",
+            "id": 12938,
+            "name": "Blood of Heroes",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=12938/blood-of-heroes",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 18329,
@@ -28340,6 +31567,7 @@ const DUNGEONS = [
         "objective": "Search <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a> for Telmius Dreamseeker. Report back to <a href=\"https://www.wowhead.com/classic/npc=14373/sage-korolusk\" rel=\"noopener noreferrer\" target=\"_blank\">Sage Korolusk</a> at Camp Mojache with whatever information that you may find.",
         "description": "Several years ago, a lone elven master named Telmius Dreamseeker fled the devastation of his homeland with several ancient elven artifacts in tow.<br><br>Our search for this lost master lead us from the ruins of Quel'Thalas, through the Burning Steppes, across the great expanses of the sea, to Feralas.<br><br>We suspect that the elf sought sanctuary in the halls of Eldre'Thalas (what is now known as <a href=\"https://www.wowhead.com/classic/zone=2557/dire-maul\" rel=\"noopener noreferrer\" target=\"_blank\">Dire Maul</a>).<br><br>You must find him, adventurer. Whether alive or dead, the knowledge he carried must be recovered!",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -28413,6 +31641,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and collect 15 <a href=\"https://www.wowhead.com/classic/item=12530/spire-spider-egg\" rel=\"noopener noreferrer\" target=\"_blank\">Spire Spider Eggs</a> for <a href=\"https://www.wowhead.com/classic/npc=10260/kibler\" rel=\"noopener noreferrer\" target=\"_blank\">Kibler</a>.<br><br>By the sound of it, these eggs could be found near spiders.",
         "description": "Believe it or not, there are people out there willing to pay for the most vile of domesticated beast!<br><br>I'd sent Bijou into the Spire to try and collect some of those <a href=\"https://www.wowhead.com/classic/item=12530/spire-spider-egg\" rel=\"noopener noreferrer\" target=\"_blank\">spire spider eggs</a> but I haven't heard from her in weeks. Maybe you can help me out?<br><br>I'll tell you what. Go to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and collect some <a href=\"https://www.wowhead.com/classic/item=12530/spire-spider-egg\" rel=\"noopener noreferrer\" target=\"_blank\">spire spider eggs</a> for me. Bring them back here and not only will I give you a little cash, but I'll even domesticate one for you!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12530,
+            "name": "Spire Spider Egg",
+            "quantity": 15,
+            "url": "https://www.wowhead.com/classic/item=12530/spire-spider-egg",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 12529,
@@ -28478,6 +31716,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and find Bloodaxe Worg Pups. Use the cage to carry the ferocious little beasts. Bring back a <a href=\"https://www.wowhead.com/classic/item=12263/caged-worg-pup\" rel=\"noopener noreferrer\" target=\"_blank\">Caged Worg Pup</a> to <a href=\"https://www.wowhead.com/classic/npc=10260/kibler\" rel=\"noopener noreferrer\" target=\"_blank\">Kibler</a>.",
         "description": "You're probably wondering what I'm doing out here. Look at the cages! Ain't it obvious?<br><br>I'm an animal lover, first and foremost, but a salesman by trade. I track down exotic animals for the rich and famous and domesticate the beasts so they behave as proper pets.<br><br>Now you're probably wondering, \"What can I do for you, <a href=\"https://www.wowhead.com/classic/npc=10260/kibler\" rel=\"noopener noreferrer\" target=\"_blank\">Kibler</a>.\" The answer is simple: Take this here beast cage and find me some worg pups. For that, I'll domesticate a worg for you!",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12263,
+            "name": "Caged Worg Pup",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12263/caged-worg-pup",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 12264,
@@ -28543,6 +31791,15 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and destroy the source of the worg menace. As you left Helendis, he shouted a name: <a href=\"https://www.wowhead.com/classic/npc=10220/halycon\" rel=\"noopener noreferrer\" target=\"_blank\">Halycon</a>. It is what the orcs refer to in regards to the worg.",
         "description": "You have no doubt seen the worgs which the Blackrock orcs command.<br><br>It is curious - no matter how many we destroy, their numbers never dwindle. My scouts have reported that the worgs are bred, trained, and ultimately exported from <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a>: capital city of the Blackrock orcs. You must travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and discover the source of this menace. Discover... and destroy.<br><br>Good luck. May Cenarius protect you...",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 10220,
+            "name": "Halycon",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=10220/halycon"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -28620,6 +31877,15 @@ const DUNGEONS = [
         "objective": "Slay <a href=\"https://www.wowhead.com/classic/npc=10220/halycon\" rel=\"noopener noreferrer\" target=\"_blank\">Halycon</a>, pack mistress of the Bloodaxe worg.",
         "description": "Some say the worg controlled by the Blackrock orcs are the creation of a supernatural force. Others say they are not true worg but instead a breed of demon dog, granted to the orcs by a fallen pit lord.<br><br>The truth is far less contrived but every bit as frightening. The worg of Blackrock come from <a href=\"https://www.wowhead.com/classic/npc=10220/halycon\" rel=\"noopener noreferrer\" target=\"_blank\">Halycon</a> and her mate. <a href=\"https://www.wowhead.com/classic/npc=10220/halycon\" rel=\"noopener noreferrer\" target=\"_blank\">Halycon</a> is the gigantic den mother of the worg. Her mate? Nobody has ever lived to tell the tale of that one.<br><br>Strike at the heart of the worg. Destroy <a href=\"https://www.wowhead.com/classic/npc=10220/halycon\" rel=\"noopener noreferrer\" target=\"_blank\">Halycon</a>... and, watch your back.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 10220,
+            "name": "Halycon",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=10220/halycon"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -28697,6 +31963,24 @@ const DUNGEONS = [
         "objective": "Bring the Fifth and <a href=\"https://www.wowhead.com/classic/item=12741/sixth-mosharu-tablet\" rel=\"noopener noreferrer\" target=\"_blank\">Sixth Mosh'aru Tablets</a> to <a href=\"https://www.wowhead.com/classic/npc=10460/prospector-ironboot\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Ironboot</a> in Tanaris.",
         "description": "While I look over the third and fourth tablets of Mosh'aru, you must find the fifth and sixth! It will not be easy, for they are held by the Smolderthorn trolls within <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a>. The spire is a dark mountain of fire between the Burning Steppes and the Searing Gorge.<br><br>Good luck. <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> is no place for decent folk...",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12740,
+            "name": "Fifth Mosh'aru Tablet",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12740/fifth-mosharu-tablet",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 12741,
+            "name": "Sixth Mosh'aru Tablet",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12741/sixth-mosharu-tablet",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -28750,6 +32034,15 @@ const DUNGEONS = [
             "objective": "Capture the spirits of 3 screechers in Feralas, then return to <a href=\"https://www.wowhead.com/classic/npc=8579/yehkinya\" rel=\"noopener noreferrer\" target=\"_blank\">Yeh'kinya</a> in Steamwheedle Port.",
             "description": "I seek the spirits of the vale screechers of Feralas. They are the cousins of an old, old god, and their spirits are linked to him.<br><br>Take this bramble wand and go to Feralas. Find and defeat vale screechers in southern and central Feralas, then wave my bramble over their fallen bodies. This will coax their spirit to reveal itself. Touch the spirit and collect its essence.<br><br>Return to me with my bramble and with the collected essence, and I will tell you more of the old god of which I spoke.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 8612,
+                "name": "Screecher Spirits Collected",
+                "quantity": 3,
+                "url": "https://www.wowhead.com/classic/npc=8612/screecher-spirits-collected"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -28813,6 +32106,24 @@ const DUNGEONS = [
             "objective": "Bring the First and <a href=\"https://www.wowhead.com/classic/item=10661/second-mosharu-tablet\" rel=\"noopener noreferrer\" target=\"_blank\">Second Mosh'aru Tablets</a> to <a href=\"https://www.wowhead.com/classic/npc=8579/yehkinya\" rel=\"noopener noreferrer\" target=\"_blank\">Yeh'kinya</a> in Tanaris.",
             "description": "The ancient prophecy of Mosh'aru speaks of a way to contain the god Hakkar's essence. It was written on two tablets and taken to the troll city of <a href=\"https://www.wowhead.com/classic/zone=1176/zulfarrak\" rel=\"noopener noreferrer\" target=\"_blank\">Zul'Farrak</a>, west of Gadgetzan.<br><br>Bring me the Mosh'aru tablets!<br><br>The first tablet is held by the long-dead troll Theka the Martyr. It is said his persecutors were cursed into scarabs and now scuttle about his shrine.<br><br>The second tablet is held by the hydromancer Velratha, near the sacred pool of Gahz'rilla.<br><br>When you have the tablets, bring them to me.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 10660,
+                "name": "First Mosh'aru Tablet",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=10660/first-mosharu-tablet",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 10661,
+                "name": "Second Mosh'aru Tablet",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=10661/second-mosharu-tablet",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -28876,6 +32187,16 @@ const DUNGEONS = [
             "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=12402/ancient-egg\" rel=\"noopener noreferrer\" target=\"_blank\">Ancient Egg</a> to <a href=\"https://www.wowhead.com/classic/npc=8579/yehkinya\" rel=\"noopener noreferrer\" target=\"_blank\">Yeh'kinya</a> in Tanaris.",
             "description": "The Prophecy of Mosh'aru speaks of an <a href=\"https://www.wowhead.com/classic/item=12402/ancient-egg\" rel=\"noopener noreferrer\" target=\"_blank\">ancient egg</a>. It is a relic of a time when trolls ruled vast empires, and it has the power to hold the essence of Hakkar. It may be the only way to keep our world safe from his evil.<br><br>Bring me the <a href=\"https://www.wowhead.com/classic/item=12402/ancient-egg\" rel=\"noopener noreferrer\" target=\"_blank\">ancient egg</a>. It is said to lay hidden deep within Jintha'Alor in <a href=\"https://www.wowhead.com/classic/zone=47/the-hinterlands\" rel=\"noopener noreferrer\" target=\"_blank\">the Hinterlands</a>, in a cave behind the amphitheater at the top of the city.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12402,
+                "name": "Ancient Egg",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=12402/ancient-egg",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -28939,6 +32260,24 @@ const DUNGEONS = [
             "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=10662/filled-egg-of-hakkar\" rel=\"noopener noreferrer\" target=\"_blank\">Filled Egg of Hakkar</a> to <a href=\"https://www.wowhead.com/classic/npc=8579/yehkinya\" rel=\"noopener noreferrer\" target=\"_blank\">Yeh'kinya</a> in Tanaris.",
             "description": "Now it is time to capture the essence of the avatar of Hakkar.<br><br>Take the <a href=\"https://www.wowhead.com/classic/item=10465/egg-of-hakkar\" rel=\"noopener noreferrer\" target=\"_blank\">Egg of Hakkar</a> to the Sanctum of the Fallen God in the Sunken Temple in Azeroth. Invoke the egg's power to stir the dead god.<br><br>He will send his minions against you. Defeat his bloodrinkers and take their Hakkari blood, then use the blood to dowse the eternal flames that hold Hakkar's spirit. When all the flames go out, the avatar of Hakkar will enter our world.<br><br>Defeat him, and place his essence within the <a href=\"https://www.wowhead.com/classic/item=10465/egg-of-hakkar\" rel=\"noopener noreferrer\" target=\"_blank\">Egg of Hakkar</a>.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 10662,
+                "name": "Filled Egg of Hakkar",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=10662/filled-egg-of-hakkar",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 10663,
+                "name": "Essence of Hakkar",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=10663/essence-of-hakkar",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [
               {
@@ -29021,6 +32360,24 @@ const DUNGEONS = [
             "objective": "Bring the Third and <a href=\"https://www.wowhead.com/classic/item=12412/fourth-mosharu-tablet\" rel=\"noopener noreferrer\" target=\"_blank\">Fourth Mosh'aru Tablets</a> to <a href=\"https://www.wowhead.com/classic/npc=10460/prospector-ironboot\" rel=\"noopener noreferrer\" target=\"_blank\">Prospector Ironboot</a> in Tanaris.",
             "description": "The troll with whom you spoke did not tell the truth. The two tablets you gained for him spoke of containing the essence of Hakkar, but there is more to that legend. I have studied long, and found that there are six Tablets of Mosh'aru, not two! Six!<br><br>And I fear that we will not like what secrets the others hold..<br><br>Find the third and fourth tablets of Mosh'aru. They're in the <a href=\"https://www.wowhead.com/classic/zone=139/eastern-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Eastern Plaguelands</a>, held by the mossflayer trolls. Find them, and bring them to me.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12411,
+                "name": "Third Mosh'aru Tablet",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=12411/third-mosharu-tablet",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 12412,
+                "name": "Fourth Mosh'aru Tablet",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=12412/fourth-mosharu-tablet",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -29124,6 +32481,29 @@ const DUNGEONS = [
         "objective": "",
         "description": "This information fills in the gaps to our otherwise impeccable intelligence of <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a>.<br><br>The attack must be decisive.<br><br>First their war master, the troll Voone, must be destroyed. Without his battle plans, the Blackrock orcs will be thrown into chaos.<br><br>You must then take out the ogre Highlord, Omokk. The cowardly ogres of Blackrock are powerless without his leadership.<br><br>Lastly, the overlord of the citadel: Wyrmthalak. With Wyrmthalak dead, their central command unit is without a conduit.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 9237,
+            "name": "War Master Voone",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9237/war-master-voone"
+          },
+          {
+            "type": "npc",
+            "id": 9196,
+            "name": "Highlord Omokk",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9196/highlord-omokk"
+          },
+          {
+            "type": "npc",
+            "id": 9568,
+            "name": "Overlord Wyrmthalak",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -29208,6 +32588,7 @@ const DUNGEONS = [
             "objective": "Travel to the Burning Steppes and give <a href=\"https://www.wowhead.com/classic/item=12770/bijous-information\" rel=\"noopener noreferrer\" target=\"_blank\">Bijou's Information</a> to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a>.",
             "description": "I'm a goblin of my word. Now listen closely:<br><br>These orcs are used primarily as beasts of burden and cannon fodder for the black dragonflight!<br><br>Their true leader is none other than Nefarian, brood of Deathwing. I've also discovered the location of Nefarian's subordinates in this part of the citadel.<br><br>Take this map to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> in the Burning Steppes. It has the location of these fiends marked for easy identification.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -29282,6 +32663,16 @@ const DUNGEONS = [
         "objective": "Find <a href=\"https://www.wowhead.com/classic/item=12345/bijous-belongings\" rel=\"noopener noreferrer\" target=\"_blank\">Bijou's Belongings</a> and return them to her. You recall her mentioning that she stashed them on the bottom floor of the city.",
         "description": "At night when this place is lightly guarded, I sneak around the city, taking notes and writing down anything I see that could be of some strategic value to the K.E.F.<br><br>Last night, however, things went dreadfully wrong. I stumbled across a tripwire and set off an alarm. I stashed my recon gear and ran for cover! Unfortunately, I can't get back to that gear. They've doubled and tripled up the patrols! All that information is lost.<br><br>Get my belongings back and I'll return to the K.E.F. peacefully.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12345,
+            "name": "Bijou's Belongings",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12345/bijous-belongings",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -29335,6 +32726,7 @@ const DUNGEONS = [
             "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and find out what happened to <a href=\"https://www.wowhead.com/classic/npc=10257/bijou\" rel=\"noopener noreferrer\" target=\"_blank\">Bijou</a>.",
             "description": "Never trust a goblin. That's what it comes down to.<br><br><a href=\"https://www.wowhead.com/classic/npc=10257/bijou\" rel=\"noopener noreferrer\" target=\"_blank\">Bijou</a> is her name - one of our slipperiest operatives. I found out she was working for some shady exotic pet dealer out of the Burning Steppes named Kibler, in essence, two timing us. Worse yet, she was using Horde funds to finance her operations.<br><br>I want her brought back here alive.<br><br>She was last seen entering <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a>. Find her and bring her back.<br><br>And, do not let her sweet talk you.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -29414,6 +32806,7 @@ const DUNGEONS = [
         "objective": "Take <a href=\"https://www.wowhead.com/classic/item=12780/general-drakkisaths-command\" rel=\"noopener noreferrer\" target=\"_blank\">General Drakkisath's Command</a> to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> in Burning Steppes.",
         "description": "From the corpse of the defeated serpent you uncover what appears to be a note of some importance: A letter from his superior, General Drakkisath, concerning protocol.<br><br>Your instinct tells you that you should take it to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a>.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -29490,6 +32883,40 @@ const DUNGEONS = [
         "objective": "Find the three gemstones of command: The <a href=\"https://www.wowhead.com/classic/item=12335/gemstone-of-smolderthorn\" rel=\"noopener noreferrer\" target=\"_blank\">Gemstone of Smolderthorn</a>, <a href=\"https://www.wowhead.com/classic/item=12336/gemstone-of-spirestone\" rel=\"noopener noreferrer\" target=\"_blank\">Gemstone of Spirestone</a>, and <a href=\"https://www.wowhead.com/classic/item=12337/gemstone-of-bloodaxe\" rel=\"noopener noreferrer\" target=\"_blank\">Gemstone of Bloodaxe</a>. Return them, along with the <a href=\"https://www.wowhead.com/classic/item=12219/unadorned-seal-of-ascension\" rel=\"noopener noreferrer\" target=\"_blank\">Unadorned Seal of Ascension</a>, to Vaelan.<br><br>The Generals, as told to you by Vaelan, are: War Master Voone of the Smolderthorn; Highlord Omokk of the Spirestone; and Overlord Wyrmthalak of the Bloodaxe.",
         "description": "As you can see, the unadorned seal has three empty sockets. Each of those sockets must be filled with a gemstone representing the leadership's command. Finally, Overlord Wyrmthalak, master of the lower citadel, must forge the seal in the flames of the Black Dragonflight.<br><br>Understand this, mortal: the chance that one of the three generals of the lower citadel would carry a gemstone at any given time is rare. You must be vigilant in your quest. Remain determined!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12336,
+            "name": "Gemstone of Spirestone",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12336/gemstone-of-spirestone",
+            "quality": 2
+          },
+          {
+            "type": "item",
+            "id": 12335,
+            "name": "Gemstone of Smolderthorn",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12335/gemstone-of-smolderthorn",
+            "quality": 2
+          },
+          {
+            "type": "item",
+            "id": 12337,
+            "name": "Gemstone of Bloodaxe",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12337/gemstone-of-bloodaxe",
+            "quality": 2
+          },
+          {
+            "type": "item",
+            "id": 12219,
+            "name": "Unadorned Seal of Ascension",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12219/unadorned-seal-of-ascension",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -29565,6 +32992,16 @@ const DUNGEONS = [
         "objective": "Find <a href=\"https://www.wowhead.com/classic/item=12345/bijous-belongings\" rel=\"noopener noreferrer\" target=\"_blank\">Bijou's Belongings</a> and return them to her. Good luck!",
         "description": "Ordinarily I don't deal with s but it seems that I'm stuck between a troll and a hard place. You see, my mission here is one of utmost importance to the Horde. The information I've discovered, however, applies to the well being of the Alliance as well. Now believe me, I'm no Alliance sympathizer, but the Blackrock threat is bigger than just a bunch of orcs.<br><br>You help me out by finding my belongings and I'll help you out with some information that could prove useful to your kind.<br><br>Deal?",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12345,
+            "name": "Bijou's Belongings",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12345/bijous-belongings",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -29641,6 +33078,7 @@ const DUNGEONS = [
         "objective": "In the heart of <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> you will find Mother Smolderweb. Engage her and get her to poison you. Chances are good that you will have to kill her as well. Return to <a href=\"https://www.wowhead.com/classic/npc=9563/ragged-john\" rel=\"noopener noreferrer\" target=\"_blank\">Ragged John</a> when you are poisoned so that he can 'milk' you.",
         "description": "It's probably one of the most potent poisons in the world!<br><br>I've overheard the Blackrock speaking about its lethality in my jaunts into the Spire. They call it 'Mother's Milk', named after Mother Smolderweb, the big nasty spider in the Skitterweb cave.<br><br>Now here's what I need from you: A live sample of the Milk, flowing through YOUR veins. Just bringing me the gland won't be enough! Get her to poison you and come back to me!<br><br>Then... I get to milk ya!",
         "shareable": true,
+        "requirements": [],
         "rewards": [
           {
             "id": 15873,
@@ -29706,6 +33144,16 @@ const DUNGEONS = [
         "objective": "Read <a href=\"https://www.wowhead.com/classic/item=12730/waroshs-scroll\" rel=\"noopener noreferrer\" target=\"_blank\">Warosh's Scroll</a>. Bring <a href=\"https://www.wowhead.com/classic/item=12712/waroshs-mojo\" rel=\"noopener noreferrer\" target=\"_blank\">Warosh's Mojo</a> to <a href=\"https://www.wowhead.com/classic/npc=10799/warosh\" rel=\"noopener noreferrer\" target=\"_blank\">Warosh</a>.",
         "description": "Argh! So hard to speak!<br><br>Take this note! Get me my mojo!",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12712,
+            "name": "Warosh's Mojo",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12712/waroshs-mojo",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 15867,
@@ -29771,6 +33219,7 @@ const DUNGEONS = [
         "objective": "Someone in this world must know what to do with these gauntlets. Good luck!",
         "description": "The only thing that remains of this human are some charred bones. He seems to have died within arms reach of what he was after - unfired plate gauntlets.<br><br>Perhaps you should grab the gauntlets and get out of the fire?",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -29850,6 +33299,16 @@ const DUNGEONS = [
         "objective": "Travel to Blackrock Spire and slay Shadow Hunter Vosh'gajin. Recover <a href=\"https://www.wowhead.com/classic/item=13352/voshgajins-snakestone\" rel=\"noopener noreferrer\" target=\"_blank\">Vosh'gajin's Snakestone</a> and return to <a href=\"https://www.wowhead.com/classic/npc=11192/kilram\" rel=\"noopener noreferrer\" target=\"_blank\">Kilram</a>.",
         "description": "Don't let her beauty fool you. The shadow huntress, Vosh'gajin is deadly and deranged.<br><br>&lt;<a href=\"https://www.wowhead.com/classic/npc=11192/kilram\" rel=\"noopener noreferrer\" target=\"_blank\">Kilram</a> points to the scar on his face.&gt;<br><br>Aye, she gave me that - a love tap, she called it.<br><br>The time for vengeance has finally come.<br><br>You can find Vosh'gajin in Blackrock Spire. Slay her and return to me with her snakestone. Do this and I will teach you the ways of the axesmith.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13352,
+            "name": "Vosh'gajin's Snakestone",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13352/voshgajins-snakestone",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 12821,
@@ -29907,6 +33366,37 @@ const DUNGEONS = [
         "objective": "",
         "description": "By order of <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a>, the following inhabitants of <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> must be destroyed:<br><br>The rotund menace, <a href=\"https://www.wowhead.com/classic/npc=9196/highlord-omokk\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Omokk</a>.<br><br>The cruel and ruthless troll, <a href=\"https://www.wowhead.com/classic/npc=9237/war-master-voone\" rel=\"noopener noreferrer\" target=\"_blank\">War Master Voone</a>.<br><br><a href=\"https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak\" rel=\"noopener noreferrer\" target=\"_blank\">Overlord Wyrmthalak</a>, taskmaster of the lesser city.<br><br>You will also be required to return any important documents that you may find.<br><br>Succeed and be honored.<br><br>Fail and be forgotten.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 9568,
+            "name": "Overlord Wyrmthalak",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak"
+          },
+          {
+            "type": "npc",
+            "id": 9196,
+            "name": "Highlord Omokk",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9196/highlord-omokk"
+          },
+          {
+            "type": "npc",
+            "id": 9237,
+            "name": "War Master Voone",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9237/war-master-voone"
+          },
+          {
+            "type": "item",
+            "id": 12562,
+            "name": "Important Blackrock Documents",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12562/important-blackrock-documents",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -30145,6 +33635,15 @@ const DUNGEONS = [
         "objective": "Kill 20 <a href=\"https://www.wowhead.com/classic/npc=10678/plagued-hatchling\" rel=\"noopener noreferrer\" target=\"_blank\">Plagued Hatchlings</a>, then return to <a href=\"https://www.wowhead.com/classic/npc=11035/betina-bigglezink\" rel=\"noopener noreferrer\" target=\"_blank\">Betina Bigglezink</a> at the Light's Hope Chapel.",
         "description": "The Argent Dawn recently learned that the Scourge are creating their own plagued dragonflight! We must stop them -- if the Scourge gain a force of dragons they'll sweep across Azeroth unchecked!<br><br>Their necromancers are breeding plagued dragons at the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a>, in the middle of Darrowmere Lake.<br><br>Go to the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> and kill as many hatchlings as you can... before they get any bigger!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 10678,
+            "name": "Plagued Hatchling",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/npc=10678/plagued-hatchling"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -30200,6 +33699,7 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=13920/healthy-dragon-scale\" rel=\"noopener noreferrer\" target=\"_blank\">Healthy Dragon Scale</a> to <a href=\"https://www.wowhead.com/classic/npc=11035/betina-bigglezink\" rel=\"noopener noreferrer\" target=\"_blank\">Betina Bigglezink</a> at the Light's Hope Chapel in Eastern Plaguelands.",
         "description": "This is a scale shed from a plagued dragon hatchling. But unlike the other pocked, oozing scales on the infant beast, this rare scale is healthy and unmarred.<br><br><a href=\"https://www.wowhead.com/classic/npc=11035/betina-bigglezink\" rel=\"noopener noreferrer\" target=\"_blank\">Betina Bigglezink</a> will want a sample of this to study.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -30263,6 +33763,29 @@ const DUNGEONS = [
         "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=11261/doctor-theolen-krastinov\" rel=\"noopener noreferrer\" target=\"_blank\">Doctor Theolen Krastinov</a> inside the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a>. Destroy him, then burn the <a href=\"https://www.wowhead.com/classic/object=176544/remains-of-eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Remains of Eva Sarkhoff</a> and the <a href=\"https://www.wowhead.com/classic/object=176545/remains-of-lucien-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Remains of Lucien Sarkhoff</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=11216/eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Eva Sarkhoff</a> when the task is complete.",
         "description": "Krastinov is responsible for the deaths of thousands. He must be punished, justice must be meted out.<br><br>Find him and exact upon him the agony he has inflicted upon countless innocents. Once he is destroyed, burn our remains. Turn them to ashes.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 11261,
+            "name": "Doctor Theolen Krastinov",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=11261/doctor-theolen-krastinov"
+          },
+          {
+            "type": "object",
+            "id": 176544,
+            "name": "Remains of Eva Sarkhoff Burned",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/object=176544/remains-of-eva-sarkhoff-burned"
+          },
+          {
+            "type": "object",
+            "id": 176545,
+            "name": "Remains of Lucien Sarkhoff Burned",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/object=176545/remains-of-lucien-sarkhoff-burned"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -30326,6 +33849,16 @@ const DUNGEONS = [
         "objective": "Locate Jandice Barov in the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> and destroy her. From her corpse recover <a href=\"https://www.wowhead.com/classic/item=13725/krastinovs-bag-of-horrors\" rel=\"noopener noreferrer\" target=\"_blank\">Krastinov's Bag of Horrors</a>. Return the bag to <a href=\"https://www.wowhead.com/classic/npc=11216/eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Eva Sarkhoff</a>.",
         "description": "A great weight has been lifted from our hearts, but your task is not yet complete. Krastinov's master, Kirtonos, still lives.<br><br>Before you may face Kirtonos, however, you must first secure a method in which to summon him.<br><br>It is said that Jandice Barov stewards the blood of innocents from Krastinov to Kirtonos.<br><br>Find her in the sunken catacombs of <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> and strike her down. Bring back any clues that you may find.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13725,
+            "name": "Krastinov's Bag of Horrors",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13725/krastinovs-bag-of-horrors",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -30387,8 +33920,17 @@ const DUNGEONS = [
         "xp": 8300,
         "money": 49800,
         "objective": "",
-        "description": "This is it.<br><br><br><br>The <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">blood of innocents</a>. The purest blood, used to appease Krastinov's master.<br><br>It is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.<br><br>Take the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.<br><br>Should you succeed, you will earn more than just our gratitude.",
+        "description": "This is it.<br><br>The <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">blood of innocents</a>. The purest blood, used to appease Krastinov's master.<br><br>It is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.<br><br>Take the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.<br><br>Should you succeed, you will earn more than just our gratitude.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 10506,
+            "name": "Kirtonos the Herald",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=10506/kirtonos-the-herald"
+          }
+        ],
         "rewards": [
           {
             "id": 13544,
@@ -30472,6 +34014,16 @@ const DUNGEONS = [
         "objective": "",
         "description": "There is but one task remaining. Confront the lich, Ras Frostwhisper, in his lair.<br><br>Use the power of the keepsake against the beast - be unrelenting in your actions! Weather the blows that the flailing beast will surely bring down upon you. Do not give in to the pain!<br><br>When the ritual is complete, Ras will be mortal once more. It is at that point that he must be slain. Strike him down and take his human head.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13626,
+            "name": "Human Head of Ras Frostwhisper",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13626/human-head-of-ras-frostwhisper",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 14002,
@@ -30551,6 +34103,29 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=11261/doctor-theolen-krastinov\" rel=\"noopener noreferrer\" target=\"_blank\">Doctor Theolen Krastinov</a> inside the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a>. Destroy him, then burn the <a href=\"https://www.wowhead.com/classic/object=176544/remains-of-eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Remains of Eva Sarkhoff</a> and the <a href=\"https://www.wowhead.com/classic/object=176545/remains-of-lucien-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Remains of Lucien Sarkhoff</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=11216/eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Eva Sarkhoff</a> when the task is complete.",
             "description": "Krastinov is responsible for the deaths of thousands. He must be punished, justice must be meted out.<br><br>Find him and exact upon him the agony he has inflicted upon countless innocents. Once he is destroyed, burn our remains. Turn them to ashes.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 11261,
+                "name": "Doctor Theolen Krastinov",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=11261/doctor-theolen-krastinov"
+              },
+              {
+                "type": "object",
+                "id": 176544,
+                "name": "Remains of Eva Sarkhoff Burned",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/object=176544/remains-of-eva-sarkhoff-burned"
+              },
+              {
+                "type": "object",
+                "id": 176545,
+                "name": "Remains of Lucien Sarkhoff Burned",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/object=176545/remains-of-lucien-sarkhoff-burned"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -30615,6 +34190,16 @@ const DUNGEONS = [
             "objective": "Locate Jandice Barov in the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> and destroy her. From her corpse recover <a href=\"https://www.wowhead.com/classic/item=13725/krastinovs-bag-of-horrors\" rel=\"noopener noreferrer\" target=\"_blank\">Krastinov's Bag of Horrors</a>. Return the bag to <a href=\"https://www.wowhead.com/classic/npc=11216/eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Eva Sarkhoff</a>.",
             "description": "A great weight has been lifted from our hearts, but your task is not yet complete. Krastinov's master, Kirtonos, still lives.<br><br>Before you may face Kirtonos, however, you must first secure a method in which to summon him.<br><br>It is said that Jandice Barov stewards the blood of innocents from Krastinov to Kirtonos.<br><br>Find her in the sunken catacombs of <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> and strike her down. Bring back any clues that you may find.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 13725,
+                "name": "Krastinov's Bag of Horrors",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=13725/krastinovs-bag-of-horrors",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -30677,8 +34262,17 @@ const DUNGEONS = [
             "xp": 8300,
             "money": 49800,
             "objective": "",
-            "description": "This is it.<br><br><br><br>The <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">blood of innocents</a>. The purest blood, used to appease Krastinov's master.<br><br>It is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.<br><br>Take the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.<br><br>Should you succeed, you will earn more than just our gratitude.",
+            "description": "This is it.<br><br>The <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">blood of innocents</a>. The purest blood, used to appease Krastinov's master.<br><br>It is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.<br><br>Take the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.<br><br>Should you succeed, you will earn more than just our gratitude.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 10506,
+                "name": "Kirtonos the Herald",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10506/kirtonos-the-herald"
+              }
+            ],
             "rewards": [
               {
                 "id": 13544,
@@ -30763,6 +34357,16 @@ const DUNGEONS = [
             "objective": "Travel to the Arathi Highlands, to the ruins of Stromgarde. Search Stromgarde for a <a href=\"https://www.wowhead.com/classic/item=13585/keepsake-of-remembrance\" rel=\"noopener noreferrer\" target=\"_blank\">Keepsake of Remembrance</a>. If you find such an item, return with it to <a href=\"https://www.wowhead.com/classic/npc=11286/magistrate-marduke\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Marduke</a>.",
             "description": "The undead fear life just as the living fear death. It is not unusual for a sentient undead being to completely destroy all remnants of his or her previous life after having turned.<br><br>Unfortunately, in order to create an artifact capable of reverting Ras Frostwhisper to a mortal, we must have a keepsake from his years among the living.<br><br>You must venture to the ruined city of Stromgarde, Frostwhisper's home, and search for such an item. May luck be with you.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 13585,
+                "name": "Keepsake of Remembrance",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=13585/keepsake-of-remembrance",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -30832,6 +34436,7 @@ const DUNGEONS = [
             "objective": "Travel to Light's Hope in Eastern Plaguelands and seek out <a href=\"https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered\" rel=\"noopener noreferrer\" target=\"_blank\">Leonid Barthalomew the Revered</a>. Show him the <a href=\"https://www.wowhead.com/classic/item=13585/keepsake-of-remembrance\" rel=\"noopener noreferrer\" target=\"_blank\">Keepsake of Remembrance</a> and tell him all that you have discovered.",
             "description": "Upon tainted soil, the keepsake must be attuned.<br><br>It is rumored that Stratholme is where Frostwhisper succumbed to the Lich King. Upon those bloodied grounds he gave his life - freely and with motive - to become one of the undying.<br><br>It is those grounds that must be found.<br><br>There is one, an undead dissenter of the Scourge, freed by the Banshee Queen but loyal to the cause of the Argent Dawn. Find him: <a href=\"https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered\" rel=\"noopener noreferrer\" target=\"_blank\">Leonid Barthalomew the Revered</a>. He may know more. Seek out Light's Hope.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -30893,8 +34498,9 @@ const DUNGEONS = [
             "xp": 6600,
             "money": 39600,
             "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and find <a href=\"https://www.wowhead.com/classic/object=176631/menethils-gift\" rel=\"noopener noreferrer\" target=\"_blank\">Menethil's Gift</a>. Place the <a href=\"https://www.wowhead.com/classic/item=13585/keepsake-of-remembrance\" rel=\"noopener noreferrer\" target=\"_blank\">Keepsake of Remembrance</a> upon the unholy ground.",
-            "description": "I watched as the human, Ras Frostwhisper, pledged his undying soul to the Lich King. He drew the dagger to his own throat and with a smile, cut from ear to ear. His body collapsed inside the borders of the pentagram. The Lich King stood over the fallen mage and with a single motion, Ras Frostwhisper the lich, was born.<br><br><br><br>Yes, I remember. What you seek has a name - <a href=\"https://www.wowhead.com/classic/object=176631/menethils-gift\" rel=\"noopener noreferrer\" target=\"_blank\">Menethil's Gift</a>: The ground blessed by the Lich King - holy ground to Scourge.",
+            "description": "I watched as the human, Ras Frostwhisper, pledged his undying soul to the Lich King. He drew the dagger to his own throat and with a smile, cut from ear to ear. His body collapsed inside the borders of the pentagram. The Lich King stood over the fallen mage and with a single motion, Ras Frostwhisper the lich, was born.<br><br>Yes, I remember. What you seek has a name - <a href=\"https://www.wowhead.com/classic/object=176631/menethils-gift\" rel=\"noopener noreferrer\" target=\"_blank\">Menethil's Gift</a>: The ground blessed by the Lich King - holy ground to Scourge.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -30958,6 +34564,7 @@ const DUNGEONS = [
             "objective": "Take the <a href=\"https://www.wowhead.com/classic/item=13624/soulbound-keepsake\" rel=\"noopener noreferrer\" target=\"_blank\">Soulbound Keepsake</a> to Leonid Barthalomew in <a href=\"https://www.wowhead.com/classic/zone=139/eastern-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Eastern Plaguelands</a>.",
             "description": "The soul of the fallen clings to that which represents its former life and transforms the item into a <a href=\"https://www.wowhead.com/classic/item=13624/soulbound-keepsake\" rel=\"noopener noreferrer\" target=\"_blank\">soulbound keepsake</a>. You pick the item up and place it in your pack.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -31021,6 +34628,7 @@ const DUNGEONS = [
             "objective": "Return to <a href=\"https://www.wowhead.com/classic/npc=11286/magistrate-marduke\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Marduke</a> in Caer Darrow. Show him the <a href=\"https://www.wowhead.com/classic/item=13624/soulbound-keepsake\" rel=\"noopener noreferrer\" target=\"_blank\">Soulbound Keepsake</a>.",
             "description": "Return to Marduke with the keepsake. He will instruct you in its use.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -31093,8 +34701,42 @@ const DUNGEONS = [
         "xp": 6600,
         "money": 18000,
         "objective": "Venture to the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> and recover the Barov family fortune. Four deeds make up this fortune: <a href=\"https://www.wowhead.com/classic/item=13448/the-deed-to-caer-darrow\" rel=\"noopener noreferrer\" target=\"_blank\">The Deed to Caer Darrow</a>; <a href=\"https://www.wowhead.com/classic/item=13471/the-deed-to-brill\" rel=\"noopener noreferrer\" target=\"_blank\">The Deed to Brill</a>; <a href=\"https://www.wowhead.com/classic/item=13451/the-deed-to-tarren-mill\" rel=\"noopener noreferrer\" target=\"_blank\">The Deed to Tarren Mill</a>; and <a href=\"https://www.wowhead.com/classic/item=13450/the-deed-to-southshore\" rel=\"noopener noreferrer\" target=\"_blank\">The Deed to Southshore</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=11023/weldon-barov\" rel=\"noopener noreferrer\" target=\"_blank\">Weldon Barov</a> when you have completed this task.",
-        "description": "My dear brother Alexi. What a fool I was to spare his life. I looked into the face of the enemy, one of the undead, and let him live.<br><br><br><br>He now searches for MY inheritance. This simply cannot happen.<br><br>Find my family's deeds before that vile retch gets his boney hands upon them and I shall reward you with vast riches. They lay in the ruins of the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a>. Make haste!",
+        "description": "My dear brother Alexi. What a fool I was to spare his life. I looked into the face of the enemy, one of the undead, and let him live.<br><br>He now searches for MY inheritance. This simply cannot happen.<br><br>Find my family's deeds before that vile retch gets his boney hands upon them and I shall reward you with vast riches. They lay in the ruins of the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a>. Make haste!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13471,
+            "name": "The Deed to Brill",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13471/the-deed-to-brill",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 13448,
+            "name": "The Deed to Caer Darrow",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13448/the-deed-to-caer-darrow",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 13450,
+            "name": "The Deed to Southshore",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13450/the-deed-to-southshore",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 13451,
+            "name": "The Deed to Tarren Mill",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13451/the-deed-to-tarren-mill",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -31171,6 +34813,40 @@ const DUNGEONS = [
         "objective": "Venture to the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> and recover the Barov family fortune. Four deeds make up this fortune: <a href=\"https://www.wowhead.com/classic/item=13448/the-deed-to-caer-darrow\" rel=\"noopener noreferrer\" target=\"_blank\">The Deed to Caer Darrow</a>; <a href=\"https://www.wowhead.com/classic/item=13471/the-deed-to-brill\" rel=\"noopener noreferrer\" target=\"_blank\">The Deed to Brill</a>; <a href=\"https://www.wowhead.com/classic/item=13451/the-deed-to-tarren-mill\" rel=\"noopener noreferrer\" target=\"_blank\">The Deed to Tarren Mill</a>; and <a href=\"https://www.wowhead.com/classic/item=13450/the-deed-to-southshore\" rel=\"noopener noreferrer\" target=\"_blank\">The Deed to Southshore</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=11022/alexi-barov\" rel=\"noopener noreferrer\" target=\"_blank\">Alexi Barov</a> when you have completed this task.",
         "description": "Within the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> lays the Barov family fortune. I, <a href=\"https://www.wowhead.com/classic/npc=11022/alexi-barov\" rel=\"noopener noreferrer\" target=\"_blank\">Alexi Barov</a>, am one of the last two remaining heirs of the house Barov. My brother, Weldon, is the other.<br><br>Weldon, the miserable coward, fled during the war and thus retained his worthless existence as a human.<br><br>He now searches for the deeds so that he may claim the fortune for his own. Recover the deeds before my brother does and I shall make you wealthy beyond your wildest dreams!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13471,
+            "name": "The Deed to Brill",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13471/the-deed-to-brill",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 13448,
+            "name": "The Deed to Caer Darrow",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13448/the-deed-to-caer-darrow",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 13450,
+            "name": "The Deed to Southshore",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13450/the-deed-to-southshore",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 13451,
+            "name": "The Deed to Tarren Mill",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13451/the-deed-to-tarren-mill",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -31247,6 +34923,40 @@ const DUNGEONS = [
         "objective": "Use the <a href=\"https://www.wowhead.com/classic/item=18746/divination-scryer\" rel=\"noopener noreferrer\" target=\"_blank\">Divination Scryer</a> in the heart of the Great Ossuary's basement in the Scholomance. Doing so will bring forth the spirits you must judge. Defeating these spirits will summon forth Death Knight Darkreaver. Defeat him and reclaim the lost soul of the fallen charger.<br><br>Give the <a href=\"https://www.wowhead.com/classic/item=18799/chargers-redeemed-soul\" rel=\"noopener noreferrer\" target=\"_blank\">Charger's Redeemed Soul</a> and the Blessed Enchanted Barding to <a href=\"https://www.wowhead.com/classic/npc=14568/darkreavers-fallen-charger\" rel=\"noopener noreferrer\" target=\"_blank\">Darkreaver's Fallen Charger</a>.",
         "description": "Take this satchel - in it are the items you will need for your task.<br><br>Use the <a href=\"https://www.wowhead.com/classic/item=18746/divination-scryer\" rel=\"noopener noreferrer\" target=\"_blank\">divination scryer</a> in the heart of the Great Ossuary's basement to bring forth accursed spirits that must be judged. Use your judgments wisely during this trial - they will prove more potent than you realize. After the spirits, the death knight will appear; defeat him and reclaim the lost soul of the charger. Only then, will you be able to redeem it and place your barding upon your new steed!<br><br>Good luck!",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18799,
+            "name": "Charger's Redeemed Soul",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18799/chargers-redeemed-soul",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 18792,
+            "name": "Blessed Arcanite Barding",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18792/blessed-arcanite-barding",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 18749,
+            "name": "Charger's Lost Soul",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18749/chargers-lost-soul",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 18746,
+            "name": "Divination Scryer",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18746/divination-scryer",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -31304,6 +35014,7 @@ const DUNGEONS = [
                 "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Grayson Shadowbreaker</a> in Stormwind's Cathedral District.",
                 "description": "The time has come, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.<br><br>Speak with <a href=\"https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Grayson Shadowbreaker</a> here in Stormwind's Cathedral District. It is he who will guide you not only though the legerdemain of a Paladin's most trusted mount, but the tasks before you to acquire one of your own.<br><br>I wish you the best in this trial. For the Light, noble!",
                 "shareable": false,
+                "requirements": [],
                 "rewards": [],
                 "rewardChoices": [],
                 "requiredClasses": [
@@ -31364,6 +35075,7 @@ const DUNGEONS = [
                 "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Grayson Shadowbreaker</a> in Stormwind's Cathedral District.",
                 "description": "The time has come, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.<br><br>Speak with <a href=\"https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Grayson Shadowbreaker</a> in Stormwind's Cathedral District. It is he who will guide you not only though the legerdemain of a Paladin's most trusted mount, but the tasks before you to acquire one of your own.<br><br>I wish you the best in this trial. For the Light, noble!",
                 "shareable": false,
+                "requirements": [],
                 "rewards": [],
                 "rewardChoices": [],
                 "requiredClasses": [
@@ -31427,6 +35139,7 @@ const DUNGEONS = [
             "objective": "Travel to Ironforge and get <a href=\"https://www.wowhead.com/classic/npc=11406/high-priest-rohan\" rel=\"noopener noreferrer\" target=\"_blank\">High Priest Rohan</a>'s Exorcism Censer. You will need to make a donation of 150 gold in order to secure it.",
             "description": "In order to prepare yourself for this task, you must first show due sacrifice and judgment... with an emphasis on sacrifice.<br><br>You must acquire <a href=\"https://www.wowhead.com/classic/npc=11406/high-priest-rohan\" rel=\"noopener noreferrer\" target=\"_blank\">High Priest Rohan</a>'s exorcism censer for your task. Even though its use will be for good and just reasons, due compensation must be given for it.<br><br>Proceed to Ironforge and speak with the High Priest. By bringing ample coin with you to help offset the loss of his censer, it will show your due sacrifice.<br><br>Go now, time is of the essence.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -31501,6 +35214,7 @@ const DUNGEONS = [
             "objective": "Return the Exorcism Censer to <a href=\"https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Grayson Shadowbreaker</a> in the Cathedral District of Stormwind.",
             "description": "With my blessings, take the censer. I myself have used it in several exorcisms, and it should serve you well for the arduous tasks that lie ahead.<br><br>Return now to <a href=\"https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Grayson Shadowbreaker</a> in Stormwind. Your quest continues with him.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -31566,6 +35280,15 @@ const DUNGEONS = [
             "objective": "Use the <a href=\"https://www.wowhead.com/classic/item=18752/exorcism-censer\" rel=\"noopener noreferrer\" target=\"_blank\">Exorcism Censer</a> to drive out the spirits that torment Terrordale. When you have slain 25 <a href=\"https://www.wowhead.com/classic/npc=14564/terrordale-spirit\" rel=\"noopener noreferrer\" target=\"_blank\">Terrordale Spirits</a>, return to <a href=\"https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Grayson Shadowbreaker</a> in the Cathedral District of Stormwind.",
             "description": "I have added a pinch of dirt from the tainted ground of Terrordale in the Eastern Plaguelands to the censer. You will now use this censer to find areas there that show signs of spiritual turmoil and disturbance. Look for green auras that permeate the ground as the physical world buckles under the torment of the spirit realm and use the censer to drive out the evil spirits.<br><br>When you have passed sufficient judgment on the spirits there, you will be ready to proceed.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 14564,
+                "name": "Terrordale Spirit",
+                "quantity": 25,
+                "url": "https://www.wowhead.com/classic/npc=14564/terrordale-spirit"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -31631,6 +35354,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1416/grimand-elmore\" rel=\"noopener noreferrer\" target=\"_blank\">Grimand Elmore</a> in Stormwind's Dwarven District.",
             "description": "A paladin's charger is nothing more than a pack animal without proper barding for it. The barding used by your charger not only needs to be of the finest materials possible, but because of the circumstances involved it must also be sufficiently attuned to the spirit realm.<br><br>First things first, - let's get your barding made. In Stormwind's Dwarven District is one of the finest craftsmen living today, <a href=\"https://www.wowhead.com/classic/npc=1416/grimand-elmore\" rel=\"noopener noreferrer\" target=\"_blank\">Grimand Elmore</a>. His work will not be cheap, but his quality is what we seek. Speak with him.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -31702,6 +35426,40 @@ const DUNGEONS = [
             "objective": "Bring 40 <a href=\"https://www.wowhead.com/classic/item=14047/runecloth\" rel=\"noopener noreferrer\" target=\"_blank\">Runecloth</a>, 6 <a href=\"https://www.wowhead.com/classic/item=12360/arcanite-bar\" rel=\"noopener noreferrer\" target=\"_blank\">Arcanite Bars</a>, 10 <a href=\"https://www.wowhead.com/classic/item=8836/arthas-tears\" rel=\"noopener noreferrer\" target=\"_blank\">Arthas' Tears</a>, 5 <a href=\"https://www.wowhead.com/classic/item=13180/stratholme-holy-water\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme Holy Water</a> vials, and 150 gold to <a href=\"https://www.wowhead.com/classic/npc=1416/grimand-elmore\" rel=\"noopener noreferrer\" target=\"_blank\">Grimand Elmore</a> in the Dwarven District of Stormwind.",
             "description": "You'll need four things for the barding - <a href=\"https://www.wowhead.com/classic/item=14047/runecloth\" rel=\"noopener noreferrer\" target=\"_blank\">runecloth</a> for the lining, <a href=\"https://www.wowhead.com/classic/item=12360/arcanite-bar\" rel=\"noopener noreferrer\" target=\"_blank\">arcanite bars</a> for the plating, <a href=\"https://www.wowhead.com/classic/item=8836/arthas-tears\" rel=\"noopener noreferrer\" target=\"_blank\">Arthas' Tears</a> for the spiritual attunement, and <a href=\"https://www.wowhead.com/classic/item=13180/stratholme-holy-water\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme holy water</a> for the spiritual imbuement. Actually, you need five things... gold for my fee. That fee includes all labor as well as a handcrafted saddle and stirrups.<br><br>Once you've got all that, I'll be able to finish your barding. Until then, there are some things I can get started on for you while you assemble your collection of goods.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 13180,
+                "name": "Stratholme Holy Water",
+                "quantity": 5,
+                "url": "https://www.wowhead.com/classic/item=13180/stratholme-holy-water",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 8836,
+                "name": "Arthas' Tears",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/item=8836/arthas-tears",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 14047,
+                "name": "Runecloth",
+                "quantity": 40,
+                "url": "https://www.wowhead.com/classic/item=14047/runecloth",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 12360,
+                "name": "Arcanite Bar",
+                "quantity": 6,
+                "url": "https://www.wowhead.com/classic/item=12360/arcanite-bar",
+                "quality": 2
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -31767,6 +35525,16 @@ const DUNGEONS = [
             "objective": "Acquire special horse feed used for feeding a spirit horse. Merideth Carlson in Southshore apparently is the source for such food.<br><br>Travel to the Dire Maul dungeon in Feralas and slay Tendris Warpwood. Doing so will free the <a href=\"https://www.wowhead.com/classic/npc=14566/ancient-equine-spirit\" rel=\"noopener noreferrer\" target=\"_blank\">Ancient Equine Spirit</a>. Feed it the special horse feed, thereby soothing the spirit. Finally, give it the <a href=\"https://www.wowhead.com/classic/item=18753/arcanite-barding\" rel=\"noopener noreferrer\" target=\"_blank\">Arcanite Barding</a> so it may bless it.",
             "description": "Your barding needs a special form of blessing, one from an appropriate spirit. In Dire Maul is such a spirit, the <a href=\"https://www.wowhead.com/classic/npc=14566/ancient-equine-spirit\" rel=\"noopener noreferrer\" target=\"_blank\">Ancient Equine Spirit</a>. It is currently held by a corrupt treant, Tendris Warpwood. Pass judgment upon this foul beast.<br><br>Know this - freedom alone is not enough. You must soothe the spirit before receiving its blessing. For that, special horse feed is needed. Travel to Southshore first and speak with Merideth Carlson on this... and prepare for more sacrifice.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 18775,
+                "name": "Manna-Enriched Horse Feed",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=18775/manna-enriched-horse-feed",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -31838,6 +35606,7 @@ const DUNGEONS = [
             "objective": "Return with the <a href=\"https://www.wowhead.com/classic/item=18792/blessed-arcanite-barding\" rel=\"noopener noreferrer\" target=\"_blank\">Blessed Arcanite Barding</a> to <a href=\"https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Grayson Shadowbreaker</a> in the Cathedral District of Stormwind.",
             "description": "As the barding rests on the back of the <a href=\"https://www.wowhead.com/classic/npc=14566/ancient-equine-spirit\" rel=\"noopener noreferrer\" target=\"_blank\">Ancient Equine Spirit</a>, it glows ever so slightly. The air is thick with power for a brief moment, and then the barding disappears from the back of the horse and is now secure in your backpack.<br><br>It would seem that the barding has been blessed. As per Lord Shadowbreaker's instructions, you should now return with it to him in Stormwind.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -31903,6 +35672,24 @@ const DUNGEONS = [
             "objective": "Bring an <a href=\"https://www.wowhead.com/classic/item=12800/azerothian-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">Azerothian Diamond</a> and a <a href=\"https://www.wowhead.com/classic/item=18335/pristine-black-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">Pristine Black Diamond</a> to <a href=\"https://www.wowhead.com/classic/npc=928/lord-grayson-shadowbreaker\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Grayson Shadowbreaker</a> in the Cathedral District of Stormwind.",
             "description": "We now must assemble a Divination Scryer - this will begin the trial that will allow you to redeem the fallen charger. Your scryer, actually, is almost done. The exorcism censer used in Terrordale is the catalyst for it, and I will fashion a suitable housing for the device.<br><br>The last components needed, though, are two diamonds. They must be as juxtaposed in brilliance as they are in purpose - an Azerothian and a Pristine Black. These two will be the beacon by which the scryer will pierce the shadows!",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12800,
+                "name": "Azerothian Diamond",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=12800/azerothian-diamond",
+                "quality": 2
+              },
+              {
+                "type": "item",
+                "id": 18335,
+                "name": "Pristine Black Diamond",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=18335/pristine-black-diamond",
+                "quality": 3
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -31992,6 +35779,16 @@ const DUNGEONS = [
         "objective": "Use the <a href=\"https://www.wowhead.com/classic/item=18746/divination-scryer\" rel=\"noopener noreferrer\" target=\"_blank\">Divination Scryer</a> in the heart of the Great Ossuary's basement in the Scholomance. Doing so will bring forth spirits you must fight. Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.<br><br>Bring <a href=\"https://www.wowhead.com/classic/item=18880/darkreavers-head\" rel=\"noopener noreferrer\" target=\"_blank\">Darkreaver's Head</a> to <a href=\"https://www.wowhead.com/classic/npc=13417/sagorne-creststrider\" rel=\"noopener noreferrer\" target=\"_blank\">Sagorne Creststrider</a> in the Valley of Wisdom, Orgrimmar.",
         "description": "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance. He threatens to twist the spirit realm to do his own bidding, and he must be stopped! This is where the scryer you helped make comes into play.<br><br>Use the <a href=\"https://www.wowhead.com/classic/item=18746/divination-scryer\" rel=\"noopener noreferrer\" target=\"_blank\">divination scryer</a> in the heart of the Great Ossuary's basement to call forth Darkreaver's spirit minions. Defeat the spirits and the death knight himself will appear., bring me his head! Only his demise will reverse the damage done to the spirit realm!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18880,
+            "name": "Darkreaver's Head",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18880/darkreavers-head",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 20134,
@@ -32054,6 +35851,24 @@ const DUNGEONS = [
             "objective": "If you are interested in helping Sagorne Crestrider in Orgrimmar's Valley of Wisdom, bring him an <a href=\"https://www.wowhead.com/classic/item=12800/azerothian-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">Azerothian Diamond</a> and a <a href=\"https://www.wowhead.com/classic/item=18335/pristine-black-diamond\" rel=\"noopener noreferrer\" target=\"_blank\">Pristine Black Diamond</a>.",
             "description": "there is a pressing matter I hope you can help with... both materially and spiritually. Allow me to explain.<br><br>Within the depths of the Scholomance in Lordaeron is a chamber called the Great Ossuary. I need to complete a device that would pierce the shadows of this horrid room. To finish what I have started, I need two diamonds: an Azerothian and a Pristine Black. These are not trivial items, I know - I just don't have the resources myself.<br><br>Could you provide me with one of each?",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12800,
+                "name": "Azerothian Diamond",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=12800/azerothian-diamond",
+                "quality": 2
+              },
+              {
+                "type": "item",
+                "id": 18335,
+                "name": "Pristine Black Diamond",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=18335/pristine-black-diamond",
+                "quality": 3
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -32130,6 +35945,15 @@ const DUNGEONS = [
         "objective": "Place <a href=\"https://www.wowhead.com/classic/item=12368/dawns-gambit\" rel=\"noopener noreferrer\" target=\"_blank\">Dawn's Gambit</a> in the Viewing Room of the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a>. Defeat <a href=\"https://www.wowhead.com/classic/npc=10432/vectus\" rel=\"noopener noreferrer\" target=\"_blank\">Vectus</a>, then return to <a href=\"https://www.wowhead.com/classic/npc=11035/betina-bigglezink\" rel=\"noopener noreferrer\" target=\"_blank\">Betina Bigglezink</a>.",
         "description": "I've placed <a href=\"https://www.wowhead.com/classic/item=12368/dawns-gambit\" rel=\"noopener noreferrer\" target=\"_blank\">Dawn's Gambit</a> in the container you brought to us, the one that held the dragon eggs. Your job is to bring it deep within the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a>.<br><br>The undead mage <a href=\"https://www.wowhead.com/classic/npc=10432/vectus\" rel=\"noopener noreferrer\" target=\"_blank\">Vectus</a> leads a team of scourge scholars... place <a href=\"https://www.wowhead.com/classic/item=12368/dawns-gambit\" rel=\"noopener noreferrer\" target=\"_blank\">Dawn's Gambit</a> in their chamber, called the \"viewing room.\" It will then react with the undead found there and, with a little luck, destroy them!<br><br>After that, defeating <a href=\"https://www.wowhead.com/classic/npc=10432/vectus\" rel=\"noopener noreferrer\" target=\"_blank\">Vectus</a> shouldn't be a problem. Right?",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 10432,
+            "name": "Vectus",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=10432/vectus"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -32196,6 +36020,16 @@ const DUNGEONS = [
             "objective": "Bring 8 <a href=\"https://www.wowhead.com/classic/item=12283/broodling-essence\" rel=\"noopener noreferrer\" target=\"_blank\">Broodling Essence</a> and the <a href=\"https://www.wowhead.com/classic/item=12284/draco-incarcinatrix-900\" rel=\"noopener noreferrer\" target=\"_blank\">Draco-Incarcinatrix 900</a> to <a href=\"https://www.wowhead.com/classic/npc=10267/tinkee-steamboil\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkee Steamboil</a> at the Flame Crest in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>.",
             "description": "I have been studying the dragonkin of the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> for weeks, and I think I've finally had a breakthrough! I created a device--I call it the Draco Incarcinatrix 900. It can capture the essence of dragon whelp broodlings!<br><br>Or, at least I think it can.<br><br>Here, take the device and zap a broodling in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> with it. While it's under the device's effects, defeat the broodling and its essence should be released.<br><br>If it is, then splendid! Bring me back samples so I can study them!",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12283,
+                "name": "Broodling Essence",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/item=12283/broodling-essence",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -32259,6 +36093,7 @@ const DUNGEONS = [
             "objective": "Give <a href=\"https://www.wowhead.com/classic/item=12438/tinkees-letter\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkee's Letter</a> to <a href=\"https://www.wowhead.com/classic/npc=10468/felnok-steelspring\" rel=\"noopener noreferrer\" target=\"_blank\">Felnok Steelspring</a>.",
             "description": "I have another favor to ask of you.<br><br>My initial study of the essence you collected shows that it might be possible to freeze dragon whelp eggs and preserve them! I want to test this theory, but first I need specially made engineering components. My colleague, <a href=\"https://www.wowhead.com/classic/npc=10468/felnok-steelspring\" rel=\"noopener noreferrer\" target=\"_blank\">Felnok Steelspring</a>, can make them.<br><br>Here, take this letter to Felnok. It tells him what I need. You'll find Felnok in Winterspring, in the town of Everlook.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -32322,6 +36157,16 @@ const DUNGEONS = [
             "objective": "Bring 8 <a href=\"https://www.wowhead.com/classic/item=12444/uncracked-chillwind-horn\" rel=\"noopener noreferrer\" target=\"_blank\">Uncracked Chillwind Horns</a> to <a href=\"https://www.wowhead.com/classic/npc=10468/felnok-steelspring\" rel=\"noopener noreferrer\" target=\"_blank\">Felnok Steelspring</a>.",
             "description": "I have most of what Tinkee needs, but I'm missing one important component, and that's chillwind horns. The horns of the chillwind chimaera in <a href=\"https://www.wowhead.com/classic/zone=618/winterspring\" rel=\"noopener noreferrer\" target=\"_blank\">Winterspring</a> are a concentrated source of cold, but only pristine, uncracked horns will do! I'll need a supply of those to complete Tinkee's order.<br><br>Bring me the <a href=\"https://www.wowhead.com/classic/item=12444/uncracked-chillwind-horn\" rel=\"noopener noreferrer\" target=\"_blank\">uncracked chillwind horns</a>, and I'll prepare a package for Tinkee.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12444,
+                "name": "Uncracked Chillwind Horn",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/item=12444/uncracked-chillwind-horn",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -32385,6 +36230,7 @@ const DUNGEONS = [
             "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=12445/felnoks-package\" rel=\"noopener noreferrer\" target=\"_blank\">Felnok's Package</a> to <a href=\"https://www.wowhead.com/classic/npc=10267/tinkee-steamboil\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkee Steamboil</a> in the Burning Steppes.",
             "description": "Ok, everything is prepared and packed and ready for transport! Good luck in your journey, and make sure you tell Tinkee that she owes me!",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [
               {
@@ -32461,6 +36307,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=10267/tinkee-steamboil\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkee Steamboil</a>.",
             "description": "Hi. Remember <a href=\"https://www.wowhead.com/classic/npc=10267/tinkee-steamboil\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkee Steamboil</a>? Well, she remembers you! She sent me a message to keep an eye out for you, because... she needs your help again. I think it has something to do with her studies on dragons.<br><br>You should speak to her in the Burning Steppes, at the Flame Crest.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -32530,6 +36377,7 @@ const DUNGEONS = [
             "objective": "Use the <a href=\"https://www.wowhead.com/classic/item=12286/eggscilloscope-prototype\" rel=\"noopener noreferrer\" target=\"_blank\">Eggscilloscope Prototype</a> on an egg in the Rookery.",
             "description": "I've been working hard on a new device, the <a href=\"https://www.wowhead.com/classic/item=12144/eggscilloscope\" rel=\"noopener noreferrer\" target=\"_blank\">eggscilloscope</a>! It's designed to project a burst of cold energy at the egg of a black dragon... and freeze it solid! Can you test it for me?<br><br>I heard that high up in <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a>, the dragons have a rookery where they hatch their eggs. That's where you'll have to go to test the <a href=\"https://www.wowhead.com/classic/item=12144/eggscilloscope\" rel=\"noopener noreferrer\" target=\"_blank\">eggscilloscope</a>, and then let me know how it worked!<br><br>And don't worry. Frozen dragon eggs should be harmless. It's the unfrozen ones you have to worry about!",
             "shareable": false,
+            "requirements": [],
             "rewards": [
               {
                 "id": 12144,
@@ -32600,6 +36448,7 @@ const DUNGEONS = [
             "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=13761/frozen-eggs\" rel=\"noopener noreferrer\" target=\"_blank\">Frozen Eggs</a> to Leonid Barthalomew in the Eastern Plaguelands.",
             "description": "I received a message from my master, Vectus. Well, the message wasn't really from Vectus...it was from someone named Leonid Barthalomew. I don't know Leonid, but he knew my master, and no one knows my master unless he allows it.<br><br>Leonid says Vectus wants the dragon eggs. He wants you to deliver them to him at the Light's Hope Chapel in the Eastern Plaguelands.<br><br>That hurts! Why you? Doesn't Vectus trust me? Oh, never mind... just take the eggs and tell Leonid that I did what our master commanded.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -32669,6 +36518,7 @@ const DUNGEONS = [
             "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=13761/frozen-eggs\" rel=\"noopener noreferrer\" target=\"_blank\">Frozen Eggs</a> to <a href=\"https://www.wowhead.com/classic/npc=11035/betina-bigglezink\" rel=\"noopener noreferrer\" target=\"_blank\">Betina Bigglezink</a>.",
             "description": "The eggs you brought were to be used in Scourge experiments to create a plagued dragonflight. These frozen black dragon eggs would have been invaluable in their studies, and would have assuredly quickened their timetable.<br><br>Now, it is time we ended their research.<br><br>Take the <a href=\"https://www.wowhead.com/classic/item=13761/frozen-eggs\" rel=\"noopener noreferrer\" target=\"_blank\">frozen eggs</a> to <a href=\"https://www.wowhead.com/classic/npc=11035/betina-bigglezink\" rel=\"noopener noreferrer\" target=\"_blank\">Betina Bigglezink</a> outside. She is well-learned in science and alchemy, and has produced a weapon we can use against the Scourge. With your help, we will deal them a heavy blow.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -32764,6 +36614,7 @@ const DUNGEONS = [
         "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=14436/morzul-bloodbringer\" rel=\"noopener noreferrer\" target=\"_blank\">Mor'zul Bloodbringer</a> in the Burning Steppes.",
         "description": "your delvings into the dark arts are deep. Your mastery over otherworldly denizens has grown so strong... perhaps you are ready to bind to you one of the infamous dreadsteeds.<br><br>The ritual to summon the beast from its home requires great power and resources, but if you desire to dominate that epic mount, then speak with <a href=\"https://www.wowhead.com/classic/npc=14436/morzul-bloodbringer\" rel=\"noopener noreferrer\" target=\"_blank\">Mor'zul Bloodbringer</a>. He is camped near the Altar of Storms in the Burning Steppes.<br><br>Go. This quest will be perilous, but a Warlock of your stature does not shy from danger!",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -32831,6 +36682,16 @@ const DUNGEONS = [
         "objective": "Bring 30 bottles of <a href=\"https://www.wowhead.com/classic/item=18590/raging-beasts-blood\" rel=\"noopener noreferrer\" target=\"_blank\">Raging Beast's Blood</a> to <a href=\"https://www.wowhead.com/classic/npc=14436/morzul-bloodbringer\" rel=\"noopener noreferrer\" target=\"_blank\">Mor'zul Bloodbringer</a> in the Burning Steppes.",
         "description": "The dreadsteeds dwell on another world, on the fiery Plains of Xoroth, and to bind one of those famed beasts you must invoke powerful glyphs. I can scribe the glyphs on a parchment for you, but first I will need a special ink.<br><br>In distant Winterspring there dwells a race of owl beasts. Once pure creatures, they were turned mad by the demonic emanations of the Darkwhisper Gorge and now roam the snows in a frenzy.<br><br>Their blood is what I need to ink your parchment. Bring it to me.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18590,
+            "name": "Raging Beast's Blood",
+            "quantity": 30,
+            "url": "https://www.wowhead.com/classic/item=18590/raging-beasts-blood",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -32898,6 +36759,7 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=18591/case-of-blood\" rel=\"noopener noreferrer\" target=\"_blank\">Case of Blood</a> to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a> in the Burning Steppes.",
         "description": "My servant, Gorzeeki, is an alchemist of some skill. He can prepare the ink I will need for your parchment. I gathered together the blood you acquired; take it to Gorzeeki so that he can begin his work.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -32965,6 +36827,7 @@ const DUNGEONS = [
         "objective": "Purchase Shadowy Potions from Gorzeeki in the Burning Steppes.<br><br>Use the potions to travel through Jaedenar, and speak with <a href=\"https://www.wowhead.com/classic/npc=9516/lord-banehollow\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Banehollow</a>.",
         "description": "Mor'zul says that you want to open a portal to Xoroth. To do that, you'll need Xorothian stardust. That's not easy to find on Azeroth!<br><br>There is one being who might have some: <a href=\"https://www.wowhead.com/classic/npc=9516/lord-banehollow\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Banehollow</a> in Jaedenar, the seat of the Shadow Council! Speak with him and he might part with the stardust.<br><br>But if you're going to Jaedenar, then you'll need to cloak yourself in the Shadow Council's own flavor of evil. That will require some of my shadowy potions, and that will cost you...",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -33032,6 +36895,16 @@ const DUNGEONS = [
         "objective": "Confront Ulathek, then bring <a href=\"https://www.wowhead.com/classic/item=18719/the-traitors-heart\" rel=\"noopener noreferrer\" target=\"_blank\">The Traitor's Heart</a> to <a href=\"https://www.wowhead.com/classic/npc=9516/lord-banehollow\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Banehollow</a> in Jaedenar.",
         "description": "You wish to enter my good graces? Then kill for me.<br><br>My servant, Ulathek, is pathetic how he grovels before me, all the while plotting with Lord Hel'nurath on Xoroth. Hel'nurath plans to usurp my power here, and Ulathek is his spy...<br><br>Prove that you serve me and not my rivals. Confront Ulathek in his quarters, in the Shadow Hold to the west. Tell him that I know his secret and watch as fear grips him. Then, bring me <a href=\"https://www.wowhead.com/classic/item=18719/the-traitors-heart\" rel=\"noopener noreferrer\" target=\"_blank\">the traitor's heart</a>!",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18719,
+            "name": "The Traitor's Heart",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18719/the-traitors-heart",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -33099,6 +36972,16 @@ const DUNGEONS = [
         "objective": "Purchase <a href=\"https://www.wowhead.com/classic/item=18687/xorothian-stardust\" rel=\"noopener noreferrer\" target=\"_blank\">Xorothian Stardust</a> from Ur'dan. Bring it to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a> in the Burning Steppes.",
         "description": "So you come to me seeking <a href=\"https://www.wowhead.com/classic/item=18687/xorothian-stardust\" rel=\"noopener noreferrer\" target=\"_blank\">Xorothian stardust</a>? You wish to open a portal to Xoroth, the domain of Hel'nurath my rival? Perhaps you plan to steal from him one of his precious dreadsteeds?<br><br>Very well. My servant Ur'dan has a supply of <a href=\"https://www.wowhead.com/classic/item=18687/xorothian-stardust\" rel=\"noopener noreferrer\" target=\"_blank\">Xorothian stardust</a>. You may obtain it from him... if you can pay the price.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18687,
+            "name": "Xorothian Stardust",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18687/xorothian-stardust",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -33166,6 +37049,16 @@ const DUNGEONS = [
         "objective": "Bring 10 <a href=\"https://www.wowhead.com/classic/item=9264/elixir-of-shadow-power\" rel=\"noopener noreferrer\" target=\"_blank\">Elixirs of Shadow Power</a> to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a> in the Burning Steppes.",
         "description": "A Bell of Dethmoora, named after the late warlock Dethmoora Darkeyes, is one of the three tools needed to create a Circle of Greater Summoning. When properly atuned with the Wheel and the Candle, these items conduct vast stores of arcane power.<br><br>My servant Gorzeeki can construct such a bell, but to do so he will need a large supply of elixirs of shadow power. Procure the elixirs from an alchemist and bring them to Gorzeeki.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9264,
+            "name": "Elixir of Shadow Power",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=9264/elixir-of-shadow-power",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -33228,6 +37121,16 @@ const DUNGEONS = [
         "objective": "Bring 35 <a href=\"https://www.wowhead.com/classic/item=15416/black-dragonscale\" rel=\"noopener noreferrer\" target=\"_blank\">Black Dragonscales</a> to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a> in the Burning Steppes.",
         "description": "A Doomsday Candle stores fire and directs it at those who would disrupt your ritual. When creating your Circle of Greater Summoning, if your candle is lit then any wayward demons will be burned by its flames!<br><br>Containing that fire is not easy, and requires the essence within the scales of a black dragon. Acquire those scales from a skinner and bring them to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a>.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 15416,
+            "name": "Black Dragonscale",
+            "quantity": 35,
+            "url": "https://www.wowhead.com/classic/item=15416/black-dragonscale",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -33290,6 +37193,24 @@ const DUNGEONS = [
         "objective": "Bring 6 <a href=\"https://www.wowhead.com/classic/item=14344/large-brilliant-shard\" rel=\"noopener noreferrer\" target=\"_blank\">Large Brilliant Shards</a> and 25 <a href=\"https://www.wowhead.com/classic/item=11370/dark-iron-ore\" rel=\"noopener noreferrer\" target=\"_blank\">Dark Iron Ore</a> to Gorzeeki in the Burning Steppes.",
         "description": "A Wheel of the Black March contains and directs the violent energies required for the Circle of Greater Summoning. For Gozeeki to construct a wheel, he will need both <a href=\"https://www.wowhead.com/classic/item=14344/large-brilliant-shard\" rel=\"noopener noreferrer\" target=\"_blank\">large brilliant shards</a> from an enchanter, and <a href=\"https://www.wowhead.com/classic/item=11370/dark-iron-ore\" rel=\"noopener noreferrer\" target=\"_blank\">dark iron ore</a> from a master miner.<br><br>Acquire these and bring them to my servant.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 14344,
+            "name": "Large Brilliant Shard",
+            "quantity": 6,
+            "url": "https://www.wowhead.com/classic/item=14344/large-brilliant-shard",
+            "quality": 3
+          },
+          {
+            "type": "item",
+            "id": 11370,
+            "name": "Dark Iron Ore",
+            "quantity": 25,
+            "url": "https://www.wowhead.com/classic/item=11370/dark-iron-ore",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -33352,6 +37273,16 @@ const DUNGEONS = [
         "objective": "Bring 3 <a href=\"https://www.wowhead.com/classic/item=12360/arcanite-bar\" rel=\"noopener noreferrer\" target=\"_blank\">Arcanite Bars</a> to Gorzeeki in the Burning Steppes.",
         "description": "Now that the Bell, Wheel and Candle are made, I should make a black lodestone. During your ritual, you'll need that lodestone to maintain the other ritual objects if they should fail.<br><br>To make the lodestone, I require arcanite. Do you have any? If not, then... you'll have to get the arcanite from an alchemist.<br><br>Return to me when you have the arcanite, and then I'll make the black lodestone.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12360,
+            "name": "Arcanite Bar",
+            "quantity": 3,
+            "url": "https://www.wowhead.com/classic/item=12360/arcanite-bar",
+            "quality": 2
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -33414,6 +37345,15 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=18688/imp-in-a-jar\" rel=\"noopener noreferrer\" target=\"_blank\">Imp in a Jar</a> to the alchemy lab in the Scholomance. After the parchment is created, return the jar to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a>.",
         "description": "There is one more process required for Mor'zul's parchment; I need paper infused with Xorothian stardust. And... I'm afraid I can't do that here. I don't have the equipment!<br><br>There is an alchemy lab, however, with everything needed. It's in the Scholomance, on the isle of Caer Darrow in the Plaguelands.<br><br>I can't make the trip, but here - take this jar. There's an imp inside who is quite clever. Let him out at the alchemy lab and he'll infuse the parchment.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 14500,
+            "name": "Parchment Created",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=14500/parchment-created"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [
@@ -33576,6 +37516,16 @@ const DUNGEONS = [
         "objective": "Find Ezra Grimm's smoke shop in <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and recover a box of <a href=\"https://www.wowhead.com/classic/item=13172/grimms-premium-tobacco\" rel=\"noopener noreferrer\" target=\"_blank\">Grimm's Premium Tobacco</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=11033/smokey-larue\" rel=\"noopener noreferrer\" target=\"_blank\">Smokey LaRue</a> when the job is done.",
         "description": "Terrible thing... what happened to Ezra. You see, the town was sacked and Ezra didn't want to leave his precious goods behind. The last thing I remember him saying was, 'I'll burn every last leaf before they get their damned, dirty hands on them!'<br><br>I may love a good stogie but I'm no fool. I left Ezra and his delightful store that day. I assume he went down in flames but if there's a chance that even one box of his famous tobacco is still intact...<br><br>What do you say? Find a box for ol' Smokey?",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13172,
+            "name": "Grimm's Premium Tobacco",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13172/grimms-premium-tobacco",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 13171,
@@ -33641,6 +37591,22 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and find <a href=\"https://www.wowhead.com/classic/npc=10811/archivist-galford\" rel=\"noopener noreferrer\" target=\"_blank\">Archivist Galford</a> of the Scarlet Crusade. Destroy him and burn down the <a href=\"https://www.wowhead.com/classic/object=176245/scarlet-archive\" rel=\"noopener noreferrer\" target=\"_blank\">Scarlet Archive</a>.",
         "description": "Anything taken to an extreme is hazardous to our world. Take for example, the Scarlet Crusade. Do you believe that their blind zealotry serves a greater good? How many innocents have they destroyed in the name of the Light?<br><br>Blasphemers, one and all!<br><br>One in particular interests me, though; the <a href=\"https://www.wowhead.com/classic/npc=10811/archivist-galford\" rel=\"noopener noreferrer\" target=\"_blank\">Archivist Galford</a> of <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a>: A man that watches over the Crusade's most valued documents. Destroy him and burn down his archives! Should you succeed, return to me and be rewarded.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 10811,
+            "name": "Archivist Galford",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=10811/archivist-galford"
+          },
+          {
+            "type": "object",
+            "id": 176245,
+            "name": "Archive Burned",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/object=176245/archive-burned"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -33699,6 +37665,16 @@ const DUNGEONS = [
         "objective": "Recover 20 <a href=\"https://www.wowhead.com/classic/item=13174/plagued-flesh-sample\" rel=\"noopener noreferrer\" target=\"_blank\">Plagued Flesh Samples</a> from <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and return them to <a href=\"https://www.wowhead.com/classic/npc=11035/betina-bigglezink\" rel=\"noopener noreferrer\" target=\"_blank\">Betina Bigglezink</a>. You suspect that any creature in <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> would have said flesh sample.",
         "description": "The Forsaken apothecaries are not the only beings in this world schooled in the sciences.<br><br>I have been studying the plague for years. We had previously thought that the potency of the plague was dwindling, but what I have discovered here in the Plaguelands is startling. The plague seems to be growing in strength!<br><br>I need to run more tests! The most potent source of the plague is from the tainted flesh of the most recently infected. Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and bring me samples.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13174,
+            "name": "Plagued Flesh Sample",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/item=13174/plagued-flesh-sample",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -33762,6 +37738,16 @@ const DUNGEONS = [
         "objective": "",
         "description": "I look at my undeath as a malady. An illness that merely requires treatment; however, it is also a great blessing for the Argent Dawn. What better vessel to smite the heathens of the Scourge than through the undead?<br><br>I am revered by my colleagues because of the sacrifices I have made, but the accolades mean nothing to me.<br><br>If you are interested in assisting the Argent Dawn, then a job I can offer.<br><br>Venture to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and recover our surplus of holy water. Search the supply crates.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13180,
+            "name": "Stratholme Holy Water",
+            "quantity": 5,
+            "url": "https://www.wowhead.com/classic/item=13180/stratholme-holy-water",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 3928,
@@ -33846,6 +37832,15 @@ const DUNGEONS = [
         "objective": "Use <a href=\"https://www.wowhead.com/classic/item=13289/egans-blaster\" rel=\"noopener noreferrer\" target=\"_blank\">Egan's Blaster</a> on the ghostly and spectral citizens of <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a>. When the <a href=\"https://www.wowhead.com/classic/npc=11122/restless-soul\" rel=\"noopener noreferrer\" target=\"_blank\">restless souls</a> break free from their ghostly shells, use the blaster again - freedom will be theirs!<br><br>Free 15 <a href=\"https://www.wowhead.com/classic/npc=11122/restless-soul\" rel=\"noopener noreferrer\" target=\"_blank\">restless souls</a> and return to <a href=\"https://www.wowhead.com/classic/npc=11140/egan\" rel=\"noopener noreferrer\" target=\"_blank\">Egan</a>.",
         "description": "I draw my power - my will to continue living and breathing - from the unmitigated hatred I have for the Scourge and all that they have done. I am, however, no zealot. There are those, like the Scarlet Crusade, who would sooner destroy the innocent undead than lend them even an ounce of compassion.<br><br>Which brings me to this: My blaster. It will unchain the tortured souls from <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a>.<br><br>Use it on the ghosts that haunt the ransacked streets. Free their souls.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 11122,
+            "name": "Souls Freed",
+            "quantity": 15,
+            "url": "https://www.wowhead.com/classic/npc=11122/souls-freed"
+          }
+        ],
         "rewards": [
           {
             "id": 13315,
@@ -33906,6 +37901,7 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=11140/egan\" rel=\"noopener noreferrer\" target=\"_blank\">Egan</a>. You only know that he was last seen around Stratholme.",
             "description": "There are those that died tragically in the fall of Stratholme. Many took their own lives, opting to hurl themselves into the myriad flames of the smoldering city rather than become one of the Scourge.<br><br>They now walk the streets of Stratholme as restless spirits.<br><br>We must aid them!<br><br>I have an associate named <a href=\"https://www.wowhead.com/classic/npc=11140/egan\" rel=\"noopener noreferrer\" target=\"_blank\">Egan</a> who has been doing miraculous work with ghosts and souls. Seek him out. He walks the <a href=\"https://www.wowhead.com/classic/zone=139/eastern-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">eastern Plaguelands</a>, near Stratholme, testing his innovations.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -33972,6 +37968,7 @@ const DUNGEONS = [
         "objective": "Take the <a href=\"https://www.wowhead.com/classic/item=13250/head-of-balnazzar\" rel=\"noopener noreferrer\" target=\"_blank\">Head of Balnazzar</a> to <a href=\"https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Duke Nicholas Zverenhoff</a> in the Eastern Plaguelands.",
         "description": "You try and gather your thoughts as the dust settles across the chamber. You go over the events that just transpired and still cannot comprehend the gravity of the situation.<br><br>The Grand Crusader of the Scarlet Crusade a demon? And not just any demon but brother to Varimathras, arch lord of the Undercity?<br><br>You carefully stow the severed head of the dreadlord into your pack. Surely, none would believe the tale you would tell without proof.<br><br><a href=\"https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Duke Nicholas Zverenhoff</a> must be told at once!",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -34025,6 +38022,22 @@ const DUNGEONS = [
             "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and find <a href=\"https://www.wowhead.com/classic/npc=10811/archivist-galford\" rel=\"noopener noreferrer\" target=\"_blank\">Archivist Galford</a> of the Scarlet Crusade. Destroy him and burn down the <a href=\"https://www.wowhead.com/classic/object=176245/scarlet-archive\" rel=\"noopener noreferrer\" target=\"_blank\">Scarlet Archive</a>.",
             "description": "Anything taken to an extreme is hazardous to our world. Take for example, the Scarlet Crusade. Do you believe that their blind zealotry serves a greater good? How many innocents have they destroyed in the name of the Light?<br><br>Blasphemers, one and all!<br><br>One in particular interests me, though; the <a href=\"https://www.wowhead.com/classic/npc=10811/archivist-galford\" rel=\"noopener noreferrer\" target=\"_blank\">Archivist Galford</a> of <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a>: A man that watches over the Crusade's most valued documents. Destroy him and burn down his archives! Should you succeed, return to me and be rewarded.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 10811,
+                "name": "Archivist Galford",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10811/archivist-galford"
+              },
+              {
+                "type": "object",
+                "id": 176245,
+                "name": "Archive Burned",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/object=176245/archive-burned"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -34093,8 +38106,18 @@ const DUNGEONS = [
         "xp": 8300,
         "money": 49800,
         "objective": "Venture to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and destroy Baron Rivendare. Take his head and return to <a href=\"https://www.wowhead.com/classic/npc=11039/duke-nicholas-zverenhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Duke Nicholas Zverenhoff</a>.",
-        "description": "You display a natural aptitude for destruction and you follow orders. It is rare to see the two coexist. I am beginning to think that you may make an excellent vehicle of divine justice.<br><br><br><br>Kel'Thuzad's errand boy rules over <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a>. Prove to me that you are a champion - my champion. Destroy Baron Rivendare and return to me with his head.",
+        "description": "You display a natural aptitude for destruction and you follow orders. It is rare to see the two coexist. I am beginning to think that you may make an excellent vehicle of divine justice.<br><br>Kel'Thuzad's errand boy rules over <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a>. Prove to me that you are a champion - my champion. Destroy Baron Rivendare and return to me with his head.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13251,
+            "name": "Head of Baron Rivendare",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13251/head-of-baron-rivendare",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -34148,6 +38171,22 @@ const DUNGEONS = [
             "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and find <a href=\"https://www.wowhead.com/classic/npc=10811/archivist-galford\" rel=\"noopener noreferrer\" target=\"_blank\">Archivist Galford</a> of the Scarlet Crusade. Destroy him and burn down the <a href=\"https://www.wowhead.com/classic/object=176245/scarlet-archive\" rel=\"noopener noreferrer\" target=\"_blank\">Scarlet Archive</a>.",
             "description": "Anything taken to an extreme is hazardous to our world. Take for example, the Scarlet Crusade. Do you believe that their blind zealotry serves a greater good? How many innocents have they destroyed in the name of the Light?<br><br>Blasphemers, one and all!<br><br>One in particular interests me, though; the <a href=\"https://www.wowhead.com/classic/npc=10811/archivist-galford\" rel=\"noopener noreferrer\" target=\"_blank\">Archivist Galford</a> of <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a>: A man that watches over the Crusade's most valued documents. Destroy him and burn down his archives! Should you succeed, return to me and be rewarded.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 10811,
+                "name": "Archivist Galford",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10811/archivist-galford"
+              },
+              {
+                "type": "object",
+                "id": 176245,
+                "name": "Archive Burned",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/object=176245/archive-burned"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -34245,8 +38284,9 @@ const DUNGEONS = [
         "xp": 6600,
         "money": 39600,
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and find <a href=\"https://www.wowhead.com/classic/object=176631/menethils-gift\" rel=\"noopener noreferrer\" target=\"_blank\">Menethil's Gift</a>. Place the <a href=\"https://www.wowhead.com/classic/item=13585/keepsake-of-remembrance\" rel=\"noopener noreferrer\" target=\"_blank\">Keepsake of Remembrance</a> upon the unholy ground.",
-        "description": "I watched as the human, Ras Frostwhisper, pledged his undying soul to the Lich King. He drew the dagger to his own throat and with a smile, cut from ear to ear. His body collapsed inside the borders of the pentagram. The Lich King stood over the fallen mage and with a single motion, Ras Frostwhisper the lich, was born.<br><br><br><br>Yes, I remember. What you seek has a name - <a href=\"https://www.wowhead.com/classic/object=176631/menethils-gift\" rel=\"noopener noreferrer\" target=\"_blank\">Menethil's Gift</a>: The ground blessed by the Lich King - holy ground to Scourge.",
+        "description": "I watched as the human, Ras Frostwhisper, pledged his undying soul to the Lich King. He drew the dagger to his own throat and with a smile, cut from ear to ear. His body collapsed inside the borders of the pentagram. The Lich King stood over the fallen mage and with a single motion, Ras Frostwhisper the lich, was born.<br><br>Yes, I remember. What you seek has a name - <a href=\"https://www.wowhead.com/classic/object=176631/menethils-gift\" rel=\"noopener noreferrer\" target=\"_blank\">Menethil's Gift</a>: The ground blessed by the Lich King - holy ground to Scourge.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -34300,6 +38340,29 @@ const DUNGEONS = [
             "objective": "Find <a href=\"https://www.wowhead.com/classic/npc=11261/doctor-theolen-krastinov\" rel=\"noopener noreferrer\" target=\"_blank\">Doctor Theolen Krastinov</a> inside the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a>. Destroy him, then burn the <a href=\"https://www.wowhead.com/classic/object=176544/remains-of-eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Remains of Eva Sarkhoff</a> and the <a href=\"https://www.wowhead.com/classic/object=176545/remains-of-lucien-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Remains of Lucien Sarkhoff</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=11216/eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Eva Sarkhoff</a> when the task is complete.",
             "description": "Krastinov is responsible for the deaths of thousands. He must be punished, justice must be meted out.<br><br>Find him and exact upon him the agony he has inflicted upon countless innocents. Once he is destroyed, burn our remains. Turn them to ashes.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 11261,
+                "name": "Doctor Theolen Krastinov",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=11261/doctor-theolen-krastinov"
+              },
+              {
+                "type": "object",
+                "id": 176544,
+                "name": "Remains of Eva Sarkhoff Burned",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/object=176544/remains-of-eva-sarkhoff-burned"
+              },
+              {
+                "type": "object",
+                "id": 176545,
+                "name": "Remains of Lucien Sarkhoff Burned",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/object=176545/remains-of-lucien-sarkhoff-burned"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -34363,6 +38426,16 @@ const DUNGEONS = [
             "objective": "Locate Jandice Barov in the <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> and destroy her. From her corpse recover <a href=\"https://www.wowhead.com/classic/item=13725/krastinovs-bag-of-horrors\" rel=\"noopener noreferrer\" target=\"_blank\">Krastinov's Bag of Horrors</a>. Return the bag to <a href=\"https://www.wowhead.com/classic/npc=11216/eva-sarkhoff\" rel=\"noopener noreferrer\" target=\"_blank\">Eva Sarkhoff</a>.",
             "description": "A great weight has been lifted from our hearts, but your task is not yet complete. Krastinov's master, Kirtonos, still lives.<br><br>Before you may face Kirtonos, however, you must first secure a method in which to summon him.<br><br>It is said that Jandice Barov stewards the blood of innocents from Krastinov to Kirtonos.<br><br>Find her in the sunken catacombs of <a href=\"https://www.wowhead.com/classic/zone=2057/scholomance\" rel=\"noopener noreferrer\" target=\"_blank\">Scholomance</a> and strike her down. Bring back any clues that you may find.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 13725,
+                "name": "Krastinov's Bag of Horrors",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=13725/krastinovs-bag-of-horrors",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -34424,8 +38497,17 @@ const DUNGEONS = [
             "xp": 8300,
             "money": 49800,
             "objective": "",
-            "description": "This is it.<br><br><br><br>The <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">blood of innocents</a>. The purest blood, used to appease Krastinov's master.<br><br>It is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.<br><br>Take the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.<br><br>Should you succeed, you will earn more than just our gratitude.",
+            "description": "This is it.<br><br>The <a href=\"https://www.wowhead.com/classic/item=13523/blood-of-innocents\" rel=\"noopener noreferrer\" target=\"_blank\">blood of innocents</a>. The purest blood, used to appease Krastinov's master.<br><br>It is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.<br><br>Take the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.<br><br>Should you succeed, you will earn more than just our gratitude.",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 10506,
+                "name": "Kirtonos the Herald",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10506/kirtonos-the-herald"
+              }
+            ],
             "rewards": [
               {
                 "id": 13544,
@@ -34509,6 +38591,16 @@ const DUNGEONS = [
             "objective": "Travel to the Arathi Highlands, to the ruins of Stromgarde. Search Stromgarde for a <a href=\"https://www.wowhead.com/classic/item=13585/keepsake-of-remembrance\" rel=\"noopener noreferrer\" target=\"_blank\">Keepsake of Remembrance</a>. If you find such an item, return with it to <a href=\"https://www.wowhead.com/classic/npc=11286/magistrate-marduke\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Marduke</a>.",
             "description": "The undead fear life just as the living fear death. It is not unusual for a sentient undead being to completely destroy all remnants of his or her previous life after having turned.<br><br>Unfortunately, in order to create an artifact capable of reverting Ras Frostwhisper to a mortal, we must have a keepsake from his years among the living.<br><br>You must venture to the ruined city of Stromgarde, Frostwhisper's home, and search for such an item. May luck be with you.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 13585,
+                "name": "Keepsake of Remembrance",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=13585/keepsake-of-remembrance",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -34578,6 +38670,7 @@ const DUNGEONS = [
             "objective": "Travel to Light's Hope in Eastern Plaguelands and seek out <a href=\"https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered\" rel=\"noopener noreferrer\" target=\"_blank\">Leonid Barthalomew the Revered</a>. Show him the <a href=\"https://www.wowhead.com/classic/item=13585/keepsake-of-remembrance\" rel=\"noopener noreferrer\" target=\"_blank\">Keepsake of Remembrance</a> and tell him all that you have discovered.",
             "description": "Upon tainted soil, the keepsake must be attuned.<br><br>It is rumored that Stratholme is where Frostwhisper succumbed to the Lich King. Upon those bloodied grounds he gave his life - freely and with motive - to become one of the undying.<br><br>It is those grounds that must be found.<br><br>There is one, an undead dissenter of the Scourge, freed by the Banshee Queen but loyal to the cause of the Argent Dawn. Find him: <a href=\"https://www.wowhead.com/classic/npc=11036/leonid-barthalomew-the-revered\" rel=\"noopener noreferrer\" target=\"_blank\">Leonid Barthalomew the Revered</a>. He may know more. Seek out Light's Hope.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -34686,6 +38779,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and slay Ramstein the Gorger. Take his head as a souvenir for Nathanos.",
         "description": "I was overwhelmed. On this very stead, I stood... held my ground in defense of Lordaeron. The farm and all on it were waylaid by a gigantic wave of Scourge.<br><br>The wretch. The filth. It hovered above me, entrails hanging from its gaping chest cavity.<br><br>I woke as Scourge. For so long I was helpless. My mind had coalesced with the Lich King's.<br><br>She came for me... somewhere, somehow, I knew she would. Free.<br><br>And now, I must have my vengeance - my vengeance on that which took from me my life. Destroy it.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 15880,
+            "name": "Head of Ramstein the Gorger",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=15880/head-of-ramstein-the-gorger",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -34752,6 +38855,37 @@ const DUNGEONS = [
             "objective": "Travel to the northern borders of the <a href=\"https://www.wowhead.com/classic/zone=139/eastern-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Eastern Plaguelands</a> and recover the <a href=\"https://www.wowhead.com/classic/item=15847/quelthalas-registry\" rel=\"noopener noreferrer\" target=\"_blank\">Quel'Thalas Registry</a>. The item is somewhere in the Quel'Lithien lodge.<br><br>You must also slay 8 <a href=\"https://www.wowhead.com/classic/npc=8564/ranger\" rel=\"noopener noreferrer\" target=\"_blank\">Rangers</a>, 8 <a href=\"https://www.wowhead.com/classic/npc=8565/pathstrider\" rel=\"noopener noreferrer\" target=\"_blank\">Pathstriders</a>, and 8 Woodsmen.",
             "description": "The high elves of the Quel'Lithien lodge possesses something that belongs to me: A document detailing my life as a mortal.<br><br>Before you ask; no, you most certainly are not privy to such information. Just do as I tell you, worm: Recover the registry.<br><br>And imbecile, be sure to leave as much strife and grief as possible in your wake. Leave them suffering...",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 8565,
+                "name": "Pathstrider",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/npc=8565/pathstrider"
+              },
+              {
+                "type": "npc",
+                "id": 8564,
+                "name": "Ranger",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/npc=8564/ranger"
+              },
+              {
+                "type": "npc",
+                "id": 8563,
+                "name": "Woodsman",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/npc=8563/woodsman"
+              },
+              {
+                "type": "item",
+                "id": 15847,
+                "name": "Quel'Thalas Registry",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=15847/quelthalas-registry",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -34810,6 +38944,16 @@ const DUNGEONS = [
             "objective": "Find Duskwing and slay him. From the corpse, recover a <a href=\"https://www.wowhead.com/classic/item=15850/patch-of-duskwings-fur\" rel=\"noopener noreferrer\" target=\"_blank\">Patch of Duskwing's Fur</a> and return it to <a href=\"https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller\" rel=\"noopener noreferrer\" target=\"_blank\">Nathanos Blightcaller</a>.<br><br>It is said that Duskwing roams the countryside to the north of Marris Stead.",
             "description": "Up until now, you have completed the missions I have assigned; even if not in the most timely manner.<br><br>I suppose you think that you are ready for a challenge. Yes... Yes, imbecile, perhaps you are ready for a more involved set of missions.<br><br>The albino demon bat, Duskwing, roams the countryside just north of here. Track him down and destroy him. Return to me with a patch of his white fur and you shall be rewarded.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 15850,
+                "name": "Patch of Duskwing's Fur",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=15850/patch-of-duskwings-fur",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [
               {
@@ -34893,6 +39037,16 @@ const DUNGEONS = [
         "objective": "",
         "description": "",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12845,
+            "name": "Medallion of Faith",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12845/medallion-of-faith",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -34956,6 +39110,7 @@ const DUNGEONS = [
         "objective": "",
         "description": "",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [
           {
@@ -35032,6 +39187,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and search the ziggurats. Find and return new <a href=\"https://www.wowhead.com/classic/item=13176/scourge-data\" rel=\"noopener noreferrer\" target=\"_blank\">Scourge Data</a> to <a href=\"https://www.wowhead.com/classic/npc=11035/betina-bigglezink\" rel=\"noopener noreferrer\" target=\"_blank\">Betina Bigglezink</a>.",
         "description": "You will have to delve deeper into <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a>.<br><br>Beyond the first gates you will find the ziggurats. We know that the Scourge draws great power from these structures. Search the Ziggurats and return with any information that you may discover.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13176,
+            "name": "Scourge Data",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13176/scourge-data",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -35115,6 +39280,15 @@ const DUNGEONS = [
         "objective": "Slay 30 <a href=\"https://www.wowhead.com/classic/npc=8600/plaguebat\" rel=\"noopener noreferrer\" target=\"_blank\">Plaguebats</a> and return to <a href=\"https://www.wowhead.com/classic/npc=1855/tirion-fordring\" rel=\"noopener noreferrer\" target=\"_blank\">Tirion Fordring</a>.",
         "description": "Woe to those that foolishly wander into the Plaguelands. All manner of foulness inhabit these woods - from the fanatical Scarlet Crusade, who will kill any that do not bear the mark of the Crusade, to the murderous Scourge, who only look to bolster their numbers by adding more undead to their ranks.<br><br>Even the wildlife have been transformed into rapacious, man eating beasts. I ask that you destroy those that would strike from the skies: The <a href=\"https://www.wowhead.com/classic/npc=8600/plaguebat\" rel=\"noopener noreferrer\" target=\"_blank\">Plaguebats</a>.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 8600,
+            "name": "Plaguebat",
+            "quantity": 30,
+            "url": "https://www.wowhead.com/classic/npc=8600/plaguebat"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -35182,6 +39356,16 @@ const DUNGEONS = [
         "objective": "Seek out the Carrion Grubs and Devourers of the region. Slay them and harvest their meat. Return to <a href=\"https://www.wowhead.com/classic/npc=1855/tirion-fordring\" rel=\"noopener noreferrer\" target=\"_blank\">Tirion Fordring</a> when you have gathered 15 <a href=\"https://www.wowhead.com/classic/item=13853/slab-of-carrion-worm-meat\" rel=\"noopener noreferrer\" target=\"_blank\">Slabs of Carrion Worm Meat</a>.",
         "description": "My food supplies are running low. I am ashamed to admit that I might not have enough food to share with you.<br><br>Could you assist an old man with a simple task? Around here, the only manner of beast unaffected by the ravages of the Plague are the Carrion worms. While rather bland in taste, the meat of the worms can easily be preserved to last for months. I will need several hundred pounds to restock for the coming winter!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13853,
+            "name": "Slab of Carrion Worm Meat",
+            "quantity": 15,
+            "url": "https://www.wowhead.com/classic/item=13853/slab-of-carrion-worm-meat",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -35249,6 +39433,29 @@ const DUNGEONS = [
         "objective": "Slay 20 <a href=\"https://www.wowhead.com/classic/npc=8596/plaguehound-runt\" rel=\"noopener noreferrer\" target=\"_blank\">Plaguehound Runts</a>, 5 <a href=\"https://www.wowhead.com/classic/npc=8597/plaguehound\" rel=\"noopener noreferrer\" target=\"_blank\">Plaguehounds</a> and 5 <a href=\"https://www.wowhead.com/classic/npc=8598/frenzied-plaguehound\" rel=\"noopener noreferrer\" target=\"_blank\">Frenzied Plaguehounds</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=1855/tirion-fordring\" rel=\"noopener noreferrer\" target=\"_blank\">Tirion Fordring</a> when the task is complete.",
         "description": "If you are going to remain here, I ask only that you earn your keep. We have many nuisances that could use some 'discipline.'<br><br>You can start with the <a href=\"https://www.wowhead.com/classic/npc=8597/plaguehound\" rel=\"noopener noreferrer\" target=\"_blank\">Plaguehounds</a> and their runts.<br><br>I cannot offer much in return, but you are guaranteed a warm meal and some conversation should you succeed.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 8596,
+            "name": "Plaguehound Runt",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/npc=8596/plaguehound-runt"
+          },
+          {
+            "type": "npc",
+            "id": 8597,
+            "name": "Plaguehound",
+            "quantity": 5,
+            "url": "https://www.wowhead.com/classic/npc=8597/plaguehound"
+          },
+          {
+            "type": "npc",
+            "id": 8598,
+            "name": "Frenzied Plaguehound",
+            "quantity": 5,
+            "url": "https://www.wowhead.com/classic/npc=8598/frenzied-plaguehound"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -35309,6 +39516,7 @@ const DUNGEONS = [
         "objective": "Listen to what <a href=\"https://www.wowhead.com/classic/npc=1855/tirion-fordring\" rel=\"noopener noreferrer\" target=\"_blank\">Tirion Fordring</a> has to say.",
         "description": "You have worked hard, friend. Rest your weary bones and allow me to properly introduce myself.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -35374,6 +39582,16 @@ const DUNGEONS = [
         "objective": "Travel to the Undercroft - at the southernmost section of the <a href=\"https://www.wowhead.com/classic/zone=139/eastern-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Eastern Plaguelands</a> - and recover <a href=\"https://www.wowhead.com/classic/item=14613/taelans-hammer\" rel=\"noopener noreferrer\" target=\"_blank\">Taelan's Hammer</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=1855/tirion-fordring\" rel=\"noopener noreferrer\" target=\"_blank\">Tirion Fordring</a> upon completion of your objective.",
         "description": "To help Taelan regain what he has lost, you must gather items from his past.<br><br>The first such item is a toy that I gave to him on his 7th birthday. It was his most cherished possession: A miniature war hammer; an exact replica of my very own.<br><br>After I was banished for treason, his mother told him that I had died. He was taken to my false grave at the Undercroft, where he buried the hammer along with my memory - forever.<br><br>You must venture to the Undercroft and recover <a href=\"https://www.wowhead.com/classic/item=14613/taelans-hammer\" rel=\"noopener noreferrer\" target=\"_blank\">Taelan's hammer</a>.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 14613,
+            "name": "Taelan's Hammer",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=14613/taelans-hammer",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -35439,6 +39657,16 @@ const DUNGEONS = [
         "objective": "Travel to Northdale, in the northeastern region of the <a href=\"https://www.wowhead.com/classic/zone=139/eastern-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Eastern Plaguelands</a>, and recover the <a href=\"https://www.wowhead.com/classic/item=14625/symbol-of-lost-honor\" rel=\"noopener noreferrer\" target=\"_blank\">Symbol of Lost Honor</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=1855/tirion-fordring\" rel=\"noopener noreferrer\" target=\"_blank\">Tirion Fordring</a> upon completion of your objective.",
         "description": "The Order of the Silver Hand was utterly decimated when Uther was slain.<br><br>The boy held out for as long as he could. Pushed to the war torn hamlet of Northdale, he made his final stand.<br><br>Were any of the Order left alive, he thought - and did it matter?<br><br>It was with that thought that Taelan threw down the standard of the Order and renounced all that he had known. His honor left upon the blood soaked ground of Northdale.<br><br>You must travel to Northdale and recover that <a href=\"https://www.wowhead.com/classic/item=14625/symbol-of-lost-honor\" rel=\"noopener noreferrer\" target=\"_blank\">symbol of lost honor</a>.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 14625,
+            "name": "Symbol of Lost Honor",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=14625/symbol-of-lost-honor",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -35504,6 +39732,7 @@ const DUNGEONS = [
         "objective": "Travel to island of Caer Darrow, in the south-central region of the Plaguelands, and look for any clues as to the whereabouts of the painting.",
         "description": "When Taelan was a child, we would oft visit Caer Darrow on family excursions. On our last visit, an artist by the name of Renfray painted a portrait of us poised along the beachside. It is my fondest memory of both Taelan and Karandra. For it was at that moment, with my wife and son in my arms, that I felt a bond of love and family that I would never know again.<br><br>If this painting still exists, you must find it.<br><br>Travel to the ruined island of Caer Darrow and see if the painting or the artist remain.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -35569,6 +39798,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a>, in the northern part of the Plaguelands. It is in the Scarlet Bastion that you will find the painting '<a href=\"https://www.wowhead.com/classic/item=14679/of-love-and-family\" rel=\"noopener noreferrer\" target=\"_blank\">Of Love and Family</a>,' hidden behind another painting depicting the twin moons of our world.<br><br>Return the painting to <a href=\"https://www.wowhead.com/classic/npc=1855/tirion-fordring\" rel=\"noopener noreferrer\" target=\"_blank\">Tirion Fordring</a>.",
         "description": "The painting... It hung on the wall of my workshop - inside the Order's barracks - for years.<br><br>After Tirion's trial was over, I knew that I could no longer keep the painting visible. I hid it in a place that they would never think to look.<br><br>Travel to <a href=\"https://www.wowhead.com/classic/zone=2017/stratholme\" rel=\"noopener noreferrer\" target=\"_blank\">Stratholme</a> and make your way deep inside what is now the Scarlet Bastion, search for a painting of our twin moons. Chip away at the paint until you uncover my master work, '<a href=\"https://www.wowhead.com/classic/item=14679/of-love-and-family\" rel=\"noopener noreferrer\" target=\"_blank\">Of Love and Family</a>.'<br><br>May the Light guide your actions.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 14679,
+            "name": "Of Love and Family",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=14679/of-love-and-family",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -35716,6 +39955,7 @@ const DUNGEONS = [
         "objective": "That is one stupid orc. It would appear as if you need to find this brand and gain the Mark of Drakkisath in order to access the Orb of Command.<br><br>The letter indicates that General Drakkisath guards the brand. Perhaps you should investigate.",
         "description": "Imbecile,<br><br>I hold very little faith in your ability to prevent outsiders from accessing the master's lair. In the very likely event of your death, this orb has its own failsafe built in to prevent outsiders from teleporting directly into Blackwing.<br><br>Only those with the Mark of Drakkisath branded upon their hand may make use of this orb. Thankfully, Drakkisath is not nearly as incompetent as you, Quartermaster. He guards the brand himself!<br><br>-Warchief Rend Blackhand<br><br>P.S. Destroy this letter, idiot.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -35774,6 +40014,16 @@ const DUNGEONS = [
         "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=12352/doomriggers-clasp\" rel=\"noopener noreferrer\" target=\"_blank\">Doomrigger's Clasp</a> to <a href=\"https://www.wowhead.com/classic/npc=9565/mayara-brightwing\" rel=\"noopener noreferrer\" target=\"_blank\">Mayara Brightwing</a> in the Burning Steppes.",
         "description": "There is a chamber, high in <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a>, that was once called the Hall of Fortune. It was where the Dark Iron dwarves kept their relics, trophies and objects of art.<br><br>That was long ago. It is said the hall has collapsed and is now used for... less savory tasks. But I believe some old dwarven relics may still be found there.<br><br>One such relic is <a href=\"https://www.wowhead.com/classic/item=12352/doomriggers-clasp\" rel=\"noopener noreferrer\" target=\"_blank\">Doomrigger's clasp</a>, with a surface so encrusted with rare gems that it was said to make weep any dwarf who gazes upon it.<br><br>That clasp, is your goal.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12352,
+            "name": "Doomrigger's Clasp",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12352/doomriggers-clasp",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -35827,6 +40077,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=9565/mayara-brightwing\" rel=\"noopener noreferrer\" target=\"_blank\">Mayara Brightwing</a> in the Burning Steppes.",
             "description": "An agent of mine, <a href=\"https://www.wowhead.com/classic/npc=9565/mayara-brightwing\" rel=\"noopener noreferrer\" target=\"_blank\">Mayara Brightwing</a>, was sent to the Burning Steppes to scout the ruined city of Thaurissan. That destroyed city of the Dark Iron dwarves may hide objects of great value... objects that would fit nicely into our family museum.<br><br>Mayara says she found something and will need aid in retrieving it, but it is not in Thaurissan. Instead, a foray into <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> will be required.<br><br>I do not know the details, but if interested then speak with Mayara in the Burning Steppes.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -35914,6 +40165,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=12358/darkstone-tablet\" rel=\"noopener noreferrer\" target=\"_blank\">Darkstone Tablet</a> to Shadow Mage Vivian Lagrave in Kargath.",
         "description": "The <a href=\"https://www.wowhead.com/classic/item=12358/darkstone-tablet\" rel=\"noopener noreferrer\" target=\"_blank\">Darkstone Tablet</a> holds the writings of the long-dead dwarf Urheld Darkstone. An alchemist of great skill, he was thought insane by his contemporaries and, hence, did not share his research.<br><br>But he did etch it onto tablets, and I believe one such tablet lies in <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a>, in a chamber once named the Hall of Fortune. I know not what it is now called, for few enter Blackrock and return.<br><br>But if you are willing to brave its dangers and return to me with the tablet, your reward will be great.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12358,
+            "name": "Darkstone Tablet",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12358/darkstone-tablet",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -35980,6 +40241,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=9078/shadowmage-vivian-lagrave\" rel=\"noopener noreferrer\" target=\"_blank\">Shadowmage Vivian Lagrave</a>.",
             "description": "Vivian Lagrave sent me word from Kargath, in the Badlands. Through her studies, she believes there is an ancient text within <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> that would benefit our research. To confirm this, she will need someone to extract the text from the spire. No easy task.<br><br>If interested, then speak with Vivian in Kargath.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -36054,6 +40316,15 @@ const DUNGEONS = [
         "objective": "",
         "description": "We battle against these beasts on two fronts: From our capital of Stormwind we fight them from the inside out and here, in the Burning Steppes, we take the battle to their doorstep. We must be vigilant. None should be spared our wrath as none of our own were spared when they struck at our homes and families.<br><br>Find this <a href=\"https://www.wowhead.com/classic/npc=10363/general-drakkisath\" rel=\"noopener noreferrer\" target=\"_blank\">General Drakkisath</a> and destroy him!<br><br>The task certainly will not be a simple one, but the rewards shall be extravagant.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 10363,
+            "name": "General Drakkisath",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=10363/general-drakkisath"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -36118,6 +40389,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=12780/general-drakkisaths-command\" rel=\"noopener noreferrer\" target=\"_blank\">General Drakkisath's Command</a> to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> in Burning Steppes.",
             "description": "From the corpse of the defeated serpent you uncover what appears to be a note of some importance: A letter from his superior, General Drakkisath, concerning protocol.<br><br>Your instinct tells you that you should take it to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a>.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -36192,6 +40464,24 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and find Goraluk Anvilcrack. Slay him and then use the <a href=\"https://www.wowhead.com/classic/item=12848/blood-stained-pike\" rel=\"noopener noreferrer\" target=\"_blank\">Blood Stained Pike</a> upon his corpse. After his soul has been siphoned, the pike will be Soul Stained.<br><br>You must also find the <a href=\"https://www.wowhead.com/classic/item=12806/unforged-rune-covered-breastplate\" rel=\"noopener noreferrer\" target=\"_blank\">Unforged Rune Covered Breastplate</a>.<br><br>Return both the <a href=\"https://www.wowhead.com/classic/item=12847/soul-stained-pike\" rel=\"noopener noreferrer\" target=\"_blank\">Soul Stained Pike</a> and the <a href=\"https://www.wowhead.com/classic/item=12806/unforged-rune-covered-breastplate\" rel=\"noopener noreferrer\" target=\"_blank\">Unforged Rune Covered Breastplate</a> to <a href=\"https://www.wowhead.com/classic/npc=10918/lorax\" rel=\"noopener noreferrer\" target=\"_blank\">Lorax</a> in Winterspring.",
         "description": "<a href=\"https://www.wowhead.com/classic/npc=10918/lorax\" rel=\"noopener noreferrer\" target=\"_blank\">Lorax</a> makes deals, he does not accept them from insignificant mortals.<br><br>A deal I shall make with you, however... take this pike, it is imbued with powerful Fel energies. When you find Goraluk Anvilcrack, slay him and drive this pike through his dying heart. His soul he bartered, his soul I shall have. Return the pike and return the breastplate that the thief stole and I shall teach you what it is that he was to learn.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12847,
+            "name": "Soul Stained Pike",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12847/soul-stained-pike",
+            "quality": 1
+          },
+          {
+            "type": "item",
+            "id": 12806,
+            "name": "Unforged Rune Covered Breastplate",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12806/unforged-rune-covered-breastplate",
+            "quality": 3
+          }
+        ],
         "rewards": [
           {
             "id": 12696,
@@ -36267,6 +40557,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=10918/lorax\" rel=\"noopener noreferrer\" target=\"_blank\">Lorax</a>. Listen to what he has to say.",
             "description": "The Satyr paces about and talks to himself. Do you wish to question him?",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [
@@ -36334,6 +40625,16 @@ const DUNGEONS = [
         "objective": "You must retrieve the <a href=\"https://www.wowhead.com/classic/item=16663/blood-of-the-black-dragon-champion\" rel=\"noopener noreferrer\" target=\"_blank\">Blood of the Black Dragon Champion</a> from General Drakkisath. Drakkisath can be found in his throne room behind the Halls of Ascension in <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a>.",
         "description": "It is a piece of the dragon; a scale - enchanted and transformed. Whole, it could have granted access to the beast's lair. Shattered, it is useless.<br><br>It is possible to repair the item, but to do so would require the blood of a black dragon champion. There is one... He is known as General Drakkisath, ruler of the dragonspawn armies of Nefarian. Perhaps you have heard of him?<br><br>Return with his blood, and I shall enchant the fragment into something that will grant you access to Onyxia's lair.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 16663,
+            "name": "Blood of the Black Dragon Champion",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=16663/blood-of-the-black-dragon-champion",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 16309,
@@ -36394,6 +40695,36 @@ const DUNGEONS = [
             "objective": "Slay 15 <a href=\"https://www.wowhead.com/classic/npc=7047/black-broodling\" rel=\"noopener noreferrer\" target=\"_blank\">Black Broodlings</a>, 10 <a href=\"https://www.wowhead.com/classic/npc=7040/black-dragonspawn\" rel=\"noopener noreferrer\" target=\"_blank\">Black Dragonspawn</a>, 4 <a href=\"https://www.wowhead.com/classic/npc=7041/black-wyrmkin\" rel=\"noopener noreferrer\" target=\"_blank\">Black Wyrmkin</a> and 1 <a href=\"https://www.wowhead.com/classic/npc=7044/black-drake\" rel=\"noopener noreferrer\" target=\"_blank\">Black Drake</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=9562/helendis-riverhorn\" rel=\"noopener noreferrer\" target=\"_blank\">Helendis Riverhorn</a> when the task is complete.",
             "description": "Life in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> is rife with conflict.<br><br>Just look at this place! We know very little of what happened to these buildings, but we do know that at one time, before the great explosion, this was all part of the Redridge mountain range.<br><br>Enough lamenting! We have a problem. You may have noticed the dragonkin below this ridge. We need assistance in pushing them back. Kill as many as you can and return to me. Succeed and perhaps we can talk of other things.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 7047,
+                "name": "Black Broodling",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/npc=7047/black-broodling"
+              },
+              {
+                "type": "npc",
+                "id": 7040,
+                "name": "Black Dragonspawn",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=7040/black-dragonspawn"
+              },
+              {
+                "type": "npc",
+                "id": 7044,
+                "name": "Black Drake",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=7044/black-drake"
+              },
+              {
+                "type": "npc",
+                "id": 7041,
+                "name": "Black Wyrmkin",
+                "quantity": 4,
+                "url": "https://www.wowhead.com/classic/npc=7041/black-wyrmkin"
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -36457,6 +40788,7 @@ const DUNGEONS = [
             "objective": "Travel to Lakeshire and deliver <a href=\"https://www.wowhead.com/classic/item=11366/helendis-riverhorns-letter\" rel=\"noopener noreferrer\" target=\"_blank\">Helendis Riverhorn's Letter</a> to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a>.",
             "description": "We had always assumed that the Blackrock orcs were a product of their savage upbringing. What we have found here, in their homeland, tells us another story.<br><br>Indeed, it is bloodlust and thirst for conflict that empowers them, but the black dragonflight are the beings whom control the orcs of Blackrock. We suspect that it is the black dragonflight that fuels them with rage and hostility.<br><br>Take this letter to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a>. He will know what must be done.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -36520,6 +40852,7 @@ const DUNGEONS = [
             "objective": "Travel to Stormwind and deliver Solomon's Plea to <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a>.<br><br>Bolvar resides in Stormwind Keep.",
             "description": "This is grim news. To discover that our mortal enemies are merely pawns of a much greater threat is disheartening. There is no possible way that Lakeshire could survive an attack from both the Blackrock orcs and the black dragonflight. Should Lakeshire fall to this menace, Darkshire would fall next, and then what? Goldshire? Stormwind itself?<br><br>You must take this information to <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a> in Stormwind at once! If this does not merit the aid of Stormwind, nothing will and all is lost.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -36583,6 +40916,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=1748/highlord-bolvar-fordragon\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Bolvar Fordragon</a> after speaking with Lady Katrana Prestor.",
             "description": "Solomon paints a dreary picture. Still, we cannot afford to send our thinly spread troops to the aid of Lakeshire on speculation. I will need proof of these claims before I can act.<br><br>Speak with Lady Prestor. She is a learned woman and knows much of dragons and dragonkin. She may be able to shed some light on this situation.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -36646,6 +40980,7 @@ const DUNGEONS = [
             "objective": "Take <a href=\"https://www.wowhead.com/classic/item=11368/bolvars-decree\" rel=\"noopener noreferrer\" target=\"_blank\">Bolvar's Decree</a> to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> in Lakeshire.",
             "description": "I am going to empower you as an acting deputy of Stormwind.<br><br>Return to <a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> in Lakeshire and deliver this decree.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -36709,6 +41044,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>.",
             "description": "&lt;<a href=\"https://www.wowhead.com/classic/npc=344/magistrate-solomon\" rel=\"noopener noreferrer\" target=\"_blank\">Magistrate Solomon</a> sighs.&gt;<br><br>You must return to the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>. As a deputy of Stormwind, you will be required to report to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a>. Good luck.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -36772,6 +41108,7 @@ const DUNGEONS = [
             "objective": "Speak with Ragged John to learn of Marshal Windsor's fate and return to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> when you have completed this task.<br><br>You recall <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> telling you to search for him in a cave to the north.",
             "description": "What? You thought you were the first? How many soldiers must we lose before Stormwind acts?<br><br>We had accumulated enormous amounts of intelligence pertaining to the Blackrock menace before we lost our commanding officer, Marshal Windsor. With Marshal Windsor went all of our precious information.<br><br>What we need is that documentation. Speak with Ragged John. He was with Windsor when they were attacked by a Blackrock raiding party. He was last seen in a cave to the north.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -36833,8 +41170,9 @@ const DUNGEONS = [
             "xp": 5450,
             "money": 26100,
             "objective": "Travel to Blackrock Mountain in the northwest and enter <a href=\"https://www.wowhead.com/classic/zone=1584/blackrock-depths\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Depths</a>. Find out what became of <a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a>.<br><br>You recall Ragged John talking about Windsor being dragged off to a prison.",
-            "description": "So that good for nothing coward says that Windsor is alive, eh?<br><br>Suit up, deputy, you are going in to find him. If Windsor is alive, you are to bring him back. If he's dead, I want proof.<br><br><br><br>I bet you are getting tired of hearing that, aren't you?",
+            "description": "So that good for nothing coward says that Windsor is alive, eh?<br><br>Suit up, deputy, you are going in to find him. If Windsor is alive, you are to bring him back. If he's dead, I want proof.<br><br>I bet you are getting tired of hearing that, aren't you?",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -36898,6 +41236,7 @@ const DUNGEONS = [
             "objective": "Give <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> the bad news.",
             "description": "Bolvar is a fool. I was gathering his precious 'proof' so that I could shove it down his throat.<br><br>He is a blind buffoon. Proof stands two feet away from him and he does not see.<br><br>As for my data, it's lost. Gone. Unrecoverable.<br><br>Should I ever find Ironfoe and make it out of this labyrinth, my first stop will be Stormwind, to place my hammer in between that reptile's eyes.<br><br>Leave me.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [
               {
@@ -36972,6 +41311,7 @@ const DUNGEONS = [
             "objective": "You may have just stumbled on to something that <a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> would be interested in seeing. There may be hope, after all.",
             "description": "The note has stains covering its surface. The text is barely legible, but you make out the following:<br><br>...sweet irony...<br><br>...the fall of the broken Alliance...<br><br>...if it were not for General Angerforge's diligence, we may have never discovered the pattern to the encryption...<br><br>...Argelmach is almost done with the decryption of Windsor's notes.<br><br>Our lord will rise from the depths and crush any that remain...<br><br>-Emperor Dagran Thaurissan.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -37041,6 +41381,24 @@ const DUNGEONS = [
             "objective": "Return <a href=\"https://www.wowhead.com/search?q=Marshal+Windsor%27s+Lost+Information\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor's Lost Information</a>.<br><br><a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> believes that the information is being held by Golem Lord Argelmach and General Angerforge.",
             "description": "&lt;<a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> shakes the note excitedly.&gt;<br><br>Do you realize what this means?<br><br>Perhaps all is not lost! From what I can ascertain, the information is being held by two Dark Iron dwarves: General Angerforge and the golem lord, Argelmach. I have a feeling that they won't just hand over the information if we ask nicely.<br><br>I hope you are ready to battle.<br><br>Venture forth and find these two villains! Destroy them and return my lost information.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 11464,
+                "name": "Marshal Windsor's Lost Information",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=11464/marshal-windsors-lost-information",
+                "quality": 1
+              },
+              {
+                "type": "item",
+                "id": 11465,
+                "name": "Marshal Windsor's Lost Information",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=11465/marshal-windsors-lost-information",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -37104,6 +41462,7 @@ const DUNGEONS = [
             "objective": "Help <a href=\"https://www.wowhead.com/classic/npc=9023/marshal-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Windsor</a> get his gear back and free his friends. Return to <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a> if you succeed.",
             "description": "We need to get out of here. Help me get my gear back from the supply area and free my friends. If we make it out of here, you are to proceed to Morgan's Vigil and speak with <a href=\"https://www.wowhead.com/classic/npc=9560/marshal-maxwell\" rel=\"noopener noreferrer\" target=\"_blank\">Marshal Maxwell</a>. He will give you further instruction.",
             "shareable": false,
+            "requirements": [],
             "rewards": [
               {
                 "id": 12065,
@@ -37193,6 +41552,7 @@ const DUNGEONS = [
             "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1519/stormwind-city\" rel=\"noopener noreferrer\" target=\"_blank\">Stormwind City</a> and venture to the city gates. Speak with Squire Rowe so that he may let Marshal Windsor know that you have arrived.",
             "description": "You are to meet with Windsor at the gates of Stormwind.<br><br>What Windsor is about to unveil will shake the very foundation of the kingdom!<br><br>Do not attempt to venture there alone. You must amass an army! Gather your compatriots. To arms!",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -37256,6 +41616,7 @@ const DUNGEONS = [
             "objective": "Follow <a href=\"https://www.wowhead.com/classic/npc=12580/reginald-windsor\" rel=\"noopener noreferrer\" target=\"_blank\">Reginald Windsor</a> through Stormwind. Protect him from harm!",
             "description": "It has been quite the adventure, friend. I owe you a great debt of gratitude. Perhaps, when all is said and done...<br><br>As you have no doubt ascertained by now, Lady Prestor is Onyxia: Brood of Deathwing, twin to the tyrant of the Spire, Nefarian.<br><br>For too long she has held our kingdom in her captivating gaze. Even the Highlord is controlled by her trickery - a puppet. It all ends today... The spell will be broken.<br><br>Worry not, for together, we shall be victorious!<br><br>Are you ready?",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -37325,6 +41686,7 @@ const DUNGEONS = [
             "objective": "You must search the world for a being capable of restoring the power to the <a href=\"https://www.wowhead.com/classic/item=16662/fragment-of-the-dragons-eye\" rel=\"noopener noreferrer\" target=\"_blank\">Fragment of the Dragon's Eye</a>. The only information you possess about such a being is that they exist.",
             "description": "A fragment of the shattered medallion is all that I can offer.<br><br>You must find another of dragon blood willing to assist you in forging a new key. Once you secure this key, you must travel to the Wyrmbog in Dustwallow Marsh. It is there that you will find her lair.<br><br>Where to find other flights willing to help? Sadly, I do not know... They are said to exist. Some may even work and live among us, disguised as one of the humanoid races. I wish you luck.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -37391,6 +41753,37 @@ const DUNGEONS = [
         "objective": "",
         "description": "By order of <a href=\"https://www.wowhead.com/classic/npc=9077/warlord-goretooth\" rel=\"noopener noreferrer\" target=\"_blank\">Warlord Goretooth</a>, the following inhabitants of <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> must be destroyed:<br><br>The rotund menace, <a href=\"https://www.wowhead.com/classic/npc=9196/highlord-omokk\" rel=\"noopener noreferrer\" target=\"_blank\">Highlord Omokk</a>.<br><br>The cruel and ruthless troll, <a href=\"https://www.wowhead.com/classic/npc=9237/war-master-voone\" rel=\"noopener noreferrer\" target=\"_blank\">War Master Voone</a>.<br><br><a href=\"https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak\" rel=\"noopener noreferrer\" target=\"_blank\">Overlord Wyrmthalak</a>, taskmaster of the lesser city.<br><br>You will also be required to return any important documents that you may find.<br><br>Succeed and be honored.<br><br>Fail and be forgotten.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 9568,
+            "name": "Overlord Wyrmthalak",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak"
+          },
+          {
+            "type": "npc",
+            "id": 9196,
+            "name": "Highlord Omokk",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9196/highlord-omokk"
+          },
+          {
+            "type": "npc",
+            "id": 9237,
+            "name": "War Master Voone",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=9237/war-master-voone"
+          },
+          {
+            "type": "item",
+            "id": 12562,
+            "name": "Important Blackrock Documents",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12562/important-blackrock-documents",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -37486,6 +41879,7 @@ const DUNGEONS = [
         "objective": "Speak with Eitrigg in <a href=\"https://www.wowhead.com/classic/zone=1637/orgrimmar\" rel=\"noopener noreferrer\" target=\"_blank\">Orgrimmar</a>. When you have discussed matters with Eitrigg, seek council from <a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a>.<br><br>You recall having seen Eitrigg in <a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a>'s chamber.",
         "description": "Rend lives?<br><br>Impossible!<br><br>It had been thought that Rend was slain decades ago.<br><br>Seek out the wisdom of Eitrigg. None know the workings of the Blackrock better than he and if what is written here bares truth, Eitrigg should be informed. No person should be denied the right of vengeance.<br><br>You will find him in <a href=\"https://www.wowhead.com/classic/zone=1637/orgrimmar\" rel=\"noopener noreferrer\" target=\"_blank\">Orgrimmar</a>.<br><br>Once you have spoken with Eitrigg, confer with the Warchief to find out what he wishes to do about this problem.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -37550,6 +41944,16 @@ const DUNGEONS = [
         "objective": "",
         "description": "Rend dares make such grand claims because of the protection he is afforded by the black flight.<br><br>You, will find a way to pass through the Halls of Ascension. You will then find 'Warchief' Rend Blackhand and you will destroy him - FOR THE HORDE!<br><br>&lt;<a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a> slams a fist down upon his throne.&gt;<br><br>The next time you return to my chambers, you will hold his head high in triumph and then you shall present it to your Warchief. Do this and be honored as a hero of the Horde.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12630,
+            "name": "Head of Rend Blackhand",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=12630/head-of-rend-blackhand",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [
           {
@@ -37633,6 +42037,7 @@ const DUNGEONS = [
         "objective": "Listen to <a href=\"https://www.wowhead.com/classic/npc=4949/thrall\" rel=\"noopener noreferrer\" target=\"_blank\">Thrall</a>.",
         "description": "It is good to see you again. The wind carries with it news from the Eastern Kingdom.<br><br>Sit, listen.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -37697,6 +42102,7 @@ const DUNGEONS = [
         "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=10182/rexxar\" rel=\"noopener noreferrer\" target=\"_blank\">Rexxar</a>. The Warchief has instructed you as to his whereabouts. Search the paths of Desolace, between the Stonetalon Mountains and Feralas.",
         "description": "I have received word from one of my champions that a way into the lair of the dragon may exist. You are to seek him out.<br><br><a href=\"https://www.wowhead.com/classic/npc=10182/rexxar\" rel=\"noopener noreferrer\" target=\"_blank\">Rexxar</a> wanders the desert wasteland of Desolace, traveling between Stonetalon and Feralas. He awaits your arrival.",
         "shareable": true,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -37761,6 +42167,7 @@ const DUNGEONS = [
         "objective": "Deliver <a href=\"https://www.wowhead.com/classic/item=16785/rexxars-testament\" rel=\"noopener noreferrer\" target=\"_blank\">Rexxar's Testament</a> to <a href=\"https://www.wowhead.com/classic/npc=11872/myranda-the-hag\" rel=\"noopener noreferrer\" target=\"_blank\">Myranda the Hag</a> in the Western Plaguelands.",
         "description": "What do you know of illusions? For you see, it is an illusion that you must create in order to circumvent the Black Flight's defenses.<br><br>I know of one that may be willing to assist you in your quest of deception. She has assisted our kind in the past when she has deemed the cause worthy.<br><br>In the Western Plaguelands you will find <a href=\"https://www.wowhead.com/classic/npc=11872/myranda-the-hag\" rel=\"noopener noreferrer\" target=\"_blank\">Myranda the Hag</a>, master illusionist - an exile of the Lordaeron alliance. Travel there and take with you this message.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -37825,6 +42232,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and collect 20 <a href=\"https://www.wowhead.com/classic/item=16786/black-dragonspawn-eye\" rel=\"noopener noreferrer\" target=\"_blank\">Black Dragonspawn Eyes</a>. Return to <a href=\"https://www.wowhead.com/classic/npc=11872/myranda-the-hag\" rel=\"noopener noreferrer\" target=\"_blank\">Myranda the Hag</a> when the task is complete.",
         "description": "So the wishes to become one of the Black Flight, eh?<br><br>The creation of the illusion you require is trivial, but the components required for the divination are quite difficult to obtain. Rexxar and the Warchief have entrusted you with this mission, so Myranda must assume you as capable.<br><br>Travel to the upper citadel of <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and slay enough of the black dragonspawn to fill up one of your packs with their eyes.<br><br>Return to Myranda when you have gathered enough of the reagent.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 16786,
+            "name": "Black Dragonspawn Eye",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/item=16786/black-dragonspawn-eye",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -37889,6 +42306,16 @@ const DUNGEONS = [
         "objective": "Travel to the Wyrmbog in <a href=\"https://www.wowhead.com/classic/zone=15/dustwallow-marsh\" rel=\"noopener noreferrer\" target=\"_blank\">Dustwallow Marsh</a> and seek out <a href=\"https://www.wowhead.com/classic/npc=10321/emberstrife\" rel=\"noopener noreferrer\" target=\"_blank\">Emberstrife</a>'s Den. Once inside, wear the <a href=\"https://www.wowhead.com/classic/item=16787/amulet-of-draconic-subversion\" rel=\"noopener noreferrer\" target=\"_blank\">Amulet of Draconic Subversion</a> and speak with <a href=\"https://www.wowhead.com/classic/npc=10321/emberstrife\" rel=\"noopener noreferrer\" target=\"_blank\">Emberstrife</a>.",
         "description": "I have attuned this medallion with the magic necessary to create and maintain an illusion within the bounds of the den of <a href=\"https://www.wowhead.com/classic/npc=10321/emberstrife\" rel=\"noopener noreferrer\" target=\"_blank\">Emberstrife</a>.<br><br><a href=\"https://www.wowhead.com/classic/npc=10321/emberstrife\" rel=\"noopener noreferrer\" target=\"_blank\">Emberstrife</a> is an ancient drake; an old gatekeeper of Nefarian, burdened with the duty to test those dragonspawn that would ascend to the rank of elite guard to Onyxia.<br><br>Travel to the Wyrmbog of <a href=\"https://www.wowhead.com/classic/zone=15/dustwallow-marsh\" rel=\"noopener noreferrer\" target=\"_blank\">Dustwallow Marsh</a> and enter the lair of <a href=\"https://www.wowhead.com/classic/npc=10321/emberstrife\" rel=\"noopener noreferrer\" target=\"_blank\">Emberstrife</a>. Once there, put on the amulet and follow where your destiny may lead!",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 16787,
+            "name": "Amulet of Draconic Subversion",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=16787/amulet-of-draconic-subversion",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -37953,6 +42380,16 @@ const DUNGEONS = [
         "objective": "Guarding the Caverns of Time in the Tanaris Desert is Chronalis, child of Nozdormu. Destroy him and return his skull to <a href=\"https://www.wowhead.com/classic/npc=10321/emberstrife\" rel=\"noopener noreferrer\" target=\"_blank\">Emberstrife</a>.",
         "description": "The time watchers, children of Nozdormu - Lord of the Centuriesss...<br><br>It is three that guard the Caverns of Time, but only one that holds the interests of the Black Flight: The Time Shifter, Chronalis, favored drakeling of Nozdormu.<br><br>Ssstrike at this champion, a blow to make even the stoic sands of time weep. Return to me with his skull.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 16871,
+            "name": "The Skull of Chronalis",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=16871/the-skull-of-chronalis",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -38012,6 +42449,16 @@ const DUNGEONS = [
         "objective": "You must find the blue dragonflight drake champion, Scryer, and slay him. Pry his skull from his corpse and return it to <a href=\"https://www.wowhead.com/classic/npc=10321/emberstrife\" rel=\"noopener noreferrer\" target=\"_blank\">Emberstrife</a>.<br><br>You know that Scryer can be found in Winterspring.",
         "description": "We are Deathwing's children, whelp. Our dominance over the lesser Aspects must be enforced.<br><br>If you are truly worthy of ascension, the lesser dragonflight will wilt in your presence.<br><br>Find their champions and lay waste to them in the name of our Father!<br><br>Travel to Winterspring and track down the mighty blue drake, Scryer. Crush him and any of the Blue Flight that stand in your path. Tear out his skull and return it to me.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 16869,
+            "name": "The Skull of Scryer",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=16869/the-skull-of-scryer",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -38071,6 +42518,16 @@ const DUNGEONS = [
         "objective": "Destroy the drake champion of the Green Flight, Somnus. Take his skull and return it to <a href=\"https://www.wowhead.com/classic/npc=10321/emberstrife\" rel=\"noopener noreferrer\" target=\"_blank\">Emberstrife</a>.",
         "description": "Just as our Father crushes the Aspects themselves, so too must we strive to bring chaos and destruction to their children.<br><br>You must test your battle prowess against the sleepless dreamers: The children of the Green Flight.<br><br>Travel to the Swamp of Sorrows and track down Somnus, drake champion of the Green Flight. Let flow your hatred; dominate the insect... Return to me with his skull...",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 16870,
+            "name": "The Skull of Somnus",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=16870/the-skull-of-somnus",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -38130,6 +42587,16 @@ const DUNGEONS = [
         "objective": "Travel to Grim Batol and track down Axtroz, drake champion of the Red Flight. Destroy him and take his skull. Return the skull to <a href=\"https://www.wowhead.com/classic/npc=10321/emberstrife\" rel=\"noopener noreferrer\" target=\"_blank\">Emberstrife</a>.",
         "description": "It was over the mountains of Grim Batol that our Father raged against the combined might of the Aspects. The cowardly act of the betrayer, Alexstrasza, bought the other Aspects enough time to escape from Father's wrath.<br><br>Sssuch a shameful act...<br><br>The Red Flight now guards Grim Batol, their lieutenant, Axtroz, must be destroyed. Return <a href=\"https://www.wowhead.com/classic/item=16872/the-skull-of-axtroz\" rel=\"noopener noreferrer\" target=\"_blank\">the skull of Axtroz</a> to me. For Father, whelp!",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 16872,
+            "name": "The Skull of Axtroz",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=16872/the-skull-of-axtroz",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -38194,6 +42661,7 @@ const DUNGEONS = [
         "objective": "It would appear as if the charade is over. You know that the Amulet of Draconic Subversion that Myranda the Hag created for you will not function inside Blackrock Spire. Perhaps you should find <a href=\"https://www.wowhead.com/classic/npc=10182/rexxar\" rel=\"noopener noreferrer\" target=\"_blank\">Rexxar</a> and explain your predicament. Show him the <a href=\"https://www.wowhead.com/classic/item=16888/dull-drakefire-amulet\" rel=\"noopener noreferrer\" target=\"_blank\">Dull Drakefire Amulet</a>. Hopefully he will know what to do next.",
         "description": "From the skulls of our enemies is shaped a medallion. You know this medallion, yesss? You have no doubt seen it worn by your elders.<br><br>Take it, whelp. Return to the Spire and present it to General Drakkisath. The General will place the final enchantment upon the medallion, attuning the trinket to your spirit.<br><br>You will wear the finished medallion as a badge of honor, symbolizing your ascension to one of our most guarded ranks: Guardian to the brood mother.<br><br>Go!",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -38258,6 +42726,16 @@ const DUNGEONS = [
         "objective": "Travel to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and slay General Drakkisath. Gather his blood and return it to <a href=\"https://www.wowhead.com/classic/npc=10182/rexxar\" rel=\"noopener noreferrer\" target=\"_blank\">Rexxar</a>.",
         "description": "You will pay the General a visit, yes, but not as one of the Black Dragonflight.<br><br>You see, a ceremony is merely another term for blood letting to the Black Flight.<br><br>The latent amulet merely needs the blood of the General in order to become active. One of their crude failsafe mechanisms.<br><br>Return to <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a> and destroy Drakkisath. Bring his blood back here and I shall activate the key to Onyxia's lair.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 16663,
+            "name": "Blood of the Black Dragon Champion",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=16663/blood-of-the-black-dragon-champion",
+            "quality": 1
+          }
+        ],
         "rewards": [
           {
             "id": 16309,
@@ -38329,6 +42807,7 @@ const DUNGEONS = [
         "objective": "Travel to Winterspring and find <a href=\"https://www.wowhead.com/classic/npc=10929/haleh\" rel=\"noopener noreferrer\" target=\"_blank\">Haleh</a>. Give her <a href=\"https://www.wowhead.com/classic/item=12923/awbees-scale\" rel=\"noopener noreferrer\" target=\"_blank\">Awbee's scale</a>.",
         "description": "Travel to Kalimdor. Our flight makes its home in the frigid landscape of Winterspring. Once you reach Winterspring, find the caves of Mazthoril.<br><br>Upon the icy floors of Mazthoril you will find cobalt runes. Hold one of my scales and stand upon a rune and you shall be transported to <a href=\"https://www.wowhead.com/classic/npc=10929/haleh\" rel=\"noopener noreferrer\" target=\"_blank\">Haleh</a>, our matron protectorate.<br><br>Give her the scale so that she may scry what it is I have seen and felt, here in this doomed place.",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -38429,8 +42908,9 @@ const DUNGEONS = [
         "xp": 6600,
         "money": 39600,
         "objective": "Talk to <a href=\"https://www.wowhead.com/classic/npc=10637/malyfous-darkhammer\" rel=\"noopener noreferrer\" target=\"_blank\">Malyfous Darkhammer</a> in Everlook.",
-        "description": "You'll find <a href=\"https://www.wowhead.com/classic/npc=10637/malyfous-darkhammer\" rel=\"noopener noreferrer\" target=\"_blank\">Malyfous Darkhammer</a> in Everlook. Tell him that 'Pip is A-OK' and that the suit works perfectly.<br><br>Then hand him this:<br><br><br><br>I snatched it from the beast's innards during my 'vacation.'<br><br>I bet Malyfous could give you a fairly accurate assessment of what he can do with parts from a monster like this!<br><br>Oh, I suppose you don't know where Everlook is, do you? To Winterspring!",
+        "description": "You'll find <a href=\"https://www.wowhead.com/classic/npc=10637/malyfous-darkhammer\" rel=\"noopener noreferrer\" target=\"_blank\">Malyfous Darkhammer</a> in Everlook. Tell him that 'Pip is A-OK' and that the suit works perfectly.<br><br>Then hand him this:<br><br>I snatched it from the beast's innards during my 'vacation.'<br><br>I bet Malyfous could give you a fairly accurate assessment of what he can do with parts from a monster like this!<br><br>Oh, I suppose you don't know where Everlook is, do you? To Winterspring!",
         "shareable": false,
+        "requirements": [],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -38505,6 +42985,7 @@ const DUNGEONS = [
         "objective": "Use the <a href=\"https://www.wowhead.com/classic/item=12286/eggscilloscope-prototype\" rel=\"noopener noreferrer\" target=\"_blank\">Eggscilloscope Prototype</a> on an egg in the Rookery.",
         "description": "I've been working hard on a new device, the <a href=\"https://www.wowhead.com/classic/item=12144/eggscilloscope\" rel=\"noopener noreferrer\" target=\"_blank\">eggscilloscope</a>! It's designed to project a burst of cold energy at the egg of a black dragon... and freeze it solid! Can you test it for me?<br><br>I heard that high up in <a href=\"https://www.wowhead.com/classic/zone=1583/blackrock-spire\" rel=\"noopener noreferrer\" target=\"_blank\">Blackrock Spire</a>, the dragons have a rookery where they hatch their eggs. That's where you'll have to go to test the <a href=\"https://www.wowhead.com/classic/item=12144/eggscilloscope\" rel=\"noopener noreferrer\" target=\"_blank\">eggscilloscope</a>, and then let me know how it worked!<br><br>And don't worry. Frozen dragon eggs should be harmless. It's the unfrozen ones you have to worry about!",
         "shareable": false,
+        "requirements": [],
         "rewards": [
           {
             "id": 12144,
@@ -38565,6 +43046,16 @@ const DUNGEONS = [
             "objective": "Bring 8 <a href=\"https://www.wowhead.com/classic/item=12283/broodling-essence\" rel=\"noopener noreferrer\" target=\"_blank\">Broodling Essence</a> and the <a href=\"https://www.wowhead.com/classic/item=12284/draco-incarcinatrix-900\" rel=\"noopener noreferrer\" target=\"_blank\">Draco-Incarcinatrix 900</a> to <a href=\"https://www.wowhead.com/classic/npc=10267/tinkee-steamboil\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkee Steamboil</a> at the Flame Crest in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a>.",
             "description": "I have been studying the dragonkin of the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> for weeks, and I think I've finally had a breakthrough! I created a device--I call it the Draco Incarcinatrix 900. It can capture the essence of dragon whelp broodlings!<br><br>Or, at least I think it can.<br><br>Here, take the device and zap a broodling in the <a href=\"https://www.wowhead.com/classic/zone=46/burning-steppes\" rel=\"noopener noreferrer\" target=\"_blank\">Burning Steppes</a> with it. While it's under the device's effects, defeat the broodling and its essence should be released.<br><br>If it is, then splendid! Bring me back samples so I can study them!",
             "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12283,
+                "name": "Broodling Essence",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/item=12283/broodling-essence",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -38628,6 +43119,7 @@ const DUNGEONS = [
             "objective": "Give <a href=\"https://www.wowhead.com/classic/item=12438/tinkees-letter\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkee's Letter</a> to <a href=\"https://www.wowhead.com/classic/npc=10468/felnok-steelspring\" rel=\"noopener noreferrer\" target=\"_blank\">Felnok Steelspring</a>.",
             "description": "I have another favor to ask of you.<br><br>My initial study of the essence you collected shows that it might be possible to freeze dragon whelp eggs and preserve them! I want to test this theory, but first I need specially made engineering components. My colleague, <a href=\"https://www.wowhead.com/classic/npc=10468/felnok-steelspring\" rel=\"noopener noreferrer\" target=\"_blank\">Felnok Steelspring</a>, can make them.<br><br>Here, take this letter to Felnok. It tells him what I need. You'll find Felnok in Winterspring, in the town of Everlook.",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -38691,6 +43183,16 @@ const DUNGEONS = [
             "objective": "Bring 8 <a href=\"https://www.wowhead.com/classic/item=12444/uncracked-chillwind-horn\" rel=\"noopener noreferrer\" target=\"_blank\">Uncracked Chillwind Horns</a> to <a href=\"https://www.wowhead.com/classic/npc=10468/felnok-steelspring\" rel=\"noopener noreferrer\" target=\"_blank\">Felnok Steelspring</a>.",
             "description": "I have most of what Tinkee needs, but I'm missing one important component, and that's chillwind horns. The horns of the chillwind chimaera in <a href=\"https://www.wowhead.com/classic/zone=618/winterspring\" rel=\"noopener noreferrer\" target=\"_blank\">Winterspring</a> are a concentrated source of cold, but only pristine, uncracked horns will do! I'll need a supply of those to complete Tinkee's order.<br><br>Bring me the <a href=\"https://www.wowhead.com/classic/item=12444/uncracked-chillwind-horn\" rel=\"noopener noreferrer\" target=\"_blank\">uncracked chillwind horns</a>, and I'll prepare a package for Tinkee.",
             "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12444,
+                "name": "Uncracked Chillwind Horn",
+                "quantity": 8,
+                "url": "https://www.wowhead.com/classic/item=12444/uncracked-chillwind-horn",
+                "quality": 1
+              }
+            ],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -38754,6 +43256,7 @@ const DUNGEONS = [
             "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=12445/felnoks-package\" rel=\"noopener noreferrer\" target=\"_blank\">Felnok's Package</a> to <a href=\"https://www.wowhead.com/classic/npc=10267/tinkee-steamboil\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkee Steamboil</a> in the Burning Steppes.",
             "description": "Ok, everything is prepared and packed and ready for transport! Good luck in your journey, and make sure you tell Tinkee that she owes me!",
             "shareable": false,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [
               {
@@ -38830,6 +43333,7 @@ const DUNGEONS = [
             "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=10267/tinkee-steamboil\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkee Steamboil</a>.",
             "description": "Hi. Remember <a href=\"https://www.wowhead.com/classic/npc=10267/tinkee-steamboil\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkee Steamboil</a>? Well, she remembers you! She sent me a message to keep an eye out for you, because... she needs your help again. I think it has something to do with her studies on dragons.<br><br>You should speak to her in the Burning Steppes, at the Flame Crest.",
             "shareable": true,
+            "requirements": [],
             "rewards": [],
             "rewardChoices": [],
             "requiredClasses": [],
@@ -38943,6 +43447,16 @@ const DUNGEONS = [
         "objective": "Use the <a href=\"https://www.wowhead.com/classic/item=17310/aspect-of-neptulon\" rel=\"noopener noreferrer\" target=\"_blank\">Aspect of Neptulon</a> on poisoned elementals of Eastern Plaguelands. Bring 12 <a href=\"https://www.wowhead.com/classic/item=17309/discordant-bracers\" rel=\"noopener noreferrer\" target=\"_blank\">Discordant Bracers</a> and the <a href=\"https://www.wowhead.com/classic/item=17310/aspect-of-neptulon\" rel=\"noopener noreferrer\" target=\"_blank\">Aspect of Neptulon</a> to <a href=\"https://www.wowhead.com/classic/npc=13278/duke-hydraxis\" rel=\"noopener noreferrer\" target=\"_blank\">Duke Hydraxis</a> in <a href=\"https://www.wowhead.com/classic/zone=16/azshara\" rel=\"noopener noreferrer\" target=\"_blank\">Azshara</a>.",
         "description": "A force of elemental scouts was sent to the eastern plaguelands of Lordaeron, and the disease of that place twisted and infected them. The Waterlords cannot allow this affront to our purity!<br><br>Take this vial. In it is a quantity of one <a href=\"https://www.wowhead.com/classic/item=17310/aspect-of-neptulon\" rel=\"noopener noreferrer\" target=\"_blank\">aspect of Neptulon</a>. If used on the plagued elementals it will fight the poison within their bodies and cure them! But their inner conflict will drive them into a surging madness.<br><br>Defeat the discordant surges and bring me their bracers of binding.",
         "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 17309,
+            "name": "Discordant Bracers",
+            "quantity": 12,
+            "url": "https://www.wowhead.com/classic/item=17309/discordant-bracers",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -39003,6 +43517,22 @@ const DUNGEONS = [
         "objective": "Kill 15 <a href=\"https://www.wowhead.com/classic/npc=11744/dust-stormer\" rel=\"noopener noreferrer\" target=\"_blank\">Dust Stormers</a> and 15 Desert Rumbers and then return to <a href=\"https://www.wowhead.com/classic/npc=13278/duke-hydraxis\" rel=\"noopener noreferrer\" target=\"_blank\">Duke Hydraxis</a> in <a href=\"https://www.wowhead.com/classic/zone=16/azshara\" rel=\"noopener noreferrer\" target=\"_blank\">Azshara</a>.",
         "description": "We, the elementals of water, wage war with those beings of the lesser elements. If you are truly our ally in this conflict, then show me your conviction!<br><br>Far to the south, in the desert land of Silithus, the servants of air and earth scurry in a corner of rock named the Crystal Vale. They protect items of power from smaller beings, mortals, and although I do not know why they do this, I wish to foil their efforts.<br><br>Go to the Crystal Vale in Silithus and defeat our enemies, then return to me.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 11744,
+            "name": "Dust Stormer",
+            "quantity": 15,
+            "url": "https://www.wowhead.com/classic/npc=11744/dust-stormer"
+          },
+          {
+            "type": "npc",
+            "id": 11746,
+            "name": "Desert Rumbler",
+            "quantity": 15,
+            "url": "https://www.wowhead.com/classic/npc=11746/desert-rumbler"
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],
@@ -39063,6 +43593,16 @@ const DUNGEONS = [
         "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=17322/eye-of-the-emberseer\" rel=\"noopener noreferrer\" target=\"_blank\">Eye of the Emberseer</a> to <a href=\"https://www.wowhead.com/classic/npc=13278/duke-hydraxis\" rel=\"noopener noreferrer\" target=\"_blank\">Duke Hydraxis</a> in <a href=\"https://www.wowhead.com/classic/zone=16/azshara\" rel=\"noopener noreferrer\" target=\"_blank\">Azshara</a>.",
         "description": "You have shown me that you can defeat our enemies and perform missions to further the cause of the Waterlords. But until now you have only faced lesser foes... if pitted against a powerful enemy, can you prevail?<br><br>That is your new task.<br><br>High up in Blackrock Spire the orcs have captured a servant of fire, the Pyroguard Emberseer. Find his place of imprisonment, slay his captors, and then slay the emberseer. Bring me his eye and it will show me your worth.",
         "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 17322,
+            "name": "Eye of the Emberseer",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=17322/eye-of-the-emberseer",
+            "quality": 1
+          }
+        ],
         "rewards": [],
         "rewardChoices": [],
         "requiredClasses": [],

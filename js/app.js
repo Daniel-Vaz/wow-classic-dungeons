@@ -4164,19 +4164,41 @@ function buildQuestModalBadges(quest, dungeon) {
   return out.join('');
 }
 
+// Collapse 3+ consecutive <br> down to 2 (max one blank line between paragraphs).
+function normalizeQuestText(html) {
+  return html ? html.replace(/(<br>){3,}/g, '<br><br>') : html;
+}
+
 function buildQuestModalBody(quest, dungeon) {
   // ── Objective + quest flavor text (links already point at wowhead) ──
   const objectiveHtml = quest.objective
     ? `<div class="quest-modal-section qm-objective">
          <div class="quest-modal-section-title"><span class="qm-ico">🎯</span> Objective</div>
-         <div class="qm-objective-text">${quest.objective}</div>
+         <div class="qm-objective-text">${normalizeQuestText(quest.objective)}</div>
        </div>`
     : '';
 
   const descriptionHtml = quest.description
     ? `<div class="quest-modal-section qm-description">
          <div class="quest-modal-section-title"><span class="qm-ico">📜</span> Quest Text</div>
-         <div class="qm-description-text">${quest.description}</div>
+         <div class="qm-description-text">${normalizeQuestText(quest.description)}</div>
+       </div>`
+    : '';
+
+  // ── Quest requirements (kill/collect objectives from the icon-list) ──
+  const reqs = quest.requirements;
+  const requirementsHtml = (Array.isArray(reqs) && reqs.length)
+    ? `<div class="quest-modal-section qm-requirements">
+         <div class="quest-modal-section-title"><span class="qm-ico">⚔️</span> Requirements</div>
+         <div class="qm-req-list">
+           ${reqs.map(req => {
+             const qClass = req.type === 'item' ? ` q${Math.min(req.quality || 1, 5)}` : '';
+             const qty = req.quantity > 1 ? `<span class="qm-req-qty"> ×${req.quantity}</span>` : '';
+             return `<div class="qm-req-entry">
+               <a href="${req.url}" target="_blank" rel="noopener noreferrer" class="qm-req-link${qClass}" data-wh-icon-size="medium">${escapeHtml(req.name)}</a>${qty}
+             </div>`;
+           }).join('')}
+         </div>
        </div>`
     : '';
 
@@ -4255,6 +4277,7 @@ function buildQuestModalBody(quest, dungeon) {
     <div class="quest-modal-grid">
       <div class="quest-modal-main">
         ${objectiveHtml}
+        ${requirementsHtml}
         ${descriptionHtml}
         ${giversHtml}
       </div>

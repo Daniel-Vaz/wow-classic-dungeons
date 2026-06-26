@@ -4569,6 +4569,40 @@ body.scrolled .controls-logo.cinematic-returning {
 .qm-objective-text a.q4,  .qm-description-text a.q4 { color: var(--purple-epic);    border-bottom-color: rgba(163, 53, 238, 0.4); }
 .qm-objective-text a.q5,  .qm-description-text a.q5 { color: var(--orange-legendary); border-bottom-color: rgba(255, 128, 0, 0.4); }
 
+/* ── Requirements (kill/collect objectives) ── */
+.qm-req-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.qm-req-entry {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+}
+.qm-req-link {
+  color: var(--gold-light);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--gold-dim);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.qm-req-link:hover {
+  color: var(--text-bright);
+  border-bottom-color: var(--gold);
+}
+.qm-req-link.q1 { color: var(--white-common); }
+.qm-req-link.q2 { color: var(--green-uncommon); border-bottom-color: rgba(30, 255, 0, 0.35); }
+.qm-req-link.q3 { color: var(--blue-rare);      border-bottom-color: rgba(74, 144, 217, 0.4); }
+.qm-req-link.q4 { color: var(--purple-epic);    border-bottom-color: rgba(163, 53, 238, 0.4); }
+.qm-req-link.q5 { color: var(--orange-legendary); border-bottom-color: rgba(255, 128, 0, 0.4); }
+.qm-req-qty {
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
 /* ── Locations / givers ── */
 .qm-giver-row {
   display: flex;
