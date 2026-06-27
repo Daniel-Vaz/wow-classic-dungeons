@@ -83,12 +83,23 @@ const KEY_ENTITIES = {
   "quest=4742": { name: "Seal of Ascension", slug: "seal-of-ascension" },
 };
 
-// method → short label shown on the card/modal "how you get it" chip.
+// method → short label + icon shown on the card/modal "how you get it" chip.
 const KEY_METHODS = {
-  drop:      { label: 'Dungeon Drop' },
-  craft:     { label: 'Forged Item' },
-  questline: { label: 'Quest Chain' },
-  quest:     { label: 'Quest Reward' },
+  drop:      { label: 'Dungeon Drop', icon: 'drops.png' },
+  craft:     { label: 'Forged Item',  icon: 'forging.png' },
+  questline: { label: 'Quest Chain',  icon: 'questchain.png' },
+  quest:     { label: 'Quest Reward', icon: 'present.png' },
+};
+
+// Per-key map focus: when a key guide references a location ({zone=ID}), open
+// its map popout already switched to the most relevant sub-zone (level). Keyed
+// by key id → { "zone=ID": "Sub-zone label" }. The label is matched against the
+// zone's MULTI_LEVEL_MAPS entry at click time, so it survives map reordering and
+// falls back to the default level if the label ever stops matching.
+const KEY_MAP_FOCUS = {
+  sm:   { "zone=796":  "Library" },           // Scarlet Key opens the Armory/Cathedral, looted in the Library
+  brd:  { "zone=1584": "Shadowforge City" },  // Shadowforge Key unlocks the Shadowforge City doors
+  ubrs: { "zone=1583": "Upper – Dragonspire Hall" }, // Seal of Ascension gates Upper Spire
 };
 
 // Keys that also matter to a dungeon other than the one they primarily belong
@@ -105,7 +116,7 @@ const DUNGEON_KEYS = {
     method: 'drop',
     tagline: "Opens the Armory and Cathedral wings of Scarlet Monastery — and the Scarlet Hold side door in Stratholme.",
     unlocks: [
-      "The <strong>Armory</strong> and <strong>Cathedral</strong> wings of {zone=796}",
+      "The {zone=796#Armory} and {zone=796#Cathedral} wings of Scarlet Monastery",
       "The path to the Scarlet Hold on the Living side of {zone=2017}",
     ],
     source: "Looted from a chest behind the final boss of the Library wing.",
