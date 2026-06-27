@@ -6,6 +6,7 @@ const DUNGEONS = [
     "name": "Ragefire Chasm",
     "abbr": "RFC",
     "icon": "🔥",
+    "iconFile": "dung_rfc.png",
     "loadingScreen": "assets/loading-screens/800297.jpg",
     "faction": "Horde",
     "levels": "13–18",
@@ -646,6 +647,7 @@ const DUNGEONS = [
     "name": "Wailing Caverns",
     "abbr": "WC",
     "icon": "🐍",
+    "iconFile": "dung_wc.png",
     "loadingScreen": "assets/loading-screens/800301.jpg",
     "faction": "Horde",
     "levels": "15–25",
@@ -1737,6 +1739,7 @@ const DUNGEONS = [
     "name": "The Deadmines",
     "abbr": "DM",
     "icon": "⚓",
+    "iconFile": "dung_dm.png",
     "loadingScreen": "assets/loading-screens/800307.jpg",
     "faction": "Alliance",
     "levels": "18–23",
@@ -3330,6 +3333,7 @@ const DUNGEONS = [
     "name": "Shadowfang Keep",
     "abbr": "SFK",
     "icon": "🐺",
+    "iconFile": "dung_sfk.png",
     "loadingScreen": "assets/loading-screens/800323.jpg",
     "faction": "Horde",
     "levels": "22–30",
@@ -4019,6 +4023,7 @@ const DUNGEONS = [
     "name": "Blackfathom Deeps",
     "abbr": "BFD",
     "icon": "🌊",
+    "iconFile": "dung_bfd.png",
     "loadingScreen": "assets/loading-screens/800324.jpg",
     "faction": "Both",
     "levels": "24–32",
@@ -4996,6 +5001,7 @@ const DUNGEONS = [
     "name": "The Stockade",
     "abbr": "Stocks",
     "icon": "⛓",
+    "iconFile": "dung_stocks.png",
     "loadingScreen": "assets/loading-screens/800325.jpg",
     "faction": "Alliance",
     "levels": "22–30",
@@ -5752,6 +5758,7 @@ const DUNGEONS = [
     "name": "Gnomeregan",
     "abbr": "Gnomer",
     "icon": "⚙️",
+    "iconFile": "dung_gnomer.png",
     "loadingScreen": "assets/loading-screens/800327.jpg",
     "faction": "Alliance",
     "levels": "29–38",
@@ -7396,6 +7403,7 @@ const DUNGEONS = [
     "name": "Razorfen Kraul",
     "abbr": "RFK",
     "icon": "🐗",
+    "iconFile": "dung_rfk.png",
     "loadingScreen": "assets/loading-screens/800328.jpg",
     "faction": "Both",
     "levels": "30–40",
@@ -8079,6 +8087,7 @@ const DUNGEONS = [
     "name": "Scarlet Monastery",
     "abbr": "SM",
     "icon": "⛪",
+    "iconFile": "dung_sm.png",
     "loadingScreen": "assets/loading-screens/800330.jpg",
     "faction": "Both",
     "levels": "26–45",
@@ -9833,6 +9842,7 @@ const DUNGEONS = [
     "name": "Razorfen Downs",
     "abbr": "RFD",
     "icon": "💀",
+    "iconFile": "dung_rfd.png",
     "loadingScreen": "assets/loading-screens/800374.jpg",
     "faction": "Both",
     "levels": "40–50",
@@ -10381,6 +10391,7 @@ const DUNGEONS = [
     "name": "Uldaman",
     "abbr": "Ulda",
     "icon": "🪨",
+    "iconFile": "dung_ulda.png",
     "loadingScreen": "assets/loading-screens/800375.jpg",
     "faction": "Both",
     "levels": "42–52",
@@ -14358,6 +14369,7 @@ const DUNGEONS = [
     "name": "Zul'Farrak",
     "abbr": "ZF",
     "icon": "🏺",
+    "iconFile": "dung_zf.png",
     "loadingScreen": "assets/loading-screens/800377.jpg",
     "faction": "Both",
     "levels": "44–54",
@@ -15875,6 +15887,7 @@ const DUNGEONS = [
     "name": "Maraudon",
     "abbr": "Mara",
     "icon": "🌿",
+    "iconFile": "dung_mara.png",
     "loadingScreen": "assets/loading-screens/800379.jpg",
     "faction": "Both",
     "levels": "46–55",
@@ -16810,6 +16823,7 @@ const DUNGEONS = [
     "name": "Sunken Temple",
     "abbr": "ST",
     "icon": "🐉",
+    "iconFile": "dung_st.png",
     "loadingScreen": "assets/loading-screens/800382.jpg",
     "faction": "Both",
     "levels": "50–60",
@@ -22200,6 +22214,7 @@ const DUNGEONS = [
     "name": "Blackrock Depths",
     "abbr": "BRD",
     "icon": "🌋",
+    "iconFile": "dung_brd.png",
     "loadingScreen": "assets/loading-screens/800386.jpg",
     "faction": "Both",
     "levels": "52–60",
@@ -29114,6 +29129,7 @@ const DUNGEONS = [
     "name": "Dire Maul",
     "abbr": "DireM",
     "icon": "🌳",
+    "iconFile": "dung_direm.png",
     "loadingScreen": "assets/loading-screens/800395.jpg",
     "faction": "Both",
     "levels": "58–60",
@@ -31862,6 +31878,7 @@ const DUNGEONS = [
     "name": "Lower Blackrock Spire",
     "abbr": "LBRS",
     "icon": "🐲",
+    "iconFile": "dung_lbrs.png",
     "loadingScreen": "assets/loading-screens/800389.jpg",
     "faction": "Both",
     "levels": "55–60",
@@ -36862,6 +36879,1562 @@ const DUNGEONS = [
         }
       },
       {
+        "id": 5505,
+        "name": "The Key to Scholomance",
+        "questLink": "https://www.wowhead.com/classic/quest=5505/the-key-to-scholomance",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Alchemist Arbington",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Western Plaguelands",
+        "startNpcs": [
+          {
+            "name": "Alchemist Arbington",
+            "link": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "endNpc": "Alchemist Arbington",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Western Plaguelands",
+        "endNpcs": [
+          {
+            "name": "Alchemist Arbington",
+            "link": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+            "faction": "",
+            "type": "npc",
+            "loc": "Western Plaguelands"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Alliance",
+        "xp": 9950,
+        "money": 59700,
+        "objective": "",
+        "description": "",
+        "shareable": true,
+        "requirements": [],
+        "rewards": [
+          {
+            "id": 13704,
+            "name": "Skeleton Key",
+            "url": "https://www.wowhead.com/classic/item=13704/skeleton-key",
+            "quality": 1,
+            "quantity": 1
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [
+          {
+            "or": [
+              {
+                "id": 5066,
+                "name": "A Call to Arms: The Plaguelands!",
+                "questLink": "https://www.wowhead.com/classic/quest=5066/a-call-to-arms-the-plaguelands",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Crier Goodman",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=2198/crier-goodman",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Stormwind City",
+                "startNpcs": [
+                  {
+                    "name": "Crier Goodman",
+                    "link": "https://www.wowhead.com/classic/npc=2198/crier-goodman",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Stormwind City"
+                  }
+                ],
+                "endNpc": "Commander Ashlam Valorfist",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Western Plaguelands",
+                "endNpcs": [
+                  {
+                    "name": "Commander Ashlam Valorfist",
+                    "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Western Plaguelands"
+                  }
+                ],
+                "levels": "50",
+                "minLevel": 50,
+                "faction": "Alliance",
+                "xp": 470,
+                "money": 270,
+                "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Ashlam Valorfist</a>. His base camp is located at Chillwind Camp, north of the Alterac Mountains.",
+                "description": "Hear ye, hear ye! All heroes are called upon to heed these words!<br><br>A call to arms has been issued by the Kingdom of Stormwind! All able bodied individuals are entreated to take up arms against the dark threat of the Scourge in the northern lands of the Eastern Kingdoms! Rumors fly of new threats rising from the ruins of the Plaguelands!<br><br>Heroes of the realm - seek out <a href=\"https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Ashlam Valorfist</a> who has set up his base camp in Chillwind Camp, north of the Alterac Mountains!",
+                "shareable": true,
+                "requirements": [],
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              },
+              {
+                "id": 5090,
+                "name": "A Call to Arms: The Plaguelands!",
+                "questLink": "https://www.wowhead.com/classic/quest=5090/a-call-to-arms-the-plaguelands",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Courier Hammerfall",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=10877/courier-hammerfall",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Ironforge",
+                "startNpcs": [
+                  {
+                    "name": "Courier Hammerfall",
+                    "link": "https://www.wowhead.com/classic/npc=10877/courier-hammerfall",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Ironforge"
+                  }
+                ],
+                "endNpc": "Commander Ashlam Valorfist",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Western Plaguelands",
+                "endNpcs": [
+                  {
+                    "name": "Commander Ashlam Valorfist",
+                    "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Western Plaguelands"
+                  }
+                ],
+                "levels": "50",
+                "minLevel": 50,
+                "faction": "Alliance",
+                "xp": 470,
+                "money": 270,
+                "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Ashlam Valorfist</a>. His base camp is located at Chillwind Camp, north of the Alterac Mountains.",
+                "description": "Hear ye, hear ye! All heroes are called upon to heed these words!<br><br>A call to arms has been issued by the Kingdom of Stormwind! All able bodied individuals are entreated to take up arms against the dark threat of the Scourge in the northern lands of the Eastern Kingdoms! Rumors fly of new threats rising from the ruins of the Plaguelands!<br><br>Heroes of the realm - seek out <a href=\"https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Ashlam Valorfist</a> who has set up his base camp in Chillwind Camp, north of the Alterac Mountains!",
+                "shareable": true,
+                "requirements": [],
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              },
+              {
+                "id": 5091,
+                "name": "A Call to Arms: The Plaguelands!",
+                "questLink": "https://www.wowhead.com/classic/quest=5091/a-call-to-arms-the-plaguelands",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Herald Moonstalker",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=10878/herald-moonstalker",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Darnassus",
+                "startNpcs": [
+                  {
+                    "name": "Herald Moonstalker",
+                    "link": "https://www.wowhead.com/classic/npc=10878/herald-moonstalker",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Darnassus"
+                  }
+                ],
+                "endNpc": "Commander Ashlam Valorfist",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Western Plaguelands",
+                "endNpcs": [
+                  {
+                    "name": "Commander Ashlam Valorfist",
+                    "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Western Plaguelands"
+                  }
+                ],
+                "levels": "50",
+                "minLevel": 50,
+                "faction": "Alliance",
+                "xp": 470,
+                "money": 270,
+                "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Ashlam Valorfist</a>. His base camp is located at Chillwind Camp, north of the Alterac Mountains.",
+                "description": "Hear ye, hear ye! All heroes are called upon to heed these words!<br><br>A call to arms has been issued by the Kingdom of Stormwind! All able bodied individuals are entreated to take up arms against the dark threat of the Scourge in the northern lands of the Eastern Kingdoms! Rumors fly of new threats rising from the ruins of the Plaguelands!<br><br>Heroes of the realm - seek out <a href=\"https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Ashlam Valorfist</a> who has set up his base camp in Chillwind Camp, north of the Alterac Mountains!",
+                "shareable": true,
+                "requirements": [],
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              }
+            ],
+            "relation": "requires"
+          },
+          {
+            "id": 5092,
+            "name": "Clear the Way",
+            "questLink": "https://www.wowhead.com/classic/quest=5092/clear-the-way",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5066,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Commander Ashlam Valorfist",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Commander Ashlam Valorfist",
+                "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Commander Ashlam Valorfist",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Commander Ashlam Valorfist",
+                "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "levels": "52",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 5100,
+            "money": 7500,
+            "objective": "Kill 10 <a href=\"https://www.wowhead.com/classic/npc=1783/skeletal-flayer\" rel=\"noopener noreferrer\" target=\"_blank\">Skeletal Flayers</a> and 10 <a href=\"https://www.wowhead.com/classic/npc=1791/slavering-ghoul\" rel=\"noopener noreferrer\" target=\"_blank\">Slavering Ghouls</a> in Sorrow Hill.<br><br>Return to <a href=\"https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Ashlam Valorfist</a> at Chillwind Camp, <a href=\"https://www.wowhead.com/classic/zone=28/western-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Western Plaguelands</a>.",
+            "description": "With Andorhal's western and northern roads into the city well fortified, I'm looking to strike at it from the less defended eastern road. The Scourge relies on the buffer of undead that infests Sorrow Hill as a first line of defense. If we are to advance on Andorhal, we will need to do it through Sorrow Hill.<br><br>Your first assignment will be to clear the way through Sorrow Hill. Thin out the skeletons and ghouls that haunt the area; report back to me when this is done!",
+            "shareable": true,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 1783,
+                "name": "Skeletal Flayer",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=1783/skeletal-flayer"
+              },
+              {
+                "type": "npc",
+                "id": 1791,
+                "name": "Slavering Ghoul",
+                "quantity": 10,
+                "url": "https://www.wowhead.com/classic/npc=1791/slavering-ghoul"
+              }
+            ],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "or",
+                "ids": [
+                  5066,
+                  5090,
+                  5091
+                ]
+              }
+            ]
+          },
+          {
+            "id": 5097,
+            "name": "All Along the Watchtowers",
+            "questLink": "https://www.wowhead.com/classic/quest=5097/all-along-the-watchtowers",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5092,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Commander Ashlam Valorfist",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Commander Ashlam Valorfist",
+                "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Commander Ashlam Valorfist",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Commander Ashlam Valorfist",
+                "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "levels": "56",
+            "minLevel": 50,
+            "faction": "Alliance",
+            "xp": 5800,
+            "money": 8500,
+            "objective": "Using the <a href=\"https://www.wowhead.com/classic/item=12815/beacon-torch\" rel=\"noopener noreferrer\" target=\"_blank\">Beacon Torch</a>, mark each tower in Andorhal; you will need to stand in the doorway of the tower to successfully mark it.<br><br>Once all four towers are marked, return the <a href=\"https://www.wowhead.com/classic/item=12815/beacon-torch\" rel=\"noopener noreferrer\" target=\"_blank\">Beacon Torch</a> to <a href=\"https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist\" rel=\"noopener noreferrer\" target=\"_blank\">Commander Ashlam Valorfist</a> in Chillwind Camp, <a href=\"https://www.wowhead.com/classic/zone=28/western-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Western Plaguelands</a>.",
+            "description": "Through the use of a magical device known as a <a href=\"https://www.wowhead.com/classic/item=12815/beacon-torch\" rel=\"noopener noreferrer\" target=\"_blank\">beacon torch</a>, we can mark targets of our choosing for future actions by our troops. To that end, we think the Scourge are using Andorhal's watchtowers as a means to control their troop movements.<br><br>Your mission: breach Andorhal's defenses to plant beacons at all four watchtowers. You'll need to be in the doorway of each tower to plant the beacon; it will then proceed to mark the tower. There are only five charges on the <a href=\"https://www.wowhead.com/classic/item=12815/beacon-torch\" rel=\"noopener noreferrer\" target=\"_blank\">beacon torch</a>, so use them wisely!",
+            "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 10902,
+                "name": "Tower One marked",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10902/tower-one-marked"
+              },
+              {
+                "type": "npc",
+                "id": 10903,
+                "name": "Tower Two marked",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10903/tower-two-marked"
+              },
+              {
+                "type": "npc",
+                "id": 10904,
+                "name": "Tower Three marked",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10904/tower-three-marked"
+              },
+              {
+                "type": "npc",
+                "id": 10905,
+                "name": "Tower Four marked",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10905/tower-four-marked"
+              }
+            ],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "single",
+                "id": 5092
+              }
+            ]
+          },
+          {
+            "id": 5533,
+            "name": "Scholomance",
+            "questLink": "https://www.wowhead.com/classic/quest=5533/scholomance",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5097,
+            "nextQuestId": 5537,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Commander Ashlam Valorfist",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Commander Ashlam Valorfist",
+                "link": "https://www.wowhead.com/classic/npc=10838/commander-ashlam-valorfist",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Alchemist Arbington",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Alchemist Arbington",
+                "link": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "levels": "55",
+            "minLevel": 55,
+            "faction": "Alliance",
+            "xp": 560,
+            "money": 3300,
+            "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=11056/alchemist-arbington\" rel=\"noopener noreferrer\" target=\"_blank\">Alchemist Arbington</a> at Chillwind Point, <a href=\"https://www.wowhead.com/classic/zone=28/western-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Western Plaguelands</a>.",
+            "description": "On the island of Caer Darrow lies Scholomance - a wretched center of Scourge necromancy and evil. Our enemy dwells within, conducting unspeakable acts of depravity on unwitting victims... at least, we surmise as much. A door bars the way, and try as we might no entry is to be had without a proper key.<br><br><a href=\"https://www.wowhead.com/classic/npc=11056/alchemist-arbington\" rel=\"noopener noreferrer\" target=\"_blank\">Alchemist Arbington</a> is well versed on Scholomance, and has an idea how to obtain a key. You have proved your worth to me, and now I entrust this task to you. Speak with him on this matter.",
+            "shareable": true,
+            "requirements": [],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "scholo-5533-scholomance",
+              "index": 1,
+              "total": 5,
+              "name": "Scholomance"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 5097
+              }
+            ]
+          },
+          {
+            "id": 5537,
+            "name": "Skeletal Fragments",
+            "questLink": "https://www.wowhead.com/classic/quest=5537/skeletal-fragments",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5533,
+            "nextQuestId": 5538,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Alchemist Arbington",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Alchemist Arbington",
+                "link": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Alchemist Arbington",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Alchemist Arbington",
+                "link": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "levels": "57",
+            "minLevel": 55,
+            "faction": "Alliance",
+            "xp": 4500,
+            "money": 27000,
+            "objective": "Bring 15 <a href=\"https://www.wowhead.com/classic/item=14619/skeletal-fragments\" rel=\"noopener noreferrer\" target=\"_blank\">Skeletal Fragments</a> to <a href=\"https://www.wowhead.com/classic/npc=11056/alchemist-arbington\" rel=\"noopener noreferrer\" target=\"_blank\">Alchemist Arbington</a> at Chillwind Point, <a href=\"https://www.wowhead.com/classic/zone=28/western-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Western Plaguelands</a>.",
+            "description": "The key to Scholomance is called a Skeleton Key. It must be forged from the remains of a skeleton - several actually - and hardened by only the strongest of metals within a suitable mold. A signet of power from a being who naturally can open the portal to Scholomance will make the key ultimately function.<br><br>First thing's first though. We'll need <a href=\"https://www.wowhead.com/classic/item=14619/skeletal-fragments\" rel=\"noopener noreferrer\" target=\"_blank\">skeletal fragments</a> for the key's forging. Skeletons inside Andorhal should yield what we need, but the ones outside the walls might work too.",
+            "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 14619,
+                "name": "Skeletal Fragments",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/item=14619/skeletal-fragments",
+                "quality": 1
+              }
+            ],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "scholo-5533-scholomance",
+              "index": 2,
+              "total": 5,
+              "name": "Scholomance"
+            }
+          },
+          {
+            "id": 5538,
+            "name": "Mold Rhymes With",
+            "questLink": "https://www.wowhead.com/classic/quest=5538/mold-rhymes-with",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5537,
+            "nextQuestId": 5801,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Alchemist Arbington",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Alchemist Arbington",
+                "link": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Krinkle Goodsteel",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Krinkle Goodsteel",
+                "link": "https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "57",
+            "minLevel": 55,
+            "faction": "Alliance",
+            "xp": 600,
+            "money": 0,
+            "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=14628/imbued-skeletal-fragments\" rel=\"noopener noreferrer\" target=\"_blank\">Imbued Skeletal Fragments</a> and 15 gold coins to <a href=\"https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel\" rel=\"noopener noreferrer\" target=\"_blank\">Krinkle Goodsteel</a> in Gadgetzan.",
+            "description": "The goblin you will need to speak with is <a href=\"https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel\" rel=\"noopener noreferrer\" target=\"_blank\">Krinkle Goodsteel</a>. He peddles his skills to the highest bidder in Gadgetzan, within the Tanaris desert. He'll likely be the only one who can produce the mold we need, and his services won't come cheap. We now ask for you to dig deep by footing whatever fee he will charge.<br><br>I'm an alchemist, not a banker. If I had gold lying around, I certainly wouldn't be here.<br><br>I guess I said the quiet part out loud again. Oops.<br><br>Gadgetzan awaits you! Good luck!",
+            "shareable": false,
+            "requirements": [],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "scholo-5533-scholomance",
+              "index": 3,
+              "total": 5,
+              "name": "Scholomance"
+            }
+          },
+          {
+            "id": 5801,
+            "name": "Fire Plume Forged",
+            "questLink": "https://www.wowhead.com/classic/quest=5801/fire-plume-forged",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5538,
+            "nextQuestId": 5803,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Krinkle Goodsteel",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Krinkle Goodsteel",
+                "link": "https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Alchemist Arbington",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Alchemist Arbington",
+                "link": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "levels": "57",
+            "minLevel": 55,
+            "faction": "Alliance",
+            "xp": 4500,
+            "money": 27000,
+            "objective": "Take the <a href=\"https://www.wowhead.com/classic/item=14644/skeleton-key-mold\" rel=\"noopener noreferrer\" target=\"_blank\">Skeleton Key Mold</a> and 2 Thorium Bars to the top of Fire Plume Ridge in Un'Goro Crater. Use the <a href=\"https://www.wowhead.com/classic/item=14644/skeleton-key-mold\" rel=\"noopener noreferrer\" target=\"_blank\">Skeleton Key Mold</a> by the lava lake to forge the <a href=\"https://www.wowhead.com/classic/item=14645/unfinished-skeleton-key\" rel=\"noopener noreferrer\" target=\"_blank\">Unfinished Skeleton Key</a>.<br><br>Bring the <a href=\"https://www.wowhead.com/classic/item=14645/unfinished-skeleton-key\" rel=\"noopener noreferrer\" target=\"_blank\">Unfinished Skeleton Key</a> to <a href=\"https://www.wowhead.com/classic/npc=11056/alchemist-arbington\" rel=\"noopener noreferrer\" target=\"_blank\">Alchemist Arbington</a> at Chillwind Point, Western Plaguelands.",
+            "description": "You need two bars of thorium and a powerfully hot heat source to forge the key stem. You're on your own for the thorium, but I can help with the heat.<br><br>To our west in Un'Goro Crater is Fire Plume Ridge - a simmering volcano. The lava lake up top is hot enough to fuse thorium and bone together. Your gold has bought you a mold that simply requires you to dip it in the lake up top; the lava will take care of the rest.<br><br>That's it on my end. To finish your key, you'll need to talk to Arbington again.",
+            "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 14645,
+                "name": "Unfinished Skeleton Key",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=14645/unfinished-skeleton-key",
+                "quality": 1
+              }
+            ],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "scholo-5533-scholomance",
+              "index": 4,
+              "total": 5,
+              "name": "Scholomance"
+            }
+          },
+          {
+            "id": 5803,
+            "name": "Araj's Scarab",
+            "questLink": "https://www.wowhead.com/classic/quest=5803/araj-s-scarab",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5801,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Alchemist Arbington",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Western Plaguelands",
+            "startNpcs": [
+              {
+                "name": "Alchemist Arbington",
+                "link": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "endNpc": "Alchemist Arbington",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Western Plaguelands",
+            "endNpcs": [
+              {
+                "name": "Alchemist Arbington",
+                "link": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Western Plaguelands"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 55,
+            "faction": "Alliance",
+            "xp": 4950,
+            "money": 29700,
+            "objective": "Destroy Araj the Summoner and bring <a href=\"https://www.wowhead.com/classic/item=14610/arajs-scarab\" rel=\"noopener noreferrer\" target=\"_blank\">Araj's Scarab</a> to <a href=\"https://www.wowhead.com/classic/npc=11056/alchemist-arbington\" rel=\"noopener noreferrer\" target=\"_blank\">Alchemist Arbington</a> at Chillwind Point, <a href=\"https://www.wowhead.com/classic/zone=28/western-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Western Plaguelands</a>.",
+            "description": "Araj the Summoner lords over Andorhal from the ruined city's heart. We know that he was the former leader of Scholomance before claiming the city as his own. To finish the key, we will need his signet - called a scarab - mounted as the head of the key.<br><br>Make your way into the heart of Andorhal, and break his hold on the city now that he is drawn into the open. Once destroyed, seize his scarab from his fallen phylactery!<br><br>The Key to Scholomance awaits!",
+            "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 14610,
+                "name": "Araj's Scarab",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=14610/arajs-scarab",
+                "quality": 1
+              }
+            ],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "scholo-5533-scholomance",
+              "index": 5,
+              "total": 5,
+              "name": "Scholomance"
+            }
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 5511,
+        "name": "The Key to Scholomance",
+        "questLink": "https://www.wowhead.com/classic/quest=5511/the-key-to-scholomance",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Apothecary Dithers",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Tirisfal Glades",
+        "startNpcs": [
+          {
+            "name": "Apothecary Dithers",
+            "link": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tirisfal Glades"
+          }
+        ],
+        "endNpc": "Apothecary Dithers",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Tirisfal Glades",
+        "endNpcs": [
+          {
+            "name": "Apothecary Dithers",
+            "link": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+            "faction": "",
+            "type": "npc",
+            "loc": "Tirisfal Glades"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 55,
+        "faction": "Horde",
+        "xp": 9950,
+        "money": 59700,
+        "objective": "",
+        "description": "",
+        "shareable": true,
+        "requirements": [],
+        "rewards": [
+          {
+            "id": 13704,
+            "name": "Skeleton Key",
+            "url": "https://www.wowhead.com/classic/item=13704/skeleton-key",
+            "quality": 1,
+            "quantity": 1
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [
+          {
+            "or": [
+              {
+                "id": 5093,
+                "name": "A Call to Arms: The Plaguelands!",
+                "questLink": "https://www.wowhead.com/classic/quest=5093/a-call-to-arms-the-plaguelands",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Warcaller Gorlach",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=10880/warcaller-gorlach",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Orgrimmar",
+                "startNpcs": [
+                  {
+                    "name": "Warcaller Gorlach",
+                    "link": "https://www.wowhead.com/classic/npc=10880/warcaller-gorlach",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Orgrimmar"
+                  }
+                ],
+                "endNpc": "High Executor Derrington",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Tirisfal Glades",
+                "endNpcs": [
+                  {
+                    "name": "High Executor Derrington",
+                    "link": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Tirisfal Glades"
+                  }
+                ],
+                "levels": "50",
+                "minLevel": 50,
+                "faction": "Horde",
+                "xp": 470,
+                "money": 270,
+                "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=10837/high-executor-derrington\" rel=\"noopener noreferrer\" target=\"_blank\">High Executor Derrington</a>. His base camp is located at the Bulwark, east of Tirisfal Glade and the Undercity.",
+                "description": "Heroes of the realm, hear me - the Horde calls upon you for swift action!<br><br>A call to arms has been issued for all able bodied individuals to take up arms against the Scourge! Rumors fly of new threats rising from the ruins of the Eastern Kingdoms. They loom to the east of the Undercity, in the northern reaches of the lands now known as the Plaguelands!<br><br>Heroes of the realm - seek out <a href=\"https://www.wowhead.com/classic/npc=10837/high-executor-derrington\" rel=\"noopener noreferrer\" target=\"_blank\">High Executor Derrington</a>, who has set up his base camp at the Bulwark, east of Tirisfal Glade!",
+                "shareable": true,
+                "requirements": [],
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              },
+              {
+                "id": 5094,
+                "name": "A Call to Arms: The Plaguelands!",
+                "questLink": "https://www.wowhead.com/classic/quest=5094/a-call-to-arms-the-plaguelands",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Harbinger Balthazad",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=10879/harbinger-balthazad",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Undercity",
+                "startNpcs": [
+                  {
+                    "name": "Harbinger Balthazad",
+                    "link": "https://www.wowhead.com/classic/npc=10879/harbinger-balthazad",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Undercity"
+                  }
+                ],
+                "endNpc": "High Executor Derrington",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Tirisfal Glades",
+                "endNpcs": [
+                  {
+                    "name": "High Executor Derrington",
+                    "link": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Tirisfal Glades"
+                  }
+                ],
+                "levels": "50",
+                "minLevel": 50,
+                "faction": "Horde",
+                "xp": 470,
+                "money": 270,
+                "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=10837/high-executor-derrington\" rel=\"noopener noreferrer\" target=\"_blank\">High Executor Derrington</a>. His base camp is located at the Bulwark, east of Tirisfal Glade and the Undercity.",
+                "description": "Heroes of the realm, hear me - the Horde calls upon you for swift action!<br><br>A call to arms has been issued for all able bodied individuals to take up arms against the Scourge! Rumors fly of new threats rising from the ruins of the Eastern Kingdoms. They loom to the east of the Undercity, in the northern reaches of the lands now known as the Plaguelands!<br><br>Heroes of the realm - seek out <a href=\"https://www.wowhead.com/classic/npc=10837/high-executor-derrington\" rel=\"noopener noreferrer\" target=\"_blank\">High Executor Derrington</a>, who has set up his base camp at the Bulwark, east of Tirisfal Glade!",
+                "shareable": true,
+                "requirements": [],
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              },
+              {
+                "id": 5095,
+                "name": "A Call to Arms: The Plaguelands!",
+                "questLink": "https://www.wowhead.com/classic/quest=5095/a-call-to-arms-the-plaguelands",
+                "prequest": "",
+                "prequestLink": "",
+                "prevQuestId": null,
+                "nextQuestId": null,
+                "chainId": null,
+                "chainDepth": 0,
+                "startNpc": "Bluff Runner Windstrider",
+                "startNpcLink": "https://www.wowhead.com/classic/npc=10881/bluff-runner-windstrider",
+                "startObject": "",
+                "startObjectLink": "",
+                "startItem": "",
+                "startItemLink": "",
+                "startLoc": "Thunder Bluff",
+                "startNpcs": [
+                  {
+                    "name": "Bluff Runner Windstrider",
+                    "link": "https://www.wowhead.com/classic/npc=10881/bluff-runner-windstrider",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Thunder Bluff"
+                  }
+                ],
+                "endNpc": "High Executor Derrington",
+                "endNpcLink": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                "endObject": "",
+                "endObjectLink": "",
+                "endLoc": "Tirisfal Glades",
+                "endNpcs": [
+                  {
+                    "name": "High Executor Derrington",
+                    "link": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                    "faction": "",
+                    "type": "npc",
+                    "loc": "Tirisfal Glades"
+                  }
+                ],
+                "levels": "50",
+                "minLevel": 50,
+                "faction": "Horde",
+                "xp": 470,
+                "money": 270,
+                "objective": "Seek out <a href=\"https://www.wowhead.com/classic/npc=10837/high-executor-derrington\" rel=\"noopener noreferrer\" target=\"_blank\">High Executor Derrington</a>. His base camp is located at the Bulwark, east of Tirisfal Glades and the Undercity.",
+                "description": "Heroes of the realm, hear me - the Horde calls upon you for swift action!<br><br>A call to arms has been issued for all able bodied individuals to take up arms against the Scourge! Rumors fly of new threats rising from the ruins of the Eastern Kingdoms. They loom to the east of the Undercity, in the northern reaches of the lands now known as the Plaguelands!<br><br>Heroes of the realm - seek out <a href=\"https://www.wowhead.com/classic/npc=10837/high-executor-derrington\" rel=\"noopener noreferrer\" target=\"_blank\">High Executor Derrington</a>, who has set up his base camp at the Bulwark, east of Tirisfal Glades!",
+                "shareable": true,
+                "requirements": [],
+                "rewards": [],
+                "rewardChoices": [],
+                "requiredClasses": [],
+                "notes": "",
+                "preChain": [],
+                "postChain": [],
+                "absorbedBy": null,
+                "relation": "requires",
+                "series": null
+              }
+            ],
+            "relation": "requires"
+          },
+          {
+            "id": 5096,
+            "name": "Scarlet Diversions",
+            "questLink": "https://www.wowhead.com/classic/quest=5096/scarlet-diversions",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5093,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "High Executor Derrington",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tirisfal Glades",
+            "startNpcs": [
+              {
+                "name": "High Executor Derrington",
+                "link": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "endNpc": "High Executor Derrington",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tirisfal Glades",
+            "endNpcs": [
+              {
+                "name": "High Executor Derrington",
+                "link": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "levels": "53",
+            "minLevel": 50,
+            "faction": "Horde",
+            "xp": 5250,
+            "money": 8000,
+            "objective": "Proceed to the Scarlet Crusade's base camp between Felstone Field and Dalson's Tears and destroy their command tent.<br><br>Place the <a href=\"https://www.wowhead.com/classic/item=12807/scourge-banner\" rel=\"noopener noreferrer\" target=\"_blank\">Scourge banner</a> at the camp, and then return to <a href=\"https://www.wowhead.com/classic/npc=10837/high-executor-derrington\" rel=\"noopener noreferrer\" target=\"_blank\">High Executor Derrington</a> at the Bulwark, <a href=\"https://www.wowhead.com/classic/zone=28/western-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Western Plaguelands</a>.",
+            "description": "Before Andorhal, we must tackle the advancing Scarlet Crusade menace from Hearthglen. They've made camp between Felstone Field and Dalson's Tears, making us risk conflict against both the Scourge and the Crusade at once.<br><br>My plan is to play them off of each other by sending you to destroy the command tent they've set up; use some <a href=\"https://www.wowhead.com/classic/item=12814/flame-in-a-bottle\" rel=\"noopener noreferrer\" target=\"_blank\">Flame in a Bottle</a> from this box of incendiaries. Once razed, plant this <a href=\"https://www.wowhead.com/classic/item=12807/scourge-banner\" rel=\"noopener noreferrer\" target=\"_blank\">Scourge banner</a> by the tent. With some luck, they'll ignore us and focus on the Scourge for vengeance.",
+            "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 12814,
+                "name": "Flame in a Bottle",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=12814/flame-in-a-bottle",
+                "quality": 1
+              }
+            ],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "or",
+                "ids": [
+                  5093,
+                  5094,
+                  5095
+                ]
+              }
+            ]
+          },
+          {
+            "id": 5098,
+            "name": "All Along the Watchtowers",
+            "questLink": "https://www.wowhead.com/classic/quest=5098/all-along-the-watchtowers",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5096,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "High Executor Derrington",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tirisfal Glades",
+            "startNpcs": [
+              {
+                "name": "High Executor Derrington",
+                "link": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "endNpc": "High Executor Derrington",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tirisfal Glades",
+            "endNpcs": [
+              {
+                "name": "High Executor Derrington",
+                "link": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "levels": "56",
+            "minLevel": 50,
+            "faction": "Horde",
+            "xp": 5800,
+            "money": 8500,
+            "objective": "Using the <a href=\"https://www.wowhead.com/classic/item=12815/beacon-torch\" rel=\"noopener noreferrer\" target=\"_blank\">Beacon Torch</a>, mark each tower in Andorhal; you will need to stand in the doorway of the tower to successfully mark it.<br><br>Once all four towers are marked, return the <a href=\"https://www.wowhead.com/classic/item=12815/beacon-torch\" rel=\"noopener noreferrer\" target=\"_blank\">Beacon Torch</a> to <a href=\"https://www.wowhead.com/classic/npc=10837/high-executor-derrington\" rel=\"noopener noreferrer\" target=\"_blank\">High Executor Derrington</a> at the Bulwark, <a href=\"https://www.wowhead.com/classic/zone=28/western-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Western Plaguelands</a>.",
+            "description": "Through the use of a magical device known as a <a href=\"https://www.wowhead.com/classic/item=12815/beacon-torch\" rel=\"noopener noreferrer\" target=\"_blank\">beacon torch</a>, we can mark targets of our choosing for future actions by our troops. To that end, we think the Scourge are using Andorhal's watchtowers as a means to control their troop movements.<br><br>Your mission: breach Andorhal's defenses to plant beacons at all four watchtowers. You'll need to be in the doorway of each tower to plant the beacon; it will then proceed to mark the tower. There are only five charges on the <a href=\"https://www.wowhead.com/classic/item=12815/beacon-torch\" rel=\"noopener noreferrer\" target=\"_blank\">beacon torch</a>, so use them wisely!",
+            "shareable": false,
+            "requirements": [
+              {
+                "type": "npc",
+                "id": 10902,
+                "name": "Tower One marked",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10902/tower-one-marked"
+              },
+              {
+                "type": "npc",
+                "id": 10903,
+                "name": "Tower Two marked",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10903/tower-two-marked"
+              },
+              {
+                "type": "npc",
+                "id": 10904,
+                "name": "Tower Three marked",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10904/tower-three-marked"
+              },
+              {
+                "type": "npc",
+                "id": 10905,
+                "name": "Tower Four marked",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/npc=10905/tower-four-marked"
+              }
+            ],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": null,
+            "requires": [
+              {
+                "type": "single",
+                "id": 5096
+              }
+            ]
+          },
+          {
+            "id": 838,
+            "name": "Scholomance",
+            "questLink": "https://www.wowhead.com/classic/quest=838/scholomance",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5098,
+            "nextQuestId": 964,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "High Executor Derrington",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tirisfal Glades",
+            "startNpcs": [
+              {
+                "name": "High Executor Derrington",
+                "link": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "endNpc": "Apothecary Dithers",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tirisfal Glades",
+            "endNpcs": [
+              {
+                "name": "Apothecary Dithers",
+                "link": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "levels": "55",
+            "minLevel": 55,
+            "faction": "Horde",
+            "xp": 560,
+            "money": 3300,
+            "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=11057/apothecary-dithers\" rel=\"noopener noreferrer\" target=\"_blank\">Apothecary Dithers</a> at the Bulwark, <a href=\"https://www.wowhead.com/classic/zone=28/western-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Western Plaguelands</a>.",
+            "description": "On the island of Caer Darrow lies Scholomance - a school that serves as a stronghold for the Scourge. Our enemy dwells within, safely allowed to pursue research that strengthens their power. A door bars the way, and try as we might no entry is to be had without a proper key.<br><br><a href=\"https://www.wowhead.com/classic/npc=11057/apothecary-dithers\" rel=\"noopener noreferrer\" target=\"_blank\">Apothecary Dithers</a> is well versed on Scholomance, and has an idea how to obtain a key. You have proved your value to me as someone who can get things done; I now entrust this task to you. Speak with him on this matter.",
+            "shareable": true,
+            "requirements": [],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "scholo-838-scholomance",
+              "index": 1,
+              "total": 5,
+              "name": "Scholomance"
+            },
+            "requires": [
+              {
+                "type": "single",
+                "id": 5098
+              }
+            ]
+          },
+          {
+            "id": 964,
+            "name": "Skeletal Fragments",
+            "questLink": "https://www.wowhead.com/classic/quest=964/skeletal-fragments",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 838,
+            "nextQuestId": 5514,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Apothecary Dithers",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tirisfal Glades",
+            "startNpcs": [
+              {
+                "name": "Apothecary Dithers",
+                "link": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "endNpc": "Apothecary Dithers",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tirisfal Glades",
+            "endNpcs": [
+              {
+                "name": "Apothecary Dithers",
+                "link": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "levels": "57",
+            "minLevel": 55,
+            "faction": "Horde",
+            "xp": 4500,
+            "money": 27000,
+            "objective": "Bring 15 <a href=\"https://www.wowhead.com/classic/item=14619/skeletal-fragments\" rel=\"noopener noreferrer\" target=\"_blank\">Skeletal Fragments</a> to <a href=\"https://www.wowhead.com/classic/npc=11057/apothecary-dithers\" rel=\"noopener noreferrer\" target=\"_blank\">Apothecary Dithers</a> at the Bulwark, <a href=\"https://www.wowhead.com/classic/zone=28/western-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Western Plaguelands</a>.",
+            "description": "The key to Scholomance is called a Skeleton Key. It must be forged from the remains of a skeleton - several actually - and hardened by only the strongest of metals within a suitable mold. A signet of power from a being who naturally can open the portal to Scholomance will make the key ultimately function.<br><br>First thing's first though. We'll need <a href=\"https://www.wowhead.com/classic/item=14619/skeletal-fragments\" rel=\"noopener noreferrer\" target=\"_blank\">skeletal fragments</a> for the key's forging. Skeletons inside Andorhal should yield what we need, but the ones outside the walls might work too.",
+            "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 14619,
+                "name": "Skeletal Fragments",
+                "quantity": 15,
+                "url": "https://www.wowhead.com/classic/item=14619/skeletal-fragments",
+                "quality": 1
+              }
+            ],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "scholo-838-scholomance",
+              "index": 2,
+              "total": 5,
+              "name": "Scholomance"
+            }
+          },
+          {
+            "id": 5514,
+            "name": "Mold Rhymes With",
+            "questLink": "https://www.wowhead.com/classic/quest=5514/mold-rhymes-with",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 964,
+            "nextQuestId": 5802,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Apothecary Dithers",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tirisfal Glades",
+            "startNpcs": [
+              {
+                "name": "Apothecary Dithers",
+                "link": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "endNpc": "Krinkle Goodsteel",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tanaris",
+            "endNpcs": [
+              {
+                "name": "Krinkle Goodsteel",
+                "link": "https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "levels": "57",
+            "minLevel": 55,
+            "faction": "Horde",
+            "xp": 600,
+            "money": 0,
+            "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=14628/imbued-skeletal-fragments\" rel=\"noopener noreferrer\" target=\"_blank\">Imbued Skeletal Fragments</a> and 15 gold coins to <a href=\"https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel\" rel=\"noopener noreferrer\" target=\"_blank\">Krinkle Goodsteel</a> in Gadgetzan.",
+            "description": "The goblin you will need to speak with is <a href=\"https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel\" rel=\"noopener noreferrer\" target=\"_blank\">Krinkle Goodsteel</a>. He peddles his skills to the highest bidder in Gadgetzan, within the Tanaris desert. He'll likely be the only one who can produce the mold we need, and his services won't come cheap. We now ask for you to dig deep by footing whatever fee he will charge.<br><br>I'm an apothecary, not a banker. If I had gold lying around, I certainly wouldn't be here.<br><br>I guess I said the quiet part out loud again. Oops.<br><br>Gadgetzan awaits you! Good luck!",
+            "shareable": false,
+            "requirements": [],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "scholo-838-scholomance",
+              "index": 3,
+              "total": 5,
+              "name": "Scholomance"
+            }
+          },
+          {
+            "id": 5802,
+            "name": "Fire Plume Forged",
+            "questLink": "https://www.wowhead.com/classic/quest=5802/fire-plume-forged",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5514,
+            "nextQuestId": 5804,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Krinkle Goodsteel",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tanaris",
+            "startNpcs": [
+              {
+                "name": "Krinkle Goodsteel",
+                "link": "https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tanaris"
+              }
+            ],
+            "endNpc": "Apothecary Dithers",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tirisfal Glades",
+            "endNpcs": [
+              {
+                "name": "Apothecary Dithers",
+                "link": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "levels": "57",
+            "minLevel": 55,
+            "faction": "Horde",
+            "xp": 4500,
+            "money": 27000,
+            "objective": "Take the <a href=\"https://www.wowhead.com/classic/item=14644/skeleton-key-mold\" rel=\"noopener noreferrer\" target=\"_blank\">Skeleton Key Mold</a> and 2 Thorium Bars to the top of Fire Plume Ridge in Un'Goro Crater. Use the <a href=\"https://www.wowhead.com/classic/item=14644/skeleton-key-mold\" rel=\"noopener noreferrer\" target=\"_blank\">Skeleton Key Mold</a> by the lava lake to forge the <a href=\"https://www.wowhead.com/classic/item=14645/unfinished-skeleton-key\" rel=\"noopener noreferrer\" target=\"_blank\">Unfinished Skeleton Key</a>.<br><br>Bring the <a href=\"https://www.wowhead.com/classic/item=14645/unfinished-skeleton-key\" rel=\"noopener noreferrer\" target=\"_blank\">Unfinished Skeleton Key</a> to <a href=\"https://www.wowhead.com/classic/npc=11057/apothecary-dithers\" rel=\"noopener noreferrer\" target=\"_blank\">Apothecary Dithers</a> at the Bulwark, Western Plaguelands.",
+            "description": "You need two bars of thorium and a powerfully hot heat source to forge the key stem. You're on your own for the thorium, but I can help with the heat.<br><br>To our west in Un'Goro Crater is Fire Plume Ridge - a simmering volcano. The lava lake up top is hot enough to fuse thorium and bone together. Your gold has bought you a mold that simply requires you to dip it in the lake up top; the lava will take care of the rest.<br><br>That's it on my end. To finish your key, you'll need to talk to Dithers again.",
+            "shareable": false,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 14645,
+                "name": "Unfinished Skeleton Key",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=14645/unfinished-skeleton-key",
+                "quality": 1
+              }
+            ],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "series",
+            "series": {
+              "id": "scholo-838-scholomance",
+              "index": 4,
+              "total": 5,
+              "name": "Scholomance"
+            }
+          },
+          {
+            "id": 5804,
+            "name": "Araj's Scarab",
+            "questLink": "https://www.wowhead.com/classic/quest=5804/araj-s-scarab",
+            "prequest": "",
+            "prequestLink": "",
+            "prevQuestId": 5802,
+            "nextQuestId": null,
+            "chainId": null,
+            "chainDepth": 0,
+            "startNpc": "Apothecary Dithers",
+            "startNpcLink": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+            "startObject": "",
+            "startObjectLink": "",
+            "startItem": "",
+            "startItemLink": "",
+            "startLoc": "Tirisfal Glades",
+            "startNpcs": [
+              {
+                "name": "Apothecary Dithers",
+                "link": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "endNpc": "Apothecary Dithers",
+            "endNpcLink": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+            "endObject": "",
+            "endObjectLink": "",
+            "endLoc": "Tirisfal Glades",
+            "endNpcs": [
+              {
+                "name": "Apothecary Dithers",
+                "link": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers",
+                "faction": "",
+                "type": "npc",
+                "loc": "Tirisfal Glades"
+              }
+            ],
+            "levels": "60",
+            "minLevel": 55,
+            "faction": "Horde",
+            "xp": 4950,
+            "money": 29700,
+            "objective": "Destroy Araj the Summoner and bring <a href=\"https://www.wowhead.com/classic/item=14610/arajs-scarab\" rel=\"noopener noreferrer\" target=\"_blank\">Araj's Scarab</a> to <a href=\"https://www.wowhead.com/classic/npc=11057/apothecary-dithers\" rel=\"noopener noreferrer\" target=\"_blank\">Apothecary Dithers</a> at the Bulwark, <a href=\"https://www.wowhead.com/classic/zone=28/western-plaguelands\" rel=\"noopener noreferrer\" target=\"_blank\">Western Plaguelands</a>.",
+            "description": "Araj the Summoner lords over Andorhal from the ruined city's heart. We know that he was the former leader of Scholomance before claiming the city as his own. To finish the key, we will need his signet - called a scarab - mounted as the head of the key.<br><br>Make your way into the heart of Andorhal, and break his hold on the city now that he is drawn into the open. Once destroyed, seize his scarab from his fallen phylactery!<br><br>The Key to Scholomance awaits!",
+            "shareable": true,
+            "requirements": [
+              {
+                "type": "item",
+                "id": 14610,
+                "name": "Araj's Scarab",
+                "quantity": 1,
+                "url": "https://www.wowhead.com/classic/item=14610/arajs-scarab",
+                "quality": 1
+              }
+            ],
+            "rewards": [],
+            "rewardChoices": [],
+            "requiredClasses": [],
+            "notes": "",
+            "preChain": [],
+            "postChain": [],
+            "absorbedBy": null,
+            "relation": "requires",
+            "series": {
+              "id": "scholo-838-scholomance",
+              "index": 5,
+              "total": 5,
+              "name": "Scholomance"
+            }
+          }
+        ],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
         "id": 7562,
         "name": "Mor'zul Bloodbringer",
         "questLink": "https://www.wowhead.com/classic/quest=7562/mor-zul-bloodbringer",
@@ -37770,13 +39343,15 @@ const DUNGEONS = [
           }
         ]
       }
-    ]
+    ],
+    "iconFile": "dung_scholo.png"
   },
   {
     "id": "strath",
     "name": "Stratholme",
     "abbr": "Strath",
     "icon": "🏰",
+    "iconFile": "dung_strath.png",
     "loadingScreen": "assets/loading-screens/800404.jpg",
     "faction": "Both",
     "levels": "58–60",
@@ -40241,6 +41816,7 @@ const DUNGEONS = [
     "name": "Upper Blackrock Spire",
     "abbr": "UBRS",
     "icon": "👑",
+    "iconFile": "dung_ubrs.png",
     "loadingScreen": "assets/loading-screens/800389.jpg",
     "faction": "Both",
     "levels": "55–60",

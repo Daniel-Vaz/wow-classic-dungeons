@@ -1070,7 +1070,7 @@ const QUEST_PINS = {
       "y": 63.96,
       "label": "Cavindra",
       "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=13697/cavindra"
+      "url": "https://www.wowhead.com/classic/npc=13697"
     },
     {
       "x": 50.42,
@@ -1172,7 +1172,7 @@ const QUEST_PINS = {
       "y": 87.72,
       "label": "Emberstrife",
       "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=10321/emberstrife"
+      "url": "https://www.wowhead.com/classic/npc=10321"
     },
     {
       "x": 46.06,
@@ -1335,6 +1335,13 @@ const QUEST_PINS = {
       "url": "https://www.wowhead.com/classic/npc=7407/chief-engineer-bilgewhizzle"
     },
     {
+      "x": 51.46,
+      "y": 28.81,
+      "label": "Krinkle Goodsteel",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=5411/krinkle-goodsteel"
+    },
+    {
       "x": 52.71,
       "y": 45.92,
       "label": "Marvon Rivetseeker",
@@ -1414,6 +1421,13 @@ const QUEST_PINS = {
       "label": "Gryphon Master Talonaxe",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=5636/gryphon-master-talonaxe"
+    },
+    {
+      "x": 48.64,
+      "y": 68.24,
+      "label": "Qiaga the Keeper",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=7996"
     },
     {
       "x": 26.94,
@@ -1580,6 +1594,13 @@ const QUEST_PINS = {
   ],
   "Western Plaguelands": [
     {
+      "x": 42.66,
+      "y": 83.77,
+      "label": "Alchemist Arbington",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=11056/alchemist-arbington"
+    },
+    {
       "x": 65.77,
       "y": 75.37,
       "label": "Artist Renfray",
@@ -1606,6 +1627,13 @@ const QUEST_PINS = {
       "label": "High Priest Thel'danis",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=1854/high-priest-thel-danis"
+    },
+    {
+      "x": 53.95,
+      "y": 24.45,
+      "label": "Lord Tirion Fordring",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=12126/lord-tirion-fordring"
     },
     {
       "x": 70.57,
@@ -1870,6 +1898,20 @@ const QUEST_PINS = {
       "label": "Alexi Barov",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=11022/alexi-barov"
+    },
+    {
+      "x": 83.28,
+      "y": 69.23,
+      "label": "Apothecary Dithers",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=11057/apothecary-dithers"
+    },
+    {
+      "x": 83.13,
+      "y": 68.94,
+      "label": "High Executor Derrington",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=10837/high-executor-derrington"
     }
   ]
 };

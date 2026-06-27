@@ -250,8 +250,24 @@ function buildGiverNameHtml(name, link, type, loc) {
 // quest has more than one giver, e.g. a class quest offered by every city's
 // trainer. Each giver may carry a faction so it can be tagged Alliance/Horde,
 // and its own location so each giver shows where to find it.
+// Collapse giver entries that point at the same NPC name+type (e.g. an NPC that
+// exists under multiple wowhead IDs across game versions, like Franclorn
+// Forgewright as npc=8888 and npc=184290). Keeping the first occurrence means a
+// genuinely single giver isn't mistaken for a "multi-giver" quest — which would
+// otherwise hide the inline model preview and show a Wowhead link list instead.
+function dedupeGivers(givers) {
+  if (!Array.isArray(givers)) return givers;
+  const seen = new Set();
+  return givers.filter(g => {
+    const key = `${g.type || ''}|${g.name || ''}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function renderGiverList(givers) {
-  return `<span class="npc-multi">${givers.map(g => {
+  return `<span class="npc-multi">${dedupeGivers(givers).map(g => {
     const inner = buildGiverNameHtml(g.name, g.link, g.type, g.loc);
     let mark = '';
     if (g.faction === 'Alliance') {
@@ -667,7 +683,7 @@ function buildDungeonTabs() {
     const tab = document.createElement('div');
     tab.className = 'dungeon-tab' + (d.id === currentDungeonId ? ' active' : '');
     tab.dataset.id = d.id;
-    tab.innerHTML = `${d.icon} ${d.abbr}<span class="tab-level">${d.levels}</span>`;
+    tab.innerHTML = `<img class="dungeon-tab-icon" src="assets/icons/${d.iconFile}" alt=""> ${d.abbr}<span class="tab-level">${d.levels}</span>`;
     tab.addEventListener('click', () => selectDungeon(d.id));
     nav.appendChild(tab);
   });
@@ -687,7 +703,7 @@ function buildDungeonFilterPanel() {
     li.setAttribute('role', 'option');
     const isComplete = isDungeonFullyComplete(d);
     li.innerHTML = `
-      <span class="df-icon">${d.icon}</span>
+      <span class="df-icon"><img src="assets/icons/${d.iconFile}" alt=""></span>
       <span class="df-name">${d.name}</span>
       <span class="df-levels">${d.levels}</span>
       ${isComplete ? '<span class="df-complete">✓</span>' : ''}
@@ -701,7 +717,7 @@ function updateDungeonFilterTrigger() {
   const dungeon = DUNGEONS.find(d => d.id === currentDungeonId);
   if (!dungeon) return;
   const el = document.getElementById('dungeonFilterSelected');
-  if (el) el.textContent = dungeon.icon + ' ' + dungeon.abbr;
+  if (el) el.innerHTML = `<img class="df-trigger-icon" src="assets/icons/${dungeon.iconFile}" alt=""> ${dungeon.abbr}`;
   document.querySelectorAll('.dungeon-filter-option').forEach(o => {
     o.classList.toggle('active', o.dataset.id === currentDungeonId);
   });
@@ -755,7 +771,7 @@ function renderDungeonHeader(dungeon) {
   } else {
     iconEl.textContent = dungeon.icon;
   }
-  document.getElementById('dungeonHeaderName').textContent = dungeon.name;
+  document.getElementById('dungeonHeaderName').innerHTML = `<img class="dungeon-name-icon" src="assets/icons/${dungeon.iconFile}" alt=""> ${escapeHtml(dungeon.name)}`;
 
   // All quests that count toward totals (schema-2 includes preChain context cards).
   let quests = getCountableQuests(dungeon);
@@ -862,7 +878,7 @@ function renderDungeonCardCompact(dungeon) {
 
   // Section title doubles as the dungeon name (informative when collapsed).
   const titleEl = document.getElementById('dungeonCardTitle');
-  if (titleEl) titleEl.textContent = `${dungeon.icon} ${dungeon.name}`;
+  if (titleEl) titleEl.innerHTML = `<img class="dungeon-card-title-icon" src="assets/icons/${dungeon.iconFile}" alt=""> ${escapeHtml(dungeon.name)}`;
 
   // Media: loading-screen image (reuses the lightbox via .dungeon-loading-screen)
   // with a small circular instance-map button overlaid in the corner.
@@ -2641,8 +2657,8 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
   // ---- NPC / object / item link helpers ----
   // A quest may have several givers (e.g. a class quest offered by every city's
   // trainer); render the whole list, tagging any faction-restricted giver.
-  const startIsMulti = Array.isArray(quest.startNpcs) && quest.startNpcs.length > 1;
-  const endIsMulti = Array.isArray(quest.endNpcs) && quest.endNpcs.length > 1;
+  const startIsMulti = Array.isArray(quest.startNpcs) && dedupeGivers(quest.startNpcs).length > 1;
+  const endIsMulti = Array.isArray(quest.endNpcs) && dedupeGivers(quest.endNpcs).length > 1;
   let startNpcHtml;
   if (startIsMulti) {
     startNpcHtml = renderGiverList(quest.startNpcs);
@@ -2708,7 +2724,7 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
     <div class="quest-card-footer">
       <div class="footer-pills">
         ${quest.xp ? `<div class="xp-pill"><img class="section-icon" src="assets/icons/experience.png" alt=""> ${quest.xp.toLocaleString()} XP</div>` : ''}
-        ${quest.money ? `<div class="money-pill"><img class="money-icon" src="assets/icons/money.png" alt="">${formatMoney(quest.money)}</div>` : ''}
+        ${quest.money ? `<div class="money-pill"><img class="money-icon" src="assets/icons/coin-${moneyTier(quest.money)}.png" alt="">${formatMoney(quest.money)}</div>` : ''}
       </div>
       <button class="complete-btn" data-key="${key}">${isComplete ? '↩ Undo' : '✓ Complete'}</button>
     </div>
@@ -3297,7 +3313,9 @@ function initMapModal() {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       if (mapEditingPinId) { closePinEditDialog(); return; }
-      if (modal.classList.contains('open')) closeMapModal();
+      // preventDefault marks Escape handled so a key guide stacked underneath
+      // doesn't also close (its keydown listener runs after this one).
+      if (modal.classList.contains('open')) { e.preventDefault(); closeMapModal(); }
     }
   });
 
@@ -3956,7 +3974,8 @@ function initLoadingScreenLightbox() {
   document.addEventListener('click', e => {
     const screen = e.target.closest('.dungeon-loading-screen');
     const npcThumb = e.target.closest('.qm-req-npc-thumb');
-    const source = screen || npcThumb;
+    const npcPreview = e.target.closest('.qm-npc-preview-img');
+    const source = screen || npcThumb || npcPreview;
     if (!source) return;
     const img = document.getElementById('loadingScreenLightboxImg');
     img.src = source.src;
@@ -4119,7 +4138,11 @@ function initEncounterModal() {
   document.querySelector('.encounter-modal-backdrop').addEventListener('click', closeEncounterModal);
   document.addEventListener('keydown', e => {
     const modal = document.getElementById('encounterModal');
-    if (e.key === 'Escape' && modal.classList.contains('open')) closeEncounterModal();
+    if (e.key === 'Escape' && modal.classList.contains('open')) {
+      // Mark handled so a key guide stacked underneath doesn't also close.
+      e.preventDefault();
+      closeEncounterModal();
+    }
   });
 }
 
@@ -4142,7 +4165,7 @@ function questModalItemLink(item) {
 // NPC, object, or quest-starting item all resolve to the right link (and map
 // link when the giver has a known pin). Returns '' when no giver is recorded.
 function questModalGiverHtml(quest, role) {
-  if (Array.isArray(quest[role + 'Npcs']) && quest[role + 'Npcs'].length > 1) {
+  if (Array.isArray(quest[role + 'Npcs']) && dedupeGivers(quest[role + 'Npcs']).length > 1) {
     return renderGiverList(quest[role + 'Npcs']);
   }
   const npc = quest[role + 'Npc'], npcLink = quest[role + 'NpcLink'];
@@ -4162,7 +4185,7 @@ function questModalGiverHtml(quest, role) {
 // Extract { npcId, name, loc } for a giver role — used to render inline
 // NPC image and mini-map in the quest modal locations section.
 function questModalGiverInfo(quest, role) {
-  const npcs = quest[role + 'Npcs'];
+  const npcs = dedupeGivers(quest[role + 'Npcs']);
   if (Array.isArray(npcs) && npcs.length > 0) {
     const g = npcs[0];
     const m = g.link && g.link.match(/npc=(\d+)/);
@@ -4268,8 +4291,8 @@ function buildQuestModalBody(quest, dungeon) {
   // ── Start / turn-in givers ──
   const startHtml = questModalGiverHtml(quest, 'start');
   const endHtml   = questModalGiverHtml(quest, 'end');
-  const startMulti = Array.isArray(quest.startNpcs) && quest.startNpcs.length > 1;
-  const endMulti   = Array.isArray(quest.endNpcs) && quest.endNpcs.length > 1;
+  const startMulti = Array.isArray(quest.startNpcs) && dedupeGivers(quest.startNpcs).length > 1;
+  const endMulti   = Array.isArray(quest.endNpcs) && dedupeGivers(quest.endNpcs).length > 1;
   const startEntity = quest.startNpc || quest.startObject || quest.startItem || '';
   const endEntity   = quest.endNpc || quest.endObject || '';
   const startInfo = questModalGiverInfo(quest, 'start');
@@ -4332,7 +4355,7 @@ function buildQuestModalBody(quest, dungeon) {
   const rewardItems = quest.rewards.length > 0 ? quest.rewards : quest.legacyItems;
   const pills = [];
   if (quest.xp) pills.push(`<div class="xp-pill"><img class="section-icon" src="assets/icons/experience.png" alt=""> ${quest.xp.toLocaleString()} XP</div>`);
-  if (quest.money) pills.push(`<div class="money-pill"><img class="money-icon" src="assets/icons/money.png" alt="">${formatMoney(quest.money)}</div>`);
+  if (quest.money) pills.push(`<div class="money-pill"><img class="money-icon" src="assets/icons/coin-${moneyTier(quest.money)}.png" alt="">${formatMoney(quest.money)}</div>`);
   const pillsHtml = pills.length ? `<div class="qm-reward-pills">${pills.join('')}</div>` : '';
 
   const itemsHtml = rewardItems.length
@@ -4491,7 +4514,9 @@ function initQuestModal() {
   document.addEventListener('keydown', e => {
     const modal = document.getElementById('questModal');
     if (!modal.classList.contains('open')) return;
-    if (e.key === 'Escape') closeQuestModal();
+    // preventDefault marks Escape handled so a key guide stacked underneath
+    // doesn't also close (its keydown listener runs after this one).
+    if (e.key === 'Escape') { e.preventDefault(); closeQuestModal(); }
     else if (e.key === 'ArrowLeft') navigateQuestModal(-1);
     else if (e.key === 'ArrowRight') navigateQuestModal(1);
   });
@@ -4503,18 +4528,87 @@ function initQuestModal() {
 // Special "key" items (see js/key-items.js) get a highlighted card pinned above
 // the regular quest cards, and a fully bespoke pop-out guide on click.
 
-// Replace {item=ID}/{npc=ID}/{object=ID}/{zone=ID}/{quest=ID} tokens with
-// Wowhead tooltip links (resolved through KEY_ENTITIES).
-function linkifyKeyText(text) {
-  return String(text).replace(/\{(item|npc|object|zone|quest)=(\d+)\}/g, (m, type, id) => {
+// Lazy index: questId → { quest (normalized), dungeon } for every quest that
+// surfaces as a real card somewhere in DUNGEONS. Lets a {quest=ID} token in a
+// key guide open that quest's popout directly — even when the quest lives in a
+// different dungeon than the one currently in view.
+let _keyQuestIndex = null;
+function keyQuestIndex() {
+  if (_keyQuestIndex) return _keyQuestIndex;
+  const idx = {};
+  if (typeof DUNGEONS !== 'undefined') {
+    DUNGEONS.forEach(d => {
+      getCountableQuests(d).forEach(q => {
+        if (!(q.id in idx)) idx[q.id] = { quest: q, dungeon: d };
+      });
+    });
+  }
+  _keyQuestIndex = idx;
+  return idx;
+}
+
+// Level index of a map sub-zone, matched by its MULTI_LEVEL_MAPS label (mirrors
+// openMapModal's level lookup). Returns -1 when the location has no levels or
+// the label doesn't match, so callers can fall back to the default level.
+function mapLevelIndexByLabel(locationName, label) {
+  const levels = MULTI_LEVEL_MAPS[locationName] || MULTI_LEVEL_MAPS[ZONE_IDS[locationName]];
+  if (!Array.isArray(levels)) return -1;
+  return levels.findIndex(l => l.label === label);
+}
+
+// Replace {item=ID}/{npc=ID}/{object=ID}/{zone=ID}/{quest=ID} tokens. NPC,
+// location (zone) and quest tokens resolve to the app's own pop-outs when we
+// have that data locally — an NPC name shows a model preview on hover and opens
+// the model popout on click, a location opens its map popout, and a quest opens
+// its quest-card popout. Item/object tokens (and any entity we lack locally)
+// stay as Wowhead tooltip links. `keyId` (the DUNGEON_KEYS id this text belongs
+// to) lets a location open its map focused on a key-specific sub-zone.
+//
+// A zone token may name a sub-zone inline as {zone=ID#Sub-zone Label}: the link
+// then reads as that sub-zone and opens the map on it (overriding the per-key
+// default focus), e.g. {zone=796#Armory} renders "Armory" → SM Armory map.
+function linkifyKeyText(text, keyId = null) {
+  const focusMap = (keyId && typeof KEY_MAP_FOCUS !== 'undefined') ? KEY_MAP_FOCUS[keyId] : null;
+  return String(text).replace(/\{(item|npc|object|zone|quest)=(\d+)(?:#([^}]+))?\}/g, (m, type, id, sublabel) => {
     const ent = KEY_ENTITIES[`${type}=${id}`];
     const name = ent ? ent.name : m;
     const url = `https://www.wowhead.com/classic/${type}=${id}${ent && ent.slug ? '/' + ent.slug : ''}`;
-    if (type === 'item') {
-      const q = `q${Math.min((ent && ent.quality) || 1, 5)}`;
-      return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="item-link key-link ${q}" data-wh-icon-size="tiny">${escapeHtml(name)}</a>`;
+    const safe = escapeHtml(name);
+
+    // NPC → hover model preview (shared [data-npc-id] handler) + click opens the
+    // model/encounter popout. data-npc-name carries the display name for both.
+    if (type === 'npc') {
+      return `<span class="key-link key-link-npc" data-npc-id="${id}" data-npc-name="${safe}" title="View ${safe}">${safe}</span>`;
     }
-    return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="key-link key-link-${type}">${escapeHtml(name)}</a>`;
+
+    // Location → open the local map popout via the dedicated key-link-zone click
+    // handler. The sub-zone to focus comes from the token (#Label) when given,
+    // else the per-key default; an inline sub-zone also becomes the link text.
+    // Falls back to Wowhead if we have no map.
+    if (type === 'zone') {
+      if (ent && ZONE_IDS[ent.name]) {
+        const sub = sublabel || (focusMap ? focusMap[`zone=${id}`] : null);
+        const subAttr = sub ? ` data-map-sublevel="${escapeHtml(sub)}"` : '';
+        const display = sublabel ? escapeHtml(sublabel) : safe;
+        return `<span class="key-link key-link-zone" data-location="${escapeHtml(ent.name)}"${subAttr} title="View map">${display}</span>`;
+      }
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="key-link key-link-zone">${safe}</a>`;
+    }
+
+    // Quest → open the local quest-card popout. Falls back to Wowhead when the
+    // quest isn't one we surface as a card (e.g. the Scholomance key chain).
+    if (type === 'quest') {
+      if (keyQuestIndex()[id]) {
+        return `<span class="key-link key-link-quest" data-quest-id="${id}" title="View quest">${safe}</span>`;
+      }
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="key-link key-link-quest">${safe}</a>`;
+    }
+
+    // Item / object → Wowhead tooltip link (unchanged).
+    if (type === 'item') {
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="key-link" data-wh-icon-size="tiny">${safe}</a>`;
+    }
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="key-link key-link-${type}">${safe}</a>`;
   });
 }
 
@@ -4534,11 +4628,11 @@ function buildDungeonKeyCard(keyId) {
       <div class="dungeon-key-card-icon"><img src="${keyItemIconUrl(item.icon)}" alt="" loading="lazy"></div>
       <div class="dungeon-key-card-main">
         <div class="dungeon-key-card-eyebrow"><img src="assets/icons/key.png" class="dkc-eyebrow-ico" alt=""> Dungeon Key</div>
-        <div class="dungeon-key-card-name ${q}">${escapeHtml(item.name)}</div>
-        <div class="dungeon-key-card-tagline">${linkifyKeyText(key.tagline)}</div>
+        <div class="dungeon-key-card-name">${escapeHtml(item.name)}</div>
+        <div class="dungeon-key-card-tagline">${linkifyKeyText(key.tagline, keyId)}</div>
       </div>
       <div class="dungeon-key-card-cta">
-        <span class="dkc-method">${method.label}</span>
+        <span class="dkc-method">${method.icon ? `<img class="dkc-method-ico" src="assets/icons/${method.icon}" alt="">` : ''}${method.label}</span>
         <span class="dkc-open">View guide ›</span>
       </div>
     </div>`;
@@ -4578,30 +4672,30 @@ function prependDungeonKeyCard(dungeon, container) {
   });
 }
 
-function buildKeyModalBody(key) {
+function buildKeyModalBody(key, keyId) {
   const unlocksHtml = (key.unlocks && key.unlocks.length)
     ? `<div class="key-section key-unlocks">
-         <div class="key-section-title"><img class="key-section-ico" src="assets/icons/maps.png" alt=""> What it unlocks</div>
+         <div class="key-section-title"><img class="key-section-ico" src="assets/icons/unlock.png" alt=""> What it unlocks</div>
          <ul class="key-unlock-list">
-           ${key.unlocks.map(u => `<li>${linkifyKeyText(u)}</li>`).join('')}
+           ${key.unlocks.map(u => `<li>${linkifyKeyText(u, keyId)}</li>`).join('')}
          </ul>
        </div>`
     : '';
 
   const sourceHtml = key.source
-    ? `<div class="key-source">${linkifyKeyText(key.source)}</div>`
+    ? `<div class="key-source">${linkifyKeyText(key.source, keyId)}</div>`
     : '';
 
   const stepsHtml = (key.steps && key.steps.length)
     ? `<div class="key-section key-steps">
-         <div class="key-section-title"><img class="key-section-ico" src="assets/icons/objectives.png" alt=""> How to get it</div>
+         <div class="key-section-title"><img class="key-section-ico" src="assets/icons/stepbystep.png" alt=""> How to get it</div>
          ${sourceHtml}
          <ol class="key-step-list">
            ${key.steps.map(s => `
              <li class="key-step">
                <div class="key-step-content">
-                 ${s.title ? `<div class="key-step-title">${linkifyKeyText(s.title)}</div>` : ''}
-                 <div class="key-step-text">${linkifyKeyText(s.text)}</div>
+                 ${s.title ? `<div class="key-step-title">${linkifyKeyText(s.title, keyId)}</div>` : ''}
+                 <div class="key-step-text">${linkifyKeyText(s.text, keyId)}</div>
                </div>
              </li>`).join('')}
          </ol>
@@ -4611,7 +4705,7 @@ function buildKeyModalBody(key) {
   const rogueHtml = key.rogueNote
     ? `<div class="key-callout key-callout-rogue">
          <img class="key-callout-ico" src="assets/icons/classicon_rogue.jpg" alt="Rogue">
-         <div class="key-callout-text"><strong>Rogue shortcut —</strong> ${linkifyKeyText(key.rogueNote)}</div>
+         <div class="key-callout-text"><strong>Rogue shortcut —</strong> ${linkifyKeyText(key.rogueNote, keyId)}</div>
        </div>`
     : '';
 
@@ -4635,12 +4729,17 @@ function openKeyModal(dungeonId) {
   titleEl.textContent = item.name;
   titleEl.className = 'key-modal-title';
 
-  document.getElementById('keyModalTagline').innerHTML = linkifyKeyText(key.tagline);
+  document.getElementById('keyModalTagline').innerHTML = linkifyKeyText(key.tagline, dungeonId);
 
   document.getElementById('keyModalChips').innerHTML =
-    `<span class="key-chip key-chip-method">${method.label}</span>`;
+    `<span class="key-chip key-chip-method">${method.icon ? `<img class="key-chip-ico" src="assets/icons/${method.icon}" alt="">` : ''}${method.label}</span>`;
 
-  document.getElementById('keyModalBody').innerHTML = buildKeyModalBody(key);
+  document.getElementById('keyModalBody').innerHTML = buildKeyModalBody(key, dungeonId);
+
+  // Force gold on all key links — Wowhead's universal.css overrides stylesheet !important
+  document.querySelectorAll('#keyModal .key-link').forEach(el => {
+    el.style.setProperty('color', '#f0d080', 'important');
+  });
 
   const panel = document.querySelector('.key-modal-panel');
   panel.className = `key-modal-panel ${q}`;
@@ -4664,7 +4763,46 @@ function initKeyModal() {
   document.querySelector('.key-modal-backdrop').addEventListener('click', closeKeyModal);
   document.addEventListener('keydown', e => {
     const modal = document.getElementById('keyModal');
-    if (e.key === 'Escape' && modal.classList.contains('open')) closeKeyModal();
+    // initKeyModal runs after the map/quest/encounter inits, so this listener
+    // fires last. If a pop-out stacked on top already handled Escape (it calls
+    // preventDefault), yield to it and keep the key guide open underneath.
+    if (e.key === 'Escape' && modal.classList.contains('open') && !e.defaultPrevented) closeKeyModal();
+  });
+
+  // Key-guide NPC reference → open the model popout (hover preview is handled by
+  // the shared [data-npc-id] listener). The key modal stays open underneath (it
+  // sits one z-index below — see .key-modal CSS), so closing the model popout
+  // returns to the key guide.
+  document.addEventListener('click', e => {
+    const link = e.target.closest('.key-link-npc');
+    if (!link) return;
+    hideNpcModelPreview();
+    openEncounterModal(link.dataset.npcName, link.dataset.npcId);
+  });
+
+  // Key-guide location reference → open that location's map popout on top of the
+  // key guide, focused on the configured sub-zone when one is set. Skip the
+  // Wowhead-fallback anchor, which carries no location.
+  document.addEventListener('click', e => {
+    const link = e.target.closest('.key-link-zone');
+    if (!link || !link.dataset.location) return;
+    const loc = link.dataset.location;
+    let focus = null;
+    if (link.dataset.mapSublevel) {
+      const idx = mapLevelIndexByLabel(loc, link.dataset.mapSublevel);
+      if (idx >= 0) focus = { levelIndex: idx };
+    }
+    openMapModal(loc, focus);
+  });
+
+  // Key-guide quest reference → open that quest's card popout on top of the key
+  // guide.
+  document.addEventListener('click', e => {
+    const link = e.target.closest('.key-link-quest');
+    if (!link) return;
+    const entry = keyQuestIndex()[link.dataset.questId];
+    if (!entry) return;
+    openQuestModal(entry.quest, entry.dungeon, null);
   });
 }
 

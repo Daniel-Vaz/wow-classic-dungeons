@@ -171,6 +171,7 @@ const BOSS_ENCOUNTERS = {
       { name: "Ok'thor the Breaker", npcId: 9030 },
       { name: 'Hedrum the Creeper', npcId: 9032 },
     ]},
+    {name: 'Pyromancer Loregrain', npcId: 9024},
     { name: 'The Vault', event: true, bosses: [
       { name: 'Dark Keeper Bethek', npcId: 9438 },
       { name: 'Dark Keeper Ofgut', npcId: 9442 },
@@ -236,6 +237,7 @@ const BOSS_ENCOUNTERS = {
   ],
   dm: [
     { section: 'East' },
+    { name: 'Pusillin', npcId: 14354 },
     { name: 'Zevrim Thornhoof', npcId: 11490 },
     { name: 'Hydrospawn', npcId: 13280 },
     { name: 'Lethtendris', npcId: 14327 },

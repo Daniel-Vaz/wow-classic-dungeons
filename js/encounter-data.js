@@ -3074,6 +3074,33 @@ const ENCOUNTER_INFO = {
       }
     ]
   },
+  "9024": {
+    "level": "52",
+    "classification": "Rare Elite",
+    "type": "Humanoid",
+    "health": 8300,
+    "mana": 23250,
+    "abilities": [
+      {
+        "id": 15038,
+        "name": "Scorching Totem",
+        "school": "Fire",
+        "url": "https://www.wowhead.com/classic/spell=15038/scorching-totem"
+      },
+      {
+        "id": 15095,
+        "name": "Molten Blast",
+        "school": "Fire",
+        "url": "https://www.wowhead.com/classic/spell=15095/molten-blast"
+      },
+      {
+        "id": 15616,
+        "name": "Flame Shock",
+        "school": "Fire",
+        "url": "https://www.wowhead.com/classic/spell=15616/flame-shock"
+      }
+    ]
+  },
   "9438": {
     "level": "55",
     "classification": "Elite",
@@ -4357,6 +4384,27 @@ const ENCOUNTER_INFO = {
         "name": "Thunderclap",
         "school": "Nature",
         "url": "https://www.wowhead.com/classic/spell=15588/thunderclap"
+      }
+    ]
+  },
+  "14354": {
+    "level": "57",
+    "classification": "Elite",
+    "type": "Demon",
+    "health": 25655,
+    "mana": 13446,
+    "abilities": [
+      {
+        "id": 15228,
+        "name": "Fireball",
+        "school": "Fire",
+        "url": "https://www.wowhead.com/classic/spell=15228/fireball"
+      },
+      {
+        "id": 22735,
+        "name": "Spirit of Runn Tum",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=22735/spirit-of-runn-tum"
       }
     ]
   },

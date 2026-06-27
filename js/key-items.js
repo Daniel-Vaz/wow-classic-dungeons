@@ -83,12 +83,23 @@ const KEY_ENTITIES = {
   "quest=4742": { name: "Seal of Ascension", slug: "seal-of-ascension" },
 };
 
-// method → short label shown on the card/modal "how you get it" chip.
+// method → short label + icon shown on the card/modal "how you get it" chip.
 const KEY_METHODS = {
-  drop:      { label: 'Dungeon Drop' },
-  craft:     { label: 'Forged Item' },
-  questline: { label: 'Quest Chain' },
-  quest:     { label: 'Quest Reward' },
+  drop:      { label: 'Dungeon Drop', icon: 'drops.png' },
+  craft:     { label: 'Forged Item',  icon: 'forging.png' },
+  questline: { label: 'Quest Chain',  icon: 'questchain.png' },
+  quest:     { label: 'Quest Reward', icon: 'present.png' },
+};
+
+// Per-key map focus: when a key guide references a location ({zone=ID}), open
+// its map popout already switched to the most relevant sub-zone (level). Keyed
+// by key id → { "zone=ID": "Sub-zone label" }. The label is matched against the
+// zone's MULTI_LEVEL_MAPS entry at click time, so it survives map reordering and
+// falls back to the default level if the label ever stops matching.
+const KEY_MAP_FOCUS = {
+  sm:   { "zone=796":  "Library" },           // Scarlet Key opens the Armory/Cathedral, looted in the Library
+  brd:  { "zone=1584": "Shadowforge City" },  // Shadowforge Key unlocks the Shadowforge City doors
+  ubrs: { "zone=1583": "Upper – Dragonspire Hall" }, // Seal of Ascension gates Upper Spire
 };
 
 // Keys that also matter to a dungeon other than the one they primarily belong
@@ -105,7 +116,7 @@ const DUNGEON_KEYS = {
     method: 'drop',
     tagline: "Opens the Armory and Cathedral wings of Scarlet Monastery — and the Scarlet Hold side door in Stratholme.",
     unlocks: [
-      "The <strong>Armory</strong> and <strong>Cathedral</strong> wings of {zone=796}",
+      "The {zone=796#Armory} and {zone=796#Cathedral} wings of Scarlet Monastery",
       "The path to the Scarlet Hold on the Living side of {zone=2017}",
     ],
     source: "Looted from a chest behind the final boss of the Library wing.",
@@ -145,8 +156,8 @@ const DUNGEON_KEYS = {
     source: "Forged in The Hinterlands from the Sacred Mallet, then used inside Zul'Farrak.",
     steps: [
       { title: "Loot the Sacred Mallet", text: "In {zone=47}, kill {npc=7996} atop the Altar of Zul and loot her {item=9241}." },
-      { title: "Ride to Jintha'Alor", text: "Travel to the top level of Jintha'Alor, also in The Hinterlands." },
-      { title: "Forge the Mallet", text: "Use the Sacred Mallet at the altar there to transform it into the {item=9240}." },
+      { title: "Ride to Jintha'Alor", text: "Travel to the top level of Jintha'Alor, also in {zone=47}." },
+      { title: "Forge the Mallet", text: "Use the {item=9241} at the altar there to transform it into the {item=9240}." },
       { title: "Summon Gahz'rilla", text: "Carry the Mallet into {zone=1176} and use it at the Altar of Zul to summon {npc=7273}." },
     ],
   },
@@ -162,7 +173,7 @@ const DUNGEON_KEYS = {
     source: "Reward for finishing the Hakkar summoning questline; handed over by Yeh'kinya in Tanaris.",
     steps: [
       { title: "Screecher Spirits", text: "Complete {quest=3520}." },
-      { title: "The Prophecy of Mosh'aru", text: "Complete {quest=3527} — this requires summoning Gahz'rilla in Zul'Farrak (see the Mallet of Zul'Farrak)." },
+      { title: "The Prophecy of Mosh'aru", text: "Complete {quest=3527} — this requires summoning {npc=7273} in {zone=1176}." },
       { title: "The Ancient Egg", text: "Complete {quest=4787}." },
       { title: "The God Hakkar", text: "Complete {quest=3528} — your first summoning of the Avatar of Hakkar." },
       { title: "Collect the scroll", text: "Return to Yeh'kinya afterward and he gives you {item=10818}, letting you summon the boss whenever you like." },

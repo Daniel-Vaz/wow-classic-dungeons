@@ -3159,6 +3159,43 @@ const ENCOUNTER_LOOT = {
       "dropChance": 9.55
     }
   ],
+  "9024": [
+    {
+      "id": 11207,
+      "name": "Formula: Enchant Weapon - Fiery Weapon",
+      "url": "https://www.wowhead.com/classic/item=11207/formula-enchant-weapon-fiery-weapon",
+      "quality": 2,
+      "dropChance": 43.66
+    },
+    {
+      "id": 11748,
+      "name": "Pyric Caduceus",
+      "url": "https://www.wowhead.com/classic/item=11748/pyric-caduceus",
+      "quality": 3,
+      "dropChance": 28.37
+    },
+    {
+      "id": 11747,
+      "name": "Flamestrider Robes",
+      "url": "https://www.wowhead.com/classic/item=11747/flamestrider-robes",
+      "quality": 3,
+      "dropChance": 24.19
+    },
+    {
+      "id": 11749,
+      "name": "Searingscale Leggings",
+      "url": "https://www.wowhead.com/classic/item=11749/searingscale-leggings",
+      "quality": 3,
+      "dropChance": 23.66
+    },
+    {
+      "id": 11750,
+      "name": "Kindling Stave",
+      "url": "https://www.wowhead.com/classic/item=11750/kindling-stave",
+      "quality": 3,
+      "dropChance": 19.97
+    }
+  ],
   "9438": [
     {
       "id": 11197,
@@ -5988,6 +6025,22 @@ const ENCOUNTER_LOOT = {
       "url": "https://www.wowhead.com/classic/item=12592/blackblade-of-shahram",
       "quality": 4,
       "dropChance": 1.07
+    }
+  ],
+  "14354": [
+    {
+      "id": 18249,
+      "name": "Crescent Key",
+      "url": "https://www.wowhead.com/classic/item=18249/crescent-key",
+      "quality": 1,
+      "dropChance": 100.0
+    },
+    {
+      "id": 18267,
+      "name": "Recipe: Runn Tum Tuber Surprise",
+      "url": "https://www.wowhead.com/classic/item=18267/recipe-runn-tum-tuber-surprise",
+      "quality": 2,
+      "dropChance": 82.98
     }
   ],
   "11490": [
