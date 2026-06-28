@@ -251,8 +251,40 @@
   <div class="map-modal-panel" role="dialog" aria-labelledby="mapModalTitle">
     <div class="map-modal-header">
       <span class="map-modal-title" id="mapModalTitle"></span>
+      <div class="map-style-controls" id="mapStyleControls" hidden>
+        <div class="map-style-toggle" id="mapStyleToggle" role="group" aria-label="Map art style">
+          <button type="button" class="map-style-btn active" data-style="atlas">
+            <span class="map-style-btn-title">Atlas Classic</span>
+            <span class="map-style-btn-sub">Community</span>
+          </button>
+          <button type="button" class="map-style-btn" data-style="cataclysm">
+            <span class="map-style-btn-title">Cataclysm</span>
+            <span class="map-style-btn-sub">In-game</span>
+          </button>
+        </div>
+        <button type="button" class="map-style-info-btn" id="mapStyleInfoBtn" aria-label="About the map styles" aria-expanded="false" title="Why two map styles?">i</button>
+      </div>
       <a id="mapModalWowheadLink" href="#" target="_blank" rel="noopener noreferrer" class="map-wowhead-link"><img src="assets/icons/wowhead.png" class="map-wowhead-logo" alt="Wowhead"> View on Wowhead ↗</a>
       <button class="map-modal-close" id="mapModalClose" aria-label="Close map">✕</button>
+    </div>
+    <div class="map-style-info" id="mapStyleInfo" hidden role="dialog" aria-label="About the map styles">
+      <div class="map-style-info-head">
+        <span class="map-style-info-title">Two map styles, two eras</span>
+        <button type="button" class="map-style-info-close" id="mapStyleInfoClose" aria-label="Close">✕</button>
+      </div>
+      <p>Original Classic WoW shipped with <strong>no in-game dungeon maps</strong>. The community filled that gap — the
+        <a href="https://www.curseforge.com/wow/addons/atlas-classicwow" target="_blank" rel="noopener noreferrer">Atlas Classic</a>
+        addon hand-drew every dungeon and labelled its bosses and points of interest. Those are the <strong>Atlas Classic</strong> maps shown here by default.</p>
+      <p><strong>Cataclysm</strong> finally added official in-game maps — but the expansion also <strong>physically reworked many of these dungeons</strong>, so the modern map art often no longer matches the original Classic-era layout, bosses, or routes. We keep both so you can pick the one true to your game version.</p>
+      <p class="map-style-info-sub">Dungeons notably changed in Cataclysm:</p>
+      <ul class="map-style-info-list">
+        <li><strong>Sunken Temple</strong> — heavily cut down; only the middle floor remains accessible.</li>
+        <li><strong>Maraudon</strong> — split into three separate instances (Wicked Grotto, Foulspore Cavern, Earth Song Falls).</li>
+        <li><strong>Stratholme</strong> — Live and Undead sides split into two instances (Main Gate / Service Entrance).</li>
+        <li><strong>Wailing Caverns</strong> — the Winding Chasm section was removed and its bosses relocated.</li>
+        <li><strong>Deadmines</strong>, <strong>Shadowfang Keep</strong>, <strong>The Stockade</strong> — layouts largely intact, but mobs and bosses were replaced to fit the new Cataclysm storylines.</li>
+      </ul>
+      <a class="map-style-info-link" href="https://www.wowhead.com/cata/guide/dungeon-changes-in-cataclysm-classic" target="_blank" rel="noopener noreferrer"><img src="assets/icons/wowhead.png" class="map-wowhead-logo" alt="Wowhead"> Full list of Cataclysm dungeon changes ↗</a>
     </div>
     <div class="map-level-nav" id="mapLevelNav"></div>
     <div class="map-modal-main">
@@ -295,12 +327,16 @@
         <button class="map-coord-place-btn" id="mapPinPlaceByCoord">Place Pin</button>
       </div>
       <span class="map-pin-footer-hint">or click map</span>
+      <span class="map-atlas-credit">
+        <img src="assets/icons/maps.png" class="map-atlas-credit-logo" alt="Atlas"> Dungeon maps courtesy of the <a href="https://www.curseforge.com/wow/addons/atlas-classicwow" target="_blank" rel="noopener noreferrer">Atlas Classic</a> addon — many thanks to their team for this fantastic resource!
+      </span>
     </div>
   </div>
 </div>
 
 <script src="js/data.js"></script>
 <script src="js/constants.js"></script>
+<script src="js/instance-maps.js"></script>
 <script src="js/key-items.js"></script>
 <script src="js/quest-pins.js"></script>
 <script src="js/loot-data.js"></script>

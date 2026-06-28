@@ -317,6 +317,8 @@ function updateUrl() {
       params.set('map', top.location);
       if (top.sub) params.set('floor', top.sub);
       if (top.pin) params.set('pin', top.pin);
+      // Atlas is the default art style, so only the Cataclysm choice is encoded.
+      if (top.style === 'cataclysm') params.set('style', 'cataclysm');
     }
   }
   history.replaceState(null, '', '?' + params.toString());
@@ -402,8 +404,11 @@ function openPopoutFromUrl() {
       const found = questPinFor(p.map, p.pin);
       if (found) { openMapModal(p.map, { label: p.pin, levelIndex: found.levelIndex }); return; }
     }
-    const levelIndex = p.floor ? mapLevelIndexByLabel(p.map, p.floor) : -1;
-    openMapModal(p.map, levelIndex > 0 ? { levelIndex } : null);
+    if (p.floor || p.style) {
+      openMapModal(p.map, { floorLabel: p.floor || undefined, style: p.style || undefined });
+    } else {
+      openMapModal(p.map);
+    }
   }
 }
 
@@ -432,6 +437,7 @@ function readUrlParams() {
     map: params.get('map'),
     floor: params.get('floor'),
     pin: params.get('pin'),
+    style: params.get('style'),
   };
 }
 
@@ -3156,6 +3162,10 @@ let mapNaturalW = 0, mapNaturalH = 0;
 // Coordinate & pin state
 let mapCurrentLocation = null;
 let mapCurrentLevelIndex = 0;
+// Instance-map art style: 'atlas' (original Atlas_ClassicWoW maps, default) or
+// 'cataclysm' (the hand-made reworked maps + interactive pins). Only meaningful
+// for locations that have Atlas data; outdoor zones are always 'cataclysm'.
+let mapStyleMode = 'atlas';
 let mapUserPins = [];
 let mapEditingPinId = null;
 let mapPendingFocus = null; // { label } — pin to centre on once the map image loads
@@ -3245,25 +3255,73 @@ function applyPendingMapFocus() {
 
 // Open the map popout for a location. Pass `focus` ({ label, levelIndex }) to
 // centre on a specific quest-giver pin once the map loads.
-function openMapModal(locationName, focus = null) {
-  const zoneId = ZONE_IDS[locationName];
-  if (!zoneId) return;
+// Atlas Classic instance-map data for a location (entrance + floor maps with
+// baked-in numbered legends), or null when the location has no Atlas map.
+function atlasMapData(locationName) {
+  return (typeof ATLAS_INSTANCE_MAPS !== 'undefined' && ATLAS_INSTANCE_MAPS[locationName]) || null;
+}
 
-  const initialLevel = focus && focus.levelIndex ? focus.levelIndex : 0;
-  mapCurrentLocation = locationName;
-  mapCurrentLevelIndex = initialLevel;
-  mapPendingFocus = focus ? { label: focus.label } : null;
-  closePinEditDialog();
-  applyPinListDefault();
+// The level (floor/subzone) array for the active style: Atlas levels when in
+// Atlas mode, otherwise the hand-made MULTI_LEVEL_MAPS. null = single-image map.
+function mapLevelsFor(locationName) {
+  if (mapStyleMode === 'atlas') {
+    const atlas = atlasMapData(locationName);
+    return atlas ? atlas.levels : null;
+  }
+  return MULTI_LEVEL_MAPS[locationName] || MULTI_LEVEL_MAPS[ZONE_IDS[locationName]] || null;
+}
 
-  const wowheadUrl = `https://www.wowhead.com/classic/zone=${zoneId}`;
-  document.getElementById('mapModalTitle').textContent = locationName;
-  document.getElementById('mapModalWowheadLink').href  = wowheadUrl;
+// Resolve a sub-zone label to { style, levelIndex } across both art styles.
+// Prefers the default Atlas style when it carries the label; otherwise falls back
+// to Cataclysm so existing sub-zone deep links keep landing on the right floor.
+function resolveMapFloor(locationName, label) {
+  const atlas = atlasMapData(locationName);
+  if (atlas) {
+    const i = atlas.levels.findIndex(l => l.label === label);
+    if (i >= 0) return { style: 'atlas', levelIndex: i };
+  }
+  const cata = MULTI_LEVEL_MAPS[locationName] || MULTI_LEVEL_MAPS[ZONE_IDS[locationName]];
+  if (Array.isArray(cata)) {
+    const i = cata.findIndex(l => l.label === label);
+    if (i >= 0) return { style: 'cataclysm', levelIndex: i };
+  }
+  return null;
+}
 
-  // Build level nav (empty for single-map zones)
-  const levelNav   = document.getElementById('mapLevelNav');
-  const levels     = MULTI_LEVEL_MAPS[locationName] || MULTI_LEVEL_MAPS[zoneId];
+// The style to record in the deeplink — only when the location actually has an
+// Atlas alternative (so plain zone maps never carry a style param).
+function mapPopoutStyle() {
+  return atlasMapData(mapCurrentLocation) ? mapStyleMode : null;
+}
+
+function updateMapStyleToggle() {
+  document.querySelectorAll('#mapStyleToggle .map-style-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.style === mapStyleMode));
+}
+
+// Info popover explaining why both Atlas and Cataclysm map styles exist.
+function openMapStyleInfo() {
+  document.getElementById('mapStyleInfo').hidden = false;
+  document.getElementById('mapStyleInfoBtn').setAttribute('aria-expanded', 'true');
+}
+function closeMapStyleInfo() {
+  const info = document.getElementById('mapStyleInfo');
+  if (info) info.hidden = true;
+  const btn = document.getElementById('mapStyleInfoBtn');
+  if (btn) btn.setAttribute('aria-expanded', 'false');
+}
+function toggleMapStyleInfo() {
+  if (document.getElementById('mapStyleInfo').hidden) openMapStyleInfo();
+  else closeMapStyleInfo();
+}
+
+// (Re)build the floor nav and load the current level's image for the active
+// style. Shared by openMapModal and the Atlas/Cataclysm toggle.
+function renderMapStyle(locationName, initialLevel) {
+  const levelNav = document.getElementById('mapLevelNav');
   levelNav.innerHTML = '';
+  const levels = mapLevelsFor(locationName);
+  mapCurrentLevelIndex = initialLevel;
 
   if (levels) {
     levels.forEach((level, i) => {
@@ -3279,25 +3337,85 @@ function openMapModal(locationName, focus = null) {
         loadMapImage(level.src);
         // Reflect the viewed floor in the deeplink (label, not index, stays stable
         // if floors are reordered).
-        pushPopout({ type: 'map', location: locationName, sub: level.label });
+        pushPopout({ type: 'map', location: locationName, sub: level.label, style: mapPopoutStyle() });
       });
       levelNav.appendChild(btn);
     });
   }
 
-  // Open the modal first so the viewport has real dimensions when onload fires
-  document.getElementById('mapModal').setAttribute('aria-hidden', 'false');
-  document.getElementById('mapModal').classList.add('open');
-
   loadMapUserPins();
-  const firstSrc = levels ? (levels[initialLevel] || levels[0]).src : `assets/maps/${zoneId}.jpg`;
+  const firstSrc = levels
+    ? (levels[initialLevel] || levels[0]).src
+    : `assets/maps/${ZONE_IDS[locationName]}.jpg`;
   loadMapImage(firstSrc);
+}
+
+// Switch the open instance map between Atlas and Cataclysm art styles, rebuilding
+// the floor nav, image and pin/legend panel and resetting to the first level.
+function setMapStyle(style) {
+  if (style === mapStyleMode || !atlasMapData(mapCurrentLocation)) return;
+  mapStyleMode = style;
+  document.getElementById('mapModal').classList.toggle('atlas-mode', style === 'atlas');
+  updateMapStyleToggle();
+  closePinEditDialog();
+  renderMapStyle(mapCurrentLocation, 0);
+  pushPopout({ type: 'map', location: mapCurrentLocation, sub: null, style: mapPopoutStyle() });
+}
+
+function openMapModal(locationName, focus = null) {
+  const zoneId = ZONE_IDS[locationName];
+  if (!zoneId) return;
+
+  // Pick the art style. Atlas is the default for instances that have it, but a
+  // pin focus or a Cataclysm-only sub-zone falls back to the coordinate maps, and
+  // an explicit style (deeplink/toggle restore) wins.
+  const atlas = atlasMapData(locationName);
+  let style = atlas ? 'atlas' : 'cataclysm';
+  if (atlas) {
+    if (focus && focus.label) style = 'cataclysm';
+    if (focus && focus.floorLabel) {
+      const r = resolveMapFloor(locationName, focus.floorLabel);
+      if (r) style = r.style;
+    }
+    if (focus && (focus.style === 'atlas' || focus.style === 'cataclysm')) style = focus.style;
+  }
+  mapStyleMode = style;
+
+  let initialLevel = focus && focus.levelIndex ? focus.levelIndex : 0;
+  if (focus && focus.floorLabel) {
+    const i = mapLevelIndexByLabel(locationName, focus.floorLabel, mapStyleMode);
+    if (i >= 0) initialLevel = i;
+  }
+
+  mapCurrentLocation = locationName;
+  mapCurrentLevelIndex = initialLevel;
+  mapPendingFocus = focus ? { label: focus.label } : null;
+  closePinEditDialog();
+  applyPinListDefault();
+
+  const wowheadUrl = `https://www.wowhead.com/classic/zone=${zoneId}`;
+  document.getElementById('mapModalTitle').textContent = locationName;
+  document.getElementById('mapModalWowheadLink').href  = wowheadUrl;
+
+  // Style toggle is only shown for instance maps that have an Atlas alternative.
+  const modal = document.getElementById('mapModal');
+  document.getElementById('mapStyleControls').hidden = !atlas;
+  closeMapStyleInfo();
+  updateMapStyleToggle();
+  modal.classList.toggle('atlas-mode', mapStyleMode === 'atlas');
+
+  // Open the modal first so the viewport has real dimensions when onload fires
+  modal.setAttribute('aria-hidden', 'false');
+  modal.classList.add('open');
+
+  renderMapStyle(locationName, initialLevel);
 
   // Encode the floor label only when it isn't the default first level, keeping
   // single-map and ground-floor links clean. A focus carries the pin to centre
   // on, so it's deeplinked too.
+  const levels = mapLevelsFor(locationName);
   const sub = (levels && initialLevel > 0) ? (levels[initialLevel] || {}).label : null;
-  pushPopout({ type: 'map', location: locationName, sub, pin: focus ? focus.label : null });
+  pushPopout({ type: 'map', location: locationName, sub, pin: focus ? focus.label : null, style: mapPopoutStyle() });
 }
 
 function clearActivePinLabels() {
@@ -3359,6 +3477,7 @@ function revealPinInList(pin, type) {
 }
 
 function closeMapModal() {
+  closeMapStyleInfo();
   closePinEditDialog();
   clearActivePinLabels();
   document.getElementById('mapModal').classList.remove('open');
@@ -3373,6 +3492,24 @@ function initMapModal() {
 
   document.getElementById('mapModalClose').addEventListener('click', closeMapModal);
   document.querySelector('.map-modal-backdrop').addEventListener('click', closeMapModal);
+
+  // Atlas Classic / Cataclysm art-style toggle (instance maps only)
+  document.querySelectorAll('#mapStyleToggle .map-style-btn').forEach(btn =>
+    btn.addEventListener('click', () => setMapStyle(btn.dataset.style)));
+
+  // "Why two map styles?" info popover
+  document.getElementById('mapStyleInfoBtn').addEventListener('click', e => {
+    e.stopPropagation();
+    toggleMapStyleInfo();
+  });
+  document.getElementById('mapStyleInfoClose').addEventListener('click', closeMapStyleInfo);
+  // Close the popover when clicking anywhere outside it (but not the trigger).
+  document.addEventListener('click', e => {
+    const info = document.getElementById('mapStyleInfo');
+    if (info.hidden) return;
+    if (e.target.closest('#mapStyleInfo') || e.target.closest('#mapStyleInfoBtn')) return;
+    closeMapStyleInfo();
+  });
 
   // Zoom buttons
   document.getElementById('mapZoomIn').addEventListener('click', () => {
@@ -3440,6 +3577,7 @@ function initMapModal() {
   // Click on viewport — place a user pin (ignore drags and clicks on existing pins/dialog)
   vp.addEventListener('click', e => {
     if (mapWasDragged) return;
+    if (mapStyleMode === 'atlas') return; // Atlas maps have no coordinate pins
     if (e.target.closest('.map-pin-edit-dialog')) return;
     if (e.target.closest('.map-pin--user')) return; // handled by pin's own listener
     closePinEditDialog();
@@ -3603,10 +3741,14 @@ function mapPinsStorageKey() {
 }
 
 function loadMapUserPins() {
-  mapUserPins = JSON.parse(localStorage.getItem(mapPinsStorageKey()) || '[]');
+  // Atlas maps have no coordinate system, so user pins don't apply there.
+  mapUserPins = mapStyleMode === 'atlas'
+    ? []
+    : JSON.parse(localStorage.getItem(mapPinsStorageKey()) || '[]');
 }
 
 function saveMapUserPins() {
+  if (mapStyleMode === 'atlas') return;
   localStorage.setItem(mapPinsStorageKey(), JSON.stringify(mapUserPins));
 }
 
@@ -3633,6 +3775,16 @@ function renderMapPins() {
   if (!container) return;
   container.innerHTML = '';
 
+  // Atlas maps have their points of interest drawn into the image, so there are
+  // no positioned pins — the side panel becomes a read-only legend instead.
+  const panelTitle = document.querySelector('.map-pin-list-header-title');
+  if (mapStyleMode === 'atlas') {
+    if (panelTitle) panelTitle.textContent = 'Legend';
+    renderAtlasLegend();
+    return;
+  }
+  if (panelTitle) panelTitle.textContent = 'Pins';
+
   // System/predefined pins: hand-curated MAP_PINS plus the auto-generated
   // QUEST_PINS (quest giver locations scraped from the Questie database).
   const zoneId = ZONE_IDS[mapCurrentLocation];
@@ -3655,6 +3807,78 @@ function renderMapPins() {
   mapUserPins.forEach(pin => renderSinglePin(container, pin, 'user'));
 
   renderPinList(systemPins, mapUserPins);
+}
+
+// Bucket an Atlas legend into collapsible sections. Lettered refs are areas /
+// connections, numbered refs are points of interest, header lines with no ref are
+// notes (attunement, reputation…). Sub-notes (indent) follow their parent's bucket.
+function atlasLegendSections(pois) {
+  const areas = [], points = [], notes = [];
+  let last = points;
+  pois.forEach(p => {
+    if (p.indent) { last.push(p); return; }
+    if (!p.ref) { notes.push(p); last = notes; return; }
+    if (/[A-Za-z]/.test(p.ref)) { areas.push(p); last = areas; }
+    else { points.push(p); last = points; }
+  });
+  const out = [];
+  if (notes.length) out.push({ title: 'Notes', items: notes });
+  if (areas.length) out.push({ title: 'Areas & Connections', items: areas });
+  if (points.length) out.push({ title: 'Points of Interest', items: points });
+  return out;
+}
+
+function atlasLegendItem(p) {
+  const item = document.createElement('div');
+  item.className = 'pin-list-item atlas-legend-item' + (p.indent ? ' indent' : '');
+  const isLetter = p.ref && /[A-Za-z]/.test(p.ref);
+  const badge = document.createElement('span');
+  badge.className = 'atlas-ref' + (isLetter ? ' letter' : (p.ref ? '' : ' none'));
+  badge.textContent = p.ref || '';
+  const name = document.createElement('span');
+  name.className = 'atlas-legend-name cat-' + (p.category || 'other');
+  name.textContent = p.label;
+  item.appendChild(badge);
+  item.appendChild(name);
+  return item;
+}
+
+// Read-only legend for the current Atlas map level, rendered into the pin panel.
+function renderAtlasLegend() {
+  const list = document.getElementById('mapPinList');
+  if (!list) return;
+  list.innerHTML = '';
+  const data = atlasMapData(mapCurrentLocation);
+  const level = data && data.levels[mapCurrentLevelIndex];
+  const pois = (level && level.pois) || [];
+  if (!pois.length) {
+    list.innerHTML = `<div class="pin-list-empty">No legend for this map.</div>`;
+    return;
+  }
+  atlasLegendSections(pois).forEach(sec => {
+    const section = document.createElement('div');
+    section.className = 'pin-list-section atlas-legend-section expanded';
+
+    const header = document.createElement('button');
+    header.className = 'pin-list-section-header';
+    header.setAttribute('aria-expanded', 'true');
+    header.innerHTML =
+      `<span class="pin-list-section-chevron">›</span>`
+      + `<span class="pin-list-section-title">${sec.title}</span>`
+      + `<span class="pin-list-section-count">${sec.items.filter(i => !i.indent).length}</span>`;
+    header.addEventListener('click', () => {
+      const open = section.classList.toggle('expanded');
+      header.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    const body = document.createElement('div');
+    body.className = 'pin-list-section-body';
+    sec.items.forEach(p => body.appendChild(atlasLegendItem(p)));
+
+    section.appendChild(header);
+    section.appendChild(body);
+    list.appendChild(section);
+  });
 }
 
 // Pin-list sections, grouped by pin type. Order + display labels:
@@ -4204,7 +4428,8 @@ function initLoadingScreenLightbox() {
     const screen = e.target.closest('.dungeon-loading-screen');
     const npcThumb = e.target.closest('.qm-req-npc-thumb');
     const npcPreview = e.target.closest('.qm-npc-preview-img');
-    const source = screen || npcThumb || npcPreview;
+    const sourceThumb = e.target.closest('.qm-req-source-thumb');
+    const source = screen || npcThumb || npcPreview || sourceThumb;
     if (!source) return;
     const img = document.getElementById('loadingScreenLightboxImg');
     img.src = source.src;
@@ -4383,6 +4608,48 @@ function initEncounterModal() {
 
 // An item-reward link with a wowhead tooltip icon (data-wh-icon-size lets the
 // wowhead power script render the item icon + hover tooltip inside the popout).
+// Where a required *item* comes from — the NPCs that drop it or the objects/items
+// that contain it, scraped onto each item requirement as `sources`. Grouped by
+// relation ("Dropped by", "Contained in", …) and shown beneath the item so the
+// player knows where to farm it. Returns '' when the requirement has no sources
+// (e.g. kill/interact objectives, or items whose source we couldn't resolve).
+function questModalReqSourcesHtml(req) {
+  const sources = req && req.sources;
+  if (!Array.isArray(sources) || !sources.length) return '';
+
+  const groups = [];
+  for (const src of sources) {
+    const label = src.relation || 'Source';
+    let group = groups.find(g => g.label === label);
+    if (!group) { group = { label, items: [] }; groups.push(group); }
+    group.items.push(src);
+  }
+
+  const groupHtml = groups.map(group => {
+    const items = group.items.map(src => {
+      const hasThumb = src.type === 'npc' || src.type === 'object';
+      // The thumb is a sibling of the link (not nested in it) so a click expands
+      // it in the lightbox instead of following the Wowhead link — same as the
+      // .qm-req-npc-thumb handler in init().
+      const thumb = hasThumb
+        ? `<img class="qm-req-source-thumb" src="assets/npc-models/${src.id}.jpg" alt="${escapeHtml(src.name)}" onerror="this.hidden=true">`
+        : '';
+      const pct = (typeof src.dropChance === 'number')
+        ? `<span class="qm-req-source-pct">${src.dropChance}%</span>`
+        : '';
+      return `<div class="qm-req-source">
+          ${thumb}<a href="${src.url}" target="_blank" rel="noopener noreferrer" class="qm-req-source-name">${escapeHtml(src.name)}</a>${pct}
+        </div>`;
+    }).join('');
+    return `<div class="qm-req-source-group">
+        <span class="qm-req-source-label">${group.label}</span>
+        <div class="qm-req-source-list">${items}</div>
+      </div>`;
+  }).join('');
+
+  return `<div class="qm-req-sources">${groupHtml}</div>`;
+}
+
 function questModalItemLink(item) {
   const qClass = `q${Math.min(item.quality || 1, 5)}`;
   const inner = item.url
@@ -4513,7 +4780,7 @@ function buildQuestModalBody(quest, dungeon) {
                : '';
              return `<div class="qm-req-entry">
                ${npcThumb}<a href="${req.url}" target="_blank" rel="noopener noreferrer" class="qm-req-link${qClass}" data-wh-icon-size="medium">${escapeHtml(req.name)}</a>${qty}
-             </div>`;
+             </div>${questModalReqSourcesHtml(req)}`;
            }).join('')}
          </div>
        </div>`
@@ -4785,8 +5052,11 @@ function keyQuestIndex() {
 // Level index of a map sub-zone, matched by its MULTI_LEVEL_MAPS label (mirrors
 // openMapModal's level lookup). Returns -1 when the location has no levels or
 // the label doesn't match, so callers can fall back to the default level.
-function mapLevelIndexByLabel(locationName, label) {
-  const levels = MULTI_LEVEL_MAPS[locationName] || MULTI_LEVEL_MAPS[ZONE_IDS[locationName]];
+function mapLevelIndexByLabel(locationName, label, style = mapStyleMode) {
+  const atlas = atlasMapData(locationName);
+  const levels = (style === 'atlas' && atlas)
+    ? atlas.levels
+    : (MULTI_LEVEL_MAPS[locationName] || MULTI_LEVEL_MAPS[ZONE_IDS[locationName]]);
   if (!Array.isArray(levels)) return -1;
   return levels.findIndex(l => l.label === label);
 }
@@ -5025,10 +5295,7 @@ function initKeyModal() {
     if (!link || !link.dataset.location) return;
     const loc = link.dataset.location;
     let focus = null;
-    if (link.dataset.mapSublevel) {
-      const idx = mapLevelIndexByLabel(loc, link.dataset.mapSublevel);
-      if (idx >= 0) focus = { levelIndex: idx };
-    }
+    if (link.dataset.mapSublevel) focus = { floorLabel: link.dataset.mapSublevel };
     openMapModal(loc, focus);
   });
 

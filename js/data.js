@@ -68,7 +68,17 @@ const DUNGEONS = [
             "name": "Taragaman the Hungerer's Heart",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=14540/taragaman-the-hungerers-heart",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11520,
+                "name": "Taragaman the Hungerer",
+                "url": "https://www.wowhead.com/classic/npc=11520/taragaman-the-hungerer",
+                "relation": "Dropped by",
+                "dropChance": 46.7
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -353,7 +363,25 @@ const DUNGEONS = [
             "name": "Spells of Shadow",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=14395/spells-of-shadow",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11324,
+                "name": "Searing Blade Warlock",
+                "url": "https://www.wowhead.com/classic/npc=11324/searing-blade-warlock",
+                "relation": "Dropped by",
+                "dropChance": 2.4
+              },
+              {
+                "type": "npc",
+                "id": 11322,
+                "name": "Searing Blade Cultist",
+                "url": "https://www.wowhead.com/classic/npc=11322/searing-blade-cultist",
+                "relation": "Dropped by",
+                "dropChance": 2.3
+              }
+            ]
           },
           {
             "type": "item",
@@ -361,7 +389,25 @@ const DUNGEONS = [
             "name": "Incantations from the Nether",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=14396/incantations-from-the-nether",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11322,
+                "name": "Searing Blade Cultist",
+                "url": "https://www.wowhead.com/classic/npc=11322/searing-blade-cultist",
+                "relation": "Dropped by",
+                "dropChance": 2.3
+              },
+              {
+                "type": "npc",
+                "id": 11324,
+                "name": "Searing Blade Warlock",
+                "url": "https://www.wowhead.com/classic/npc=11324/searing-blade-warlock",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -520,7 +566,33 @@ const DUNGEONS = [
                 "name": "Lieutenant's Insignia",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=14544/lieutenants-insignia",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 3198,
+                    "name": "Burning Blade Apprentice",
+                    "url": "https://www.wowhead.com/classic/npc=3198/burning-blade-apprentice",
+                    "relation": "Dropped by",
+                    "dropChance": 9.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 3197,
+                    "name": "Burning Blade Fanatic",
+                    "url": "https://www.wowhead.com/classic/npc=3197/burning-blade-fanatic",
+                    "relation": "Dropped by",
+                    "dropChance": 4.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 3100,
+                    "name": "Elder Mottled Boar",
+                    "url": "https://www.wowhead.com/classic/npc=3100/elder-mottled-boar",
+                    "relation": "Dropped by",
+                    "dropChance": 0.0
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -709,7 +781,105 @@ const DUNGEONS = [
             "name": "Deviate Hide",
             "quantity": 20,
             "url": "https://www.wowhead.com/classic/item=6443/deviate-hide",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3653,
+                "name": "Kresh",
+                "url": "https://www.wowhead.com/classic/npc=3653/kresh",
+                "relation": "Dropped by",
+                "dropChance": 37.6
+              },
+              {
+                "type": "npc",
+                "id": 3632,
+                "name": "Deviate Creeper",
+                "url": "https://www.wowhead.com/classic/npc=3632/deviate-creeper",
+                "relation": "Dropped by",
+                "dropChance": 23.8
+              },
+              {
+                "type": "npc",
+                "id": 3641,
+                "name": "Deviate Lurker",
+                "url": "https://www.wowhead.com/classic/npc=3641/deviate-lurker",
+                "relation": "Dropped by",
+                "dropChance": 23.6
+              },
+              {
+                "type": "npc",
+                "id": 8886,
+                "name": "Deviate Python",
+                "url": "https://www.wowhead.com/classic/npc=8886/deviate-python",
+                "relation": "Dropped by",
+                "dropChance": 23.6
+              },
+              {
+                "type": "npc",
+                "id": 3634,
+                "name": "Deviate Stalker",
+                "url": "https://www.wowhead.com/classic/npc=3634/deviate-stalker",
+                "relation": "Dropped by",
+                "dropChance": 23.4
+              },
+              {
+                "type": "npc",
+                "id": 3631,
+                "name": "Deviate Stinglash",
+                "url": "https://www.wowhead.com/classic/npc=3631/deviate-stinglash",
+                "relation": "Dropped by",
+                "dropChance": 23.2
+              },
+              {
+                "type": "npc",
+                "id": 3630,
+                "name": "Deviate Coiler",
+                "url": "https://www.wowhead.com/classic/npc=3630/deviate-coiler",
+                "relation": "Dropped by",
+                "dropChance": 23.0
+              },
+              {
+                "type": "npc",
+                "id": 3633,
+                "name": "Deviate Slayer",
+                "url": "https://www.wowhead.com/classic/npc=3633/deviate-slayer",
+                "relation": "Dropped by",
+                "dropChance": 23.0
+              },
+              {
+                "type": "npc",
+                "id": 5761,
+                "name": "Deviate Shambler",
+                "url": "https://www.wowhead.com/classic/npc=5761/deviate-shambler",
+                "relation": "Dropped by",
+                "dropChance": 22.6
+              },
+              {
+                "type": "npc",
+                "id": 3637,
+                "name": "Deviate Guardian",
+                "url": "https://www.wowhead.com/classic/npc=3637/deviate-guardian",
+                "relation": "Dropped by",
+                "dropChance": 20.2
+              },
+              {
+                "type": "npc",
+                "id": 3636,
+                "name": "Deviate Ravager",
+                "url": "https://www.wowhead.com/classic/npc=3636/deviate-ravager",
+                "relation": "Dropped by",
+                "dropChance": 19.1
+              },
+              {
+                "type": "npc",
+                "id": 5755,
+                "name": "Deviate Viper",
+                "url": "https://www.wowhead.com/classic/npc=5755/deviate-viper",
+                "relation": "Dropped by",
+                "dropChance": 18.3
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -792,7 +962,16 @@ const DUNGEONS = [
             "name": "99-Year-Old Port",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5334/99-year-old-port",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3655,
+                "name": "Mad Magglish",
+                "url": "https://www.wowhead.com/classic/npc=3655/mad-magglish",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -970,7 +1149,16 @@ const DUNGEONS = [
             "name": "Serpentbloom",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=5339/serpentbloom",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3678,
+                "name": "Disciple of Naralex",
+                "url": "https://www.wowhead.com/classic/npc=3678/disciple-of-naralex",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -1046,7 +1234,33 @@ const DUNGEONS = [
             "name": "Wailing Essence",
             "quantity": 6,
             "url": "https://www.wowhead.com/classic/item=6464/wailing-essence",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3638,
+                "name": "Devouring Ectoplasm",
+                "url": "https://www.wowhead.com/classic/npc=3638/devouring-ectoplasm",
+                "relation": "Dropped by",
+                "dropChance": 34.9
+              },
+              {
+                "type": "npc",
+                "id": 3640,
+                "name": "Evolving Ectoplasm",
+                "url": "https://www.wowhead.com/classic/npc=3640/evolving-ectoplasm",
+                "relation": "Dropped by",
+                "dropChance": 29.0
+              },
+              {
+                "type": "npc",
+                "id": 5763,
+                "name": "Nightmare Ectoplasm",
+                "url": "https://www.wowhead.com/classic/npc=5763/nightmare-ectoplasm",
+                "relation": "Dropped by",
+                "dropChance": 13.5
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -1109,7 +1323,33 @@ const DUNGEONS = [
                 "name": "Intact Raptor Horn",
                 "quantity": 5,
                 "url": "https://www.wowhead.com/classic/item=5055/intact-raptor-horn",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 3256,
+                    "name": "Sunscale Scytheclaw",
+                    "url": "https://www.wowhead.com/classic/npc=3256/sunscale-scytheclaw",
+                    "relation": "Dropped by",
+                    "dropChance": 26.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 5842,
+                    "name": "Takk the Leaper",
+                    "url": "https://www.wowhead.com/classic/npc=5842/takk-the-leaper",
+                    "relation": "Dropped by",
+                    "dropChance": 6.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 3257,
+                    "name": "Ishamuhale",
+                    "url": "https://www.wowhead.com/classic/npc=3257/ishamuhale",
+                    "relation": "Dropped by",
+                    "dropChance": 1.4
+                  }
+                ]
               }
             ],
             "rewards": [
@@ -1198,7 +1438,17 @@ const DUNGEONS = [
             "name": "Gem of Cobrahn",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9738/gem-of-cobrahn",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3669,
+                "name": "Lord Cobrahn",
+                "url": "https://www.wowhead.com/classic/npc=3669/lord-cobrahn",
+                "relation": "Dropped by",
+                "dropChance": 62.5
+              }
+            ]
           },
           {
             "type": "item",
@@ -1206,7 +1456,17 @@ const DUNGEONS = [
             "name": "Gem of Anacondra",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9739/gem-of-anacondra",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3671,
+                "name": "Lady Anacondra",
+                "url": "https://www.wowhead.com/classic/npc=3671/lady-anacondra",
+                "relation": "Dropped by",
+                "dropChance": 62.5
+              }
+            ]
           },
           {
             "type": "item",
@@ -1214,7 +1474,17 @@ const DUNGEONS = [
             "name": "Gem of Pythas",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9740/gem-of-pythas",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3670,
+                "name": "Lord Pythas",
+                "url": "https://www.wowhead.com/classic/npc=3670/lord-pythas",
+                "relation": "Dropped by",
+                "dropChance": 45.5
+              }
+            ]
           },
           {
             "type": "item",
@@ -1222,7 +1492,17 @@ const DUNGEONS = [
             "name": "Gem of Serpentis",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9741/gem-of-serpentis",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3673,
+                "name": "Lord Serpentis",
+                "url": "https://www.wowhead.com/classic/npc=3673/lord-serpentis",
+                "relation": "Dropped by",
+                "dropChance": 10.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -1500,7 +1780,17 @@ const DUNGEONS = [
                 "name": "Altered Snapjaw Shell",
                 "quantity": 8,
                 "url": "https://www.wowhead.com/classic/item=5098/altered-snapjaw-shell",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 3461,
+                    "name": "Oasis Snapjaw",
+                    "url": "https://www.wowhead.com/classic/npc=3461/oasis-snapjaw",
+                    "relation": "Dropped by",
+                    "dropChance": 92.3
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -1801,7 +2091,33 @@ const DUNGEONS = [
             "name": "Miners' Union Card",
             "quantity": 4,
             "url": "https://www.wowhead.com/classic/item=1894/miners-union-card",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 625,
+                "name": "Undead Dynamiter",
+                "url": "https://www.wowhead.com/classic/npc=625/undead-dynamiter",
+                "relation": "Dropped by",
+                "dropChance": 38.8
+              },
+              {
+                "type": "npc",
+                "id": 624,
+                "name": "Undead Excavator",
+                "url": "https://www.wowhead.com/classic/npc=624/undead-excavator",
+                "relation": "Dropped by",
+                "dropChance": 38.2
+              },
+              {
+                "type": "npc",
+                "id": 623,
+                "name": "Skeletal Miner",
+                "url": "https://www.wowhead.com/classic/npc=623/skeletal-miner",
+                "relation": "Dropped by",
+                "dropChance": 38.1
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -1884,7 +2200,17 @@ const DUNGEONS = [
             "name": "Thistlenettle's Badge",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=1875/thistlenettles-badge",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 626,
+                "name": "Foreman Thistlenettle",
+                "url": "https://www.wowhead.com/classic/npc=626/foreman-thistlenettle",
+                "relation": "Dropped by",
+                "dropChance": 60.0
+              }
+            ]
           }
         ],
         "rewards": [
@@ -1960,7 +2286,17 @@ const DUNGEONS = [
             "name": "Gnoam Sprecklesprocket",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=7365/gnoam-sprecklesprocket",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 642,
+                "name": "Sneed's Shredder",
+                "url": "https://www.wowhead.com/classic/npc=642/sneed-s-shredder",
+                "relation": "Dropped by",
+                "dropChance": 40.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -2113,7 +2449,17 @@ const DUNGEONS = [
             "name": "Head of VanCleef",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=3637/head-of-vancleef",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 639,
+                "name": "Edwin VanCleef",
+                "url": "https://www.wowhead.com/classic/npc=639/edwin-vancleef",
+                "relation": "Dropped by",
+                "dropChance": 31.2
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -2454,7 +2800,17 @@ const DUNGEONS = [
                 "name": "A Mysterious Message",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=1381/a-mysterious-message",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 550,
+                    "name": "Defias Messenger",
+                    "url": "https://www.wowhead.com/classic/npc=550/defias-messenger",
+                    "relation": "Dropped by",
+                    "dropChance": 75.0
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -2608,7 +2964,105 @@ const DUNGEONS = [
                 "name": "Red Silk Bandana",
                 "quantity": 10,
                 "url": "https://www.wowhead.com/classic/item=915/red-silk-bandana",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 824,
+                    "name": "Defias Digger",
+                    "url": "https://www.wowhead.com/classic/npc=824/defias-digger",
+                    "relation": "Dropped by",
+                    "dropChance": 18.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1727,
+                    "name": "Defias Worker",
+                    "url": "https://www.wowhead.com/classic/npc=1727/defias-worker",
+                    "relation": "Dropped by",
+                    "dropChance": 17.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1726,
+                    "name": "Defias Magician",
+                    "url": "https://www.wowhead.com/classic/npc=1726/defias-magician",
+                    "relation": "Dropped by",
+                    "dropChance": 13.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 594,
+                    "name": "Defias Henchman",
+                    "url": "https://www.wowhead.com/classic/npc=594/defias-henchman",
+                    "relation": "Dropped by",
+                    "dropChance": 13.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 619,
+                    "name": "Defias Conjurer",
+                    "url": "https://www.wowhead.com/classic/npc=619/defias-conjurer",
+                    "relation": "Dropped by",
+                    "dropChance": 13.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 598,
+                    "name": "Defias Miner",
+                    "url": "https://www.wowhead.com/classic/npc=598/defias-miner",
+                    "relation": "Dropped by",
+                    "dropChance": 11.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1725,
+                    "name": "Defias Watchman",
+                    "url": "https://www.wowhead.com/classic/npc=1725/defias-watchman",
+                    "relation": "Dropped by",
+                    "dropChance": 9.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1729,
+                    "name": "Defias Evoker",
+                    "url": "https://www.wowhead.com/classic/npc=1729/defias-evoker",
+                    "relation": "Dropped by",
+                    "dropChance": 9.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 634,
+                    "name": "Defias Overseer",
+                    "url": "https://www.wowhead.com/classic/npc=634/defias-overseer",
+                    "relation": "Dropped by",
+                    "dropChance": 7.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 4416,
+                    "name": "Defias Strip Miner",
+                    "url": "https://www.wowhead.com/classic/npc=4416/defias-strip-miner",
+                    "relation": "Dropped by",
+                    "dropChance": 5.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 4417,
+                    "name": "Defias Taskmaster",
+                    "url": "https://www.wowhead.com/classic/npc=4417/defias-taskmaster",
+                    "relation": "Dropped by",
+                    "dropChance": 4.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 4418,
+                    "name": "Defias Wizard",
+                    "url": "https://www.wowhead.com/classic/npc=4418/defias-wizard",
+                    "relation": "Dropped by",
+                    "dropChance": 4.2
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -2841,7 +3295,105 @@ const DUNGEONS = [
             "name": "Red Silk Bandana",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=915/red-silk-bandana",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 824,
+                "name": "Defias Digger",
+                "url": "https://www.wowhead.com/classic/npc=824/defias-digger",
+                "relation": "Dropped by",
+                "dropChance": 18.3
+              },
+              {
+                "type": "npc",
+                "id": 1727,
+                "name": "Defias Worker",
+                "url": "https://www.wowhead.com/classic/npc=1727/defias-worker",
+                "relation": "Dropped by",
+                "dropChance": 17.2
+              },
+              {
+                "type": "npc",
+                "id": 1726,
+                "name": "Defias Magician",
+                "url": "https://www.wowhead.com/classic/npc=1726/defias-magician",
+                "relation": "Dropped by",
+                "dropChance": 13.5
+              },
+              {
+                "type": "npc",
+                "id": 594,
+                "name": "Defias Henchman",
+                "url": "https://www.wowhead.com/classic/npc=594/defias-henchman",
+                "relation": "Dropped by",
+                "dropChance": 13.4
+              },
+              {
+                "type": "npc",
+                "id": 619,
+                "name": "Defias Conjurer",
+                "url": "https://www.wowhead.com/classic/npc=619/defias-conjurer",
+                "relation": "Dropped by",
+                "dropChance": 13.1
+              },
+              {
+                "type": "npc",
+                "id": 598,
+                "name": "Defias Miner",
+                "url": "https://www.wowhead.com/classic/npc=598/defias-miner",
+                "relation": "Dropped by",
+                "dropChance": 11.3
+              },
+              {
+                "type": "npc",
+                "id": 1725,
+                "name": "Defias Watchman",
+                "url": "https://www.wowhead.com/classic/npc=1725/defias-watchman",
+                "relation": "Dropped by",
+                "dropChance": 9.7
+              },
+              {
+                "type": "npc",
+                "id": 1729,
+                "name": "Defias Evoker",
+                "url": "https://www.wowhead.com/classic/npc=1729/defias-evoker",
+                "relation": "Dropped by",
+                "dropChance": 9.1
+              },
+              {
+                "type": "npc",
+                "id": 634,
+                "name": "Defias Overseer",
+                "url": "https://www.wowhead.com/classic/npc=634/defias-overseer",
+                "relation": "Dropped by",
+                "dropChance": 7.9
+              },
+              {
+                "type": "npc",
+                "id": 4416,
+                "name": "Defias Strip Miner",
+                "url": "https://www.wowhead.com/classic/npc=4416/defias-strip-miner",
+                "relation": "Dropped by",
+                "dropChance": 5.1
+              },
+              {
+                "type": "npc",
+                "id": 4417,
+                "name": "Defias Taskmaster",
+                "url": "https://www.wowhead.com/classic/npc=4417/defias-taskmaster",
+                "relation": "Dropped by",
+                "dropChance": 4.2
+              },
+              {
+                "type": "npc",
+                "id": 4418,
+                "name": "Defias Wizard",
+                "url": "https://www.wowhead.com/classic/npc=4418/defias-wizard",
+                "relation": "Dropped by",
+                "dropChance": 4.2
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -2931,7 +3483,17 @@ const DUNGEONS = [
             "name": "Whitestone Oak Lumber",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=6994/whitestone-oak-lumber",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 641,
+                "name": "Goblin Woodcarver",
+                "url": "https://www.wowhead.com/classic/npc=641/goblin-woodcarver",
+                "relation": "Dropped by",
+                "dropChance": 1.2
+              }
+            ]
           },
           {
             "type": "item",
@@ -2947,7 +3509,16 @@ const DUNGEONS = [
             "name": "Jordan's Smithing Hammer",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=6895/jordans-smithing-hammer",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 91138,
+                "name": "Jordan's Hammer",
+                "url": "https://www.wowhead.com/classic/object=91138/jordan-s-hammer",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -3395,7 +3966,16 @@ const DUNGEONS = [
             "name": "The Book of Ur",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=6283/the-book-of-ur",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 36738,
+                "name": "The Book of Ur",
+                "url": "https://www.wowhead.com/classic/object=36738/the-book-of-ur",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -3545,7 +4125,17 @@ const DUNGEONS = [
             "name": "Head of Arugal",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5442/head-of-arugal",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4275,
+                "name": "Archmage Arugal",
+                "url": "https://www.wowhead.com/classic/npc=4275/archmage-arugal",
+                "relation": "Dropped by",
+                "dropChance": 15.0
+              }
+            ]
           }
         ],
         "rewards": [
@@ -3621,7 +4211,17 @@ const DUNGEONS = [
             "name": "Whitestone Oak Lumber",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=6994/whitestone-oak-lumber",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 641,
+                "name": "Goblin Woodcarver",
+                "url": "https://www.wowhead.com/classic/npc=641/goblin-woodcarver",
+                "relation": "Dropped by",
+                "dropChance": 1.2
+              }
+            ]
           },
           {
             "type": "item",
@@ -3637,7 +4237,16 @@ const DUNGEONS = [
             "name": "Jordan's Smithing Hammer",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=6895/jordans-smithing-hammer",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 91138,
+                "name": "Jordan's Hammer",
+                "url": "https://www.wowhead.com/classic/object=91138/jordan-s-hammer",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -4149,7 +4758,57 @@ const DUNGEONS = [
             "name": "Twilight Pendant",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=5879/twilight-pendant",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4810,
+                "name": "Twilight Reaver",
+                "url": "https://www.wowhead.com/classic/npc=4810/twilight-reaver",
+                "relation": "Dropped by",
+                "dropChance": 36.4
+              },
+              {
+                "type": "npc",
+                "id": 4811,
+                "name": "Twilight Aquamancer",
+                "url": "https://www.wowhead.com/classic/npc=4811/twilight-aquamancer",
+                "relation": "Dropped by",
+                "dropChance": 35.6
+              },
+              {
+                "type": "npc",
+                "id": 4812,
+                "name": "Twilight Loreseeker",
+                "url": "https://www.wowhead.com/classic/npc=4812/twilight-loreseeker",
+                "relation": "Dropped by",
+                "dropChance": 35.1
+              },
+              {
+                "type": "npc",
+                "id": 4809,
+                "name": "Twilight Acolyte",
+                "url": "https://www.wowhead.com/classic/npc=4809/twilight-acolyte",
+                "relation": "Dropped by",
+                "dropChance": 32.8
+              },
+              {
+                "type": "npc",
+                "id": 4814,
+                "name": "Twilight Elementalist",
+                "url": "https://www.wowhead.com/classic/npc=4814/twilight-elementalist",
+                "relation": "Dropped by",
+                "dropChance": 20.7
+              },
+              {
+                "type": "npc",
+                "id": 4813,
+                "name": "Twilight Shadowmage",
+                "url": "https://www.wowhead.com/classic/npc=4813/twilight-shadowmage",
+                "relation": "Dropped by",
+                "dropChance": 20.5
+              }
+            ]
           }
         ],
         "rewards": [
@@ -4232,7 +4891,30 @@ const DUNGEONS = [
             "name": "Sapphire of Aku'Mai",
             "quantity": 20,
             "url": "https://www.wowhead.com/classic/item=16784/sapphire-of-akumai",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 178186,
+                "name": "Sapphire of Aku'Mai",
+                "url": "https://www.wowhead.com/classic/object=178186/sapphire-of-aku-mai",
+                "relation": "Contained in"
+              },
+              {
+                "type": "object",
+                "id": 178185,
+                "name": "Sapphire of Aku'Mai",
+                "url": "https://www.wowhead.com/classic/object=178185/sapphire-of-aku-mai",
+                "relation": "Contained in"
+              },
+              {
+                "type": "object",
+                "id": 178184,
+                "name": "Sapphire of Aku'Mai",
+                "url": "https://www.wowhead.com/classic/object=178184/sapphire-of-aku-mai",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -4370,7 +5052,105 @@ const DUNGEONS = [
             "name": "Corrupted Brain Stem",
             "quantity": 8,
             "url": "https://www.wowhead.com/classic/item=5952/corrupted-brain-stem",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 216660,
+                "name": "Fallenroot Rogue",
+                "url": "https://www.wowhead.com/classic/npc=216660/fallenroot-rogue",
+                "relation": "Dropped by",
+                "dropChance": 16.7
+              },
+              {
+                "type": "npc",
+                "id": 4789,
+                "name": "Fallenroot Rogue",
+                "url": "https://www.wowhead.com/classic/npc=4789/fallenroot-rogue",
+                "relation": "Dropped by",
+                "dropChance": 13.9
+              },
+              {
+                "type": "npc",
+                "id": 4788,
+                "name": "Fallenroot Satyr",
+                "url": "https://www.wowhead.com/classic/npc=4788/fallenroot-satyr",
+                "relation": "Dropped by",
+                "dropChance": 13.7
+              },
+              {
+                "type": "npc",
+                "id": 204645,
+                "name": "Blackfathom Elite",
+                "url": "https://www.wowhead.com/classic/npc=204645/blackfathom-elite",
+                "relation": "Dropped by",
+                "dropChance": 13.3
+              },
+              {
+                "type": "npc",
+                "id": 216662,
+                "name": "Blackfathom Oracle",
+                "url": "https://www.wowhead.com/classic/npc=216662/blackfathom-oracle",
+                "relation": "Dropped by",
+                "dropChance": 13.1
+              },
+              {
+                "type": "npc",
+                "id": 4803,
+                "name": "Blackfathom Oracle",
+                "url": "https://www.wowhead.com/classic/npc=4803/blackfathom-oracle",
+                "relation": "Dropped by",
+                "dropChance": 12.2
+              },
+              {
+                "type": "npc",
+                "id": 216659,
+                "name": "Fallenroot Satyr",
+                "url": "https://www.wowhead.com/classic/npc=216659/fallenroot-satyr",
+                "relation": "Dropped by",
+                "dropChance": 12.1
+              },
+              {
+                "type": "npc",
+                "id": 4799,
+                "name": "Fallenroot Hellcaller",
+                "url": "https://www.wowhead.com/classic/npc=4799/fallenroot-hellcaller",
+                "relation": "Dropped by",
+                "dropChance": 10.8
+              },
+              {
+                "type": "npc",
+                "id": 4802,
+                "name": "Blackfathom Tide Priestess",
+                "url": "https://www.wowhead.com/classic/npc=4802/blackfathom-tide-priestess",
+                "relation": "Dropped by",
+                "dropChance": 10.6
+              },
+              {
+                "type": "npc",
+                "id": 4805,
+                "name": "Blackfathom Sea Witch",
+                "url": "https://www.wowhead.com/classic/npc=4805/blackfathom-sea-witch",
+                "relation": "Dropped by",
+                "dropChance": 10.4
+              },
+              {
+                "type": "npc",
+                "id": 4807,
+                "name": "Blackfathom Myrmidon",
+                "url": "https://www.wowhead.com/classic/npc=4807/blackfathom-myrmidon",
+                "relation": "Dropped by",
+                "dropChance": 10.4
+              },
+              {
+                "type": "npc",
+                "id": 4798,
+                "name": "Fallenroot Shadowstalker",
+                "url": "https://www.wowhead.com/classic/npc=4798/fallenroot-shadowstalker",
+                "relation": "Dropped by",
+                "dropChance": 10.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -4667,7 +5447,16 @@ const DUNGEONS = [
             "name": "Fathom Core",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=16762/fathom-core",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 177964,
+                "name": "Fathom Stone",
+                "url": "https://www.wowhead.com/classic/object=177964/fathom-stone",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -4735,7 +5524,25 @@ const DUNGEONS = [
             "name": "Head of Kelris",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5881/head-of-kelris",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4832,
+                "name": "Twilight Lord Kelris",
+                "url": "https://www.wowhead.com/classic/npc=4832/twilight-lord-kelris",
+                "relation": "Dropped by",
+                "dropChance": 63.5
+              },
+              {
+                "type": "npc",
+                "id": 209678,
+                "name": "Twilight Lord Kelris",
+                "url": "https://www.wowhead.com/classic/npc=209678/twilight-lord-kelris",
+                "relation": "Dropped by",
+                "dropChance": 13.6
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -4823,7 +5630,25 @@ const DUNGEONS = [
             "name": "Head of Kelris",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5881/head-of-kelris",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4832,
+                "name": "Twilight Lord Kelris",
+                "url": "https://www.wowhead.com/classic/npc=4832/twilight-lord-kelris",
+                "relation": "Dropped by",
+                "dropChance": 63.5
+              },
+              {
+                "type": "npc",
+                "id": 209678,
+                "name": "Twilight Lord Kelris",
+                "url": "https://www.wowhead.com/classic/npc=209678/twilight-lord-kelris",
+                "relation": "Dropped by",
+                "dropChance": 13.6
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -4972,7 +5797,16 @@ const DUNGEONS = [
             "name": "Lorgalis Manuscript",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5359/lorgalis-manuscript",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 13949,
+                "name": "Pitted Iron Chest",
+                "url": "https://www.wowhead.com/classic/object=13949/pitted-iron-chest",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -5144,7 +5978,17 @@ const DUNGEONS = [
             "name": "Head of Targorr",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=3630/head-of-targorr",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 1696,
+                "name": "Targorr the Dread",
+                "url": "https://www.wowhead.com/classic/npc=1696/targorr-the-dread",
+                "relation": "Dropped by",
+                "dropChance": 37.5
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -5227,7 +6071,73 @@ const DUNGEONS = [
             "name": "Red Wool Bandana",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=2909/red-wool-bandana",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 1707,
+                "name": "Defias Captive",
+                "url": "https://www.wowhead.com/classic/npc=1707/defias-captive",
+                "relation": "Dropped by",
+                "dropChance": 8.1
+              },
+              {
+                "type": "npc",
+                "id": 1706,
+                "name": "Defias Prisoner",
+                "url": "https://www.wowhead.com/classic/npc=1706/defias-prisoner",
+                "relation": "Dropped by",
+                "dropChance": 7.9
+              },
+              {
+                "type": "npc",
+                "id": 1708,
+                "name": "Defias Inmate",
+                "url": "https://www.wowhead.com/classic/npc=1708/defias-inmate",
+                "relation": "Dropped by",
+                "dropChance": 6.1
+              },
+              {
+                "type": "npc",
+                "id": 1711,
+                "name": "Defias Convict",
+                "url": "https://www.wowhead.com/classic/npc=1711/defias-convict",
+                "relation": "Dropped by",
+                "dropChance": 6.0
+              },
+              {
+                "type": "npc",
+                "id": 1715,
+                "name": "Defias Insurgent",
+                "url": "https://www.wowhead.com/classic/npc=1715/defias-insurgent",
+                "relation": "Dropped by",
+                "dropChance": 5.7
+              },
+              {
+                "type": "npc",
+                "id": 1720,
+                "name": "Bruegal Ironknuckle",
+                "url": "https://www.wowhead.com/classic/npc=1720/bruegal-ironknuckle",
+                "relation": "Dropped by",
+                "dropChance": 3.5
+              },
+              {
+                "type": "npc",
+                "id": 1663,
+                "name": "Dextren Ward",
+                "url": "https://www.wowhead.com/classic/npc=1663/dextren-ward",
+                "relation": "Dropped by",
+                "dropChance": 3.4
+              },
+              {
+                "type": "npc",
+                "id": 1716,
+                "name": "Bazil Thredd",
+                "url": "https://www.wowhead.com/classic/npc=1716/bazil-thredd",
+                "relation": "Dropped by",
+                "dropChance": 2.9
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -5295,7 +6205,17 @@ const DUNGEONS = [
             "name": "Hand of Dextren Ward",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=3628/hand-of-dextren-ward",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 1663,
+                "name": "Dextren Ward",
+                "url": "https://www.wowhead.com/classic/npc=1663/dextren-ward",
+                "relation": "Dropped by",
+                "dropChance": 42.9
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -5378,7 +6298,17 @@ const DUNGEONS = [
             "name": "Head of Bazil Thredd",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=2926/head-of-bazil-thredd",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 1716,
+                "name": "Bazil Thredd",
+                "url": "https://www.wowhead.com/classic/npc=1716/bazil-thredd",
+                "relation": "Dropped by",
+                "dropChance": 46.2
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -5633,7 +6563,17 @@ const DUNGEONS = [
             "name": "Head of Deepfury",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=3640/head-of-deepfury",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 1666,
+                "name": "Kam Deepfury",
+                "url": "https://www.wowhead.com/classic/npc=1666/kam-deepfury",
+                "relation": "Dropped by",
+                "dropChance": 7.5
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -5894,7 +6834,105 @@ const DUNGEONS = [
             "name": "Grime-Encrusted Object",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9308/grime-encrusted-object",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 6224,
+                "name": "Leprous Machinesmith",
+                "url": "https://www.wowhead.com/classic/npc=6224/leprous-machinesmith",
+                "relation": "Dropped by",
+                "dropChance": 49.0
+              },
+              {
+                "type": "npc",
+                "id": 6407,
+                "name": "Holdout Technician",
+                "url": "https://www.wowhead.com/classic/npc=6407/holdout-technician",
+                "relation": "Dropped by",
+                "dropChance": 46.7
+              },
+              {
+                "type": "npc",
+                "id": 6392,
+                "name": "Holdout Medic",
+                "url": "https://www.wowhead.com/classic/npc=6392/holdout-medic",
+                "relation": "Dropped by",
+                "dropChance": 46.1
+              },
+              {
+                "type": "npc",
+                "id": 6222,
+                "name": "Leprous Technician",
+                "url": "https://www.wowhead.com/classic/npc=6222/leprous-technician",
+                "relation": "Dropped by",
+                "dropChance": 45.2
+              },
+              {
+                "type": "npc",
+                "id": 6391,
+                "name": "Holdout Warrior",
+                "url": "https://www.wowhead.com/classic/npc=6391/holdout-warrior",
+                "relation": "Dropped by",
+                "dropChance": 44.2
+              },
+              {
+                "type": "npc",
+                "id": 216669,
+                "name": "Caverndeep Pillager",
+                "url": "https://www.wowhead.com/classic/npc=216669/caverndeep-pillager",
+                "relation": "Dropped by",
+                "dropChance": 42.6
+              },
+              {
+                "type": "npc",
+                "id": 6211,
+                "name": "Caverndeep Reaver",
+                "url": "https://www.wowhead.com/classic/npc=6211/caverndeep-reaver",
+                "relation": "Dropped by",
+                "dropChance": 41.7
+              },
+              {
+                "type": "npc",
+                "id": 6206,
+                "name": "Caverndeep Burrower",
+                "url": "https://www.wowhead.com/classic/npc=6206/caverndeep-burrower",
+                "relation": "Dropped by",
+                "dropChance": 41.1
+              },
+              {
+                "type": "npc",
+                "id": 6210,
+                "name": "Caverndeep Pillager",
+                "url": "https://www.wowhead.com/classic/npc=6210/caverndeep-pillager",
+                "relation": "Dropped by",
+                "dropChance": 41.0
+              },
+              {
+                "type": "npc",
+                "id": 6207,
+                "name": "Caverndeep Ambusher",
+                "url": "https://www.wowhead.com/classic/npc=6207/caverndeep-ambusher",
+                "relation": "Dropped by",
+                "dropChance": 40.8
+              },
+              {
+                "type": "npc",
+                "id": 6329,
+                "name": "Irradiated Pillager",
+                "url": "https://www.wowhead.com/classic/npc=6329/irradiated-pillager",
+                "relation": "Dropped by",
+                "dropChance": 40.8
+              },
+              {
+                "type": "npc",
+                "id": 6223,
+                "name": "Leprous Defender",
+                "url": "https://www.wowhead.com/classic/npc=6223/leprous-defender",
+                "relation": "Dropped by",
+                "dropChance": 40.2
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -6106,7 +7144,25 @@ const DUNGEONS = [
             "name": "Techbot's Memory Core",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9277/techbots-memory-core",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 6231,
+                "name": "Techbot",
+                "url": "https://www.wowhead.com/classic/npc=6231/techbot",
+                "relation": "Dropped by",
+                "dropChance": 78.7
+              },
+              {
+                "type": "npc",
+                "id": 216666,
+                "name": "Techbot",
+                "url": "https://www.wowhead.com/classic/npc=216666/techbot",
+                "relation": "Dropped by",
+                "dropChance": 40.3
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -6308,7 +7364,105 @@ const DUNGEONS = [
             "name": "Robo-mechanical Guts",
             "quantity": 24,
             "url": "https://www.wowhead.com/classic/item=9309/robo-mechanical-guts",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 6230,
+                "name": "Peacekeeper Security Suit",
+                "url": "https://www.wowhead.com/classic/npc=6230/peacekeeper-security-suit",
+                "relation": "Dropped by",
+                "dropChance": 27.7
+              },
+              {
+                "type": "npc",
+                "id": 6219,
+                "name": "Corrosive Lurker",
+                "url": "https://www.wowhead.com/classic/npc=6219/corrosive-lurker",
+                "relation": "Dropped by",
+                "dropChance": 24.8
+              },
+              {
+                "type": "npc",
+                "id": 6218,
+                "name": "Irradiated Slime",
+                "url": "https://www.wowhead.com/classic/npc=6218/irradiated-slime",
+                "relation": "Dropped by",
+                "dropChance": 23.4
+              },
+              {
+                "type": "npc",
+                "id": 7603,
+                "name": "Leprous Assistant",
+                "url": "https://www.wowhead.com/classic/npc=7603/leprous-assistant",
+                "relation": "Dropped by",
+                "dropChance": 21.6
+              },
+              {
+                "type": "npc",
+                "id": 6207,
+                "name": "Caverndeep Ambusher",
+                "url": "https://www.wowhead.com/classic/npc=6207/caverndeep-ambusher",
+                "relation": "Dropped by",
+                "dropChance": 20.2
+              },
+              {
+                "type": "npc",
+                "id": 6213,
+                "name": "Irradiated Invader",
+                "url": "https://www.wowhead.com/classic/npc=6213/irradiated-invader",
+                "relation": "Dropped by",
+                "dropChance": 19.7
+              },
+              {
+                "type": "npc",
+                "id": 6225,
+                "name": "Mechano-Tank",
+                "url": "https://www.wowhead.com/classic/npc=6225/mechano-tank",
+                "relation": "Dropped by",
+                "dropChance": 19.7
+              },
+              {
+                "type": "npc",
+                "id": 6222,
+                "name": "Leprous Technician",
+                "url": "https://www.wowhead.com/classic/npc=6222/leprous-technician",
+                "relation": "Dropped by",
+                "dropChance": 18.5
+              },
+              {
+                "type": "npc",
+                "id": 6220,
+                "name": "Irradiated Horror",
+                "url": "https://www.wowhead.com/classic/npc=6220/irradiated-horror",
+                "relation": "Dropped by",
+                "dropChance": 18.0
+              },
+              {
+                "type": "npc",
+                "id": 6206,
+                "name": "Caverndeep Burrower",
+                "url": "https://www.wowhead.com/classic/npc=6206/caverndeep-burrower",
+                "relation": "Dropped by",
+                "dropChance": 17.3
+              },
+              {
+                "type": "npc",
+                "id": 6329,
+                "name": "Irradiated Pillager",
+                "url": "https://www.wowhead.com/classic/npc=6329/irradiated-pillager",
+                "relation": "Dropped by",
+                "dropChance": 17.2
+              },
+              {
+                "type": "npc",
+                "id": 6223,
+                "name": "Leprous Defender",
+                "url": "https://www.wowhead.com/classic/npc=6223/leprous-defender",
+                "relation": "Dropped by",
+                "dropChance": 15.5
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -6391,7 +7545,16 @@ const DUNGEONS = [
             "name": "Essential Artificial",
             "quantity": 12,
             "url": "https://www.wowhead.com/classic/item=9278/essential-artificial",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 142344,
+                "name": "Artificial Extrapolator",
+                "url": "https://www.wowhead.com/classic/object=142344/artificial-extrapolator",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -6899,7 +8062,16 @@ const DUNGEONS = [
             "name": "Rig Blueprints",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9153/rig-blueprints",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 142477,
+                "name": "Thermaplugg's Safe",
+                "url": "https://www.wowhead.com/classic/object=142477/thermaplugg-s-safe",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -6907,7 +8079,25 @@ const DUNGEONS = [
             "name": "Thermaplugg's Safe Combination",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9299/thermapluggs-safe-combination",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7800,
+                "name": "Mekgineer Thermaplugg",
+                "url": "https://www.wowhead.com/classic/npc=7800/mekgineer-thermaplugg",
+                "relation": "Dropped by",
+                "dropChance": 19.7
+              },
+              {
+                "type": "npc",
+                "id": 218537,
+                "name": "Mekgineer Thermaplugg",
+                "url": "https://www.wowhead.com/classic/npc=218537/mekgineer-thermaplugg",
+                "relation": "Dropped by",
+                "dropChance": 5.4
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -7327,7 +8517,16 @@ const DUNGEONS = [
                 "name": "Rig Blueprints",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=9153/rig-blueprints",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 142477,
+                    "name": "Thermaplugg's Safe",
+                    "url": "https://www.wowhead.com/classic/object=142477/thermaplugg-s-safe",
+                    "relation": "Contained in"
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -7335,7 +8534,25 @@ const DUNGEONS = [
                 "name": "Thermaplugg's Safe Combination",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=9299/thermapluggs-safe-combination",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 7800,
+                    "name": "Mekgineer Thermaplugg",
+                    "url": "https://www.wowhead.com/classic/npc=7800/mekgineer-thermaplugg",
+                    "relation": "Dropped by",
+                    "dropChance": 19.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 218537,
+                    "name": "Mekgineer Thermaplugg",
+                    "url": "https://www.wowhead.com/classic/npc=218537/mekgineer-thermaplugg",
+                    "relation": "Dropped by",
+                    "dropChance": 5.4
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -7465,7 +8682,23 @@ const DUNGEONS = [
             "name": "Blueleaf Tuber",
             "quantity": 6,
             "url": "https://www.wowhead.com/classic/item=5876/blueleaf-tuber",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4508,
+                "name": "Willix the Importer",
+                "url": "https://www.wowhead.com/classic/npc=4508/willix-the-importer",
+                "relation": "Dropped by"
+              },
+              {
+                "type": "object",
+                "id": 20920,
+                "name": "Blueleaf Tuber",
+                "url": "https://www.wowhead.com/classic/object=20920/blueleaf-tuber",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -7473,7 +8706,16 @@ const DUNGEONS = [
             "name": "Crate With Holes",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5880/crate-with-holes",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 21277,
+                "name": "Crate with Holes",
+                "url": "https://www.wowhead.com/classic/object=21277/crate-with-holes",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -7481,7 +8723,16 @@ const DUNGEONS = [
             "name": "Snufflenose Owner's Manual",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5897/snufflenose-owners-manual",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 21530,
+                "name": "Snufflenose Owner's Manual",
+                "url": "https://www.wowhead.com/classic/object=21530/snufflenose-owner-s-manual",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -7489,7 +8740,16 @@ const DUNGEONS = [
             "name": "Snufflenose Command Stick",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=6684/snufflenose-command-stick",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 68865,
+                "name": "Snufflenose Command Sticks",
+                "url": "https://www.wowhead.com/classic/object=68865/snufflenose-command-sticks",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -7565,7 +8825,17 @@ const DUNGEONS = [
             "name": "Razorflank's Heart",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5793/razorflanks-heart",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4421,
+                "name": "Charlga Razorflank",
+                "url": "https://www.wowhead.com/classic/npc=4421/charlga-razorflank",
+                "relation": "Dropped by",
+                "dropChance": 8.6
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -7655,7 +8925,25 @@ const DUNGEONS = [
             "name": "Kraul Guano",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5801/kraul-guano",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4538,
+                "name": "Kraul Bat",
+                "url": "https://www.wowhead.com/classic/npc=4538/kraul-bat",
+                "relation": "Dropped by",
+                "dropChance": 9.0
+              },
+              {
+                "type": "npc",
+                "id": 4539,
+                "name": "Greater Kraul Bat",
+                "url": "https://www.wowhead.com/classic/npc=4539/greater-kraul-bat",
+                "relation": "Dropped by",
+                "dropChance": 8.3
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -7741,7 +9029,17 @@ const DUNGEONS = [
             "name": "Razorflank's Medallion",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5792/razorflanks-medallion",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4421,
+                "name": "Charlga Razorflank",
+                "url": "https://www.wowhead.com/classic/npc=4421/charlga-razorflank",
+                "relation": "Dropped by",
+                "dropChance": 11.1
+              }
+            ]
           }
         ],
         "rewards": [
@@ -7982,7 +9280,105 @@ const DUNGEONS = [
             "name": "Treshala's Pendant",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5825/treshalas-pendant",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4436,
+                "name": "Razorfen Quilguard",
+                "url": "https://www.wowhead.com/classic/npc=4436/razorfen-quilguard",
+                "relation": "Dropped by",
+                "dropChance": 1.6
+              },
+              {
+                "type": "npc",
+                "id": 4519,
+                "name": "Death's Head Seer",
+                "url": "https://www.wowhead.com/classic/npc=4519/death-s-head-seer",
+                "relation": "Dropped by",
+                "dropChance": 1.3
+              },
+              {
+                "type": "npc",
+                "id": 4530,
+                "name": "Razorfen Handler",
+                "url": "https://www.wowhead.com/classic/npc=4530/razorfen-handler",
+                "relation": "Dropped by",
+                "dropChance": 1.2
+              },
+              {
+                "type": "npc",
+                "id": 4516,
+                "name": "Death's Head Adept",
+                "url": "https://www.wowhead.com/classic/npc=4516/death-s-head-adept",
+                "relation": "Dropped by",
+                "dropChance": 1.0
+              },
+              {
+                "type": "npc",
+                "id": 4520,
+                "name": "Razorfen Geomancer",
+                "url": "https://www.wowhead.com/classic/npc=4520/razorfen-geomancer",
+                "relation": "Dropped by",
+                "dropChance": 1.0
+              },
+              {
+                "type": "npc",
+                "id": 4435,
+                "name": "Razorfen Warrior",
+                "url": "https://www.wowhead.com/classic/npc=4435/razorfen-warrior",
+                "relation": "Dropped by",
+                "dropChance": 0.8
+              },
+              {
+                "type": "npc",
+                "id": 6168,
+                "name": "Roogug",
+                "url": "https://www.wowhead.com/classic/npc=6168/roogug",
+                "relation": "Dropped by",
+                "dropChance": 0.8
+              },
+              {
+                "type": "npc",
+                "id": 4442,
+                "name": "Razorfen Defender",
+                "url": "https://www.wowhead.com/classic/npc=4442/razorfen-defender",
+                "relation": "Dropped by",
+                "dropChance": 0.7
+              },
+              {
+                "type": "npc",
+                "id": 4437,
+                "name": "Razorfen Warden",
+                "url": "https://www.wowhead.com/classic/npc=4437/razorfen-warden",
+                "relation": "Dropped by",
+                "dropChance": 0.5
+              },
+              {
+                "type": "npc",
+                "id": 4532,
+                "name": "Razorfen Beastmaster",
+                "url": "https://www.wowhead.com/classic/npc=4532/razorfen-beastmaster",
+                "relation": "Dropped by",
+                "dropChance": 0.5
+              },
+              {
+                "type": "npc",
+                "id": 4515,
+                "name": "Death's Head Acolyte",
+                "url": "https://www.wowhead.com/classic/npc=4515/death-s-head-acolyte",
+                "relation": "Dropped by",
+                "dropChance": 0.3
+              },
+              {
+                "type": "npc",
+                "id": 4517,
+                "name": "Death's Head Priest",
+                "url": "https://www.wowhead.com/classic/npc=4517/death-s-head-priest",
+                "relation": "Dropped by",
+                "dropChance": 0.3
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -8149,7 +9545,16 @@ const DUNGEONS = [
             "name": "Mythology of the Titans",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5536/mythology-of-the-titans",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 19284,
+                "name": "Mythology of the Titans",
+                "url": "https://www.wowhead.com/classic/object=19284/mythology-of-the-titans",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -8543,7 +9948,16 @@ const DUNGEONS = [
             "name": "Vorrel's Wedding Ring",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5538/vorrels-wedding-ring",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3984,
+                "name": "Nancy Vishas",
+                "url": "https://www.wowhead.com/classic/npc=3984/nancy-vishas",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -8634,7 +10048,16 @@ const DUNGEONS = [
             "name": "Compendium of the Fallen",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5535/compendium-of-the-fallen",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 19283,
+                "name": "Compendium of the Fallen",
+                "url": "https://www.wowhead.com/classic/object=19283/compendium-of-the-fallen",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -8724,7 +10147,105 @@ const DUNGEONS = [
             "name": "Heart of Zeal",
             "quantity": 20,
             "url": "https://www.wowhead.com/classic/item=5805/heart-of-zeal",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4282,
+                "name": "Scarlet Magician",
+                "url": "https://www.wowhead.com/classic/npc=4282/scarlet-magician",
+                "relation": "Dropped by",
+                "dropChance": 34.8
+              },
+              {
+                "type": "npc",
+                "id": 4281,
+                "name": "Scarlet Scout",
+                "url": "https://www.wowhead.com/classic/npc=4281/scarlet-scout",
+                "relation": "Dropped by",
+                "dropChance": 33.3
+              },
+              {
+                "type": "npc",
+                "id": 4280,
+                "name": "Scarlet Preserver",
+                "url": "https://www.wowhead.com/classic/npc=4280/scarlet-preserver",
+                "relation": "Dropped by",
+                "dropChance": 32.9
+              },
+              {
+                "type": "npc",
+                "id": 4283,
+                "name": "Scarlet Sentry",
+                "url": "https://www.wowhead.com/classic/npc=4283/scarlet-sentry",
+                "relation": "Dropped by",
+                "dropChance": 13.1
+              },
+              {
+                "type": "npc",
+                "id": 4306,
+                "name": "Scarlet Torturer",
+                "url": "https://www.wowhead.com/classic/npc=4306/scarlet-torturer",
+                "relation": "Dropped by",
+                "dropChance": 11.2
+              },
+              {
+                "type": "npc",
+                "id": 4293,
+                "name": "Scarlet Scryer",
+                "url": "https://www.wowhead.com/classic/npc=4293/scarlet-scryer",
+                "relation": "Dropped by",
+                "dropChance": 11.1
+              },
+              {
+                "type": "npc",
+                "id": 4285,
+                "name": "Scarlet Disciple",
+                "url": "https://www.wowhead.com/classic/npc=4285/scarlet-disciple",
+                "relation": "Dropped by",
+                "dropChance": 8.7
+              },
+              {
+                "type": "npc",
+                "id": 4288,
+                "name": "Scarlet Beastmaster",
+                "url": "https://www.wowhead.com/classic/npc=4288/scarlet-beastmaster",
+                "relation": "Dropped by",
+                "dropChance": 8.4
+              },
+              {
+                "type": "npc",
+                "id": 4284,
+                "name": "Scarlet Augur",
+                "url": "https://www.wowhead.com/classic/npc=4284/scarlet-augur",
+                "relation": "Dropped by",
+                "dropChance": 8.3
+              },
+              {
+                "type": "npc",
+                "id": 4287,
+                "name": "Scarlet Gallant",
+                "url": "https://www.wowhead.com/classic/npc=4287/scarlet-gallant",
+                "relation": "Dropped by",
+                "dropChance": 7.5
+              },
+              {
+                "type": "npc",
+                "id": 4296,
+                "name": "Scarlet Adept",
+                "url": "https://www.wowhead.com/classic/npc=4296/scarlet-adept",
+                "relation": "Dropped by",
+                "dropChance": 7.2
+              },
+              {
+                "type": "npc",
+                "id": 3983,
+                "name": "Interrogator Vishas",
+                "url": "https://www.wowhead.com/classic/npc=3983/interrogator-vishas",
+                "relation": "Dropped by",
+                "dropChance": 6.1
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -8787,7 +10308,25 @@ const DUNGEONS = [
                 "name": "Kraul Guano",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=5801/kraul-guano",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 4538,
+                    "name": "Kraul Bat",
+                    "url": "https://www.wowhead.com/classic/npc=4538/kraul-bat",
+                    "relation": "Dropped by",
+                    "dropChance": 9.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 4539,
+                    "name": "Greater Kraul Bat",
+                    "url": "https://www.wowhead.com/classic/npc=4539/greater-kraul-bat",
+                    "relation": "Dropped by",
+                    "dropChance": 8.3
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -8981,7 +10520,16 @@ const DUNGEONS = [
             "name": "Beginnings of the Undead Threat",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5861/beginnings-of-the-undead-threat",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 20726,
+                "name": "Beginnings of the Undead Threat",
+                "url": "https://www.wowhead.com/classic/object=20726/beginnings-of-the-undead-threat",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -9108,7 +10656,25 @@ const DUNGEONS = [
                 "name": "Grenka's Claw",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=5843/grenkas-claw",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 4490,
+                    "name": "Grenka Bloodscreech",
+                    "url": "https://www.wowhead.com/classic/npc=4490/grenka-bloodscreech",
+                    "relation": "Dropped by",
+                    "dropChance": 80.0
+                  },
+                  {
+                    "type": "object",
+                    "id": 20447,
+                    "name": "Harpy Foodstuffs",
+                    "url": "https://www.wowhead.com/classic/object=20447/harpy-foodstuffs",
+                    "relation": "Contained in",
+                    "dropChance": 12.5
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -9189,7 +10755,16 @@ const DUNGEONS = [
                 "name": "Fragments of Rok'Alim",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=5844/fragments-of-rokalim",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 4499,
+                    "name": "Rok'Alim the Pounder",
+                    "url": "https://www.wowhead.com/classic/npc=4499/rok-alim-the-pounder",
+                    "relation": "Dropped by"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -9326,7 +10901,16 @@ const DUNGEONS = [
                 "name": "Legacy of the Aspects",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=5860/legacy-of-the-aspects",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 20725,
+                    "name": "The Legacy of the Aspects",
+                    "url": "https://www.wowhead.com/classic/object=20725/the-legacy-of-the-aspects",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -9563,7 +11147,16 @@ const DUNGEONS = [
             "name": "Rituals of Power",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=7274/rituals-of-power",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 103664,
+                "name": "Rituals of Power",
+                "url": "https://www.wowhead.com/classic/object=103664/rituals-of-power",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -10067,7 +11660,17 @@ const DUNGEONS = [
             "name": "Skull of the Coldbringer",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=10420/skull-of-the-coldbringer",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7358,
+                "name": "Amnennar the Coldbringer",
+                "url": "https://www.wowhead.com/classic/npc=7358/amnennar-the-coldbringer",
+                "relation": "Dropped by",
+                "dropChance": 0.4
+              }
+            ]
           }
         ],
         "rewards": [
@@ -10222,7 +11825,17 @@ const DUNGEONS = [
             "name": "Ambassador Malcin's Head",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=17009/ambassador-malcins-head",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 12865,
+                "name": "Ambassador Malcin",
+                "url": "https://www.wowhead.com/classic/npc=12865/ambassador-malcin",
+                "relation": "Dropped by",
+                "dropChance": 28.6
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -10453,7 +12066,16 @@ const DUNGEONS = [
             "name": "Tablet of Ryun'eh",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=4631/tablet-of-ryuneh",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 126260,
+                "name": "Ancient Chest",
+                "url": "https://www.wowhead.com/classic/object=126260/ancient-chest",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -10608,7 +12230,81 @@ const DUNGEONS = [
             "name": "Dentrium Power Stone",
             "quantity": 8,
             "url": "https://www.wowhead.com/classic/item=8009/dentrium-power-stone",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7091,
+                "name": "Shadowforge Ambusher",
+                "url": "https://www.wowhead.com/classic/npc=7091/shadowforge-ambusher",
+                "relation": "Dropped by",
+                "dropChance": 17.2
+              },
+              {
+                "type": "npc",
+                "id": 4844,
+                "name": "Shadowforge Surveyor",
+                "url": "https://www.wowhead.com/classic/npc=4844/shadowforge-surveyor",
+                "relation": "Dropped by",
+                "dropChance": 16.4
+              },
+              {
+                "type": "npc",
+                "id": 4846,
+                "name": "Shadowforge Digger",
+                "url": "https://www.wowhead.com/classic/npc=4846/shadowforge-digger",
+                "relation": "Dropped by",
+                "dropChance": 15.6
+              },
+              {
+                "type": "npc",
+                "id": 4848,
+                "name": "Shadowforge Darkcaster",
+                "url": "https://www.wowhead.com/classic/npc=4848/shadowforge-darkcaster",
+                "relation": "Dropped by",
+                "dropChance": 15.0
+              },
+              {
+                "type": "npc",
+                "id": 4849,
+                "name": "Shadowforge Archaeologist",
+                "url": "https://www.wowhead.com/classic/npc=4849/shadowforge-archaeologist",
+                "relation": "Dropped by",
+                "dropChance": 14.8
+              },
+              {
+                "type": "npc",
+                "id": 7290,
+                "name": "Shadowforge Sharpshooter",
+                "url": "https://www.wowhead.com/classic/npc=7290/shadowforge-sharpshooter",
+                "relation": "Dropped by",
+                "dropChance": 14.5
+              },
+              {
+                "type": "npc",
+                "id": 4845,
+                "name": "Shadowforge Ruffian",
+                "url": "https://www.wowhead.com/classic/npc=4845/shadowforge-ruffian",
+                "relation": "Dropped by",
+                "dropChance": 14.3
+              },
+              {
+                "type": "npc",
+                "id": 7030,
+                "name": "Shadowforge Geologist",
+                "url": "https://www.wowhead.com/classic/npc=7030/shadowforge-geologist",
+                "relation": "Dropped by",
+                "dropChance": 14.0
+              },
+              {
+                "type": "npc",
+                "id": 4847,
+                "name": "Shadowforge Relic Hunter",
+                "url": "https://www.wowhead.com/classic/npc=4847/shadowforge-relic-hunter",
+                "relation": "Dropped by",
+                "dropChance": 13.0
+              }
+            ]
           },
           {
             "type": "item",
@@ -10616,7 +12312,81 @@ const DUNGEONS = [
             "name": "An'Alleum Power Stone",
             "quantity": 8,
             "url": "https://www.wowhead.com/classic/item=8052/analleum-power-stone",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7091,
+                "name": "Shadowforge Ambusher",
+                "url": "https://www.wowhead.com/classic/npc=7091/shadowforge-ambusher",
+                "relation": "Dropped by",
+                "dropChance": 17.9
+              },
+              {
+                "type": "npc",
+                "id": 4844,
+                "name": "Shadowforge Surveyor",
+                "url": "https://www.wowhead.com/classic/npc=4844/shadowforge-surveyor",
+                "relation": "Dropped by",
+                "dropChance": 16.4
+              },
+              {
+                "type": "npc",
+                "id": 4845,
+                "name": "Shadowforge Ruffian",
+                "url": "https://www.wowhead.com/classic/npc=4845/shadowforge-ruffian",
+                "relation": "Dropped by",
+                "dropChance": 15.5
+              },
+              {
+                "type": "npc",
+                "id": 4846,
+                "name": "Shadowforge Digger",
+                "url": "https://www.wowhead.com/classic/npc=4846/shadowforge-digger",
+                "relation": "Dropped by",
+                "dropChance": 15.2
+              },
+              {
+                "type": "npc",
+                "id": 4848,
+                "name": "Shadowforge Darkcaster",
+                "url": "https://www.wowhead.com/classic/npc=4848/shadowforge-darkcaster",
+                "relation": "Dropped by",
+                "dropChance": 14.3
+              },
+              {
+                "type": "npc",
+                "id": 4849,
+                "name": "Shadowforge Archaeologist",
+                "url": "https://www.wowhead.com/classic/npc=4849/shadowforge-archaeologist",
+                "relation": "Dropped by",
+                "dropChance": 13.8
+              },
+              {
+                "type": "npc",
+                "id": 7030,
+                "name": "Shadowforge Geologist",
+                "url": "https://www.wowhead.com/classic/npc=7030/shadowforge-geologist",
+                "relation": "Dropped by",
+                "dropChance": 13.6
+              },
+              {
+                "type": "npc",
+                "id": 7290,
+                "name": "Shadowforge Sharpshooter",
+                "url": "https://www.wowhead.com/classic/npc=7290/shadowforge-sharpshooter",
+                "relation": "Dropped by",
+                "dropChance": 13.6
+              },
+              {
+                "type": "npc",
+                "id": 4847,
+                "name": "Shadowforge Relic Hunter",
+                "url": "https://www.wowhead.com/classic/npc=4847/shadowforge-relic-hunter",
+                "relation": "Dropped by",
+                "dropChance": 12.7
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -10706,7 +12476,16 @@ const DUNGEONS = [
             "name": "Krom Stoutarm's Treasure",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=8027/krom-stoutarms-treasure",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 124389,
+                "name": "Krom Stoutarm's Chest",
+                "url": "https://www.wowhead.com/classic/object=124389/krom-stoutarm-s-chest",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -11161,7 +12940,17 @@ const DUNGEONS = [
             "name": "Hammertoe's Amulet",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=4635/hammertoes-amulet",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 2932,
+                "name": "Magregan Deepshadow",
+                "url": "https://www.wowhead.com/classic/npc=2932/magregan-deepshadow",
+                "relation": "Dropped by",
+                "dropChance": 50.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -11532,7 +13321,16 @@ const DUNGEONS = [
             "name": "Tablet of Will",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=5824/tablet-of-will",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 142088,
+                "name": "Tablet of Will",
+                "url": "https://www.wowhead.com/classic/object=142088/tablet-of-will",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -11731,7 +13529,17 @@ const DUNGEONS = [
                 "name": "Hammertoe's Amulet",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=4635/hammertoes-amulet",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2932,
+                    "name": "Magregan Deepshadow",
+                    "url": "https://www.wowhead.com/classic/npc=2932/magregan-deepshadow",
+                    "relation": "Dropped by",
+                    "dropChance": 50.0
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -12067,7 +13875,17 @@ const DUNGEONS = [
                 "name": "Ambassador Infernus' Bracer",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=4621/ambassador-infernus-bracer",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2745,
+                    "name": "Ambassador Infernus",
+                    "url": "https://www.wowhead.com/classic/npc=2745/ambassador-infernus",
+                    "relation": "Dropped by",
+                    "dropChance": 2.4
+                  }
+                ]
               }
             ],
             "rewards": [
@@ -12154,7 +13972,17 @@ const DUNGEONS = [
             "name": "Shattered Necklace Power Source",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=7672/shattered-necklace-power-source",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 2748,
+                "name": "Archaedas",
+                "url": "https://www.wowhead.com/classic/npc=2748/archaedas",
+                "relation": "Dropped by",
+                "dropChance": 9.1
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -12273,7 +14101,105 @@ const DUNGEONS = [
                 "name": "Silver Bar",
                 "quantity": 5,
                 "url": "https://www.wowhead.com/classic/item=2842/silver-bar",
-                "quality": 2
+                "quality": 2,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 106318,
+                    "name": "Battered Chest",
+                    "url": "https://www.wowhead.com/classic/object=106318/battered-chest",
+                    "relation": "Contained in",
+                    "dropChance": 33.3
+                  },
+                  {
+                    "type": "object",
+                    "id": 3714,
+                    "name": "Alliance Strongbox",
+                    "url": "https://www.wowhead.com/classic/object=3714/alliance-strongbox",
+                    "relation": "Contained in",
+                    "dropChance": 10.7
+                  },
+                  {
+                    "type": "object",
+                    "id": 404352,
+                    "name": "Artifact Storage",
+                    "url": "https://www.wowhead.com/classic/object=404352/artifact-storage",
+                    "relation": "Contained in",
+                    "dropChance": 10.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 223543,
+                    "name": "Fel Interloper",
+                    "url": "https://www.wowhead.com/classic/npc=223543/fel-interloper",
+                    "relation": "Dropped by",
+                    "dropChance": 6.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 223340,
+                    "name": "Fel Interloper",
+                    "url": "https://www.wowhead.com/classic/npc=223340/fel-interloper",
+                    "relation": "Dropped by",
+                    "dropChance": 6.7
+                  },
+                  {
+                    "type": "object",
+                    "id": 2849,
+                    "name": "Battered Chest",
+                    "url": "https://www.wowhead.com/classic/object=2849/battered-chest",
+                    "relation": "Contained in",
+                    "dropChance": 5.8
+                  },
+                  {
+                    "type": "object",
+                    "id": 3715,
+                    "name": "Alliance Chest",
+                    "url": "https://www.wowhead.com/classic/object=3715/alliance-chest",
+                    "relation": "Contained in",
+                    "dropChance": 5.4
+                  },
+                  {
+                    "type": "object",
+                    "id": 2850,
+                    "name": "Solid Chest",
+                    "url": "https://www.wowhead.com/classic/object=2850/solid-chest",
+                    "relation": "Contained in",
+                    "dropChance": 4.7
+                  },
+                  {
+                    "type": "object",
+                    "id": 111095,
+                    "name": "Alliance Chest",
+                    "url": "https://www.wowhead.com/classic/object=111095/alliance-chest",
+                    "relation": "Contained in",
+                    "dropChance": 3.4
+                  },
+                  {
+                    "type": "item",
+                    "id": 223149,
+                    "name": "Otherworldly Treasure",
+                    "url": "https://www.wowhead.com/classic/item=223149/otherworldly-treasure",
+                    "relation": "Contained in",
+                    "dropChance": 3.3
+                  },
+                  {
+                    "type": "item",
+                    "id": 220446,
+                    "name": "Otherworldly Treasure",
+                    "url": "https://www.wowhead.com/classic/item=220446/otherworldly-treasure",
+                    "relation": "Contained in",
+                    "dropChance": 3.1
+                  },
+                  {
+                    "type": "item",
+                    "id": 223148,
+                    "name": "Otherworldly Treasure",
+                    "url": "https://www.wowhead.com/classic/item=223148/otherworldly-treasure",
+                    "relation": "Contained in",
+                    "dropChance": 1.6
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -12419,7 +14345,16 @@ const DUNGEONS = [
                 "name": "Shattered Necklace Ruby",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7669/shattered-necklace-ruby",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 113757,
+                    "name": "Shadowforge Cache",
+                    "url": "https://www.wowhead.com/classic/object=113757/shadowforge-cache",
+                    "relation": "Contained in"
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -12427,7 +14362,17 @@ const DUNGEONS = [
                 "name": "Shattered Necklace Sapphire",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7670/shattered-necklace-sapphire",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 4854,
+                    "name": "Grimlok",
+                    "url": "https://www.wowhead.com/classic/npc=4854/grimlok",
+                    "relation": "Dropped by",
+                    "dropChance": 11.1
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -12435,7 +14380,16 @@ const DUNGEONS = [
                 "name": "Shattered Necklace Topaz",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7671/shattered-necklace-topaz",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 125477,
+                    "name": "Conspicuous Urn",
+                    "url": "https://www.wowhead.com/classic/object=125477/conspicuous-urn",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -12532,7 +14486,23 @@ const DUNGEONS = [
             "name": "Magenta Fungus Cap",
             "quantity": 12,
             "url": "https://www.wowhead.com/classic/item=8047/magenta-fungus-cap",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 126049,
+                "name": "Magenta Cap Clusters",
+                "url": "https://www.wowhead.com/classic/object=126049/magenta-cap-clusters",
+                "relation": "Contained in"
+              },
+              {
+                "type": "object",
+                "id": 128293,
+                "name": "Magenta Cap Clusters",
+                "url": "https://www.wowhead.com/classic/object=128293/magenta-cap-clusters",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -12603,7 +14573,33 @@ const DUNGEONS = [
                 "name": "Buzzard Gizzard",
                 "quantity": 5,
                 "url": "https://www.wowhead.com/classic/item=7847/buzzard-gizzard",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2830,
+                    "name": "Buzzard",
+                    "url": "https://www.wowhead.com/classic/npc=2830/buzzard",
+                    "relation": "Dropped by",
+                    "dropChance": 25.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2831,
+                    "name": "Giant Buzzard",
+                    "url": "https://www.wowhead.com/classic/npc=2831/giant-buzzard",
+                    "relation": "Dropped by",
+                    "dropChance": 23.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2829,
+                    "name": "Starving Buzzard",
+                    "url": "https://www.wowhead.com/classic/npc=2829/starving-buzzard",
+                    "relation": "Dropped by",
+                    "dropChance": 22.8
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -12611,7 +14607,41 @@ const DUNGEONS = [
                 "name": "Crag Coyote Fang",
                 "quantity": 10,
                 "url": "https://www.wowhead.com/classic/item=7846/crag-coyote-fang",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2727,
+                    "name": "Crag Coyote",
+                    "url": "https://www.wowhead.com/classic/npc=2727/crag-coyote",
+                    "relation": "Dropped by",
+                    "dropChance": 25.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2728,
+                    "name": "Feral Crag Coyote",
+                    "url": "https://www.wowhead.com/classic/npc=2728/feral-crag-coyote",
+                    "relation": "Dropped by",
+                    "dropChance": 18.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2729,
+                    "name": "Elder Crag Coyote",
+                    "url": "https://www.wowhead.com/classic/npc=2729/elder-crag-coyote",
+                    "relation": "Dropped by",
+                    "dropChance": 16.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2730,
+                    "name": "Rabid Crag Coyote",
+                    "url": "https://www.wowhead.com/classic/npc=2730/rabid-crag-coyote",
+                    "relation": "Dropped by",
+                    "dropChance": 6.8
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -12619,7 +14649,73 @@ const DUNGEONS = [
                 "name": "Rock Elemental Shard",
                 "quantity": 5,
                 "url": "https://www.wowhead.com/classic/item=7848/rock-elemental-shard",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2735,
+                    "name": "Lesser Rock Elemental",
+                    "url": "https://www.wowhead.com/classic/npc=2735/lesser-rock-elemental",
+                    "relation": "Dropped by",
+                    "dropChance": 5.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 8278,
+                    "name": "Smoldar",
+                    "url": "https://www.wowhead.com/classic/npc=8278/smoldar",
+                    "relation": "Dropped by",
+                    "dropChance": 4.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 92,
+                    "name": "Rock Elemental",
+                    "url": "https://www.wowhead.com/classic/npc=92/rock-elemental",
+                    "relation": "Dropped by",
+                    "dropChance": 2.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2791,
+                    "name": "Enraged Rock Elemental",
+                    "url": "https://www.wowhead.com/classic/npc=2791/enraged-rock-elemental",
+                    "relation": "Dropped by",
+                    "dropChance": 2.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2745,
+                    "name": "Ambassador Infernus",
+                    "url": "https://www.wowhead.com/classic/npc=2745/ambassador-infernus",
+                    "relation": "Dropped by",
+                    "dropChance": 1.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2736,
+                    "name": "Greater Rock Elemental",
+                    "url": "https://www.wowhead.com/classic/npc=2736/greater-rock-elemental",
+                    "relation": "Dropped by",
+                    "dropChance": 0.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2752,
+                    "name": "Rumbler",
+                    "url": "https://www.wowhead.com/classic/npc=2752/rumbler",
+                    "relation": "Dropped by",
+                    "dropChance": 0.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2919,
+                    "name": "Fam'retor Guardian",
+                    "url": "https://www.wowhead.com/classic/npc=2919/fam-retor-guardian",
+                    "relation": "Dropped by",
+                    "dropChance": 0.3
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -12772,7 +14868,23 @@ const DUNGEONS = [
             "name": "Magenta Fungus Cap",
             "quantity": 12,
             "url": "https://www.wowhead.com/classic/item=8047/magenta-fungus-cap",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 126049,
+                "name": "Magenta Cap Clusters",
+                "url": "https://www.wowhead.com/classic/object=126049/magenta-cap-clusters",
+                "relation": "Contained in"
+              },
+              {
+                "type": "object",
+                "id": 128293,
+                "name": "Magenta Cap Clusters",
+                "url": "https://www.wowhead.com/classic/object=128293/magenta-cap-clusters",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -12843,7 +14955,33 @@ const DUNGEONS = [
                 "name": "Buzzard Gizzard",
                 "quantity": 5,
                 "url": "https://www.wowhead.com/classic/item=7847/buzzard-gizzard",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2830,
+                    "name": "Buzzard",
+                    "url": "https://www.wowhead.com/classic/npc=2830/buzzard",
+                    "relation": "Dropped by",
+                    "dropChance": 25.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2831,
+                    "name": "Giant Buzzard",
+                    "url": "https://www.wowhead.com/classic/npc=2831/giant-buzzard",
+                    "relation": "Dropped by",
+                    "dropChance": 23.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2829,
+                    "name": "Starving Buzzard",
+                    "url": "https://www.wowhead.com/classic/npc=2829/starving-buzzard",
+                    "relation": "Dropped by",
+                    "dropChance": 22.8
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -12851,7 +14989,41 @@ const DUNGEONS = [
                 "name": "Crag Coyote Fang",
                 "quantity": 10,
                 "url": "https://www.wowhead.com/classic/item=7846/crag-coyote-fang",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2727,
+                    "name": "Crag Coyote",
+                    "url": "https://www.wowhead.com/classic/npc=2727/crag-coyote",
+                    "relation": "Dropped by",
+                    "dropChance": 25.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2728,
+                    "name": "Feral Crag Coyote",
+                    "url": "https://www.wowhead.com/classic/npc=2728/feral-crag-coyote",
+                    "relation": "Dropped by",
+                    "dropChance": 18.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2729,
+                    "name": "Elder Crag Coyote",
+                    "url": "https://www.wowhead.com/classic/npc=2729/elder-crag-coyote",
+                    "relation": "Dropped by",
+                    "dropChance": 16.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2730,
+                    "name": "Rabid Crag Coyote",
+                    "url": "https://www.wowhead.com/classic/npc=2730/rabid-crag-coyote",
+                    "relation": "Dropped by",
+                    "dropChance": 6.8
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -12859,7 +15031,73 @@ const DUNGEONS = [
                 "name": "Rock Elemental Shard",
                 "quantity": 5,
                 "url": "https://www.wowhead.com/classic/item=7848/rock-elemental-shard",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2735,
+                    "name": "Lesser Rock Elemental",
+                    "url": "https://www.wowhead.com/classic/npc=2735/lesser-rock-elemental",
+                    "relation": "Dropped by",
+                    "dropChance": 5.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 8278,
+                    "name": "Smoldar",
+                    "url": "https://www.wowhead.com/classic/npc=8278/smoldar",
+                    "relation": "Dropped by",
+                    "dropChance": 4.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 92,
+                    "name": "Rock Elemental",
+                    "url": "https://www.wowhead.com/classic/npc=92/rock-elemental",
+                    "relation": "Dropped by",
+                    "dropChance": 2.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2791,
+                    "name": "Enraged Rock Elemental",
+                    "url": "https://www.wowhead.com/classic/npc=2791/enraged-rock-elemental",
+                    "relation": "Dropped by",
+                    "dropChance": 2.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2745,
+                    "name": "Ambassador Infernus",
+                    "url": "https://www.wowhead.com/classic/npc=2745/ambassador-infernus",
+                    "relation": "Dropped by",
+                    "dropChance": 1.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2736,
+                    "name": "Greater Rock Elemental",
+                    "url": "https://www.wowhead.com/classic/npc=2736/greater-rock-elemental",
+                    "relation": "Dropped by",
+                    "dropChance": 0.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2752,
+                    "name": "Rumbler",
+                    "url": "https://www.wowhead.com/classic/npc=2752/rumbler",
+                    "relation": "Dropped by",
+                    "dropChance": 0.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2919,
+                    "name": "Fam'retor Guardian",
+                    "url": "https://www.wowhead.com/classic/npc=2919/fam-retor-guardian",
+                    "relation": "Dropped by",
+                    "dropChance": 0.3
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -13018,7 +15256,57 @@ const DUNGEONS = [
                 "name": "Shattered Necklace",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7666/shattered-necklace",
-                "quality": 2
+                "quality": 2,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 4852,
+                    "name": "Stonevault Oracle",
+                    "url": "https://www.wowhead.com/classic/npc=4852/stonevault-oracle",
+                    "relation": "Dropped by",
+                    "dropChance": 14.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 4851,
+                    "name": "Stonevault Rockchewer",
+                    "url": "https://www.wowhead.com/classic/npc=4851/stonevault-rockchewer",
+                    "relation": "Dropped by",
+                    "dropChance": 13.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 4856,
+                    "name": "Stonevault Cave Hunter",
+                    "url": "https://www.wowhead.com/classic/npc=4856/stonevault-cave-hunter",
+                    "relation": "Dropped by",
+                    "dropChance": 10.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 4845,
+                    "name": "Shadowforge Ruffian",
+                    "url": "https://www.wowhead.com/classic/npc=4845/shadowforge-ruffian",
+                    "relation": "Dropped by",
+                    "dropChance": 7.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 4846,
+                    "name": "Shadowforge Digger",
+                    "url": "https://www.wowhead.com/classic/npc=4846/shadowforge-digger",
+                    "relation": "Dropped by",
+                    "dropChance": 7.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 4844,
+                    "name": "Shadowforge Surveyor",
+                    "url": "https://www.wowhead.com/classic/npc=4844/shadowforge-surveyor",
+                    "relation": "Dropped by",
+                    "dropChance": 6.7
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -13292,7 +15580,16 @@ const DUNGEONS = [
                 "name": "Shattered Necklace Ruby",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7669/shattered-necklace-ruby",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 113757,
+                    "name": "Shadowforge Cache",
+                    "url": "https://www.wowhead.com/classic/object=113757/shadowforge-cache",
+                    "relation": "Contained in"
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -13300,7 +15597,17 @@ const DUNGEONS = [
                 "name": "Shattered Necklace Sapphire",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7670/shattered-necklace-sapphire",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 4854,
+                    "name": "Grimlok",
+                    "url": "https://www.wowhead.com/classic/npc=4854/grimlok",
+                    "relation": "Dropped by",
+                    "dropChance": 11.1
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -13308,7 +15615,16 @@ const DUNGEONS = [
                 "name": "Shattered Necklace Topaz",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7671/shattered-necklace-topaz",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 125477,
+                    "name": "Conspicuous Urn",
+                    "url": "https://www.wowhead.com/classic/object=125477/conspicuous-urn",
+                    "relation": "Contained in"
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -13316,7 +15632,17 @@ const DUNGEONS = [
                 "name": "Shattered Necklace Power Source",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7672/shattered-necklace-power-source",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2748,
+                    "name": "Archaedas",
+                    "url": "https://www.wowhead.com/classic/npc=2748/archaedas",
+                    "relation": "Dropped by",
+                    "dropChance": 9.1
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -13471,7 +15797,17 @@ const DUNGEONS = [
             "name": "Obsidian Power Source",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=8053/obsidian-power-source",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7023,
+                "name": "Obsidian Sentinel",
+                "url": "https://www.wowhead.com/classic/npc=7023/obsidian-sentinel",
+                "relation": "Dropped by",
+                "dropChance": 16.7
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -13630,7 +15966,17 @@ const DUNGEONS = [
                 "name": "Infernal Orb",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7291/infernal-orb",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 4668,
+                    "name": "Burning Blade Summoner",
+                    "url": "https://www.wowhead.com/classic/npc=4668/burning-blade-summoner",
+                    "relation": "Dropped by",
+                    "dropChance": 21.4
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -14114,7 +16460,41 @@ const DUNGEONS = [
                 "name": "Indurium Flake",
                 "quantity": 10,
                 "url": "https://www.wowhead.com/classic/item=5797/indurium-flake",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2894,
+                    "name": "Stonevault Shaman",
+                    "url": "https://www.wowhead.com/classic/npc=2894/stonevault-shaman",
+                    "relation": "Dropped by",
+                    "dropChance": 46.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2893,
+                    "name": "Stonevault Bonesnapper",
+                    "url": "https://www.wowhead.com/classic/npc=2893/stonevault-bonesnapper",
+                    "relation": "Dropped by",
+                    "dropChance": 44.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 6733,
+                    "name": "Stonevault Basher",
+                    "url": "https://www.wowhead.com/classic/npc=6733/stonevault-basher",
+                    "relation": "Dropped by",
+                    "dropChance": 29.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 2892,
+                    "name": "Stonevault Seer",
+                    "url": "https://www.wowhead.com/classic/npc=2892/stonevault-seer",
+                    "relation": "Dropped by",
+                    "dropChance": 29.0
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -14431,7 +16811,105 @@ const DUNGEONS = [
             "name": "Troll Temper",
             "quantity": 20,
             "url": "https://www.wowhead.com/classic/item=9523/troll-temper",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 5648,
+                "name": "Sandfury Shadowcaster",
+                "url": "https://www.wowhead.com/classic/npc=5648/sandfury-shadowcaster",
+                "relation": "Dropped by",
+                "dropChance": 20.3
+              },
+              {
+                "type": "npc",
+                "id": 5649,
+                "name": "Sandfury Blood Drinker",
+                "url": "https://www.wowhead.com/classic/npc=5649/sandfury-blood-drinker",
+                "relation": "Dropped by",
+                "dropChance": 18.6
+              },
+              {
+                "type": "npc",
+                "id": 5650,
+                "name": "Sandfury Witch Doctor",
+                "url": "https://www.wowhead.com/classic/npc=5650/sandfury-witch-doctor",
+                "relation": "Dropped by",
+                "dropChance": 18.6
+              },
+              {
+                "type": "npc",
+                "id": 7246,
+                "name": "Sandfury Shadowhunter",
+                "url": "https://www.wowhead.com/classic/npc=7246/sandfury-shadowhunter",
+                "relation": "Dropped by",
+                "dropChance": 17.3
+              },
+              {
+                "type": "npc",
+                "id": 7797,
+                "name": "Ruuzlu",
+                "url": "https://www.wowhead.com/classic/npc=7797/ruuzlu",
+                "relation": "Dropped by",
+                "dropChance": 16.3
+              },
+              {
+                "type": "npc",
+                "id": 7247,
+                "name": "Sandfury Soul Eater",
+                "url": "https://www.wowhead.com/classic/npc=7247/sandfury-soul-eater",
+                "relation": "Dropped by",
+                "dropChance": 12.9
+              },
+              {
+                "type": "npc",
+                "id": 7274,
+                "name": "Sandfury Executioner",
+                "url": "https://www.wowhead.com/classic/npc=7274/sandfury-executioner",
+                "relation": "Dropped by",
+                "dropChance": 12.6
+              },
+              {
+                "type": "npc",
+                "id": 7796,
+                "name": "Nekrum Gutchewer",
+                "url": "https://www.wowhead.com/classic/npc=7796/nekrum-gutchewer",
+                "relation": "Dropped by",
+                "dropChance": 11.9
+              },
+              {
+                "type": "npc",
+                "id": 7272,
+                "name": "Theka the Martyr",
+                "url": "https://www.wowhead.com/classic/npc=7272/theka-the-martyr",
+                "relation": "Dropped by",
+                "dropChance": 9.4
+              },
+              {
+                "type": "npc",
+                "id": 8127,
+                "name": "Antu'sul",
+                "url": "https://www.wowhead.com/classic/npc=8127/antu-sul",
+                "relation": "Dropped by",
+                "dropChance": 7.7
+              },
+              {
+                "type": "npc",
+                "id": 10082,
+                "name": "Zerillis",
+                "url": "https://www.wowhead.com/classic/npc=10082/zerillis",
+                "relation": "Dropped by",
+                "dropChance": 5.9
+              },
+              {
+                "type": "npc",
+                "id": 7267,
+                "name": "Chief Ukorz Sandscalp",
+                "url": "https://www.wowhead.com/classic/npc=7267/chief-ukorz-sandscalp",
+                "relation": "Dropped by",
+                "dropChance": 4.7
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -14499,7 +16977,17 @@ const DUNGEONS = [
             "name": "Uncracked Scarab Shell",
             "quantity": 5,
             "url": "https://www.wowhead.com/classic/item=9238/uncracked-scarab-shell",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7269,
+                "name": "Scarab",
+                "url": "https://www.wowhead.com/classic/npc=7269/scarab",
+                "relation": "Dropped by",
+                "dropChance": 16.1
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -14627,7 +17115,17 @@ const DUNGEONS = [
             "name": "Tiara of the Deep",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9234/tiara-of-the-deep",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7795,
+                "name": "Hydromancer Velratha",
+                "url": "https://www.wowhead.com/classic/npc=7795/hydromancer-velratha",
+                "relation": "Dropped by",
+                "dropChance": 42.1
+              }
+            ]
           }
         ],
         "rewards": [
@@ -14801,7 +17299,17 @@ const DUNGEONS = [
             "name": "Divino-matic Rod",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=8548/divino-matic-rod",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7604,
+                "name": "Sergeant Bly",
+                "url": "https://www.wowhead.com/classic/npc=7604/sergeant-bly",
+                "relation": "Dropped by",
+                "dropChance": 73.3
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -14884,7 +17392,17 @@ const DUNGEONS = [
             "name": "Gahz'rilla's Electrified Scale",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=8707/gahzrillas-electrified-scale",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7273,
+                "name": "Gahz'rilla",
+                "url": "https://www.wowhead.com/classic/npc=7273/gahz-rilla",
+                "relation": "Dropped by",
+                "dropChance": 26.3
+              }
+            ]
           }
         ],
         "rewards": [
@@ -15020,7 +17538,17 @@ const DUNGEONS = [
             "name": "First Mosh'aru Tablet",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=10660/first-mosharu-tablet",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7272,
+                "name": "Theka the Martyr",
+                "url": "https://www.wowhead.com/classic/npc=7272/theka-the-martyr",
+                "relation": "Dropped by",
+                "dropChance": 25.0
+              }
+            ]
           },
           {
             "type": "item",
@@ -15028,7 +17556,17 @@ const DUNGEONS = [
             "name": "Second Mosh'aru Tablet",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=10661/second-mosharu-tablet",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7795,
+                "name": "Hydromancer Velratha",
+                "url": "https://www.wowhead.com/classic/npc=7795/hydromancer-velratha",
+                "relation": "Dropped by",
+                "dropChance": 15.8
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -15241,7 +17779,17 @@ const DUNGEONS = [
             "name": "Nekrum's Medallion",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9471/nekrums-medallion",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7796,
+                "name": "Nekrum Gutchewer",
+                "url": "https://www.wowhead.com/classic/npc=7796/nekrum-gutchewer",
+                "relation": "Dropped by",
+                "dropChance": 33.3
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -15761,7 +18309,17 @@ const DUNGEONS = [
                 "name": "Undamaged Venom Sac",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=9322/undamaged-venom-sac",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 2686,
+                    "name": "Witherbark Broodguard",
+                    "url": "https://www.wowhead.com/classic/npc=2686/witherbark-broodguard",
+                    "relation": "Dropped by",
+                    "dropChance": 12.5
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -15957,7 +18515,16 @@ const DUNGEONS = [
             "name": "Amulet of Spirits",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=17757/amulet-of-spirits",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 13718,
+                "name": "The Nameless Prophet",
+                "url": "https://www.wowhead.com/classic/npc=13718/the-nameless-prophet",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -16033,7 +18600,105 @@ const DUNGEONS = [
             "name": "Theradric Crystal Carving",
             "quantity": 25,
             "url": "https://www.wowhead.com/classic/item=17684/theradric-crystal-carving",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 13696,
+                "name": "Noxxious Scion",
+                "url": "https://www.wowhead.com/classic/npc=13696/noxxious-scion",
+                "relation": "Dropped by",
+                "dropChance": 44.2
+              },
+              {
+                "type": "npc",
+                "id": 11793,
+                "name": "Celebrian Dryad",
+                "url": "https://www.wowhead.com/classic/npc=11793/celebrian-dryad",
+                "relation": "Dropped by",
+                "dropChance": 41.1
+              },
+              {
+                "type": "npc",
+                "id": 13718,
+                "name": "The Nameless Prophet",
+                "url": "https://www.wowhead.com/classic/npc=13718/the-nameless-prophet",
+                "relation": "Dropped by",
+                "dropChance": 40.6
+              },
+              {
+                "type": "npc",
+                "id": 12222,
+                "name": "Creeping Sludge",
+                "url": "https://www.wowhead.com/classic/npc=12222/creeping-sludge",
+                "relation": "Dropped by",
+                "dropChance": 31.4
+              },
+              {
+                "type": "npc",
+                "id": 12218,
+                "name": "Vile Larva",
+                "url": "https://www.wowhead.com/classic/npc=12218/vile-larva",
+                "relation": "Dropped by",
+                "dropChance": 28.4
+              },
+              {
+                "type": "npc",
+                "id": 12219,
+                "name": "Barbed Lasher",
+                "url": "https://www.wowhead.com/classic/npc=12219/barbed-lasher",
+                "relation": "Dropped by",
+                "dropChance": 26.2
+              },
+              {
+                "type": "npc",
+                "id": 12220,
+                "name": "Constrictor Vine",
+                "url": "https://www.wowhead.com/classic/npc=12220/constrictor-vine",
+                "relation": "Dropped by",
+                "dropChance": 22.5
+              },
+              {
+                "type": "npc",
+                "id": 11794,
+                "name": "Sister of Celebrian",
+                "url": "https://www.wowhead.com/classic/npc=11794/sister-of-celebrian",
+                "relation": "Dropped by",
+                "dropChance": 20.7
+              },
+              {
+                "type": "npc",
+                "id": 12240,
+                "name": "Spirit of Kolk",
+                "url": "https://www.wowhead.com/classic/npc=12240/spirit-of-kolk",
+                "relation": "Dropped by",
+                "dropChance": 19.0
+              },
+              {
+                "type": "npc",
+                "id": 12206,
+                "name": "Primordial Behemoth",
+                "url": "https://www.wowhead.com/classic/npc=12206/primordial-behemoth",
+                "relation": "Dropped by",
+                "dropChance": 16.6
+              },
+              {
+                "type": "npc",
+                "id": 12241,
+                "name": "Spirit of Magra",
+                "url": "https://www.wowhead.com/classic/npc=12241/spirit-of-magra",
+                "relation": "Dropped by",
+                "dropChance": 16.6
+              },
+              {
+                "type": "npc",
+                "id": 12239,
+                "name": "Spirit of Gelk",
+                "url": "https://www.wowhead.com/classic/npc=12239/spirit-of-gelk",
+                "relation": "Dropped by",
+                "dropChance": 16.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -16130,7 +18795,17 @@ const DUNGEONS = [
             "name": "Celebrian Diamond",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=17703/celebrian-diamond",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 12236,
+                "name": "Lord Vyletongue",
+                "url": "https://www.wowhead.com/classic/npc=12236/lord-vyletongue",
+                "relation": "Dropped by",
+                "dropChance": 50.0
+              }
+            ]
           },
           {
             "type": "item",
@@ -16138,7 +18813,17 @@ const DUNGEONS = [
             "name": "Celebrian Rod",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=17702/celebrian-rod",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 13282,
+                "name": "Noxxion",
+                "url": "https://www.wowhead.com/classic/npc=13282/noxxion",
+                "relation": "Dropped by",
+                "dropChance": 60.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -16206,7 +18891,25 @@ const DUNGEONS = [
             "name": "Shadowshard Fragment",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=17756/shadowshard-fragment",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11778,
+                "name": "Shadowshard Smasher",
+                "url": "https://www.wowhead.com/classic/npc=11778/shadowshard-smasher",
+                "relation": "Dropped by",
+                "dropChance": 76.0
+              },
+              {
+                "type": "npc",
+                "id": 11777,
+                "name": "Shadowshard Rumbler",
+                "url": "https://www.wowhead.com/classic/npc=11777/shadowshard-rumbler",
+                "relation": "Dropped by",
+                "dropChance": 75.6
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -16475,7 +19178,25 @@ const DUNGEONS = [
             "name": "Shadowshard Fragment",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=17756/shadowshard-fragment",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11778,
+                "name": "Shadowshard Smasher",
+                "url": "https://www.wowhead.com/classic/npc=11778/shadowshard-smasher",
+                "relation": "Dropped by",
+                "dropChance": 76.0
+              },
+              {
+                "type": "npc",
+                "id": 11777,
+                "name": "Shadowshard Rumbler",
+                "url": "https://www.wowhead.com/classic/npc=11777/shadowshard-rumbler",
+                "relation": "Dropped by",
+                "dropChance": 75.6
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -16885,7 +19606,25 @@ const DUNGEONS = [
             "name": "Head of Jammal'an",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=6212/head-of-jammalan",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 5710,
+                "name": "Jammal'an the Prophet",
+                "url": "https://www.wowhead.com/classic/npc=5710/jammal-an-the-prophet",
+                "relation": "Dropped by",
+                "dropChance": 51.9
+              },
+              {
+                "type": "npc",
+                "id": 218721,
+                "name": "Jammal'an the Prophet",
+                "url": "https://www.wowhead.com/classic/npc=218721/jammal-an-the-prophet",
+                "relation": "Dropped by",
+                "dropChance": 12.2
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -16976,7 +19715,32 @@ const DUNGEONS = [
             "name": "Essence of Hakkar",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=10663/essence-of-hakkar",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8440,
+                "name": "Shade of Hakkar",
+                "url": "https://www.wowhead.com/classic/npc=8440/shade-of-hakkar",
+                "relation": "Dropped by",
+                "dropChance": 49.7
+              },
+              {
+                "type": "npc",
+                "id": 221394,
+                "name": "Avatar of Hakkar",
+                "url": "https://www.wowhead.com/classic/npc=221394/avatar-of-hakkar",
+                "relation": "Dropped by",
+                "dropChance": 6.0
+              },
+              {
+                "type": "npc",
+                "id": 8443,
+                "name": "Avatar of Hakkar",
+                "url": "https://www.wowhead.com/classic/npc=8443/avatar-of-hakkar",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -17133,7 +19897,17 @@ const DUNGEONS = [
                 "name": "First Mosh'aru Tablet",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=10660/first-mosharu-tablet",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 7272,
+                    "name": "Theka the Martyr",
+                    "url": "https://www.wowhead.com/classic/npc=7272/theka-the-martyr",
+                    "relation": "Dropped by",
+                    "dropChance": 25.0
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -17141,7 +19915,17 @@ const DUNGEONS = [
                 "name": "Second Mosh'aru Tablet",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=10661/second-mosharu-tablet",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 7795,
+                    "name": "Hydromancer Velratha",
+                    "url": "https://www.wowhead.com/classic/npc=7795/hydromancer-velratha",
+                    "relation": "Dropped by",
+                    "dropChance": 15.8
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -17214,7 +19998,24 @@ const DUNGEONS = [
                 "name": "Ancient Egg",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=12402/ancient-egg",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 10802,
+                    "name": "Hitah'ya the Keeper",
+                    "url": "https://www.wowhead.com/classic/npc=10802/hitah-ya-the-keeper",
+                    "relation": "Dropped by",
+                    "dropChance": 1.4
+                  },
+                  {
+                    "type": "object",
+                    "id": 175889,
+                    "name": "Ancient Egg",
+                    "url": "https://www.wowhead.com/classic/object=175889/ancient-egg",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -17520,7 +20321,17 @@ const DUNGEONS = [
                 "name": "Stone Circle",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=10556/stone-circle",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 149036,
+                    "name": "Marvon's Chest",
+                    "url": "https://www.wowhead.com/classic/object=149036/marvon-s-chest",
+                    "relation": "Contained in",
+                    "dropChance": 50.0
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -17749,7 +20560,16 @@ const DUNGEONS = [
             "name": "Atal'ai Tablet",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=6288/atalai-tablet",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 37099,
+                "name": "Atal'ai Tablet",
+                "url": "https://www.wowhead.com/classic/object=37099/atal-ai-tablet",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -18076,7 +20896,33 @@ const DUNGEONS = [
                 "name": "Roc Gizzard",
                 "quantity": 3,
                 "url": "https://www.wowhead.com/classic/item=6257/roc-gizzard",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 5429,
+                    "name": "Fire Roc",
+                    "url": "https://www.wowhead.com/classic/npc=5429/fire-roc",
+                    "relation": "Dropped by",
+                    "dropChance": 12.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 5428,
+                    "name": "Roc",
+                    "url": "https://www.wowhead.com/classic/npc=5428/roc",
+                    "relation": "Dropped by",
+                    "dropChance": 11.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 5430,
+                    "name": "Searing Roc",
+                    "url": "https://www.wowhead.com/classic/npc=5430/searing-roc",
+                    "relation": "Dropped by",
+                    "dropChance": 10.8
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -18084,7 +20930,41 @@ const DUNGEONS = [
                 "name": "Ironfur Liver",
                 "quantity": 3,
                 "url": "https://www.wowhead.com/classic/item=6258/ironfur-liver",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 5274,
+                    "name": "Ironfur Patriarch",
+                    "url": "https://www.wowhead.com/classic/npc=5274/ironfur-patriarch",
+                    "relation": "Dropped by",
+                    "dropChance": 15.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 5272,
+                    "name": "Grizzled Ironfur Bear",
+                    "url": "https://www.wowhead.com/classic/npc=5272/grizzled-ironfur-bear",
+                    "relation": "Dropped by",
+                    "dropChance": 11.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 5268,
+                    "name": "Ironfur Bear",
+                    "url": "https://www.wowhead.com/classic/npc=5268/ironfur-bear",
+                    "relation": "Dropped by",
+                    "dropChance": 10.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 5352,
+                    "name": "Old Grizzlegut",
+                    "url": "https://www.wowhead.com/classic/npc=5352/old-grizzlegut",
+                    "relation": "Dropped by",
+                    "dropChance": 4.3
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -18092,7 +20972,25 @@ const DUNGEONS = [
                 "name": "Groddoc Liver",
                 "quantity": 3,
                 "url": "https://www.wowhead.com/classic/item=6259/groddoc-liver",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 5262,
+                    "name": "Groddoc Thunderer",
+                    "url": "https://www.wowhead.com/classic/npc=5262/groddoc-thunderer",
+                    "relation": "Dropped by",
+                    "dropChance": 17.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 5260,
+                    "name": "Groddoc Ape",
+                    "url": "https://www.wowhead.com/classic/npc=5260/groddoc-ape",
+                    "relation": "Dropped by",
+                    "dropChance": 17.0
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -18246,7 +21144,49 @@ const DUNGEONS = [
             "name": "Atal'ai Haze",
             "quantity": 5,
             "url": "https://www.wowhead.com/classic/item=11318/atalai-haze",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8384,
+                "name": "Deep Lurker",
+                "url": "https://www.wowhead.com/classic/npc=8384/deep-lurker",
+                "relation": "Dropped by",
+                "dropChance": 40.2
+              },
+              {
+                "type": "npc",
+                "id": 5228,
+                "name": "Saturated Ooze",
+                "url": "https://www.wowhead.com/classic/npc=5228/saturated-ooze",
+                "relation": "Dropped by",
+                "dropChance": 20.3
+              },
+              {
+                "type": "npc",
+                "id": 5226,
+                "name": "Murk Worm",
+                "url": "https://www.wowhead.com/classic/npc=5226/murk-worm",
+                "relation": "Dropped by",
+                "dropChance": 19.9
+              },
+              {
+                "type": "npc",
+                "id": 224243,
+                "name": "Deep Lurker",
+                "url": "https://www.wowhead.com/classic/npc=224243/deep-lurker",
+                "relation": "Dropped by",
+                "dropChance": 8.9
+              },
+              {
+                "type": "npc",
+                "id": 224242,
+                "name": "Saturated Ooze",
+                "url": "https://www.wowhead.com/classic/npc=224242/saturated-ooze",
+                "relation": "Dropped by",
+                "dropChance": 3.3
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -18309,7 +21249,41 @@ const DUNGEONS = [
                 "name": "Bloodpetal",
                 "quantity": 15,
                 "url": "https://www.wowhead.com/classic/item=11316/bloodpetal",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 6510,
+                    "name": "Bloodpetal Flayer",
+                    "url": "https://www.wowhead.com/classic/npc=6510/bloodpetal-flayer",
+                    "relation": "Dropped by",
+                    "dropChance": 24.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 6511,
+                    "name": "Bloodpetal Thresher",
+                    "url": "https://www.wowhead.com/classic/npc=6511/bloodpetal-thresher",
+                    "relation": "Dropped by",
+                    "dropChance": 20.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 6509,
+                    "name": "Bloodpetal Lasher",
+                    "url": "https://www.wowhead.com/classic/npc=6509/bloodpetal-lasher",
+                    "relation": "Dropped by",
+                    "dropChance": 20.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 6512,
+                    "name": "Bloodpetal Trapper",
+                    "url": "https://www.wowhead.com/classic/npc=6512/bloodpetal-trapper",
+                    "relation": "Dropped by",
+                    "dropChance": 16.2
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -18470,7 +21444,105 @@ const DUNGEONS = [
             "name": "Fetish of Hakkar",
             "quantity": 20,
             "url": "https://www.wowhead.com/classic/item=6181/fetish-of-hakkar",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 5401,
+                "name": "Kazkaz the Unholy",
+                "url": "https://www.wowhead.com/classic/npc=5401/kazkaz-the-unholy",
+                "relation": "Dropped by",
+                "dropChance": 26.2
+              },
+              {
+                "type": "npc",
+                "id": 5261,
+                "name": "Enthralled Atal'ai",
+                "url": "https://www.wowhead.com/classic/npc=5261/enthralled-atal-ai",
+                "relation": "Dropped by",
+                "dropChance": 20.3
+              },
+              {
+                "type": "npc",
+                "id": 5243,
+                "name": "Cursed Atal'ai",
+                "url": "https://www.wowhead.com/classic/npc=5243/cursed-atal-ai",
+                "relation": "Dropped by",
+                "dropChance": 19.7
+              },
+              {
+                "type": "npc",
+                "id": 5269,
+                "name": "Atal'ai Priest",
+                "url": "https://www.wowhead.com/classic/npc=5269/atal-ai-priest",
+                "relation": "Dropped by",
+                "dropChance": 17.8
+              },
+              {
+                "type": "npc",
+                "id": 5263,
+                "name": "Mummified Atal'ai",
+                "url": "https://www.wowhead.com/classic/npc=5263/mummified-atal-ai",
+                "relation": "Dropped by",
+                "dropChance": 17.0
+              },
+              {
+                "type": "npc",
+                "id": 5271,
+                "name": "Atal'ai Deathwalker",
+                "url": "https://www.wowhead.com/classic/npc=5271/atal-ai-deathwalker",
+                "relation": "Dropped by",
+                "dropChance": 13.2
+              },
+              {
+                "type": "npc",
+                "id": 5267,
+                "name": "Unliving Atal'ai",
+                "url": "https://www.wowhead.com/classic/npc=5267/unliving-atal-ai",
+                "relation": "Dropped by",
+                "dropChance": 12.8
+              },
+              {
+                "type": "npc",
+                "id": 5259,
+                "name": "Atal'ai Witch Doctor",
+                "url": "https://www.wowhead.com/classic/npc=5259/atal-ai-witch-doctor",
+                "relation": "Dropped by",
+                "dropChance": 12.6
+              },
+              {
+                "type": "npc",
+                "id": 5273,
+                "name": "Atal'ai High Priest",
+                "url": "https://www.wowhead.com/classic/npc=5273/atal-ai-high-priest",
+                "relation": "Dropped by",
+                "dropChance": 12.6
+              },
+              {
+                "type": "npc",
+                "id": 5270,
+                "name": "Atal'ai Corpse Eater",
+                "url": "https://www.wowhead.com/classic/npc=5270/atal-ai-corpse-eater",
+                "relation": "Dropped by",
+                "dropChance": 12.5
+              },
+              {
+                "type": "npc",
+                "id": 5256,
+                "name": "Atal'ai Warrior",
+                "url": "https://www.wowhead.com/classic/npc=5256/atal-ai-warrior",
+                "relation": "Dropped by",
+                "dropChance": 12.0
+              },
+              {
+                "type": "npc",
+                "id": 5400,
+                "name": "Zekkis",
+                "url": "https://www.wowhead.com/classic/npc=5400/zekkis",
+                "relation": "Dropped by",
+                "dropChance": 8.2
+              }
+            ]
           }
         ],
         "rewards": [
@@ -18541,7 +21613,30 @@ const DUNGEONS = [
                 "name": "Atal'ai Artifact",
                 "quantity": 10,
                 "url": "https://www.wowhead.com/classic/item=6175/atalai-artifact",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 30856,
+                    "name": "Atal'ai Artifact",
+                    "url": "https://www.wowhead.com/classic/object=30856/atal-ai-artifact",
+                    "relation": "Contained in"
+                  },
+                  {
+                    "type": "object",
+                    "id": 30855,
+                    "name": "Atal'ai Artifact",
+                    "url": "https://www.wowhead.com/classic/object=30855/atal-ai-artifact",
+                    "relation": "Contained in"
+                  },
+                  {
+                    "type": "object",
+                    "id": 30854,
+                    "name": "Atal'ai Artifact",
+                    "url": "https://www.wowhead.com/classic/object=30854/atal-ai-artifact",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -18753,7 +21848,49 @@ const DUNGEONS = [
             "name": "Atal'ai Haze",
             "quantity": 5,
             "url": "https://www.wowhead.com/classic/item=11318/atalai-haze",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8384,
+                "name": "Deep Lurker",
+                "url": "https://www.wowhead.com/classic/npc=8384/deep-lurker",
+                "relation": "Dropped by",
+                "dropChance": 40.2
+              },
+              {
+                "type": "npc",
+                "id": 5228,
+                "name": "Saturated Ooze",
+                "url": "https://www.wowhead.com/classic/npc=5228/saturated-ooze",
+                "relation": "Dropped by",
+                "dropChance": 20.3
+              },
+              {
+                "type": "npc",
+                "id": 5226,
+                "name": "Murk Worm",
+                "url": "https://www.wowhead.com/classic/npc=5226/murk-worm",
+                "relation": "Dropped by",
+                "dropChance": 19.9
+              },
+              {
+                "type": "npc",
+                "id": 224243,
+                "name": "Deep Lurker",
+                "url": "https://www.wowhead.com/classic/npc=224243/deep-lurker",
+                "relation": "Dropped by",
+                "dropChance": 8.9
+              },
+              {
+                "type": "npc",
+                "id": 224242,
+                "name": "Saturated Ooze",
+                "url": "https://www.wowhead.com/classic/npc=224242/saturated-ooze",
+                "relation": "Dropped by",
+                "dropChance": 3.3
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -19084,7 +22221,33 @@ const DUNGEONS = [
             "name": "Putrid Vine",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=22444/putrid-vine",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8580,
+                "name": "Atal'alarion",
+                "url": "https://www.wowhead.com/classic/npc=8580/atal-alarion",
+                "relation": "Dropped by",
+                "dropChance": 3.8
+              },
+              {
+                "type": "npc",
+                "id": 218624,
+                "name": "Atal'alarion",
+                "url": "https://www.wowhead.com/classic/npc=218624/atal-alarion",
+                "relation": "Dropped by",
+                "dropChance": 0.8
+              },
+              {
+                "type": "npc",
+                "id": 218819,
+                "name": "Festering Rotslime",
+                "url": "https://www.wowhead.com/classic/npc=218819/festering-rotslime",
+                "relation": "Dropped by",
+                "dropChance": 0.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -19258,7 +22421,33 @@ const DUNGEONS = [
                 "name": "Gorishi Sting",
                 "quantity": 8,
                 "url": "https://www.wowhead.com/classic/item=22435/gorishi-sting",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 6551,
+                    "name": "Gorishi Wasp",
+                    "url": "https://www.wowhead.com/classic/npc=6551/gorishi-wasp",
+                    "relation": "Dropped by",
+                    "dropChance": 11.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 6554,
+                    "name": "Gorishi Stinger",
+                    "url": "https://www.wowhead.com/classic/npc=6554/gorishi-stinger",
+                    "relation": "Dropped by",
+                    "dropChance": 3.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 10041,
+                    "name": "Gorishi Hive Queen",
+                    "url": "https://www.wowhead.com/classic/npc=10041/gorishi-hive-queen",
+                    "relation": "Dropped by",
+                    "dropChance": 0.5
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -19266,7 +22455,17 @@ const DUNGEONS = [
                 "name": "Bloodcap",
                 "quantity": 8,
                 "url": "https://www.wowhead.com/classic/item=22434/bloodcap",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 164958,
+                    "name": "Bloodpetal Sprout",
+                    "url": "https://www.wowhead.com/classic/object=164958/bloodpetal-sprout",
+                    "relation": "Contained in",
+                    "dropChance": 15.1
+                  }
+                ]
               }
             ],
             "rewards": [
@@ -19426,7 +22625,25 @@ const DUNGEONS = [
             "name": "Tooth of Morphaz",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=20019/tooth-of-morphaz",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 5719,
+                "name": "Morphaz",
+                "url": "https://www.wowhead.com/classic/npc=5719/morphaz",
+                "relation": "Dropped by",
+                "dropChance": 6.0
+              },
+              {
+                "type": "npc",
+                "id": 221943,
+                "name": "Hazzas",
+                "url": "https://www.wowhead.com/classic/npc=221943/hazzas",
+                "relation": "Dropped by",
+                "dropChance": 1.6
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -19607,7 +22824,17 @@ const DUNGEONS = [
                 "name": "Perfect Courser Antler",
                 "quantity": 2,
                 "url": "https://www.wowhead.com/classic/item=20017/perfect-courser-antler",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 8761,
+                    "name": "Mosshoof Courser",
+                    "url": "https://www.wowhead.com/classic/npc=8761/mosshoof-courser",
+                    "relation": "Dropped by",
+                    "dropChance": 1.5
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -19682,7 +22909,33 @@ const DUNGEONS = [
                 "name": "Wavethrasher Scales",
                 "quantity": 6,
                 "url": "https://www.wowhead.com/classic/item=20087/wavethrasher-scales",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 6348,
+                    "name": "Wavethrasher",
+                    "url": "https://www.wowhead.com/classic/npc=6348/wavethrasher",
+                    "relation": "Dropped by",
+                    "dropChance": 23.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 6347,
+                    "name": "Young Wavethrasher",
+                    "url": "https://www.wowhead.com/classic/npc=6347/young-wavethrasher",
+                    "relation": "Dropped by",
+                    "dropChance": 20.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 6349,
+                    "name": "Great Wavethrasher",
+                    "url": "https://www.wowhead.com/classic/npc=6349/great-wavethrasher",
+                    "relation": "Dropped by",
+                    "dropChance": 8.8
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -19768,7 +23021,25 @@ const DUNGEONS = [
             "name": "Arcane Shard",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=20085/arcane-shard",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 5719,
+                "name": "Morphaz",
+                "url": "https://www.wowhead.com/classic/npc=5719/morphaz",
+                "relation": "Dropped by",
+                "dropChance": 5.5
+              },
+              {
+                "type": "npc",
+                "id": 221943,
+                "name": "Hazzas",
+                "url": "https://www.wowhead.com/classic/npc=221943/hazzas",
+                "relation": "Dropped by",
+                "dropChance": 1.7
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -19944,7 +23215,25 @@ const DUNGEONS = [
                 "name": "Glittering Dust",
                 "quantity": 10,
                 "url": "https://www.wowhead.com/classic/item=20028/glittering-dust",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 6199,
+                    "name": "Blood Elf Reclaimer",
+                    "url": "https://www.wowhead.com/classic/npc=6199/blood-elf-reclaimer",
+                    "relation": "Dropped by",
+                    "dropChance": 7.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 6198,
+                    "name": "Blood Elf Surveyor",
+                    "url": "https://www.wowhead.com/classic/npc=6198/blood-elf-surveyor",
+                    "relation": "Dropped by",
+                    "dropChance": 7.5
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -20025,7 +23314,17 @@ const DUNGEONS = [
                 "name": "Enchanted Coral",
                 "quantity": 6,
                 "url": "https://www.wowhead.com/classic/item=20029/enchanted-coral",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 6195,
+                    "name": "Spitelash Siren",
+                    "url": "https://www.wowhead.com/classic/npc=6195/spitelash-siren",
+                    "relation": "Dropped by",
+                    "dropChance": 8.1
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -20111,7 +23410,41 @@ const DUNGEONS = [
             "name": "Amber Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 221640,
+                "name": "Zul'Lor",
+                "url": "https://www.wowhead.com/classic/npc=221640/zul-lor",
+                "relation": "Dropped by",
+                "dropChance": 54.8
+              },
+              {
+                "type": "npc",
+                "id": 5713,
+                "name": "Gasher",
+                "url": "https://www.wowhead.com/classic/npc=5713/gasher",
+                "relation": "Dropped by",
+                "dropChance": 24.3
+              },
+              {
+                "type": "npc",
+                "id": 5716,
+                "name": "Zul'Lor",
+                "url": "https://www.wowhead.com/classic/npc=5716/zul-lor",
+                "relation": "Dropped by",
+                "dropChance": 23.0
+              },
+              {
+                "type": "npc",
+                "id": 221637,
+                "name": "Gasher",
+                "url": "https://www.wowhead.com/classic/npc=221637/gasher",
+                "relation": "Dropped by",
+                "dropChance": 7.7
+              }
+            ]
           },
           {
             "type": "item",
@@ -20119,7 +23452,41 @@ const DUNGEONS = [
             "name": "Blue Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 218868,
+                "name": "Mijan",
+                "url": "https://www.wowhead.com/classic/npc=218868/mijan",
+                "relation": "Dropped by",
+                "dropChance": 55.8
+              },
+              {
+                "type": "npc",
+                "id": 218922,
+                "name": "Hukku",
+                "url": "https://www.wowhead.com/classic/npc=218922/hukku",
+                "relation": "Dropped by",
+                "dropChance": 55.3
+              },
+              {
+                "type": "npc",
+                "id": 5717,
+                "name": "Mijan",
+                "url": "https://www.wowhead.com/classic/npc=5717/mijan",
+                "relation": "Dropped by",
+                "dropChance": 26.5
+              },
+              {
+                "type": "npc",
+                "id": 5715,
+                "name": "Hukku",
+                "url": "https://www.wowhead.com/classic/npc=5715/hukku",
+                "relation": "Dropped by",
+                "dropChance": 25.9
+              }
+            ]
           },
           {
             "type": "item",
@@ -20127,7 +23494,41 @@ const DUNGEONS = [
             "name": "Green Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 221638,
+                "name": "Loro",
+                "url": "https://www.wowhead.com/classic/npc=221638/loro",
+                "relation": "Dropped by",
+                "dropChance": 57.6
+              },
+              {
+                "type": "npc",
+                "id": 221639,
+                "name": "Zolo",
+                "url": "https://www.wowhead.com/classic/npc=221639/zolo",
+                "relation": "Dropped by",
+                "dropChance": 56.1
+              },
+              {
+                "type": "npc",
+                "id": 5712,
+                "name": "Zolo",
+                "url": "https://www.wowhead.com/classic/npc=5712/zolo",
+                "relation": "Dropped by",
+                "dropChance": 25.5
+              },
+              {
+                "type": "npc",
+                "id": 5714,
+                "name": "Loro",
+                "url": "https://www.wowhead.com/classic/npc=5714/loro",
+                "relation": "Dropped by",
+                "dropChance": 24.0
+              }
+            ]
           }
         ],
         "rewards": [
@@ -20295,7 +23696,105 @@ const DUNGEONS = [
                 "name": "Minion's Scourgestone",
                 "quantity": 20,
                 "url": "https://www.wowhead.com/classic/item=12840/minions-scourgestone",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 10411,
+                    "name": "Eye of Naxxramas",
+                    "url": "https://www.wowhead.com/classic/npc=10411/eye-of-naxxramas",
+                    "relation": "Dropped by",
+                    "dropChance": 48.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 10485,
+                    "name": "Risen Aberration",
+                    "url": "https://www.wowhead.com/classic/npc=10485/risen-aberration",
+                    "relation": "Dropped by",
+                    "dropChance": 47.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 10678,
+                    "name": "Plagued Hatchling",
+                    "url": "https://www.wowhead.com/classic/npc=10678/plagued-hatchling",
+                    "relation": "Dropped by",
+                    "dropChance": 47.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 8551,
+                    "name": "Dark Summoner",
+                    "url": "https://www.wowhead.com/classic/npc=8551/dark-summoner",
+                    "relation": "Dropped by",
+                    "dropChance": 45.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 10391,
+                    "name": "Skeletal Berserker",
+                    "url": "https://www.wowhead.com/classic/npc=10391/skeletal-berserker",
+                    "relation": "Dropped by",
+                    "dropChance": 44.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 10390,
+                    "name": "Skeletal Guardian",
+                    "url": "https://www.wowhead.com/classic/npc=10390/skeletal-guardian",
+                    "relation": "Dropped by",
+                    "dropChance": 44.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1785,
+                    "name": "Skeletal Terror",
+                    "url": "https://www.wowhead.com/classic/npc=1785/skeletal-terror",
+                    "relation": "Dropped by",
+                    "dropChance": 43.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1784,
+                    "name": "Skeletal Sorcerer",
+                    "url": "https://www.wowhead.com/classic/npc=1784/skeletal-sorcerer",
+                    "relation": "Dropped by",
+                    "dropChance": 43.4
+                  },
+                  {
+                    "type": "item",
+                    "id": 224849,
+                    "name": "Otherworldly Treasure",
+                    "url": "https://www.wowhead.com/classic/item=224849/otherworldly-treasure",
+                    "relation": "Contained in",
+                    "dropChance": 42.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 8540,
+                    "name": "Torn Screamer",
+                    "url": "https://www.wowhead.com/classic/npc=8540/torn-screamer",
+                    "relation": "Dropped by",
+                    "dropChance": 42.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 8547,
+                    "name": "Death Cultist",
+                    "url": "https://www.wowhead.com/classic/npc=8547/death-cultist",
+                    "relation": "Dropped by",
+                    "dropChance": 42.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1783,
+                    "name": "Skeletal Flayer",
+                    "url": "https://www.wowhead.com/classic/npc=1783/skeletal-flayer",
+                    "relation": "Dropped by",
+                    "dropChance": 42.1
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -20453,7 +23952,25 @@ const DUNGEONS = [
             "name": "Blood of Morphaz",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=20025/blood-of-morphaz",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 5719,
+                "name": "Morphaz",
+                "url": "https://www.wowhead.com/classic/npc=5719/morphaz",
+                "relation": "Dropped by",
+                "dropChance": 5.2
+              },
+              {
+                "type": "npc",
+                "id": 221943,
+                "name": "Hazzas",
+                "url": "https://www.wowhead.com/classic/npc=221943/hazzas",
+                "relation": "Dropped by",
+                "dropChance": 1.2
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -20620,7 +24137,17 @@ const DUNGEONS = [
                 "name": "Healthy Courser Gland",
                 "quantity": 4,
                 "url": "https://www.wowhead.com/classic/item=20027/healthy-courser-gland",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 8761,
+                    "name": "Mosshoof Courser",
+                    "url": "https://www.wowhead.com/classic/npc=8761/mosshoof-courser",
+                    "relation": "Dropped by",
+                    "dropChance": 1.0
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -20695,7 +24222,105 @@ const DUNGEONS = [
                 "name": "Ichor of Undeath",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7972/ichor-of-undeath",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 232558,
+                    "name": "Rampaging Dead",
+                    "url": "https://www.wowhead.com/classic/npc=232558/rampaging-dead",
+                    "relation": "Dropped by",
+                    "dropChance": 33.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7524,
+                    "name": "Anguished Highborne",
+                    "url": "https://www.wowhead.com/classic/npc=7524/anguished-highborne",
+                    "relation": "Dropped by",
+                    "dropChance": 13.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 12378,
+                    "name": "Damned Soul",
+                    "url": "https://www.wowhead.com/classic/npc=12378/damned-soul",
+                    "relation": "Dropped by",
+                    "dropChance": 13.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7523,
+                    "name": "Suffering Highborne",
+                    "url": "https://www.wowhead.com/classic/npc=7523/suffering-highborne",
+                    "relation": "Dropped by",
+                    "dropChance": 13.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7370,
+                    "name": "Restless Shade",
+                    "url": "https://www.wowhead.com/classic/npc=7370/restless-shade",
+                    "relation": "Dropped by",
+                    "dropChance": 13.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 11598,
+                    "name": "Risen Guardian",
+                    "url": "https://www.wowhead.com/classic/npc=11598/risen-guardian",
+                    "relation": "Dropped by",
+                    "dropChance": 13.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 11476,
+                    "name": "Skeletal Highborne",
+                    "url": "https://www.wowhead.com/classic/npc=11476/skeletal-highborne",
+                    "relation": "Dropped by",
+                    "dropChance": 12.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 12380,
+                    "name": "Unliving Resident",
+                    "url": "https://www.wowhead.com/classic/npc=12380/unliving-resident",
+                    "relation": "Dropped by",
+                    "dropChance": 12.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 11477,
+                    "name": "Rotting Highborne",
+                    "url": "https://www.wowhead.com/classic/npc=11477/rotting-highborne",
+                    "relation": "Dropped by",
+                    "dropChance": 12.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 228612,
+                    "name": "Festering Ghoul",
+                    "url": "https://www.wowhead.com/classic/npc=228612/festering-ghoul",
+                    "relation": "Dropped by",
+                    "dropChance": 12.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 12377,
+                    "name": "Wailing Spectre",
+                    "url": "https://www.wowhead.com/classic/npc=12377/wailing-spectre",
+                    "relation": "Dropped by",
+                    "dropChance": 12.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 10385,
+                    "name": "Ghostly Citizen",
+                    "url": "https://www.wowhead.com/classic/npc=10385/ghostly-citizen",
+                    "relation": "Dropped by",
+                    "dropChance": 11.9
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -20781,7 +24406,25 @@ const DUNGEONS = [
             "name": "Azure Key",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=20022/azure-key",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 5719,
+                "name": "Morphaz",
+                "url": "https://www.wowhead.com/classic/npc=5719/morphaz",
+                "relation": "Dropped by",
+                "dropChance": 3.5
+              },
+              {
+                "type": "npc",
+                "id": 221943,
+                "name": "Hazzas",
+                "url": "https://www.wowhead.com/classic/npc=221943/hazzas",
+                "relation": "Dropped by",
+                "dropChance": 0.8
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -20962,7 +24605,17 @@ const DUNGEONS = [
                 "name": "Sealed Azure Bag",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=19775/sealed-azure-bag",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 6188,
+                    "name": "Timbermaw Shaman",
+                    "url": "https://www.wowhead.com/classic/npc=6188/timbermaw-shaman",
+                    "relation": "Dropped by",
+                    "dropChance": 6.7
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -21037,7 +24690,25 @@ const DUNGEONS = [
                 "name": "Encoded Fragment",
                 "quantity": 10,
                 "url": "https://www.wowhead.com/classic/item=20023/encoded-fragment",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 8766,
+                    "name": "Forest Ooze",
+                    "url": "https://www.wowhead.com/classic/npc=8766/forest-ooze",
+                    "relation": "Dropped by",
+                    "dropChance": 44.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 8660,
+                    "name": "The Evalcharr",
+                    "url": "https://www.wowhead.com/classic/npc=8660/the-evalcharr",
+                    "relation": "Dropped by",
+                    "dropChance": 8.1
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -21123,7 +24794,41 @@ const DUNGEONS = [
             "name": "Amber Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 221640,
+                "name": "Zul'Lor",
+                "url": "https://www.wowhead.com/classic/npc=221640/zul-lor",
+                "relation": "Dropped by",
+                "dropChance": 54.8
+              },
+              {
+                "type": "npc",
+                "id": 5713,
+                "name": "Gasher",
+                "url": "https://www.wowhead.com/classic/npc=5713/gasher",
+                "relation": "Dropped by",
+                "dropChance": 24.3
+              },
+              {
+                "type": "npc",
+                "id": 5716,
+                "name": "Zul'Lor",
+                "url": "https://www.wowhead.com/classic/npc=5716/zul-lor",
+                "relation": "Dropped by",
+                "dropChance": 23.0
+              },
+              {
+                "type": "npc",
+                "id": 221637,
+                "name": "Gasher",
+                "url": "https://www.wowhead.com/classic/npc=221637/gasher",
+                "relation": "Dropped by",
+                "dropChance": 7.7
+              }
+            ]
           },
           {
             "type": "item",
@@ -21131,7 +24836,41 @@ const DUNGEONS = [
             "name": "Blue Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 218868,
+                "name": "Mijan",
+                "url": "https://www.wowhead.com/classic/npc=218868/mijan",
+                "relation": "Dropped by",
+                "dropChance": 55.8
+              },
+              {
+                "type": "npc",
+                "id": 218922,
+                "name": "Hukku",
+                "url": "https://www.wowhead.com/classic/npc=218922/hukku",
+                "relation": "Dropped by",
+                "dropChance": 55.3
+              },
+              {
+                "type": "npc",
+                "id": 5717,
+                "name": "Mijan",
+                "url": "https://www.wowhead.com/classic/npc=5717/mijan",
+                "relation": "Dropped by",
+                "dropChance": 26.5
+              },
+              {
+                "type": "npc",
+                "id": 5715,
+                "name": "Hukku",
+                "url": "https://www.wowhead.com/classic/npc=5715/hukku",
+                "relation": "Dropped by",
+                "dropChance": 25.9
+              }
+            ]
           },
           {
             "type": "item",
@@ -21139,7 +24878,41 @@ const DUNGEONS = [
             "name": "Green Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 221638,
+                "name": "Loro",
+                "url": "https://www.wowhead.com/classic/npc=221638/loro",
+                "relation": "Dropped by",
+                "dropChance": 57.6
+              },
+              {
+                "type": "npc",
+                "id": 221639,
+                "name": "Zolo",
+                "url": "https://www.wowhead.com/classic/npc=221639/zolo",
+                "relation": "Dropped by",
+                "dropChance": 56.1
+              },
+              {
+                "type": "npc",
+                "id": 5712,
+                "name": "Zolo",
+                "url": "https://www.wowhead.com/classic/npc=5712/zolo",
+                "relation": "Dropped by",
+                "dropChance": 25.5
+              },
+              {
+                "type": "npc",
+                "id": 5714,
+                "name": "Loro",
+                "url": "https://www.wowhead.com/classic/npc=5714/loro",
+                "relation": "Dropped by",
+                "dropChance": 24.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -21235,7 +25008,105 @@ const DUNGEONS = [
                     "name": "Elemental Air",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=7069/elemental-air",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 14454,
+                        "name": "The Windreaver",
+                        "url": "https://www.wowhead.com/classic/npc=14454/the-windreaver",
+                        "relation": "Dropped by",
+                        "dropChance": 64.5
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2762,
+                        "name": "Thundering Exile",
+                        "url": "https://www.wowhead.com/classic/npc=2762/thundering-exile",
+                        "relation": "Dropped by",
+                        "dropChance": 12.9
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9377,
+                        "name": "Swirling Vortex",
+                        "url": "https://www.wowhead.com/classic/npc=9377/swirling-vortex",
+                        "relation": "Dropped by",
+                        "dropChance": 12.5
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11576,
+                        "name": "Whirlwind Ripper",
+                        "url": "https://www.wowhead.com/classic/npc=11576/whirlwind-ripper",
+                        "relation": "Dropped by",
+                        "dropChance": 12.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11577,
+                        "name": "Whirlwind Stormwalker",
+                        "url": "https://www.wowhead.com/classic/npc=11577/whirlwind-stormwalker",
+                        "relation": "Dropped by",
+                        "dropChance": 12.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11578,
+                        "name": "Whirlwind Shredder",
+                        "url": "https://www.wowhead.com/classic/npc=11578/whirlwind-shredder",
+                        "relation": "Dropped by",
+                        "dropChance": 10.8
+                      },
+                      {
+                        "type": "item",
+                        "id": 20603,
+                        "name": "Bag of Spoils",
+                        "url": "https://www.wowhead.com/classic/item=20603/bag-of-spoils",
+                        "relation": "Contained in",
+                        "dropChance": 10.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 6239,
+                        "name": "Cyclonian",
+                        "url": "https://www.wowhead.com/classic/npc=6239/cyclonian",
+                        "relation": "Dropped by",
+                        "dropChance": 8.2
+                      },
+                      {
+                        "type": "npc",
+                        "id": 15204,
+                        "name": "High Marshal Whirlaxis",
+                        "url": "https://www.wowhead.com/classic/npc=15204/high-marshal-whirlaxis",
+                        "relation": "Dropped by",
+                        "dropChance": 7.7
+                      },
+                      {
+                        "type": "npc",
+                        "id": 8667,
+                        "name": "Gusting Vortex",
+                        "url": "https://www.wowhead.com/classic/npc=8667/gusting-vortex",
+                        "relation": "Dropped by",
+                        "dropChance": 7.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 15220,
+                        "name": "The Duke of Zephyrs",
+                        "url": "https://www.wowhead.com/classic/npc=15220/the-duke-of-zephyrs",
+                        "relation": "Dropped by",
+                        "dropChance": 6.5
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9397,
+                        "name": "Living Storm",
+                        "url": "https://www.wowhead.com/classic/npc=9397/living-storm",
+                        "relation": "Dropped by",
+                        "dropChance": 6.2
+                      }
+                    ]
                   },
                   {
                     "type": "item",
@@ -21243,7 +25114,105 @@ const DUNGEONS = [
                     "name": "Elemental Fire",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=7068/elemental-fire",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 14461,
+                        "name": "Baron Charr",
+                        "url": "https://www.wowhead.com/classic/npc=14461/baron-charr",
+                        "relation": "Dropped by",
+                        "dropChance": 72.7
+                      },
+                      {
+                        "type": "item",
+                        "id": 224848,
+                        "name": "Otherworldly Treasure",
+                        "url": "https://www.wowhead.com/classic/item=224848/otherworldly-treasure",
+                        "relation": "Contained in",
+                        "dropChance": 44.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 228837,
+                        "name": "Flamewaker Healer",
+                        "url": "https://www.wowhead.com/classic/npc=228837/flamewaker-healer",
+                        "relation": "Dropped by",
+                        "dropChance": 22.7
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9779,
+                        "name": "Flamekin Rager",
+                        "url": "https://www.wowhead.com/classic/npc=9779/flamekin-rager",
+                        "relation": "Dropped by",
+                        "dropChance": 14.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2760,
+                        "name": "Burning Exile",
+                        "url": "https://www.wowhead.com/classic/npc=2760/burning-exile",
+                        "relation": "Dropped by",
+                        "dropChance": 11.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9777,
+                        "name": "Flamekin Sprite",
+                        "url": "https://www.wowhead.com/classic/npc=9777/flamekin-sprite",
+                        "relation": "Dropped by",
+                        "dropChance": 9.9
+                      },
+                      {
+                        "type": "item",
+                        "id": 20603,
+                        "name": "Bag of Spoils",
+                        "url": "https://www.wowhead.com/classic/item=20603/bag-of-spoils",
+                        "relation": "Contained in",
+                        "dropChance": 9.6
+                      },
+                      {
+                        "type": "npc",
+                        "id": 228719,
+                        "name": "Firelands Drudge",
+                        "url": "https://www.wowhead.com/classic/npc=228719/firelands-drudge",
+                        "relation": "Dropped by",
+                        "dropChance": 9.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9776,
+                        "name": "Flamekin Spitter",
+                        "url": "https://www.wowhead.com/classic/npc=9776/flamekin-spitter",
+                        "relation": "Dropped by",
+                        "dropChance": 9.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 15203,
+                        "name": "Prince Skaldrenox",
+                        "url": "https://www.wowhead.com/classic/npc=15203/prince-skaldrenox",
+                        "relation": "Dropped by",
+                        "dropChance": 9.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 228720,
+                        "name": "Duke Searbrand",
+                        "url": "https://www.wowhead.com/classic/npc=228720/duke-searbrand",
+                        "relation": "Dropped by",
+                        "dropChance": 8.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 12056,
+                        "name": "Baron Geddon",
+                        "url": "https://www.wowhead.com/classic/npc=12056/baron-geddon",
+                        "relation": "Dropped by",
+                        "dropChance": 7.4
+                      }
+                    ]
                   },
                   {
                     "type": "item",
@@ -21251,7 +25220,105 @@ const DUNGEONS = [
                     "name": "Elemental Earth",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=7067/elemental-earth",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 14464,
+                        "name": "Avalanchion",
+                        "url": "https://www.wowhead.com/classic/npc=14464/avalanchion",
+                        "relation": "Dropped by",
+                        "dropChance": 66.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 228722,
+                        "name": "Infernus Siege Giant",
+                        "url": "https://www.wowhead.com/classic/npc=228722/infernus-siege-giant",
+                        "relation": "Dropped by",
+                        "dropChance": 12.9
+                      },
+                      {
+                        "type": "npc",
+                        "id": 228729,
+                        "name": "Duke Tectonis",
+                        "url": "https://www.wowhead.com/classic/npc=228729/duke-tectonis",
+                        "relation": "Dropped by",
+                        "dropChance": 10.4
+                      },
+                      {
+                        "type": "item",
+                        "id": 20603,
+                        "name": "Bag of Spoils",
+                        "url": "https://www.wowhead.com/classic/item=20603/bag-of-spoils",
+                        "relation": "Contained in",
+                        "dropChance": 10.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2592,
+                        "name": "Rumbling Exile",
+                        "url": "https://www.wowhead.com/classic/npc=2592/rumbling-exile",
+                        "relation": "Dropped by",
+                        "dropChance": 9.9
+                      },
+                      {
+                        "type": "npc",
+                        "id": 92,
+                        "name": "Rock Elemental",
+                        "url": "https://www.wowhead.com/classic/npc=92/rock-elemental",
+                        "relation": "Dropped by",
+                        "dropChance": 9.6
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2735,
+                        "name": "Lesser Rock Elemental",
+                        "url": "https://www.wowhead.com/classic/npc=2735/lesser-rock-elemental",
+                        "relation": "Dropped by",
+                        "dropChance": 8.8
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2258,
+                        "name": "Stone Fury",
+                        "url": "https://www.wowhead.com/classic/npc=2258/stone-fury",
+                        "relation": "Dropped by",
+                        "dropChance": 8.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 15205,
+                        "name": "Baron Kazum",
+                        "url": "https://www.wowhead.com/classic/npc=15205/baron-kazum",
+                        "relation": "Dropped by",
+                        "dropChance": 7.7
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2359,
+                        "name": "Elemental Slave",
+                        "url": "https://www.wowhead.com/classic/npc=2359/elemental-slave",
+                        "relation": "Dropped by",
+                        "dropChance": 7.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11747,
+                        "name": "Desert Rager",
+                        "url": "https://www.wowhead.com/classic/npc=11747/desert-rager",
+                        "relation": "Dropped by",
+                        "dropChance": 6.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 7136,
+                        "name": "Infernal Sentry",
+                        "url": "https://www.wowhead.com/classic/npc=7136/infernal-sentry",
+                        "relation": "Dropped by",
+                        "dropChance": 5.7
+                      }
+                    ]
                   },
                   {
                     "type": "item",
@@ -21259,7 +25326,105 @@ const DUNGEONS = [
                     "name": "Elemental Water",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=7070/elemental-water",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 14457,
+                        "name": "Princess Tempestria",
+                        "url": "https://www.wowhead.com/classic/npc=14457/princess-tempestria",
+                        "relation": "Dropped by",
+                        "dropChance": 65.6
+                      },
+                      {
+                        "type": "npc",
+                        "id": 14269,
+                        "name": "Seeker Aqualon",
+                        "url": "https://www.wowhead.com/classic/npc=14269/seeker-aqualon",
+                        "relation": "Dropped by",
+                        "dropChance": 36.7
+                      },
+                      {
+                        "type": "npc",
+                        "id": 13280,
+                        "name": "Hydrospawn",
+                        "url": "https://www.wowhead.com/classic/npc=13280/hydrospawn",
+                        "relation": "Dropped by",
+                        "dropChance": 22.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2794,
+                        "name": "Summoned Guardian",
+                        "url": "https://www.wowhead.com/classic/npc=2794/summoned-guardian",
+                        "relation": "Dropped by",
+                        "dropChance": 13.6
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2761,
+                        "name": "Cresting Exile",
+                        "url": "https://www.wowhead.com/classic/npc=2761/cresting-exile",
+                        "relation": "Dropped by",
+                        "dropChance": 10.3
+                      },
+                      {
+                        "type": "item",
+                        "id": 20603,
+                        "name": "Bag of Spoils",
+                        "url": "https://www.wowhead.com/classic/item=20603/bag-of-spoils",
+                        "relation": "Contained in",
+                        "dropChance": 9.5
+                      },
+                      {
+                        "type": "npc",
+                        "id": 691,
+                        "name": "Lesser Water Elemental",
+                        "url": "https://www.wowhead.com/classic/npc=691/lesser-water-elemental",
+                        "relation": "Dropped by",
+                        "dropChance": 9.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 15305,
+                        "name": "Lord Skwol",
+                        "url": "https://www.wowhead.com/classic/npc=15305/lord-skwol",
+                        "relation": "Dropped by",
+                        "dropChance": 7.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 5461,
+                        "name": "Sea Elemental",
+                        "url": "https://www.wowhead.com/classic/npc=5461/sea-elemental",
+                        "relation": "Dropped by",
+                        "dropChance": 7.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 8837,
+                        "name": "Muck Splash",
+                        "url": "https://www.wowhead.com/classic/npc=8837/muck-splash",
+                        "relation": "Dropped by",
+                        "dropChance": 6.6
+                      },
+                      {
+                        "type": "npc",
+                        "id": 10756,
+                        "name": "Scalding Elemental",
+                        "url": "https://www.wowhead.com/classic/npc=10756/scalding-elemental",
+                        "relation": "Dropped by",
+                        "dropChance": 6.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 5462,
+                        "name": "Sea Spray",
+                        "url": "https://www.wowhead.com/classic/npc=5462/sea-spray",
+                        "relation": "Dropped by",
+                        "dropChance": 6.2
+                      }
+                    ]
                   }
                 ],
                 "rewards": [],
@@ -21329,7 +25494,105 @@ const DUNGEONS = [
                     "name": "Elemental Air",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=7069/elemental-air",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 14454,
+                        "name": "The Windreaver",
+                        "url": "https://www.wowhead.com/classic/npc=14454/the-windreaver",
+                        "relation": "Dropped by",
+                        "dropChance": 64.5
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2762,
+                        "name": "Thundering Exile",
+                        "url": "https://www.wowhead.com/classic/npc=2762/thundering-exile",
+                        "relation": "Dropped by",
+                        "dropChance": 12.9
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9377,
+                        "name": "Swirling Vortex",
+                        "url": "https://www.wowhead.com/classic/npc=9377/swirling-vortex",
+                        "relation": "Dropped by",
+                        "dropChance": 12.5
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11576,
+                        "name": "Whirlwind Ripper",
+                        "url": "https://www.wowhead.com/classic/npc=11576/whirlwind-ripper",
+                        "relation": "Dropped by",
+                        "dropChance": 12.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11577,
+                        "name": "Whirlwind Stormwalker",
+                        "url": "https://www.wowhead.com/classic/npc=11577/whirlwind-stormwalker",
+                        "relation": "Dropped by",
+                        "dropChance": 12.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11578,
+                        "name": "Whirlwind Shredder",
+                        "url": "https://www.wowhead.com/classic/npc=11578/whirlwind-shredder",
+                        "relation": "Dropped by",
+                        "dropChance": 10.8
+                      },
+                      {
+                        "type": "item",
+                        "id": 20603,
+                        "name": "Bag of Spoils",
+                        "url": "https://www.wowhead.com/classic/item=20603/bag-of-spoils",
+                        "relation": "Contained in",
+                        "dropChance": 10.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 6239,
+                        "name": "Cyclonian",
+                        "url": "https://www.wowhead.com/classic/npc=6239/cyclonian",
+                        "relation": "Dropped by",
+                        "dropChance": 8.2
+                      },
+                      {
+                        "type": "npc",
+                        "id": 15204,
+                        "name": "High Marshal Whirlaxis",
+                        "url": "https://www.wowhead.com/classic/npc=15204/high-marshal-whirlaxis",
+                        "relation": "Dropped by",
+                        "dropChance": 7.7
+                      },
+                      {
+                        "type": "npc",
+                        "id": 8667,
+                        "name": "Gusting Vortex",
+                        "url": "https://www.wowhead.com/classic/npc=8667/gusting-vortex",
+                        "relation": "Dropped by",
+                        "dropChance": 7.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 15220,
+                        "name": "The Duke of Zephyrs",
+                        "url": "https://www.wowhead.com/classic/npc=15220/the-duke-of-zephyrs",
+                        "relation": "Dropped by",
+                        "dropChance": 6.5
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9397,
+                        "name": "Living Storm",
+                        "url": "https://www.wowhead.com/classic/npc=9397/living-storm",
+                        "relation": "Dropped by",
+                        "dropChance": 6.2
+                      }
+                    ]
                   },
                   {
                     "type": "item",
@@ -21337,7 +25600,105 @@ const DUNGEONS = [
                     "name": "Elemental Earth",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=7067/elemental-earth",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 14464,
+                        "name": "Avalanchion",
+                        "url": "https://www.wowhead.com/classic/npc=14464/avalanchion",
+                        "relation": "Dropped by",
+                        "dropChance": 66.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 228722,
+                        "name": "Infernus Siege Giant",
+                        "url": "https://www.wowhead.com/classic/npc=228722/infernus-siege-giant",
+                        "relation": "Dropped by",
+                        "dropChance": 12.9
+                      },
+                      {
+                        "type": "npc",
+                        "id": 228729,
+                        "name": "Duke Tectonis",
+                        "url": "https://www.wowhead.com/classic/npc=228729/duke-tectonis",
+                        "relation": "Dropped by",
+                        "dropChance": 10.4
+                      },
+                      {
+                        "type": "item",
+                        "id": 20603,
+                        "name": "Bag of Spoils",
+                        "url": "https://www.wowhead.com/classic/item=20603/bag-of-spoils",
+                        "relation": "Contained in",
+                        "dropChance": 10.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2592,
+                        "name": "Rumbling Exile",
+                        "url": "https://www.wowhead.com/classic/npc=2592/rumbling-exile",
+                        "relation": "Dropped by",
+                        "dropChance": 9.9
+                      },
+                      {
+                        "type": "npc",
+                        "id": 92,
+                        "name": "Rock Elemental",
+                        "url": "https://www.wowhead.com/classic/npc=92/rock-elemental",
+                        "relation": "Dropped by",
+                        "dropChance": 9.6
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2735,
+                        "name": "Lesser Rock Elemental",
+                        "url": "https://www.wowhead.com/classic/npc=2735/lesser-rock-elemental",
+                        "relation": "Dropped by",
+                        "dropChance": 8.8
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2258,
+                        "name": "Stone Fury",
+                        "url": "https://www.wowhead.com/classic/npc=2258/stone-fury",
+                        "relation": "Dropped by",
+                        "dropChance": 8.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 15205,
+                        "name": "Baron Kazum",
+                        "url": "https://www.wowhead.com/classic/npc=15205/baron-kazum",
+                        "relation": "Dropped by",
+                        "dropChance": 7.7
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2359,
+                        "name": "Elemental Slave",
+                        "url": "https://www.wowhead.com/classic/npc=2359/elemental-slave",
+                        "relation": "Dropped by",
+                        "dropChance": 7.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11747,
+                        "name": "Desert Rager",
+                        "url": "https://www.wowhead.com/classic/npc=11747/desert-rager",
+                        "relation": "Dropped by",
+                        "dropChance": 6.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 7136,
+                        "name": "Infernal Sentry",
+                        "url": "https://www.wowhead.com/classic/npc=7136/infernal-sentry",
+                        "relation": "Dropped by",
+                        "dropChance": 5.7
+                      }
+                    ]
                   },
                   {
                     "type": "item",
@@ -21345,7 +25706,105 @@ const DUNGEONS = [
                     "name": "Elemental Fire",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=7068/elemental-fire",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 14461,
+                        "name": "Baron Charr",
+                        "url": "https://www.wowhead.com/classic/npc=14461/baron-charr",
+                        "relation": "Dropped by",
+                        "dropChance": 72.7
+                      },
+                      {
+                        "type": "item",
+                        "id": 224848,
+                        "name": "Otherworldly Treasure",
+                        "url": "https://www.wowhead.com/classic/item=224848/otherworldly-treasure",
+                        "relation": "Contained in",
+                        "dropChance": 44.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 228837,
+                        "name": "Flamewaker Healer",
+                        "url": "https://www.wowhead.com/classic/npc=228837/flamewaker-healer",
+                        "relation": "Dropped by",
+                        "dropChance": 22.7
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9779,
+                        "name": "Flamekin Rager",
+                        "url": "https://www.wowhead.com/classic/npc=9779/flamekin-rager",
+                        "relation": "Dropped by",
+                        "dropChance": 14.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2760,
+                        "name": "Burning Exile",
+                        "url": "https://www.wowhead.com/classic/npc=2760/burning-exile",
+                        "relation": "Dropped by",
+                        "dropChance": 11.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9777,
+                        "name": "Flamekin Sprite",
+                        "url": "https://www.wowhead.com/classic/npc=9777/flamekin-sprite",
+                        "relation": "Dropped by",
+                        "dropChance": 9.9
+                      },
+                      {
+                        "type": "item",
+                        "id": 20603,
+                        "name": "Bag of Spoils",
+                        "url": "https://www.wowhead.com/classic/item=20603/bag-of-spoils",
+                        "relation": "Contained in",
+                        "dropChance": 9.6
+                      },
+                      {
+                        "type": "npc",
+                        "id": 228719,
+                        "name": "Firelands Drudge",
+                        "url": "https://www.wowhead.com/classic/npc=228719/firelands-drudge",
+                        "relation": "Dropped by",
+                        "dropChance": 9.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9776,
+                        "name": "Flamekin Spitter",
+                        "url": "https://www.wowhead.com/classic/npc=9776/flamekin-spitter",
+                        "relation": "Dropped by",
+                        "dropChance": 9.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 15203,
+                        "name": "Prince Skaldrenox",
+                        "url": "https://www.wowhead.com/classic/npc=15203/prince-skaldrenox",
+                        "relation": "Dropped by",
+                        "dropChance": 9.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 228720,
+                        "name": "Duke Searbrand",
+                        "url": "https://www.wowhead.com/classic/npc=228720/duke-searbrand",
+                        "relation": "Dropped by",
+                        "dropChance": 8.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 12056,
+                        "name": "Baron Geddon",
+                        "url": "https://www.wowhead.com/classic/npc=12056/baron-geddon",
+                        "relation": "Dropped by",
+                        "dropChance": 7.4
+                      }
+                    ]
                   },
                   {
                     "type": "item",
@@ -21353,7 +25812,105 @@ const DUNGEONS = [
                     "name": "Elemental Water",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=7070/elemental-water",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 14457,
+                        "name": "Princess Tempestria",
+                        "url": "https://www.wowhead.com/classic/npc=14457/princess-tempestria",
+                        "relation": "Dropped by",
+                        "dropChance": 65.6
+                      },
+                      {
+                        "type": "npc",
+                        "id": 14269,
+                        "name": "Seeker Aqualon",
+                        "url": "https://www.wowhead.com/classic/npc=14269/seeker-aqualon",
+                        "relation": "Dropped by",
+                        "dropChance": 36.7
+                      },
+                      {
+                        "type": "npc",
+                        "id": 13280,
+                        "name": "Hydrospawn",
+                        "url": "https://www.wowhead.com/classic/npc=13280/hydrospawn",
+                        "relation": "Dropped by",
+                        "dropChance": 22.0
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2794,
+                        "name": "Summoned Guardian",
+                        "url": "https://www.wowhead.com/classic/npc=2794/summoned-guardian",
+                        "relation": "Dropped by",
+                        "dropChance": 13.6
+                      },
+                      {
+                        "type": "npc",
+                        "id": 2761,
+                        "name": "Cresting Exile",
+                        "url": "https://www.wowhead.com/classic/npc=2761/cresting-exile",
+                        "relation": "Dropped by",
+                        "dropChance": 10.3
+                      },
+                      {
+                        "type": "item",
+                        "id": 20603,
+                        "name": "Bag of Spoils",
+                        "url": "https://www.wowhead.com/classic/item=20603/bag-of-spoils",
+                        "relation": "Contained in",
+                        "dropChance": 9.5
+                      },
+                      {
+                        "type": "npc",
+                        "id": 691,
+                        "name": "Lesser Water Elemental",
+                        "url": "https://www.wowhead.com/classic/npc=691/lesser-water-elemental",
+                        "relation": "Dropped by",
+                        "dropChance": 9.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 15305,
+                        "name": "Lord Skwol",
+                        "url": "https://www.wowhead.com/classic/npc=15305/lord-skwol",
+                        "relation": "Dropped by",
+                        "dropChance": 7.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 5461,
+                        "name": "Sea Elemental",
+                        "url": "https://www.wowhead.com/classic/npc=5461/sea-elemental",
+                        "relation": "Dropped by",
+                        "dropChance": 7.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 8837,
+                        "name": "Muck Splash",
+                        "url": "https://www.wowhead.com/classic/npc=8837/muck-splash",
+                        "relation": "Dropped by",
+                        "dropChance": 6.6
+                      },
+                      {
+                        "type": "npc",
+                        "id": 10756,
+                        "name": "Scalding Elemental",
+                        "url": "https://www.wowhead.com/classic/npc=10756/scalding-elemental",
+                        "relation": "Dropped by",
+                        "dropChance": 6.4
+                      },
+                      {
+                        "type": "npc",
+                        "id": 5462,
+                        "name": "Sea Spray",
+                        "url": "https://www.wowhead.com/classic/npc=5462/sea-spray",
+                        "relation": "Dropped by",
+                        "dropChance": 6.2
+                      }
+                    ]
                   }
                 ],
                 "rewards": [],
@@ -21426,7 +25983,41 @@ const DUNGEONS = [
                 "name": "Bloodshot Spider Eye",
                 "quantity": 8,
                 "url": "https://www.wowhead.com/classic/item=20610/bloodshot-spider-eye",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 1809,
+                    "name": "Carrion Vulture",
+                    "url": "https://www.wowhead.com/classic/npc=1809/carrion-vulture",
+                    "relation": "Dropped by",
+                    "dropChance": 8.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1822,
+                    "name": "Venom Mist Lurker",
+                    "url": "https://www.wowhead.com/classic/npc=1822/venom-mist-lurker",
+                    "relation": "Dropped by",
+                    "dropChance": 7.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1824,
+                    "name": "Plague Lurker",
+                    "url": "https://www.wowhead.com/classic/npc=1824/plague-lurker",
+                    "relation": "Dropped by",
+                    "dropChance": 0.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1821,
+                    "name": "Carrion Lurker",
+                    "url": "https://www.wowhead.com/classic/npc=1821/carrion-lurker",
+                    "relation": "Dropped by",
+                    "dropChance": 0.3
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -21434,7 +26025,33 @@ const DUNGEONS = [
                 "name": "Thick Black Claw",
                 "quantity": 8,
                 "url": "https://www.wowhead.com/classic/item=20611/thick-black-claw",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 1809,
+                    "name": "Carrion Vulture",
+                    "url": "https://www.wowhead.com/classic/npc=1809/carrion-vulture",
+                    "relation": "Dropped by",
+                    "dropChance": 9.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1815,
+                    "name": "Diseased Black Bear",
+                    "url": "https://www.wowhead.com/classic/npc=1815/diseased-black-bear",
+                    "relation": "Dropped by",
+                    "dropChance": 8.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1816,
+                    "name": "Diseased Grizzly",
+                    "url": "https://www.wowhead.com/classic/npc=1816/diseased-grizzly",
+                    "relation": "Dropped by",
+                    "dropChance": 0.7
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -21519,7 +26136,41 @@ const DUNGEONS = [
             "name": "Amber Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 221640,
+                "name": "Zul'Lor",
+                "url": "https://www.wowhead.com/classic/npc=221640/zul-lor",
+                "relation": "Dropped by",
+                "dropChance": 54.8
+              },
+              {
+                "type": "npc",
+                "id": 5713,
+                "name": "Gasher",
+                "url": "https://www.wowhead.com/classic/npc=5713/gasher",
+                "relation": "Dropped by",
+                "dropChance": 24.3
+              },
+              {
+                "type": "npc",
+                "id": 5716,
+                "name": "Zul'Lor",
+                "url": "https://www.wowhead.com/classic/npc=5716/zul-lor",
+                "relation": "Dropped by",
+                "dropChance": 23.0
+              },
+              {
+                "type": "npc",
+                "id": 221637,
+                "name": "Gasher",
+                "url": "https://www.wowhead.com/classic/npc=221637/gasher",
+                "relation": "Dropped by",
+                "dropChance": 7.7
+              }
+            ]
           },
           {
             "type": "item",
@@ -21527,7 +26178,41 @@ const DUNGEONS = [
             "name": "Blue Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 218868,
+                "name": "Mijan",
+                "url": "https://www.wowhead.com/classic/npc=218868/mijan",
+                "relation": "Dropped by",
+                "dropChance": 55.8
+              },
+              {
+                "type": "npc",
+                "id": 218922,
+                "name": "Hukku",
+                "url": "https://www.wowhead.com/classic/npc=218922/hukku",
+                "relation": "Dropped by",
+                "dropChance": 55.3
+              },
+              {
+                "type": "npc",
+                "id": 5717,
+                "name": "Mijan",
+                "url": "https://www.wowhead.com/classic/npc=5717/mijan",
+                "relation": "Dropped by",
+                "dropChance": 26.5
+              },
+              {
+                "type": "npc",
+                "id": 5715,
+                "name": "Hukku",
+                "url": "https://www.wowhead.com/classic/npc=5715/hukku",
+                "relation": "Dropped by",
+                "dropChance": 25.9
+              }
+            ]
           },
           {
             "type": "item",
@@ -21535,7 +26220,41 @@ const DUNGEONS = [
             "name": "Green Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 221638,
+                "name": "Loro",
+                "url": "https://www.wowhead.com/classic/npc=221638/loro",
+                "relation": "Dropped by",
+                "dropChance": 57.6
+              },
+              {
+                "type": "npc",
+                "id": 221639,
+                "name": "Zolo",
+                "url": "https://www.wowhead.com/classic/npc=221639/zolo",
+                "relation": "Dropped by",
+                "dropChance": 56.1
+              },
+              {
+                "type": "npc",
+                "id": 5712,
+                "name": "Zolo",
+                "url": "https://www.wowhead.com/classic/npc=5712/zolo",
+                "relation": "Dropped by",
+                "dropChance": 25.5
+              },
+              {
+                "type": "npc",
+                "id": 5714,
+                "name": "Loro",
+                "url": "https://www.wowhead.com/classic/npc=5714/loro",
+                "relation": "Dropped by",
+                "dropChance": 24.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -21645,7 +26364,105 @@ const DUNGEONS = [
                     "name": "Felcloth",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=14256/felcloth",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 14502,
+                        "name": "Xorothian Dreadsteed",
+                        "url": "https://www.wowhead.com/classic/npc=14502/xorothian-dreadsteed",
+                        "relation": "Dropped by",
+                        "dropChance": 40.2
+                      },
+                      {
+                        "type": "item",
+                        "id": 224836,
+                        "name": "Otherworldly Treasure",
+                        "url": "https://www.wowhead.com/classic/item=224836/otherworldly-treasure",
+                        "relation": "Contained in",
+                        "dropChance": 25.5
+                      },
+                      {
+                        "type": "object",
+                        "id": 179501,
+                        "name": "Knot Thimblejack's Cache",
+                        "url": "https://www.wowhead.com/classic/object=179501/knot-thimblejack-s-cache",
+                        "relation": "Contained in",
+                        "dropChance": 15.8
+                      },
+                      {
+                        "type": "npc",
+                        "id": 230146,
+                        "name": "Fel Interloper",
+                        "url": "https://www.wowhead.com/classic/npc=230146/fel-interloper",
+                        "relation": "Dropped by",
+                        "dropChance": 14.8
+                      },
+                      {
+                        "type": "npc",
+                        "id": 238678,
+                        "name": "Unk'omon",
+                        "url": "https://www.wowhead.com/classic/npc=238678/unk-omon",
+                        "relation": "Dropped by",
+                        "dropChance": 12.9
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11455,
+                        "name": "Wildspawn Felsworn",
+                        "url": "https://www.wowhead.com/classic/npc=11455/wildspawn-felsworn",
+                        "relation": "Dropped by",
+                        "dropChance": 12.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11457,
+                        "name": "Wildspawn Hellcaller",
+                        "url": "https://www.wowhead.com/classic/npc=11457/wildspawn-hellcaller",
+                        "relation": "Dropped by",
+                        "dropChance": 12.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11456,
+                        "name": "Wildspawn Shadowstalker",
+                        "url": "https://www.wowhead.com/classic/npc=11456/wildspawn-shadowstalker",
+                        "relation": "Dropped by",
+                        "dropChance": 12.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 7735,
+                        "name": "Felcular",
+                        "url": "https://www.wowhead.com/classic/npc=7735/felcular",
+                        "relation": "Dropped by",
+                        "dropChance": 10.9
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11454,
+                        "name": "Wildspawn Betrayer",
+                        "url": "https://www.wowhead.com/classic/npc=11454/wildspawn-betrayer",
+                        "relation": "Dropped by",
+                        "dropChance": 10.8
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9454,
+                        "name": "Xavathras",
+                        "url": "https://www.wowhead.com/classic/npc=9454/xavathras",
+                        "relation": "Dropped by",
+                        "dropChance": 10.5
+                      },
+                      {
+                        "type": "npc",
+                        "id": 6011,
+                        "name": "Felguard Sentry",
+                        "url": "https://www.wowhead.com/classic/npc=6011/felguard-sentry",
+                        "relation": "Dropped by",
+                        "dropChance": 10.3
+                      }
+                    ]
                   }
                 ],
                 "rewards": [],
@@ -21715,7 +26532,105 @@ const DUNGEONS = [
                     "name": "Felcloth",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=14256/felcloth",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 14502,
+                        "name": "Xorothian Dreadsteed",
+                        "url": "https://www.wowhead.com/classic/npc=14502/xorothian-dreadsteed",
+                        "relation": "Dropped by",
+                        "dropChance": 40.2
+                      },
+                      {
+                        "type": "item",
+                        "id": 224836,
+                        "name": "Otherworldly Treasure",
+                        "url": "https://www.wowhead.com/classic/item=224836/otherworldly-treasure",
+                        "relation": "Contained in",
+                        "dropChance": 25.5
+                      },
+                      {
+                        "type": "object",
+                        "id": 179501,
+                        "name": "Knot Thimblejack's Cache",
+                        "url": "https://www.wowhead.com/classic/object=179501/knot-thimblejack-s-cache",
+                        "relation": "Contained in",
+                        "dropChance": 15.8
+                      },
+                      {
+                        "type": "npc",
+                        "id": 230146,
+                        "name": "Fel Interloper",
+                        "url": "https://www.wowhead.com/classic/npc=230146/fel-interloper",
+                        "relation": "Dropped by",
+                        "dropChance": 14.8
+                      },
+                      {
+                        "type": "npc",
+                        "id": 238678,
+                        "name": "Unk'omon",
+                        "url": "https://www.wowhead.com/classic/npc=238678/unk-omon",
+                        "relation": "Dropped by",
+                        "dropChance": 12.9
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11455,
+                        "name": "Wildspawn Felsworn",
+                        "url": "https://www.wowhead.com/classic/npc=11455/wildspawn-felsworn",
+                        "relation": "Dropped by",
+                        "dropChance": 12.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11457,
+                        "name": "Wildspawn Hellcaller",
+                        "url": "https://www.wowhead.com/classic/npc=11457/wildspawn-hellcaller",
+                        "relation": "Dropped by",
+                        "dropChance": 12.3
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11456,
+                        "name": "Wildspawn Shadowstalker",
+                        "url": "https://www.wowhead.com/classic/npc=11456/wildspawn-shadowstalker",
+                        "relation": "Dropped by",
+                        "dropChance": 12.1
+                      },
+                      {
+                        "type": "npc",
+                        "id": 7735,
+                        "name": "Felcular",
+                        "url": "https://www.wowhead.com/classic/npc=7735/felcular",
+                        "relation": "Dropped by",
+                        "dropChance": 10.9
+                      },
+                      {
+                        "type": "npc",
+                        "id": 11454,
+                        "name": "Wildspawn Betrayer",
+                        "url": "https://www.wowhead.com/classic/npc=11454/wildspawn-betrayer",
+                        "relation": "Dropped by",
+                        "dropChance": 10.8
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9454,
+                        "name": "Xavathras",
+                        "url": "https://www.wowhead.com/classic/npc=9454/xavathras",
+                        "relation": "Dropped by",
+                        "dropChance": 10.5
+                      },
+                      {
+                        "type": "npc",
+                        "id": 6011,
+                        "name": "Felguard Sentry",
+                        "url": "https://www.wowhead.com/classic/npc=6011/felguard-sentry",
+                        "relation": "Dropped by",
+                        "dropChance": 10.3
+                      }
+                    ]
                   }
                 ],
                 "rewards": [],
@@ -21788,7 +26703,33 @@ const DUNGEONS = [
                 "name": "Rotting Wood",
                 "quantity": 10,
                 "url": "https://www.wowhead.com/classic/item=20613/rotting-wood",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 7149,
+                    "name": "Withered Protector",
+                    "url": "https://www.wowhead.com/classic/npc=7149/withered-protector",
+                    "relation": "Dropped by",
+                    "dropChance": 9.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7139,
+                    "name": "Irontree Stomper",
+                    "url": "https://www.wowhead.com/classic/npc=7139/irontree-stomper",
+                    "relation": "Dropped by",
+                    "dropChance": 6.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7138,
+                    "name": "Irontree Wanderer",
+                    "url": "https://www.wowhead.com/classic/npc=7138/irontree-wanderer",
+                    "relation": "Dropped by",
+                    "dropChance": 6.4
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -21796,7 +26737,17 @@ const DUNGEONS = [
                 "name": "Bloodvenom Essence",
                 "quantity": 4,
                 "url": "https://www.wowhead.com/classic/item=20614/bloodvenom-essence",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 7092,
+                    "name": "Tainted Ooze",
+                    "url": "https://www.wowhead.com/classic/npc=7092/tainted-ooze",
+                    "relation": "Dropped by",
+                    "dropChance": 8.2
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -21891,7 +26842,41 @@ const DUNGEONS = [
             "name": "Amber Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 221640,
+                "name": "Zul'Lor",
+                "url": "https://www.wowhead.com/classic/npc=221640/zul-lor",
+                "relation": "Dropped by",
+                "dropChance": 54.8
+              },
+              {
+                "type": "npc",
+                "id": 5713,
+                "name": "Gasher",
+                "url": "https://www.wowhead.com/classic/npc=5713/gasher",
+                "relation": "Dropped by",
+                "dropChance": 24.3
+              },
+              {
+                "type": "npc",
+                "id": 5716,
+                "name": "Zul'Lor",
+                "url": "https://www.wowhead.com/classic/npc=5716/zul-lor",
+                "relation": "Dropped by",
+                "dropChance": 23.0
+              },
+              {
+                "type": "npc",
+                "id": 221637,
+                "name": "Gasher",
+                "url": "https://www.wowhead.com/classic/npc=221637/gasher",
+                "relation": "Dropped by",
+                "dropChance": 7.7
+              }
+            ]
           },
           {
             "type": "item",
@@ -21899,7 +26884,41 @@ const DUNGEONS = [
             "name": "Blue Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 218868,
+                "name": "Mijan",
+                "url": "https://www.wowhead.com/classic/npc=218868/mijan",
+                "relation": "Dropped by",
+                "dropChance": 55.8
+              },
+              {
+                "type": "npc",
+                "id": 218922,
+                "name": "Hukku",
+                "url": "https://www.wowhead.com/classic/npc=218922/hukku",
+                "relation": "Dropped by",
+                "dropChance": 55.3
+              },
+              {
+                "type": "npc",
+                "id": 5717,
+                "name": "Mijan",
+                "url": "https://www.wowhead.com/classic/npc=5717/mijan",
+                "relation": "Dropped by",
+                "dropChance": 26.5
+              },
+              {
+                "type": "npc",
+                "id": 5715,
+                "name": "Hukku",
+                "url": "https://www.wowhead.com/classic/npc=5715/hukku",
+                "relation": "Dropped by",
+                "dropChance": 25.9
+              }
+            ]
           },
           {
             "type": "item",
@@ -21907,7 +26926,41 @@ const DUNGEONS = [
             "name": "Green Voodoo Feather",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 221638,
+                "name": "Loro",
+                "url": "https://www.wowhead.com/classic/npc=221638/loro",
+                "relation": "Dropped by",
+                "dropChance": 57.6
+              },
+              {
+                "type": "npc",
+                "id": 221639,
+                "name": "Zolo",
+                "url": "https://www.wowhead.com/classic/npc=221639/zolo",
+                "relation": "Dropped by",
+                "dropChance": 56.1
+              },
+              {
+                "type": "npc",
+                "id": 5712,
+                "name": "Zolo",
+                "url": "https://www.wowhead.com/classic/npc=5712/zolo",
+                "relation": "Dropped by",
+                "dropChance": 25.5
+              },
+              {
+                "type": "npc",
+                "id": 5714,
+                "name": "Loro",
+                "url": "https://www.wowhead.com/classic/npc=5714/loro",
+                "relation": "Dropped by",
+                "dropChance": 24.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -22217,7 +27270,7 @@ const DUNGEONS = [
     "loadingScreen": "assets/loading-screens/800386.jpg",
     "faction": "Both",
     "levels": "52–60",
-    "location": "Burning Steppes",
+    "location": "Blackrock Mountain",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-blackrock-depths-dungeon-quests",
     "schema": 2,
     "quests": [
@@ -22276,7 +27329,17 @@ const DUNGEONS = [
             "name": "Ribbly's Head",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=11313/ribblys-head",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9543,
+                "name": "Ribbly Screwspigot",
+                "url": "https://www.wowhead.com/classic/npc=9543/ribbly-screwspigot",
+                "relation": "Dropped by",
+                "dropChance": 15.8
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -22436,7 +27499,16 @@ const DUNGEONS = [
             "name": "The Heart of the Mountain",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=11309/the-heart-of-the-mountain",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 165554,
+                "name": "Heart of the Mountain",
+                "url": "https://www.wowhead.com/classic/object=165554/heart-of-the-mountain",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -22504,7 +27576,16 @@ const DUNGEONS = [
             "name": "Core Fragment",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18412/core-fragment",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 179553,
+                "name": "Core Fragment",
+                "url": "https://www.wowhead.com/classic/object=179553/core-fragment",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -22572,7 +27653,105 @@ const DUNGEONS = [
             "name": "Dark Iron Fanny Pack",
             "quantity": 20,
             "url": "https://www.wowhead.com/classic/item=11468/dark-iron-fanny-pack",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 203138,
+                "name": "Anvilrage Overseer",
+                "url": "https://www.wowhead.com/classic/npc=203138/anvilrage-overseer",
+                "relation": "Dropped by",
+                "dropChance": 8.4
+              },
+              {
+                "type": "npc",
+                "id": 8893,
+                "name": "Anvilrage Soldier",
+                "url": "https://www.wowhead.com/classic/npc=8893/anvilrage-soldier",
+                "relation": "Dropped by",
+                "dropChance": 7.9
+              },
+              {
+                "type": "npc",
+                "id": 8896,
+                "name": "Shadowforge Peasant",
+                "url": "https://www.wowhead.com/classic/npc=8896/shadowforge-peasant",
+                "relation": "Dropped by",
+                "dropChance": 7.9
+              },
+              {
+                "type": "npc",
+                "id": 8889,
+                "name": "Anvilrage Overseer",
+                "url": "https://www.wowhead.com/classic/npc=8889/anvilrage-overseer",
+                "relation": "Dropped by",
+                "dropChance": 7.1
+              },
+              {
+                "type": "npc",
+                "id": 8895,
+                "name": "Anvilrage Officer",
+                "url": "https://www.wowhead.com/classic/npc=8895/anvilrage-officer",
+                "relation": "Dropped by",
+                "dropChance": 6.5
+              },
+              {
+                "type": "npc",
+                "id": 8897,
+                "name": "Doomforge Craftsman",
+                "url": "https://www.wowhead.com/classic/npc=8897/doomforge-craftsman",
+                "relation": "Dropped by",
+                "dropChance": 5.3
+              },
+              {
+                "type": "npc",
+                "id": 8892,
+                "name": "Anvilrage Footman",
+                "url": "https://www.wowhead.com/classic/npc=8892/anvilrage-footman",
+                "relation": "Dropped by",
+                "dropChance": 5.2
+              },
+              {
+                "type": "npc",
+                "id": 8891,
+                "name": "Anvilrage Guardsman",
+                "url": "https://www.wowhead.com/classic/npc=8891/anvilrage-guardsman",
+                "relation": "Dropped by",
+                "dropChance": 5.1
+              },
+              {
+                "type": "npc",
+                "id": 8894,
+                "name": "Anvilrage Medic",
+                "url": "https://www.wowhead.com/classic/npc=8894/anvilrage-medic",
+                "relation": "Dropped by",
+                "dropChance": 5.1
+              },
+              {
+                "type": "npc",
+                "id": 9033,
+                "name": "General Angerforge",
+                "url": "https://www.wowhead.com/classic/npc=9033/general-angerforge",
+                "relation": "Dropped by",
+                "dropChance": 3.8
+              },
+              {
+                "type": "npc",
+                "id": 9680,
+                "name": "Crest Killer",
+                "url": "https://www.wowhead.com/classic/npc=9680/crest-killer",
+                "relation": "Dropped by",
+                "dropChance": 3.6
+              },
+              {
+                "type": "npc",
+                "id": 9476,
+                "name": "Watchman Doomgrip",
+                "url": "https://www.wowhead.com/classic/npc=9476/watchman-doomgrip",
+                "relation": "Dropped by",
+                "dropChance": 3.5
+              }
+            ]
           }
         ],
         "rewards": [
@@ -22648,7 +27827,25 @@ const DUNGEONS = [
             "name": "Lost Thunderbrew Recipe",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=11312/lost-thunderbrew-recipe",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9541,
+                "name": "Blackbreath Crony",
+                "url": "https://www.wowhead.com/classic/npc=9541/blackbreath-crony",
+                "relation": "Dropped by",
+                "dropChance": 23.0
+              },
+              {
+                "type": "npc",
+                "id": 9537,
+                "name": "Hurley Blackbreath",
+                "url": "https://www.wowhead.com/classic/npc=9537/hurley-blackbreath",
+                "relation": "Dropped by",
+                "dropChance": 11.7
+              }
+            ]
           }
         ],
         "rewards": [
@@ -22890,7 +28087,105 @@ const DUNGEONS = [
             "name": "Essence of the Elements",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=11129/essence-of-the-elements",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8905,
+                "name": "Warbringer Construct",
+                "url": "https://www.wowhead.com/classic/npc=8905/warbringer-construct",
+                "relation": "Dropped by",
+                "dropChance": 3.1
+              },
+              {
+                "type": "npc",
+                "id": 8910,
+                "name": "Blazing Fireguard",
+                "url": "https://www.wowhead.com/classic/npc=8910/blazing-fireguard",
+                "relation": "Dropped by",
+                "dropChance": 2.9
+              },
+              {
+                "type": "npc",
+                "id": 8909,
+                "name": "Fireguard",
+                "url": "https://www.wowhead.com/classic/npc=8909/fireguard",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              },
+              {
+                "type": "npc",
+                "id": 8911,
+                "name": "Fireguard Destroyer",
+                "url": "https://www.wowhead.com/classic/npc=8911/fireguard-destroyer",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              },
+              {
+                "type": "npc",
+                "id": 8906,
+                "name": "Ragereaver Golem",
+                "url": "https://www.wowhead.com/classic/npc=8906/ragereaver-golem",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              },
+              {
+                "type": "npc",
+                "id": 9026,
+                "name": "Overmaster Pyron",
+                "url": "https://www.wowhead.com/classic/npc=9026/overmaster-pyron",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              },
+              {
+                "type": "npc",
+                "id": 224386,
+                "name": "Fireguard Destroyer",
+                "url": "https://www.wowhead.com/classic/npc=224386/fireguard-destroyer",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              },
+              {
+                "type": "npc",
+                "id": 8908,
+                "name": "Molten War Golem",
+                "url": "https://www.wowhead.com/classic/npc=8908/molten-war-golem",
+                "relation": "Dropped by",
+                "dropChance": 1.6
+              },
+              {
+                "type": "npc",
+                "id": 9025,
+                "name": "Lord Roccor",
+                "url": "https://www.wowhead.com/classic/npc=9025/lord-roccor",
+                "relation": "Dropped by",
+                "dropChance": 1.6
+              },
+              {
+                "type": "npc",
+                "id": 9156,
+                "name": "Ambassador Flamelash",
+                "url": "https://www.wowhead.com/classic/npc=9156/ambassador-flamelash",
+                "relation": "Dropped by",
+                "dropChance": 1.6
+              },
+              {
+                "type": "npc",
+                "id": 8923,
+                "name": "Panzor the Invincible",
+                "url": "https://www.wowhead.com/classic/npc=8923/panzor-the-invincible",
+                "relation": "Dropped by",
+                "dropChance": 1.2
+              },
+              {
+                "type": "npc",
+                "id": 8281,
+                "name": "Scald",
+                "url": "https://www.wowhead.com/classic/npc=8281/scald",
+                "relation": "Dropped by",
+                "dropChance": 0.7
+              }
+            ]
           }
         ],
         "rewards": [
@@ -22966,7 +28261,25 @@ const DUNGEONS = [
             "name": "Lost Thunderbrew Recipe",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=11312/lost-thunderbrew-recipe",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9541,
+                "name": "Blackbreath Crony",
+                "url": "https://www.wowhead.com/classic/npc=9541/blackbreath-crony",
+                "relation": "Dropped by",
+                "dropChance": 23.0
+              },
+              {
+                "type": "npc",
+                "id": 9537,
+                "name": "Hurley Blackbreath",
+                "url": "https://www.wowhead.com/classic/npc=9537/hurley-blackbreath",
+                "relation": "Dropped by",
+                "dropChance": 11.7
+              }
+            ]
           }
         ],
         "rewards": [
@@ -23141,7 +28454,17 @@ const DUNGEONS = [
             "name": "Ironfel",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=10999/ironfel",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9056,
+                "name": "Fineous Darkvire",
+                "url": "https://www.wowhead.com/classic/npc=9056/fineous-darkvire",
+                "relation": "Dropped by",
+                "dropChance": 26.7
+              }
+            ]
           }
         ],
         "rewards": [
@@ -23388,7 +28711,39 @@ const DUNGEONS = [
                     "name": "Black Dragonflight Molt",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=10575/black-dragonflight-molt",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 9461,
+                        "name": "Frenzied Black Drake",
+                        "url": "https://www.wowhead.com/classic/npc=9461/frenzied-black-drake",
+                        "relation": "Dropped by",
+                        "dropChance": 96.4
+                      },
+                      {
+                        "type": "item",
+                        "id": 10569,
+                        "name": "Hoard of the Black Dragonflight",
+                        "url": "https://www.wowhead.com/classic/item=10569/hoard-of-the-black-dragonflight",
+                        "relation": "Contained in",
+                        "dropChance": 93.2
+                      },
+                      {
+                        "type": "npc",
+                        "id": 8479,
+                        "name": "Velarok Windblade",
+                        "url": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
+                        "relation": "Dropped by"
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9459,
+                        "name": "Cyrus Therepentous",
+                        "url": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                        "relation": "Dropped by"
+                      }
+                    ]
                   }
                 ],
                 "rewards": [],
@@ -23456,7 +28811,39 @@ const DUNGEONS = [
                     "name": "Black Dragonflight Molt",
                     "quantity": 1,
                     "url": "https://www.wowhead.com/classic/item=10575/black-dragonflight-molt",
-                    "quality": 1
+                    "quality": 1,
+                    "sources": [
+                      {
+                        "type": "npc",
+                        "id": 9461,
+                        "name": "Frenzied Black Drake",
+                        "url": "https://www.wowhead.com/classic/npc=9461/frenzied-black-drake",
+                        "relation": "Dropped by",
+                        "dropChance": 96.4
+                      },
+                      {
+                        "type": "item",
+                        "id": 10569,
+                        "name": "Hoard of the Black Dragonflight",
+                        "url": "https://www.wowhead.com/classic/item=10569/hoard-of-the-black-dragonflight",
+                        "relation": "Contained in",
+                        "dropChance": 93.2
+                      },
+                      {
+                        "type": "npc",
+                        "id": 8479,
+                        "name": "Velarok Windblade",
+                        "url": "https://www.wowhead.com/classic/npc=8479/velarok-windblade",
+                        "relation": "Dropped by"
+                      },
+                      {
+                        "type": "npc",
+                        "id": 9459,
+                        "name": "Cyrus Therepentous",
+                        "url": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                        "relation": "Dropped by"
+                      }
+                    ]
                   }
                 ],
                 "rewards": [],
@@ -24492,7 +29879,17 @@ const DUNGEONS = [
             "name": "Head of Argelmach",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=11268/head-of-argelmach",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8983,
+                "name": "Golem Lord Argelmach",
+                "url": "https://www.wowhead.com/classic/npc=8983/golem-lord-argelmach",
+                "relation": "Dropped by",
+                "dropChance": 3.3
+              }
+            ]
           },
           {
             "type": "item",
@@ -24500,7 +29897,41 @@ const DUNGEONS = [
             "name": "Intact Elemental Core",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=11269/intact-elemental-core",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8905,
+                "name": "Warbringer Construct",
+                "url": "https://www.wowhead.com/classic/npc=8905/warbringer-construct",
+                "relation": "Dropped by",
+                "dropChance": 6.2
+              },
+              {
+                "type": "npc",
+                "id": 8907,
+                "name": "Wrath Hammer Construct",
+                "url": "https://www.wowhead.com/classic/npc=8907/wrath-hammer-construct",
+                "relation": "Dropped by",
+                "dropChance": 4.7
+              },
+              {
+                "type": "npc",
+                "id": 8906,
+                "name": "Ragereaver Golem",
+                "url": "https://www.wowhead.com/classic/npc=8906/ragereaver-golem",
+                "relation": "Dropped by",
+                "dropChance": 4.3
+              },
+              {
+                "type": "npc",
+                "id": 8908,
+                "name": "Molten War Golem",
+                "url": "https://www.wowhead.com/classic/npc=8908/molten-war-golem",
+                "relation": "Dropped by",
+                "dropChance": 2.8
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -24592,7 +30023,57 @@ const DUNGEONS = [
                 "name": "Fractured Elemental Shard",
                 "quantity": 10,
                 "url": "https://www.wowhead.com/classic/item=11266/fractured-elemental-shard",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 7039,
+                    "name": "War Reaver",
+                    "url": "https://www.wowhead.com/classic/npc=7039/war-reaver",
+                    "relation": "Dropped by",
+                    "dropChance": 48.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 228725,
+                    "name": "Firesworn",
+                    "url": "https://www.wowhead.com/classic/npc=228725/firesworn",
+                    "relation": "Dropped by",
+                    "dropChance": 9.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7032,
+                    "name": "Greater Obsidian Elemental",
+                    "url": "https://www.wowhead.com/classic/npc=7032/greater-obsidian-elemental",
+                    "relation": "Dropped by",
+                    "dropChance": 7.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 8981,
+                    "name": "Malfunctioning Reaver",
+                    "url": "https://www.wowhead.com/classic/npc=8981/malfunctioning-reaver",
+                    "relation": "Dropped by",
+                    "dropChance": 3.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 228723,
+                    "name": "Obsidian Reaver",
+                    "url": "https://www.wowhead.com/classic/npc=228723/obsidian-reaver",
+                    "relation": "Dropped by",
+                    "dropChance": 0.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 228724,
+                    "name": "Obsidian Surger",
+                    "url": "https://www.wowhead.com/classic/npc=228724/obsidian-surger",
+                    "relation": "Dropped by",
+                    "dropChance": 0.3
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -25134,7 +30615,105 @@ const DUNGEONS = [
             "name": "Gromsblood",
             "quantity": 4,
             "url": "https://www.wowhead.com/classic/item=8846/gromsblood",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 227028,
+                "name": "Hellscream's Phantom",
+                "url": "https://www.wowhead.com/classic/npc=227028/hellscream-s-phantom",
+                "relation": "Dropped by",
+                "dropChance": 10.4
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 9.2
+              },
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 8.5
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 8.4
+              },
+              {
+                "type": "object",
+                "id": 442722,
+                "name": "Resonating Nightmare Bloom",
+                "url": "https://www.wowhead.com/classic/object=442722/resonating-nightmare-bloom",
+                "relation": "Contained in",
+                "dropChance": 7.1
+              },
+              {
+                "type": "item",
+                "id": 11024,
+                "name": "Evergreen Herb Casing",
+                "url": "https://www.wowhead.com/classic/item=11024/evergreen-herb-casing",
+                "relation": "Contained in",
+                "dropChance": 5.0
+              },
+              {
+                "type": "item",
+                "id": 9363,
+                "name": "Sparklematic-Wrapped Box",
+                "url": "https://www.wowhead.com/classic/item=9363/sparklematic-wrapped-box",
+                "relation": "Contained in",
+                "dropChance": 3.3
+              },
+              {
+                "type": "item",
+                "id": 20768,
+                "name": "Oozing Bag",
+                "url": "https://www.wowhead.com/classic/item=20768/oozing-bag",
+                "relation": "Contained in",
+                "dropChance": 2.8
+              },
+              {
+                "type": "npc",
+                "id": 1813,
+                "name": "Decaying Horror",
+                "url": "https://www.wowhead.com/classic/npc=1813/decaying-horror",
+                "relation": "Dropped by",
+                "dropChance": 1.5
+              },
+              {
+                "type": "npc",
+                "id": 5485,
+                "name": "Thistleshrub Rootshaper",
+                "url": "https://www.wowhead.com/classic/npc=5485/thistleshrub-rootshaper",
+                "relation": "Dropped by",
+                "dropChance": 1.5
+              },
+              {
+                "type": "npc",
+                "id": 1812,
+                "name": "Rotting Behemoth",
+                "url": "https://www.wowhead.com/classic/npc=1812/rotting-behemoth",
+                "relation": "Dropped by",
+                "dropChance": 1.4
+              },
+              {
+                "type": "npc",
+                "id": 5490,
+                "name": "Gnarled Thistleshrub",
+                "url": "https://www.wowhead.com/classic/npc=5490/gnarled-thistleshrub",
+                "relation": "Dropped by",
+                "dropChance": 1.3
+              }
+            ]
           },
           {
             "type": "item",
@@ -25142,7 +30721,33 @@ const DUNGEONS = [
             "name": "Giant Silver Vein",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=11405/giant-silver-vein",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 6148,
+                "name": "Cliff Walker",
+                "url": "https://www.wowhead.com/classic/npc=6148/cliff-walker",
+                "relation": "Dropped by",
+                "dropChance": 74.0
+              },
+              {
+                "type": "npc",
+                "id": 6147,
+                "name": "Cliff Thunderer",
+                "url": "https://www.wowhead.com/classic/npc=6147/cliff-thunderer",
+                "relation": "Dropped by",
+                "dropChance": 72.8
+              },
+              {
+                "type": "npc",
+                "id": 6146,
+                "name": "Cliff Breaker",
+                "url": "https://www.wowhead.com/classic/npc=6146/cliff-breaker",
+                "relation": "Dropped by",
+                "dropChance": 67.0
+              }
+            ]
           },
           {
             "type": "item",
@@ -26546,7 +32151,25 @@ const DUNGEONS = [
             "name": "Marshal Windsor's Lost Information",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=11464/marshal-windsors-lost-information",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8983,
+                "name": "Golem Lord Argelmach",
+                "url": "https://www.wowhead.com/classic/npc=8983/golem-lord-argelmach",
+                "relation": "Dropped by",
+                "dropChance": 15.9
+              },
+              {
+                "type": "npc",
+                "id": 9033,
+                "name": "General Angerforge",
+                "url": "https://www.wowhead.com/classic/npc=9033/general-angerforge",
+                "relation": "Dropped by",
+                "dropChance": 12.6
+              }
+            ]
           },
           {
             "type": "item",
@@ -26554,7 +32177,17 @@ const DUNGEONS = [
             "name": "Marshal Windsor's Lost Information",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=11465/marshal-windsors-lost-information",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8983,
+                "name": "Golem Lord Argelmach",
+                "url": "https://www.wowhead.com/classic/npc=8983/golem-lord-argelmach",
+                "relation": "Dropped by",
+                "dropChance": 50.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -28024,7 +33657,25 @@ const DUNGEONS = [
                 "name": "Marshal Windsor's Lost Information",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=11464/marshal-windsors-lost-information",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 8983,
+                    "name": "Golem Lord Argelmach",
+                    "url": "https://www.wowhead.com/classic/npc=8983/golem-lord-argelmach",
+                    "relation": "Dropped by",
+                    "dropChance": 15.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 9033,
+                    "name": "General Angerforge",
+                    "url": "https://www.wowhead.com/classic/npc=9033/general-angerforge",
+                    "relation": "Dropped by",
+                    "dropChance": 12.6
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -28032,7 +33683,17 @@ const DUNGEONS = [
                 "name": "Marshal Windsor's Lost Information",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=11465/marshal-windsors-lost-information",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 8983,
+                    "name": "Golem Lord Argelmach",
+                    "url": "https://www.wowhead.com/classic/npc=8983/golem-lord-argelmach",
+                    "relation": "Dropped by",
+                    "dropChance": 50.0
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -28665,7 +34326,17 @@ const DUNGEONS = [
             "name": "Tablet of Kurniya",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=11126/tablet-of-kurniya",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9017,
+                "name": "Lord Incendius",
+                "url": "https://www.wowhead.com/classic/npc=9017/lord-incendius",
+                "relation": "Dropped by",
+                "dropChance": 5.3
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -29191,7 +34862,17 @@ const DUNGEONS = [
             "name": "Book of Incantations",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18261/book-of-incantations",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14354,
+                "name": "Pusillin",
+                "url": "https://www.wowhead.com/classic/npc=14354/pusillin",
+                "relation": "Dropped by",
+                "dropChance": 20.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -29274,7 +34955,17 @@ const DUNGEONS = [
             "name": "Lethtendris's Web",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18426/lethtendriss-web",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14327,
+                "name": "Lethtendris",
+                "url": "https://www.wowhead.com/classic/npc=14327/lethtendris",
+                "relation": "Dropped by",
+                "dropChance": 28.6
+              }
+            ]
           }
         ],
         "rewards": [
@@ -29434,7 +35125,17 @@ const DUNGEONS = [
             "name": "Lethtendris's Web",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18426/lethtendriss-web",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14327,
+                "name": "Lethtendris",
+                "url": "https://www.wowhead.com/classic/npc=14327/lethtendris",
+                "relation": "Dropped by",
+                "dropChance": 28.6
+              }
+            ]
           }
         ],
         "rewards": [
@@ -29594,7 +35295,17 @@ const DUNGEONS = [
             "name": "Hydrospawn Essence",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18299/hydrospawn-essence",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 13280,
+                "name": "Hydrospawn",
+                "url": "https://www.wowhead.com/classic/npc=13280/hydrospawn",
+                "relation": "Dropped by",
+                "dropChance": 7.7
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -29818,7 +35529,16 @@ const DUNGEONS = [
             "name": "Felvine Shard",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18501/felvine-shard",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 179559,
+                "name": "Felvine Shard",
+                "url": "https://www.wowhead.com/classic/object=179559/felvine-shard",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -29896,7 +35616,16 @@ const DUNGEONS = [
                 "name": "Reliquary of Purity",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=22201/reliquary-of-purity",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 179565,
+                    "name": "Dusty Reliquary",
+                    "url": "https://www.wowhead.com/classic/object=179565/dusty-reliquary",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -29980,7 +35709,48 @@ const DUNGEONS = [
             "name": "Bolt of Runecloth",
             "quantity": 4,
             "url": "https://www.wowhead.com/classic/item=14048/bolt-of-runecloth",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "item",
+                "id": 21228,
+                "name": "Mithril Bound Trunk",
+                "url": "https://www.wowhead.com/classic/item=21228/mithril-bound-trunk",
+                "relation": "Contained in",
+                "dropChance": 31.9
+              },
+              {
+                "type": "object",
+                "id": 16,
+                "name": "Azshara",
+                "url": "https://www.wowhead.com/classic/object=16/azshara",
+                "relation": "Fished in",
+                "dropChance": 0.0
+              },
+              {
+                "type": "object",
+                "id": 33,
+                "name": "Stranglethorn Vale",
+                "url": "https://www.wowhead.com/classic/object=33/stranglethorn-vale",
+                "relation": "Fished in",
+                "dropChance": 0.0
+              },
+              {
+                "type": "object",
+                "id": 357,
+                "name": "Feralas",
+                "url": "https://www.wowhead.com/classic/object=357/feralas",
+                "relation": "Fished in",
+                "dropChance": 0.0
+              },
+              {
+                "type": "npc",
+                "id": 8019,
+                "name": "Fyldren Moonfeather",
+                "url": "https://www.wowhead.com/classic/npc=8019/fyldren-moonfeather",
+                "relation": "Dropped by"
+              }
+            ]
           },
           {
             "type": "item",
@@ -29988,7 +35758,105 @@ const DUNGEONS = [
             "name": "Rugged Leather",
             "quantity": 8,
             "url": "https://www.wowhead.com/classic/item=8170/rugged-leather",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 12802,
+                "name": "Chimaerok Devourer",
+                "url": "https://www.wowhead.com/classic/npc=12802/chimaerok-devourer",
+                "relation": "Skinned from",
+                "dropChance": 94.8
+              },
+              {
+                "type": "npc",
+                "id": 4374,
+                "name": "Strashaz Hydra",
+                "url": "https://www.wowhead.com/classic/npc=4374/strashaz-hydra",
+                "relation": "Skinned from",
+                "dropChance": 85.2
+              },
+              {
+                "type": "npc",
+                "id": 228909,
+                "name": "Legion Hound",
+                "url": "https://www.wowhead.com/classic/npc=228909/legion-hound",
+                "relation": "Skinned from",
+                "dropChance": 82.2
+              },
+              {
+                "type": "npc",
+                "id": 12800,
+                "name": "Chimaerok",
+                "url": "https://www.wowhead.com/classic/npc=12800/chimaerok",
+                "relation": "Skinned from",
+                "dropChance": 81.4
+              },
+              {
+                "type": "npc",
+                "id": 10430,
+                "name": "The Beast",
+                "url": "https://www.wowhead.com/classic/npc=10430/the-beast",
+                "relation": "Skinned from",
+                "dropChance": 81.0
+              },
+              {
+                "type": "npc",
+                "id": 11357,
+                "name": "Son of Hakkar",
+                "url": "https://www.wowhead.com/classic/npc=11357/son-of-hakkar",
+                "relation": "Skinned from",
+                "dropChance": 80.6
+              },
+              {
+                "type": "npc",
+                "id": 12801,
+                "name": "Arcane Chimaerok",
+                "url": "https://www.wowhead.com/classic/npc=12801/arcane-chimaerok",
+                "relation": "Skinned from",
+                "dropChance": 80.6
+              },
+              {
+                "type": "npc",
+                "id": 12121,
+                "name": "Draka",
+                "url": "https://www.wowhead.com/classic/npc=12121/draka",
+                "relation": "Skinned from",
+                "dropChance": 80.4
+              },
+              {
+                "type": "npc",
+                "id": 11371,
+                "name": "Razzashi Serpent",
+                "url": "https://www.wowhead.com/classic/npc=11371/razzashi-serpent",
+                "relation": "Skinned from",
+                "dropChance": 79.8
+              },
+              {
+                "type": "npc",
+                "id": 11365,
+                "name": "Zulian Panther",
+                "url": "https://www.wowhead.com/classic/npc=11365/zulian-panther",
+                "relation": "Skinned from",
+                "dropChance": 79.7
+              },
+              {
+                "type": "npc",
+                "id": 16117,
+                "name": "Plagued Swine",
+                "url": "https://www.wowhead.com/classic/npc=16117/plagued-swine",
+                "relation": "Skinned from",
+                "dropChance": 79.0
+              },
+              {
+                "type": "npc",
+                "id": 11373,
+                "name": "Razzashi Cobra",
+                "url": "https://www.wowhead.com/classic/npc=11373/razzashi-cobra",
+                "relation": "Dropped by",
+                "dropChance": 72.2
+              }
+            ]
           },
           {
             "type": "item",
@@ -30004,7 +35872,24 @@ const DUNGEONS = [
             "name": "Ogre Tannin",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18240/ogre-tannin",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "object",
+                "id": 179501,
+                "name": "Knot Thimblejack's Cache",
+                "url": "https://www.wowhead.com/classic/object=179501/knot-thimblejack-s-cache",
+                "relation": "Contained in",
+                "dropChance": 33.3
+              },
+              {
+                "type": "object",
+                "id": 179499,
+                "name": "Ogre Tannin Basket",
+                "url": "https://www.wowhead.com/classic/object=179499/ogre-tannin-basket",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -30171,7 +36056,16 @@ const DUNGEONS = [
             "name": "Gauntlet of Gordok Might",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18336/gauntlet-of-gordok-might",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 179545,
+                "name": "The Prince's Chest",
+                "url": "https://www.wowhead.com/classic/object=179545/the-prince-s-chest",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -30342,7 +36236,16 @@ const DUNGEONS = [
             "name": "Thorium Widget",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=15994/thorium-widget",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 12426,
+                "name": "Masterwork Target Dummy",
+                "url": "https://www.wowhead.com/classic/npc=12426/masterwork-target-dummy",
+                "relation": "Dropped by"
+              }
+            ]
           },
           {
             "type": "item",
@@ -30350,7 +36253,24 @@ const DUNGEONS = [
             "name": "Frost Oil",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=3829/frost-oil",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "item",
+                "id": 11887,
+                "name": "Cenarion Circle Cache",
+                "url": "https://www.wowhead.com/classic/item=11887/cenarion-circle-cache",
+                "relation": "Contained in",
+                "dropChance": 14.7
+              },
+              {
+                "type": "npc",
+                "id": 15184,
+                "name": "Cenarion Hold Infantry",
+                "url": "https://www.wowhead.com/classic/npc=15184/cenarion-hold-infantry",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -30418,7 +36338,16 @@ const DUNGEONS = [
             "name": "Gauntlet of Gordok Might",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18336/gauntlet-of-gordok-might",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 179545,
+                "name": "The Prince's Chest",
+                "url": "https://www.wowhead.com/classic/object=179545/the-prince-s-chest",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -30574,7 +36503,17 @@ const DUNGEONS = [
             "name": "Book of Incantations",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18261/book-of-incantations",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14354,
+                "name": "Pusillin",
+                "url": "https://www.wowhead.com/classic/npc=14354/pusillin",
+                "relation": "Dropped by",
+                "dropChance": 20.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -31238,7 +37177,16 @@ const DUNGEONS = [
             "name": "Heated Ancient Blade",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18488/heated-ancient-blade",
-            "quality": 4
+            "quality": 4,
+            "sources": [
+              {
+                "type": "object",
+                "id": 179562,
+                "name": "Ancient Heated Blade",
+                "url": "https://www.wowhead.com/classic/object=179562/ancient-heated-blade",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -31434,7 +37382,89 @@ const DUNGEONS = [
             "name": "Gordok Shackle Key",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18250/gordok-shackle-key",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14351,
+                "name": "Gordok Bushwacker",
+                "url": "https://www.wowhead.com/classic/npc=14351/gordok-bushwacker",
+                "relation": "Dropped by",
+                "dropChance": 46.6
+              },
+              {
+                "type": "npc",
+                "id": 14325,
+                "name": "Captain Kromcrush",
+                "url": "https://www.wowhead.com/classic/npc=14325/captain-kromcrush",
+                "relation": "Dropped by",
+                "dropChance": 14.7
+              },
+              {
+                "type": "npc",
+                "id": 14326,
+                "name": "Guard Mol'dar",
+                "url": "https://www.wowhead.com/classic/npc=14326/guard-mol-dar",
+                "relation": "Dropped by",
+                "dropChance": 14.2
+              },
+              {
+                "type": "npc",
+                "id": 14321,
+                "name": "Guard Fengus",
+                "url": "https://www.wowhead.com/classic/npc=14321/guard-fengus",
+                "relation": "Dropped by",
+                "dropChance": 13.5
+              },
+              {
+                "type": "npc",
+                "id": 14323,
+                "name": "Guard Slip'kik",
+                "url": "https://www.wowhead.com/classic/npc=14323/guard-slip-kik",
+                "relation": "Dropped by",
+                "dropChance": 13.4
+              },
+              {
+                "type": "npc",
+                "id": 11448,
+                "name": "Gordok Warlock",
+                "url": "https://www.wowhead.com/classic/npc=11448/gordok-warlock",
+                "relation": "Dropped by",
+                "dropChance": 7.0
+              },
+              {
+                "type": "npc",
+                "id": 11450,
+                "name": "Gordok Reaver",
+                "url": "https://www.wowhead.com/classic/npc=11450/gordok-reaver",
+                "relation": "Dropped by",
+                "dropChance": 6.7
+              },
+              {
+                "type": "npc",
+                "id": 11441,
+                "name": "Gordok Brute",
+                "url": "https://www.wowhead.com/classic/npc=11441/gordok-brute",
+                "relation": "Dropped by",
+                "dropChance": 6.6
+              },
+              {
+                "type": "npc",
+                "id": 11445,
+                "name": "Gordok Captain",
+                "url": "https://www.wowhead.com/classic/npc=11445/gordok-captain",
+                "relation": "Dropped by",
+                "dropChance": 6.5
+              },
+              {
+                "type": "npc",
+                "id": 11444,
+                "name": "Gordok Mage-Lord",
+                "url": "https://www.wowhead.com/classic/npc=11444/gordok-mage-lord",
+                "relation": "Dropped by",
+                "dropChance": 6.3
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -31562,7 +37592,105 @@ const DUNGEONS = [
             "name": "Libram of Focus",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18333/libram-of-focus",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14690,
+                "name": "Revanchion",
+                "url": "https://www.wowhead.com/classic/npc=14690/revanchion",
+                "relation": "Dropped by",
+                "dropChance": 3.7
+              },
+              {
+                "type": "npc",
+                "id": 11459,
+                "name": "Ironbark Protector",
+                "url": "https://www.wowhead.com/classic/npc=11459/ironbark-protector",
+                "relation": "Dropped by",
+                "dropChance": 2.8
+              },
+              {
+                "type": "npc",
+                "id": 11469,
+                "name": "Eldreth Seether",
+                "url": "https://www.wowhead.com/classic/npc=11469/eldreth-seether",
+                "relation": "Dropped by",
+                "dropChance": 2.1
+              },
+              {
+                "type": "npc",
+                "id": 11470,
+                "name": "Eldreth Sorcerer",
+                "url": "https://www.wowhead.com/classic/npc=11470/eldreth-sorcerer",
+                "relation": "Dropped by",
+                "dropChance": 2.1
+              },
+              {
+                "type": "npc",
+                "id": 11475,
+                "name": "Eldreth Phantasm",
+                "url": "https://www.wowhead.com/classic/npc=11475/eldreth-phantasm",
+                "relation": "Dropped by",
+                "dropChance": 2.1
+              },
+              {
+                "type": "npc",
+                "id": 11473,
+                "name": "Eldreth Spectre",
+                "url": "https://www.wowhead.com/classic/npc=11473/eldreth-spectre",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              },
+              {
+                "type": "npc",
+                "id": 11471,
+                "name": "Eldreth Apparition",
+                "url": "https://www.wowhead.com/classic/npc=11471/eldreth-apparition",
+                "relation": "Dropped by",
+                "dropChance": 1.9
+              },
+              {
+                "type": "npc",
+                "id": 11484,
+                "name": "Residual Monstrosity",
+                "url": "https://www.wowhead.com/classic/npc=11484/residual-monstrosity",
+                "relation": "Dropped by",
+                "dropChance": 1.7
+              },
+              {
+                "type": "npc",
+                "id": 11472,
+                "name": "Eldreth Spirit",
+                "url": "https://www.wowhead.com/classic/npc=11472/eldreth-spirit",
+                "relation": "Dropped by",
+                "dropChance": 1.6
+              },
+              {
+                "type": "npc",
+                "id": 13021,
+                "name": "Warpwood Crusher",
+                "url": "https://www.wowhead.com/classic/npc=13021/warpwood-crusher",
+                "relation": "Dropped by",
+                "dropChance": 1.6
+              },
+              {
+                "type": "npc",
+                "id": 14399,
+                "name": "Arcane Torrent",
+                "url": "https://www.wowhead.com/classic/npc=14399/arcane-torrent",
+                "relation": "Dropped by",
+                "dropChance": 1.6
+              },
+              {
+                "type": "npc",
+                "id": 11480,
+                "name": "Arcane Aberration",
+                "url": "https://www.wowhead.com/classic/npc=11480/arcane-aberration",
+                "relation": "Dropped by",
+                "dropChance": 1.5
+              }
+            ]
           },
           {
             "type": "item",
@@ -31570,7 +37698,105 @@ const DUNGEONS = [
             "name": "Pristine Black Diamond",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18335/pristine-black-diamond",
-            "quality": 3
+            "quality": 3,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14861,
+                "name": "Blood Steward of Kirtonos",
+                "url": "https://www.wowhead.com/classic/npc=14861/blood-steward-of-kirtonos",
+                "relation": "Dropped by",
+                "dropChance": 33.3
+              },
+              {
+                "type": "npc",
+                "id": 9264,
+                "name": "Firebrand Pyromancer",
+                "url": "https://www.wowhead.com/classic/npc=9264/firebrand-pyromancer",
+                "relation": "Dropped by",
+                "dropChance": 12.5
+              },
+              {
+                "type": "npc",
+                "id": 14690,
+                "name": "Revanchion",
+                "url": "https://www.wowhead.com/classic/npc=14690/revanchion",
+                "relation": "Dropped by",
+                "dropChance": 11.1
+              },
+              {
+                "type": "npc",
+                "id": 13146,
+                "name": "Lieutenant Murp",
+                "url": "https://www.wowhead.com/classic/npc=13146/lieutenant-murp",
+                "relation": "Dropped by",
+                "dropChance": 8.3
+              },
+              {
+                "type": "npc",
+                "id": 240804,
+                "name": "Inquisitor Tenn Flamecaster",
+                "url": "https://www.wowhead.com/classic/npc=240804/inquisitor-tenn-flamecaster",
+                "relation": "Dropped by",
+                "dropChance": 6.7
+              },
+              {
+                "type": "npc",
+                "id": 7069,
+                "name": "Condemned Monk",
+                "url": "https://www.wowhead.com/classic/npc=7069/condemned-monk",
+                "relation": "Dropped by",
+                "dropChance": 4.2
+              },
+              {
+                "type": "npc",
+                "id": 228914,
+                "name": "Severed Keeper",
+                "url": "https://www.wowhead.com/classic/npc=228914/severed-keeper",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              },
+              {
+                "type": "npc",
+                "id": 228913,
+                "name": "Severed Druid",
+                "url": "https://www.wowhead.com/classic/npc=228913/severed-druid",
+                "relation": "Dropped by",
+                "dropChance": 2.1
+              },
+              {
+                "type": "npc",
+                "id": 230349,
+                "name": "Felguard Elite",
+                "url": "https://www.wowhead.com/classic/npc=230349/felguard-elite",
+                "relation": "Dropped by",
+                "dropChance": 2.1
+              },
+              {
+                "type": "npc",
+                "id": 230348,
+                "name": "Doomguard Commander",
+                "url": "https://www.wowhead.com/classic/npc=230348/doomguard-commander",
+                "relation": "Dropped by",
+                "dropChance": 1.5
+              },
+              {
+                "type": "npc",
+                "id": 238679,
+                "name": "Fallen Praetorian",
+                "url": "https://www.wowhead.com/classic/npc=238679/fallen-praetorian",
+                "relation": "Dropped by",
+                "dropChance": 1.4
+              },
+              {
+                "type": "npc",
+                "id": 12457,
+                "name": "Blackwing Spellbinder",
+                "url": "https://www.wowhead.com/classic/npc=12457/blackwing-spellbinder",
+                "relation": "Dropped by",
+                "dropChance": 1.3
+              }
+            ]
           },
           {
             "type": "item",
@@ -31578,7 +37804,49 @@ const DUNGEONS = [
             "name": "Large Brilliant Shard",
             "quantity": 4,
             "url": "https://www.wowhead.com/classic/item=14344/large-brilliant-shard",
-            "quality": 3
+            "quality": 3,
+            "sources": [
+              {
+                "type": "item",
+                "id": 224851,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=224851/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 50.0
+              },
+              {
+                "type": "item",
+                "id": 237263,
+                "name": "Supply Bag",
+                "url": "https://www.wowhead.com/classic/item=237263/supply-bag",
+                "relation": "Contained in",
+                "dropChance": 6.7
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 5.7
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 5.4
+              },
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 3.9
+              }
+            ]
           },
           {
             "type": "item",
@@ -31586,7 +37854,96 @@ const DUNGEONS = [
             "name": "Skin of Shadow",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=12753/skin-of-shadow",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 238559,
+                "name": "Crypt Dweller",
+                "url": "https://www.wowhead.com/classic/npc=238559/crypt-dweller",
+                "relation": "Dropped by",
+                "dropChance": 45.6
+              },
+              {
+                "type": "npc",
+                "id": 238560,
+                "name": "The Warden",
+                "url": "https://www.wowhead.com/classic/npc=238560/the-warden",
+                "relation": "Dropped by",
+                "dropChance": 29.7
+              },
+              {
+                "type": "npc",
+                "id": 10491,
+                "name": "Risen Bonewarder",
+                "url": "https://www.wowhead.com/classic/npc=10491/risen-bonewarder",
+                "relation": "Dropped by",
+                "dropChance": 25.5
+              },
+              {
+                "type": "npc",
+                "id": 10488,
+                "name": "Risen Construct",
+                "url": "https://www.wowhead.com/classic/npc=10488/risen-construct",
+                "relation": "Dropped by",
+                "dropChance": 24.3
+              },
+              {
+                "type": "npc",
+                "id": 238657,
+                "name": "Crypt Dweller",
+                "url": "https://www.wowhead.com/classic/npc=238657/crypt-dweller",
+                "relation": "Dropped by",
+                "dropChance": 23.9
+              },
+              {
+                "type": "npc",
+                "id": 238656,
+                "name": "Crypt Dweller",
+                "url": "https://www.wowhead.com/classic/npc=238656/crypt-dweller",
+                "relation": "Dropped by",
+                "dropChance": 21.9
+              },
+              {
+                "type": "npc",
+                "id": 10502,
+                "name": "Lady Illucia Barov",
+                "url": "https://www.wowhead.com/classic/npc=10502/lady-illucia-barov",
+                "relation": "Dropped by",
+                "dropChance": 4.6
+              },
+              {
+                "type": "npc",
+                "id": 10901,
+                "name": "Lorekeeper Polkelt",
+                "url": "https://www.wowhead.com/classic/npc=10901/lorekeeper-polkelt",
+                "relation": "Dropped by",
+                "dropChance": 4.4
+              },
+              {
+                "type": "npc",
+                "id": 10505,
+                "name": "Instructor Malicia",
+                "url": "https://www.wowhead.com/classic/npc=10505/instructor-malicia",
+                "relation": "Dropped by",
+                "dropChance": 4.3
+              },
+              {
+                "type": "npc",
+                "id": 10507,
+                "name": "The Ravenian",
+                "url": "https://www.wowhead.com/classic/npc=10507/the-ravenian",
+                "relation": "Dropped by",
+                "dropChance": 4.3
+              },
+              {
+                "type": "object",
+                "id": 175964,
+                "name": "Skin of Shadow",
+                "url": "https://www.wowhead.com/classic/object=175964/skin-of-shadow",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -31663,7 +38020,105 @@ const DUNGEONS = [
             "name": "Libram of Protection",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18334/libram-of-protection",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11445,
+                "name": "Gordok Captain",
+                "url": "https://www.wowhead.com/classic/npc=11445/gordok-captain",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              },
+              {
+                "type": "npc",
+                "id": 11448,
+                "name": "Gordok Warlock",
+                "url": "https://www.wowhead.com/classic/npc=11448/gordok-warlock",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              },
+              {
+                "type": "npc",
+                "id": 11450,
+                "name": "Gordok Reaver",
+                "url": "https://www.wowhead.com/classic/npc=11450/gordok-reaver",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              },
+              {
+                "type": "npc",
+                "id": 11441,
+                "name": "Gordok Brute",
+                "url": "https://www.wowhead.com/classic/npc=11441/gordok-brute",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              },
+              {
+                "type": "npc",
+                "id": 14351,
+                "name": "Gordok Bushwacker",
+                "url": "https://www.wowhead.com/classic/npc=14351/gordok-bushwacker",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              },
+              {
+                "type": "npc",
+                "id": 11444,
+                "name": "Gordok Mage-Lord",
+                "url": "https://www.wowhead.com/classic/npc=11444/gordok-mage-lord",
+                "relation": "Dropped by",
+                "dropChance": 1.7
+              },
+              {
+                "type": "npc",
+                "id": 11459,
+                "name": "Ironbark Protector",
+                "url": "https://www.wowhead.com/classic/npc=11459/ironbark-protector",
+                "relation": "Dropped by",
+                "dropChance": 1.3
+              },
+              {
+                "type": "npc",
+                "id": 11470,
+                "name": "Eldreth Sorcerer",
+                "url": "https://www.wowhead.com/classic/npc=11470/eldreth-sorcerer",
+                "relation": "Dropped by",
+                "dropChance": 1.2
+              },
+              {
+                "type": "npc",
+                "id": 11473,
+                "name": "Eldreth Spectre",
+                "url": "https://www.wowhead.com/classic/npc=11473/eldreth-spectre",
+                "relation": "Dropped by",
+                "dropChance": 1.2
+              },
+              {
+                "type": "npc",
+                "id": 11469,
+                "name": "Eldreth Seether",
+                "url": "https://www.wowhead.com/classic/npc=11469/eldreth-seether",
+                "relation": "Dropped by",
+                "dropChance": 1.0
+              },
+              {
+                "type": "npc",
+                "id": 11475,
+                "name": "Eldreth Phantasm",
+                "url": "https://www.wowhead.com/classic/npc=11475/eldreth-phantasm",
+                "relation": "Dropped by",
+                "dropChance": 1.0
+              },
+              {
+                "type": "npc",
+                "id": 11471,
+                "name": "Eldreth Apparition",
+                "url": "https://www.wowhead.com/classic/npc=11471/eldreth-apparition",
+                "relation": "Dropped by",
+                "dropChance": 0.8
+              }
+            ]
           },
           {
             "type": "item",
@@ -31671,7 +38126,105 @@ const DUNGEONS = [
             "name": "Pristine Black Diamond",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18335/pristine-black-diamond",
-            "quality": 3
+            "quality": 3,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14861,
+                "name": "Blood Steward of Kirtonos",
+                "url": "https://www.wowhead.com/classic/npc=14861/blood-steward-of-kirtonos",
+                "relation": "Dropped by",
+                "dropChance": 33.3
+              },
+              {
+                "type": "npc",
+                "id": 9264,
+                "name": "Firebrand Pyromancer",
+                "url": "https://www.wowhead.com/classic/npc=9264/firebrand-pyromancer",
+                "relation": "Dropped by",
+                "dropChance": 12.5
+              },
+              {
+                "type": "npc",
+                "id": 14690,
+                "name": "Revanchion",
+                "url": "https://www.wowhead.com/classic/npc=14690/revanchion",
+                "relation": "Dropped by",
+                "dropChance": 11.1
+              },
+              {
+                "type": "npc",
+                "id": 13146,
+                "name": "Lieutenant Murp",
+                "url": "https://www.wowhead.com/classic/npc=13146/lieutenant-murp",
+                "relation": "Dropped by",
+                "dropChance": 8.3
+              },
+              {
+                "type": "npc",
+                "id": 240804,
+                "name": "Inquisitor Tenn Flamecaster",
+                "url": "https://www.wowhead.com/classic/npc=240804/inquisitor-tenn-flamecaster",
+                "relation": "Dropped by",
+                "dropChance": 6.7
+              },
+              {
+                "type": "npc",
+                "id": 7069,
+                "name": "Condemned Monk",
+                "url": "https://www.wowhead.com/classic/npc=7069/condemned-monk",
+                "relation": "Dropped by",
+                "dropChance": 4.2
+              },
+              {
+                "type": "npc",
+                "id": 228914,
+                "name": "Severed Keeper",
+                "url": "https://www.wowhead.com/classic/npc=228914/severed-keeper",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              },
+              {
+                "type": "npc",
+                "id": 228913,
+                "name": "Severed Druid",
+                "url": "https://www.wowhead.com/classic/npc=228913/severed-druid",
+                "relation": "Dropped by",
+                "dropChance": 2.1
+              },
+              {
+                "type": "npc",
+                "id": 230349,
+                "name": "Felguard Elite",
+                "url": "https://www.wowhead.com/classic/npc=230349/felguard-elite",
+                "relation": "Dropped by",
+                "dropChance": 2.1
+              },
+              {
+                "type": "npc",
+                "id": 230348,
+                "name": "Doomguard Commander",
+                "url": "https://www.wowhead.com/classic/npc=230348/doomguard-commander",
+                "relation": "Dropped by",
+                "dropChance": 1.5
+              },
+              {
+                "type": "npc",
+                "id": 238679,
+                "name": "Fallen Praetorian",
+                "url": "https://www.wowhead.com/classic/npc=238679/fallen-praetorian",
+                "relation": "Dropped by",
+                "dropChance": 1.4
+              },
+              {
+                "type": "npc",
+                "id": 12457,
+                "name": "Blackwing Spellbinder",
+                "url": "https://www.wowhead.com/classic/npc=12457/blackwing-spellbinder",
+                "relation": "Dropped by",
+                "dropChance": 1.3
+              }
+            ]
           },
           {
             "type": "item",
@@ -31679,7 +38232,49 @@ const DUNGEONS = [
             "name": "Large Brilliant Shard",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=14344/large-brilliant-shard",
-            "quality": 3
+            "quality": 3,
+            "sources": [
+              {
+                "type": "item",
+                "id": 224851,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=224851/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 50.0
+              },
+              {
+                "type": "item",
+                "id": 237263,
+                "name": "Supply Bag",
+                "url": "https://www.wowhead.com/classic/item=237263/supply-bag",
+                "relation": "Contained in",
+                "dropChance": 6.7
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 5.7
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 5.4
+              },
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 3.9
+              }
+            ]
           },
           {
             "type": "item",
@@ -31687,7 +38282,41 @@ const DUNGEONS = [
             "name": "Frayed Abomination Stitching",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12735/frayed-abomination-stitching",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10439,
+                "name": "Ramstein the Gorger",
+                "url": "https://www.wowhead.com/classic/npc=10439/ramstein-the-gorger",
+                "relation": "Dropped by",
+                "dropChance": 48.6
+              },
+              {
+                "type": "npc",
+                "id": 10414,
+                "name": "Patchwork Horror",
+                "url": "https://www.wowhead.com/classic/npc=10414/patchwork-horror",
+                "relation": "Dropped by",
+                "dropChance": 28.6
+              },
+              {
+                "type": "npc",
+                "id": 10417,
+                "name": "Venom Belcher",
+                "url": "https://www.wowhead.com/classic/npc=10417/venom-belcher",
+                "relation": "Dropped by",
+                "dropChance": 27.6
+              },
+              {
+                "type": "npc",
+                "id": 10416,
+                "name": "Bile Spewer",
+                "url": "https://www.wowhead.com/classic/npc=10416/bile-spewer",
+                "relation": "Dropped by",
+                "dropChance": 23.6
+              }
+            ]
           }
         ],
         "rewards": [
@@ -31764,7 +38393,105 @@ const DUNGEONS = [
             "name": "Libram of Rapidity",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18332/libram-of-rapidity",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 13021,
+                "name": "Warpwood Crusher",
+                "url": "https://www.wowhead.com/classic/npc=13021/warpwood-crusher",
+                "relation": "Dropped by",
+                "dropChance": 3.4
+              },
+              {
+                "type": "npc",
+                "id": 11461,
+                "name": "Warpwood Guardian",
+                "url": "https://www.wowhead.com/classic/npc=11461/warpwood-guardian",
+                "relation": "Dropped by",
+                "dropChance": 3.2
+              },
+              {
+                "type": "npc",
+                "id": 11462,
+                "name": "Warpwood Treant",
+                "url": "https://www.wowhead.com/classic/npc=11462/warpwood-treant",
+                "relation": "Dropped by",
+                "dropChance": 3.1
+              },
+              {
+                "type": "npc",
+                "id": 11465,
+                "name": "Warpwood Stomper",
+                "url": "https://www.wowhead.com/classic/npc=11465/warpwood-stomper",
+                "relation": "Dropped by",
+                "dropChance": 3.1
+              },
+              {
+                "type": "npc",
+                "id": 11464,
+                "name": "Warpwood Tangler",
+                "url": "https://www.wowhead.com/classic/npc=11464/warpwood-tangler",
+                "relation": "Dropped by",
+                "dropChance": 2.9
+              },
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 2.4
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 2.4
+              },
+              {
+                "type": "npc",
+                "id": 11451,
+                "name": "Wildspawn Satyr",
+                "url": "https://www.wowhead.com/classic/npc=11451/wildspawn-satyr",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              },
+              {
+                "type": "npc",
+                "id": 14349,
+                "name": "Pimgib",
+                "url": "https://www.wowhead.com/classic/npc=14349/pimgib",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 2.2
+              },
+              {
+                "type": "npc",
+                "id": 11454,
+                "name": "Wildspawn Betrayer",
+                "url": "https://www.wowhead.com/classic/npc=11454/wildspawn-betrayer",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              },
+              {
+                "type": "npc",
+                "id": 11455,
+                "name": "Wildspawn Felsworn",
+                "url": "https://www.wowhead.com/classic/npc=11455/wildspawn-felsworn",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              }
+            ]
           },
           {
             "type": "item",
@@ -31772,7 +38499,105 @@ const DUNGEONS = [
             "name": "Pristine Black Diamond",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18335/pristine-black-diamond",
-            "quality": 3
+            "quality": 3,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14861,
+                "name": "Blood Steward of Kirtonos",
+                "url": "https://www.wowhead.com/classic/npc=14861/blood-steward-of-kirtonos",
+                "relation": "Dropped by",
+                "dropChance": 33.3
+              },
+              {
+                "type": "npc",
+                "id": 9264,
+                "name": "Firebrand Pyromancer",
+                "url": "https://www.wowhead.com/classic/npc=9264/firebrand-pyromancer",
+                "relation": "Dropped by",
+                "dropChance": 12.5
+              },
+              {
+                "type": "npc",
+                "id": 14690,
+                "name": "Revanchion",
+                "url": "https://www.wowhead.com/classic/npc=14690/revanchion",
+                "relation": "Dropped by",
+                "dropChance": 11.1
+              },
+              {
+                "type": "npc",
+                "id": 13146,
+                "name": "Lieutenant Murp",
+                "url": "https://www.wowhead.com/classic/npc=13146/lieutenant-murp",
+                "relation": "Dropped by",
+                "dropChance": 8.3
+              },
+              {
+                "type": "npc",
+                "id": 240804,
+                "name": "Inquisitor Tenn Flamecaster",
+                "url": "https://www.wowhead.com/classic/npc=240804/inquisitor-tenn-flamecaster",
+                "relation": "Dropped by",
+                "dropChance": 6.7
+              },
+              {
+                "type": "npc",
+                "id": 7069,
+                "name": "Condemned Monk",
+                "url": "https://www.wowhead.com/classic/npc=7069/condemned-monk",
+                "relation": "Dropped by",
+                "dropChance": 4.2
+              },
+              {
+                "type": "npc",
+                "id": 228914,
+                "name": "Severed Keeper",
+                "url": "https://www.wowhead.com/classic/npc=228914/severed-keeper",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              },
+              {
+                "type": "npc",
+                "id": 228913,
+                "name": "Severed Druid",
+                "url": "https://www.wowhead.com/classic/npc=228913/severed-druid",
+                "relation": "Dropped by",
+                "dropChance": 2.1
+              },
+              {
+                "type": "npc",
+                "id": 230349,
+                "name": "Felguard Elite",
+                "url": "https://www.wowhead.com/classic/npc=230349/felguard-elite",
+                "relation": "Dropped by",
+                "dropChance": 2.1
+              },
+              {
+                "type": "npc",
+                "id": 230348,
+                "name": "Doomguard Commander",
+                "url": "https://www.wowhead.com/classic/npc=230348/doomguard-commander",
+                "relation": "Dropped by",
+                "dropChance": 1.5
+              },
+              {
+                "type": "npc",
+                "id": 238679,
+                "name": "Fallen Praetorian",
+                "url": "https://www.wowhead.com/classic/npc=238679/fallen-praetorian",
+                "relation": "Dropped by",
+                "dropChance": 1.4
+              },
+              {
+                "type": "npc",
+                "id": 12457,
+                "name": "Blackwing Spellbinder",
+                "url": "https://www.wowhead.com/classic/npc=12457/blackwing-spellbinder",
+                "relation": "Dropped by",
+                "dropChance": 1.3
+              }
+            ]
           },
           {
             "type": "item",
@@ -31780,7 +38605,49 @@ const DUNGEONS = [
             "name": "Large Brilliant Shard",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=14344/large-brilliant-shard",
-            "quality": 3
+            "quality": 3,
+            "sources": [
+              {
+                "type": "item",
+                "id": 224851,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=224851/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 50.0
+              },
+              {
+                "type": "item",
+                "id": 237263,
+                "name": "Supply Bag",
+                "url": "https://www.wowhead.com/classic/item=237263/supply-bag",
+                "relation": "Contained in",
+                "dropChance": 6.7
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 5.7
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 5.4
+              },
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 3.9
+              }
+            ]
           },
           {
             "type": "item",
@@ -31788,7 +38655,47 @@ const DUNGEONS = [
             "name": "Blood of Heroes",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=12938/blood-of-heroes",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "item",
+                "id": 239248,
+                "name": "Scarlet Junkbox",
+                "url": "https://www.wowhead.com/classic/item=239248/scarlet-junkbox",
+                "relation": "Contained in",
+                "dropChance": 84.3
+              },
+              {
+                "type": "npc",
+                "id": 11878,
+                "name": "Nathanos Blightcaller",
+                "url": "https://www.wowhead.com/classic/npc=11878/nathanos-blightcaller",
+                "relation": "Dropped by",
+                "dropChance": 1.4
+              },
+              {
+                "type": "npc",
+                "id": 10996,
+                "name": "Fallen Hero",
+                "url": "https://www.wowhead.com/classic/npc=10996/fallen-hero",
+                "relation": "Dropped by",
+                "dropChance": 1.0
+              },
+              {
+                "type": "npc",
+                "id": 16132,
+                "name": "Huntsman Leopold",
+                "url": "https://www.wowhead.com/classic/npc=16132/huntsman-leopold",
+                "relation": "Dropped by"
+              },
+              {
+                "type": "object",
+                "id": 176213,
+                "name": "Blood of Heroes",
+                "url": "https://www.wowhead.com/classic/object=176213/blood-of-heroes",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -31881,7 +38788,7 @@ const DUNGEONS = [
     "loadingScreen": "assets/loading-screens/800389.jpg",
     "faction": "Both",
     "levels": "55–60",
-    "location": "Burning Steppes",
+    "location": "Blackrock Mountain",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-lower-blackrock-spire-dungeon-quests",
     "schema": 2,
     "quests": [
@@ -31940,7 +38847,23 @@ const DUNGEONS = [
             "name": "Spire Spider Egg",
             "quantity": 15,
             "url": "https://www.wowhead.com/classic/item=12530/spire-spider-egg",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 175588,
+                "name": "Spire Spider Egg",
+                "url": "https://www.wowhead.com/classic/object=175588/spire-spider-egg",
+                "relation": "Contained in"
+              },
+              {
+                "type": "object",
+                "id": 175606,
+                "name": "Spire Spider Egg",
+                "url": "https://www.wowhead.com/classic/object=175606/spire-spider-egg",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -32270,7 +39193,16 @@ const DUNGEONS = [
             "name": "Fifth Mosh'aru Tablet",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12740/fifth-mosharu-tablet",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 175949,
+                "name": "Fifth Mosh'aru Tablet",
+                "url": "https://www.wowhead.com/classic/object=175949/fifth-mosh-aru-tablet",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -32278,7 +39210,16 @@ const DUNGEONS = [
             "name": "Sixth Mosh'aru Tablet",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12741/sixth-mosharu-tablet",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 175950,
+                "name": "Sixth Mosh'aru Tablet",
+                "url": "https://www.wowhead.com/classic/object=175950/sixth-mosh-aru-tablet",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -32413,7 +39354,17 @@ const DUNGEONS = [
                 "name": "First Mosh'aru Tablet",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=10660/first-mosharu-tablet",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 7272,
+                    "name": "Theka the Martyr",
+                    "url": "https://www.wowhead.com/classic/npc=7272/theka-the-martyr",
+                    "relation": "Dropped by",
+                    "dropChance": 25.0
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -32421,7 +39372,17 @@ const DUNGEONS = [
                 "name": "Second Mosh'aru Tablet",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=10661/second-mosharu-tablet",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 7795,
+                    "name": "Hydromancer Velratha",
+                    "url": "https://www.wowhead.com/classic/npc=7795/hydromancer-velratha",
+                    "relation": "Dropped by",
+                    "dropChance": 15.8
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -32494,7 +39455,24 @@ const DUNGEONS = [
                 "name": "Ancient Egg",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=12402/ancient-egg",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 10802,
+                    "name": "Hitah'ya the Keeper",
+                    "url": "https://www.wowhead.com/classic/npc=10802/hitah-ya-the-keeper",
+                    "relation": "Dropped by",
+                    "dropChance": 1.4
+                  },
+                  {
+                    "type": "object",
+                    "id": 175889,
+                    "name": "Ancient Egg",
+                    "url": "https://www.wowhead.com/classic/object=175889/ancient-egg",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -32575,7 +39553,32 @@ const DUNGEONS = [
                 "name": "Essence of Hakkar",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=10663/essence-of-hakkar",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 8440,
+                    "name": "Shade of Hakkar",
+                    "url": "https://www.wowhead.com/classic/npc=8440/shade-of-hakkar",
+                    "relation": "Dropped by",
+                    "dropChance": 49.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 221394,
+                    "name": "Avatar of Hakkar",
+                    "url": "https://www.wowhead.com/classic/npc=221394/avatar-of-hakkar",
+                    "relation": "Dropped by",
+                    "dropChance": 6.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 8443,
+                    "name": "Avatar of Hakkar",
+                    "url": "https://www.wowhead.com/classic/npc=8443/avatar-of-hakkar",
+                    "relation": "Dropped by"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -32670,7 +39673,16 @@ const DUNGEONS = [
                 "name": "Third Mosh'aru Tablet",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=12411/third-mosharu-tablet",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 175487,
+                    "name": "Third Mosh'aru Tablet",
+                    "url": "https://www.wowhead.com/classic/object=175487/third-mosh-aru-tablet",
+                    "relation": "Contained in"
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -32678,7 +39690,16 @@ const DUNGEONS = [
                 "name": "Fourth Mosh'aru Tablet",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=12412/fourth-mosharu-tablet",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 175488,
+                    "name": "Fourth Mosh'aru Tablet",
+                    "url": "https://www.wowhead.com/classic/object=175488/fourth-mosh-aru-tablet",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -32978,7 +39999,16 @@ const DUNGEONS = [
             "name": "Bijou's Belongings",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12345/bijous-belongings",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 175334,
+                "name": "Bijou's Belongings",
+                "url": "https://www.wowhead.com/classic/object=175334/bijou-s-belongings",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -33198,7 +40228,17 @@ const DUNGEONS = [
             "name": "Gemstone of Spirestone",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12336/gemstone-of-spirestone",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9196,
+                "name": "Highlord Omokk",
+                "url": "https://www.wowhead.com/classic/npc=9196/highlord-omokk",
+                "relation": "Dropped by",
+                "dropChance": 33.3
+              }
+            ]
           },
           {
             "type": "item",
@@ -33206,7 +40246,17 @@ const DUNGEONS = [
             "name": "Gemstone of Smolderthorn",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12335/gemstone-of-smolderthorn",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9237,
+                "name": "War Master Voone",
+                "url": "https://www.wowhead.com/classic/npc=9237/war-master-voone",
+                "relation": "Dropped by",
+                "dropChance": 42.9
+              }
+            ]
           },
           {
             "type": "item",
@@ -33214,7 +40264,17 @@ const DUNGEONS = [
             "name": "Gemstone of Bloodaxe",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12337/gemstone-of-bloodaxe",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9568,
+                "name": "Overlord Wyrmthalak",
+                "url": "https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak",
+                "relation": "Dropped by",
+                "dropChance": 23.5
+              }
+            ]
           },
           {
             "type": "item",
@@ -33222,7 +40282,105 @@ const DUNGEONS = [
             "name": "Unadorned Seal of Ascension",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12219/unadorned-seal-of-ascension",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9692,
+                "name": "Bloodaxe Raider",
+                "url": "https://www.wowhead.com/classic/npc=9692/bloodaxe-raider",
+                "relation": "Dropped by",
+                "dropChance": 22.6
+              },
+              {
+                "type": "npc",
+                "id": 9268,
+                "name": "Smolderthorn Berserker",
+                "url": "https://www.wowhead.com/classic/npc=9268/smolderthorn-berserker",
+                "relation": "Dropped by",
+                "dropChance": 19.5
+              },
+              {
+                "type": "npc",
+                "id": 9262,
+                "name": "Firebrand Invoker",
+                "url": "https://www.wowhead.com/classic/npc=9262/firebrand-invoker",
+                "relation": "Dropped by",
+                "dropChance": 18.0
+              },
+              {
+                "type": "npc",
+                "id": 9258,
+                "name": "Scarshield Raider",
+                "url": "https://www.wowhead.com/classic/npc=9258/scarshield-raider",
+                "relation": "Dropped by",
+                "dropChance": 15.2
+              },
+              {
+                "type": "npc",
+                "id": 9264,
+                "name": "Firebrand Pyromancer",
+                "url": "https://www.wowhead.com/classic/npc=9264/firebrand-pyromancer",
+                "relation": "Dropped by",
+                "dropChance": 14.3
+              },
+              {
+                "type": "npc",
+                "id": 9717,
+                "name": "Bloodaxe Summoner",
+                "url": "https://www.wowhead.com/classic/npc=9717/bloodaxe-summoner",
+                "relation": "Dropped by",
+                "dropChance": 13.5
+              },
+              {
+                "type": "npc",
+                "id": 9716,
+                "name": "Bloodaxe Warmonger",
+                "url": "https://www.wowhead.com/classic/npc=9716/bloodaxe-warmonger",
+                "relation": "Dropped by",
+                "dropChance": 13.3
+              },
+              {
+                "type": "npc",
+                "id": 9044,
+                "name": "Scarshield Sentry",
+                "url": "https://www.wowhead.com/classic/npc=9044/scarshield-sentry",
+                "relation": "Dropped by",
+                "dropChance": 12.9
+              },
+              {
+                "type": "npc",
+                "id": 9269,
+                "name": "Smolderthorn Seer",
+                "url": "https://www.wowhead.com/classic/npc=9269/smolderthorn-seer",
+                "relation": "Dropped by",
+                "dropChance": 12.9
+              },
+              {
+                "type": "npc",
+                "id": 9693,
+                "name": "Bloodaxe Evoker",
+                "url": "https://www.wowhead.com/classic/npc=9693/bloodaxe-evoker",
+                "relation": "Dropped by",
+                "dropChance": 12.8
+              },
+              {
+                "type": "npc",
+                "id": 9261,
+                "name": "Firebrand Darkweaver",
+                "url": "https://www.wowhead.com/classic/npc=9261/firebrand-darkweaver",
+                "relation": "Dropped by",
+                "dropChance": 12.5
+              },
+              {
+                "type": "npc",
+                "id": 9263,
+                "name": "Firebrand Dreadweaver",
+                "url": "https://www.wowhead.com/classic/npc=9263/firebrand-dreadweaver",
+                "relation": "Dropped by",
+                "dropChance": 12.5
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -33307,7 +40465,16 @@ const DUNGEONS = [
             "name": "Bijou's Belongings",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12345/bijous-belongings",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 175334,
+                "name": "Bijou's Belongings",
+                "url": "https://www.wowhead.com/classic/object=175334/bijou-s-belongings",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -33460,7 +40627,17 @@ const DUNGEONS = [
             "name": "Warosh's Mojo",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12712/waroshs-mojo",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10584,
+                "name": "Urok Doomhowl",
+                "url": "https://www.wowhead.com/classic/npc=10584/urok-doomhowl",
+                "relation": "Dropped by",
+                "dropChance": 22.2
+              }
+            ]
           }
         ],
         "rewards": [
@@ -33616,7 +40793,17 @@ const DUNGEONS = [
             "name": "Vosh'gajin's Snakestone",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13352/voshgajins-snakestone",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9236,
+                "name": "Shadow Hunter Vosh'gajin",
+                "url": "https://www.wowhead.com/classic/npc=9236/shadow-hunter-vosh-gajin",
+                "relation": "Dropped by",
+                "dropChance": 0.3
+              }
+            ]
           }
         ],
         "rewards": [
@@ -33705,7 +40892,16 @@ const DUNGEONS = [
             "name": "Important Blackrock Documents",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12562/important-blackrock-documents",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 175785,
+                "name": "Inconspicuous Documents",
+                "url": "https://www.wowhead.com/classic/object=175785/inconspicuous-documents",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -34173,7 +41369,17 @@ const DUNGEONS = [
             "name": "Krastinov's Bag of Horrors",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13725/krastinovs-bag-of-horrors",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10503,
+                "name": "Jandice Barov",
+                "url": "https://www.wowhead.com/classic/npc=10503/jandice-barov",
+                "relation": "Dropped by",
+                "dropChance": 12.5
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -34341,7 +41547,17 @@ const DUNGEONS = [
             "name": "Human Head of Ras Frostwhisper",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13626/human-head-of-ras-frostwhisper",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10508,
+                "name": "Ras Frostwhisper",
+                "url": "https://www.wowhead.com/classic/npc=10508/ras-frostwhisper",
+                "relation": "Dropped by",
+                "dropChance": 5.0
+              }
+            ]
           }
         ],
         "rewards": [
@@ -34521,7 +41737,17 @@ const DUNGEONS = [
                 "name": "Krastinov's Bag of Horrors",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=13725/krastinovs-bag-of-horrors",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 10503,
+                    "name": "Jandice Barov",
+                    "url": "https://www.wowhead.com/classic/npc=10503/jandice-barov",
+                    "relation": "Dropped by",
+                    "dropChance": 12.5
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -34691,7 +41917,16 @@ const DUNGEONS = [
                 "name": "Keepsake of Remembrance",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=13585/keepsake-of-remembrance",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 176630,
+                    "name": "Keepsake of Remembrance",
+                    "url": "https://www.wowhead.com/classic/object=176630/keepsake-of-remembrance",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -35037,7 +42272,16 @@ const DUNGEONS = [
             "name": "The Deed to Brill",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13471/the-deed-to-brill",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 176484,
+                "name": "The Deed to Brill",
+                "url": "https://www.wowhead.com/classic/object=176484/the-deed-to-brill",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -35045,7 +42289,16 @@ const DUNGEONS = [
             "name": "The Deed to Caer Darrow",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13448/the-deed-to-caer-darrow",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 176485,
+                "name": "The Deed to Caer Darrow",
+                "url": "https://www.wowhead.com/classic/object=176485/the-deed-to-caer-darrow",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -35053,7 +42306,16 @@ const DUNGEONS = [
             "name": "The Deed to Southshore",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13450/the-deed-to-southshore",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 176486,
+                "name": "The Deed to Southshore",
+                "url": "https://www.wowhead.com/classic/object=176486/the-deed-to-southshore",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -35061,7 +42323,16 @@ const DUNGEONS = [
             "name": "The Deed to Tarren Mill",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13451/the-deed-to-tarren-mill",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 176487,
+                "name": "The Deed to Tarren Mill",
+                "url": "https://www.wowhead.com/classic/object=176487/the-deed-to-tarren-mill",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -35147,7 +42418,16 @@ const DUNGEONS = [
             "name": "The Deed to Brill",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13471/the-deed-to-brill",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 176484,
+                "name": "The Deed to Brill",
+                "url": "https://www.wowhead.com/classic/object=176484/the-deed-to-brill",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -35155,7 +42435,16 @@ const DUNGEONS = [
             "name": "The Deed to Caer Darrow",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13448/the-deed-to-caer-darrow",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 176485,
+                "name": "The Deed to Caer Darrow",
+                "url": "https://www.wowhead.com/classic/object=176485/the-deed-to-caer-darrow",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -35163,7 +42452,16 @@ const DUNGEONS = [
             "name": "The Deed to Southshore",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13450/the-deed-to-southshore",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 176486,
+                "name": "The Deed to Southshore",
+                "url": "https://www.wowhead.com/classic/object=176486/the-deed-to-southshore",
+                "relation": "Contained in"
+              }
+            ]
           },
           {
             "type": "item",
@@ -35171,7 +42469,16 @@ const DUNGEONS = [
             "name": "The Deed to Tarren Mill",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13451/the-deed-to-tarren-mill",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 176487,
+                "name": "The Deed to Tarren Mill",
+                "url": "https://www.wowhead.com/classic/object=176487/the-deed-to-tarren-mill",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -35265,7 +42572,24 @@ const DUNGEONS = [
             "name": "Blessed Arcanite Barding",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18792/blessed-arcanite-barding",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "item",
+                "id": 18804,
+                "name": "Lord Grayson's Satchel",
+                "url": "https://www.wowhead.com/classic/item=18804/lord-grayson-s-satchel",
+                "relation": "Contained in",
+                "dropChance": 93.5
+              },
+              {
+                "type": "npc",
+                "id": 16133,
+                "name": "Mataus the Wrathcaster",
+                "url": "https://www.wowhead.com/classic/npc=16133/mataus-the-wrathcaster",
+                "relation": "Dropped by"
+              }
+            ]
           },
           {
             "type": "item",
@@ -35273,7 +42597,17 @@ const DUNGEONS = [
             "name": "Charger's Lost Soul",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18749/chargers-lost-soul",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14516,
+                "name": "Death Knight Darkreaver",
+                "url": "https://www.wowhead.com/classic/npc=14516/death-knight-darkreaver",
+                "relation": "Dropped by",
+                "dropChance": 16.7
+              }
+            ]
           },
           {
             "type": "item",
@@ -35281,7 +42615,24 @@ const DUNGEONS = [
             "name": "Divination Scryer",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18746/divination-scryer",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "item",
+                "id": 18804,
+                "name": "Lord Grayson's Satchel",
+                "url": "https://www.wowhead.com/classic/item=18804/lord-grayson-s-satchel",
+                "relation": "Contained in",
+                "dropChance": 89.5
+              },
+              {
+                "type": "npc",
+                "id": 16133,
+                "name": "Mataus the Wrathcaster",
+                "url": "https://www.wowhead.com/classic/npc=16133/mataus-the-wrathcaster",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -35760,7 +43111,23 @@ const DUNGEONS = [
                 "name": "Stratholme Holy Water",
                 "quantity": 5,
                 "url": "https://www.wowhead.com/classic/item=13180/stratholme-holy-water",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 181085,
+                    "name": "Stratholme Supply Crate",
+                    "url": "https://www.wowhead.com/classic/object=181085/stratholme-supply-crate",
+                    "relation": "Contained in"
+                  },
+                  {
+                    "type": "object",
+                    "id": 176224,
+                    "name": "Supply Crate",
+                    "url": "https://www.wowhead.com/classic/object=176224/supply-crate",
+                    "relation": "Contained in"
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -35768,7 +43135,105 @@ const DUNGEONS = [
                 "name": "Arthas' Tears",
                 "quantity": 10,
                 "url": "https://www.wowhead.com/classic/item=8836/arthas-tears",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 1851,
+                    "name": "The Husk",
+                    "url": "https://www.wowhead.com/classic/npc=1851/the-husk",
+                    "relation": "Dropped by",
+                    "dropChance": 4.0
+                  },
+                  {
+                    "type": "item",
+                    "id": 20767,
+                    "name": "Scum Covered Bag",
+                    "url": "https://www.wowhead.com/classic/item=20767/scum-covered-bag",
+                    "relation": "Contained in",
+                    "dropChance": 3.7
+                  },
+                  {
+                    "type": "item",
+                    "id": 20768,
+                    "name": "Oozing Bag",
+                    "url": "https://www.wowhead.com/classic/item=20768/oozing-bag",
+                    "relation": "Contained in",
+                    "dropChance": 3.5
+                  },
+                  {
+                    "type": "item",
+                    "id": 9363,
+                    "name": "Sparklematic-Wrapped Box",
+                    "url": "https://www.wowhead.com/classic/item=9363/sparklematic-wrapped-box",
+                    "relation": "Contained in",
+                    "dropChance": 2.6
+                  },
+                  {
+                    "type": "item",
+                    "id": 216646,
+                    "name": "Ziri's Mystery Crate",
+                    "url": "https://www.wowhead.com/classic/item=216646/ziri-s-mystery-crate",
+                    "relation": "Contained in",
+                    "dropChance": 2.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 5490,
+                    "name": "Gnarled Thistleshrub",
+                    "url": "https://www.wowhead.com/classic/npc=5490/gnarled-thistleshrub",
+                    "relation": "Dropped by",
+                    "dropChance": 1.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 221263,
+                    "name": "Vengeful Ancient",
+                    "url": "https://www.wowhead.com/classic/npc=221263/vengeful-ancient",
+                    "relation": "Dropped by",
+                    "dropChance": 1.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 5881,
+                    "name": "Cursed Sycamore",
+                    "url": "https://www.wowhead.com/classic/npc=5881/cursed-sycamore",
+                    "relation": "Dropped by",
+                    "dropChance": 1.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 5485,
+                    "name": "Thistleshrub Rootshaper",
+                    "url": "https://www.wowhead.com/classic/npc=5485/thistleshrub-rootshaper",
+                    "relation": "Dropped by",
+                    "dropChance": 1.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7584,
+                    "name": "Wandering Forest Walker",
+                    "url": "https://www.wowhead.com/classic/npc=7584/wandering-forest-walker",
+                    "relation": "Dropped by",
+                    "dropChance": 1.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1081,
+                    "name": "Mire Lord",
+                    "url": "https://www.wowhead.com/classic/npc=1081/mire-lord",
+                    "relation": "Dropped by",
+                    "dropChance": 1.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1812,
+                    "name": "Rotting Behemoth",
+                    "url": "https://www.wowhead.com/classic/npc=1812/rotting-behemoth",
+                    "relation": "Dropped by",
+                    "dropChance": 1.2
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -35776,7 +43241,105 @@ const DUNGEONS = [
                 "name": "Runecloth",
                 "quantity": 40,
                 "url": "https://www.wowhead.com/classic/item=14047/runecloth",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 229632,
+                    "name": "Southsea Buccaneer",
+                    "url": "https://www.wowhead.com/classic/npc=229632/southsea-buccaneer",
+                    "relation": "Dropped by",
+                    "dropChance": 88.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7075,
+                    "name": "Writhing Mage",
+                    "url": "https://www.wowhead.com/classic/npc=7075/writhing-mage",
+                    "relation": "Dropped by",
+                    "dropChance": 82.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 9605,
+                    "name": "Blackrock Raider",
+                    "url": "https://www.wowhead.com/classic/npc=9605/blackrock-raider",
+                    "relation": "Dropped by",
+                    "dropChance": 81.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1756,
+                    "name": "Stormwind Royal Guard",
+                    "url": "https://www.wowhead.com/classic/npc=1756/stormwind-royal-guard",
+                    "relation": "Dropped by",
+                    "dropChance": 80.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 12322,
+                    "name": "Quel'Lithien Protector",
+                    "url": "https://www.wowhead.com/classic/npc=12322/quel-lithien-protector",
+                    "relation": "Dropped by",
+                    "dropChance": 79.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7379,
+                    "name": "Deadwind Ogre Mage",
+                    "url": "https://www.wowhead.com/classic/npc=7379/deadwind-ogre-mage",
+                    "relation": "Dropped by",
+                    "dropChance": 77.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 8564,
+                    "name": "Ranger",
+                    "url": "https://www.wowhead.com/classic/npc=8564/ranger",
+                    "relation": "Dropped by",
+                    "dropChance": 77.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 12261,
+                    "name": "Infected Mossflayer",
+                    "url": "https://www.wowhead.com/classic/npc=12261/infected-mossflayer",
+                    "relation": "Dropped by",
+                    "dropChance": 77.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7369,
+                    "name": "Deadwind Brute",
+                    "url": "https://www.wowhead.com/classic/npc=7369/deadwind-brute",
+                    "relation": "Dropped by",
+                    "dropChance": 76.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7372,
+                    "name": "Deadwind Warlock",
+                    "url": "https://www.wowhead.com/classic/npc=7372/deadwind-warlock",
+                    "relation": "Dropped by",
+                    "dropChance": 76.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 11291,
+                    "name": "Unliving Mossflayer",
+                    "url": "https://www.wowhead.com/classic/npc=11291/unliving-mossflayer",
+                    "relation": "Dropped by",
+                    "dropChance": 76.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7072,
+                    "name": "Cursed Justicar",
+                    "url": "https://www.wowhead.com/classic/npc=7072/cursed-justicar",
+                    "relation": "Dropped by",
+                    "dropChance": 76.4
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -35784,7 +43347,33 @@ const DUNGEONS = [
                 "name": "Arcanite Bar",
                 "quantity": 6,
                 "url": "https://www.wowhead.com/classic/item=12360/arcanite-bar",
-                "quality": 2
+                "quality": 2,
+                "sources": [
+                  {
+                    "type": "item",
+                    "id": 237386,
+                    "name": "Wartorn Undermine Supply Crate",
+                    "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                    "relation": "Contained in",
+                    "dropChance": 4.4
+                  },
+                  {
+                    "type": "item",
+                    "id": 236414,
+                    "name": "Damaged Undermine Supply Crate",
+                    "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                    "relation": "Contained in",
+                    "dropChance": 4.4
+                  },
+                  {
+                    "type": "item",
+                    "id": 226405,
+                    "name": "Damaged Undermine Supply Crate",
+                    "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                    "relation": "Contained in",
+                    "dropChance": 2.2
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -36006,7 +43595,89 @@ const DUNGEONS = [
                 "name": "Azerothian Diamond",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=12800/azerothian-diamond",
-                "quality": 2
+                "quality": 2,
+                "sources": [
+                  {
+                    "type": "item",
+                    "id": 17964,
+                    "name": "Gray Sack of Gems",
+                    "url": "https://www.wowhead.com/classic/item=17964/gray-sack-of-gems",
+                    "relation": "Contained in",
+                    "dropChance": 95.4
+                  },
+                  {
+                    "type": "item",
+                    "id": 13891,
+                    "name": "Bloated Salmon",
+                    "url": "https://www.wowhead.com/classic/item=13891/bloated-salmon",
+                    "relation": "Contained in",
+                    "dropChance": 13.9
+                  },
+                  {
+                    "type": "item",
+                    "id": 12033,
+                    "name": "Thaurissan Family Jewels",
+                    "url": "https://www.wowhead.com/classic/item=12033/thaurissan-family-jewels",
+                    "relation": "Contained in",
+                    "dropChance": 12.4
+                  },
+                  {
+                    "type": "item",
+                    "id": 224850,
+                    "name": "Otherworldly Treasure",
+                    "url": "https://www.wowhead.com/classic/item=224850/otherworldly-treasure",
+                    "relation": "Contained in",
+                    "dropChance": 10.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 228725,
+                    "name": "Firesworn",
+                    "url": "https://www.wowhead.com/classic/npc=228725/firesworn",
+                    "relation": "Dropped by",
+                    "dropChance": 9.1
+                  },
+                  {
+                    "type": "item",
+                    "id": 228615,
+                    "name": "Otherworldly Treasure",
+                    "url": "https://www.wowhead.com/classic/item=228615/otherworldly-treasure",
+                    "relation": "Contained in",
+                    "dropChance": 3.2
+                  },
+                  {
+                    "type": "object",
+                    "id": 153453,
+                    "name": "Solid Chest",
+                    "url": "https://www.wowhead.com/classic/object=153453/solid-chest",
+                    "relation": "Contained in",
+                    "dropChance": 0.2
+                  },
+                  {
+                    "type": "object",
+                    "id": 153454,
+                    "name": "Solid Chest",
+                    "url": "https://www.wowhead.com/classic/object=153454/solid-chest",
+                    "relation": "Contained in",
+                    "dropChance": 0.2
+                  },
+                  {
+                    "type": "object",
+                    "id": 153451,
+                    "name": "Solid Chest",
+                    "url": "https://www.wowhead.com/classic/object=153451/solid-chest",
+                    "relation": "Contained in",
+                    "dropChance": 0.2
+                  },
+                  {
+                    "type": "item",
+                    "id": 223150,
+                    "name": "Otherworldly Treasure",
+                    "url": "https://www.wowhead.com/classic/item=223150/otherworldly-treasure",
+                    "relation": "Contained in",
+                    "dropChance": 0.1
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -36014,7 +43685,105 @@ const DUNGEONS = [
                 "name": "Pristine Black Diamond",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=18335/pristine-black-diamond",
-                "quality": 3
+                "quality": 3,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 14861,
+                    "name": "Blood Steward of Kirtonos",
+                    "url": "https://www.wowhead.com/classic/npc=14861/blood-steward-of-kirtonos",
+                    "relation": "Dropped by",
+                    "dropChance": 33.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 9264,
+                    "name": "Firebrand Pyromancer",
+                    "url": "https://www.wowhead.com/classic/npc=9264/firebrand-pyromancer",
+                    "relation": "Dropped by",
+                    "dropChance": 12.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 14690,
+                    "name": "Revanchion",
+                    "url": "https://www.wowhead.com/classic/npc=14690/revanchion",
+                    "relation": "Dropped by",
+                    "dropChance": 11.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 13146,
+                    "name": "Lieutenant Murp",
+                    "url": "https://www.wowhead.com/classic/npc=13146/lieutenant-murp",
+                    "relation": "Dropped by",
+                    "dropChance": 8.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 240804,
+                    "name": "Inquisitor Tenn Flamecaster",
+                    "url": "https://www.wowhead.com/classic/npc=240804/inquisitor-tenn-flamecaster",
+                    "relation": "Dropped by",
+                    "dropChance": 6.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7069,
+                    "name": "Condemned Monk",
+                    "url": "https://www.wowhead.com/classic/npc=7069/condemned-monk",
+                    "relation": "Dropped by",
+                    "dropChance": 4.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 228914,
+                    "name": "Severed Keeper",
+                    "url": "https://www.wowhead.com/classic/npc=228914/severed-keeper",
+                    "relation": "Dropped by",
+                    "dropChance": 2.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 228913,
+                    "name": "Severed Druid",
+                    "url": "https://www.wowhead.com/classic/npc=228913/severed-druid",
+                    "relation": "Dropped by",
+                    "dropChance": 2.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 230349,
+                    "name": "Felguard Elite",
+                    "url": "https://www.wowhead.com/classic/npc=230349/felguard-elite",
+                    "relation": "Dropped by",
+                    "dropChance": 2.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 230348,
+                    "name": "Doomguard Commander",
+                    "url": "https://www.wowhead.com/classic/npc=230348/doomguard-commander",
+                    "relation": "Dropped by",
+                    "dropChance": 1.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 238679,
+                    "name": "Fallen Praetorian",
+                    "url": "https://www.wowhead.com/classic/npc=238679/fallen-praetorian",
+                    "relation": "Dropped by",
+                    "dropChance": 1.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 12457,
+                    "name": "Blackwing Spellbinder",
+                    "url": "https://www.wowhead.com/classic/npc=12457/blackwing-spellbinder",
+                    "relation": "Dropped by",
+                    "dropChance": 1.3
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -36113,7 +43882,17 @@ const DUNGEONS = [
             "name": "Darkreaver's Head",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18880/darkreavers-head",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14516,
+                "name": "Death Knight Darkreaver",
+                "url": "https://www.wowhead.com/classic/npc=14516/death-knight-darkreaver",
+                "relation": "Dropped by",
+                "dropChance": 1.8
+              }
+            ]
           }
         ],
         "rewards": [
@@ -36186,7 +43965,89 @@ const DUNGEONS = [
                 "name": "Azerothian Diamond",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=12800/azerothian-diamond",
-                "quality": 2
+                "quality": 2,
+                "sources": [
+                  {
+                    "type": "item",
+                    "id": 17964,
+                    "name": "Gray Sack of Gems",
+                    "url": "https://www.wowhead.com/classic/item=17964/gray-sack-of-gems",
+                    "relation": "Contained in",
+                    "dropChance": 95.4
+                  },
+                  {
+                    "type": "item",
+                    "id": 13891,
+                    "name": "Bloated Salmon",
+                    "url": "https://www.wowhead.com/classic/item=13891/bloated-salmon",
+                    "relation": "Contained in",
+                    "dropChance": 13.9
+                  },
+                  {
+                    "type": "item",
+                    "id": 12033,
+                    "name": "Thaurissan Family Jewels",
+                    "url": "https://www.wowhead.com/classic/item=12033/thaurissan-family-jewels",
+                    "relation": "Contained in",
+                    "dropChance": 12.4
+                  },
+                  {
+                    "type": "item",
+                    "id": 224850,
+                    "name": "Otherworldly Treasure",
+                    "url": "https://www.wowhead.com/classic/item=224850/otherworldly-treasure",
+                    "relation": "Contained in",
+                    "dropChance": 10.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 228725,
+                    "name": "Firesworn",
+                    "url": "https://www.wowhead.com/classic/npc=228725/firesworn",
+                    "relation": "Dropped by",
+                    "dropChance": 9.1
+                  },
+                  {
+                    "type": "item",
+                    "id": 228615,
+                    "name": "Otherworldly Treasure",
+                    "url": "https://www.wowhead.com/classic/item=228615/otherworldly-treasure",
+                    "relation": "Contained in",
+                    "dropChance": 3.2
+                  },
+                  {
+                    "type": "object",
+                    "id": 153453,
+                    "name": "Solid Chest",
+                    "url": "https://www.wowhead.com/classic/object=153453/solid-chest",
+                    "relation": "Contained in",
+                    "dropChance": 0.2
+                  },
+                  {
+                    "type": "object",
+                    "id": 153454,
+                    "name": "Solid Chest",
+                    "url": "https://www.wowhead.com/classic/object=153454/solid-chest",
+                    "relation": "Contained in",
+                    "dropChance": 0.2
+                  },
+                  {
+                    "type": "object",
+                    "id": 153451,
+                    "name": "Solid Chest",
+                    "url": "https://www.wowhead.com/classic/object=153451/solid-chest",
+                    "relation": "Contained in",
+                    "dropChance": 0.2
+                  },
+                  {
+                    "type": "item",
+                    "id": 223150,
+                    "name": "Otherworldly Treasure",
+                    "url": "https://www.wowhead.com/classic/item=223150/otherworldly-treasure",
+                    "relation": "Contained in",
+                    "dropChance": 0.1
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -36194,7 +44055,105 @@ const DUNGEONS = [
                 "name": "Pristine Black Diamond",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=18335/pristine-black-diamond",
-                "quality": 3
+                "quality": 3,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 14861,
+                    "name": "Blood Steward of Kirtonos",
+                    "url": "https://www.wowhead.com/classic/npc=14861/blood-steward-of-kirtonos",
+                    "relation": "Dropped by",
+                    "dropChance": 33.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 9264,
+                    "name": "Firebrand Pyromancer",
+                    "url": "https://www.wowhead.com/classic/npc=9264/firebrand-pyromancer",
+                    "relation": "Dropped by",
+                    "dropChance": 12.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 14690,
+                    "name": "Revanchion",
+                    "url": "https://www.wowhead.com/classic/npc=14690/revanchion",
+                    "relation": "Dropped by",
+                    "dropChance": 11.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 13146,
+                    "name": "Lieutenant Murp",
+                    "url": "https://www.wowhead.com/classic/npc=13146/lieutenant-murp",
+                    "relation": "Dropped by",
+                    "dropChance": 8.3
+                  },
+                  {
+                    "type": "npc",
+                    "id": 240804,
+                    "name": "Inquisitor Tenn Flamecaster",
+                    "url": "https://www.wowhead.com/classic/npc=240804/inquisitor-tenn-flamecaster",
+                    "relation": "Dropped by",
+                    "dropChance": 6.7
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7069,
+                    "name": "Condemned Monk",
+                    "url": "https://www.wowhead.com/classic/npc=7069/condemned-monk",
+                    "relation": "Dropped by",
+                    "dropChance": 4.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 228914,
+                    "name": "Severed Keeper",
+                    "url": "https://www.wowhead.com/classic/npc=228914/severed-keeper",
+                    "relation": "Dropped by",
+                    "dropChance": 2.2
+                  },
+                  {
+                    "type": "npc",
+                    "id": 228913,
+                    "name": "Severed Druid",
+                    "url": "https://www.wowhead.com/classic/npc=228913/severed-druid",
+                    "relation": "Dropped by",
+                    "dropChance": 2.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 230349,
+                    "name": "Felguard Elite",
+                    "url": "https://www.wowhead.com/classic/npc=230349/felguard-elite",
+                    "relation": "Dropped by",
+                    "dropChance": 2.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 230348,
+                    "name": "Doomguard Commander",
+                    "url": "https://www.wowhead.com/classic/npc=230348/doomguard-commander",
+                    "relation": "Dropped by",
+                    "dropChance": 1.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 238679,
+                    "name": "Fallen Praetorian",
+                    "url": "https://www.wowhead.com/classic/npc=238679/fallen-praetorian",
+                    "relation": "Dropped by",
+                    "dropChance": 1.4
+                  },
+                  {
+                    "type": "npc",
+                    "id": 12457,
+                    "name": "Blackwing Spellbinder",
+                    "url": "https://www.wowhead.com/classic/npc=12457/blackwing-spellbinder",
+                    "relation": "Dropped by",
+                    "dropChance": 1.3
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -36357,7 +44316,16 @@ const DUNGEONS = [
                 "name": "Broodling Essence",
                 "quantity": 8,
                 "url": "https://www.wowhead.com/classic/item=12283/broodling-essence",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 175264,
+                    "name": "Broodling Essence",
+                    "url": "https://www.wowhead.com/classic/object=175264/broodling-essence",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -36494,7 +44462,33 @@ const DUNGEONS = [
                 "name": "Uncracked Chillwind Horn",
                 "quantity": 8,
                 "url": "https://www.wowhead.com/classic/item=12444/uncracked-chillwind-horn",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 7447,
+                    "name": "Fledgling Chillwind",
+                    "url": "https://www.wowhead.com/classic/npc=7447/fledgling-chillwind",
+                    "relation": "Dropped by",
+                    "dropChance": 27.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7448,
+                    "name": "Chillwind Chimaera",
+                    "url": "https://www.wowhead.com/classic/npc=7448/chillwind-chimaera",
+                    "relation": "Dropped by",
+                    "dropChance": 18.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7449,
+                    "name": "Chillwind Ravager",
+                    "url": "https://www.wowhead.com/classic/npc=7449/chillwind-ravager",
+                    "relation": "Dropped by",
+                    "dropChance": 6.5
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -37425,7 +45419,57 @@ const DUNGEONS = [
                 "name": "Skeletal Fragments",
                 "quantity": 15,
                 "url": "https://www.wowhead.com/classic/item=14619/skeletal-fragments",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 1787,
+                    "name": "Skeletal Executioner",
+                    "url": "https://www.wowhead.com/classic/npc=1787/skeletal-executioner",
+                    "relation": "Dropped by",
+                    "dropChance": 36.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1789,
+                    "name": "Skeletal Acolyte",
+                    "url": "https://www.wowhead.com/classic/npc=1789/skeletal-acolyte",
+                    "relation": "Dropped by",
+                    "dropChance": 35.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1788,
+                    "name": "Skeletal Warlord",
+                    "url": "https://www.wowhead.com/classic/npc=1788/skeletal-warlord",
+                    "relation": "Dropped by",
+                    "dropChance": 14.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1784,
+                    "name": "Skeletal Sorcerer",
+                    "url": "https://www.wowhead.com/classic/npc=1784/skeletal-sorcerer",
+                    "relation": "Dropped by",
+                    "dropChance": 11.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1783,
+                    "name": "Skeletal Flayer",
+                    "url": "https://www.wowhead.com/classic/npc=1783/skeletal-flayer",
+                    "relation": "Dropped by",
+                    "dropChance": 9.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1785,
+                    "name": "Skeletal Terror",
+                    "url": "https://www.wowhead.com/classic/npc=1785/skeletal-terror",
+                    "relation": "Dropped by",
+                    "dropChance": 5.7
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -37635,7 +45679,17 @@ const DUNGEONS = [
                 "name": "Araj's Scarab",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=14610/arajs-scarab",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 177241,
+                    "name": "Araj's Phylactery",
+                    "url": "https://www.wowhead.com/classic/object=177241/araj-s-phylactery",
+                    "relation": "Contained in",
+                    "dropChance": 42.9
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -37958,7 +46012,24 @@ const DUNGEONS = [
                 "name": "Flame in a Bottle",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=12814/flame-in-a-bottle",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 11022,
+                    "name": "Alexi Barov",
+                    "url": "https://www.wowhead.com/classic/npc=11022/alexi-barov",
+                    "relation": "Dropped by",
+                    "dropChance": 1.1
+                  },
+                  {
+                    "type": "object",
+                    "id": 176092,
+                    "name": "Box of Incendiaries",
+                    "url": "https://www.wowhead.com/classic/object=176092/box-of-incendiaries",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -38200,7 +46271,57 @@ const DUNGEONS = [
                 "name": "Skeletal Fragments",
                 "quantity": 15,
                 "url": "https://www.wowhead.com/classic/item=14619/skeletal-fragments",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 1787,
+                    "name": "Skeletal Executioner",
+                    "url": "https://www.wowhead.com/classic/npc=1787/skeletal-executioner",
+                    "relation": "Dropped by",
+                    "dropChance": 36.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1789,
+                    "name": "Skeletal Acolyte",
+                    "url": "https://www.wowhead.com/classic/npc=1789/skeletal-acolyte",
+                    "relation": "Dropped by",
+                    "dropChance": 35.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1788,
+                    "name": "Skeletal Warlord",
+                    "url": "https://www.wowhead.com/classic/npc=1788/skeletal-warlord",
+                    "relation": "Dropped by",
+                    "dropChance": 14.0
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1784,
+                    "name": "Skeletal Sorcerer",
+                    "url": "https://www.wowhead.com/classic/npc=1784/skeletal-sorcerer",
+                    "relation": "Dropped by",
+                    "dropChance": 11.1
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1783,
+                    "name": "Skeletal Flayer",
+                    "url": "https://www.wowhead.com/classic/npc=1783/skeletal-flayer",
+                    "relation": "Dropped by",
+                    "dropChance": 9.6
+                  },
+                  {
+                    "type": "npc",
+                    "id": 1785,
+                    "name": "Skeletal Terror",
+                    "url": "https://www.wowhead.com/classic/npc=1785/skeletal-terror",
+                    "relation": "Dropped by",
+                    "dropChance": 5.7
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -38410,7 +46531,17 @@ const DUNGEONS = [
                 "name": "Araj's Scarab",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=14610/arajs-scarab",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 177241,
+                    "name": "Araj's Phylactery",
+                    "url": "https://www.wowhead.com/classic/object=177241/araj-s-phylactery",
+                    "relation": "Contained in",
+                    "dropChance": 42.9
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -38578,7 +46709,49 @@ const DUNGEONS = [
             "name": "Raging Beast's Blood",
             "quantity": 30,
             "url": "https://www.wowhead.com/classic/item=18590/raging-beasts-blood",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7454,
+                "name": "Berserk Owlbeast",
+                "url": "https://www.wowhead.com/classic/npc=7454/berserk-owlbeast",
+                "relation": "Dropped by",
+                "dropChance": 10.3
+              },
+              {
+                "type": "npc",
+                "id": 7452,
+                "name": "Crazed Owlbeast",
+                "url": "https://www.wowhead.com/classic/npc=7452/crazed-owlbeast",
+                "relation": "Dropped by",
+                "dropChance": 10.1
+              },
+              {
+                "type": "npc",
+                "id": 7453,
+                "name": "Moontouched Owlbeast",
+                "url": "https://www.wowhead.com/classic/npc=7453/moontouched-owlbeast",
+                "relation": "Dropped by",
+                "dropChance": 9.9
+              },
+              {
+                "type": "npc",
+                "id": 7451,
+                "name": "Raging Owlbeast",
+                "url": "https://www.wowhead.com/classic/npc=7451/raging-owlbeast",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              },
+              {
+                "type": "npc",
+                "id": 7450,
+                "name": "Ragged Owlbeast",
+                "url": "https://www.wowhead.com/classic/npc=7450/ragged-owlbeast",
+                "relation": "Dropped by",
+                "dropChance": 1.8
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -38791,7 +46964,16 @@ const DUNGEONS = [
             "name": "The Traitor's Heart",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18719/the-traitors-heart",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14523,
+                "name": "Ulathek",
+                "url": "https://www.wowhead.com/classic/npc=14523/ulathek",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -38945,7 +47127,32 @@ const DUNGEONS = [
             "name": "Elixir of Shadow Power",
             "quantity": 10,
             "url": "https://www.wowhead.com/classic/item=9264/elixir-of-shadow-power",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "item",
+                "id": 189427,
+                "name": "More Raid Consumables",
+                "url": "https://www.wowhead.com/classic/item=189427/more-raid-consumables",
+                "relation": "Contained in",
+                "dropChance": 94.1
+              },
+              {
+                "type": "item",
+                "id": 11887,
+                "name": "Cenarion Circle Cache",
+                "url": "https://www.wowhead.com/classic/item=11887/cenarion-circle-cache",
+                "relation": "Contained in",
+                "dropChance": 14.8
+              },
+              {
+                "type": "npc",
+                "id": 15508,
+                "name": "Batrider Pele'keiki",
+                "url": "https://www.wowhead.com/classic/npc=15508/batrider-pele-keiki",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -39017,7 +47224,105 @@ const DUNGEONS = [
             "name": "Black Dragonscale",
             "quantity": 35,
             "url": "https://www.wowhead.com/classic/item=15416/black-dragonscale",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 12465,
+                "name": "Death Talon Wyrmkin",
+                "url": "https://www.wowhead.com/classic/npc=12465/death-talon-wyrmkin",
+                "relation": "Skinned from",
+                "dropChance": 36.2
+              },
+              {
+                "type": "npc",
+                "id": 12467,
+                "name": "Death Talon Captain",
+                "url": "https://www.wowhead.com/classic/npc=12467/death-talon-captain",
+                "relation": "Skinned from",
+                "dropChance": 30.5
+              },
+              {
+                "type": "npc",
+                "id": 7846,
+                "name": "Teremus the Devourer",
+                "url": "https://www.wowhead.com/classic/npc=7846/teremus-the-devourer",
+                "relation": "Skinned from",
+                "dropChance": 24.6
+              },
+              {
+                "type": "npc",
+                "id": 9568,
+                "name": "Overlord Wyrmthalak",
+                "url": "https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak",
+                "relation": "Skinned from",
+                "dropChance": 24.5
+              },
+              {
+                "type": "npc",
+                "id": 10264,
+                "name": "Solakar Flamewreath",
+                "url": "https://www.wowhead.com/classic/npc=10264/solakar-flamewreath",
+                "relation": "Skinned from",
+                "dropChance": 24.4
+              },
+              {
+                "type": "npc",
+                "id": 10363,
+                "name": "General Drakkisath",
+                "url": "https://www.wowhead.com/classic/npc=10363/general-drakkisath",
+                "relation": "Skinned from",
+                "dropChance": 24.3
+              },
+              {
+                "type": "npc",
+                "id": 14601,
+                "name": "Ebonroc",
+                "url": "https://www.wowhead.com/classic/npc=14601/ebonroc",
+                "relation": "Dropped by",
+                "dropChance": 12.6
+              },
+              {
+                "type": "npc",
+                "id": 10321,
+                "name": "Emberstrife",
+                "url": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+                "relation": "Dropped by",
+                "dropChance": 12.5
+              },
+              {
+                "type": "npc",
+                "id": 11981,
+                "name": "Flamegor",
+                "url": "https://www.wowhead.com/classic/npc=11981/flamegor",
+                "relation": "Dropped by",
+                "dropChance": 9.6
+              },
+              {
+                "type": "npc",
+                "id": 7043,
+                "name": "Flamescale Wyrmkin",
+                "url": "https://www.wowhead.com/classic/npc=7043/flamescale-wyrmkin",
+                "relation": "Dropped by",
+                "dropChance": 7.4
+              },
+              {
+                "type": "npc",
+                "id": 7042,
+                "name": "Flamescale Dragonspawn",
+                "url": "https://www.wowhead.com/classic/npc=7042/flamescale-dragonspawn",
+                "relation": "Dropped by",
+                "dropChance": 6.7
+              },
+              {
+                "type": "npc",
+                "id": 11983,
+                "name": "Firemaw",
+                "url": "https://www.wowhead.com/classic/npc=11983/firemaw",
+                "relation": "Dropped by",
+                "dropChance": 6.4
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -39089,7 +47394,49 @@ const DUNGEONS = [
             "name": "Large Brilliant Shard",
             "quantity": 6,
             "url": "https://www.wowhead.com/classic/item=14344/large-brilliant-shard",
-            "quality": 3
+            "quality": 3,
+            "sources": [
+              {
+                "type": "item",
+                "id": 224851,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=224851/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 50.0
+              },
+              {
+                "type": "item",
+                "id": 237263,
+                "name": "Supply Bag",
+                "url": "https://www.wowhead.com/classic/item=237263/supply-bag",
+                "relation": "Contained in",
+                "dropChance": 6.7
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 5.7
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 5.4
+              },
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 3.9
+              }
+            ]
           },
           {
             "type": "item",
@@ -39097,7 +47444,102 @@ const DUNGEONS = [
             "name": "Dark Iron Ore",
             "quantity": 25,
             "url": "https://www.wowhead.com/classic/item=11370/dark-iron-ore",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8905,
+                "name": "Warbringer Construct",
+                "url": "https://www.wowhead.com/classic/npc=8905/warbringer-construct",
+                "relation": "Dropped by",
+                "dropChance": 17.0
+              },
+              {
+                "type": "npc",
+                "id": 8906,
+                "name": "Ragereaver Golem",
+                "url": "https://www.wowhead.com/classic/npc=8906/ragereaver-golem",
+                "relation": "Dropped by",
+                "dropChance": 16.1
+              },
+              {
+                "type": "npc",
+                "id": 8907,
+                "name": "Wrath Hammer Construct",
+                "url": "https://www.wowhead.com/classic/npc=8907/wrath-hammer-construct",
+                "relation": "Dropped by",
+                "dropChance": 15.6
+              },
+              {
+                "type": "npc",
+                "id": 8908,
+                "name": "Molten War Golem",
+                "url": "https://www.wowhead.com/classic/npc=8908/molten-war-golem",
+                "relation": "Dropped by",
+                "dropChance": 13.7
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 7.2
+              },
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 7.0
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 4.4
+              },
+              {
+                "type": "npc",
+                "id": 9502,
+                "name": "Phalanx",
+                "url": "https://www.wowhead.com/classic/npc=9502/phalanx",
+                "relation": "Dropped by",
+                "dropChance": 2.8
+              },
+              {
+                "type": "npc",
+                "id": 8923,
+                "name": "Panzor the Invincible",
+                "url": "https://www.wowhead.com/classic/npc=8923/panzor-the-invincible",
+                "relation": "Dropped by",
+                "dropChance": 1.6
+              },
+              {
+                "type": "npc",
+                "id": 9023,
+                "name": "Marshal Windsor",
+                "url": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "relation": "Dropped by"
+              },
+              {
+                "type": "npc",
+                "id": 9459,
+                "name": "Cyrus Therepentous",
+                "url": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                "relation": "Dropped by"
+              },
+              {
+                "type": "npc",
+                "id": 11671,
+                "name": "Core Hound",
+                "url": "https://www.wowhead.com/classic/npc=11671/core-hound",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -39169,7 +47611,33 @@ const DUNGEONS = [
             "name": "Arcanite Bar",
             "quantity": 3,
             "url": "https://www.wowhead.com/classic/item=12360/arcanite-bar",
-            "quality": 2
+            "quality": 2,
+            "sources": [
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 4.4
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 4.4
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 2.2
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -39413,7 +47881,17 @@ const DUNGEONS = [
             "name": "Grimm's Premium Tobacco",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13172/grimms-premium-tobacco",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11058,
+                "name": "Ezra Grimm",
+                "url": "https://www.wowhead.com/classic/npc=11058/ezra-grimm",
+                "relation": "Dropped by",
+                "dropChance": 50.0
+              }
+            ]
           }
         ],
         "rewards": [
@@ -39563,7 +48041,105 @@ const DUNGEONS = [
             "name": "Plagued Flesh Sample",
             "quantity": 20,
             "url": "https://www.wowhead.com/classic/item=13174/plagued-flesh-sample",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10381,
+                "name": "Ravaged Cadaver",
+                "url": "https://www.wowhead.com/classic/npc=10381/ravaged-cadaver",
+                "relation": "Dropped by",
+                "dropChance": 11.1
+              },
+              {
+                "type": "npc",
+                "id": 10382,
+                "name": "Mangled Cadaver",
+                "url": "https://www.wowhead.com/classic/npc=10382/mangled-cadaver",
+                "relation": "Dropped by",
+                "dropChance": 11.0
+              },
+              {
+                "type": "npc",
+                "id": 10412,
+                "name": "Crypt Crawler",
+                "url": "https://www.wowhead.com/classic/npc=10412/crypt-crawler",
+                "relation": "Dropped by",
+                "dropChance": 9.2
+              },
+              {
+                "type": "npc",
+                "id": 10413,
+                "name": "Crypt Beast",
+                "url": "https://www.wowhead.com/classic/npc=10413/crypt-beast",
+                "relation": "Dropped by",
+                "dropChance": 9.2
+              },
+              {
+                "type": "npc",
+                "id": 10405,
+                "name": "Plague Ghoul",
+                "url": "https://www.wowhead.com/classic/npc=10405/plague-ghoul",
+                "relation": "Dropped by",
+                "dropChance": 8.3
+              },
+              {
+                "type": "npc",
+                "id": 10463,
+                "name": "Shrieking Banshee",
+                "url": "https://www.wowhead.com/classic/npc=10463/shrieking-banshee",
+                "relation": "Dropped by",
+                "dropChance": 7.5
+              },
+              {
+                "type": "npc",
+                "id": 10406,
+                "name": "Ghoul Ravener",
+                "url": "https://www.wowhead.com/classic/npc=10406/ghoul-ravener",
+                "relation": "Dropped by",
+                "dropChance": 6.0
+              },
+              {
+                "type": "npc",
+                "id": 10407,
+                "name": "Fleshflayer Ghoul",
+                "url": "https://www.wowhead.com/classic/npc=10407/fleshflayer-ghoul",
+                "relation": "Dropped by",
+                "dropChance": 6.0
+              },
+              {
+                "type": "npc",
+                "id": 10414,
+                "name": "Patchwork Horror",
+                "url": "https://www.wowhead.com/classic/npc=10414/patchwork-horror",
+                "relation": "Dropped by",
+                "dropChance": 6.0
+              },
+              {
+                "type": "npc",
+                "id": 10808,
+                "name": "Timmy the Cruel",
+                "url": "https://www.wowhead.com/classic/npc=10808/timmy-the-cruel",
+                "relation": "Dropped by",
+                "dropChance": 4.6
+              },
+              {
+                "type": "npc",
+                "id": 10417,
+                "name": "Venom Belcher",
+                "url": "https://www.wowhead.com/classic/npc=10417/venom-belcher",
+                "relation": "Dropped by",
+                "dropChance": 3.1
+              },
+              {
+                "type": "npc",
+                "id": 10416,
+                "name": "Bile Spewer",
+                "url": "https://www.wowhead.com/classic/npc=10416/bile-spewer",
+                "relation": "Dropped by",
+                "dropChance": 2.2
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -39636,7 +48212,23 @@ const DUNGEONS = [
             "name": "Stratholme Holy Water",
             "quantity": 5,
             "url": "https://www.wowhead.com/classic/item=13180/stratholme-holy-water",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 181085,
+                "name": "Stratholme Supply Crate",
+                "url": "https://www.wowhead.com/classic/object=181085/stratholme-supply-crate",
+                "relation": "Contained in"
+              },
+              {
+                "type": "object",
+                "id": 176224,
+                "name": "Supply Crate",
+                "url": "https://www.wowhead.com/classic/object=176224/supply-crate",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -40011,7 +48603,17 @@ const DUNGEONS = [
             "name": "Head of Baron Rivendare",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13251/head-of-baron-rivendare",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10440,
+                "name": "Baron Rivendare",
+                "url": "https://www.wowhead.com/classic/npc=10440/baron-rivendare",
+                "relation": "Dropped by",
+                "dropChance": 5.9
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -40329,7 +48931,17 @@ const DUNGEONS = [
                 "name": "Krastinov's Bag of Horrors",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=13725/krastinovs-bag-of-horrors",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 10503,
+                    "name": "Jandice Barov",
+                    "url": "https://www.wowhead.com/classic/npc=10503/jandice-barov",
+                    "relation": "Dropped by",
+                    "dropChance": 12.5
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -40497,7 +49109,16 @@ const DUNGEONS = [
                 "name": "Keepsake of Remembrance",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=13585/keepsake-of-remembrance",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 176630,
+                    "name": "Keepsake of Remembrance",
+                    "url": "https://www.wowhead.com/classic/object=176630/keepsake-of-remembrance",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -40685,7 +49306,17 @@ const DUNGEONS = [
             "name": "Head of Ramstein the Gorger",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=15880/head-of-ramstein-the-gorger",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10439,
+                "name": "Ramstein the Gorger",
+                "url": "https://www.wowhead.com/classic/npc=10439/ramstein-the-gorger",
+                "relation": "Dropped by",
+                "dropChance": 0.2
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -40784,7 +49415,16 @@ const DUNGEONS = [
                 "name": "Quel'Thalas Registry",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=15847/quelthalas-registry",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 177747,
+                    "name": "Quel'Thalas Registry",
+                    "url": "https://www.wowhead.com/classic/object=177747/quel-thalas-registry",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -40852,7 +49492,16 @@ const DUNGEONS = [
                 "name": "Patch of Duskwing's Fur",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=15850/patch-of-duskwings-fur",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 11897,
+                    "name": "Duskwing",
+                    "url": "https://www.wowhead.com/classic/npc=11897/duskwing",
+                    "relation": "Dropped by"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -40947,7 +49596,16 @@ const DUNGEONS = [
             "name": "Medallion of Faith",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12845/medallion-of-faith",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 176112,
+                "name": "Malor's Strongbox",
+                "url": "https://www.wowhead.com/classic/object=176112/malor-s-strongbox",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -41099,7 +49757,16 @@ const DUNGEONS = [
             "name": "Scourge Data",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=13176/scourge-data",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 176249,
+                "name": "Scourge Data",
+                "url": "https://www.wowhead.com/classic/object=176249/scourge-data",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -41270,7 +49937,25 @@ const DUNGEONS = [
             "name": "Slab of Carrion Worm Meat",
             "quantity": 15,
             "url": "https://www.wowhead.com/classic/item=13853/slab-of-carrion-worm-meat",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8603,
+                "name": "Carrion Grub",
+                "url": "https://www.wowhead.com/classic/npc=8603/carrion-grub",
+                "relation": "Dropped by",
+                "dropChance": 34.3
+              },
+              {
+                "type": "npc",
+                "id": 8605,
+                "name": "Carrion Devourer",
+                "url": "https://www.wowhead.com/classic/npc=8605/carrion-devourer",
+                "relation": "Dropped by",
+                "dropChance": 16.6
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -41496,7 +50181,23 @@ const DUNGEONS = [
             "name": "Taelan's Hammer",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=14613/taelans-hammer",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11886,
+                "name": "Mercutio Filthgorger",
+                "url": "https://www.wowhead.com/classic/npc=11886/mercutio-filthgorger",
+                "relation": "Dropped by"
+              },
+              {
+                "type": "object",
+                "id": 177240,
+                "name": "Loose Dirt Mound",
+                "url": "https://www.wowhead.com/classic/object=177240/loose-dirt-mound",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -41571,7 +50272,16 @@ const DUNGEONS = [
             "name": "Symbol of Lost Honor",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=14625/symbol-of-lost-honor",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 177264,
+                "name": "Symbol of Lost Honor",
+                "url": "https://www.wowhead.com/classic/object=177264/symbol-of-lost-honor",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -41712,7 +50422,24 @@ const DUNGEONS = [
             "name": "Of Love and Family",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=14679/of-love-and-family",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10812,
+                "name": "Grand Crusader Dathrohan",
+                "url": "https://www.wowhead.com/classic/npc=10812/grand-crusader-dathrohan",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              },
+              {
+                "type": "object",
+                "id": 177287,
+                "name": "Unfinished Painting",
+                "url": "https://www.wowhead.com/classic/object=177287/unfinished-painting",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -41819,7 +50546,7 @@ const DUNGEONS = [
     "loadingScreen": "assets/loading-screens/800389.jpg",
     "faction": "Both",
     "levels": "55–60",
-    "location": "Burning Steppes",
+    "location": "Blackrock Mountain",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-upper-blackrock-spire-dungeon-quests",
     "schema": 2,
     "quests": [
@@ -41929,7 +50656,16 @@ const DUNGEONS = [
             "name": "Doomrigger's Clasp",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12352/doomriggers-clasp",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 175382,
+                "name": "Doomrigger's Coffer",
+                "url": "https://www.wowhead.com/classic/object=175382/doomrigger-s-coffer",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -42080,7 +50816,16 @@ const DUNGEONS = [
             "name": "Darkstone Tablet",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12358/darkstone-tablet",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 175385,
+                "name": "Darkstone Tablet",
+                "url": "https://www.wowhead.com/classic/object=175385/darkstone-tablet",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -42392,7 +51137,17 @@ const DUNGEONS = [
             "name": "Unforged Rune Covered Breastplate",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12806/unforged-rune-covered-breastplate",
-            "quality": 3
+            "quality": 3,
+            "sources": [
+              {
+                "type": "object",
+                "id": 175970,
+                "name": "Unforged Runic Breastplate",
+                "url": "https://www.wowhead.com/classic/object=175970/unforged-runic-breastplate",
+                "relation": "Contained in",
+                "dropChance": 50.0
+              }
+            ]
           }
         ],
         "rewards": [
@@ -42548,7 +51303,17 @@ const DUNGEONS = [
             "name": "Blood of the Black Dragon Champion",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=16663/blood-of-the-black-dragon-champion",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10363,
+                "name": "General Drakkisath",
+                "url": "https://www.wowhead.com/classic/npc=10363/general-drakkisath",
+                "relation": "Dropped by",
+                "dropChance": 25.0
+              }
+            ]
           }
         ],
         "rewards": [
@@ -43308,7 +52073,25 @@ const DUNGEONS = [
                 "name": "Marshal Windsor's Lost Information",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=11464/marshal-windsors-lost-information",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 8983,
+                    "name": "Golem Lord Argelmach",
+                    "url": "https://www.wowhead.com/classic/npc=8983/golem-lord-argelmach",
+                    "relation": "Dropped by",
+                    "dropChance": 15.9
+                  },
+                  {
+                    "type": "npc",
+                    "id": 9033,
+                    "name": "General Angerforge",
+                    "url": "https://www.wowhead.com/classic/npc=9033/general-angerforge",
+                    "relation": "Dropped by",
+                    "dropChance": 12.6
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -43316,7 +52099,17 @@ const DUNGEONS = [
                 "name": "Marshal Windsor's Lost Information",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=11465/marshal-windsors-lost-information",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 8983,
+                    "name": "Golem Lord Argelmach",
+                    "url": "https://www.wowhead.com/classic/npc=8983/golem-lord-argelmach",
+                    "relation": "Dropped by",
+                    "dropChance": 50.0
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -43704,7 +52497,16 @@ const DUNGEONS = [
             "name": "Important Blackrock Documents",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12562/important-blackrock-documents",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "object",
+                "id": 175785,
+                "name": "Inconspicuous Documents",
+                "url": "https://www.wowhead.com/classic/object=175785/inconspicuous-documents",
+                "relation": "Contained in"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -43879,7 +52681,17 @@ const DUNGEONS = [
             "name": "Head of Rend Blackhand",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12630/head-of-rend-blackhand",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10429,
+                "name": "Warchief Rend Blackhand",
+                "url": "https://www.wowhead.com/classic/npc=10429/warchief-rend-blackhand",
+                "relation": "Dropped by",
+                "dropChance": 6.7
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -44170,7 +52982,105 @@ const DUNGEONS = [
             "name": "Black Dragonspawn Eye",
             "quantity": 20,
             "url": "https://www.wowhead.com/classic/item=16786/black-dragonspawn-eye",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10683,
+                "name": "Rookery Hatcher",
+                "url": "https://www.wowhead.com/classic/npc=10683/rookery-hatcher",
+                "relation": "Dropped by",
+                "dropChance": 27.2
+              },
+              {
+                "type": "npc",
+                "id": 10258,
+                "name": "Rookery Guardian",
+                "url": "https://www.wowhead.com/classic/npc=10258/rookery-guardian",
+                "relation": "Dropped by",
+                "dropChance": 25.0
+              },
+              {
+                "type": "npc",
+                "id": 10083,
+                "name": "Rage Talon Flamescale",
+                "url": "https://www.wowhead.com/classic/npc=10083/rage-talon-flamescale",
+                "relation": "Dropped by",
+                "dropChance": 22.1
+              },
+              {
+                "type": "npc",
+                "id": 9096,
+                "name": "Rage Talon Dragonspawn",
+                "url": "https://www.wowhead.com/classic/npc=9096/rage-talon-dragonspawn",
+                "relation": "Dropped by",
+                "dropChance": 20.6
+              },
+              {
+                "type": "npc",
+                "id": 10372,
+                "name": "Rage Talon Fire Tongue",
+                "url": "https://www.wowhead.com/classic/npc=10372/rage-talon-fire-tongue",
+                "relation": "Dropped by",
+                "dropChance": 7.8
+              },
+              {
+                "type": "npc",
+                "id": 10366,
+                "name": "Rage Talon Dragon Guard",
+                "url": "https://www.wowhead.com/classic/npc=10366/rage-talon-dragon-guard",
+                "relation": "Dropped by",
+                "dropChance": 7.3
+              },
+              {
+                "type": "npc",
+                "id": 10371,
+                "name": "Rage Talon Captain",
+                "url": "https://www.wowhead.com/classic/npc=10371/rage-talon-captain",
+                "relation": "Dropped by",
+                "dropChance": 5.7
+              },
+              {
+                "type": "npc",
+                "id": 12464,
+                "name": "Death Talon Seether",
+                "url": "https://www.wowhead.com/classic/npc=12464/death-talon-seether",
+                "relation": "Dropped by",
+                "dropChance": 5.3
+              },
+              {
+                "type": "npc",
+                "id": 12465,
+                "name": "Death Talon Wyrmkin",
+                "url": "https://www.wowhead.com/classic/npc=12465/death-talon-wyrmkin",
+                "relation": "Dropped by",
+                "dropChance": 5.2
+              },
+              {
+                "type": "npc",
+                "id": 12463,
+                "name": "Death Talon Flamescale",
+                "url": "https://www.wowhead.com/classic/npc=12463/death-talon-flamescale",
+                "relation": "Dropped by",
+                "dropChance": 4.7
+              },
+              {
+                "type": "npc",
+                "id": 12468,
+                "name": "Death Talon Hatcher",
+                "url": "https://www.wowhead.com/classic/npc=12468/death-talon-hatcher",
+                "relation": "Dropped by",
+                "dropChance": 4.7
+              },
+              {
+                "type": "npc",
+                "id": 12467,
+                "name": "Death Talon Captain",
+                "url": "https://www.wowhead.com/classic/npc=12467/death-talon-captain",
+                "relation": "Dropped by",
+                "dropChance": 4.4
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -44318,7 +53228,16 @@ const DUNGEONS = [
             "name": "The Skull of Chronalis",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=16871/the-skull-of-chronalis",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8197,
+                "name": "Chronalis",
+                "url": "https://www.wowhead.com/classic/npc=8197/chronalis",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -44387,7 +53306,17 @@ const DUNGEONS = [
             "name": "The Skull of Scryer",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=16869/the-skull-of-scryer",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10664,
+                "name": "Scryer",
+                "url": "https://www.wowhead.com/classic/npc=10664/scryer",
+                "relation": "Dropped by",
+                "dropChance": 50.0
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -44456,7 +53385,16 @@ const DUNGEONS = [
             "name": "The Skull of Somnus",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=16870/the-skull-of-somnus",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 12900,
+                "name": "Somnus",
+                "url": "https://www.wowhead.com/classic/npc=12900/somnus",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -44525,7 +53463,16 @@ const DUNGEONS = [
             "name": "The Skull of Axtroz",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=16872/the-skull-of-axtroz",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 12899,
+                "name": "Axtroz",
+                "url": "https://www.wowhead.com/classic/npc=12899/axtroz",
+                "relation": "Dropped by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -44664,7 +53611,17 @@ const DUNGEONS = [
             "name": "Blood of the Black Dragon Champion",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=16663/blood-of-the-black-dragon-champion",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 10363,
+                "name": "General Drakkisath",
+                "url": "https://www.wowhead.com/classic/npc=10363/general-drakkisath",
+                "relation": "Dropped by",
+                "dropChance": 25.0
+              }
+            ]
           }
         ],
         "rewards": [
@@ -44986,7 +53943,16 @@ const DUNGEONS = [
                 "name": "Broodling Essence",
                 "quantity": 8,
                 "url": "https://www.wowhead.com/classic/item=12283/broodling-essence",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "object",
+                    "id": 175264,
+                    "name": "Broodling Essence",
+                    "url": "https://www.wowhead.com/classic/object=175264/broodling-essence",
+                    "relation": "Contained in"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -45123,7 +54089,33 @@ const DUNGEONS = [
                 "name": "Uncracked Chillwind Horn",
                 "quantity": 8,
                 "url": "https://www.wowhead.com/classic/item=12444/uncracked-chillwind-horn",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "npc",
+                    "id": 7447,
+                    "name": "Fledgling Chillwind",
+                    "url": "https://www.wowhead.com/classic/npc=7447/fledgling-chillwind",
+                    "relation": "Dropped by",
+                    "dropChance": 27.8
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7448,
+                    "name": "Chillwind Chimaera",
+                    "url": "https://www.wowhead.com/classic/npc=7448/chillwind-chimaera",
+                    "relation": "Dropped by",
+                    "dropChance": 18.5
+                  },
+                  {
+                    "type": "npc",
+                    "id": 7449,
+                    "name": "Chillwind Ravager",
+                    "url": "https://www.wowhead.com/classic/npc=7449/chillwind-ravager",
+                    "relation": "Dropped by",
+                    "dropChance": 6.5
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -45389,7 +54381,41 @@ const DUNGEONS = [
             "name": "Discordant Bracers",
             "quantity": 12,
             "url": "https://www.wowhead.com/classic/item=17309/discordant-bracers",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8521,
+                "name": "Blighted Horror",
+                "url": "https://www.wowhead.com/classic/npc=8521/blighted-horror",
+                "relation": "Dropped by",
+                "dropChance": 47.8
+              },
+              {
+                "type": "npc",
+                "id": 8522,
+                "name": "Plague Monstrosity",
+                "url": "https://www.wowhead.com/classic/npc=8522/plague-monstrosity",
+                "relation": "Dropped by",
+                "dropChance": 46.9
+              },
+              {
+                "type": "npc",
+                "id": 8519,
+                "name": "Blighted Surge",
+                "url": "https://www.wowhead.com/classic/npc=8519/blighted-surge",
+                "relation": "Dropped by",
+                "dropChance": 24.2
+              },
+              {
+                "type": "npc",
+                "id": 8520,
+                "name": "Plague Ravager",
+                "url": "https://www.wowhead.com/classic/npc=8520/plague-ravager",
+                "relation": "Dropped by",
+                "dropChance": 23.6
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -45535,7 +54561,17 @@ const DUNGEONS = [
             "name": "Eye of the Emberseer",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=17322/eye-of-the-emberseer",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 9816,
+                "name": "Pyroguard Emberseer",
+                "url": "https://www.wowhead.com/classic/npc=9816/pyroguard-emberseer",
+                "relation": "Dropped by",
+                "dropChance": 8.8
+              }
+            ]
           }
         ],
         "rewards": [],

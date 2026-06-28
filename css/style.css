@@ -2831,6 +2831,223 @@ img.stat-ico {
   border-color: var(--gold-dim);
   color: var(--gold-light);
 }
+
+/* ── ATLAS / CATACLYSM ART-STYLE TOGGLE (instance maps) ── */
+.map-style-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+}
+.map-style-controls[hidden] { display: none; }
+.map-style-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border-gold);
+  border-radius: 5px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.35);
+}
+.map-style-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  padding: 4px 13px;
+  cursor: pointer;
+  transition: all 0.18s;
+  line-height: 1.1;
+}
+.map-style-btn + .map-style-btn { border-left: 1px solid var(--border-gold); }
+.map-style-btn-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.05em;
+}
+.map-style-btn-sub {
+  font-size: 0.52rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.map-style-btn:hover { color: var(--gold); }
+.map-style-btn.active {
+  background: linear-gradient(180deg, rgba(200, 168, 75, 0.28), rgba(200, 168, 75, 0.12));
+  color: var(--gold-light);
+  box-shadow: inset 0 -2px 0 var(--gold-dim);
+}
+.map-style-info-btn {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--border-gold);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.map-style-info-btn:hover,
+.map-style-info-btn[aria-expanded="true"] {
+  color: var(--gold-light);
+  border-color: var(--gold);
+  background: rgba(200, 168, 75, 0.18);
+}
+
+/* "Why two map styles?" info popover */
+.map-style-info {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  width: min(560px, calc(100% - 32px));
+  max-height: calc(100% - 90px);
+  overflow-y: auto;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-gold);
+  border-radius: 6px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+  padding: 16px 20px 18px;
+  font-family: 'Crimson Pro', Georgia, serif;
+}
+.map-style-info[hidden] { display: none; }
+.map-style-info-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.map-style-info-title {
+  flex: 1;
+  font-family: 'Cinzel', serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  color: var(--gold-light);
+}
+.map-style-info-close {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.map-style-info-close:hover { color: var(--gold-light); }
+.map-style-info p {
+  margin: 0 0 10px;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--text-main);
+}
+.map-style-info strong { color: var(--text-bright); font-weight: 600; }
+.map-style-info a { color: var(--gold); text-decoration: none; }
+.map-style-info a:hover { color: var(--gold-light); text-decoration: underline; }
+.map-style-info-sub {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.04em;
+  color: var(--gold) !important;
+  margin-bottom: 6px !important;
+}
+.map-style-info-list {
+  margin: 0 0 14px;
+  padding-left: 18px;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--text-main);
+}
+.map-style-info-list li { margin-bottom: 4px; }
+.map-style-info-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  padding: 5px 10px;
+  border: 1px solid rgba(77, 166, 255, 0.3);
+  border-radius: 3px;
+  color: #4da6ff !important;
+}
+.map-style-info-link:hover {
+  border-color: #4da6ff;
+  background: rgba(77, 166, 255, 0.08);
+  text-decoration: none !important;
+}
+
+/* Atlas addon credit — shown in the footer while viewing Atlas maps. */
+.map-atlas-credit {
+  display: none;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 0.68rem;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  color: var(--text-dim);
+  text-align: center;
+}
+.map-modal.atlas-mode .map-atlas-credit { display: flex; }
+.map-atlas-credit-logo { width: 13px; height: 13px; object-fit: contain; opacity: 0.7; flex-shrink: 0; }
+.map-atlas-credit a { color: var(--gold-dim); text-decoration: none; font-style: normal; }
+.map-atlas-credit a:hover { color: var(--gold-light); text-decoration: underline; }
+
+/* Atlas maps have baked-in numbered legends and no coordinate system, so the
+   pin-editing chrome is hidden while the legend stands in for the pin list. */
+.map-modal.atlas-mode .map-coord-input-group,
+.map-modal.atlas-mode .map-pin-footer-hint,
+.map-modal.atlas-mode .map-footer-divider,
+.map-modal.atlas-mode #mapPinEditDialog,
+.map-modal.atlas-mode #mapCoordsDisplay { display: none !important; }
+
+/* ── ATLAS LEGEND (read-only POI list in the side panel) ── */
+.atlas-legend-item {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+.atlas-legend-item.indent { padding-left: 30px; opacity: 0.85; }
+.atlas-ref {
+  flex-shrink: 0;
+  min-width: 22px;
+  height: 19px;
+  padding: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  border-radius: 3px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+}
+.atlas-ref.letter { background: #1c2438; border-color: #38507e; color: #9fb6ff; }
+.atlas-ref.none { background: transparent; border: none; min-width: 0; padding: 0; }
+.atlas-legend-name { font-size: 0.8rem; line-height: 1.3; }
+/* Legend colours mirror the addon's WHIT/BLUE/ORNG/… categories. */
+.cat-poi      { color: #f0e6d0; }
+.cat-location { color: #8fa6ff; }
+.cat-orange   { color: #e0a94b; }
+.cat-green    { color: #7fd25a; }
+.cat-grey     { color: #b0a890; }
+.cat-lblue    { color: #5fd2d2; }
+.cat-red      { color: #e57272; }
+.cat-pink     { color: #e072d2; }
+.cat-purple   { color: #b88aff; }
+.cat-yellow   { color: #e0d24a; }
+.cat-other    { color: var(--text-main); }
+
 .map-modal-viewport {
   flex: 1;
   overflow: hidden;
@@ -4840,6 +5057,64 @@ img.encounter-skull-icon {
   transition: border-color 0.15s;
 }
 .qm-req-npc-thumb:hover { border-color: var(--gold-light); }
+
+/* ── Requirement item sources (dropped by / contained in) ── */
+.qm-req-sources {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 1px 0 7px 14px;
+  padding-left: 10px;
+  border-left: 1px solid var(--border-gold);
+}
+.qm-req-source-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.qm-req-source-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.qm-req-source-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+}
+.qm-req-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.84rem;
+}
+.qm-req-source-thumb {
+  flex-shrink: 0;
+  width: 32px;
+  height: 36px;
+  border-radius: 3px;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid var(--border-gold);
+  background: #060608;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.qm-req-source-thumb:hover { border-color: var(--gold-light); }
+.qm-req-source-name {
+  line-height: 1.2;
+  color: var(--text-bright);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.qm-req-source-name:hover { color: var(--gold-light); }
+.qm-req-source-pct {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
 
 /* ── Locations / givers ── */
 .qm-giver-row {
