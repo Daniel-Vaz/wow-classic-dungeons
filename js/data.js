@@ -6,7 +6,6 @@ const DUNGEONS = [
     "name": "Ragefire Chasm",
     "abbr": "RFC",
     "icon": "🔥",
-    "iconFile": "dung_rfc.png",
     "loadingScreen": "assets/loading-screens/800297.jpg",
     "faction": "Horde",
     "levels": "13–18",
@@ -640,14 +639,14 @@ const DUNGEONS = [
           "name": "Hidden Enemies"
         }
       }
-    ]
+    ],
+    "iconFile": "dung_rfc.png"
   },
   {
     "id": "wc",
     "name": "Wailing Caverns",
     "abbr": "WC",
     "icon": "🐍",
-    "iconFile": "dung_wc.png",
     "loadingScreen": "assets/loading-screens/800301.jpg",
     "faction": "Horde",
     "levels": "15–25",
@@ -1732,14 +1731,14 @@ const DUNGEONS = [
         "isDungeon": true,
         "series": null
       }
-    ]
+    ],
+    "iconFile": "dung_wc.png"
   },
   {
     "id": "deadmines",
     "name": "The Deadmines",
     "abbr": "DM",
     "icon": "⚓",
-    "iconFile": "dung_dm.png",
     "loadingScreen": "assets/loading-screens/800307.jpg",
     "faction": "Alliance",
     "levels": "18–23",
@@ -3326,14 +3325,14 @@ const DUNGEONS = [
           "name": "The Tome of Valor"
         }
       }
-    ]
+    ],
+    "iconFile": "dung_dm.png"
   },
   {
     "id": "sfk",
     "name": "Shadowfang Keep",
     "abbr": "SFK",
     "icon": "🐺",
-    "iconFile": "dung_sfk.png",
     "loadingScreen": "assets/loading-screens/800323.jpg",
     "faction": "Horde",
     "levels": "22–30",
@@ -4016,14 +4015,14 @@ const DUNGEONS = [
           "name": "The Tome of Valor"
         }
       }
-    ]
+    ],
+    "iconFile": "dung_sfk.png"
   },
   {
     "id": "bfd",
     "name": "Blackfathom Deeps",
     "abbr": "BFD",
     "icon": "🌊",
-    "iconFile": "dung_bfd.png",
     "loadingScreen": "assets/loading-screens/800324.jpg",
     "faction": "Both",
     "levels": "24–32",
@@ -4994,14 +4993,14 @@ const DUNGEONS = [
         "isDungeon": true,
         "series": null
       }
-    ]
+    ],
+    "iconFile": "dung_bfd.png"
   },
   {
     "id": "stockades",
     "name": "The Stockade",
     "abbr": "Stocks",
     "icon": "⛓",
-    "iconFile": "dung_stocks.png",
     "loadingScreen": "assets/loading-screens/800325.jpg",
     "faction": "Alliance",
     "levels": "22–30",
@@ -5751,14 +5750,14 @@ const DUNGEONS = [
         "isDungeon": true,
         "series": null
       }
-    ]
+    ],
+    "iconFile": "dung_stocks.png"
   },
   {
     "id": "gnomer",
     "name": "Gnomeregan",
     "abbr": "Gnomer",
     "icon": "⚙️",
-    "iconFile": "dung_gnomer.png",
     "loadingScreen": "assets/loading-screens/800327.jpg",
     "faction": "Alliance",
     "levels": "29–38",
@@ -7396,14 +7395,14 @@ const DUNGEONS = [
           "name": "Chief Engineer Scooty"
         }
       }
-    ]
+    ],
+    "iconFile": "dung_gnomer.png"
   },
   {
     "id": "rfk",
     "name": "Razorfen Kraul",
     "abbr": "RFK",
     "icon": "🐗",
-    "iconFile": "dung_rfk.png",
     "loadingScreen": "assets/loading-screens/800328.jpg",
     "faction": "Both",
     "levels": "30–40",
@@ -8080,14 +8079,14 @@ const DUNGEONS = [
           "name": "An Unholy Alliance"
         }
       }
-    ]
+    ],
+    "iconFile": "dung_rfk.png"
   },
   {
     "id": "sm",
     "name": "Scarlet Monastery",
     "abbr": "SM",
     "icon": "⛪",
-    "iconFile": "dung_sm.png",
     "loadingScreen": "assets/loading-screens/800330.jpg",
     "faction": "Both",
     "levels": "26–45",
@@ -9835,14 +9834,14 @@ const DUNGEONS = [
           "name": "Hidden Secrets"
         }
       }
-    ]
+    ],
+    "iconFile": "dung_sm.png"
   },
   {
     "id": "rfd",
     "name": "Razorfen Downs",
     "abbr": "RFD",
     "icon": "💀",
-    "iconFile": "dung_rfd.png",
     "loadingScreen": "assets/loading-screens/800374.jpg",
     "faction": "Both",
     "levels": "40–50",
@@ -10384,14 +10383,14 @@ const DUNGEONS = [
           "name": "Scourge of the Downs"
         }
       }
-    ]
+    ],
+    "iconFile": "dung_rfd.png"
   },
   {
     "id": "uldaman",
     "name": "Uldaman",
     "abbr": "Ulda",
     "icon": "🪨",
-    "iconFile": "dung_ulda.png",
     "loadingScreen": "assets/loading-screens/800375.jpg",
     "faction": "Both",
     "levels": "42–52",
@@ -14362,14 +14361,14 @@ const DUNGEONS = [
         "isDungeon": true,
         "series": null
       }
-    ]
+    ],
+    "iconFile": "dung_ulda.png"
   },
   {
     "id": "zf",
     "name": "Zul'Farrak",
     "abbr": "ZF",
     "icon": "🏺",
-    "iconFile": "dung_zf.png",
     "loadingScreen": "assets/loading-screens/800377.jpg",
     "faction": "Both",
     "levels": "44–54",
@@ -15880,14 +15879,14 @@ const DUNGEONS = [
           "name": "Venom Bottles"
         }
       }
-    ]
+    ],
+    "iconFile": "dung_zf.png"
   },
   {
     "id": "mara",
     "name": "Maraudon",
     "abbr": "Mara",
     "icon": "🌿",
-    "iconFile": "dung_mara.png",
     "loadingScreen": "assets/loading-screens/800379.jpg",
     "faction": "Both",
     "levels": "46–55",
@@ -16816,14 +16815,14 @@ const DUNGEONS = [
         "isDungeon": true,
         "series": null
       }
-    ]
+    ],
+    "iconFile": "dung_mara.png"
   },
   {
     "id": "st",
     "name": "Sunken Temple",
     "abbr": "ST",
     "icon": "🐉",
-    "iconFile": "dung_st.png",
     "loadingScreen": "assets/loading-screens/800382.jpg",
     "faction": "Both",
     "levels": "50–60",
@@ -22207,14 +22206,14 @@ const DUNGEONS = [
           "name": "A Troubled Spirit"
         }
       }
-    ]
+    ],
+    "iconFile": "dung_st.png"
   },
   {
     "id": "brd",
     "name": "Blackrock Depths",
     "abbr": "BRD",
     "icon": "🌋",
-    "iconFile": "dung_brd.png",
     "loadingScreen": "assets/loading-screens/800386.jpg",
     "faction": "Both",
     "levels": "52–60",
@@ -29122,14 +29121,14 @@ const DUNGEONS = [
         },
         "treeChain": true
       }
-    ]
+    ],
+    "iconFile": "dung_brd.png"
   },
   {
     "id": "dm",
     "name": "Dire Maul",
     "abbr": "DireM",
     "icon": "🌳",
-    "iconFile": "dung_direm.png",
     "loadingScreen": "assets/loading-screens/800395.jpg",
     "faction": "Both",
     "levels": "58–60",
@@ -31871,14 +31870,14 @@ const DUNGEONS = [
         "series": null,
         "treeChain": true
       }
-    ]
+    ],
+    "iconFile": "dung_direm.png"
   },
   {
     "id": "lbrs",
     "name": "Lower Blackrock Spire",
     "abbr": "LBRS",
     "icon": "🐲",
-    "iconFile": "dung_lbrs.png",
     "loadingScreen": "assets/loading-screens/800389.jpg",
     "faction": "Both",
     "levels": "55–60",
@@ -33890,7 +33889,8 @@ const DUNGEONS = [
         "isDungeon": true,
         "series": null
       }
-    ]
+    ],
+    "iconFile": "dung_lbrs.png"
   },
   {
     "id": "scholo",
@@ -39351,7 +39351,6 @@ const DUNGEONS = [
     "name": "Stratholme",
     "abbr": "Strath",
     "icon": "🏰",
-    "iconFile": "dung_strath.png",
     "loadingScreen": "assets/loading-screens/800404.jpg",
     "faction": "Both",
     "levels": "58–60",
@@ -41809,14 +41808,14 @@ const DUNGEONS = [
           }
         ]
       }
-    ]
+    ],
+    "iconFile": "dung_strath.png"
   },
   {
     "id": "ubrs",
     "name": "Upper Blackrock Spire",
     "abbr": "UBRS",
     "icon": "👑",
-    "iconFile": "dung_ubrs.png",
     "loadingScreen": "assets/loading-screens/800389.jpg",
     "faction": "Both",
     "levels": "55–60",
@@ -45623,6 +45622,7 @@ const DUNGEONS = [
           }
         ]
       }
-    ]
+    ],
+    "iconFile": "dung_ubrs.png"
   }
 ];

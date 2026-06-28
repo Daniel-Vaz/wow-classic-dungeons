@@ -402,6 +402,54 @@ const ENCOUNTER_INFO = {
       }
     ]
   },
+  "3864": {
+    "level": "19 - 20",
+    "classification": "Elite",
+    "type": "Beast",
+    "health": 1859,
+    "mana": null,
+    "abilities": [
+      {
+        "id": 7139,
+        "name": "Fel Stomp",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=7139/fel-stomp"
+      }
+    ]
+  },
+  "3865": {
+    "level": "20 - 21",
+    "classification": "Elite",
+    "type": "Beast",
+    "health": 2032,
+    "mana": null,
+    "abilities": [
+      {
+        "id": 1604,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=1604/dazed"
+      },
+      {
+        "id": 5101,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=5101/dazed"
+      },
+      {
+        "id": 13496,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=13496/dazed"
+      },
+      {
+        "id": 15571,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=15571/dazed"
+      }
+    ]
+  },
   "3886": {
     "level": "22",
     "classification": "Elite",
@@ -2531,24 +2579,51 @@ const ENCOUNTER_INFO = {
       }
     ]
   },
-  "5712": {
+  "5713": {
     "level": "51",
     "classification": "Elite",
     "type": "Undead",
-    "health": 9170,
-    "mana": 2796,
+    "health": 6876,
+    "mana": null,
     "abilities": [
       {
-        "id": 12058,
-        "name": "Chain Lightning",
-        "school": "Nature",
-        "url": "https://www.wowhead.com/classic/spell=12058/chain-lightning"
+        "id": 1604,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=1604/dazed"
       },
       {
-        "id": 12506,
-        "name": "Atal'ai Skeleton Totem",
+        "id": 5101,
+        "name": "Dazed",
         "school": "Physical",
-        "url": "https://www.wowhead.com/classic/spell=12506/atal-ai-skeleton-totem"
+        "url": "https://www.wowhead.com/classic/spell=5101/dazed"
+      },
+      {
+        "id": 13496,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=13496/dazed"
+      },
+      {
+        "id": 15571,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=15571/dazed"
+      }
+    ]
+  },
+  "5715": {
+    "level": "52",
+    "classification": "Elite",
+    "type": "Undead",
+    "health": 8300,
+    "mana": 6975,
+    "abilities": [
+      {
+        "id": 12279,
+        "name": "Curse of Blood",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=12279/curse-of-blood"
       }
     ]
   },
@@ -2570,42 +2645,6 @@ const ENCOUNTER_INFO = {
         "name": "Shield Slam",
         "school": "Physical",
         "url": "https://www.wowhead.com/classic/spell=8242/shield-slam"
-      }
-    ]
-  },
-  "5715": {
-    "level": "52",
-    "classification": "Elite",
-    "type": "Undead",
-    "health": 8300,
-    "mana": 6975,
-    "abilities": [
-      {
-        "id": 12279,
-        "name": "Curse of Blood",
-        "school": "Shadow",
-        "url": "https://www.wowhead.com/classic/spell=12279/curse-of-blood"
-      }
-    ]
-  },
-  "5716": {
-    "level": "52",
-    "classification": "Elite",
-    "type": "Undead",
-    "health": 17783,
-    "mana": null,
-    "abilities": [
-      {
-        "id": 5532,
-        "name": "Cleave",
-        "school": "Physical",
-        "url": "https://www.wowhead.com/classic/spell=5532/cleave"
-      },
-      {
-        "id": 12530,
-        "name": "Frailty",
-        "school": "Shadow",
-        "url": "https://www.wowhead.com/classic/spell=12530/frailty"
       }
     ]
   },
@@ -2639,6 +2678,48 @@ const ENCOUNTER_INFO = {
         "name": "Healing Wave",
         "school": "Nature",
         "url": "https://www.wowhead.com/classic/spell=12492/healing-wave"
+      }
+    ]
+  },
+  "5712": {
+    "level": "51",
+    "classification": "Elite",
+    "type": "Undead",
+    "health": 9170,
+    "mana": 2796,
+    "abilities": [
+      {
+        "id": 12058,
+        "name": "Chain Lightning",
+        "school": "Nature",
+        "url": "https://www.wowhead.com/classic/spell=12058/chain-lightning"
+      },
+      {
+        "id": 12506,
+        "name": "Atal'ai Skeleton Totem",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=12506/atal-ai-skeleton-totem"
+      }
+    ]
+  },
+  "5716": {
+    "level": "52",
+    "classification": "Elite",
+    "type": "Undead",
+    "health": 17783,
+    "mana": null,
+    "abilities": [
+      {
+        "id": 5532,
+        "name": "Cleave",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=5532/cleave"
+      },
+      {
+        "id": 12530,
+        "name": "Frailty",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=12530/frailty"
       }
     ]
   },
@@ -5284,6 +5365,27 @@ const ENCOUNTER_INFO = {
       }
     ]
   },
+  "11058": {
+    "level": "61",
+    "classification": "Elite",
+    "type": "Undead",
+    "health": 28296,
+    "mana": null,
+    "abilities": [
+      {
+        "id": 7964,
+        "name": "Smoke Bomb",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=7964/smoke-bomb"
+      },
+      {
+        "id": 17294,
+        "name": "Flame Breath",
+        "school": "Fire",
+        "url": "https://www.wowhead.com/classic/spell=17294/flame-breath"
+      }
+    ]
+  },
   "10393": {
     "level": "58",
     "classification": "Rare Elite",
@@ -5416,6 +5518,21 @@ const ENCOUNTER_INFO = {
       }
     ]
   },
+  "11120": {
+    "level": "60",
+    "classification": "Elite",
+    "type": "Humanoid",
+    "health": 15260,
+    "mana": null,
+    "abilities": [
+      {
+        "id": 17445,
+        "name": "Bone Smelt",
+        "school": "Fire",
+        "url": "https://www.wowhead.com/classic/spell=17445/bone-smelt"
+      }
+    ]
+  },
   "10997": {
     "level": "60",
     "classification": "Elite",
@@ -5506,6 +5623,39 @@ const ENCOUNTER_INFO = {
         "name": "Vicious Rend",
         "school": "Physical",
         "url": "https://www.wowhead.com/classic/spell=14331/vicious-rend"
+      }
+    ]
+  },
+  "11121": {
+    "level": "61 - 62",
+    "classification": "Elite",
+    "type": "Undead",
+    "health": 9711,
+    "mana": null,
+    "abilities": [
+      {
+        "id": 1604,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=1604/dazed"
+      },
+      {
+        "id": 5101,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=5101/dazed"
+      },
+      {
+        "id": 13496,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=13496/dazed"
+      },
+      {
+        "id": 15571,
+        "name": "Dazed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=15571/dazed"
       }
     ]
   },

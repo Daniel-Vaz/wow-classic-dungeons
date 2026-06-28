@@ -421,6 +421,38 @@ const ENCOUNTER_LOOT = {
       "dropChance": 89.55
     }
   ],
+  "3864": [
+    {
+      "id": 932,
+      "name": "Fel Steed Saddlebags",
+      "url": "https://www.wowhead.com/classic/item=932/fel-steed-saddlebags",
+      "quality": 1,
+      "dropChance": 18.66
+    },
+    {
+      "id": 6341,
+      "name": "Eerie Stable Lantern",
+      "url": "https://www.wowhead.com/classic/item=6341/eerie-stable-lantern",
+      "quality": 2,
+      "dropChance": 6.24
+    }
+  ],
+  "3865": [
+    {
+      "id": 932,
+      "name": "Fel Steed Saddlebags",
+      "url": "https://www.wowhead.com/classic/item=932/fel-steed-saddlebags",
+      "quality": 1,
+      "dropChance": 18.66
+    },
+    {
+      "id": 6341,
+      "name": "Eerie Stable Lantern",
+      "url": "https://www.wowhead.com/classic/item=6341/eerie-stable-lantern",
+      "quality": 2,
+      "dropChance": 6.24
+    }
+  ],
   "3886": [
     {
       "id": 6226,
@@ -2149,72 +2181,7 @@ const ENCOUNTER_LOOT = {
       "dropChance": 18.3
     }
   ],
-  "5712": [
-    {
-      "id": 20607,
-      "name": "Blue Voodoo Feather",
-      "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
-      "quality": 1,
-      "dropChance": 23.95
-    },
-    {
-      "id": 20608,
-      "name": "Green Voodoo Feather",
-      "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
-      "quality": 1,
-      "dropChance": 22.43
-    },
-    {
-      "id": 20606,
-      "name": "Amber Voodoo Feather",
-      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
-      "quality": 1,
-      "dropChance": 19.99
-    },
-    {
-      "id": 10788,
-      "name": "Atal'ai Girdle",
-      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
-      "quality": 2,
-      "dropChance": 10.14
-    },
-    {
-      "id": 10786,
-      "name": "Atal'ai Boots",
-      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
-      "quality": 2,
-      "dropChance": 8.26
-    },
-    {
-      "id": 10787,
-      "name": "Atal'ai Gloves",
-      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
-      "quality": 3,
-      "dropChance": 6.98
-    },
-    {
-      "id": 10785,
-      "name": "Atal'ai Leggings",
-      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
-      "quality": 2,
-      "dropChance": 5.74
-    },
-    {
-      "id": 10783,
-      "name": "Atal'ai Spaulders",
-      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
-      "quality": 3,
-      "dropChance": 5.02
-    },
-    {
-      "id": 10784,
-      "name": "Atal'ai Breastplate",
-      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
-      "quality": 3,
-      "dropChance": 2.6
-    }
-  ],
-  "5714": [
+  "5713": [
     {
       "id": 20607,
       "name": "Blue Voodoo Feather",
@@ -2344,7 +2311,7 @@ const ENCOUNTER_LOOT = {
       "dropChance": 2.6
     }
   ],
-  "5716": [
+  "5714": [
     {
       "id": 20607,
       "name": "Blue Voodoo Feather",
@@ -2410,6 +2377,136 @@ const ENCOUNTER_LOOT = {
     }
   ],
   "5717": [
+    {
+      "id": 20607,
+      "name": "Blue Voodoo Feather",
+      "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
+      "quality": 1,
+      "dropChance": 23.95
+    },
+    {
+      "id": 20608,
+      "name": "Green Voodoo Feather",
+      "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
+      "quality": 1,
+      "dropChance": 22.43
+    },
+    {
+      "id": 20606,
+      "name": "Amber Voodoo Feather",
+      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
+      "quality": 1,
+      "dropChance": 19.99
+    },
+    {
+      "id": 10788,
+      "name": "Atal'ai Girdle",
+      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
+      "quality": 2,
+      "dropChance": 10.14
+    },
+    {
+      "id": 10786,
+      "name": "Atal'ai Boots",
+      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
+      "quality": 2,
+      "dropChance": 8.26
+    },
+    {
+      "id": 10787,
+      "name": "Atal'ai Gloves",
+      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
+      "quality": 3,
+      "dropChance": 6.98
+    },
+    {
+      "id": 10785,
+      "name": "Atal'ai Leggings",
+      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
+      "quality": 2,
+      "dropChance": 5.74
+    },
+    {
+      "id": 10783,
+      "name": "Atal'ai Spaulders",
+      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
+      "quality": 3,
+      "dropChance": 5.02
+    },
+    {
+      "id": 10784,
+      "name": "Atal'ai Breastplate",
+      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
+      "quality": 3,
+      "dropChance": 2.6
+    }
+  ],
+  "5712": [
+    {
+      "id": 20607,
+      "name": "Blue Voodoo Feather",
+      "url": "https://www.wowhead.com/classic/item=20607/blue-voodoo-feather",
+      "quality": 1,
+      "dropChance": 23.95
+    },
+    {
+      "id": 20608,
+      "name": "Green Voodoo Feather",
+      "url": "https://www.wowhead.com/classic/item=20608/green-voodoo-feather",
+      "quality": 1,
+      "dropChance": 22.43
+    },
+    {
+      "id": 20606,
+      "name": "Amber Voodoo Feather",
+      "url": "https://www.wowhead.com/classic/item=20606/amber-voodoo-feather",
+      "quality": 1,
+      "dropChance": 19.99
+    },
+    {
+      "id": 10788,
+      "name": "Atal'ai Girdle",
+      "url": "https://www.wowhead.com/classic/item=10788/atal-ai-girdle",
+      "quality": 2,
+      "dropChance": 10.14
+    },
+    {
+      "id": 10786,
+      "name": "Atal'ai Boots",
+      "url": "https://www.wowhead.com/classic/item=10786/atal-ai-boots",
+      "quality": 2,
+      "dropChance": 8.26
+    },
+    {
+      "id": 10787,
+      "name": "Atal'ai Gloves",
+      "url": "https://www.wowhead.com/classic/item=10787/atal-ai-gloves",
+      "quality": 3,
+      "dropChance": 6.98
+    },
+    {
+      "id": 10785,
+      "name": "Atal'ai Leggings",
+      "url": "https://www.wowhead.com/classic/item=10785/atal-ai-leggings",
+      "quality": 2,
+      "dropChance": 5.74
+    },
+    {
+      "id": 10783,
+      "name": "Atal'ai Spaulders",
+      "url": "https://www.wowhead.com/classic/item=10783/atal-ai-spaulders",
+      "quality": 3,
+      "dropChance": 5.02
+    },
+    {
+      "id": 10784,
+      "name": "Atal'ai Breastplate",
+      "url": "https://www.wowhead.com/classic/item=10784/atal-ai-breastplate",
+      "quality": 3,
+      "dropChance": 2.6
+    }
+  ],
+  "5716": [
     {
       "id": 20607,
       "name": "Blue Voodoo Feather",
@@ -8888,6 +8985,15 @@ const ENCOUNTER_LOOT = {
       "dropChance": 100.0
     }
   ],
+  "11120": [
+    {
+      "id": 18781,
+      "name": "Bottom Half of Advanced Armorsmithing: Volume II",
+      "url": "https://www.wowhead.com/classic/item=18781/bottom-half-of-advanced-armorsmithing-volume-ii",
+      "quality": 3,
+      "dropChance": 63.2
+    }
+  ],
   "10997": [
     {
       "id": 13377,
@@ -9081,6 +9187,113 @@ const ENCOUNTER_LOOT = {
       "dropChance": 1.9
     }
   ],
+  "10813": [
+    {
+      "id": 12103,
+      "name": "Star of Mystaria",
+      "url": "https://www.wowhead.com/classic/item=12103/star-of-mystaria",
+      "quality": 3,
+      "dropChance": 22.75
+    },
+    {
+      "id": 18717,
+      "name": "Hammer of the Grand Crusader",
+      "url": "https://www.wowhead.com/classic/item=18717/hammer-of-the-grand-crusader",
+      "quality": 3,
+      "dropChance": 21.14
+    },
+    {
+      "id": 13358,
+      "name": "Wyrmtongue Shoulders",
+      "url": "https://www.wowhead.com/classic/item=13358/wyrmtongue-shoulders",
+      "quality": 3,
+      "dropChance": 17.64
+    },
+    {
+      "id": 13359,
+      "name": "Crown of Tyranny",
+      "url": "https://www.wowhead.com/classic/item=13359/crown-of-tyranny",
+      "quality": 3,
+      "dropChance": 17.43
+    },
+    {
+      "id": 16725,
+      "name": "Lightforge Boots",
+      "url": "https://www.wowhead.com/classic/item=16725/lightforge-boots",
+      "quality": 3,
+      "dropChance": 17.33
+    },
+    {
+      "id": 13360,
+      "name": "Gift of the Elven Magi",
+      "url": "https://www.wowhead.com/classic/item=13360/gift-of-the-elven-magi",
+      "quality": 3,
+      "dropChance": 17.23
+    },
+    {
+      "id": 13348,
+      "name": "Demonshear",
+      "url": "https://www.wowhead.com/classic/item=13348/demonshear",
+      "quality": 3,
+      "dropChance": 17.13
+    },
+    {
+      "id": 18720,
+      "name": "Shroud of the Nathrezim",
+      "url": "https://www.wowhead.com/classic/item=18720/shroud-of-the-nathrezim",
+      "quality": 3,
+      "dropChance": 15.03
+    },
+    {
+      "id": 13369,
+      "name": "Fire Striders",
+      "url": "https://www.wowhead.com/classic/item=13369/fire-striders",
+      "quality": 3,
+      "dropChance": 13.83
+    },
+    {
+      "id": 18718,
+      "name": "Grand Crusader's Helm",
+      "url": "https://www.wowhead.com/classic/item=18718/grand-crusader-s-helm",
+      "quality": 3,
+      "dropChance": 12.73
+    },
+    {
+      "id": 13250,
+      "name": "Head of Balnazzar",
+      "url": "https://www.wowhead.com/classic/item=13250/head-of-balnazzar",
+      "quality": 1,
+      "dropChance": 11.82
+    },
+    {
+      "id": 14512,
+      "name": "Pattern: Truefaith Vestments",
+      "url": "https://www.wowhead.com/classic/item=14512/pattern-truefaith-vestments",
+      "quality": 4,
+      "dropChance": 6.91
+    },
+    {
+      "id": 13520,
+      "name": "Recipe: Flask of Distilled Wisdom",
+      "url": "https://www.wowhead.com/classic/item=13520/recipe-flask-of-distilled-wisdom",
+      "quality": 2,
+      "dropChance": 4.81
+    },
+    {
+      "id": 13353,
+      "name": "Book of the Dead",
+      "url": "https://www.wowhead.com/classic/item=13353/book-of-the-dead",
+      "quality": 4,
+      "dropChance": 2.1
+    },
+    {
+      "id": 22334,
+      "name": "Band of Mending",
+      "url": "https://www.wowhead.com/classic/item=22334/band-of-mending",
+      "quality": 3,
+      "dropChance": 1.9
+    }
+  ],
   "10809": [
     {
       "id": 13399,
@@ -9102,6 +9315,15 @@ const ENCOUNTER_LOOT = {
       "url": "https://www.wowhead.com/classic/item=13954/verdant-footpads",
       "quality": 3,
       "dropChance": 29.58
+    }
+  ],
+  "11121": [
+    {
+      "id": 18783,
+      "name": "Bottom Half of Advanced Armorsmithing: Volume III",
+      "url": "https://www.wowhead.com/classic/item=18783/bottom-half-of-advanced-armorsmithing-volume-iii",
+      "quality": 3,
+      "dropChance": 42.36
     }
   ],
   "10437": [
