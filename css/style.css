@@ -3883,6 +3883,16 @@ img.stat-ico {
 .pin-list-icon--npc    { color: #7dbcff; }
 .pin-list-icon--point  { color: #a0d0a0; }
 
+/* Dungeon-entrance list icon: use the pin image, no dot/border */
+.pin-list-icon--dungeon {
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 0;
+  background: url('../assets/icons/map_dung_pin.png') center / contain no-repeat;
+}
+.pin-list-icon--dungeon::after { display: none; }
+
 .pin-list-info {
   flex: 1;
   min-width: 0;
@@ -4226,6 +4236,23 @@ img.stat-ico {
 .map-pin--quest   { color: #ffd100; }
 .map-pin--npc     { color: #7dbcff; }
 .map-pin--point   { color: #a0d0a0; }
+.map-pin--dungeon { color: var(--gold-light); }
+
+/* Dungeon-entrance pin: custom icon image instead of the dot/diamond marker */
+.map-pin--dungeon .map-pin-marker {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 0;
+  background: url('../assets/icons/map_dung_pin.png') center / contain no-repeat;
+  box-shadow: none;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.85));
+}
+.map-pin--dungeon .map-pin-marker::after { display: none; }
+.map-pin--dungeon:hover .map-pin-marker {
+  transform: scale(1.18);
+  box-shadow: none;
+}
 
 /* System pin: diamond icon instead of circle */
 .map-pin--system .map-pin-marker,

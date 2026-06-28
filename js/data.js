@@ -22217,7 +22217,7 @@ const DUNGEONS = [
     "loadingScreen": "assets/loading-screens/800386.jpg",
     "faction": "Both",
     "levels": "52–60",
-    "location": "Blackrock Mountain",
+    "location": "Burning Steppes",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-blackrock-depths-dungeon-quests",
     "schema": 2,
     "quests": [
@@ -31881,7 +31881,7 @@ const DUNGEONS = [
     "loadingScreen": "assets/loading-screens/800389.jpg",
     "faction": "Both",
     "levels": "55–60",
-    "location": "Blackrock Mountain",
+    "location": "Burning Steppes",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-lower-blackrock-spire-dungeon-quests",
     "schema": 2,
     "quests": [
@@ -41819,7 +41819,7 @@ const DUNGEONS = [
     "loadingScreen": "assets/loading-screens/800389.jpg",
     "faction": "Both",
     "levels": "55–60",
-    "location": "Blackrock Mountain",
+    "location": "Burning Steppes",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-upper-blackrock-spire-dungeon-quests",
     "schema": 2,
     "quests": [

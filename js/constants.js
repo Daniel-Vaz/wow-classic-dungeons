@@ -449,6 +449,12 @@ const DUNGEON_MAP_NAME = {
 // ═══════════════════════════════════════
 const MULTI_LEVEL_MAPS = {
   // Keyed by zone ID
+  // Burning Steppes is shown as a multi-zone view: the open zone plus the
+  // Blackrock Mountain interior, since BRD/LBRS/UBRS all live inside the mountain.
+  46: [
+    { label: 'Burning Steppes',    src: 'assets/maps/46.jpg'   },
+    { label: 'Blackrock Mountain', src: 'assets/maps/1265.jpg' },
+  ],
   209: [
     { label: 'The Courtyard',          src: 'assets/maps/209_courtyard.jpg'  },
     { label: 'Dining Hall',            src: 'assets/maps/209_kitchen.jpg'    },
@@ -554,13 +560,40 @@ const MULTI_LEVEL_MAPS = {
 //  Keyed by location name or zone ID (matches ZONE_IDS keys / DUNGEON_MAP_NAME values).
 //  For multi-level maps, value is an array-of-arrays indexed by level.
 //  For single-level maps, value is a flat array of pins.
-//  Pin: { x, y, label, type: 'boss'|'npc'|'quest'|'point' }
+//  Pin: { x, y, label, type: 'boss'|'npc'|'quest'|'point'|'dungeon' }
 //  Coordinates: 0–100 (0,0 = top-left, 100,100 = bottom-right)
 // ═══════════════════════════════════════
 const MAP_PINS = {
-  // Example — uncomment and fill real coordinates when known:
-  // 'Ragefire Chasm': [
-  //   { x: 48, y: 52, label: 'Oggleflint', type: 'boss' },
-  //   { x: 55, y: 60, label: 'Taragaman', type: 'boss' },
-  // ],
+  // Dungeon-entrance pins, placed on each dungeon's outdoor location zone map
+  // (keyed by the dungeon's `location`). Labels use the dungeon map names.
+  'Orgrimmar':           [{ x: 50, y: 52, label: 'Ragefire Chasm',            type: 'dungeon' }],
+  'The Barrens': [
+    { x: 46, y: 35, label: 'Wailing Caverns',  type: 'dungeon' },
+    { x: 42, y: 89, label: 'Razorfen Kraul',   type: 'dungeon' },
+    { x: 50, y: 92, label: 'Razorfen Downs',   type: 'dungeon' },
+  ],
+  'Westfall':            [{ x: 42, y: 72, label: 'The Deadmines',             type: 'dungeon' }],
+  'Silverpine Forest':   [{ x: 42, y: 67, label: 'Shadowfang Keep',          type: 'dungeon' }],
+  'Ashenvale':           [{ x: 14, y: 13, label: 'Blackfathom Deeps',        type: 'dungeon' }],
+  'Stormwind City':      [{ x: 41, y: 56, label: 'The Stockade',             type: 'dungeon' }],
+  'Dun Morogh':          [{ x: 23, y: 39, label: 'Gnomeregan',               type: 'dungeon' }],
+  'Tirisfal Glades':     [{ x: 84, y: 33, label: 'Scarlet Monastery',        type: 'dungeon' }],
+  'Badlands':            [{ x: 42, y: 12, label: 'Uldaman',                   type: 'dungeon' }],
+  'Tanaris':             [{ x: 39, y: 20, label: "Zul'Farrak",               type: 'dungeon' }],
+  'Desolace':            [{ x: 29, y: 58, label: 'Maraudon',                  type: 'dungeon' }],
+  'Swamp of Sorrows':    [{ x: 70, y: 53, label: "The Temple of Atal'Hakkar", type: 'dungeon' }],
+  'Feralas':             [{ x: 58, y: 42, label: 'Dire Maul',                type: 'dungeon' }],
+  'Western Plaguelands': [{ x: 69, y: 75, label: 'Scholomance',              type: 'dungeon' }],
+  'Eastern Plaguelands': [{ x: 30, y: 10, label: 'Stratholme',               type: 'dungeon' }],
+  // Burning Steppes is a multi-level map (level 0: Burning Steppes,
+  // level 1: Blackrock Mountain interior, zone 1265). BRD/LBRS/UBRS
+  // entrances sit on the Blackrock Mountain floor.
+  'Burning Steppes': [
+    [], // level 0 — Burning Steppes (no dungeon entrances)
+    [   // level 1 — Blackrock Mountain (1265)
+      { x: 24, y: 13, label: 'Blackrock Depths',      type: 'dungeon' },
+      { x: 82, y: 44, label: 'Lower Blackrock Spire', type: 'dungeon' },
+      { x: 79, y: 33, label: 'Upper Blackrock Spire', type: 'dungeon' },
+    ],
+  ],
 };

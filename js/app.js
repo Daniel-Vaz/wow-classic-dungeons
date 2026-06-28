@@ -3443,7 +3443,7 @@ function initMapModal() {
     if (e.target.closest('.map-pin-edit-dialog')) return;
     if (e.target.closest('.map-pin--user')) return; // handled by pin's own listener
     closePinEditDialog();
-    if (e.target.closest('.map-pin--system') || e.target.closest('.map-pin--boss') || e.target.closest('.map-pin--quest')) return;
+    if (e.target.closest('.map-pin--system') || e.target.closest('.map-pin--boss') || e.target.closest('.map-pin--quest') || e.target.closest('.map-pin--dungeon')) return;
     clearActivePinLabels();
     setMapPinDeeplink(null); // deselecting on the map clears the pin from the URL
     const rect = vp.getBoundingClientRect();
@@ -3636,10 +3636,14 @@ function renderMapPins() {
   // System/predefined pins: hand-curated MAP_PINS plus the auto-generated
   // QUEST_PINS (quest giver locations scraped from the Questie database).
   const zoneId = ZONE_IDS[mapCurrentLocation];
+  const isMultiLevel = !!(MULTI_LEVEL_MAPS[mapCurrentLocation] || (zoneId && MULTI_LEVEL_MAPS[zoneId]));
   const resolvePinEntry = source => {
     const entry = source[mapCurrentLocation] || (zoneId && source[zoneId]) || null;
     if (!entry) return [];
-    return Array.isArray(entry[0]) ? (entry[mapCurrentLevelIndex] || []) : entry;
+    if (Array.isArray(entry[0])) return entry[mapCurrentLevelIndex] || [];
+    // A flat pin list belongs to the zone's primary map; on a multi-level map
+    // (e.g. Burning Steppes → Blackrock Mountain) only show it on the first level.
+    return isMultiLevel && mapCurrentLevelIndex !== 0 ? [] : entry;
   };
   const systemPins = [
     ...resolvePinEntry(MAP_PINS),
@@ -3655,6 +3659,7 @@ function renderMapPins() {
 
 // Pin-list sections, grouped by pin type. Order + display labels:
 const PIN_SECTION_META = {
+  dungeon: 'Dungeon Entrances',
   boss:   'Bosses',
   quest:  'Quest Givers',
   npc:    'NPCs',
@@ -3662,7 +3667,7 @@ const PIN_SECTION_META = {
   system: 'Map Pins',
   user:   'My Pins',
 };
-const PIN_SECTION_ORDER = ['boss', 'quest', 'npc', 'point', 'system', 'user'];
+const PIN_SECTION_ORDER = ['dungeon', 'boss', 'quest', 'npc', 'point', 'system', 'user'];
 
 function renderPinList(systemPins, userPins) {
   const list = document.getElementById('mapPinList');
