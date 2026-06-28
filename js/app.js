@@ -4439,7 +4439,7 @@ function buildQuestModalBody(quest, dungeon) {
            ${reqs.map(req => {
              const qClass = req.type === 'item' ? ` q${Math.min(req.quality || 1, 5)}` : '';
              const qty = req.quantity > 1 ? `<span class="qm-req-qty"> ×${req.quantity}</span>` : '';
-             const npcThumb = req.type === 'npc'
+             const npcThumb = (req.type === 'npc' || req.type === 'object')
                ? `<img class="qm-req-npc-thumb" src="assets/npc-models/${req.id}.jpg" alt="" onerror="this.hidden=true">`
                : '';
              return `<div class="qm-req-entry">
