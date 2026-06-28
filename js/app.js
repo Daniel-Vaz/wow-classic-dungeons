@@ -962,6 +962,15 @@ function renderDungeonHeader(dungeon) {
 
   guidesEl.innerHTML = mapBoxHtml + wowheadBoxHtml + videoBoxHtml;
 
+  // Boss Encounters collapsible in the full banner (the docked compact card has
+  // its own copy; renderEncounterList fills both). renderDungeonCardCompact below
+  // builds the card before that render runs, so both nodes exist in time.
+  const headerEncounters = document.getElementById('dungeonHeaderEncounters');
+  if (headerEncounters) {
+    headerEncounters.innerHTML = encountersCollapsibleHtml(dungeon);
+    wireEncountersToggle(headerEncounters);
+  }
+
   renderDungeonQuestFilters(dungeon, quests);
 
   const pct = quests.length ? (completedCount / quests.length * 100) : 0;
@@ -1073,7 +1082,11 @@ function renderDungeonCardCompact(dungeon) {
   // renderDungeonQuestFilters, which targets every .dungeon-quest-filters node.
   const dqfHtml = '<div class="dungeon-quest-filters dungeon-card-dqf" id="dungeonCardQuestFilters"></div>';
 
-  el.innerHTML = mediaHtml + metaHtml + progressHtml + rewardsHtml + guidesHtml + dqfHtml;
+  // Boss Encounters: collapsible panel (collapsed by default) holding the
+  // encounter list, with a total count in the toggle.
+  const encountersHtml = encountersCollapsibleHtml(dungeon);
+
+  el.innerHTML = mediaHtml + metaHtml + progressHtml + rewardsHtml + guidesHtml + dqfHtml + encountersHtml;
 
   const toggle = el.querySelector('.dcg-toggle');
   if (toggle) {
@@ -1083,6 +1096,9 @@ function renderDungeonCardCompact(dungeon) {
       toggle.setAttribute('aria-expanded', String(open));
     });
   }
+
+  wireEncountersToggle(el);
+  renderEncounterList(dungeon);
 
   // Now that the compact panel container exists, render the quest filters into
   // both it and the banner so they share the active selection.
@@ -1256,8 +1272,6 @@ function renderSidebar(dungeon) {
     });
     locList.appendChild(item);
   });
-
-  renderEncounterList(dungeon);
 }
 
 // ═══════════════════════════════════════
@@ -1342,12 +1356,55 @@ function attachEncounterPreview(item, name, npcId) {
 // ═══════════════════════════════════════
 //  ENCOUNTER LIST
 // ═══════════════════════════════════════
+// Total boss count for the card toggle: section headers don't count, a multi-
+// boss event counts each of its bosses, everything else counts as one.
+function countBossEncounters(entries) {
+  if (!entries) return 0;
+  return entries.reduce((n, entry) => {
+    if (entry.section) return n;
+    if (entry.event) return n + (entry.bosses ? entry.bosses.length : 0);
+    return n + 1;
+  }, 0);
+}
+
+// Collapsible "Boss Encounters" panel markup, collapsed by default, shared by
+// the full banner and the docked compact card. The list itself is filled by
+// renderEncounterList, which targets every .encounter-list node so both copies
+// stay in sync.
+function encountersCollapsibleHtml(dungeon) {
+  const entries = (typeof BOSS_ENCOUNTERS !== 'undefined' && BOSS_ENCOUNTERS[dungeon.id]) || [];
+  const count = countBossEncounters(entries);
+  return `
+    <div class="dungeon-card-encounters">
+      <button class="dce-toggle" type="button" aria-expanded="false">
+        <span class="dce-label"><img class="section-icon" src="assets/icons/encounters.png" alt=""> Boss Encounters</span>
+        <span class="dqf-count">${count}</span>
+        <span class="dqf-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="dce-panel"><div class="encounter-list"></div></div>
+    </div>`;
+}
+
+function wireEncountersToggle(root) {
+  const toggle = root.querySelector('.dce-toggle');
+  if (!toggle) return;
+  toggle.addEventListener('click', () => {
+    const box = toggle.closest('.dungeon-card-encounters');
+    const open = box.classList.toggle('dce-open');
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+}
+
 function renderEncounterList(dungeon) {
-  const list = document.getElementById('encounterList');
-  if (!list) return;
+  const lists = document.querySelectorAll('.encounter-list');
+  if (!lists.length) return;
+  const encounters = BOSS_ENCOUNTERS[dungeon.id];
+  lists.forEach(list => populateEncounterList(list, encounters));
+}
+
+function populateEncounterList(list, encounters) {
   list.innerHTML = '';
 
-  const encounters = BOSS_ENCOUNTERS[dungeon.id];
   if (!encounters || encounters.length === 0) {
     list.innerHTML = '<div class="encounter-empty">No data available</div>';
     return;

@@ -1120,6 +1120,7 @@ body.scrolled .search-row .controls-logo {
   align-items: center;
   gap: 6px;
   padding: 6px 10px 6px 14px;
+  min-height: 34px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 3px;
@@ -1218,6 +1219,7 @@ body.scrolled .search-row .controls-logo {
   align-items: center;
   gap: 6px;
   padding: 6px 10px 6px 14px;
+  min-height: 34px;
   background: var(--bg-card);
   border: 1px solid var(--border-gold);
   border-radius: 3px;
@@ -2137,12 +2139,6 @@ img.stat-ico {
   .sidebar-section:has(#locationList).expanded .sidebar-body {
     display: block;
   }
-  /* Encounters absorbs the remaining column height, scrolls when it overflows,
-     and keeps a minimum so it stays visible alongside a tall Locations list. */
-  .sidebar-section:has(#encounterList) {
-    flex: 1 1 auto;
-    min-height: 120px;
-  }
   .sidebar-title {
     flex-shrink: 0;
   }
@@ -2396,8 +2392,60 @@ img.stat-ico {
 .dungeon-card-dqf .dqf-count { margin-left: auto; }
 .dungeon-card-dqf .dqf-chevron { margin-left: 8px; }
 
+/* Boss Encounters: same collapsible chrome as the Guides panel (dcg), collapsed
+   by default. The encounter list scrolls within the panel so a long boss list
+   doesn't stretch the whole card. */
+.dungeon-card-encounters {
+  border: 1px solid rgba(180,150,60,0.35);
+  border-radius: 3px;
+  background: rgba(180,150,60,0.04);
+  overflow: hidden;
+}
+.dce-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 7px 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+}
+.dce-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.85;
+}
+.dce-toggle .dqf-chevron { margin-left: auto; }
+.dungeon-card-encounters.dce-open .dqf-chevron { transform: rotate(180deg); }
+.dce-toggle:hover .dce-label,
+.dce-toggle:hover .dqf-chevron { opacity: 1; }
+.dce-panel {
+  display: none;
+  border-top: 1px solid rgba(180,150,60,0.2);
+  max-height: 320px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-gold) transparent;
+}
+.dungeon-card-encounters.dce-open .dce-panel { display: block; }
+
+/* Boss Encounters in the full banner: same panel, spaced from the quest filters
+   above it and matching their full-width span. */
+.dungeon-header-encounters {
+  margin-top: 12px;
+}
+.dungeon-header-encounters:empty { display: none; }
+
 @media (max-width: 900px) {
-  /* The full dungeon header stays visible on mobile at all times. */
+  /* The full banner stays visible on mobile and carries its own Boss Encounters
+     panel, so the compact card (a duplicate of the banner) stays hidden. */
   .dungeon-card-section { display: none; }
   .sidebar {
     width: 100%;
