@@ -11,6 +11,23 @@ let completed = JSON.parse(localStorage.getItem('wow_completed') || '{}');
 let locationFilter = null;
 let factionFilter = null;
 let classFilter = null;
+
+// Stack of the open shareable popouts, bottom → top, so updateUrl() can encode
+// the topmost and a reload (or shared link) can reopen it. Popouts genuinely
+// stack — a quest's NPC link opens a map over it, and the key guide opens a map /
+// encounter / quest over itself — so closing the top one must restore the URL to
+// the popout still showing underneath. Each entry is one of:
+//   { type: 'quest',     id }                 → quest detail popout
+//   { type: 'encounter', npcId }              → boss/encounter model popout
+//   { type: 'key',       keyId }              → dungeon-key guide popout
+//   { type: 'map',       location, sub, pin } → zone map popout (sub = level
+//                                               label, pin = focused pin label)
+// Empty when no deeplinkable popout is open.
+let popoutStack = [];
+
+// Raw popout params captured from the initial URL (see readUrlParams), consumed
+// once by openPopoutFromUrl after the dungeon has rendered.
+let pendingPopout = null;
 // When set (to a dungeon quest's name), only that main dungeon quest's chain shows.
 let dungeonQuestFilter = null;
 // Collapsed/expanded state of the dungeon-quest panel. null = use per-dungeon default.
@@ -288,7 +305,106 @@ function updateUrl() {
   params.set('dungeon', currentDungeonId);
   if (classFilter) params.set('class', classFilter.toLowerCase());
   if (factionFilter) params.set('faction', factionFilter.toLowerCase());
+  const top = popoutStack[popoutStack.length - 1];
+  if (top) {
+    if (top.type === 'quest') {
+      params.set('quest', top.id);
+    } else if (top.type === 'encounter') {
+      params.set('encounter', top.npcId);
+    } else if (top.type === 'key') {
+      params.set('key', top.keyId);
+    } else if (top.type === 'map') {
+      params.set('map', top.location);
+      if (top.sub) params.set('floor', top.sub);
+      if (top.pin) params.set('pin', top.pin);
+    }
+  }
   history.replaceState(null, '', '?' + params.toString());
+}
+
+// Push a popout onto the deeplink stack and sync the URL. Each popout type is a
+// single DOM element, so an already-present type is moved to the top rather than
+// duplicated (re-opening it brings it to the front of the stack too).
+function pushPopout(popout) {
+  popoutStack = popoutStack.filter(p => p.type !== popout.type);
+  popoutStack.push(popout);
+  updateUrl();
+}
+
+// Remove the closed popout of `type` from the stack and sync the URL to whatever
+// popout is now on top — so closing a map stacked over a quest restores the
+// quest's deeplink instead of clearing it. No-op (and no URL churn) if the type
+// wasn't on the stack.
+function popPopout(type) {
+  const next = popoutStack.filter(p => p.type !== type);
+  if (next.length === popoutStack.length) return;
+  popoutStack = next;
+  updateUrl();
+}
+
+// Record (or clear) the map's focused pin in the deeplink. Only system pins
+// (curated MAP_PINS / scraped QUEST_PINS, identified by their label) are
+// shareable; user pins live in localStorage, so pass a falsy label to drop the
+// pin from the URL when one is selected or the selection is cleared. No-ops
+// unless a map popout is currently the topmost (active) deeplink target.
+function setMapPinDeeplink(label) {
+  const top = popoutStack[popoutStack.length - 1];
+  if (!top || top.type !== 'map') return;
+  if (top.pin === (label || null)) return;
+  top.pin = label || null;
+  updateUrl();
+}
+
+// npcId → encounter display name, scanning BOSS_ENCOUNTERS (including the nested
+// bosses of multi-boss "events"). Lets an ?encounter=<npcId> deeplink reopen the
+// model popout, which needs the name for its title.
+function encounterNameById(npcId) {
+  if (typeof BOSS_ENCOUNTERS === 'undefined') return null;
+  for (const list of Object.values(BOSS_ENCOUNTERS)) {
+    for (const entry of list) {
+      if (entry.npcId === npcId) return entry.name;
+      if (entry.bosses) {
+        const boss = entry.bosses.find(b => b.npcId === npcId);
+        if (boss) return boss.name;
+      }
+    }
+  }
+  return null;
+}
+
+// After the dungeon has rendered, reopen the popout named by the URL (if any) so
+// a shared link lands directly on the quest / map / encounter it points at.
+// Quest takes precedence, then encounter, then map — only one popout is opened.
+function openPopoutFromUrl() {
+  const p = pendingPopout;
+  pendingPopout = null;
+  if (!p) return;
+
+  if (p.quest) {
+    const entry = keyQuestIndex()[Number(p.quest)];
+    if (entry) { openQuestModal(entry.quest, entry.dungeon, null); return; }
+  }
+
+  if (p.encounter) {
+    const npcId = Number(p.encounter);
+    const name = encounterNameById(npcId);
+    if (name) { openEncounterModal(name, npcId); return; }
+  }
+
+  if (p.key && typeof DUNGEON_KEYS !== 'undefined' && DUNGEON_KEYS[p.key]) {
+    openKeyModal(p.key); return;
+  }
+
+  if (p.map && ZONE_IDS[p.map]) {
+    // A pin's own floor wins over the floor param (the pin determines which level
+    // it lives on); openMapModal focuses it once the map image loads.
+    if (p.pin) {
+      const found = questPinFor(p.map, p.pin);
+      if (found) { openMapModal(p.map, { label: p.pin, levelIndex: found.levelIndex }); return; }
+    }
+    const levelIndex = p.floor ? mapLevelIndexByLabel(p.map, p.floor) : -1;
+    openMapModal(p.map, levelIndex > 0 ? { levelIndex } : null);
+  }
 }
 
 function readUrlParams() {
@@ -306,6 +422,17 @@ function readUrlParams() {
     const normalized = faction.charAt(0).toUpperCase() + faction.slice(1).toLowerCase();
     if (normalized === 'Alliance' || normalized === 'Horde') factionFilter = normalized;
   }
+  // Stash the popout params now: selectDungeon() runs updateUrl() (with no popout
+  // active yet) before openPopoutFromUrl() gets to act, which would otherwise
+  // strip these from the address bar before we could read them.
+  pendingPopout = {
+    quest: params.get('quest'),
+    encounter: params.get('encounter'),
+    key: params.get('key'),
+    map: params.get('map'),
+    floor: params.get('floor'),
+    pin: params.get('pin'),
+  };
 }
 
 function syncClassOptionsToFaction() {
@@ -443,6 +570,7 @@ function init() {
   initControlsHeightObserver();
   initLogoCinematic();
   selectDungeon(currentDungeonId);
+  openPopoutFromUrl();
 }
 
 // ═══════════════════════════════════════
@@ -3080,6 +3208,9 @@ function openMapModal(locationName, focus = null) {
         closePinEditDialog();
         loadMapUserPins();
         loadMapImage(level.src);
+        // Reflect the viewed floor in the deeplink (label, not index, stays stable
+        // if floors are reordered).
+        pushPopout({ type: 'map', location: locationName, sub: level.label });
       });
       levelNav.appendChild(btn);
     });
@@ -3092,6 +3223,12 @@ function openMapModal(locationName, focus = null) {
   loadMapUserPins();
   const firstSrc = levels ? (levels[initialLevel] || levels[0]).src : `assets/maps/${zoneId}.jpg`;
   loadMapImage(firstSrc);
+
+  // Encode the floor label only when it isn't the default first level, keeping
+  // single-map and ground-floor links clean. A focus carries the pin to centre
+  // on, so it's deeplinked too.
+  const sub = (levels && initialLevel > 0) ? (levels[initialLevel] || {}).label : null;
+  pushPopout({ type: 'map', location: locationName, sub, pin: focus ? focus.label : null });
 }
 
 function clearActivePinLabels() {
@@ -3158,6 +3295,7 @@ function closeMapModal() {
   document.getElementById('mapModal').classList.remove('open');
   document.getElementById('mapModal').setAttribute('aria-hidden', 'true');
   document.getElementById('mapModalImg').src = '';
+  popPopout('map');
 }
 
 function initMapModal() {
@@ -3238,6 +3376,7 @@ function initMapModal() {
     closePinEditDialog();
     if (e.target.closest('.map-pin--system') || e.target.closest('.map-pin--boss') || e.target.closest('.map-pin--quest')) return;
     clearActivePinLabels();
+    setMapPinDeeplink(null); // deselecting on the map clears the pin from the URL
     const rect = vp.getBoundingClientRect();
     const coords = getMapCoords(e.clientX - rect.left, e.clientY - rect.top);
     if (!coords) return;
@@ -3679,6 +3818,9 @@ function navigateToPin(pin, type) {
     listItem.classList.add('pin-list-item--active');
   }
 
+  // Keep the deeplink in sync with the list selection (system pins only).
+  setMapPinDeeplink(type !== 'user' ? pin.label : null);
+
   // Open edit dialog for user pins
   if (type === 'user') openPinEditDialog(pin.id);
 }
@@ -3810,6 +3952,9 @@ function renderSinglePin(container, pin, type) {
       el.classList.add('label-active');
       revealPinInList(pin, type); // highlight the matching row in the side list
     }
+    // Mirror the selection in the deeplink (system pins only; toggling off or
+    // selecting a user pin clears it).
+    setMapPinDeeplink(!wasActive && type !== 'user' ? pin.label : null);
     if (type === 'user') openPinEditDialog(pin.id);
   });
 
@@ -4023,6 +4168,7 @@ function openEncounterModal(name, npcId) {
 
   modal.setAttribute('aria-hidden', 'false');
   modal.classList.add('open');
+  pushPopout({ type: 'encounter', npcId });
 }
 
 // Spell school → accent colour, matching the in-game school tints.
@@ -4131,6 +4277,7 @@ function closeEncounterModal() {
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden', 'true');
   document.getElementById('encounterModalImg').src = '';
+  popPopout('encounter');
 }
 
 function initEncounterModal() {
@@ -4453,6 +4600,7 @@ function openQuestModal(rawQuest, dungeon, originCard) {
   const modal = document.getElementById('questModal');
   modal.setAttribute('aria-hidden', 'false');
   modal.classList.add('open');
+  pushPopout({ type: 'quest', id: quest.id });
 }
 
 // Render the popout for the sequence entry at `index` (title, badges, body, and
@@ -4498,12 +4646,15 @@ function navigateQuestModal(delta) {
   const i = questModalState.index + delta;
   if (i < 0 || i >= questModalState.seq.length) return;
   renderQuestModalAt(i);
+  // Keep the deeplink pointed at the quest now shown as the user steps the chain.
+  pushPopout({ type: 'quest', id: questModalState.seq[i].id });
 }
 
 function closeQuestModal() {
   const modal = document.getElementById('questModal');
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden', 'true');
+  popPopout('quest');
 }
 
 function initQuestModal() {
@@ -4750,12 +4901,14 @@ function openKeyModal(dungeonId) {
   document.getElementById('keyModalBody').scrollTop = 0;
 
   if (typeof $WowheadPower !== 'undefined') $WowheadPower.refreshLinks();
+  pushPopout({ type: 'key', keyId: dungeonId });
 }
 
 function closeKeyModal() {
   const modal = document.getElementById('keyModal');
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden', 'true');
+  popPopout('key');
 }
 
 function initKeyModal() {
