@@ -589,7 +589,9 @@ const MAP_PINS = {
   // level 1: Blackrock Mountain interior, zone 1265). BRD/LBRS/UBRS
   // entrances sit on the Blackrock Mountain floor.
   'Burning Steppes': [
-    [], // level 0 — Burning Steppes (no dungeon entrances)
+    [   // level 0 — Burning Steppes (entrance into Blackrock Mountain)
+      { x: 29, y: 38, label: 'BRD \\ LBRS \\ UBRS', type: 'dungeon' },
+    ],
     [   // level 1 — Blackrock Mountain (1265)
       { x: 24, y: 13, label: 'Blackrock Depths',      type: 'dungeon' },
       { x: 82, y: 44, label: 'Lower Blackrock Spire', type: 'dungeon' },
