@@ -3868,8 +3868,17 @@ function navigateToQuestFromMap(dungeonId, questName, questId) {
     selectDungeon(dungeonId);
   }
 
-  // Wait a frame so the freshly rendered cards have layout before scrolling.
-  requestAnimationFrame(() => focusQuestCard(questName, questId));
+  // Wait a frame so the freshly rendered cards have layout before scrolling,
+  // then focus the matching card and open its detail popout.
+  requestAnimationFrame(() => {
+    const card = focusQuestCard(questName, questId);
+    if (!card) return;
+    const dungeon = DUNGEONS.find(d => d.id === dungeonId);
+    if (!dungeon) return;
+    const id = Number(card.dataset.questId);
+    const quest = dungeonQuestIndex(dungeon).get(id);
+    if (quest) openQuestModal(quest, dungeon, card);
+  });
 }
 
 // Scroll a quest card into view and pulse it. Prefers an exact quest-id match
@@ -3880,13 +3889,14 @@ function focusQuestCard(questName, questId) {
     ? cards.find(c => c.dataset.questId === String(questId))
     : null;
   if (!card) card = cards.find(c => c.dataset.questName === questName);
-  if (!card) return;
+  if (!card) return null;
   card.scrollIntoView({ behavior: 'smooth', block: 'center' });
   card.classList.remove('quest-card-focus');
   void card.offsetWidth; // reflow to restart the animation
   card.classList.add('quest-card-focus');
   card.addEventListener('animationend',
     () => card.classList.remove('quest-card-focus'), { once: true });
+  return card;
 }
 
 // Lazy-load a pin's NPC model thumbnail (assets/npc-models/{npcId}.jpg) the
