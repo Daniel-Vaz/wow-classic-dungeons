@@ -2871,13 +2871,18 @@ function buildQuestCard(quest, dungeon, chainPos, chainTotal, isDungeonCard = fa
     });
   }
 
-  // Toggle expand in list view
+  // List view: toggle expand. Grid view: open the quest detail popout (same as
+  // clicking the quest title).
   card.addEventListener('click', e => {
     if (e.target.classList.contains('complete-btn')) return;
     if (e.target.classList.contains('quest-checkbox')) return;
     if (e.target.classList.contains('quest-name-link')) return;
     if (e.target.tagName === 'A') return;
-    if (currentView === 'list') card.classList.toggle('expanded');
+    if (currentView === 'list') {
+      card.classList.toggle('expanded');
+    } else {
+      openQuestModal(quest, dungeon, card);
+    }
   });
 
   function toggleQuestComplete() {
