@@ -2990,6 +2990,13 @@ function initSidebarCollapse() {
       title.closest('.sidebar-section').classList.toggle('expanded');
     });
   });
+  // Quest Locations starts expanded on wide screens (still toggleable); on mobile
+  // it stays collapsed by default to save vertical space.
+  if (window.matchMedia('(min-width: 901px)').matches) {
+    const locList = document.getElementById('locationList');
+    const locSection = locList && locList.closest('.sidebar-section');
+    if (locSection) locSection.classList.add('expanded');
+  }
 }
 
 function dungeonHasQuestsForFaction(dungeon) {
