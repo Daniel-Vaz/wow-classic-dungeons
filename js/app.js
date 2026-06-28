@@ -1165,7 +1165,7 @@ function renderDungeonQuestFiltersInto(el, dungeon, quests) {
 
   el.innerHTML = `
     <button class="dqf-toggle" type="button" aria-expanded="${open}">
-      <span class="dqf-toggle-label"><img class="section-icon" src="assets/icons/key.png" alt=""> Main Dungeon Quests</span>
+      <span class="dqf-toggle-label"><img class="section-icon" src="assets/icons/quest.png" alt=""> Main Dungeon Quests</span>
       <span class="dqf-count">${dungeonQuests.length}</span>
       <span class="dqf-chevron" aria-hidden="true">▾</span>
     </button>
