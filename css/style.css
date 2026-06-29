@@ -3333,7 +3333,10 @@ img.stat-ico {
   display: none;
   position: fixed;
   inset: 0;
-  z-index: 1000;
+  /* Above the quest/map popouts (z 1000): a boss/NPC reference inside the quest
+     popout opens its encounter model stacked on top, and the encounter modal is
+     always the topmost popout (it has no local sub-popouts of its own). */
+  z-index: 1100;
   align-items: center;
   justify-content: center;
 }
@@ -5020,6 +5023,24 @@ img.encounter-skull-icon {
 .qm-objective-text a.q4,  .qm-description-text a.q4 { color: var(--purple-epic);    border-bottom-color: rgba(163, 53, 238, 0.4); }
 .qm-objective-text a.q5,  .qm-description-text a.q5 { color: var(--orange-legendary); border-bottom-color: rgba(255, 128, 0, 0.4); }
 
+/* In-prose references resolved to a local popout (NPC model, map, or quest card)
+   render as spans rather than Wowhead anchors — match the anchor look + a pointer
+   cursor to signal they're clickable. */
+.qm-objective-text .qm-text-link,
+.qm-description-text .qm-text-link {
+  color: var(--gold-light);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--gold-dim);
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.qm-objective-text .qm-text-link:hover,
+.qm-description-text .qm-text-link:hover {
+  color: var(--text-bright);
+  border-bottom-color: var(--gold);
+}
+
 /* ── Requirements (kill/collect objectives) ── */
 .qm-req-list {
   display: flex;
@@ -5043,6 +5064,8 @@ img.encounter-skull-icon {
   color: var(--text-bright);
   border-bottom-color: var(--gold);
 }
+/* Requirement/source NPCs that open a local encounter popout are spans, not links. */
+.qm-local-npc { cursor: pointer; }
 .qm-req-link.q1 { color: var(--white-common); }
 .qm-req-link.q2 { color: var(--green-uncommon); border-bottom-color: rgba(30, 255, 0, 0.35); }
 .qm-req-link.q3 { color: var(--blue-rare);      border-bottom-color: rgba(74, 144, 217, 0.4); }

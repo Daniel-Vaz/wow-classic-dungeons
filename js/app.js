@@ -145,6 +145,35 @@ function questPinFor(location, label) {
   return null;
 }
 
+// Wowhead npc id → its quest-giver map pin { location, label } so an NPC
+// reference (in quest prose, a requirement, or an item source) can open the map
+// focused on that pin instead of leaving for Wowhead. Built from QUEST_PINS /
+// MAP_PINS; first pin wins when an NPC appears in several zones. Memoized.
+let _npcPinIndex = null;
+function npcPinIndex() {
+  if (_npcPinIndex) return _npcPinIndex;
+  const idx = {};
+  const sources = [typeof QUEST_PINS !== 'undefined' ? QUEST_PINS : null, MAP_PINS];
+  for (const source of sources) {
+    if (!source) continue;
+    for (const [key, entry] of Object.entries(source)) {
+      // Pins are keyed by zone name, but some carry a numeric zone-id alias too;
+      // normalize to a name so the opened map has a title (and we skip duplicates).
+      const location = ZONE_IDS[key] ? key : zoneNameById(key);
+      if (!location) continue;
+      const levels = Array.isArray(entry[0]) ? entry : [entry];
+      levels.forEach(pins => (pins || []).forEach(p => {
+        const m = p.url && p.url.match(/npc=(\d+)/);
+        if (!m) return;
+        const id = Number(m[1]);
+        if (!(id in idx)) idx[id] = { location, label: p.label };
+      }));
+    }
+  }
+  _npcPinIndex = idx;
+  return idx;
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 //  QUEST ↔ NPC CROSS-REFERENCE
 //  Map pins are scraped quest-giver locations keyed only by a Wowhead URL, so on
@@ -3702,7 +3731,10 @@ function initMapModal() {
     if (isRecentTouch()) return;
     const link = e.target.closest('[data-npc-id]');
     if (!link || link === npcPreviewAnchor) return;
-    if (link.closest('.qm-givers')) return;
+    // Givers and requirement/source rows already show an inline model thumbnail,
+    // so suppress the redundant floating preview there (text NPC references, which
+    // have no inline image, still get the hover preview).
+    if (link.closest('.qm-givers, .qm-requirements')) return;
     npcPreviewAnchor = link;
     const name = link.dataset.pinLabel || link.textContent.trim();
     showNpcModelPreview(link, name, link.dataset.npcId);
@@ -3726,6 +3758,24 @@ function initMapModal() {
     const label = link.dataset.pinLabel;
     const found = questPinFor(loc, label);
     openMapModal(loc, { label, levelIndex: found ? found.levelIndex : 0 });
+  });
+
+  // Quest-popout NPC/boss reference → open its local model/encounter popout
+  // (stacked over the quest popout). Covers requirement kill targets, item-source
+  // NPCs, and NPCs named in the quest prose that we surface a local encounter for.
+  document.addEventListener('click', e => {
+    const link = e.target.closest('.qm-local-npc');
+    if (!link) return;
+    hideNpcModelPreview();
+    openEncounterModal(link.dataset.npcName, Number(link.dataset.npcId));
+  });
+
+  // Quest-popout quest reference (in the prose) → open that quest's card popout.
+  document.addEventListener('click', e => {
+    const link = e.target.closest('.qm-text-quest');
+    if (!link) return;
+    const entry = keyQuestIndex()[link.dataset.questId];
+    if (entry) openQuestModal(entry.quest, entry.dungeon, null);
   });
 
   // Instance map button in dungeon header
@@ -4636,7 +4686,8 @@ const COMMON_REQ_MATERIALS = new Set([
   "arthas' tears",
   'runecloth',
   'azerothian diamond',
-  'pristine black diamond',
+  'pristine black diamond',,
+  'elixir of shadow power',
 ].map(n => n.toLowerCase()));
 
 // Where a required *item* comes from — the NPCs that drop or sell it, the
@@ -4675,8 +4726,14 @@ function questModalReqSourcesHtml(req) {
       const pct = (typeof src.dropChance === 'number')
         ? `<span class="qm-req-source-pct">${src.dropChance}%</span>`
         : '';
+      // A source NPC we have locally opens its model popout (a boss) or its map
+      // pin instead of leaving for Wowhead.
+      const srcLocal = src.type === 'npc'
+        ? localNpcRefSpan(src.id, escapeHtml(src.name), 'qm-req-source-name') : null;
+      const nameHtml = srcLocal
+        || `<a href="${src.url}" target="_blank" rel="noopener noreferrer" class="qm-req-source-name">${escapeHtml(src.name)}</a>`;
       return `<div class="qm-req-source">
-          ${thumb}<a href="${src.url}" target="_blank" rel="noopener noreferrer" class="qm-req-source-name">${escapeHtml(src.name)}</a>${pct}
+          ${thumb}${nameHtml}${pct}
         </div>`;
     }).join('');
     return `<div class="qm-req-source-group">
@@ -4788,19 +4845,82 @@ function normalizeQuestText(html) {
   return html ? html.replace(/(<br>){3,}/g, '<br><br>') : html;
 }
 
+// Wowhead zone id → our location name (first matching ZONE_IDS key) when we have
+// a local map for that zone, so an in-text zone link can open the map popout
+// instead of leaving for Wowhead. Memoized.
+let _zoneNameById = null;
+function zoneNameById(zoneId) {
+  if (!_zoneNameById) {
+    _zoneNameById = {};
+    for (const [name, id] of Object.entries(ZONE_IDS)) {
+      if (!(id in _zoneNameById)) _zoneNameById[id] = name;
+    }
+  }
+  return _zoneNameById[Number(zoneId)] || null;
+}
+
+// Resolve an NPC reference in the quest popout to a local popout trigger, or null
+// to fall back to its Wowhead link. Preference: a known encounter opens its model
+// popout (stats + loot); otherwise a quest-giver/mob we have a map pin for opens
+// that pin on the map. `safeName` must already be HTML-escaped; `baseClass` is
+// prepended so each call site keeps its own styling (prose vs requirement vs
+// source).
+function localNpcRefSpan(npcId, safeName, baseClass = '') {
+  const id = Number(npcId);
+  if (!id) return null;
+  const cls = baseClass ? baseClass + ' ' : '';
+  if (encounterNameById(id)) {
+    return `<span class="${cls}qm-local-npc" data-npc-id="${id}" data-npc-name="${safeName}" title="View ${safeName}">${safeName}</span>`;
+  }
+  const pin = npcPinIndex()[id];
+  if (pin) {
+    return `<span class="${cls}npc-link map-npc-link" data-location="${escapeHtml(pin.location)}" data-pin-label="${escapeHtml(pin.label)}" data-npc-id="${id}" title="Show ${safeName} on map">${safeName}</span>`;
+  }
+  return null;
+}
+
+// Rewrite the inline Wowhead anchors in scraped quest prose (objective / quest
+// text) so they open our local popouts when we have that entity locally: an NPC
+// that is a known encounter opens its model popout, an NPC with a known map pin
+// opens that pin on the map, a zone we have a map for opens that map, and a quest
+// we surface as a card opens its quest popout (all with a hover preview where
+// applicable). Items — and any entity we lack locally — keep their Wowhead
+// tooltip link. Mirrors linkifyKeyText, but rewrites already-rendered anchors
+// rather than {token} placeholders.
+function linkifyQuestText(html) {
+  if (!html) return html;
+  return html.replace(
+    /<a\s+href="https?:\/\/(?:www\.)?wowhead\.com\/classic\/(npc|zone|quest|item)=(\d+)[^"]*"[^>]*>([\s\S]*?)<\/a>/gi,
+    (m, type, id, label) => {
+      if (type === 'npc') {
+        const local = localNpcRefSpan(id, label, 'qm-text-link');
+        if (local) return local;
+      }
+      if (type === 'zone') {
+        const loc = zoneNameById(id);
+        if (loc) return `<span class="qm-text-link location-link" data-location="${escapeHtml(loc)}" title="View map">${label}</span>`;
+      }
+      if (type === 'quest' && keyQuestIndex()[id]) {
+        return `<span class="qm-text-link qm-text-quest" data-quest-id="${id}" title="View quest">${label}</span>`;
+      }
+      return m; // item, or no local data → keep the Wowhead link
+    }
+  );
+}
+
 function buildQuestModalBody(quest, dungeon) {
   // ── Objective + quest flavor text (links already point at wowhead) ──
   const objectiveHtml = quest.objective
     ? `<div class="quest-modal-section qm-objective">
          <div class="quest-modal-section-title"><img class="qm-ico" src="assets/icons/objectives.png" alt=""> Objective</div>
-         <div class="qm-objective-text">${normalizeQuestText(quest.objective)}</div>
+         <div class="qm-objective-text">${linkifyQuestText(normalizeQuestText(quest.objective))}</div>
        </div>`
     : '';
 
   const descriptionHtml = quest.description
     ? `<div class="quest-modal-section qm-description">
          <div class="quest-modal-section-title"><img class="qm-ico" src="assets/icons/quest_info.png" alt=""> Quest Text</div>
-         <div class="qm-description-text">${normalizeQuestText(quest.description)}</div>
+         <div class="qm-description-text">${linkifyQuestText(normalizeQuestText(quest.description))}</div>
        </div>`
     : '';
 
@@ -4816,8 +4936,14 @@ function buildQuestModalBody(quest, dungeon) {
              const npcThumb = (req.type === 'npc' || req.type === 'object')
                ? `<img class="qm-req-npc-thumb" src="assets/npc-models/${req.id}.jpg" alt="" onerror="this.hidden=true">`
                : '';
+             // A kill target we have locally opens its model popout (a boss) or its
+             // map pin instead of leaving for Wowhead.
+             const reqLocal = req.type === 'npc'
+               ? localNpcRefSpan(req.id, escapeHtml(req.name), `qm-req-link${qClass}`) : null;
+             const reqLink = reqLocal
+               || `<a href="${req.url}" target="_blank" rel="noopener noreferrer" class="qm-req-link${qClass}" data-wh-icon-size="medium">${escapeHtml(req.name)}</a>`;
              return `<div class="qm-req-entry">
-               ${npcThumb}<a href="${req.url}" target="_blank" rel="noopener noreferrer" class="qm-req-link${qClass}" data-wh-icon-size="medium">${escapeHtml(req.name)}</a>${qty}
+               ${npcThumb}${reqLink}${qty}
              </div>${questModalReqSourcesHtml(req)}`;
            }).join('')}
          </div>
