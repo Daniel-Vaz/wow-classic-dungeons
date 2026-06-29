@@ -3501,7 +3501,16 @@ const DUNGEONS = [
             "name": "Jordan's Refined Ore Shipment",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=6993/jordans-refined-ore-shipment",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "quest",
+                "id": 1655,
+                "name": "Bailor's Ore Shipment",
+                "url": "https://www.wowhead.com/classic/quest=1655/bailor-s-ore-shipment",
+                "relation": "Rewarded by quest"
+              }
+            ]
           },
           {
             "type": "item",
@@ -3526,7 +3535,16 @@ const DUNGEONS = [
             "name": "Purified Kor Gem",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=7083/purified-kor-gem",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "quest",
+                "id": 1442,
+                "name": "Seeking the Kor Gem",
+                "url": "https://www.wowhead.com/classic/quest=1442/seeking-the-kor-gem",
+                "relation": "Rewarded by quest"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -4229,7 +4247,16 @@ const DUNGEONS = [
             "name": "Jordan's Refined Ore Shipment",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=6993/jordans-refined-ore-shipment",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "quest",
+                "id": 1655,
+                "name": "Bailor's Ore Shipment",
+                "url": "https://www.wowhead.com/classic/quest=1655/bailor-s-ore-shipment",
+                "relation": "Rewarded by quest"
+              }
+            ]
           },
           {
             "type": "item",
@@ -4254,7 +4281,16 @@ const DUNGEONS = [
             "name": "Purified Kor Gem",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=7083/purified-kor-gem",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "quest",
+                "id": 1442,
+                "name": "Seeking the Kor Gem",
+                "url": "https://www.wowhead.com/classic/quest=1442/seeking-the-kor-gem",
+                "relation": "Rewarded by quest"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -14299,7 +14335,16 @@ const DUNGEONS = [
                 "name": "Talvash's Phial of Scrying",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=7667/talvashs-phial-of-scrying",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "quest",
+                    "id": 3375,
+                    "name": "Replacement Phial",
+                    "url": "https://www.wowhead.com/classic/quest=3375/replacement-phial",
+                    "relation": "Rewarded by quest"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -14826,7 +14871,16 @@ const DUNGEONS = [
                 "name": "Vessel of Dragon's Blood",
                 "quantity": 3,
                 "url": "https://www.wowhead.com/classic/item=7867/vessel-of-dragons-blood",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "spell",
+                    "id": 21029,
+                    "name": "Thaumaturgy Channel",
+                    "url": "https://www.wowhead.com/classic/spell=21029/thaumaturgy-channel",
+                    "relation": "Created by"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -27333,7 +27387,7 @@ const DUNGEONS = [
     "loadingScreen": "assets/loading-screens/800386.jpg",
     "faction": "Both",
     "levels": "52–60",
-    "location": "Blackrock Mountain",
+    "location": "Burning Steppes",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-blackrock-depths-dungeon-quests",
     "schema": 2,
     "quests": [
@@ -39012,7 +39066,7 @@ const DUNGEONS = [
     "loadingScreen": "assets/loading-screens/800389.jpg",
     "faction": "Both",
     "levels": "55–60",
-    "location": "Blackrock Mountain",
+    "location": "Burning Steppes",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-lower-blackrock-spire-dungeon-quests",
     "schema": 2,
     "quests": [
@@ -42882,6 +42936,20 @@ const DUNGEONS = [
                 "name": "Mataus the Wrathcaster",
                 "url": "https://www.wowhead.com/classic/npc=16133/mataus-the-wrathcaster",
                 "relation": "Dropped by"
+              },
+              {
+                "type": "quest",
+                "id": 7666,
+                "name": "Again Into the Great Ossuary",
+                "url": "https://www.wowhead.com/classic/quest=7666/again-into-the-great-ossuary",
+                "relation": "Rewarded by quest"
+              },
+              {
+                "type": "quest",
+                "id": 7669,
+                "name": "Again Into the Great Ossuary",
+                "url": "https://www.wowhead.com/classic/quest=7669/again-into-the-great-ossuary",
+                "relation": "Rewarded by quest"
               }
             ]
           }
@@ -43714,6 +43782,13 @@ const DUNGEONS = [
                     "name": "Manna-Enriched Horse Feed",
                     "url": "https://www.wowhead.com/classic/spell=23304/manna-enriched-horse-feed",
                     "relation": "Created by"
+                  },
+                  {
+                    "type": "quest",
+                    "id": 7645,
+                    "name": "Manna-Enriched Horse Feed",
+                    "url": "https://www.wowhead.com/classic/quest=7645/manna-enriched-horse-feed",
+                    "relation": "Rewarded by quest"
                   }
                 ]
               }
@@ -50854,7 +50929,7 @@ const DUNGEONS = [
     "loadingScreen": "assets/loading-screens/800389.jpg",
     "faction": "Both",
     "levels": "55–60",
-    "location": "Blackrock Mountain",
+    "location": "Burning Steppes",
     "guideUrl": "https://www.wowhead.com/classic/guide/classic-wow-upper-blackrock-spire-dungeon-quests",
     "schema": 2,
     "quests": [

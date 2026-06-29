@@ -1697,104 +1697,106 @@ const QUEST_PINS = {
     }
   ],
   "Burning Steppes": [
-    {
-      "x": 95.09,
-      "y": 31.56,
-      "label": "Cyrus Therepentous",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous"
-    },
-    {
-      "x": 12.44,
-      "y": 31.63,
-      "label": "Gorzeeki Wildeyes",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes"
-    },
-    {
-      "x": 40.2,
-      "y": 34.24,
-      "label": "Grark Lorkrub",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=9520/grark-lorkrub"
-    },
-    {
-      "x": 85.82,
-      "y": 68.95,
-      "label": "Helendis Riverhorn",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn"
-    },
-    {
-      "x": 85.41,
-      "y": 70.06,
-      "label": "Jalinda Sprig",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig"
-    },
-    {
-      "x": 65.89,
-      "y": 21.92,
-      "label": "Kibler",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=10260/kibler"
-    },
-    {
-      "x": 84.74,
-      "y": 69.02,
-      "label": "Marshal Maxwell",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell"
-    },
-    {
-      "x": 65.15,
-      "y": 23.91,
-      "label": "Maxwort Uberglint",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=9536/maxwort-uberglint"
-    },
-    {
-      "x": 84.84,
-      "y": 69.12,
-      "label": "Mayara Brightwing",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=9565/mayara-brightwing"
-    },
-    {
-      "x": 12.69,
-      "y": 31.64,
-      "label": "Mor'zul Bloodbringer",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer"
-    },
-    {
-      "x": 84.56,
-      "y": 68.68,
-      "label": "Oralius",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=9177/oralius"
-    },
-    {
-      "x": 65.01,
-      "y": 23.76,
-      "label": "Ragged John",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=9563/ragged-john"
-    },
-    {
-      "x": 65.24,
-      "y": 24.0,
-      "label": "Tinkee Steamboil",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil"
-    },
-    {
-      "x": 66.06,
-      "y": 21.95,
-      "label": "Yuka Screwspigot",
-      "type": "quest",
-      "url": "https://www.wowhead.com/classic/npc=9544/yuka-screwspigot"
-    }
+    [
+      {
+        "x": 95.09,
+        "y": 31.56,
+        "label": "Cyrus Therepentous",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous"
+      },
+      {
+        "x": 12.44,
+        "y": 31.63,
+        "label": "Gorzeeki Wildeyes",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes"
+      },
+      {
+        "x": 40.2,
+        "y": 34.24,
+        "label": "Grark Lorkrub",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=9520/grark-lorkrub"
+      },
+      {
+        "x": 85.82,
+        "y": 68.95,
+        "label": "Helendis Riverhorn",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=9562/helendis-riverhorn"
+      },
+      {
+        "x": 85.41,
+        "y": 70.06,
+        "label": "Jalinda Sprig",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=9561/jalinda-sprig"
+      },
+      {
+        "x": 65.89,
+        "y": 21.92,
+        "label": "Kibler",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=10260/kibler"
+      },
+      {
+        "x": 84.74,
+        "y": 69.02,
+        "label": "Marshal Maxwell",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=9560/marshal-maxwell"
+      },
+      {
+        "x": 65.15,
+        "y": 23.91,
+        "label": "Maxwort Uberglint",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=9536/maxwort-uberglint"
+      },
+      {
+        "x": 84.84,
+        "y": 69.12,
+        "label": "Mayara Brightwing",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=9565/mayara-brightwing"
+      },
+      {
+        "x": 12.69,
+        "y": 31.64,
+        "label": "Mor'zul Bloodbringer",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer"
+      },
+      {
+        "x": 84.56,
+        "y": 68.68,
+        "label": "Oralius",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=9177/oralius"
+      },
+      {
+        "x": 65.01,
+        "y": 23.76,
+        "label": "Ragged John",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=9563/ragged-john"
+      },
+      {
+        "x": 65.24,
+        "y": 24.0,
+        "label": "Tinkee Steamboil",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=10267/tinkee-steamboil"
+      },
+      {
+        "x": 66.06,
+        "y": 21.95,
+        "label": "Yuka Screwspigot",
+        "type": "quest",
+        "url": "https://www.wowhead.com/classic/npc=9544/yuka-screwspigot"
+      }
+    ]
   ],
   "Winterspring": [
     {

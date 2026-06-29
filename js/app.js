@@ -4616,13 +4616,38 @@ function initEncounterModal() {
 
 // An item-reward link with a wowhead tooltip icon (data-wh-icon-size lets the
 // wowhead power script render the item icon + hover tooltip inside the popout).
+// Common crafting materials that virtually every player already knows how to
+// obtain (tradeskill staples sold by vendors, gathered, or disenchanted). When
+// one of these is a quest requirement we suppress the "where to get it" sources
+// and just show the item link itself — listing every drop/vendor would be noise.
+// Matched case-insensitively against the requirement's item name.
+const COMMON_REQ_MATERIALS = new Set([
+  'silver bar',
+  'gromsblood',
+  'bolt of runecloth',
+  'rugged leather',
+  'rune thread',
+  'thorium widget',
+  'frost oil',
+  'black dragonscale',
+  'dark iron ore',
+  'large brilliant shard',
+  'arcanite bar',
+  "arthas' tears",
+  'runecloth',
+  'azerothian diamond',
+  'pristine black diamond',
+].map(n => n.toLowerCase()));
+
 // Where a required *item* comes from — the NPCs that drop or sell it, the
 // objects/items that contain it, or the spell that crafts it, scraped onto each
 // item requirement as `sources`. Grouped by relation ("Dropped by", "Sold by",
 // "Created by", "Contained in", …) and shown beneath the item so the player
 // knows where to get it. Returns '' when the requirement has no sources (e.g.
-// kill/interact objectives, or items whose source we couldn't resolve).
+// kill/interact objectives, or items whose source we couldn't resolve), or when
+// it's a common crafting material every player already knows how to source.
 function questModalReqSourcesHtml(req) {
+  if (req && req.name && COMMON_REQ_MATERIALS.has(req.name.trim().toLowerCase())) return '';
   const sources = req && req.sources;
   if (!Array.isArray(sources) || !sources.length) return '';
 

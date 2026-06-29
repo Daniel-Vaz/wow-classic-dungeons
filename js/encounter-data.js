@@ -3,6 +3,72 @@
 // Keyed by npcId (matches BOSS_ENCOUNTERS in constants.js).
 
 const ENCOUNTER_INFO = {
+  "10813": {
+    "level": "61 - 62",
+    "classification": "Elite",
+    "type": "Demon",
+    "health": 30957,
+    "mana": null,
+    "abilities": [
+      {
+        "id": 20603,
+        "name": "Shadow Shock",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=20603/shadow-shock"
+      },
+      {
+        "id": 15398,
+        "name": "Psychic Scream",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=15398/psychic-scream"
+      },
+      {
+        "id": 9256,
+        "name": "Deep Sleep",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=9256/deep-sleep"
+      },
+      {
+        "id": 20741,
+        "name": "Shadow Bolt Volley",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=20741/shadow-bolt-volley"
+      }
+    ]
+  },
+  "8443": {
+    "level": "49 - 50",
+    "classification": "Elite",
+    "type": "Uncategorized",
+    "health": 8467,
+    "mana": null,
+    "abilities": [
+      {
+        "id": 6607,
+        "name": "Lash",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=6607/lash"
+      },
+      {
+        "id": 12888,
+        "name": "Cause Insanity",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=12888/cause-insanity"
+      },
+      {
+        "id": 12889,
+        "name": "Curse of Tongues",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=12889/curse-of-tongues"
+      },
+      {
+        "id": 10893,
+        "name": "Shadow Word: Pain",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=10893/shadow-word-pain"
+      }
+    ]
+  },
   "11517": {
     "level": "16",
     "classification": "Elite",
