@@ -1304,6 +1304,13 @@ function encounterIconHtml(npcId, fallbackIcon) {
 // ═══════════════════════════════════════
 let encounterPreviewEl = null;
 
+// On touch devices a tap fires synthetic mouseenter/mouseover events, which
+// would pop the floating model preview on top of whatever the tap actually
+// opened. Track the last real touch and suppress hover previews briefly after.
+let lastTouchTime = 0;
+document.addEventListener('touchstart', () => { lastTouchTime = Date.now(); }, { passive: true });
+function isRecentTouch() { return Date.now() - lastTouchTime < 500; }
+
 function getEncounterPreview() {
   if (encounterPreviewEl) return encounterPreviewEl;
   const el = document.createElement('div');
@@ -1355,7 +1362,10 @@ function hideNpcModelPreview() {
 // Show a small floating model preview when hovering an encounter, so users can
 // match a boss name to its appearance without opening the full modal.
 function attachEncounterPreview(item, name, npcId) {
-  item.addEventListener('mouseenter', () => showNpcModelPreview(item, name, npcId));
+  item.addEventListener('mouseenter', () => {
+    if (isRecentTouch()) return;
+    showNpcModelPreview(item, name, npcId);
+  });
   item.addEventListener('mouseleave', hideNpcModelPreview);
 }
 
@@ -3686,12 +3696,10 @@ function initMapModal() {
   // quest cards rebuild dynamically; mirrors the encounter-list hover preview.
   // On mobile Chrome, tapping fires a synthetic mouseover before the click,
   // which would open the floating preview on top of the correct map pin tooltip.
-  // We suppress mouseover events that occur within 500ms of a real touch.
+  // isRecentTouch() suppresses hover previews within 500ms of a real touch.
   let npcPreviewAnchor = null;
-  let lastTouchTime = 0;
-  document.addEventListener('touchstart', () => { lastTouchTime = Date.now(); }, { passive: true });
   document.addEventListener('mouseover', e => {
-    if (Date.now() - lastTouchTime < 500) return;
+    if (isRecentTouch()) return;
     const link = e.target.closest('[data-npc-id]');
     if (!link || link === npcPreviewAnchor) return;
     if (link.closest('.qm-givers')) return;
@@ -3700,7 +3708,7 @@ function initMapModal() {
     showNpcModelPreview(link, name, link.dataset.npcId);
   });
   document.addEventListener('mouseout', e => {
-    if (Date.now() - lastTouchTime < 500) return;
+    if (isRecentTouch()) return;
     const link = e.target.closest('[data-npc-id]');
     if (!link || link !== npcPreviewAnchor) return;
     // Ignore moves that stay inside the same anchor.
@@ -4608,22 +4616,27 @@ function initEncounterModal() {
 
 // An item-reward link with a wowhead tooltip icon (data-wh-icon-size lets the
 // wowhead power script render the item icon + hover tooltip inside the popout).
-// Where a required *item* comes from — the NPCs that drop it or the objects/items
-// that contain it, scraped onto each item requirement as `sources`. Grouped by
-// relation ("Dropped by", "Contained in", …) and shown beneath the item so the
-// player knows where to farm it. Returns '' when the requirement has no sources
-// (e.g. kill/interact objectives, or items whose source we couldn't resolve).
+// Where a required *item* comes from — the NPCs that drop or sell it, the
+// objects/items that contain it, or the spell that crafts it, scraped onto each
+// item requirement as `sources`. Grouped by relation ("Dropped by", "Sold by",
+// "Created by", "Contained in", …) and shown beneath the item so the player
+// knows where to get it. Returns '' when the requirement has no sources (e.g.
+// kill/interact objectives, or items whose source we couldn't resolve).
 function questModalReqSourcesHtml(req) {
   const sources = req && req.sources;
   if (!Array.isArray(sources) || !sources.length) return '';
 
   const groups = [];
   for (const src of sources) {
+    // "Fished in" sources point at fishing zones (their id is a zone id, not a
+    // farmable mob/object), so skip them — there's no useful model or target.
+    if (src.relation === 'Fished in') continue;
     const label = src.relation || 'Source';
     let group = groups.find(g => g.label === label);
     if (!group) { group = { label, items: [] }; groups.push(group); }
     group.items.push(src);
   }
+  if (!groups.length) return '';
 
   const groupHtml = groups.map(group => {
     const items = group.items.map(src => {

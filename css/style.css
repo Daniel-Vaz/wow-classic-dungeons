@@ -2833,7 +2833,13 @@ img.stat-ico {
 }
 
 /* ── ATLAS / CATACLYSM ART-STYLE TOGGLE (instance maps) ── */
+/* Overlaid on the map viewport (top-left) rather than the header, so the
+   header stays uncluttered and the close button is always reachable. */
 .map-style-controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 6;
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -2845,7 +2851,9 @@ img.stat-ico {
   border: 1px solid var(--border-gold);
   border-radius: 5px;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 .map-style-btn {
   display: flex;
@@ -2884,7 +2892,8 @@ img.stat-ico {
   flex-shrink: 0;
   border-radius: 50%;
   border: 1px solid var(--border-gold);
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   color: var(--gold);
   font-family: 'Cinzel', serif;
   font-size: 0.7rem;

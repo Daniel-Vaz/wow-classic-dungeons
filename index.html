@@ -251,19 +251,6 @@
   <div class="map-modal-panel" role="dialog" aria-labelledby="mapModalTitle">
     <div class="map-modal-header">
       <span class="map-modal-title" id="mapModalTitle"></span>
-      <div class="map-style-controls" id="mapStyleControls" hidden>
-        <div class="map-style-toggle" id="mapStyleToggle" role="group" aria-label="Map art style">
-          <button type="button" class="map-style-btn active" data-style="atlas">
-            <span class="map-style-btn-title">Atlas Classic</span>
-            <span class="map-style-btn-sub">Community</span>
-          </button>
-          <button type="button" class="map-style-btn" data-style="cataclysm">
-            <span class="map-style-btn-title">Cataclysm</span>
-            <span class="map-style-btn-sub">In-game</span>
-          </button>
-        </div>
-        <button type="button" class="map-style-info-btn" id="mapStyleInfoBtn" aria-label="About the map styles" aria-expanded="false" title="Why two map styles?">i</button>
-      </div>
       <a id="mapModalWowheadLink" href="#" target="_blank" rel="noopener noreferrer" class="map-wowhead-link"><img src="assets/icons/wowhead.png" class="map-wowhead-logo" alt="Wowhead"> View on Wowhead ↗</a>
       <button class="map-modal-close" id="mapModalClose" aria-label="Close map">✕</button>
     </div>
@@ -289,6 +276,19 @@
     <div class="map-level-nav" id="mapLevelNav"></div>
     <div class="map-modal-main">
       <div class="map-modal-viewport" id="mapModalViewport">
+        <div class="map-style-controls" id="mapStyleControls" hidden>
+          <div class="map-style-toggle" id="mapStyleToggle" role="group" aria-label="Map art style">
+            <button type="button" class="map-style-btn active" data-style="atlas">
+              <span class="map-style-btn-title">Atlas Classic</span>
+              <span class="map-style-btn-sub">Community</span>
+            </button>
+            <button type="button" class="map-style-btn" data-style="cataclysm">
+              <span class="map-style-btn-title">Cataclysm</span>
+              <span class="map-style-btn-sub">In-game</span>
+            </button>
+          </div>
+          <button type="button" class="map-style-info-btn" id="mapStyleInfoBtn" aria-label="About the map styles" aria-expanded="false" title="Why two map styles?">i</button>
+        </div>
         <img id="mapModalImg" src="" alt="Zone map" draggable="false">
         <div class="map-no-image" id="mapNoImage">Map not available</div>
         <div id="mapPinContainer" class="map-pin-container" aria-hidden="true"></div>

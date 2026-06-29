@@ -7756,7 +7756,16 @@ const DUNGEONS = [
             "name": "Prismatic Punch Card",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9316/prismatic-punch-card",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 11545,
+                "name": "Create Prismatic Punch Card",
+                "url": "https://www.wowhead.com/classic/spell=11545/create-prismatic-punch-card",
+                "relation": "Created by"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -8187,7 +8196,16 @@ const DUNGEONS = [
             "name": "Full Leaden Collection Phial",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9284/full-leaden-collection-phial",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 11513,
+                "name": "Empty Phial",
+                "url": "https://www.wowhead.com/classic/spell=11513/empty-phial",
+                "relation": "Created by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -8325,7 +8343,16 @@ const DUNGEONS = [
             "name": "High Potency Radioactive Fallout",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=9365/high-potency-radioactive-fallout",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 11637,
+                "name": "Empty Heavy Phial",
+                "url": "https://www.wowhead.com/classic/spell=11637/empty-heavy-phial",
+                "relation": "Created by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -18507,7 +18534,16 @@ const DUNGEONS = [
             "name": "Amulet of Union",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=17758/amulet-of-union",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 21957,
+                "name": "Create Amulet of Union",
+                "url": "https://www.wowhead.com/classic/spell=21957/create-amulet-of-union",
+                "relation": "Created by"
+              }
+            ]
           },
           {
             "type": "item",
@@ -18999,7 +19035,16 @@ const DUNGEONS = [
             "name": "Filled Cerulean Vial",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=17696/filled-cerulean-vial",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 21884,
+                "name": "Collect Orange Crystal Liquid",
+                "url": "https://www.wowhead.com/classic/spell=21884/collect-orange-crystal-liquid",
+                "relation": "Created by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -19286,7 +19331,16 @@ const DUNGEONS = [
             "name": "Filled Cerulean Vial",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=17696/filled-cerulean-vial",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 21884,
+                "name": "Collect Orange Crystal Liquid",
+                "url": "https://www.wowhead.com/classic/spell=21884/collect-orange-crystal-liquid",
+                "relation": "Created by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -19707,7 +19761,16 @@ const DUNGEONS = [
             "name": "Filled Egg of Hakkar",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=10662/filled-egg-of-hakkar",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 12735,
+                "name": "Fill the Egg of Hakkar",
+                "url": "https://www.wowhead.com/classic/spell=12735/fill-the-egg-of-hakkar",
+                "relation": "Created by"
+              }
+            ]
           },
           {
             "type": "item",
@@ -28624,7 +28687,16 @@ const DUNGEONS = [
             "name": "Encased Fiery Essence",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=11230/encased-fiery-essence",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 13982,
+                "name": "Bael'Gar's Fiery Essence",
+                "url": "https://www.wowhead.com/classic/spell=13982/bael-gar-s-fiery-essence",
+                "relation": "Created by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -30461,7 +30533,16 @@ const DUNGEONS = [
                 "name": "Thorium Shackles",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=11286/thorium-shackles",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "spell",
+                    "id": 22941,
+                    "name": "Player Lost Shackles DND",
+                    "url": "https://www.wowhead.com/classic/spell=22941/player-lost-shackles-dnd",
+                    "relation": "Created by"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -30535,7 +30616,16 @@ const DUNGEONS = [
                 "name": "Thorium Shackles",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=11286/thorium-shackles",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "spell",
+                    "id": 22941,
+                    "name": "Player Lost Shackles DND",
+                    "url": "https://www.wowhead.com/classic/spell=22941/player-lost-shackles-dnd",
+                    "relation": "Created by"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -30755,7 +30845,16 @@ const DUNGEONS = [
             "name": "Nagmara's Filled Vial",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=11413/nagmaras-filled-vial",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 14929,
+                "name": "Fill Nagmara's Vial",
+                "url": "https://www.wowhead.com/classic/spell=14929/fill-nagmara-s-vial",
+                "relation": "Created by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -35521,7 +35620,16 @@ const DUNGEONS = [
             "name": "Sealed Reliquary of Purity",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18540/sealed-reliquary-of-purity",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 22949,
+                "name": "Seal Felvine Shard",
+                "url": "https://www.wowhead.com/classic/spell=22949/seal-felvine-shard",
+                "relation": "Created by"
+              }
+            ]
           },
           {
             "type": "item",
@@ -35749,6 +35857,13 @@ const DUNGEONS = [
                 "name": "Fyldren Moonfeather",
                 "url": "https://www.wowhead.com/classic/npc=8019/fyldren-moonfeather",
                 "relation": "Dropped by"
+              },
+              {
+                "type": "spell",
+                "id": 18401,
+                "name": "Bolt of Runecloth",
+                "url": "https://www.wowhead.com/classic/spell=18401/bolt-of-runecloth",
+                "relation": "Created by"
               }
             ]
           },
@@ -35864,7 +35979,93 @@ const DUNGEONS = [
             "name": "Rune Thread",
             "quantity": 2,
             "url": "https://www.wowhead.com/classic/item=14341/rune-thread",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 1347,
+                "name": "Alexandra Bolero",
+                "url": "https://www.wowhead.com/classic/npc=1347/alexandra-bolero",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 1454,
+                "name": "Jennabink Powerseam",
+                "url": "https://www.wowhead.com/classic/npc=1454/jennabink-powerseam",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 1474,
+                "name": "Rann Flamespinner",
+                "url": "https://www.wowhead.com/classic/npc=1474/rann-flamespinner",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 1672,
+                "name": "Lohgan Eva",
+                "url": "https://www.wowhead.com/classic/npc=1672/lohgan-eva",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 2394,
+                "name": "Mallen Swain",
+                "url": "https://www.wowhead.com/classic/npc=2394/mallen-swain",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 2668,
+                "name": "Danielle Zipstitch",
+                "url": "https://www.wowhead.com/classic/npc=2668/danielle-zipstitch",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 2669,
+                "name": "Sheri Zipstitch",
+                "url": "https://www.wowhead.com/classic/npc=2669/sheri-zipstitch",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 2670,
+                "name": "Xizk Goodstitch",
+                "url": "https://www.wowhead.com/classic/npc=2670/xizk-goodstitch",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 2672,
+                "name": "Cowardly Crosby",
+                "url": "https://www.wowhead.com/classic/npc=2672/cowardly-crosby",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 2697,
+                "name": "Clyde Ranthal",
+                "url": "https://www.wowhead.com/classic/npc=2697/clyde-ranthal",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 2698,
+                "name": "George Candarte",
+                "url": "https://www.wowhead.com/classic/npc=2698/george-candarte",
+                "relation": "Sold by"
+              },
+              {
+                "type": "npc",
+                "id": 2699,
+                "name": "Rikqiz",
+                "url": "https://www.wowhead.com/classic/npc=2699/rikqiz",
+                "relation": "Sold by"
+              }
+            ]
           },
           {
             "type": "item",
@@ -36244,6 +36445,13 @@ const DUNGEONS = [
                 "name": "Masterwork Target Dummy",
                 "url": "https://www.wowhead.com/classic/npc=12426/masterwork-target-dummy",
                 "relation": "Dropped by"
+              },
+              {
+                "type": "spell",
+                "id": 19791,
+                "name": "Thorium Widget",
+                "url": "https://www.wowhead.com/classic/spell=19791/thorium-widget",
+                "relation": "Created by"
               }
             ]
           },
@@ -36269,6 +36477,13 @@ const DUNGEONS = [
                 "name": "Cenarion Hold Infantry",
                 "url": "https://www.wowhead.com/classic/npc=15184/cenarion-hold-infantry",
                 "relation": "Dropped by"
+              },
+              {
+                "type": "spell",
+                "id": 3454,
+                "name": "Frost Oil",
+                "url": "https://www.wowhead.com/classic/spell=3454/frost-oil",
+                "relation": "Created by"
               }
             ]
           }
@@ -37169,7 +37384,16 @@ const DUNGEONS = [
             "name": "Treated Ancient Blade",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18492/treated-ancient-blade",
-            "quality": 4
+            "quality": 4,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 22906,
+                "name": "Plunging Blade into Onyxia",
+                "url": "https://www.wowhead.com/classic/spell=22906/plunging-blade-into-onyxia",
+                "relation": "Created by"
+              }
+            ]
           },
           {
             "type": "item",
@@ -38939,7 +39163,16 @@ const DUNGEONS = [
             "name": "Caged Worg Pup",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12263/caged-worg-pup",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 15998,
+                "name": "Capture Worg Pup",
+                "url": "https://www.wowhead.com/classic/spell=15998/capture-worg-pup",
+                "relation": "Created by"
+              }
+            ]
           }
         ],
         "rewards": [
@@ -39545,7 +39778,16 @@ const DUNGEONS = [
                 "name": "Filled Egg of Hakkar",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=10662/filled-egg-of-hakkar",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "spell",
+                    "id": 12735,
+                    "name": "Fill the Egg of Hakkar",
+                    "url": "https://www.wowhead.com/classic/spell=12735/fill-the-egg-of-hakkar",
+                    "relation": "Created by"
+                  }
+                ]
               },
               {
                 "type": "item",
@@ -42564,7 +42806,16 @@ const DUNGEONS = [
             "name": "Charger's Redeemed Soul",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18799/chargers-redeemed-soul",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 23254,
+                "name": "Redeeming the Soul",
+                "url": "https://www.wowhead.com/classic/spell=23254/redeeming-the-soul",
+                "relation": "Created by"
+              }
+            ]
           },
           {
             "type": "item",
@@ -43372,6 +43623,13 @@ const DUNGEONS = [
                     "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
                     "relation": "Contained in",
                     "dropChance": 2.2
+                  },
+                  {
+                    "type": "spell",
+                    "id": 17187,
+                    "name": "Transmute: Arcanite",
+                    "url": "https://www.wowhead.com/classic/spell=17187/transmute-arcanite",
+                    "relation": "Created by"
                   }
                 ]
               }
@@ -43448,7 +43706,16 @@ const DUNGEONS = [
                 "name": "Manna-Enriched Horse Feed",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=18775/manna-enriched-horse-feed",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "spell",
+                    "id": 23304,
+                    "name": "Manna-Enriched Horse Feed",
+                    "url": "https://www.wowhead.com/classic/spell=23304/manna-enriched-horse-feed",
+                    "relation": "Created by"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -45606,7 +45873,16 @@ const DUNGEONS = [
                 "name": "Unfinished Skeleton Key",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=14645/unfinished-skeleton-key",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "spell",
+                    "id": 18711,
+                    "name": "Forging",
+                    "url": "https://www.wowhead.com/classic/spell=18711/forging",
+                    "relation": "Created by"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -46458,7 +46734,16 @@ const DUNGEONS = [
                 "name": "Unfinished Skeleton Key",
                 "quantity": 1,
                 "url": "https://www.wowhead.com/classic/item=14645/unfinished-skeleton-key",
-                "quality": 1
+                "quality": 1,
+                "sources": [
+                  {
+                    "type": "spell",
+                    "id": 18711,
+                    "name": "Forging",
+                    "url": "https://www.wowhead.com/classic/spell=18711/forging",
+                    "relation": "Created by"
+                  }
+                ]
               }
             ],
             "rewards": [],
@@ -47050,7 +47335,16 @@ const DUNGEONS = [
             "name": "Xorothian Stardust",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=18687/xorothian-stardust",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14522,
+                "name": "Ur'dan",
+                "url": "https://www.wowhead.com/classic/npc=14522/ur-dan",
+                "relation": "Sold by"
+              }
+            ]
           }
         ],
         "rewards": [],
@@ -47151,6 +47445,13 @@ const DUNGEONS = [
                 "name": "Batrider Pele'keiki",
                 "url": "https://www.wowhead.com/classic/npc=15508/batrider-pele-keiki",
                 "relation": "Dropped by"
+              },
+              {
+                "type": "spell",
+                "id": 11476,
+                "name": "Elixir of Shadow Power",
+                "url": "https://www.wowhead.com/classic/spell=11476/elixir-of-shadow-power",
+                "relation": "Created by"
               }
             ]
           }
@@ -47636,6 +47937,13 @@ const DUNGEONS = [
                 "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
                 "relation": "Contained in",
                 "dropChance": 2.2
+              },
+              {
+                "type": "spell",
+                "id": 17187,
+                "name": "Transmute: Arcanite",
+                "url": "https://www.wowhead.com/classic/spell=17187/transmute-arcanite",
+                "relation": "Created by"
               }
             ]
           }
@@ -51129,7 +51437,16 @@ const DUNGEONS = [
             "name": "Soul Stained Pike",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=12847/soul-stained-pike",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 17048,
+                "name": "Soul Claim",
+                "url": "https://www.wowhead.com/classic/spell=17048/soul-claim",
+                "relation": "Created by"
+              }
+            ]
           },
           {
             "type": "item",
@@ -53154,7 +53471,16 @@ const DUNGEONS = [
             "name": "Amulet of Draconic Subversion",
             "quantity": 1,
             "url": "https://www.wowhead.com/classic/item=16787/amulet-of-draconic-subversion",
-            "quality": 1
+            "quality": 1,
+            "sources": [
+              {
+                "type": "spell",
+                "id": 20693,
+                "name": "Summon Lost Amulet",
+                "url": "https://www.wowhead.com/classic/spell=20693/summon-lost-amulet",
+                "relation": "Created by"
+              }
+            ]
           }
         ],
         "rewards": [],
