@@ -3886,7 +3886,33 @@ function atlasLegendSections(pois) {
   return out;
 }
 
-function atlasLegendItem(p) {
+// Atlas legend labels that differ from the canonical BOSS_ENCOUNTERS name but
+// refer to the same encounter. Keyed by dungeon id → { atlasLabel: canonicalName }.
+const ATLAS_NAME_ALIASES = {
+  deadmines: { 'sneed': "sneed's shredder" },
+};
+
+// Build a name (lowercased) → npcId map from BOSS_ENCOUNTERS for a dungeon.
+// Handles both top-level entries and bosses nested inside multi-boss events.
+function atlasEncounterMap(dungeonId) {
+  const map = {};
+  if (typeof BOSS_ENCOUNTERS === 'undefined' || !BOSS_ENCOUNTERS[dungeonId]) return map;
+  for (const entry of BOSS_ENCOUNTERS[dungeonId]) {
+    if (entry.npcId) map[entry.name.toLowerCase()] = entry.npcId;
+    if (entry.bosses) {
+      for (const b of entry.bosses) {
+        if (b.npcId) map[b.name.toLowerCase()] = b.npcId;
+      }
+    }
+  }
+  const aliases = ATLAS_NAME_ALIASES[dungeonId] || {};
+  for (const [alias, canonical] of Object.entries(aliases)) {
+    if (map[canonical] !== undefined) map[alias] = map[canonical];
+  }
+  return map;
+}
+
+function atlasLegendItem(p, npcId) {
   const item = document.createElement('div');
   item.className = 'pin-list-item atlas-legend-item' + (p.indent ? ' indent' : '');
   const isLetter = p.ref && /[A-Za-z]/.test(p.ref);
@@ -3898,6 +3924,10 @@ function atlasLegendItem(p) {
   name.textContent = p.label;
   item.appendChild(badge);
   item.appendChild(name);
+  if (npcId) {
+    item.classList.add('has-encounter');
+    item.addEventListener('click', () => openEncounterModal(p.label, npcId));
+  }
   return item;
 }
 
@@ -3913,6 +3943,7 @@ function renderAtlasLegend() {
     list.innerHTML = `<div class="pin-list-empty">No legend for this map.</div>`;
     return;
   }
+  const encounterMap = atlasEncounterMap(currentDungeonId);
   atlasLegendSections(pois).forEach(sec => {
     const section = document.createElement('div');
     section.className = 'pin-list-section atlas-legend-section expanded';
@@ -3931,7 +3962,12 @@ function renderAtlasLegend() {
 
     const body = document.createElement('div');
     body.className = 'pin-list-section-body';
-    sec.items.forEach(p => body.appendChild(atlasLegendItem(p)));
+    sec.items.forEach(p => {
+      // Strip trailing parenthetical annotations like (Rare), (Varies), (Wanders, Upper), etc.
+      // before matching against encounter names.
+      const baseLabel = p.label.replace(/\s*\([^)]*\)\s*$/, '').trim().toLowerCase();
+      body.appendChild(atlasLegendItem(p, encounterMap[baseLabel]));
+    });
 
     section.appendChild(header);
     section.appendChild(body);

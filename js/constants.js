@@ -278,6 +278,7 @@ const BOSS_ENCOUNTERS = {
     { name: 'Doctor Theolen Krastinov', npcId: 11261 },
     { name: 'Lorekeeper Polkelt', npcId: 10901 },
     { name: 'Instructor Malicia', npcId: 10505 },
+    { name: 'Lord Alexei Barov', npcId: 10504 },
     { name: 'Lady Illucia Barov', npcId: 10502 },
     { name: 'The Ravenian', npcId: 10507 },
     { name: 'Darkmaster Gandling', npcId: 1853 },

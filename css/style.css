@@ -2190,6 +2190,16 @@ img.stat-ico {
     padding-bottom: 0;
     border-width: 0;
   }
+  /* The non-card sidebar sections (Quest Locations) slide down as the card
+     expands above them in the flex column, which looks like the page scrolling.
+     Hide them during the card expansion and fade in once it settles. */
+  @keyframes dock-section-reveal {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  body.dungeon-docked .sidebar-section:not(.dungeon-card-section) {
+    animation: dock-section-reveal 0.35s ease 0.85s both;
+  }
 }
 .sidebar-section {
   background: var(--bg-panel);
@@ -3025,6 +3035,8 @@ img.stat-ico {
   gap: 9px;
 }
 .atlas-legend-item.indent { padding-left: 30px; opacity: 0.85; }
+.atlas-legend-item.has-encounter { cursor: pointer; }
+.atlas-legend-item.has-encounter:hover .atlas-legend-name { color: var(--gold-light); text-decoration: underline; }
 .atlas-ref {
   flex-shrink: 0;
   min-width: 22px;

@@ -8165,6 +8165,204 @@ const ENCOUNTER_LOOT = {
       "dropChance": 0.15
     }
   ],
+  "10504": [
+    {
+      "id": 18683,
+      "name": "Hammer of the Vesper",
+      "url": "https://www.wowhead.com/classic/item=18683/hammer-of-the-vesper",
+      "quality": 3,
+      "dropChance": 9.67
+    },
+    {
+      "id": 14626,
+      "name": "Necropile Robe",
+      "url": "https://www.wowhead.com/classic/item=14626/necropile-robe",
+      "quality": 3,
+      "dropChance": 9.66
+    },
+    {
+      "id": 18680,
+      "name": "Ancient Bone Bow",
+      "url": "https://www.wowhead.com/classic/item=18680/ancient-bone-bow",
+      "quality": 3,
+      "dropChance": 9.38
+    },
+    {
+      "id": 14637,
+      "name": "Cadaverous Armor",
+      "url": "https://www.wowhead.com/classic/item=14637/cadaverous-armor",
+      "quality": 3,
+      "dropChance": 9.3
+    },
+    {
+      "id": 18684,
+      "name": "Dimly Opalescent Ring",
+      "url": "https://www.wowhead.com/classic/item=18684/dimly-opalescent-ring",
+      "quality": 3,
+      "dropChance": 9.29
+    },
+    {
+      "id": 18682,
+      "name": "Ghoul Skin Leggings",
+      "url": "https://www.wowhead.com/classic/item=18682/ghoul-skin-leggings",
+      "quality": 3,
+      "dropChance": 9.2
+    },
+    {
+      "id": 18681,
+      "name": "Burial Shawl",
+      "url": "https://www.wowhead.com/classic/item=18681/burial-shawl",
+      "quality": 3,
+      "dropChance": 9.12
+    },
+    {
+      "id": 14624,
+      "name": "Deathbone Chestplate",
+      "url": "https://www.wowhead.com/classic/item=14624/deathbone-chestplate",
+      "quality": 3,
+      "dropChance": 8.98
+    },
+    {
+      "id": 14611,
+      "name": "Bloodmail Hauberk",
+      "url": "https://www.wowhead.com/classic/item=14611/bloodmail-hauberk",
+      "quality": 3,
+      "dropChance": 8.73
+    },
+    {
+      "id": 16722,
+      "name": "Lightforge Bracers",
+      "url": "https://www.wowhead.com/classic/item=16722/lightforge-bracers",
+      "quality": 3,
+      "dropChance": 4.32
+    },
+    {
+      "id": 23201,
+      "name": "Libram of Divinity",
+      "url": "https://www.wowhead.com/classic/item=23201/libram-of-divinity",
+      "quality": 3,
+      "dropChance": 1.07
+    },
+    {
+      "id": 23200,
+      "name": "Totem of Sustaining",
+      "url": "https://www.wowhead.com/classic/item=23200/totem-of-sustaining",
+      "quality": 3,
+      "dropChance": 0.67
+    },
+    {
+      "id": 14641,
+      "name": "Cadaverous Walkers",
+      "url": "https://www.wowhead.com/classic/item=14641/cadaverous-walkers",
+      "quality": 3,
+      "dropChance": 0.41
+    },
+    {
+      "id": 14632,
+      "name": "Necropile Leggings",
+      "url": "https://www.wowhead.com/classic/item=14632/necropile-leggings",
+      "quality": 3,
+      "dropChance": 0.28
+    },
+    {
+      "id": 14636,
+      "name": "Cadaverous Belt",
+      "url": "https://www.wowhead.com/classic/item=14636/cadaverous-belt",
+      "quality": 3,
+      "dropChance": 0.27
+    },
+    {
+      "id": 14638,
+      "name": "Cadaverous Leggings",
+      "url": "https://www.wowhead.com/classic/item=14638/cadaverous-leggings",
+      "quality": 3,
+      "dropChance": 0.27
+    },
+    {
+      "id": 14631,
+      "name": "Necropile Boots",
+      "url": "https://www.wowhead.com/classic/item=14631/necropile-boots",
+      "quality": 3,
+      "dropChance": 0.27
+    },
+    {
+      "id": 14629,
+      "name": "Necropile Cuffs",
+      "url": "https://www.wowhead.com/classic/item=14629/necropile-cuffs",
+      "quality": 3,
+      "dropChance": 0.26
+    },
+    {
+      "id": 14633,
+      "name": "Necropile Mantle",
+      "url": "https://www.wowhead.com/classic/item=14633/necropile-mantle",
+      "quality": 3,
+      "dropChance": 0.25
+    },
+    {
+      "id": 14622,
+      "name": "Deathbone Gauntlets",
+      "url": "https://www.wowhead.com/classic/item=14622/deathbone-gauntlets",
+      "quality": 3,
+      "dropChance": 0.22
+    },
+    {
+      "id": 14640,
+      "name": "Cadaverous Gloves",
+      "url": "https://www.wowhead.com/classic/item=14640/cadaverous-gloves",
+      "quality": 3,
+      "dropChance": 0.19
+    },
+    {
+      "id": 14620,
+      "name": "Deathbone Girdle",
+      "url": "https://www.wowhead.com/classic/item=14620/deathbone-girdle",
+      "quality": 3,
+      "dropChance": 0.18
+    },
+    {
+      "id": 14623,
+      "name": "Deathbone Legguards",
+      "url": "https://www.wowhead.com/classic/item=14623/deathbone-legguards",
+      "quality": 3,
+      "dropChance": 0.18
+    },
+    {
+      "id": 14616,
+      "name": "Bloodmail Boots",
+      "url": "https://www.wowhead.com/classic/item=14616/bloodmail-boots",
+      "quality": 3,
+      "dropChance": 0.13
+    },
+    {
+      "id": 14621,
+      "name": "Deathbone Sabatons",
+      "url": "https://www.wowhead.com/classic/item=14621/deathbone-sabatons",
+      "quality": 3,
+      "dropChance": 0.13
+    },
+    {
+      "id": 14615,
+      "name": "Bloodmail Gauntlets",
+      "url": "https://www.wowhead.com/classic/item=14615/bloodmail-gauntlets",
+      "quality": 3,
+      "dropChance": 0.12
+    },
+    {
+      "id": 14614,
+      "name": "Bloodmail Belt",
+      "url": "https://www.wowhead.com/classic/item=14614/bloodmail-belt",
+      "quality": 3,
+      "dropChance": 0.12
+    },
+    {
+      "id": 14612,
+      "name": "Bloodmail Legguards",
+      "url": "https://www.wowhead.com/classic/item=14612/bloodmail-legguards",
+      "quality": 3,
+      "dropChance": 0.12
+    }
+  ],
   "10502": [
     {
       "id": 14615,
