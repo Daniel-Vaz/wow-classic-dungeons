@@ -3888,9 +3888,7 @@ function atlasLegendSections(pois) {
 
 // Atlas legend labels that differ from the canonical BOSS_ENCOUNTERS name but
 // refer to the same encounter. Keyed by dungeon id → { atlasLabel: canonicalName }.
-const ATLAS_NAME_ALIASES = {
-  deadmines: { 'sneed': "sneed's shredder" },
-};
+const ATLAS_NAME_ALIASES = { };
 
 // Build a name (lowercased) → npcId map from BOSS_ENCOUNTERS for a dungeon.
 // Handles both top-level entries and bosses nested inside multi-boss events.

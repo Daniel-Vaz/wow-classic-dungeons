@@ -23,7 +23,8 @@ const BOSS_ENCOUNTERS = {
   deadmines: [
     { name: "Rhahk'Zor", npcId: 644 },
     { name: 'Miner Johnson', npcId: 3586, rare: true },
-    { name: "Sneed's Shredder", npcId: 643 },
+    { name: "Sneed's Shredder", npcId: 642},
+    { name: "Sneed", npcId: 643 },
     { name: 'Gilnid', npcId: 1763 },
     { name: 'Mr. Smite', npcId: 646 },
     { name: 'Captain Greenskin', npcId: 647 },

@@ -274,6 +274,22 @@ const ENCOUNTER_LOOT = {
       "dropChance": 40.35
     }
   ],
+  "642": [
+    {
+      "id": 2169,
+      "name": "Buzzer Blade",
+      "url": "https://www.wowhead.com/classic/item=2169/buzzer-blade",
+      "quality": 1,
+      "dropChance": 52.23
+    },
+    {
+      "id": 1937,
+      "name": "Buzz Saw",
+      "url": "https://www.wowhead.com/classic/item=1937/buzz-saw",
+      "quality": 2,
+      "dropChance": 9.48
+    }
+  ],
   "643": [
     {
       "id": 5195,

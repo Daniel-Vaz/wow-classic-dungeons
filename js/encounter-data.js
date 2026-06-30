@@ -261,6 +261,33 @@ const ENCOUNTER_INFO = {
     "mana": null,
     "abilities": []
   },
+  "642": {
+    "level": "20",
+    "classification": "Elite",
+    "type": "Mechanical",
+    "health": 3872,
+    "mana": null,
+    "abilities": [
+      {
+        "id": 3603,
+        "name": "Distracting Pain",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=3603/distracting-pain"
+      },
+      {
+        "id": 5141,
+        "name": "Eject Sneed",
+        "school": "Physical",
+        "url": "https://www.wowhead.com/classic/spell=5141/eject-sneed"
+      },
+      {
+        "id": 7399,
+        "name": "Terrify",
+        "school": "Shadow",
+        "url": "https://www.wowhead.com/classic/spell=7399/terrify"
+      }
+    ]
+  },
   "643": {
     "level": "20",
     "classification": "Elite",
