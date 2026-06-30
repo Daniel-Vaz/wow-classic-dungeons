@@ -2173,33 +2173,15 @@ img.stat-ico {
     pointer-events: auto;
     border-color: var(--border);
   }
-  /* The full banner collapses away as the card docks, reclaiming the top. */
-  #dungeonHeader {
-    max-height: 1000px;
-    overflow: hidden;
-    transition: max-height 0.85s cubic-bezier(0.22, 1, 0.36, 1),
-                opacity 0.5s ease,
-                margin 0.85s cubic-bezier(0.22, 1, 0.36, 1),
-                padding 0.85s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-  body.dungeon-docked #dungeonHeader {
-    max-height: 0;
-    opacity: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    border-width: 0;
-  }
-  /* The non-card sidebar sections (Quest Locations) slide down as the card
-     expands above them in the flex column, which looks like the page scrolling.
-     Hide them during the card expansion and fade in once it settles. */
-  @keyframes dock-section-reveal {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-  body.dungeon-docked .sidebar-section:not(.dungeon-card-section) {
-    animation: dock-section-reveal 0.35s ease 0.85s both;
-  }
+  /* The full banner is intentionally NOT collapsed when docking. It used to
+     animate to max-height:0, but that pulled the ~440px of content below it
+     upward over the transition — and because docking fires near the top
+     (scrollY ~110, far less than the banner's own height) there is no way to
+     scroll-compensate that motion without hitting the scroll-floor. The result
+     read as the page scrolling on its own after the user had stopped. Instead
+     the banner now simply scrolls away with the page like any normal hero,
+     while the compact card cross-fades into the sticky sidebar — no layout
+     collapse, so nothing the user is reading jumps. */
 }
 .sidebar-section {
   background: var(--bg-panel);

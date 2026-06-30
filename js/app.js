@@ -548,33 +548,36 @@ function initScrollLogo() {
 // ═══════════════════════════════════════
 //  DUNGEON CARD DOCK
 // ═══════════════════════════════════════
-// As soon as the page is scrolled down past the sticky controls, dock the
-// dungeon card: the full banner collapses and the compact card (already in the
-// sticky right column) cross-fades in above Locations/Encounters. All of this
-// is purely CSS — this handler only toggles the body.dungeon-docked flag, and
-// only matters on desktop (≥901px); the mobile layout shows the compact card
-// unconditionally regardless of this class.
-// Hysteresis: we DOCK once the page is scrolled past the controls/tabs, but we
-// only UNDOCK again when scrolled back near the very top. The wide gap between
-// the two thresholds is what makes the card "stick" docked. It also defeats a
-// feedback loop: docking collapses the banner, which shrinks the page; on short
-// pages (few dungeons, collapsed/filtered quests) the browser then clamps
-// scrollY downward. With a single threshold that clamp would drop us back below
-// it and undock — causing the dock to flicker back and forth. By undocking only
-// near the top, the post-dock clamp can never reach the undock threshold.
+// Once the full banner has scrolled up behind the sticky controls/tabs, dock
+// the dungeon card: the compact card (already in the sticky right column)
+// cross-fades in above Locations/Encounters. All of this is purely CSS — this
+// handler only toggles the body.dungeon-docked flag, and only matters on
+// desktop (≥901px); the mobile layout shows the compact card unconditionally
+// regardless of this class.
+//
+// We trigger off the banner's own bottom edge rather than a fixed scroll
+// distance so the handoff is clean: the card appears exactly as the banner
+// disappears, never both at once. Crucially the banner is NOT collapsed (see
+// the #dungeonHeader CSS) — collapsing it pulled the content below upward over
+// the transition, which read as the page scrolling on its own. Because nothing
+// collapses, the page height never changes on dock, so there is no shrink →
+// scroll-clamp → flicker feedback loop; a small hysteresis gap is enough to
+// keep the toggle from chattering right at the boundary.
 function initDungeonDock() {
-  let dockThreshold = 108;   // scroll past this (going down) → dock
-  const undockThreshold = 8; // only undock once back this close to the top
+  const banner = document.getElementById('dungeonHeader');
+  if (!banner) return;
+  let stickyH = 108; // height of the sticky controls + tabs the banner hides behind
   const readOffset = () => {
     const cs = getComputedStyle(document.documentElement);
-    dockThreshold = (parseInt(cs.getPropertyValue('--controls-height'), 10) || 64)
-                  + (parseInt(cs.getPropertyValue('--dungeon-tabs-height'), 10) || 44);
+    stickyH = (parseInt(cs.getPropertyValue('--controls-height'), 10) || 64)
+            + (parseInt(cs.getPropertyValue('--dungeon-tabs-height'), 10) || 44);
   };
   const onScroll = () => {
     const docked = document.body.classList.contains('dungeon-docked');
-    if (!docked && window.scrollY > dockThreshold) {
+    const bannerBottom = banner.getBoundingClientRect().bottom;
+    if (!docked && bannerBottom <= stickyH) {
       document.body.classList.add('dungeon-docked');
-    } else if (docked && window.scrollY < undockThreshold) {
+    } else if (docked && bannerBottom > stickyH + 80) {
       document.body.classList.remove('dungeon-docked');
     }
   };
