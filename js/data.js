@@ -4659,6 +4659,119 @@ const DUNGEONS = [
           "total": 5,
           "name": "The Tome of Valor"
         }
+      },
+      {
+        "id": 1740,
+        "name": "The Orb of Soran'ruk",
+        "questLink": "https://www.wowhead.com/classic/quest=1740/the-orb-of-soran-ruk",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Doan Karhan",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=6247/doan-karhan",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Doan Karhan",
+            "link": "https://www.wowhead.com/classic/npc=6247/doan-karhan",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "endNpc": "Doan Karhan",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6247/doan-karhan",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Doan Karhan",
+            "link": "https://www.wowhead.com/classic/npc=6247/doan-karhan",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "levels": "25",
+        "minLevel": 20,
+        "faction": "Both",
+        "xp": 2550,
+        "money": 1560,
+        "objective": "Find 3 <a href=\"https://www.wowhead.com/classic/item=6914/soranruk-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">Soran'ruk Fragments</a> and 1 <a href=\"https://www.wowhead.com/classic/item=6915/large-soranruk-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">Large Soran'ruk Fragment</a> and return them to <a href=\"https://www.wowhead.com/classic/npc=6247/doan-karhan\" rel=\"noopener noreferrer\" target=\"_blank\">Doan Karhan</a> in the Barrens.",
+        "description": "When demons of the Legion fall out of favor, their spirits are imprisoned within orbs and distributed to their mages and warlocks.<br><br>Many were carried by their servants in Azeroth. Even fragmented, they still possess the powers of the demons trapped inside.<br><br>The <a href=\"https://www.wowhead.com/classic/item=6898/orb-of-soranruk\" rel=\"noopener noreferrer\" target=\"_blank\">orb of Soran'ruk</a> was broken into two pieces, one was further broken to be used by the acolytes of the Twilight's Hammer in Blackfathom Deeps. The other, larger piece, was possessed by a wizard in Shadowfang Keep. Find them and I can reform it.",
+        "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6914,
+            "name": "Soran'ruk Fragment",
+            "quantity": 3,
+            "url": "https://www.wowhead.com/classic/item=6914/soranruk-fragment",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4809,
+                "name": "Twilight Acolyte",
+                "url": "https://www.wowhead.com/classic/npc=4809/twilight-acolyte",
+                "relation": "Dropped by",
+                "dropChance": 1.2
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 6915,
+            "name": "Large Soran'ruk Fragment",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6915/large-soranruk-fragment",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3855,
+                "name": "Shadowfang Darksoul",
+                "url": "https://www.wowhead.com/classic/npc=3855/shadowfang-darksoul",
+                "relation": "Dropped by",
+                "dropChance": 6.7
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 6898,
+            "name": "Orb of Soran'ruk",
+            "url": "https://www.wowhead.com/classic/item=6898/orb-of-soran-ruk",
+            "quality": 2,
+            "quantity": 1
+          },
+          {
+            "id": 15109,
+            "name": "Staff of Soran'ruk",
+            "url": "https://www.wowhead.com/classic/item=15109/staff-of-soran-ruk",
+            "quality": 2,
+            "quantity": 1
+          }
+        ],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       }
     ],
     "iconFile": "dung_sfk.png"
@@ -5856,6 +5969,119 @@ const DUNGEONS = [
         ],
         "rewardChoices": [],
         "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 1740,
+        "name": "The Orb of Soran'ruk",
+        "questLink": "https://www.wowhead.com/classic/quest=1740/the-orb-of-soran-ruk",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Doan Karhan",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=6247/doan-karhan",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Doan Karhan",
+            "link": "https://www.wowhead.com/classic/npc=6247/doan-karhan",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "endNpc": "Doan Karhan",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6247/doan-karhan",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Doan Karhan",
+            "link": "https://www.wowhead.com/classic/npc=6247/doan-karhan",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "levels": "25",
+        "minLevel": 20,
+        "faction": "Both",
+        "xp": 2550,
+        "money": 1560,
+        "objective": "Find 3 <a href=\"https://www.wowhead.com/classic/item=6914/soranruk-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">Soran'ruk Fragments</a> and 1 <a href=\"https://www.wowhead.com/classic/item=6915/large-soranruk-fragment\" rel=\"noopener noreferrer\" target=\"_blank\">Large Soran'ruk Fragment</a> and return them to <a href=\"https://www.wowhead.com/classic/npc=6247/doan-karhan\" rel=\"noopener noreferrer\" target=\"_blank\">Doan Karhan</a> in the Barrens.",
+        "description": "When demons of the Legion fall out of favor, their spirits are imprisoned within orbs and distributed to their mages and warlocks.<br><br>Many were carried by their servants in Azeroth. Even fragmented, they still possess the powers of the demons trapped inside.<br><br>The <a href=\"https://www.wowhead.com/classic/item=6898/orb-of-soranruk\" rel=\"noopener noreferrer\" target=\"_blank\">orb of Soran'ruk</a> was broken into two pieces, one was further broken to be used by the acolytes of the Twilight's Hammer in Blackfathom Deeps. The other, larger piece, was possessed by a wizard in Shadowfang Keep. Find them and I can reform it.",
+        "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6914,
+            "name": "Soran'ruk Fragment",
+            "quantity": 3,
+            "url": "https://www.wowhead.com/classic/item=6914/soranruk-fragment",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4809,
+                "name": "Twilight Acolyte",
+                "url": "https://www.wowhead.com/classic/npc=4809/twilight-acolyte",
+                "relation": "Dropped by",
+                "dropChance": 1.2
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 6915,
+            "name": "Large Soran'ruk Fragment",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6915/large-soranruk-fragment",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3855,
+                "name": "Shadowfang Darksoul",
+                "url": "https://www.wowhead.com/classic/npc=3855/shadowfang-darksoul",
+                "relation": "Dropped by",
+                "dropChance": 6.7
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [
+          {
+            "id": 6898,
+            "name": "Orb of Soran'ruk",
+            "url": "https://www.wowhead.com/classic/item=6898/orb-of-soran-ruk",
+            "quality": 2,
+            "quantity": 1
+          },
+          {
+            "id": 15109,
+            "name": "Staff of Soran'ruk",
+            "url": "https://www.wowhead.com/classic/item=15109/staff-of-soran-ruk",
+            "quality": 2,
+            "quantity": 1
+          }
+        ],
+        "requiredClasses": [
+          "Warlock"
+        ],
         "notes": "",
         "preChain": [],
         "postChain": [],
@@ -9536,6 +9762,1510 @@ const DUNGEONS = [
           "index": 1,
           "total": 2,
           "name": "An Unholy Alliance"
+        }
+      },
+      {
+        "id": 1698,
+        "name": "Yorus Barleybrew",
+        "questLink": "https://www.wowhead.com/classic/quest=1698/yorus-barleybrew",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 1699,
+        "chainId": "rfk-flow-1698-yorus-barleybrew",
+        "chainDepth": 0,
+        "startNpc": "Kelv Sternhammer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5113/kelv-sternhammer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Ironforge",
+        "startNpcs": [
+          {
+            "name": "Kelv Sternhammer",
+            "link": "https://www.wowhead.com/classic/npc=5113/kelv-sternhammer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          },
+          {
+            "name": "Wu Shen",
+            "link": "https://www.wowhead.com/classic/npc=5479/wu-shen",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          },
+          {
+            "name": "Darnath Bladesinger",
+            "link": "https://www.wowhead.com/classic/npc=7315/darnath-bladesinger",
+            "faction": "",
+            "type": "npc",
+            "loc": "Darnassus"
+          }
+        ],
+        "endNpc": "Yorus Barleybrew",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6166/yorus-barleybrew",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Redridge Mountains",
+        "endNpcs": [
+          {
+            "name": "Yorus Barleybrew",
+            "link": "https://www.wowhead.com/classic/npc=6166/yorus-barleybrew",
+            "faction": "",
+            "type": "npc",
+            "loc": "Redridge Mountains"
+          }
+        ],
+        "levels": "20",
+        "minLevel": 20,
+        "faction": "Alliance",
+        "xp": 155,
+        "money": 90,
+        "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6166/yorus-barleybrew\" rel=\"noopener noreferrer\" target=\"_blank\">Yorus Barleybrew</a>.",
+        "description": "<a href=\"https://www.wowhead.com/classic/npc=6166/yorus-barleybrew\" rel=\"noopener noreferrer\" target=\"_blank\">Yorus Barleybrew</a> has issued a challenge to all able warriors of the Alliance. He waits at the Lakeshire Inn, in Redridge, and pledges a grand reward to anyone able to pass his trial.",
+        "shareable": true,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "rfk-1698-yorus-barleybrew",
+          "index": 1,
+          "total": 2,
+          "name": "Yorus Barleybrew"
+        },
+        "flowChain": true,
+        "flowId": "rfk-flow-1698-yorus-barleybrew"
+      },
+      {
+        "id": 1699,
+        "name": "The Rethban Gauntlet",
+        "questLink": "https://www.wowhead.com/classic/quest=1699/the-rethban-gauntlet",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1698,
+        "nextQuestId": 1702,
+        "chainId": "rfk-flow-1698-yorus-barleybrew",
+        "chainDepth": 0,
+        "startNpc": "Yorus Barleybrew",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=6166/yorus-barleybrew",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Redridge Mountains",
+        "startNpcs": [
+          {
+            "name": "Yorus Barleybrew",
+            "link": "https://www.wowhead.com/classic/npc=6166/yorus-barleybrew",
+            "faction": "",
+            "type": "npc",
+            "loc": "Redridge Mountains"
+          }
+        ],
+        "endNpc": "Yorus Barleybrew",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6166/yorus-barleybrew",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Redridge Mountains",
+        "endNpcs": [
+          {
+            "name": "Yorus Barleybrew",
+            "link": "https://www.wowhead.com/classic/npc=6166/yorus-barleybrew",
+            "faction": "",
+            "type": "npc",
+            "loc": "Redridge Mountains"
+          }
+        ],
+        "levels": "22",
+        "minLevel": 20,
+        "faction": "Alliance",
+        "xp": 1300,
+        "money": 780,
+        "objective": "Enter the Rethban Caverns, reach the first fork, and return to <a href=\"https://www.wowhead.com/classic/npc=6166/yorus-barleybrew\" rel=\"noopener noreferrer\" target=\"_blank\">Yorus Barleybrew</a> within the time allowed.<br><br>You must not die and release your spirit.",
+        "description": "I call my challenge the Rethban Gauntlet. To pass the trial, all you must do is enter the Rethban Caverns, to the first fork, then return here. Easy! Except there are a few wrinkles...<br><br>You have to return within an hour.<br><br>There are whole heaps of Redridge Gnolls in the way.<br><br>Before you start, you have to take a swig of my family's signature drink: Barleybrew Scalder!<br><br>So what do you say? The Rethban Caverns are in the foothills north of Lakeshire. Are you ready to run the Rethban Gauntlet?",
+        "shareable": false,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "rfk-1698-yorus-barleybrew",
+          "index": 2,
+          "total": 2,
+          "name": "Yorus Barleybrew"
+        },
+        "flowChain": true,
+        "flowId": "rfk-flow-1698-yorus-barleybrew"
+      },
+      {
+        "id": 1702,
+        "name": "The Shieldsmith",
+        "questLink": "https://www.wowhead.com/classic/quest=1702/the-shieldsmith",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1699,
+        "nextQuestId": 1701,
+        "chainId": "rfk-flow-1698-yorus-barleybrew",
+        "chainDepth": 0,
+        "startNpc": "Yorus Barleybrew",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=6166/yorus-barleybrew",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Redridge Mountains",
+        "startNpcs": [
+          {
+            "name": "Yorus Barleybrew",
+            "link": "https://www.wowhead.com/classic/npc=6166/yorus-barleybrew",
+            "faction": "",
+            "type": "npc",
+            "loc": "Redridge Mountains"
+          }
+        ],
+        "endNpc": "Furen Longbeard",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Furen Longbeard",
+            "link": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
+        "levels": "22",
+        "minLevel": 20,
+        "faction": "Alliance",
+        "xp": 435,
+        "money": 270,
+        "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=6843/cask-of-scalder\" rel=\"noopener noreferrer\" target=\"_blank\">Cask of Scalder</a> to <a href=\"https://www.wowhead.com/classic/npc=5413/furen-longbeard\" rel=\"noopener noreferrer\" target=\"_blank\">Furen Longbeard</a>.",
+        "description": "You really showed what you were made of when you ran the Rethban Gauntlet. And I'm true to my word. I'll get you the reward I promised...<br><br>Except it's in Stormwind.<br><br>Talk to my friend, <a href=\"https://www.wowhead.com/classic/npc=5413/furen-longbeard\" rel=\"noopener noreferrer\" target=\"_blank\">Furen Longbeard</a>, in the Dwarven District of Stormwind. He's the best shieldsmith you'll ever meet, and he owes me a big favor.<br><br>Here, take Furen this cask of Barleybrew Scalder and ask him for a shield. He'll give you a nice one.",
+        "shareable": false,
+        "requirements": [],
+        "rewards": [
+          {
+            "id": 6970,
+            "name": "Furen's Favor",
+            "url": "https://www.wowhead.com/classic/item=6970/furen-s-favor",
+            "quality": 2,
+            "quantity": 1
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "rfk-1702-the-shieldsmith",
+          "index": 1,
+          "total": 2,
+          "name": "The Shieldsmith"
+        },
+        "flowChain": true,
+        "flowId": "rfk-flow-1698-yorus-barleybrew"
+      },
+      {
+        "id": 1701,
+        "name": "Fire Hardened Mail",
+        "questLink": "https://www.wowhead.com/classic/quest=1701/fire-hardened-mail",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1702,
+        "nextQuestId": 1782,
+        "chainId": "rfk-flow-1698-yorus-barleybrew",
+        "chainDepth": 0,
+        "startNpc": "Furen Longbeard",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Furen Longbeard",
+            "link": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
+        "endNpc": "Furen Longbeard",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Furen Longbeard",
+            "link": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
+        "levels": "28",
+        "minLevel": 20,
+        "faction": "Alliance",
+        "xp": 2300,
+        "money": 1380,
+        "objective": "Gather the materials <a href=\"https://www.wowhead.com/classic/npc=5413/furen-longbeard\" rel=\"noopener noreferrer\" target=\"_blank\">Furen Longbeard</a> requires, and bring them to him in Stormwind.",
+        "description": "So I gave you a nice shield, but we don't have to stop there. I know the secrets to make extremely hard mail armor. It's not easy and it takes very rare materials, but if you're willing to do the legwork then I'll make a piece for you.<br><br>What do you say? If you're up for the challenge, then I'll give you a list of what to get and where to get them.",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 6838,
+            "name": "Scorched Spider Fang",
+            "quantity": 50,
+            "url": "https://www.wowhead.com/classic/item=6838/scorched-spider-fang",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 1111,
+                "name": "Leech Stalker",
+                "url": "https://www.wowhead.com/classic/npc=1111/leech-stalker",
+                "relation": "Dropped by",
+                "dropChance": 10.4
+              },
+              {
+                "type": "npc",
+                "id": 4040,
+                "name": "Cave Stalker",
+                "url": "https://www.wowhead.com/classic/npc=4040/cave-stalker",
+                "relation": "Dropped by",
+                "dropChance": 7.8
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 6839,
+            "name": "Charred Horn",
+            "quantity": 12,
+            "url": "https://www.wowhead.com/classic/item=6839/charred-horn",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 4031,
+                "name": "Fledgling Chimaera",
+                "url": "https://www.wowhead.com/classic/npc=4031/fledgling-chimaera",
+                "relation": "Dropped by",
+                "dropChance": 37.8
+              },
+              {
+                "type": "npc",
+                "id": 4032,
+                "name": "Young Chimaera",
+                "url": "https://www.wowhead.com/classic/npc=4032/young-chimaera",
+                "relation": "Dropped by",
+                "dropChance": 35.0
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 6840,
+            "name": "Galvanized Horn",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6840/galvanized-horn",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 6167,
+                "name": "Chimaera Matriarch",
+                "url": "https://www.wowhead.com/classic/npc=6167/chimaera-matriarch",
+                "relation": "Dropped by",
+                "dropChance": 10.0
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 6841,
+            "name": "Vial of Phlogiston",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6841/vial-of-phlogiston",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 6168,
+                "name": "Roogug",
+                "url": "https://www.wowhead.com/classic/npc=6168/roogug",
+                "relation": "Dropped by"
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "rfk-1702-the-shieldsmith",
+          "index": 2,
+          "total": 2,
+          "name": "The Shieldsmith"
+        },
+        "flowChain": true,
+        "flowId": "rfk-flow-1698-yorus-barleybrew"
+      },
+      {
+        "id": 1782,
+        "name": "Furen's Armor",
+        "questLink": "https://www.wowhead.com/classic/quest=1782/furen-s-armor",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1701,
+        "nextQuestId": null,
+        "chainId": "rfk-flow-1698-yorus-barleybrew",
+        "chainDepth": 0,
+        "startNpc": "Furen Longbeard",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Furen Longbeard",
+            "link": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
+        "endNpc": "Furen Longbeard",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Furen Longbeard",
+            "link": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
+        "levels": "28",
+        "minLevel": 20,
+        "faction": "Alliance",
+        "xp": 3400,
+        "money": 2040,
+        "objective": "",
+        "description": "",
+        "shareable": true,
+        "requirements": [],
+        "rewards": [
+          {
+            "id": 6972,
+            "name": "Fire Hardened Hauberk",
+            "url": "https://www.wowhead.com/classic/item=6972/fire-hardened-hauberk",
+            "quality": 3,
+            "quantity": 1
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "rfk-flow-1698-yorus-barleybrew"
+      },
+      {
+        "id": 1700,
+        "name": "Grimand Elmore",
+        "questLink": "https://www.wowhead.com/classic/quest=1700/grimand-elmore",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1701,
+        "nextQuestId": null,
+        "chainId": "rfk-flow-1698-yorus-barleybrew",
+        "chainDepth": 0,
+        "startNpc": "Furen Longbeard",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Furen Longbeard",
+            "link": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
+        "endNpc": "Grimand Elmore",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=1416/grimand-elmore",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Stormwind City",
+        "endNpcs": [
+          {
+            "name": "Grimand Elmore",
+            "link": "https://www.wowhead.com/classic/npc=1416/grimand-elmore",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
+        "levels": "28",
+        "minLevel": 20,
+        "faction": "Alliance",
+        "xp": 570,
+        "money": 330,
+        "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=6926/furens-notes\" rel=\"noopener noreferrer\" target=\"_blank\">Furen's Notes</a> to <a href=\"https://www.wowhead.com/classic/npc=1416/grimand-elmore\" rel=\"noopener noreferrer\" target=\"_blank\">Grimand Elmore</a>.",
+        "description": "I made a copy of my notes on the techniques I learned while making your armor, and I need them sent to <a href=\"https://www.wowhead.com/classic/npc=1416/grimand-elmore\" rel=\"noopener noreferrer\" target=\"_blank\">Grimand Elmore</a>. He's here in the Dwarven District, in the weapon shop.<br><br>And duck when you give these to him. He's fiercely proud of his skills, and won't like the idea of learning something from me...",
+        "shareable": false,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "rfk-flow-1698-yorus-barleybrew"
+      },
+      {
+        "id": 1704,
+        "name": "Klockmort Spannerspan",
+        "questLink": "https://www.wowhead.com/classic/quest=1704/klockmort-spannerspan",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1701,
+        "nextQuestId": null,
+        "chainId": "rfk-flow-1698-yorus-barleybrew",
+        "chainDepth": 0,
+        "startNpc": "Furen Longbeard",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Furen Longbeard",
+            "link": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
+        "endNpc": "Klockmort Spannerspan",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Ironforge",
+        "endNpcs": [
+          {
+            "name": "Klockmort Spannerspan",
+            "link": "https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan",
+            "faction": "",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
+        "levels": "28",
+        "minLevel": 20,
+        "faction": "Alliance",
+        "xp": 570,
+        "money": 330,
+        "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=6926/furens-notes\" rel=\"noopener noreferrer\" target=\"_blank\">Furen's Notes</a> to <a href=\"https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan\" rel=\"noopener noreferrer\" target=\"_blank\">Klockmort Spannerspan</a>.",
+        "description": "I made a copy of my notes on the techniques I learned while making your armor, and need someone to take them to <a href=\"https://www.wowhead.com/classic/npc=6169/klockmort-spannerspan\" rel=\"noopener noreferrer\" target=\"_blank\">Klockmort Spannerspan</a>. He's a gnomish blacksmith in Ironforge and when he learns what I've learned... I bet he'll pull off his own beard in excitement.",
+        "shareable": false,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "rfk-flow-1698-yorus-barleybrew"
+      },
+      {
+        "id": 1703,
+        "name": "Mathiel",
+        "questLink": "https://www.wowhead.com/classic/quest=1703/mathiel",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1701,
+        "nextQuestId": null,
+        "chainId": "rfk-flow-1698-yorus-barleybrew",
+        "chainDepth": 0,
+        "startNpc": "Furen Longbeard",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Furen Longbeard",
+            "link": "https://www.wowhead.com/classic/npc=5413/furen-longbeard",
+            "faction": "",
+            "type": "npc",
+            "loc": "Stormwind City"
+          }
+        ],
+        "endNpc": "Mathiel",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6142/mathiel",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Darnassus",
+        "endNpcs": [
+          {
+            "name": "Mathiel",
+            "link": "https://www.wowhead.com/classic/npc=6142/mathiel",
+            "faction": "",
+            "type": "npc",
+            "loc": "Darnassus"
+          }
+        ],
+        "levels": "28",
+        "minLevel": 20,
+        "faction": "Alliance",
+        "xp": 1150,
+        "money": 720,
+        "objective": "Bring <a href=\"https://www.wowhead.com/classic/item=6926/furens-notes\" rel=\"noopener noreferrer\" target=\"_blank\">Furen's Notes</a> to <a href=\"https://www.wowhead.com/classic/npc=6142/mathiel\" rel=\"noopener noreferrer\" target=\"_blank\">Mathiel</a>.",
+        "description": "I made a copy of my notes on the techniques I learned while making your armor, and need them sent to the blacksmith <a href=\"https://www.wowhead.com/classic/npc=6142/mathiel\" rel=\"noopener noreferrer\" target=\"_blank\">Mathiel</a>. He lives in Darnassus which is quite a long way off, but I'm sure he'll be very grateful to learn what I've learned.",
+        "shareable": false,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "rfk-flow-1698-yorus-barleybrew"
+      },
+      {
+        "id": 1823,
+        "name": "Speak with Ruga",
+        "questLink": "https://www.wowhead.com/classic/quest=1823/speak-with-ruga",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 1824,
+        "chainId": "rfk-flow-1823-speak-with-ruga",
+        "chainDepth": 0,
+        "startNpc": "Torm Ragetotem",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=3041/torm-ragetotem",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Thunder Bluff",
+        "startNpcs": [
+          {
+            "name": "Torm Ragetotem",
+            "link": "https://www.wowhead.com/classic/npc=3041/torm-ragetotem",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          },
+          {
+            "name": "Sorek",
+            "link": "https://www.wowhead.com/classic/npc=3354/sorek",
+            "faction": "",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          },
+          {
+            "name": "Baltus Fowler",
+            "link": "https://www.wowhead.com/classic/npc=4595/baltus-fowler",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
+        "endNpc": "Ruga Ragetotem",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6394/ruga-ragetotem",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Ruga Ragetotem",
+            "link": "https://www.wowhead.com/classic/npc=6394/ruga-ragetotem",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "levels": "20",
+        "minLevel": 20,
+        "faction": "Horde",
+        "xp": 155,
+        "money": 90,
+        "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6394/ruga-ragetotem\" rel=\"noopener noreferrer\" target=\"_blank\">Ruga Ragetotem</a>.",
+        "description": "You are a warrior of skill and growing renown. Perhaps you are ready for <a href=\"https://www.wowhead.com/classic/npc=6394/ruga-ragetotem\" rel=\"noopener noreferrer\" target=\"_blank\">Ruga Ragetotem</a>'s trial? If so, then find Ruga in Camp Taurajo in the Barrens.<br><br>He awaits those warriors who answer his call.",
+        "shareable": true,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "rfk-1823-speak-with-ruga",
+          "index": 1,
+          "total": 4,
+          "name": "Speak with Ruga"
+        },
+        "flowChain": true,
+        "flowId": "rfk-flow-1823-speak-with-ruga"
+      },
+      {
+        "id": 1824,
+        "name": "Trial at the Field of Giants",
+        "questLink": "https://www.wowhead.com/classic/quest=1824/trial-at-the-field-of-giants",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1823,
+        "nextQuestId": 1825,
+        "chainId": "rfk-flow-1823-speak-with-ruga",
+        "chainDepth": 0,
+        "startNpc": "Ruga Ragetotem",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=6394/ruga-ragetotem",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Ruga Ragetotem",
+            "link": "https://www.wowhead.com/classic/npc=6394/ruga-ragetotem",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "endNpc": "Ruga Ragetotem",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6394/ruga-ragetotem",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Ruga Ragetotem",
+            "link": "https://www.wowhead.com/classic/npc=6394/ruga-ragetotem",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "levels": "20",
+        "minLevel": 20,
+        "faction": "Horde",
+        "xp": 1550,
+        "money": 960,
+        "objective": "Bring 5 twitching antennae to <a href=\"https://www.wowhead.com/classic/npc=6394/ruga-ragetotem\" rel=\"noopener noreferrer\" target=\"_blank\">Ruga Ragetotem</a> at Camp Taurajo",
+        "description": "To pass this trial, you must travel south to the Field of Giants. There you will find a host of crawling, insect creatures. They are new to the Barrens and I do not like what they herald.<br><br>Bring me their still-twitching antennae, and waste no time, for harvested antennae will not twitch for long. Bring me the antennae in the time allowed, and you will pass the trial.",
+        "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 7119,
+            "name": "Twitching Antenna",
+            "quantity": 5,
+            "url": "https://www.wowhead.com/classic/item=7119/twitching-antenna",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3250,
+                "name": "Silithid Creeper",
+                "url": "https://www.wowhead.com/classic/npc=3250/silithid-creeper",
+                "relation": "Dropped by",
+                "dropChance": 11.9
+              },
+              {
+                "type": "npc",
+                "id": 3251,
+                "name": "Silithid Grub",
+                "url": "https://www.wowhead.com/classic/npc=3251/silithid-grub",
+                "relation": "Dropped by",
+                "dropChance": 6.1
+              },
+              {
+                "type": "npc",
+                "id": 3252,
+                "name": "Silithid Swarmer",
+                "url": "https://www.wowhead.com/classic/npc=3252/silithid-swarmer",
+                "relation": "Dropped by",
+                "dropChance": 5.9
+              },
+              {
+                "type": "npc",
+                "id": 3503,
+                "name": "Silithid Protector",
+                "url": "https://www.wowhead.com/classic/npc=3503/silithid-protector",
+                "relation": "Dropped by",
+                "dropChance": 4.3
+              },
+              {
+                "type": "npc",
+                "id": 3253,
+                "name": "Silithid Harvester",
+                "url": "https://www.wowhead.com/classic/npc=3253/silithid-harvester",
+                "relation": "Dropped by",
+                "dropChance": 1.7
+              }
+            ]
+          }
+        ],
+        "rewards": [
+          {
+            "id": 7120,
+            "name": "Ruga's Bulwark",
+            "url": "https://www.wowhead.com/classic/item=7120/ruga-s-bulwark",
+            "quality": 2,
+            "quantity": 1
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "rfk-1823-speak-with-ruga",
+          "index": 2,
+          "total": 4,
+          "name": "Speak with Ruga"
+        },
+        "flowChain": true,
+        "flowId": "rfk-flow-1823-speak-with-ruga"
+      },
+      {
+        "id": 1825,
+        "name": "Speak with Thun'grim",
+        "questLink": "https://www.wowhead.com/classic/quest=1825/speak-with-thun-grim",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1824,
+        "nextQuestId": 1838,
+        "chainId": "rfk-flow-1823-speak-with-ruga",
+        "chainDepth": 0,
+        "startNpc": "Ruga Ragetotem",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=6394/ruga-ragetotem",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Ruga Ragetotem",
+            "link": "https://www.wowhead.com/classic/npc=6394/ruga-ragetotem",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "endNpc": "Thun'grim Firegaze",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Thun'grim Firegaze",
+            "link": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "levels": "20",
+        "minLevel": 20,
+        "faction": "Horde",
+        "xp": 780,
+        "money": 480,
+        "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=5878/thungrim-firegaze\" rel=\"noopener noreferrer\" target=\"_blank\">Thun'grim Firegaze</a> in the Barrens.",
+        "description": "<a href=\"https://www.wowhead.com/classic/npc=5878/thungrim-firegaze\" rel=\"noopener noreferrer\" target=\"_blank\">Thun'grim Firegaze</a>, an orc blacksmith of renown, has heard of your continued deeds of valor in service of the Horde. He would like to fashion for you a suit of armor, and bids you speak with him immediately.<br><br>Thun'grim is camped east of the Crossroads in the Barrens.",
+        "shareable": true,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "rfk-1823-speak-with-ruga",
+          "index": 3,
+          "total": 4,
+          "name": "Speak with Ruga"
+        },
+        "flowChain": true,
+        "flowId": "rfk-flow-1823-speak-with-ruga"
+      },
+      {
+        "id": 1838,
+        "name": "Brutal Armor",
+        "questLink": "https://www.wowhead.com/classic/quest=1838/brutal-armor",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1825,
+        "nextQuestId": 1848,
+        "chainId": "rfk-flow-1823-speak-with-ruga",
+        "chainDepth": 0,
+        "startNpc": "Thun'grim Firegaze",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Thun'grim Firegaze",
+            "link": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "endNpc": "Thun'grim Firegaze",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Thun'grim Firegaze",
+            "link": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "levels": "30",
+        "minLevel": 20,
+        "faction": "Horde",
+        "xp": 3650,
+        "money": 2220,
+        "objective": "Bring to <a href=\"https://www.wowhead.com/classic/npc=5878/thungrim-firegaze\" rel=\"noopener noreferrer\" target=\"_blank\">Thun'grim Firegaze</a> 15 <a href=\"https://www.wowhead.com/classic/item=7126/smoky-iron-ingot\" rel=\"noopener noreferrer\" target=\"_blank\">Smoky Iron Ingots</a>, 10 <a href=\"https://www.wowhead.com/classic/item=7127/powdered-azurite\" rel=\"noopener noreferrer\" target=\"_blank\">Powdered Azurite</a>, 10 <a href=\"https://www.wowhead.com/classic/item=3575/iron-bar\" rel=\"noopener noreferrer\" target=\"_blank\">Iron Bars</a> and a <a href=\"https://www.wowhead.com/classic/item=6841/vial-of-phlogiston\" rel=\"noopener noreferrer\" target=\"_blank\">Vial of Phlogiston</a>.",
+        "description": "I have heard tales of your strength and valor, and wish to make for you a suit of armor, a companion to aid you as tales of your great deeds grow.<br><br>But the fashioning of this armor will be a quest unto itself. I will need your help, and the help of other smiths of the Horde.<br><br>Here, take this scroll. I spent many nights, struggling with near-blind eyes, writing that which I need for the armor. Bring me the items on this scroll and I will create for you the first piece of the suit.",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 7126,
+            "name": "Smoky Iron Ingot",
+            "quantity": 15,
+            "url": "https://www.wowhead.com/classic/item=7126/smoky-iron-ingot",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 3999,
+                "name": "Windshear Digger",
+                "url": "https://www.wowhead.com/classic/npc=3999/windshear-digger",
+                "relation": "Dropped by",
+                "dropChance": 15.5
+              },
+              {
+                "type": "npc",
+                "id": 4003,
+                "name": "Windshear Geomancer",
+                "url": "https://www.wowhead.com/classic/npc=4003/windshear-geomancer",
+                "relation": "Dropped by",
+                "dropChance": 14.5
+              },
+              {
+                "type": "npc",
+                "id": 4004,
+                "name": "Windshear Overlord",
+                "url": "https://www.wowhead.com/classic/npc=4004/windshear-overlord",
+                "relation": "Dropped by",
+                "dropChance": 14.0
+              },
+              {
+                "type": "npc",
+                "id": 3998,
+                "name": "Windshear Vermin",
+                "url": "https://www.wowhead.com/classic/npc=3998/windshear-vermin",
+                "relation": "Dropped by",
+                "dropChance": 8.7
+              },
+              {
+                "type": "npc",
+                "id": 4002,
+                "name": "Windshear Stonecutter",
+                "url": "https://www.wowhead.com/classic/npc=4002/windshear-stonecutter",
+                "relation": "Dropped by",
+                "dropChance": 8.7
+              },
+              {
+                "type": "npc",
+                "id": 4001,
+                "name": "Windshear Tunnel Rat",
+                "url": "https://www.wowhead.com/classic/npc=4001/windshear-tunnel-rat",
+                "relation": "Dropped by",
+                "dropChance": 8.6
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 7127,
+            "name": "Powdered Azurite",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=7127/powdered-azurite",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 2269,
+                "name": "Hillsbrad Miner",
+                "url": "https://www.wowhead.com/classic/npc=2269/hillsbrad-miner",
+                "relation": "Dropped by",
+                "dropChance": 2.6
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 3575,
+            "name": "Iron Bar",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=3575/iron-bar",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 223542,
+                "name": "Fel Interloper",
+                "url": "https://www.wowhead.com/classic/npc=223542/fel-interloper",
+                "relation": "Dropped by",
+                "dropChance": 33.3
+              },
+              {
+                "type": "npc",
+                "id": 223543,
+                "name": "Fel Interloper",
+                "url": "https://www.wowhead.com/classic/npc=223543/fel-interloper",
+                "relation": "Dropped by",
+                "dropChance": 10.5
+              },
+              {
+                "type": "item",
+                "id": 223149,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=223149/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 8.1
+              },
+              {
+                "type": "item",
+                "id": 223148,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=223148/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 8.1
+              },
+              {
+                "type": "item",
+                "id": 223150,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=223150/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 6.9
+              },
+              {
+                "type": "npc",
+                "id": 223544,
+                "name": "Fel Interloper",
+                "url": "https://www.wowhead.com/classic/npc=223544/fel-interloper",
+                "relation": "Dropped by",
+                "dropChance": 6.3
+              },
+              {
+                "type": "item",
+                "id": 9363,
+                "name": "Sparklematic-Wrapped Box",
+                "url": "https://www.wowhead.com/classic/item=9363/sparklematic-wrapped-box",
+                "relation": "Contained in",
+                "dropChance": 3.3
+              },
+              {
+                "type": "spell",
+                "id": 3307,
+                "name": "Smelt Iron",
+                "url": "https://www.wowhead.com/classic/spell=3307/smelt-iron",
+                "relation": "Created by"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 6841,
+            "name": "Vial of Phlogiston",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=6841/vial-of-phlogiston",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 6168,
+                "name": "Roogug",
+                "url": "https://www.wowhead.com/classic/npc=6168/roogug",
+                "relation": "Dropped by"
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "rfk-1823-speak-with-ruga",
+          "index": 4,
+          "total": 4,
+          "name": "Speak with Ruga"
+        },
+        "flowChain": true,
+        "flowId": "rfk-flow-1823-speak-with-ruga"
+      },
+      {
+        "id": 1848,
+        "name": "Brutal Hauberk",
+        "questLink": "https://www.wowhead.com/classic/quest=1848/brutal-hauberk",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1838,
+        "nextQuestId": null,
+        "chainId": "rfk-flow-1823-speak-with-ruga",
+        "chainDepth": 0,
+        "startNpc": "Thun'grim Firegaze",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Thun'grim Firegaze",
+            "link": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "endNpc": "Thun'grim Firegaze",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "The Barrens",
+        "endNpcs": [
+          {
+            "name": "Thun'grim Firegaze",
+            "link": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "levels": "30",
+        "minLevel": 20,
+        "faction": "Horde",
+        "xp": 3050,
+        "money": 1860,
+        "objective": "",
+        "description": "",
+        "shareable": true,
+        "requirements": [],
+        "rewards": [
+          {
+            "id": 7133,
+            "name": "Brutal Hauberk",
+            "url": "https://www.wowhead.com/classic/item=7133/brutal-hauberk",
+            "quality": 3,
+            "quantity": 1
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "rfk-flow-1823-speak-with-ruga"
+      },
+      {
+        "id": 1840,
+        "name": "Orm Stonehoof and the Brutal Helm",
+        "questLink": "https://www.wowhead.com/classic/quest=1840/orm-stonehoof-and-the-brutal-helm",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1838,
+        "nextQuestId": null,
+        "chainId": "rfk-flow-1823-speak-with-ruga",
+        "chainDepth": 0,
+        "startNpc": "Thun'grim Firegaze",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Thun'grim Firegaze",
+            "link": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "endNpc": "Orm Stonehoof",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6410/orm-stonehoof",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Thunder Bluff",
+        "endNpcs": [
+          {
+            "name": "Orm Stonehoof",
+            "link": "https://www.wowhead.com/classic/npc=6410/orm-stonehoof",
+            "faction": "",
+            "type": "npc",
+            "loc": "Thunder Bluff"
+          }
+        ],
+        "levels": "30",
+        "minLevel": 20,
+        "faction": "Horde",
+        "xp": 1200,
+        "money": 720,
+        "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6410/orm-stonehoof\" rel=\"noopener noreferrer\" target=\"_blank\">Orm Stonehoof</a> in Thunder Bluff.",
+        "description": "<a href=\"https://www.wowhead.com/classic/npc=6410/orm-stonehoof\" rel=\"noopener noreferrer\" target=\"_blank\">Orm Stonehoof</a> is respected greatly for his skill. He will make for you the brutal helm.<br><br>Seek him out in Thunder Bluff, near the pool by the city's great, central totem.",
+        "shareable": true,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "rfk-flow-1823-speak-with-ruga"
+      },
+      {
+        "id": 1839,
+        "name": "Ula'elek and the Brutal Gauntlets",
+        "questLink": "https://www.wowhead.com/classic/quest=1839/ula-elek-and-the-brutal-gauntlets",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1838,
+        "nextQuestId": null,
+        "chainId": "rfk-flow-1823-speak-with-ruga",
+        "chainDepth": 0,
+        "startNpc": "Thun'grim Firegaze",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Thun'grim Firegaze",
+            "link": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "endNpc": "Ula'elek",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6408/ula-elek",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Durotar",
+        "endNpcs": [
+          {
+            "name": "Ula'elek",
+            "link": "https://www.wowhead.com/classic/npc=6408/ula-elek",
+            "faction": "",
+            "type": "npc",
+            "loc": "Durotar"
+          }
+        ],
+        "levels": "30",
+        "minLevel": 20,
+        "faction": "Horde",
+        "xp": 1200,
+        "money": 720,
+        "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6408/ulaelek\" rel=\"noopener noreferrer\" target=\"_blank\">Ula'elek</a> in Durotar.",
+        "description": "The troll smith <a href=\"https://www.wowhead.com/classic/npc=6408/ulaelek\" rel=\"noopener noreferrer\" target=\"_blank\">Ula'elek</a> will craft for you the brutal gauntlets. He dwells in Durotar, in Sen'jin Village with his Darkspear brethren, and he awaits your coming.",
+        "shareable": true,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "rfk-flow-1823-speak-with-ruga"
+      },
+      {
+        "id": 1841,
+        "name": "Velora Nitely and the Brutal Legguards",
+        "questLink": "https://www.wowhead.com/classic/quest=1841/velora-nitely-and-the-brutal-legguards",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 1838,
+        "nextQuestId": null,
+        "chainId": "rfk-flow-1823-speak-with-ruga",
+        "chainDepth": 0,
+        "startNpc": "Thun'grim Firegaze",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "The Barrens",
+        "startNpcs": [
+          {
+            "name": "Thun'grim Firegaze",
+            "link": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze",
+            "faction": "",
+            "type": "npc",
+            "loc": "The Barrens"
+          }
+        ],
+        "endNpc": "Velora Nitely",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=6411/velora-nitely",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Undercity",
+        "endNpcs": [
+          {
+            "name": "Velora Nitely",
+            "link": "https://www.wowhead.com/classic/npc=6411/velora-nitely",
+            "faction": "",
+            "type": "npc",
+            "loc": "Undercity"
+          }
+        ],
+        "levels": "30",
+        "minLevel": 20,
+        "faction": "Horde",
+        "xp": 1200,
+        "money": 720,
+        "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=6411/velora-nitely\" rel=\"noopener noreferrer\" target=\"_blank\">Velora Nitely</a> in the Undercity.",
+        "description": "It is said that, before her death, <a href=\"https://www.wowhead.com/classic/npc=6411/velora-nitely\" rel=\"noopener noreferrer\" target=\"_blank\">Velora Nitely</a> was one of the finest armorsmiths in Lordaeron. Death, it seems, has not decreased her talents. Speak with Velora--she will make your brutal legguards.<br><br>Velora plies her trade in the Undercity of Lordaeron, in the trade quarter.",
+        "shareable": true,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warrior"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "rfk-flow-1823-speak-with-ruga"
+      }
+    ],
+    "flows": [
+      {
+        "id": "rfk-flow-1698-yorus-barleybrew",
+        "tree": {
+          "type": "series",
+          "items": [
+            {
+              "type": "leaf",
+              "id": 1698
+            },
+            {
+              "type": "leaf",
+              "id": 1699
+            },
+            {
+              "type": "leaf",
+              "id": 1702
+            },
+            {
+              "type": "leaf",
+              "id": 1701
+            },
+            {
+              "type": "all",
+              "items": [
+                {
+                  "type": "leaf",
+                  "id": 1782
+                },
+                {
+                  "type": "leaf",
+                  "id": 1700
+                },
+                {
+                  "type": "leaf",
+                  "id": 1704
+                },
+                {
+                  "type": "leaf",
+                  "id": 1703
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "rfk-flow-1823-speak-with-ruga",
+        "tree": {
+          "type": "series",
+          "items": [
+            {
+              "type": "leaf",
+              "id": 1823
+            },
+            {
+              "type": "leaf",
+              "id": 1824
+            },
+            {
+              "type": "leaf",
+              "id": 1825
+            },
+            {
+              "type": "leaf",
+              "id": 1838
+            },
+            {
+              "type": "all",
+              "items": [
+                {
+                  "type": "leaf",
+                  "id": 1848
+                },
+                {
+                  "type": "leaf",
+                  "id": 1840
+                },
+                {
+                  "type": "leaf",
+                  "id": 1839
+                },
+                {
+                  "type": "leaf",
+                  "id": 1841
+                }
+              ]
+            }
+          ]
         }
       }
     ],
@@ -34350,6 +36080,384 @@ const DUNGEONS = [
         }
       },
       {
+        "id": 4083,
+        "name": "The Spectral Chalice",
+        "questLink": "https://www.wowhead.com/classic/quest=4083/the-spectral-chalice",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "Spectral Chalice",
+        "startObjectLink": "https://www.wowhead.com/classic/object=164869/spectral-chalice",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blackrock Depths",
+        "startNpcs": [
+          {
+            "name": "Spectral Chalice",
+            "link": "https://www.wowhead.com/classic/object=164869/spectral-chalice",
+            "faction": "",
+            "type": "object",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "endNpc": "",
+        "endNpcLink": "",
+        "endObject": "Spectral Chalice",
+        "endObjectLink": "https://www.wowhead.com/classic/object=164869/spectral-chalice",
+        "endLoc": "Blackrock Depths",
+        "endNpcs": [
+          {
+            "name": "Spectral Chalice",
+            "link": "https://www.wowhead.com/classic/object=164869/spectral-chalice",
+            "faction": "",
+            "type": "object",
+            "loc": "Blackrock Depths"
+          }
+        ],
+        "levels": "55",
+        "minLevel": 40,
+        "faction": "Both",
+        "xp": 5650,
+        "money": 33900,
+        "objective": "",
+        "description": "",
+        "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 7910,
+            "name": "Star Ruby",
+            "quantity": 2,
+            "url": "https://www.wowhead.com/classic/item=7910/star-ruby",
+            "quality": 2,
+            "sources": [
+              {
+                "type": "item",
+                "id": 12033,
+                "name": "Thaurissan Family Jewels",
+                "url": "https://www.wowhead.com/classic/item=12033/thaurissan-family-jewels",
+                "relation": "Contained in",
+                "dropChance": 91.2
+              },
+              {
+                "type": "item",
+                "id": 17962,
+                "name": "Blue Sack of Gems",
+                "url": "https://www.wowhead.com/classic/item=17962/blue-sack-of-gems",
+                "relation": "Contained in",
+                "dropChance": 78.2
+              },
+              {
+                "type": "item",
+                "id": 17964,
+                "name": "Gray Sack of Gems",
+                "url": "https://www.wowhead.com/classic/item=17964/gray-sack-of-gems",
+                "relation": "Contained in",
+                "dropChance": 77.8
+              },
+              {
+                "type": "item",
+                "id": 17963,
+                "name": "Green Sack of Gems",
+                "url": "https://www.wowhead.com/classic/item=17963/green-sack-of-gems",
+                "relation": "Contained in",
+                "dropChance": 76.8
+              },
+              {
+                "type": "item",
+                "id": 17965,
+                "name": "Yellow Sack of Gems",
+                "url": "https://www.wowhead.com/classic/item=17965/yellow-sack-of-gems",
+                "relation": "Contained in",
+                "dropChance": 75.8
+              },
+              {
+                "type": "item",
+                "id": 17969,
+                "name": "Red Sack of Gems",
+                "url": "https://www.wowhead.com/classic/item=17969/red-sack-of-gems",
+                "relation": "Contained in",
+                "dropChance": 75.3
+              },
+              {
+                "type": "npc",
+                "id": 2782,
+                "name": "Caretaker Alaric",
+                "url": "https://www.wowhead.com/classic/npc=2782/caretaker-alaric",
+                "relation": "Dropped by",
+                "dropChance": 50.0
+              },
+              {
+                "type": "npc",
+                "id": 14343,
+                "name": "Olm the Wise",
+                "url": "https://www.wowhead.com/classic/npc=14343/olm-the-wise",
+                "relation": "Dropped by",
+                "dropChance": 50.0
+              },
+              {
+                "type": "npc",
+                "id": 14519,
+                "name": "Aspect of Corruption",
+                "url": "https://www.wowhead.com/classic/npc=14519/aspect-of-corruption",
+                "relation": "Dropped by",
+                "dropChance": 50.0
+              },
+              {
+                "type": "npc",
+                "id": 11896,
+                "name": "Borelgore",
+                "url": "https://www.wowhead.com/classic/npc=11896/borelgore",
+                "relation": "Dropped by",
+                "dropChance": 33.3
+              },
+              {
+                "type": "npc",
+                "id": 243702,
+                "name": "Scarlet Paladin",
+                "url": "https://www.wowhead.com/classic/npc=243702/scarlet-paladin",
+                "relation": "Dropped by",
+                "dropChance": 33.3
+              },
+              {
+                "type": "object",
+                "id": 153463,
+                "name": "Large Solid Chest",
+                "url": "https://www.wowhead.com/classic/object=153463/large-solid-chest",
+                "relation": "Contained in",
+                "dropChance": 33.3
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 3577,
+            "name": "Gold Bar",
+            "quantity": 20,
+            "url": "https://www.wowhead.com/classic/item=3577/gold-bar",
+            "quality": 2,
+            "sources": [
+              {
+                "type": "object",
+                "id": 105578,
+                "name": "Horde Chest",
+                "url": "https://www.wowhead.com/classic/object=105578/horde-chest",
+                "relation": "Contained in",
+                "dropChance": 20.0
+              },
+              {
+                "type": "object",
+                "id": 4096,
+                "name": "Alliance Chest",
+                "url": "https://www.wowhead.com/classic/object=4096/alliance-chest",
+                "relation": "Contained in",
+                "dropChance": 20.0
+              },
+              {
+                "type": "object",
+                "id": 2852,
+                "name": "Solid Chest",
+                "url": "https://www.wowhead.com/classic/object=2852/solid-chest",
+                "relation": "Contained in",
+                "dropChance": 8.2
+              },
+              {
+                "type": "object",
+                "id": 2857,
+                "name": "Solid Chest",
+                "url": "https://www.wowhead.com/classic/object=2857/solid-chest",
+                "relation": "Contained in",
+                "dropChance": 7.1
+              },
+              {
+                "type": "object",
+                "id": 111095,
+                "name": "Alliance Chest",
+                "url": "https://www.wowhead.com/classic/object=111095/alliance-chest",
+                "relation": "Contained in",
+                "dropChance": 6.7
+              },
+              {
+                "type": "object",
+                "id": 105581,
+                "name": "Alliance Chest",
+                "url": "https://www.wowhead.com/classic/object=105581/alliance-chest",
+                "relation": "Contained in",
+                "dropChance": 6.2
+              },
+              {
+                "type": "object",
+                "id": 2850,
+                "name": "Solid Chest",
+                "url": "https://www.wowhead.com/classic/object=2850/solid-chest",
+                "relation": "Contained in",
+                "dropChance": 4.2
+              },
+              {
+                "type": "object",
+                "id": 3715,
+                "name": "Alliance Chest",
+                "url": "https://www.wowhead.com/classic/object=3715/alliance-chest",
+                "relation": "Contained in",
+                "dropChance": 3.4
+              },
+              {
+                "type": "item",
+                "id": 223150,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=223150/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 3.2
+              },
+              {
+                "type": "item",
+                "id": 223148,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=223148/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 2.7
+              },
+              {
+                "type": "item",
+                "id": 223149,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=223149/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 2.4
+              },
+              {
+                "type": "npc",
+                "id": 223544,
+                "name": "Fel Interloper",
+                "url": "https://www.wowhead.com/classic/npc=223544/fel-interloper",
+                "relation": "Dropped by",
+                "dropChance": 2.3
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 6037,
+            "name": "Truesilver Bar",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=6037/truesilver-bar",
+            "quality": 2,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 12426,
+                "name": "Masterwork Target Dummy",
+                "url": "https://www.wowhead.com/classic/npc=12426/masterwork-target-dummy",
+                "relation": "Dropped by",
+                "dropChance": 50.0
+              },
+              {
+                "type": "object",
+                "id": 4149,
+                "name": "Solid Chest",
+                "url": "https://www.wowhead.com/classic/object=4149/solid-chest",
+                "relation": "Contained in",
+                "dropChance": 50.0
+              },
+              {
+                "type": "item",
+                "id": 224850,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=224850/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 39.8
+              },
+              {
+                "type": "object",
+                "id": 2857,
+                "name": "Solid Chest",
+                "url": "https://www.wowhead.com/classic/object=2857/solid-chest",
+                "relation": "Contained in",
+                "dropChance": 33.3
+              },
+              {
+                "type": "object",
+                "id": 105578,
+                "name": "Horde Chest",
+                "url": "https://www.wowhead.com/classic/object=105578/horde-chest",
+                "relation": "Contained in",
+                "dropChance": 16.7
+              },
+              {
+                "type": "object",
+                "id": 105579,
+                "name": "Alliance Chest",
+                "url": "https://www.wowhead.com/classic/object=105579/alliance-chest",
+                "relation": "Contained in",
+                "dropChance": 12.5
+              },
+              {
+                "type": "object",
+                "id": 2855,
+                "name": "Solid Chest",
+                "url": "https://www.wowhead.com/classic/object=2855/solid-chest",
+                "relation": "Contained in",
+                "dropChance": 11.8
+              },
+              {
+                "type": "item",
+                "id": 9363,
+                "name": "Sparklematic-Wrapped Box",
+                "url": "https://www.wowhead.com/classic/item=9363/sparklematic-wrapped-box",
+                "relation": "Contained in",
+                "dropChance": 8.2
+              },
+              {
+                "type": "object",
+                "id": 153453,
+                "name": "Solid Chest",
+                "url": "https://www.wowhead.com/classic/object=153453/solid-chest",
+                "relation": "Contained in",
+                "dropChance": 7.6
+              },
+              {
+                "type": "npc",
+                "id": 230146,
+                "name": "Fel Interloper",
+                "url": "https://www.wowhead.com/classic/npc=230146/fel-interloper",
+                "relation": "Dropped by",
+                "dropChance": 6.9
+              },
+              {
+                "type": "object",
+                "id": 105581,
+                "name": "Alliance Chest",
+                "url": "https://www.wowhead.com/classic/object=105581/alliance-chest",
+                "relation": "Contained in",
+                "dropChance": 6.2
+              },
+              {
+                "type": "item",
+                "id": 216646,
+                "name": "Ziri's Mystery Crate",
+                "url": "https://www.wowhead.com/classic/item=216646/ziri-s-mystery-crate",
+                "relation": "Contained in",
+                "dropChance": 6.2
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
         "id": 3906,
         "name": "Disharmony of Flame",
         "questLink": "https://www.wowhead.com/classic/quest=3906/disharmony-of-flame",
@@ -37756,6 +39864,158 @@ const DUNGEONS = [
         "series": null
       },
       {
+        "id": 7581,
+        "name": "The Prison's Bindings",
+        "questLink": "https://www.wowhead.com/classic/quest=7581/the-prison-s-bindings",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Daio the Decrepit",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14463/daio-the-decrepit",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Blasted Lands",
+        "startNpcs": [
+          {
+            "name": "Daio the Decrepit",
+            "link": "https://www.wowhead.com/classic/npc=14463/daio-the-decrepit",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blasted Lands"
+          }
+        ],
+        "endNpc": "Daio the Decrepit",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14463/daio-the-decrepit",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Blasted Lands",
+        "endNpcs": [
+          {
+            "name": "Daio the Decrepit",
+            "link": "https://www.wowhead.com/classic/npc=14463/daio-the-decrepit",
+            "faction": "",
+            "type": "npc",
+            "loc": "Blasted Lands"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "objective": "Travel to Dire Maul in Feralas and recover 15 <a href=\"https://www.wowhead.com/classic/item=18603/satyr-blood\" rel=\"noopener noreferrer\" target=\"_blank\">Satyr Blood</a> from the Wildspawn Satyr that inhabit the Warpwood Quarter. Return to Daio in the Tainted Scar when this is done.",
+        "description": "You must retrieve bindings for the prison of the Doomguard from lesser demons.<br><br>The blood of the Wildspawn satyr that occupy Dire Maul should do nicely. The coagulated blood will bond the Hederine shards and power the crystal prison.",
+        "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18603,
+            "name": "Satyr Blood",
+            "quantity": 15,
+            "url": "https://www.wowhead.com/classic/item=18603/satyr-blood",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11451,
+                "name": "Wildspawn Satyr",
+                "url": "https://www.wowhead.com/classic/npc=11451/wildspawn-satyr",
+                "relation": "Dropped by",
+                "dropChance": 3.4
+              },
+              {
+                "type": "npc",
+                "id": 11454,
+                "name": "Wildspawn Betrayer",
+                "url": "https://www.wowhead.com/classic/npc=11454/wildspawn-betrayer",
+                "relation": "Dropped by",
+                "dropChance": 3.3
+              },
+              {
+                "type": "npc",
+                "id": 228916,
+                "name": "Mannoroc Satyr",
+                "url": "https://www.wowhead.com/classic/npc=228916/mannoroc-satyr",
+                "relation": "Dropped by",
+                "dropChance": 1.4
+              },
+              {
+                "type": "npc",
+                "id": 11457,
+                "name": "Wildspawn Hellcaller",
+                "url": "https://www.wowhead.com/classic/npc=11457/wildspawn-hellcaller",
+                "relation": "Dropped by",
+                "dropChance": 1.3
+              },
+              {
+                "type": "npc",
+                "id": 11455,
+                "name": "Wildspawn Felsworn",
+                "url": "https://www.wowhead.com/classic/npc=11455/wildspawn-felsworn",
+                "relation": "Dropped by",
+                "dropChance": 1.2
+              },
+              {
+                "type": "npc",
+                "id": 228919,
+                "name": "Mannoroc Hellcaller",
+                "url": "https://www.wowhead.com/classic/npc=228919/mannoroc-hellcaller",
+                "relation": "Dropped by",
+                "dropChance": 1.1
+              },
+              {
+                "type": "npc",
+                "id": 11452,
+                "name": "Wildspawn Rogue",
+                "url": "https://www.wowhead.com/classic/npc=11452/wildspawn-rogue",
+                "relation": "Dropped by",
+                "dropChance": 0.9
+              },
+              {
+                "type": "npc",
+                "id": 228918,
+                "name": "Mannoroc Shadowstalker",
+                "url": "https://www.wowhead.com/classic/npc=228918/mannoroc-shadowstalker",
+                "relation": "Dropped by",
+                "dropChance": 0.9
+              },
+              {
+                "type": "npc",
+                "id": 11453,
+                "name": "Wildspawn Trickster",
+                "url": "https://www.wowhead.com/classic/npc=11453/wildspawn-trickster",
+                "relation": "Dropped by",
+                "dropChance": 0.7
+              },
+              {
+                "type": "npc",
+                "id": 11456,
+                "name": "Wildspawn Shadowstalker",
+                "url": "https://www.wowhead.com/classic/npc=11456/wildspawn-shadowstalker",
+                "relation": "Dropped by",
+                "dropChance": 0.7
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
         "id": 7482,
         "name": "Elven Legends",
         "questLink": "https://www.wowhead.com/classic/quest=7482/elven-legends",
@@ -39054,6 +41314,1349 @@ const DUNGEONS = [
         "isDungeon": true,
         "series": null,
         "treeChain": true
+      },
+      {
+        "id": 7562,
+        "name": "Mor'zul Bloodbringer",
+        "questLink": "https://www.wowhead.com/classic/quest=7562/mor-zul-bloodbringer",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": 7563,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Spackle Thornberry",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=5520/spackle-thornberry",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Stormwind City",
+        "startNpcs": [
+          {
+            "name": "Spackle Thornberry",
+            "link": "https://www.wowhead.com/classic/npc=5520/spackle-thornberry",
+            "faction": "Alliance",
+            "type": "npc",
+            "loc": "Stormwind City"
+          },
+          {
+            "name": "Martha Strain",
+            "link": "https://www.wowhead.com/classic/npc=5753/martha-strain",
+            "faction": "Horde",
+            "type": "npc",
+            "loc": "Undercity"
+          },
+          {
+            "name": "Kurgul",
+            "link": "https://www.wowhead.com/classic/npc=5815/kurgul",
+            "faction": "Horde",
+            "type": "npc",
+            "loc": "Orgrimmar"
+          },
+          {
+            "name": "Jubahl Corpseseeker",
+            "link": "https://www.wowhead.com/classic/npc=6382/jubahl-corpseseeker",
+            "faction": "Alliance",
+            "type": "npc",
+            "loc": "Ironforge"
+          }
+        ],
+        "endNpc": "Mor'zul Bloodbringer",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 620,
+        "money": 3750,
+        "objective": "Speak with <a href=\"https://www.wowhead.com/classic/npc=14436/morzul-bloodbringer\" rel=\"noopener noreferrer\" target=\"_blank\">Mor'zul Bloodbringer</a> in the Burning Steppes.",
+        "description": "your delvings into the dark arts are deep. Your mastery over otherworldly denizens has grown so strong... perhaps you are ready to bind to you one of the infamous dreadsteeds.<br><br>The ritual to summon the beast from its home requires great power and resources, but if you desire to dominate that epic mount, then speak with <a href=\"https://www.wowhead.com/classic/npc=14436/morzul-bloodbringer\" rel=\"noopener noreferrer\" target=\"_blank\">Mor'zul Bloodbringer</a>. He is camped near the Altar of Storms in the Burning Steppes.<br><br>Go. This quest will be perilous, but a Warlock of your stature does not shy from danger!",
+        "shareable": false,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "dm-7562-mor-zul-bloodbringer",
+          "index": 1,
+          "total": 3,
+          "name": "Mor'zul Bloodbringer"
+        },
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7563,
+        "name": "Rage of Blood",
+        "questLink": "https://www.wowhead.com/classic/quest=7563/rage-of-blood",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7562,
+        "nextQuestId": 7564,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Mor'zul Bloodbringer",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 7750,
+        "money": 46500,
+        "objective": "Bring 30 bottles of <a href=\"https://www.wowhead.com/classic/item=18590/raging-beasts-blood\" rel=\"noopener noreferrer\" target=\"_blank\">Raging Beast's Blood</a> to <a href=\"https://www.wowhead.com/classic/npc=14436/morzul-bloodbringer\" rel=\"noopener noreferrer\" target=\"_blank\">Mor'zul Bloodbringer</a> in the Burning Steppes.",
+        "description": "The dreadsteeds dwell on another world, on the fiery Plains of Xoroth, and to bind one of those famed beasts you must invoke powerful glyphs. I can scribe the glyphs on a parchment for you, but first I will need a special ink.<br><br>In distant Winterspring there dwells a race of owl beasts. Once pure creatures, they were turned mad by the demonic emanations of the Darkwhisper Gorge and now roam the snows in a frenzy.<br><br>Their blood is what I need to ink your parchment. Bring it to me.",
+        "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18590,
+            "name": "Raging Beast's Blood",
+            "quantity": 30,
+            "url": "https://www.wowhead.com/classic/item=18590/raging-beasts-blood",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 7454,
+                "name": "Berserk Owlbeast",
+                "url": "https://www.wowhead.com/classic/npc=7454/berserk-owlbeast",
+                "relation": "Dropped by",
+                "dropChance": 10.3
+              },
+              {
+                "type": "npc",
+                "id": 7452,
+                "name": "Crazed Owlbeast",
+                "url": "https://www.wowhead.com/classic/npc=7452/crazed-owlbeast",
+                "relation": "Dropped by",
+                "dropChance": 10.1
+              },
+              {
+                "type": "npc",
+                "id": 7453,
+                "name": "Moontouched Owlbeast",
+                "url": "https://www.wowhead.com/classic/npc=7453/moontouched-owlbeast",
+                "relation": "Dropped by",
+                "dropChance": 9.9
+              },
+              {
+                "type": "npc",
+                "id": 7451,
+                "name": "Raging Owlbeast",
+                "url": "https://www.wowhead.com/classic/npc=7451/raging-owlbeast",
+                "relation": "Dropped by",
+                "dropChance": 2.0
+              },
+              {
+                "type": "npc",
+                "id": 7450,
+                "name": "Ragged Owlbeast",
+                "url": "https://www.wowhead.com/classic/npc=7450/ragged-owlbeast",
+                "relation": "Dropped by",
+                "dropChance": 1.8
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "dm-7562-mor-zul-bloodbringer",
+          "index": 2,
+          "total": 3,
+          "name": "Mor'zul Bloodbringer"
+        },
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7564,
+        "name": "Wildeyes",
+        "questLink": "https://www.wowhead.com/classic/quest=7564/wildeyes",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7563,
+        "nextQuestId": 7623,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 3100,
+        "money": 18600,
+        "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=18591/case-of-blood\" rel=\"noopener noreferrer\" target=\"_blank\">Case of Blood</a> to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a> in the Burning Steppes.",
+        "description": "My servant, Gorzeeki, is an alchemist of some skill. He can prepare the ink I will need for your parchment. I gathered together the blood you acquired; take it to Gorzeeki so that he can begin his work.",
+        "shareable": false,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "dm-7562-mor-zul-bloodbringer",
+          "index": 3,
+          "total": 3,
+          "name": "Mor'zul Bloodbringer"
+        },
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7623,
+        "name": "Lord Banehollow",
+        "questLink": "https://www.wowhead.com/classic/quest=7623/lord-banehollow",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7564,
+        "nextQuestId": 7624,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Gorzeeki Wildeyes",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Lord Banehollow",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Felwood",
+        "endNpcs": [
+          {
+            "name": "Lord Banehollow",
+            "link": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6200,
+        "money": 37200,
+        "objective": "Purchase Shadowy Potions from Gorzeeki in the Burning Steppes.<br><br>Use the potions to travel through Jaedenar, and speak with <a href=\"https://www.wowhead.com/classic/npc=9516/lord-banehollow\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Banehollow</a>.",
+        "description": "Mor'zul says that you want to open a portal to Xoroth. To do that, you'll need Xorothian stardust. That's not easy to find on Azeroth!<br><br>There is one being who might have some: <a href=\"https://www.wowhead.com/classic/npc=9516/lord-banehollow\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Banehollow</a> in Jaedenar, the seat of the Shadow Council! Speak with him and he might part with the stardust.<br><br>But if you're going to Jaedenar, then you'll need to cloak yourself in the Shadow Council's own flavor of evil. That will require some of my shadowy potions, and that will cost you...",
+        "shareable": false,
+        "requirements": [],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "dm-7623-lord-banehollow",
+          "index": 1,
+          "total": 5,
+          "name": "Lord Banehollow"
+        },
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7624,
+        "name": "Ulathek the Traitor",
+        "questLink": "https://www.wowhead.com/classic/quest=7624/ulathek-the-traitor",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7623,
+        "nextQuestId": 7625,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Lord Banehollow",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Felwood",
+        "startNpcs": [
+          {
+            "name": "Lord Banehollow",
+            "link": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
+        "endNpc": "Lord Banehollow",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Felwood",
+        "endNpcs": [
+          {
+            "name": "Lord Banehollow",
+            "link": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
+        "levels": "58",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6200,
+        "money": 37200,
+        "objective": "Confront Ulathek, then bring <a href=\"https://www.wowhead.com/classic/item=18719/the-traitors-heart\" rel=\"noopener noreferrer\" target=\"_blank\">The Traitor's Heart</a> to <a href=\"https://www.wowhead.com/classic/npc=9516/lord-banehollow\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Banehollow</a> in Jaedenar.",
+        "description": "You wish to enter my good graces? Then kill for me.<br><br>My servant, Ulathek, is pathetic how he grovels before me, all the while plotting with Lord Hel'nurath on Xoroth. Hel'nurath plans to usurp my power here, and Ulathek is his spy...<br><br>Prove that you serve me and not my rivals. Confront Ulathek in his quarters, in the Shadow Hold to the west. Tell him that I know his secret and watch as fear grips him. Then, bring me <a href=\"https://www.wowhead.com/classic/item=18719/the-traitors-heart\" rel=\"noopener noreferrer\" target=\"_blank\">the traitor's heart</a>!",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18719,
+            "name": "The Traitor's Heart",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18719/the-traitors-heart",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14523,
+                "name": "Ulathek",
+                "url": "https://www.wowhead.com/classic/npc=14523/ulathek",
+                "relation": "Dropped by"
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "dm-7623-lord-banehollow",
+          "index": 2,
+          "total": 5,
+          "name": "Lord Banehollow"
+        },
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7625,
+        "name": "Xorothian Stardust",
+        "questLink": "https://www.wowhead.com/classic/quest=7625/xorothian-stardust",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7624,
+        "nextQuestId": 7629,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Lord Banehollow",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Felwood",
+        "startNpcs": [
+          {
+            "name": "Lord Banehollow",
+            "link": "https://www.wowhead.com/classic/npc=9516/lord-banehollow",
+            "faction": "",
+            "type": "npc",
+            "loc": "Felwood"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "objective": "Purchase <a href=\"https://www.wowhead.com/classic/item=18687/xorothian-stardust\" rel=\"noopener noreferrer\" target=\"_blank\">Xorothian Stardust</a> from Ur'dan. Bring it to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a> in the Burning Steppes.",
+        "description": "So you come to me seeking <a href=\"https://www.wowhead.com/classic/item=18687/xorothian-stardust\" rel=\"noopener noreferrer\" target=\"_blank\">Xorothian stardust</a>? You wish to open a portal to Xoroth, the domain of Hel'nurath my rival? Perhaps you plan to steal from him one of his precious dreadsteeds?<br><br>Very well. My servant Ur'dan has a supply of <a href=\"https://www.wowhead.com/classic/item=18687/xorothian-stardust\" rel=\"noopener noreferrer\" target=\"_blank\">Xorothian stardust</a>. You may obtain it from him... if you can pay the price.",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18687,
+            "name": "Xorothian Stardust",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18687/xorothian-stardust",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 14522,
+                "name": "Ur'dan",
+                "url": "https://www.wowhead.com/classic/npc=14522/ur-dan",
+                "relation": "Sold by"
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "dm-7623-lord-banehollow",
+          "index": 3,
+          "total": 5,
+          "name": "Lord Banehollow"
+        },
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7626,
+        "name": "Bell of Dethmoora",
+        "questLink": "https://www.wowhead.com/classic/quest=7626/bell-of-dethmoora",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7564,
+        "nextQuestId": 7630,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "objective": "Bring 10 <a href=\"https://www.wowhead.com/classic/item=9264/elixir-of-shadow-power\" rel=\"noopener noreferrer\" target=\"_blank\">Elixirs of Shadow Power</a> to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a> in the Burning Steppes.",
+        "description": "A Bell of Dethmoora, named after the late warlock Dethmoora Darkeyes, is one of the three tools needed to create a Circle of Greater Summoning. When properly atuned with the Wheel and the Candle, these items conduct vast stores of arcane power.<br><br>My servant Gorzeeki can construct such a bell, but to do so he will need a large supply of elixirs of shadow power. Procure the elixirs from an alchemist and bring them to Gorzeeki.",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 9264,
+            "name": "Elixir of Shadow Power",
+            "quantity": 10,
+            "url": "https://www.wowhead.com/classic/item=9264/elixir-of-shadow-power",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "item",
+                "id": 189427,
+                "name": "More Raid Consumables",
+                "url": "https://www.wowhead.com/classic/item=189427/more-raid-consumables",
+                "relation": "Contained in",
+                "dropChance": 94.1
+              },
+              {
+                "type": "item",
+                "id": 11887,
+                "name": "Cenarion Circle Cache",
+                "url": "https://www.wowhead.com/classic/item=11887/cenarion-circle-cache",
+                "relation": "Contained in",
+                "dropChance": 14.8
+              },
+              {
+                "type": "npc",
+                "id": 15508,
+                "name": "Batrider Pele'keiki",
+                "url": "https://www.wowhead.com/classic/npc=15508/batrider-pele-keiki",
+                "relation": "Dropped by"
+              },
+              {
+                "type": "spell",
+                "id": 11476,
+                "name": "Elixir of Shadow Power",
+                "url": "https://www.wowhead.com/classic/spell=11476/elixir-of-shadow-power",
+                "relation": "Created by"
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7628,
+        "name": "Doomsday Candle",
+        "questLink": "https://www.wowhead.com/classic/quest=7628/doomsday-candle",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7564,
+        "nextQuestId": 7630,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "objective": "Bring 35 <a href=\"https://www.wowhead.com/classic/item=15416/black-dragonscale\" rel=\"noopener noreferrer\" target=\"_blank\">Black Dragonscales</a> to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a> in the Burning Steppes.",
+        "description": "A Doomsday Candle stores fire and directs it at those who would disrupt your ritual. When creating your Circle of Greater Summoning, if your candle is lit then any wayward demons will be burned by its flames!<br><br>Containing that fire is not easy, and requires the essence within the scales of a black dragon. Acquire those scales from a skinner and bring them to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a>.",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 15416,
+            "name": "Black Dragonscale",
+            "quantity": 35,
+            "url": "https://www.wowhead.com/classic/item=15416/black-dragonscale",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 12465,
+                "name": "Death Talon Wyrmkin",
+                "url": "https://www.wowhead.com/classic/npc=12465/death-talon-wyrmkin",
+                "relation": "Skinned from",
+                "dropChance": 36.2
+              },
+              {
+                "type": "npc",
+                "id": 12467,
+                "name": "Death Talon Captain",
+                "url": "https://www.wowhead.com/classic/npc=12467/death-talon-captain",
+                "relation": "Skinned from",
+                "dropChance": 30.5
+              },
+              {
+                "type": "npc",
+                "id": 7846,
+                "name": "Teremus the Devourer",
+                "url": "https://www.wowhead.com/classic/npc=7846/teremus-the-devourer",
+                "relation": "Skinned from",
+                "dropChance": 24.6
+              },
+              {
+                "type": "npc",
+                "id": 9568,
+                "name": "Overlord Wyrmthalak",
+                "url": "https://www.wowhead.com/classic/npc=9568/overlord-wyrmthalak",
+                "relation": "Skinned from",
+                "dropChance": 24.5
+              },
+              {
+                "type": "npc",
+                "id": 10264,
+                "name": "Solakar Flamewreath",
+                "url": "https://www.wowhead.com/classic/npc=10264/solakar-flamewreath",
+                "relation": "Skinned from",
+                "dropChance": 24.4
+              },
+              {
+                "type": "npc",
+                "id": 10363,
+                "name": "General Drakkisath",
+                "url": "https://www.wowhead.com/classic/npc=10363/general-drakkisath",
+                "relation": "Skinned from",
+                "dropChance": 24.3
+              },
+              {
+                "type": "npc",
+                "id": 14601,
+                "name": "Ebonroc",
+                "url": "https://www.wowhead.com/classic/npc=14601/ebonroc",
+                "relation": "Dropped by",
+                "dropChance": 12.6
+              },
+              {
+                "type": "npc",
+                "id": 10321,
+                "name": "Emberstrife",
+                "url": "https://www.wowhead.com/classic/npc=10321/emberstrife",
+                "relation": "Dropped by",
+                "dropChance": 12.5
+              },
+              {
+                "type": "npc",
+                "id": 11981,
+                "name": "Flamegor",
+                "url": "https://www.wowhead.com/classic/npc=11981/flamegor",
+                "relation": "Dropped by",
+                "dropChance": 9.6
+              },
+              {
+                "type": "npc",
+                "id": 7043,
+                "name": "Flamescale Wyrmkin",
+                "url": "https://www.wowhead.com/classic/npc=7043/flamescale-wyrmkin",
+                "relation": "Dropped by",
+                "dropChance": 7.4
+              },
+              {
+                "type": "npc",
+                "id": 7042,
+                "name": "Flamescale Dragonspawn",
+                "url": "https://www.wowhead.com/classic/npc=7042/flamescale-dragonspawn",
+                "relation": "Dropped by",
+                "dropChance": 6.7
+              },
+              {
+                "type": "npc",
+                "id": 11983,
+                "name": "Firemaw",
+                "url": "https://www.wowhead.com/classic/npc=11983/firemaw",
+                "relation": "Dropped by",
+                "dropChance": 6.4
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7627,
+        "name": "Wheel of the Black March",
+        "questLink": "https://www.wowhead.com/classic/quest=7627/wheel-of-the-black-march",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7564,
+        "nextQuestId": 7630,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "objective": "Bring 6 <a href=\"https://www.wowhead.com/classic/item=14344/large-brilliant-shard\" rel=\"noopener noreferrer\" target=\"_blank\">Large Brilliant Shards</a> and 25 <a href=\"https://www.wowhead.com/classic/item=11370/dark-iron-ore\" rel=\"noopener noreferrer\" target=\"_blank\">Dark Iron Ore</a> to Gorzeeki in the Burning Steppes.",
+        "description": "A Wheel of the Black March contains and directs the violent energies required for the Circle of Greater Summoning. For Gozeeki to construct a wheel, he will need both <a href=\"https://www.wowhead.com/classic/item=14344/large-brilliant-shard\" rel=\"noopener noreferrer\" target=\"_blank\">large brilliant shards</a> from an enchanter, and <a href=\"https://www.wowhead.com/classic/item=11370/dark-iron-ore\" rel=\"noopener noreferrer\" target=\"_blank\">dark iron ore</a> from a master miner.<br><br>Acquire these and bring them to my servant.",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 14344,
+            "name": "Large Brilliant Shard",
+            "quantity": 6,
+            "url": "https://www.wowhead.com/classic/item=14344/large-brilliant-shard",
+            "quality": 3,
+            "sources": [
+              {
+                "type": "item",
+                "id": 224851,
+                "name": "Otherworldly Treasure",
+                "url": "https://www.wowhead.com/classic/item=224851/otherworldly-treasure",
+                "relation": "Contained in",
+                "dropChance": 50.0
+              },
+              {
+                "type": "item",
+                "id": 237263,
+                "name": "Supply Bag",
+                "url": "https://www.wowhead.com/classic/item=237263/supply-bag",
+                "relation": "Contained in",
+                "dropChance": 6.7
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 5.7
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 5.4
+              },
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 3.9
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "id": 11370,
+            "name": "Dark Iron Ore",
+            "quantity": 25,
+            "url": "https://www.wowhead.com/classic/item=11370/dark-iron-ore",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 8905,
+                "name": "Warbringer Construct",
+                "url": "https://www.wowhead.com/classic/npc=8905/warbringer-construct",
+                "relation": "Dropped by",
+                "dropChance": 17.0
+              },
+              {
+                "type": "npc",
+                "id": 8906,
+                "name": "Ragereaver Golem",
+                "url": "https://www.wowhead.com/classic/npc=8906/ragereaver-golem",
+                "relation": "Dropped by",
+                "dropChance": 16.1
+              },
+              {
+                "type": "npc",
+                "id": 8907,
+                "name": "Wrath Hammer Construct",
+                "url": "https://www.wowhead.com/classic/npc=8907/wrath-hammer-construct",
+                "relation": "Dropped by",
+                "dropChance": 15.6
+              },
+              {
+                "type": "npc",
+                "id": 8908,
+                "name": "Molten War Golem",
+                "url": "https://www.wowhead.com/classic/npc=8908/molten-war-golem",
+                "relation": "Dropped by",
+                "dropChance": 13.7
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 7.2
+              },
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 7.0
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 4.4
+              },
+              {
+                "type": "npc",
+                "id": 9502,
+                "name": "Phalanx",
+                "url": "https://www.wowhead.com/classic/npc=9502/phalanx",
+                "relation": "Dropped by",
+                "dropChance": 2.8
+              },
+              {
+                "type": "npc",
+                "id": 8923,
+                "name": "Panzor the Invincible",
+                "url": "https://www.wowhead.com/classic/npc=8923/panzor-the-invincible",
+                "relation": "Dropped by",
+                "dropChance": 1.6
+              },
+              {
+                "type": "npc",
+                "id": 9023,
+                "name": "Marshal Windsor",
+                "url": "https://www.wowhead.com/classic/npc=9023/marshal-windsor",
+                "relation": "Dropped by"
+              },
+              {
+                "type": "npc",
+                "id": 9459,
+                "name": "Cyrus Therepentous",
+                "url": "https://www.wowhead.com/classic/npc=9459/cyrus-therepentous",
+                "relation": "Dropped by"
+              },
+              {
+                "type": "npc",
+                "id": 11671,
+                "name": "Core Hound",
+                "url": "https://www.wowhead.com/classic/npc=11671/core-hound",
+                "relation": "Dropped by"
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7630,
+        "name": "Arcanite",
+        "questLink": "https://www.wowhead.com/classic/quest=7630/arcanite",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7626,
+        "nextQuestId": 7629,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Gorzeeki Wildeyes",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "objective": "Bring 3 <a href=\"https://www.wowhead.com/classic/item=12360/arcanite-bar\" rel=\"noopener noreferrer\" target=\"_blank\">Arcanite Bars</a> to Gorzeeki in the Burning Steppes.",
+        "description": "Now that the Bell, Wheel and Candle are made, I should make a black lodestone. During your ritual, you'll need that lodestone to maintain the other ritual objects if they should fail.<br><br>To make the lodestone, I require arcanite. Do you have any? If not, then... you'll have to get the arcanite from an alchemist.<br><br>Return to me when you have the arcanite, and then I'll make the black lodestone.",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 12360,
+            "name": "Arcanite Bar",
+            "quantity": 3,
+            "url": "https://www.wowhead.com/classic/item=12360/arcanite-bar",
+            "quality": 2,
+            "sources": [
+              {
+                "type": "item",
+                "id": 237386,
+                "name": "Wartorn Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=237386/wartorn-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 4.4
+              },
+              {
+                "type": "item",
+                "id": 236414,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=236414/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 4.4
+              },
+              {
+                "type": "item",
+                "id": 226405,
+                "name": "Damaged Undermine Supply Crate",
+                "url": "https://www.wowhead.com/classic/item=226405/damaged-undermine-supply-crate",
+                "relation": "Contained in",
+                "dropChance": 2.2
+              },
+              {
+                "type": "spell",
+                "id": 17187,
+                "name": "Transmute: Arcanite",
+                "url": "https://www.wowhead.com/classic/spell=17187/transmute-arcanite",
+                "relation": "Created by"
+              }
+            ]
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": null,
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7629,
+        "name": "Imp Delivery",
+        "questLink": "https://www.wowhead.com/classic/quest=7629/imp-delivery",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7625,
+        "nextQuestId": 7631,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Gorzeeki Wildeyes",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Gorzeeki Wildeyes",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Burning Steppes",
+        "endNpcs": [
+          {
+            "name": "Gorzeeki Wildeyes",
+            "link": "https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "objective": "Bring the <a href=\"https://www.wowhead.com/classic/item=18688/imp-in-a-jar\" rel=\"noopener noreferrer\" target=\"_blank\">Imp in a Jar</a> to the alchemy lab in the Scholomance. After the parchment is created, return the jar to <a href=\"https://www.wowhead.com/classic/npc=14437/gorzeeki-wildeyes\" rel=\"noopener noreferrer\" target=\"_blank\">Gorzeeki Wildeyes</a>.",
+        "description": "There is one more process required for Mor'zul's parchment; I need paper infused with Xorothian stardust. And... I'm afraid I can't do that here. I don't have the equipment!<br><br>There is an alchemy lab, however, with everything needed. It's in the Scholomance, on the isle of Caer Darrow in the Plaguelands.<br><br>I can't make the trip, but here - take this jar. There's an imp inside who is quite clever. Let him out at the alchemy lab and he'll infuse the parchment.",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 14500,
+            "name": "Parchment Created",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=14500/parchment-created"
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": false,
+        "series": {
+          "id": "dm-7623-lord-banehollow",
+          "index": 4,
+          "total": 5,
+          "name": "Lord Banehollow"
+        },
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      },
+      {
+        "id": 7631,
+        "name": "Dreadsteed of Xoroth",
+        "questLink": "https://www.wowhead.com/classic/quest=7631/dreadsteed-of-xoroth",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": 7629,
+        "nextQuestId": null,
+        "chainId": "dm-flow-7562-mor-zul-bloodbringer",
+        "chainDepth": 0,
+        "startNpc": "Mor'zul Bloodbringer",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Burning Steppes",
+        "startNpcs": [
+          {
+            "name": "Mor'zul Bloodbringer",
+            "link": "https://www.wowhead.com/classic/npc=14436/mor-zul-bloodbringer",
+            "faction": "",
+            "type": "npc",
+            "loc": "Burning Steppes"
+          }
+        ],
+        "endNpc": "Dreadsteed Spirit",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=14504/dreadsteed-spirit",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Dire Maul",
+        "endNpcs": [
+          {
+            "name": "Dreadsteed Spirit",
+            "link": "https://www.wowhead.com/classic/npc=14504/dreadsteed-spirit",
+            "faction": "",
+            "type": "npc",
+            "loc": "Dire Maul"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 6600,
+        "money": 39600,
+        "objective": "Read <a href=\"https://www.wowhead.com/classic/item=18818/morzuls-instructions\" rel=\"noopener noreferrer\" target=\"_blank\">Mor'zul's Instructions</a>. Summon a Xorothian Dreadsteed, defeat it, then bind its spirit to you.",
+        "description": "All the preparations are made. Now, you must perform the ritual to create a Circle of Greater Summoning, then use the parchment infused with Xorothian stardust... to open a portal to Xoroth.<br><br>I have written the instructions for the ritual onto a scroll. Study it closely, for you must perform each step exactly if you wish to succeed.<br><br>Fortune to you. And may the souls of your enemies swiftly find their way into your shard pouch.",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 18818,
+            "name": "Mor'zul's Instructions",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=18818/morzuls-instructions",
+            "quality": 1
+          }
+        ],
+        "rewards": [],
+        "rewardChoices": [],
+        "requiredClasses": [
+          "Warlock"
+        ],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": {
+          "id": "dm-7623-lord-banehollow",
+          "index": 5,
+          "total": 5,
+          "name": "Lord Banehollow"
+        },
+        "flowChain": true,
+        "flowId": "dm-flow-7562-mor-zul-bloodbringer"
+      }
+    ],
+    "flows": [
+      {
+        "id": "dm-flow-7562-mor-zul-bloodbringer",
+        "tree": {
+          "type": "series",
+          "items": [
+            {
+              "type": "leaf",
+              "id": 7562
+            },
+            {
+              "type": "leaf",
+              "id": 7563
+            },
+            {
+              "type": "leaf",
+              "id": 7564
+            },
+            {
+              "type": "all",
+              "items": [
+                {
+                  "type": "series",
+                  "items": [
+                    {
+                      "type": "leaf",
+                      "id": 7623
+                    },
+                    {
+                      "type": "leaf",
+                      "id": 7624
+                    },
+                    {
+                      "type": "leaf",
+                      "id": 7625
+                    }
+                  ]
+                },
+                {
+                  "type": "series",
+                  "items": [
+                    {
+                      "type": "all",
+                      "items": [
+                        {
+                          "type": "leaf",
+                          "id": 7626
+                        },
+                        {
+                          "type": "leaf",
+                          "id": 7628
+                        },
+                        {
+                          "type": "leaf",
+                          "id": 7627
+                        }
+                      ]
+                    },
+                    {
+                      "type": "leaf",
+                      "id": 7630
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "leaf",
+              "id": 7629
+            },
+            {
+              "type": "leaf",
+              "id": 7631
+            }
+          ]
+        }
       }
     ],
     "iconFile": "dung_direm.png"
@@ -50181,6 +53784,237 @@ const DUNGEONS = [
           "total": 2,
           "name": "The Flesh Does Not Lie"
         }
+      },
+      {
+        "id": 9257,
+        "name": "Atiesh, Greatstaff of the Guardian",
+        "questLink": "https://www.wowhead.com/classic/quest=9257/atiesh-greatstaff-of-the-guardian",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "",
+        "startNpcLink": "",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "Atiesh, Greatstaff of the Guardian",
+        "startItemLink": "https://www.wowhead.com/classic/item=22737/atiesh-greatstaff-of-the-guardian",
+        "startLoc": "",
+        "startNpcs": [],
+        "endNpc": "",
+        "endNpcLink": "",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "",
+        "endNpcs": [],
+        "levels": "60",
+        "minLevel": 60,
+        "faction": "Both",
+        "xp": 9950,
+        "money": 59700,
+        "objective": "Anachronos at the Caverns of Time in Tanaris wants you to take <a href=\"https://www.wowhead.com/classic/item=236398/atiesh-greatstaff-of-the-guardian\" rel=\"noopener noreferrer\" target=\"_blank\">Atiesh, Greatstaff of the Guardian</a> to Stratholme and use it on Consecrated Earth. Defeat the entity that is exorcised from the staff and return to him.",
+        "description": "This final task will be the most difficult of all. You have faced and defeated both an Old God and the Lich King's General, but now you must face the hand of Sargeras.<br><br>Take the staff to Stratholme. It is there that you will find a piece of consecrated earth: ground where the greatest knights of Lordaeron were murdered. Place the befouled staff upon the holy ground and prepare for an entity of immense power to break from within... Defeat the demonic being that controls the staff and return to me.",
+        "shareable": false,
+        "requirements": [
+          {
+            "type": "npc",
+            "id": 16387,
+            "name": "Atiesh Cleansed",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/npc=16387/atiesh-cleansed"
+          }
+        ],
+        "rewards": [
+          {
+            "id": 22631,
+            "name": "Atiesh, Greatstaff of the Guardian",
+            "url": "https://www.wowhead.com/classic/item=22631/atiesh-greatstaff-of-the-guardian",
+            "quality": 5,
+            "quantity": 1
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 5307,
+        "name": "Corruption",
+        "questLink": "https://www.wowhead.com/classic/quest=5307/corruption",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Seril Scourgebane",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11193/seril-scourgebane",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Winterspring",
+        "startNpcs": [
+          {
+            "name": "Seril Scourgebane",
+            "link": "https://www.wowhead.com/classic/npc=11193/seril-scourgebane",
+            "faction": "",
+            "type": "npc",
+            "loc": "Winterspring"
+          }
+        ],
+        "endNpc": "Seril Scourgebane",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11193/seril-scourgebane",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Winterspring",
+        "endNpcs": [
+          {
+            "name": "Seril Scourgebane",
+            "link": "https://www.wowhead.com/classic/npc=11193/seril-scourgebane",
+            "faction": "",
+            "type": "npc",
+            "loc": "Winterspring"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 50,
+        "faction": "Both",
+        "xp": 8300,
+        "money": 49800,
+        "objective": "Find the Black Guard Swordsmith in Stratholme and destroy him. Recover the <a href=\"https://www.wowhead.com/classic/item=13350/insignia-of-the-black-guard\" rel=\"noopener noreferrer\" target=\"_blank\">Insignia of the Black Guard</a> and return to <a href=\"https://www.wowhead.com/classic/npc=11193/seril-scourgebane\" rel=\"noopener noreferrer\" target=\"_blank\">Seril Scourgebane</a>.",
+        "description": "If I am short with you, it is for a reason. The plans for the creation of the great blade, Corruption, have been stolen by the Black Guard: Elite skeletal units of Baron Rivendare.<br><br>Yes, Baron Rivendare of Stratholme.<br><br>The Black Guard swordsmith now guards those plans with his... undeath.<br><br>Slay him and return proof of this deed and I shall train you in the ways of the swordsmith.",
+        "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13350,
+            "name": "Insignia of the Black Guard",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13350/insignia-of-the-black-guard",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11121,
+                "name": "Black Guard Swordsmith",
+                "url": "https://www.wowhead.com/classic/npc=11121/black-guard-swordsmith",
+                "relation": "Dropped by",
+                "dropChance": 2.3
+              }
+            ]
+          }
+        ],
+        "rewards": [
+          {
+            "id": 12825,
+            "name": "Plans: Blazing Rapier",
+            "url": "https://www.wowhead.com/classic/item=12825/plans-blazing-rapier",
+            "quality": 2,
+            "quantity": 1
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
+      },
+      {
+        "id": 5305,
+        "name": "Sweet Serenity",
+        "questLink": "https://www.wowhead.com/classic/quest=5305/sweet-serenity",
+        "prequest": "",
+        "prequestLink": "",
+        "prevQuestId": null,
+        "nextQuestId": null,
+        "chainId": null,
+        "chainDepth": 0,
+        "startNpc": "Lilith the Lithe",
+        "startNpcLink": "https://www.wowhead.com/classic/npc=11191/lilith-the-lithe",
+        "startObject": "",
+        "startObjectLink": "",
+        "startItem": "",
+        "startItemLink": "",
+        "startLoc": "Winterspring",
+        "startNpcs": [
+          {
+            "name": "Lilith the Lithe",
+            "link": "https://www.wowhead.com/classic/npc=11191/lilith-the-lithe",
+            "faction": "",
+            "type": "npc",
+            "loc": "Winterspring"
+          }
+        ],
+        "endNpc": "Lilith the Lithe",
+        "endNpcLink": "https://www.wowhead.com/classic/npc=11191/lilith-the-lithe",
+        "endObject": "",
+        "endObjectLink": "",
+        "endLoc": "Winterspring",
+        "endNpcs": [
+          {
+            "name": "Lilith the Lithe",
+            "link": "https://www.wowhead.com/classic/npc=11191/lilith-the-lithe",
+            "faction": "",
+            "type": "npc",
+            "loc": "Winterspring"
+          }
+        ],
+        "levels": "60",
+        "minLevel": 50,
+        "faction": "Both",
+        "xp": 8300,
+        "money": 49800,
+        "objective": "Travel to Stratholme and kill the Crimson Hammersmith. Recover the <a href=\"https://www.wowhead.com/classic/item=13351/crimson-hammersmiths-apron\" rel=\"noopener noreferrer\" target=\"_blank\">Crimson Hammersmith's Apron</a> and return to Lilith.",
+        "description": "Within the confines of the Scarlet Bastion lies sweet Serenity. The Crimson Hammersmith guards the recipe with his life. Defeat him and bring me his apron. For that, I shall train you to become a hammersmith.<br><br>Understand this: Once you have chosen the path of the hammersmith, the paths of the swordsmith and axesmith will no longer be available.",
+        "shareable": true,
+        "requirements": [
+          {
+            "type": "item",
+            "id": 13351,
+            "name": "Crimson Hammersmith's Apron",
+            "quantity": 1,
+            "url": "https://www.wowhead.com/classic/item=13351/crimson-hammersmiths-apron",
+            "quality": 1,
+            "sources": [
+              {
+                "type": "npc",
+                "id": 11120,
+                "name": "Crimson Hammersmith",
+                "url": "https://www.wowhead.com/classic/npc=11120/crimson-hammersmith",
+                "relation": "Dropped by",
+                "dropChance": 7.1
+              }
+            ]
+          }
+        ],
+        "rewards": [
+          {
+            "id": 12824,
+            "name": "Plans: Enchanted Battlehammer",
+            "url": "https://www.wowhead.com/classic/item=12824/plans-enchanted-battlehammer",
+            "quality": 2,
+            "quantity": 1
+          }
+        ],
+        "rewardChoices": [],
+        "requiredClasses": [],
+        "notes": "",
+        "preChain": [],
+        "postChain": [],
+        "absorbedBy": null,
+        "isDungeon": true,
+        "series": null
       },
       {
         "id": 5543,

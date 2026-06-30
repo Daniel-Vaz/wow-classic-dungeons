@@ -67,7 +67,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "1",
-      "label": "Mad Magglish (Varies)",
+      "label": "Mad Magglish",
       "indent": false,
       "category": "poi"
      },
@@ -118,7 +118,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "4",
-      "label": "Kresh (Varies)",
+      "label": "Kresh",
       "indent": false,
       "category": "poi"
      },
@@ -136,13 +136,13 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "7",
-      "label": "Lord Serpentis (Upper)",
+      "label": "Lord Serpentis",
       "indent": false,
       "category": "poi"
      },
      {
       "ref": "8",
-      "label": "Verdan the Everliving (Upper)",
+      "label": "Verdan the Everliving",
       "indent": false,
       "category": "poi"
      },
@@ -160,7 +160,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "10",
-      "label": "Deviate Faerie Dragon (Rare, Varies)",
+      "label": "Deviate Faerie Dragon (Rare)",
       "indent": false,
       "category": "poi"
      }
@@ -191,7 +191,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "1",
-      "label": "Marisa du'Paige (Varies)",
+      "label": "Marisa du'Paige",
       "indent": false,
       "category": "poi"
      },
@@ -333,13 +333,13 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Rethilgore (Random, Summon)",
+      "label": "Rethilgore",
       "indent": true,
       "category": "poi"
      },
      {
       "ref": "2",
-      "label": "Razorclaw the Butcher (Random, Summon)",
+      "label": "Razorclaw the Butcher",
       "indent": false,
       "category": "poi"
      },
@@ -357,7 +357,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "5",
-      "label": "Odo the Blindwatcher (Random, Summon)",
+      "label": "Odo the Blindwatcher",
       "indent": false,
       "category": "poi"
      },
@@ -369,7 +369,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "7",
-      "label": "Wolf Master Nandos (Random, Summon)",
+      "label": "Wolf Master Nandos",
       "indent": false,
       "category": "poi"
      },
@@ -463,7 +463,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "6",
-      "label": "Lorgus Jett (Varies)",
+      "label": "Lorgus Jett",
       "indent": false,
       "category": "poi"
      }
@@ -478,13 +478,13 @@ const ATLAS_INSTANCE_MAPS = {
     "pois": [
      {
       "ref": "6",
-      "label": "Lorgus Jett (Varies)",
+      "label": "Lorgus Jett",
       "indent": false,
       "category": "poi"
      },
      {
       "ref": "7",
-      "label": "Baron Aquanis (Summon)",
+      "label": "Baron Aquanis",
       "indent": false,
       "category": "poi"
      },
@@ -542,7 +542,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "1",
-      "label": "Targorr the Dread (Varies)",
+      "label": "Targorr the Dread",
       "indent": false,
       "category": "poi"
      },
@@ -732,7 +732,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "4",
-      "label": "Viscous Fallout (Wanders)",
+      "label": "Viscous Fallout",
       "indent": false,
       "category": "poi"
      },
@@ -1077,7 +1077,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "5",
-      "label": "Ragglesnout (Rare, Varies)",
+      "label": "Ragglesnout (Rare)",
       "indent": false,
       "category": "poi"
      },
@@ -1126,7 +1126,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "2",
-      "label": "Magregan Deepshadow (Wanders)",
+      "label": "Magregan Deepshadow",
       "indent": false,
       "category": "poi"
      },
@@ -1340,7 +1340,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Dustwraith (Rare, Varies)",
+      "label": "Dustwraith (Rare)",
       "indent": true,
       "category": "poi"
      },
@@ -1388,7 +1388,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Gahz'rilla (Summon)",
+      "label": "Gahz'rilla",
       "indent": true,
       "category": "poi"
      },
@@ -1412,7 +1412,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "8",
-      "label": "Zerillis (Rare, Wanders)",
+      "label": "Zerillis (Rare)",
       "indent": false,
       "category": "poi"
      },
@@ -1548,7 +1548,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "6",
-      "label": "Meshlok the Harvester (Rare, Wanders)",
+      "label": "Meshlok the Harvester (Rare)",
       "indent": false,
       "category": "poi"
      },
@@ -1627,13 +1627,13 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "1",
-      "label": "Kazkaz the Unholy (Upper)",
+      "label": "Kazkaz the Unholy",
       "indent": false,
       "category": "poi"
      },
      {
       "ref": "2",
-      "label": "Zekkis (Rare, Lower)",
+      "label": "Zekkis (Rare)",
       "indent": false,
       "category": "poi"
      }
@@ -1666,7 +1666,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "C",
-      "label": "Troll Minibosses (Upper)",
+      "label": "Troll Minibosses",
       "indent": false,
       "category": "location"
      },
@@ -1714,13 +1714,13 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "5",
-      "label": "Morphaz (Wanders)",
+      "label": "Morphaz",
       "indent": false,
       "category": "poi"
      },
      {
       "ref": null,
-      "label": "Hazzas (Wanders)",
+      "label": "Hazzas",
       "indent": true,
       "category": "poi"
      },
@@ -1817,7 +1817,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "1",
-      "label": "Overmaster Pyron (Wanders)",
+      "label": "Overmaster Pyron",
       "indent": false,
       "category": "poi"
      },
@@ -1874,7 +1874,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "1",
-      "label": "Lord Roccor (Wanders)",
+      "label": "Lord Roccor",
       "indent": false,
       "category": "poi"
      },
@@ -1910,43 +1910,43 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Anub'shiah (Random)",
+      "label": "Anub'shiah",
       "indent": true,
       "category": "poi"
      },
      {
       "ref": null,
-      "label": "Eviscerator (Random)",
+      "label": "Eviscerator",
       "indent": true,
       "category": "poi"
      },
      {
       "ref": null,
-      "label": "Gorosh the Dervish (Random)",
+      "label": "Gorosh the Dervish",
       "indent": true,
       "category": "poi"
      },
      {
       "ref": null,
-      "label": "Grizzle (Random)",
+      "label": "Grizzle",
       "indent": true,
       "category": "poi"
      },
      {
       "ref": null,
-      "label": "Hedrum the Creeper (Random)",
+      "label": "Hedrum the Creeper",
       "indent": true,
       "category": "poi"
      },
      {
       "ref": null,
-      "label": "Ok'thor the Breaker (Random)",
+      "label": "Ok'thor the Breaker",
       "indent": true,
       "category": "poi"
      },
      {
       "ref": null,
-      "label": "Theldren (Summon)",
+      "label": "Theldren",
       "indent": true,
       "category": "poi"
      },
@@ -2036,7 +2036,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "9",
-      "label": "Fineous Darkvire (Wanders)",
+      "label": "Fineous Darkvire",
       "indent": false,
       "category": "poi"
      },
@@ -2144,7 +2144,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "17",
-      "label": "Panzor the Invincible (Rare, Wanders)",
+      "label": "Panzor the Invincible (Rare)",
       "indent": false,
       "category": "poi"
      },
@@ -2277,7 +2277,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "1",
-      "label": "Overmaster Pyron (Wanders)",
+      "label": "Overmaster Pyron",
       "indent": false,
       "category": "poi"
      },
@@ -2424,7 +2424,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Mor Grayhoof (Summon)",
+      "label": "Mor Grayhoof",
       "indent": true,
       "category": "poi"
      },
@@ -2442,7 +2442,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Unfired Plate Gauntlets (Lower)",
+      "label": "Unfired Plate Gauntlets",
       "indent": true,
       "category": "poi"
      },
@@ -2466,13 +2466,13 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "15",
-      "label": "Urok's Tribute Pile (Summon)",
+      "label": "Urok's Tribute Pile",
       "indent": false,
       "category": "poi"
      },
      {
       "ref": null,
-      "label": "Urok Doomhowl (Summon)",
+      "label": "Urok Doomhowl",
       "indent": true,
       "category": "poi"
      },
@@ -2508,7 +2508,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "1",
-      "label": "Burning Felguard (Rare, Summon)",
+      "label": "Burning Felguard (Rare)",
       "indent": false,
       "category": "green"
      }
@@ -2575,7 +2575,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "1",
-      "label": "Overmaster Pyron (Wanders)",
+      "label": "Overmaster Pyron",
       "indent": false,
       "category": "poi"
      },
@@ -2933,7 +2933,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Lord Hel'nurath (Summon)",
+      "label": "Lord Hel'nurath",
       "indent": true,
       "category": "poi"
      },
@@ -3026,7 +3026,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "3",
-      "label": "Zevrim Thornhoof (Upper)",
+      "label": "Zevrim Thornhoof",
       "indent": false,
       "category": "poi"
      },
@@ -3062,7 +3062,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Isalien (Summon)",
+      "label": "Isalien",
       "indent": true,
       "category": "poi"
      }
@@ -3117,7 +3117,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "2",
-      "label": "Kirtonos the Herald (Summon)",
+      "label": "Kirtonos the Herald",
       "indent": false,
       "category": "poi"
      },
@@ -3135,13 +3135,13 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "5",
-      "label": "Rattlegore (Lower)",
+      "label": "Rattlegore",
       "indent": false,
       "category": "poi"
      },
      {
       "ref": null,
-      "label": "Death Knight Darkreaver (Summon)",
+      "label": "Death Knight Darkreaver",
       "indent": true,
       "category": "poi"
      },
@@ -3171,7 +3171,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Kormok (Summon)",
+      "label": "Kormok",
       "indent": true,
       "category": "poi"
      },
@@ -3292,13 +3292,13 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "2",
-      "label": "Atiesh (Summon)",
+      "label": "Atiesh",
       "indent": false,
       "category": "poi"
      },
      {
       "ref": "3",
-      "label": "Hearthsinger Forresten (Varies)",
+      "label": "Hearthsinger Forresten",
       "indent": false,
       "category": "poi"
      },
@@ -3334,7 +3334,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "8",
-      "label": "Crimson Hammersmith (Summon)",
+      "label": "Crimson Hammersmith",
       "indent": false,
       "category": "poi"
      },
@@ -3370,19 +3370,19 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Sothos (Summon)",
+      "label": "Sothos",
       "indent": true,
       "category": "poi"
      },
      {
       "ref": null,
-      "label": "Jarien (Summon)",
+      "label": "Jarien",
       "indent": true,
       "category": "poi"
      },
      {
       "ref": "12",
-      "label": "Magistrate Barthilas (Varies)",
+      "label": "Magistrate Barthilas",
       "indent": false,
       "category": "poi"
      },
@@ -3406,7 +3406,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": null,
-      "label": "Black Guard Swordsmith (Summon)",
+      "label": "Black Guard Swordsmith",
       "indent": true,
       "category": "poi"
      },

@@ -176,6 +176,13 @@ const QUEST_PINS = {
       "url": "https://www.wowhead.com/classic/npc=5770/nara-wildmane"
     },
     {
+      "x": 38.99,
+      "y": 55.98,
+      "label": "Orm Stonehoof",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=6410/orm-stonehoof"
+    },
+    {
       "x": 70.14,
       "y": 29.52,
       "label": "Rahauro",
@@ -188,6 +195,13 @@ const QUEST_PINS = {
       "label": "Sage Truthseeker",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=3978/sage-truthseeker"
+    },
+    {
+      "x": 57.24,
+      "y": 87.37,
+      "label": "Torm Ragetotem",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=3041/torm-ragetotem"
     },
     {
       "x": 76.48,
@@ -225,6 +239,13 @@ const QUEST_PINS = {
       "label": "Apothecary Zinge",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=5204/apothecary-zinge"
+    },
+    {
+      "x": 47.4,
+      "y": 17.29,
+      "label": "Baltus Fowler",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=4595/baltus-fowler"
     },
     {
       "x": 46.93,
@@ -302,6 +323,13 @@ const QUEST_PINS = {
       "label": "Varimathras",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=2425/varimathras"
+    },
+    {
+      "x": 62.14,
+      "y": 39.14,
+      "label": "Velora Nitely",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=6411/velora-nitely"
     }
   ],
   "The Barrens": [
@@ -311,6 +339,13 @@ const QUEST_PINS = {
       "label": "Crane Operator Bigglefuzz",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=3665/crane-operator-bigglefuzz"
+    },
+    {
+      "x": 49.31,
+      "y": 57.21,
+      "label": "Doan Karhan",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=6247/doan-karhan"
     },
     {
       "x": 46.01,
@@ -353,6 +388,20 @@ const QUEST_PINS = {
       "label": "Nalpak",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=5767/nalpak"
+    },
+    {
+      "x": 44.67,
+      "y": 59.42,
+      "label": "Ruga Ragetotem",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=6394/ruga-ragetotem"
+    },
+    {
+      "x": 57.23,
+      "y": 30.34,
+      "label": "Thun'grim Firegaze",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=5878/thun-grim-firegaze"
     },
     {
       "x": 52.26,
@@ -439,6 +488,13 @@ const QUEST_PINS = {
       "label": "Duthorian Rall",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=6171/duthorian-rall"
+    },
+    {
+      "x": 58.09,
+      "y": 16.54,
+      "label": "Furen Longbeard",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=5413/furen-longbeard"
     },
     {
       "x": 51.76,
@@ -767,6 +823,13 @@ const QUEST_PINS = {
       "label": "Wiley the Black",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=266/wiley-the-black"
+    },
+    {
+      "x": 26.58,
+      "y": 44.72,
+      "label": "Yorus Barleybrew",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=6166/yorus-barleybrew"
     }
   ],
   "Dun Morogh": [
@@ -1386,6 +1449,13 @@ const QUEST_PINS = {
   ],
   "Blasted Lands": [
     {
+      "x": 34.13,
+      "y": 50.14,
+      "label": "Daio the Decrepit",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=14463/daio-the-decrepit"
+    },
+    {
       "x": 63.63,
       "y": 20.63,
       "label": "Enohar Thunderbrew",
@@ -1821,6 +1891,13 @@ const QUEST_PINS = {
       "url": "https://www.wowhead.com/classic/npc=11192/kilram"
     },
     {
+      "x": 61.33,
+      "y": 37.13,
+      "label": "Lilith the Lithe",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=11191/lilith-the-lithe"
+    },
+    {
       "x": 63.79,
       "y": 73.76,
       "label": "Lorax",
@@ -1833,6 +1910,13 @@ const QUEST_PINS = {
       "label": "Malyfous Darkhammer",
       "type": "quest",
       "url": "https://www.wowhead.com/classic/npc=10637/malyfous-darkhammer"
+    },
+    {
+      "x": 61.33,
+      "y": 37.19,
+      "label": "Seril Scourgebane",
+      "type": "quest",
+      "url": "https://www.wowhead.com/classic/npc=11193/seril-scourgebane"
     }
   ],
   "Eastern Plaguelands": [

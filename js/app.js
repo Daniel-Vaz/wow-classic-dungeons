@@ -3960,11 +3960,25 @@ function renderAtlasLegend() {
 
     const body = document.createElement('div');
     body.className = 'pin-list-section-body';
+    // Group each ref'd parent row with the indented sub-entries that follow it, so
+    // a tree connector can visually tie the children to their shared map reference.
+    let childBox = null;
     sec.items.forEach(p => {
       // Strip trailing parenthetical annotations like (Rare), (Varies), (Wanders, Upper), etc.
       // before matching against encounter names.
       const baseLabel = p.label.replace(/\s*\([^)]*\)\s*$/, '').trim().toLowerCase();
-      body.appendChild(atlasLegendItem(p, encounterMap[baseLabel]));
+      const itemEl = atlasLegendItem(p, encounterMap[baseLabel]);
+      if (p.indent && childBox) {
+        childBox.appendChild(itemEl);
+        return;
+      }
+      const group = document.createElement('div');
+      group.className = 'atlas-poi-group';
+      group.appendChild(itemEl);
+      childBox = document.createElement('div');
+      childBox.className = 'atlas-poi-children';
+      group.appendChild(childBox);
+      body.appendChild(group);
     });
 
     section.appendChild(header);
@@ -4722,6 +4736,10 @@ const COMMON_REQ_MATERIALS = new Set([
   'azerothian diamond',
   'pristine black diamond',,
   'elixir of shadow power',
+  'star ruby',
+  'gold bar',
+  'truesilver bar',
+  'iron bar',
 ].map(n => n.toLowerCase()));
 
 // Where a required *item* comes from — the NPCs that drop or sell it, the

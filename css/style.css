@@ -3035,9 +3035,52 @@ img.stat-ico {
   gap: 9px;
 }
 .atlas-legend-item.indent { padding-left: 30px; opacity: 0.85; }
+
+/* Tree connector: ties indented sub-entries to their parent's map reference so
+   it's clear that everything in the group shares the same number/letter badge. */
+.atlas-poi-children { position: relative; }
+/* Stub rising from the children block up toward the parent badge centre. */
+.atlas-poi-children:not(:empty)::before {
+  content: '';
+  position: absolute;
+  left: 33px;
+  top: -16px;
+  height: 16px;
+  width: 2px;
+  background: var(--border-gold);
+}
+.atlas-poi-children .atlas-legend-item.indent {
+  position: relative;
+  padding-left: 52px;
+  opacity: 1;
+}
+/* Vertical trunk down the left of the children (tiles continuously row-to-row). */
+.atlas-poi-children .atlas-legend-item.indent::before {
+  content: '';
+  position: absolute;
+  left: 33px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border-gold);
+}
+/* The last child's trunk stops at its elbow instead of running to the row bottom. */
+.atlas-poi-children .atlas-legend-item.indent:last-child::before { bottom: 50%; }
+/* Horizontal elbow tick pointing from the trunk into each child's label. */
+.atlas-poi-children .atlas-legend-item.indent::after {
+  content: '';
+  position: absolute;
+  left: 33px;
+  top: 50%;
+  width: 13px;
+  height: 2px;
+  background: var(--border-gold);
+}
 .atlas-legend-item.has-encounter { cursor: pointer; }
 .atlas-legend-item.has-encounter:hover .atlas-legend-name { color: var(--gold-light); text-decoration: underline; }
 .atlas-ref {
+  position: relative;
+  z-index: 1; /* keep the badge above the legend tree connector lines */
   flex-shrink: 0;
   min-width: 22px;
   height: 19px;
