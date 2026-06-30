@@ -3913,6 +3913,17 @@ function atlasEncounterMap(dungeonId) {
   return map;
 }
 
+// An ATLAS_LEGEND_NPCS value is either a bare npc id (number) or an
+// "npc=ID"/"object=ID" string (objects live in a separate Wowhead namespace for
+// scraping). Either way the model image is assets/npc-models/{id}.jpg, so reduce
+// the value to its numeric id; null/unset entries yield undefined.
+function atlasLegendModelId(val) {
+  if (val == null) return undefined;
+  if (typeof val === 'number') return val;
+  const m = String(val).match(/\d+/);
+  return m ? Number(m[0]) : undefined;
+}
+
 function atlasLegendItem(p, npcId) {
   const item = document.createElement('div');
   item.className = 'pin-list-item atlas-legend-item' + (p.indent ? ' indent' : '');
@@ -3926,8 +3937,15 @@ function atlasLegendItem(p, npcId) {
   item.appendChild(badge);
   item.appendChild(name);
   if (npcId) {
-    item.classList.add('has-encounter');
-    item.addEventListener('click', () => openEncounterModal(p.label, npcId));
+    // A boss encounter (known to BOSS_ENCOUNTERS) opens its full encounter
+    // popout; any other NPC/object just opens its model image in the lightbox,
+    // mirroring the NPC/object thumbnails in the quest popout.
+    const isEncounter = !!encounterNameById(npcId);
+    item.classList.add(isEncounter ? 'has-encounter' : 'has-image');
+    item.addEventListener('click', () => {
+      if (isEncounter) openEncounterModal(p.label, npcId);
+      else openLSLightbox(`assets/npc-models/${npcId}.jpg`, p.label);
+    });
   }
   return item;
 }
@@ -3967,10 +3985,19 @@ function renderAtlasLegend() {
     // a tree connector can visually tie the children to their shared map reference.
     let childBox = null;
     sec.items.forEach(p => {
-      // Strip trailing parenthetical annotations like (Rare), (Varies), (Wanders, Upper), etc.
-      // before matching against encounter names.
-      const baseLabel = p.label.replace(/\s*\([^)]*\)\s*$/, '').trim().toLowerCase();
-      const itemEl = atlasLegendItem(p, encounterMap[baseLabel]);
+      // Strip a trailing "<Title>" (e.g. Kolk <The First Kahn>) and parenthetical
+      // annotations like (Rare), (Varies), (Wanders, Upper), etc. before matching.
+      const baseLabel = p.label
+        .replace(/\s*<[^>]*>\s*$/, '')
+        .replace(/\s*\([^)]*\)\s*$/, '')
+        .trim().toLowerCase();
+      // Prefer a boss encounter match; otherwise fall back to a non-boss NPC/object
+      // model id from ATLAS_LEGEND_NPCS.
+      const legendNpcs = (typeof ATLAS_LEGEND_NPCS !== 'undefined' && ATLAS_LEGEND_NPCS[currentDungeonId]) || null;
+      const npcId = encounterMap[baseLabel] != null
+        ? encounterMap[baseLabel]
+        : (legendNpcs ? atlasLegendModelId(legendNpcs[baseLabel]) : undefined);
+      const itemEl = atlasLegendItem(p, npcId);
       if (p.indent && childBox) {
         childBox.appendChild(itemEl);
         return;
@@ -4540,12 +4567,19 @@ function initLoadingScreenLightbox() {
     const sourceThumb = e.target.closest('.qm-req-source-thumb');
     const source = screen || npcThumb || npcPreview || sourceThumb;
     if (!source) return;
-    const img = document.getElementById('loadingScreenLightboxImg');
-    img.src = source.src;
-    img.alt = source.alt;
-    lightbox.setAttribute('aria-hidden', 'false');
-    lightbox.classList.add('open');
+    openLSLightbox(source.src, source.alt);
   });
+}
+
+// Open the shared lightbox on an arbitrary image (used by the loading-screen and
+// quest-popout thumbnails above, and by non-boss Atlas legend rows).
+function openLSLightbox(src, alt) {
+  const lightbox = document.getElementById('loadingScreenLightbox');
+  const img = document.getElementById('loadingScreenLightboxImg');
+  img.src = src;
+  img.alt = alt || '';
+  lightbox.setAttribute('aria-hidden', 'false');
+  lightbox.classList.add('open');
 }
 
 function closeLSLightbox() {

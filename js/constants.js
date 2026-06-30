@@ -258,6 +258,7 @@ const BOSS_ENCOUNTERS = {
     { name: "Immol'thar", npcId: 11496 },
     { name: 'Lord Helnurath', npcId: 14506 },
     { name: 'Prince Tortheldrin', npcId: 11486 },
+    { name: 'Lord Helnurath', npcId: 14506 },
     { section: 'North' },
     { name: "Guard Mol'dar", npcId: 14326 },
     { name: 'Stomper Kreeg', npcId: 14322 },

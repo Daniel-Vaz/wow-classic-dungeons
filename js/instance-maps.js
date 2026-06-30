@@ -2921,7 +2921,7 @@ const ATLAS_INSTANCE_MAPS = {
      },
      {
       "ref": "5",
-      "label": "Tsu'zee (Rare)",
+      "label": "Tsuzee (Rare)",
       "indent": false,
       "category": "poi"
      },

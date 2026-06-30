@@ -3058,8 +3058,10 @@ img.stat-ico {
   height: 2px;
   background: var(--border-gold);
 }
-.atlas-legend-item.has-encounter { cursor: pointer; }
-.atlas-legend-item.has-encounter:hover .atlas-legend-name { color: var(--gold-light); text-decoration: underline; }
+.atlas-legend-item.has-encounter,
+.atlas-legend-item.has-image { cursor: pointer; }
+.atlas-legend-item.has-encounter:hover .atlas-legend-name,
+.atlas-legend-item.has-image:hover .atlas-legend-name { color: var(--gold-light); text-decoration: underline; }
 .atlas-ref {
   position: relative;
   z-index: 1; /* keep the badge above the legend tree connector lines */
@@ -3331,7 +3333,10 @@ img.stat-ico {
   display: none;
   position: fixed;
   inset: 0;
-  z-index: 1000;
+  /* Topmost overlay: a fullscreen image zoom opened from the quest popout, the
+     map popout's Atlas legend, etc. (all z 1000) must paint above its opener —
+     and above the encounter modal (1100) / hover preview (1200) too. */
+  z-index: 1300;
   align-items: center;
   justify-content: center;
 }
